@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOOMIN　セイコー スナフキン　釣り人の時間 オフィシャルライセンスウオッチ｜Charaffine：ムーミン｜インペリアル・エンタープライズ株式会社 I･E･I</title>
+<meta name="description" content="xxxxxxxx">
+<meta name="keywords" content="xxxxxxxx">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com/3.4.1"></script>
+<script>
+// Tailwind config will be loaded from external file in production
+tailwind.config = {
+    theme: {
+        extend: {
+            colors: {
+                'iei-primary': '#2C5282',
+                'iei-secondary': '#ED8936', 
+                'moomin': '#7FB3D5',
+            }
+        }
+    }
+}
+</script>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="../../../css/custom.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<!-- Alpine.js -->
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+
+<style>
+/* ハンバーガーメニューのアニメーション専用CSS（Tailwindで表現困難な部分のみ） */
+.hamburger-button.active .hamburger-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-button.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-button.active .hamburger-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* メニュー開閉時のクラス */
+#js-overlay.active {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+#js-nav.active {
+  transform: translateX(0) !important;
+}
+</style>
+
+
+</head>
+
+<body class="bg-white">
+    <div class="min-h-screen">
+        <header>
+            <!-- ヘッダー -->
+            <div class="bg-white border-b relative z-50" id="header-component">
+                <!-- ヘッダー上段 -->
+                <div class="px-4 pt-2">
+                    <div class="flex items-center justify-between h-12">
+                        <!-- ハンバーガーメニュー（左） -->
+                        <div class="w-12 h-full md:hidden">
+                            <button class="hamburger-button relative w-full h-full bg-transparent border-none z-[9999] cursor-pointer px-1 py-1" id="js-hamburger">
+                                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- ロゴ（中央） -->
+                        <div class="flex-1 flex justify-center">
+                            <a href="/">
+                                <img src="/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ" class="h-10">
+                            </a>
+                        </div>
+                        <!-- カート（右） -->
+                        <div class="w-12 flex justify-end">
+                            <a href="/cart" class="relative flex items-center text-gray-600 hover:text-iei-primary transition-colors">
+                                <div class="relative">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5-5M17 21a2 2 0 100-4 2 2 0 000 4zM9 21a2 2 0 100-4 2 2 0 000 4z"></path>
+                                    </svg>
+                                    <span class="absolute -top-1 -right-1 bg-blue-500 text-white rounded-full h-4 w-4 flex items-center justify-center text-xs font-bold">3</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ヘッダー下段 -->
+                <div class="flex items-center justify-between h-14 px-4">
+                    <!-- ムーミンロゴ（左） -->
+                    <div>
+                        <img src="/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン" class="h-8">
+                    </div>
+                    
+                    <!-- 電話番号エリア（右） -->
+                    <div class="text-right">
+                        <div class="text-xs text-amber-700">お申込・お問い合わせ 6:00〜21:00</div>
+                        <div class="flex justify-end items-center space-x-2">
+                            <div class="w-5 h-5 bg-amber-700 rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                </svg>
+                            </div>
+                            <a href="tel:0120-247-417" class="text-2xl text-amber-700 hover:text-amber-800 transition-colors">0120-247-417</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- メニュー開いたとき -->
+            <div class="fixed inset-0 bg-black bg-opacity-50 opacity-0 invisible transition-all duration-300 z-[998]" id="js-overlay"></div>
+            <nav class="fixed left-0 top-0 w-4/5 h-screen -translate-x-full bg-white transition-transform duration-300 ease-in-out z-[999] shadow-xl md:hidden" id="js-nav">
+                <!-- 固定ヘッダー（閉じるボタン） -->
+                <div class="fixed top-0 w-full h-16 bg-white border-b border-gray-100 flex items-center px-4 z-20">
+                    <button class="w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors" id="js-close-menu">
+                        <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- メニューコンテンツ -->
+                <div class="h-full overflow-y-auto pt-16 pb-10 divide-y divide-gray-100">
+                    <ul class="flex flex-col gap-3 mt-2 ml-6 text-gray-700 hover:bg-gray-50 transition-colors text-base font-medium">
+                        <li><a href="/categories/charaffine" >キャラフィネ</a></li>
+                        <li><a>ムーミン</a></li>
+                        <li><a>キャラフィネ</a></li>
+                        <li><a>ムーミン</a></li>
+                        <li><a>キャラフィネ</a></li>
+                        <li><a>ムーミン</a></li>
+                        <li><a>キャラフィネ</a></li>
+                        <li><a>ムーミン</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- パンくずナビ -->
+        <nav class="bread-clumbs text-sm text-gray-600 mx-auto p-3 leading-snug tracking-tighter">
+            <a href="/categories/charaffine/" class="text-blue-800 hover:text-blue-400 transition-colors">キャラフィネ</a>
+            <span class="mx-2">｜</span>
+            <a href="/categories/moomin/" class="text-blue-800 hover:text-blue-400 transition-colors">ムーミン</a>
+            <span class="mx-2">｜</span>
+            <span>MOOMIN　セイコー スナフキン　釣り人の時間 オフィシャルライセンスウオッチ</span>
+        </nav>
+
+        <!-- メインコンテンツ -->
+        <main class="container mx-auto pb-6">
+            <section>
+                <!-- メインビジュアル -->
+                <div class="text-center mb-8">
+                    <h1 class="mb-4">
+                        <!-- PC版キービジュアル（md以上で表示） -->
+                        <img src="/public/img/products/51300/51325/pc/pc_keyvisual.jpg" 
+                            alt="スナフキン 釣り人の時間　限定版オフィシャルライセンスウオッチ" 
+                            class="hidden md:block w-full max-w-4xl mx-auto h-auto">
+                        <!-- SP版キービジュアル（md未満で表示） -->
+                        <img src="/public/img/products/51300/51325/sp/sp_keyvisual.jpg" 
+                            alt="スナフキン 釣り人の時間　限定版オフィシャルライセンスウオッチ" 
+                            class="md:hidden w-full max-w-md mx-auto h-auto">
+                    </h1>
+                </div>
+                
+                <!-- 購入ボタンエリア -->
+                <div class="flex flex-col md:flex-row justify-center mb-8 px-2">
+                    <!-- 購入ボタン 画像がある場合は画像優先(A)、ない場合は画像なし(B)にて -->
+                    <!-- 購入ボタン(A)) -->
+                        <!-- <div class="flex-1 max-w-md">
+                            <a href="tel:0120-247-417" class="block md:hidden">
+                                <img src="/public/img/parts/moomin/green/btn_tel.png" 
+                                    alt="お電話でのお申し込みはこちら" 
+                                    class="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity">
+                            </a>
+                            <div class="hidden md:block">
+                                <img src="/public/img/parts/moomin/green/btn_tel.png" 
+                                    alt="お電話でのお申し込みはこちら" 
+                                    class="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="flex-1 max-w-md">
+                            <a href="#price_area" class="block">
+                                <img src="/public/img/parts/moomin/green/btn_buy.png" 
+                                    alt="購入する" 
+                                    class="w-full h-auto cursor-pointer">
+                            </a>
+                        </div> -->
+                    <!-- 購入ボタン(B) -->
+                        <a href="#price_area" class="block">
+                            <button class="w-full bg-gradient-to-b from-[#ffd500] to-[#fea500] hover:opacity-70 text-white font-medium py-4 px-6 rounded-lg flex items-center justify-between transition-all duration-200 shadow-md hover:shadow-lg">
+                                <?xml version="1.0" encoding="utf-8"?>
+                                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="flex-1 text-center text-lg font-bold">カートへ移動</span>
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9l7 7 7-7"></path>
+                                </svg>
+                            </button>
+                        </a>
+                </div>
+                
+                <!-- 商品説明画像 -->
+                <div class="space-y-6">
+                    <!-- 商品説明 -->
+                    <div class="text-center">
+                        <img src="/public/img/products/51300/51325/pc/pc_lead.jpg" 
+                            alt="商品説明" 
+                            class="hidden md:block w-full max-w-4xl mx-auto h-auto">
+                        <img src="/public/img/products/51300/51325/sp/sp_lead.jpg" 
+                            alt="商品説明" 
+                            class="md:hidden w-full max-w-md mx-auto h-auto">
+                    </div>
+                    
+                    <!-- 特徴1 -->
+                    <div class="text-center">
+                        <img src="/public/img/products/51300/51325/pc/pc_feature01.jpg" 
+                            alt="特徴1" 
+                            class="hidden md:block w-full max-w-4xl mx-auto h-auto">
+                        <img src="/public/img/products/51300/51325/sp/sp_feature01.jpg" 
+                            alt="特徴1" 
+                            class="md:hidden w-full max-w-md mx-auto h-auto">
+                    </div>
+                    
+                    <!-- 特徴2 -->
+                    <div class="text-center">
+                        <img src="/public/img/products/51300/51325/pc/pc_feature02.jpg" 
+                            alt="特徴2" 
+                            class="hidden md:block w-full max-w-4xl mx-auto h-auto">
+                        <img src="/public/img/products/51300/51325/sp/sp_feature02.jpg" 
+                            alt="特徴2" 
+                            class="md:hidden w-full max-w-md mx-auto h-auto">
+                    </div>
+                </div>
+            </section>
+
+            <!-- ギャラリーセクション -->
+            <section id="gallery" class="my-16">
+                <!-- ギャラリータイトルバナー -->
+                <div class="text-center mb-2">
+                    <img src="/public/img/parts/moomin/green/pc_gallery_title.png" 
+                        alt="ギャラリー" 
+                        class="hidden md:inline-block max-w-full h-auto mx-2">
+                    <img src="/public/img/parts/moomin/green/sp_gallery_title.png" 
+                        alt="ギャラリー" 
+                        class="md:hidden max-w-full h-auto mx-2">
+                </div>
+                
+                <!-- ギャラリーメイン画像 -->
+                <div class="text-center mb-4">
+                    <div class="image bg-white rounded-lg p-4 inline-block">
+                        <img id="main-gallery-image" 
+                            src="/public/img/products/51300/51325/pc/gallery_01_l.jpg" 
+                            alt="商品画像" 
+                            class="max-w-full h-auto rounded cursor-pointer">
+                    </div>
+                </div>
+                
+                <!-- ギャラリーサムネイル一覧 -->
+                <div class="photo-area">
+                    <ul class="flex flex-wrap justify-center gap-3 p-0 list-none">
+                        <li>
+                            <img src="/public/img/products/51300/51325/sp/gallery_01.jpg" 
+                                alt="サムネイル1" 
+                                class="w-20 h-auto sm:w-24 sm:h-20 object-cover rounded cursor-pointer border-2 border-transparent hover:border-moomin transition-all duration-200 ring-4 ring-moomin">
+                        </li>
+                        <li>
+                            <img src="/public/img/products/51300/51325/sp/gallery_02.jpg" 
+                                alt="サムネイル2" 
+                                class="w-20 h-auto sm:w-24 sm:h-20 object-cover rounded cursor-pointer border-2 border-transparent hover:border-moomin transition-all duration-200">
+                        </li>
+                        <li>
+                            <img src="/public/img/products/51300/51325/sp/gallery_03.jpg" 
+                                alt="サムネイル3" 
+                                class="w-20 h-auto sm:w-24 sm:h-20 object-cover rounded cursor-pointer border-2 border-transparent hover:border-moomin transition-all duration-200">
+                        </li>
+                        <li>
+                            <img src="/public/img/products/51300/51325/sp/gallery_04.jpg" 
+                                alt="サムネイル4" 
+                                class="w-20 h-auto sm:w-24 sm:h-20 object-cover rounded cursor-pointer border-2 border-transparent hover:border-moomin transition-all duration-200">
+                        </li>
+                        <li>
+                            <img src="/public/img/products/51300/51325/sp/gallery_05.jpg" 
+                                alt="サムネイル5" 
+                                class="w-20 h-auto sm:w-24 sm:h-20 object-cover rounded cursor-pointer border-2 border-transparent hover:border-moomin transition-all duration-200">
+                        </li>
+                        <li>
+                            <img src="/public/img/products/51300/51325/sp/gallery_06.jpg" 
+                                alt="サムネイル6" 
+                                class="w-20 h-auto sm:w-24 sm:h-20 object-cover rounded cursor-pointer border-2 border-transparent hover:border-moomin transition-all duration-200">
+                        </li>
+                        <li>
+                            <img src="/public/img/products/51300/51325/sp/gallery_07.jpg" 
+                                alt="サムネイル7" 
+                                class="w-20 h-auto sm:w-24 sm:h-20 object-cover rounded cursor-pointer border-2 border-transparent hover:border-moomin transition-all duration-200">
+                        </li>
+                        <li>
+                            <img src="/public/img/products/51300/51325/sp/gallery_08.jpg" 
+                                alt="サムネイル8" 
+                                class="w-20 h-auto sm:w-24 sm:h-20 object-cover rounded cursor-pointer border-2 border-transparent hover:border-moomin transition-all duration-200">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 価格・購入エリア -->
+            <section id="price_area" class="my-16">
+                <!-- 仕様価格タイトルバナー -->
+                <div class="text-center mb-4">
+                    <img src="/public/img/parts/moomin/green/pc_price_title.png" 
+                        alt="仕様／価格" 
+                        class="hidden md:inline-block max-w-full h-auto mx-2">
+                    <img src="/public/img/parts/moomin/green/sp_price_title.png" 
+                        alt="仕様／価格" 
+                        class="md:hidden max-w-full h-auto mx-2">
+                </div>
+                
+                <!-- <div class="max-w-6xl mx-auto"> -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                        <!-- 商品画像 -->
+                        <div class="flex justify-center">
+                            <img src="/public/img/products/51300/51325/pc/price_img.jpg" 
+                                alt="商品詳細画像" 
+                                class="max-w-full h-auto">
+                        </div>
+                        <!-- 価格・購入情報 -->
+                        <div class="p-4 rounded-lg shadow-md">
+                            <!-- 商品名 -->
+                            <h3 class="border-l-4 border-gray-800 pl-4 text-xl font-bold text-gray-800 mb-4">
+                                MOOMIN　セイコー<br>
+                                スナフキン　釣り人の時間<br>
+                                オフィシャルライセンスウオッチ
+                            </h3>
+                            
+                            <!-- 納期・お届け -->
+                            <div class="py-2">
+                                <p class="text-blue-700 font-bold text-lg">商品は10月中旬より順次発送予定です。</p>
+                            </div>
+
+                            <!-- 価格 -->
+                            <div class="space-y-2 mb-6 text-gray-600">
+                                <p class="text-xl">月々 5,800円（税込6,380円）×7回払い</p>
+                                <p class="text-base">一括価格39,800円（税込43,780円）</p>
+                                <p class="text-base ml-4">発送手数料700円（税込770円）</p>
+                            </div>
+                            
+                            <!-- 購入フォーム -->
+                            <form method="post" name="form_cart" class="space-y-4 px-4">
+                                <input type="hidden" name="item_no" value="51325">
+                                <input type="hidden" name="amount1" value="1">
+                                <!-- サイズ選択 -->
+                                <div>
+                                    <label for="size-select" class="block text-sm font-medium text-gray-700 mb-2">サイズをお選びください</label>
+                                    <select id="size-select" name="m5siz" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent">
+                                        <option value="" disabled selected>サイズ選択</option>
+                                        <option value="L">L (19.5cm)</option>
+                                        <option value="M">M (17.5cm)</option>
+                                        <option value="S">S (16.5cm)</option>
+                                    </select>
+                                </div>
+                                <!-- カートにいれるボタン -->
+                                <div>
+                                    <button class="w-full bg-gradient-to-b from-[#ffd500] to-[#fea500] hover:from-yellow-500 hover:to-yellow-600 text-white font-medium py-4 px-6 rounded-lg flex items-center justify-between transition-all duration-200 shadow-md hover:shadow-lg">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="flex-1 text-center text-lg font-bold">カートに入れる</span>
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!-- お問い合わせ -->
+                                <div class="text-center">
+                                    <a href="#" class="text-iei-primary hover:text-iei-secondary underline transition-colors">この商品をメールで問い合わせ</a>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <!-- 仕様詳細 -->
+                        <div class="px-6">
+                            <h4 class="font-bold text-gray-800 mb-3">仕　様</h4>
+                            <p class="leading-snug">
+                                【腕時計 仕様】<br>
+                                ●材質：ケース・裏蓋＝ステンレススチール　バンド＝牛革（裏側は合成皮革）　風防＝カーブハードレックス<br>
+                                ●サイズ（約）：42.8×35×厚さ6.9mm<br>
+                                ●手首回り（約）：13～18cm<br>
+                                ●ムーブメント：クオーツ（平均月差±15秒以内）<br>
+                                ●日常生活防水（3気圧防水）　●1年間品質保証　●日本製<br>
+                                ※製造上の理由により、裏蓋の向きや文字の位置、仕様が写真とは若干異なる場合がございます。<br>
+                                【ボックス仕様】<br>
+                                ●材質：紙、レーヨン、ウレタン<br>
+                                ●サイズ（約）：縦10×横10×高さ6.5cm<br>
+                                ●中国製
+                            </p>
+                        </div>
+                    </div>
+                <!-- </div> -->
+                
+                <!-- 関連商品バナー -->
+                <div class="text-center mt-12">
+                    <a href="/categories/moomin/" class="inline-block bg-moomin hover:bg-opacity-80 text-white px-8 py-4 rounded-lg transition-all duration-200 transform hover:scale-105">
+                        <span class="font-medium">ムーミンのI･E･Iオリジナル商品はこちら</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- フッターコンポーネント -->
+        <footer class="bg-gray-800 text-white">
+            <!-- メインフッター -->
+            <div class="py-12">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <!-- 会社情報 -->
+                        <div>
+                            <h3 class="text-lg font-bold mb-4">インペリアル・エンタープライズ株式会社</h3>
+                            <div class="space-y-2 text-sm text-gray-300">
+                                <p>〒105-0001<br>東京都港区虎ノ門1-1-1</p>
+                                <p class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                    <a href="tel:0120-247-417" class="hover:text-iei-secondary transition-colors">0120-247-417</a>
+                                </p>
+                                <p class="text-xs">受付時間：毎日 朝6:00〜夜21:00<br>※携帯電話からもOK</p>
+                            </div>
+                        </div>
+                        
+                        <!-- カテゴリリンク -->
+                        <div>
+                            <h3 class="text-lg font-bold mb-4">商品カテゴリ</h3>
+                            <ul class="space-y-2 text-sm text-gray-300">
+                                <li><a href="/categories/charaffine" class="hover:text-iei-secondary transition-colors">キャラフィネ</a></li>
+                                <li><a href="/categories/moomin" class="hover:text-iei-secondary transition-colors pl-4">・ムーミン</a></li>
+                                <li><a href="/categories/kitty" class="hover:text-iei-secondary transition-colors pl-4">・ハローキティ</a></li>
+                                <li><a href="/categories/snoopy" class="hover:text-iei-secondary transition-colors pl-4">・スヌーピー</a></li>
+                                <li><a href="/categories/premico" class="hover:text-iei-secondary transition-colors">プレミコ</a></li>
+                                <li><a href="/categories/jewelry" class="hover:text-iei-secondary transition-colors">女性ジュエリー・雑貨</a></li>
+                                <li><a href="/categories/mens" class="hover:text-iei-secondary transition-colors">男性</a></li>
+                                <li><a href="/categories/coin" class="hover:text-iei-secondary transition-colors">コイン・切手</a></li>
+                                <li><a href="/categories/interior" class="hover:text-iei-secondary transition-colors">インテリア・美術工芸品</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- サポート情報 -->
+                        <div>
+                            <h3 class="text-lg font-bold mb-4">サポート</h3>
+                            <ul class="space-y-2 text-sm text-gray-300">
+                                <li><a href="/guide/" class="hover:text-iei-secondary transition-colors">ご利用ガイド</a></li>
+                                <li><a href="/guide/shipping" class="hover:text-iei-secondary transition-colors">送料・お届けについて</a></li>
+                                <li><a href="/guide/payment" class="hover:text-iei-secondary transition-colors">お支払い方法</a></li>
+                                <li><a href="/guide/return" class="hover:text-iei-secondary transition-colors">返品・交換について</a></li>
+                                <li><a href="/faq" class="hover:text-iei-secondary transition-colors">よくある質問</a></li>
+                                <li><a href="/contact" class="hover:text-iei-secondary transition-colors">お問い合わせ</a></li>
+                                <li><a href="/sitemap.html" class="hover:text-iei-secondary transition-colors">サイトマップ</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- SNS・ニュースレター -->
+                        <div>
+                            <h3 class="text-lg font-bold mb-4">フォロー・配信</h3>
+                            
+                            <!-- SNSアイコン -->
+                            <div class="flex space-x-4 mb-6">
+                                <a href="#" class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-iei-primary transition-colors">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-iei-primary transition-colors">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-iei-primary transition-colors">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.098.118.112.222.083.343-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.758-1.378l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.624 0 11.99-5.367 11.99-11.989C24.007 5.367 18.641.001 12.017.001z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-iei-primary transition-colors">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                            <!-- ニュースレター登録 -->
+                            <div>
+                                <p class="text-sm text-gray-300 mb-3">新着商品やお得な情報をお届け</p>
+                                <form class="flex">
+                                    <input type="email" 
+                                        placeholder="メールアドレス" 
+                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded-l-lg text-sm focus:outline-none focus:ring-2 focus:ring-iei-primary focus:border-transparent">
+                                    <button type="submit" 
+                                            class="px-4 py-2 bg-iei-primary text-white rounded-r-lg hover:bg-iei-secondary transition-colors">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 法的情報・認証マーク -->
+            <div class="border-t border-gray-700 py-6">
+                <div class="container mx-auto px-4">
+                    <div class="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
+                        <!-- 法的リンク -->
+                        <div class="flex flex-wrap justify-center lg:justify-start space-x-4 text-sm text-gray-400">
+                            <a href="/terms" class="hover:text-iei-secondary transition-colors">利用規約</a>
+                            <span>|</span>
+                            <a href="/privacy" class="hover:text-iei-secondary transition-colors">プライバシーポリシー</a>
+                            <span>|</span>
+                            <a href="/tokusho" class="hover:text-iei-secondary transition-colors">特定商取引法に基づく表示</a>
+                            <span>|</span>
+                            <a href="/company" class="hover:text-iei-secondary transition-colors">会社概要</a>
+                        </div>
+                        
+                        <!-- 認証マーク -->
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center space-x-2 text-sm text-gray-400">
+                                <div class="w-8 h-6 bg-gray-600 rounded flex items-center justify-center text-xs font-bold">SSL</div>
+                                <span>暗号化通信</span>
+                            </div>
+                            <div class="flex items-center space-x-2 text-sm text-gray-400">
+                                <div class="w-8 h-6 bg-gray-600 rounded flex items-center justify-center text-xs font-bold">JMA</div>
+                                <span>日本通販協会会員</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- コピーライト -->
+            <div class="border-t border-gray-700 py-4">
+                <div class="container mx-auto px-4 text-center">
+                    <p class="text-sm text-gray-400">
+                        &copy; 2024 Imperial Enterprises Inc. All Rights Reserved.<br>
+                        <span class="text-xs">I・E・Iはインペリアル・エンタープライズ株式会社の略称です</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ページトップボタン -->
+        <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
+            <a href="#" class="block bg-moomin hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+                ↑
+            </a>
+        </div>
+
+    </div>
+
+    <!-- JavaScript (body閉じタグ直前) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../../../public/js/common.js"></script>
+    <script src="../../../public/js/product.js"></script>
+
+    <script>
+    // ハンバーガーメニュー機能
+    const ham = document.querySelector('#js-hamburger');
+    const nav = document.querySelector('#js-nav');
+    const overlay = document.querySelector('#js-overlay');
+    const closeMenu = document.querySelector('#js-close-menu');
+
+    // メニューを閉じる共通関数
+    function closeNavMenu() {
+        if (ham) ham.classList.remove('active');
+        if (nav) nav.classList.remove('active');
+        if (overlay) overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    if (ham && nav && overlay) {
+        // メニューボタンクリック
+        ham.addEventListener('click', function () {
+            ham.classList.toggle('active');
+            nav.classList.toggle('active');
+            overlay.classList.toggle('active');
+            
+            // 背景スクロール制御
+            if (nav.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+            } else {
+            document.body.style.overflow = '';
+            }
+        });
+
+        // 閉じるボタンクリック
+        if (closeMenu) {
+            closeMenu.addEventListener('click', closeNavMenu);
+        }
+
+        // オーバーレイクリックでメニューを閉じる
+        overlay.addEventListener('click', closeNavMenu);
+
+        // メニュー内のリンククリックでメニューを閉じる
+        const menuLinks = nav.querySelectorAll('a');
+        menuLinks.forEach(function(link) {
+            link.addEventListener('click', closeNavMenu);
+        });
+
+        // ESCキーでメニューを閉じる
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && nav.classList.contains('active')) {
+            closeNavMenu();
+            }
+        });
+    }
+    </script>
+</body>
+</html>

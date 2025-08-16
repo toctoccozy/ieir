@@ -1,0 +1,238 @@
+<!-- ヘッダーコンポーネント -->
+<div class="bg-white shadow-md relative z-40" id="header-component">
+    <div class="container mx-auto px-4">
+        <!-- トップヘッダー -->
+        <div class="flex items-center justify-between py-4">
+            <!-- ロゴエリア -->
+            <div class="flex items-center space-x-4">
+                <a href="/" class="flex items-center space-x-2">
+                    <div class="w-12 h-12 bg-iei-primary rounded-full flex items-center justify-center text-white font-bold">
+                        IEI
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="text-lg font-bold text-gray-800">インペリアル・エンタープライズ</div>
+                        <div class="text-sm text-gray-600">I・E・I オンラインショップ</div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- 右側アクションボタン -->
+            <div class="flex items-center space-x-4">
+                <!-- お気に入り -->
+                <a href="/favorites" class="hidden md:flex items-center space-x-1 text-gray-600 hover:text-iei-primary transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                    <span class="text-sm">お気に入り</span>
+                </a>
+                
+                <!-- ログイン -->
+                <a href="/login" class="hidden md:flex items-center space-x-1 text-gray-600 hover:text-iei-primary transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                    <span class="text-sm">ログイン</span>
+                </a>
+                
+                <!-- カート -->
+                <a href="/cart" class="relative flex items-center space-x-1 text-gray-600 hover:text-iei-primary transition-colors">
+                    <div class="relative">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5-5M17 21a2 2 0 100-4 2 2 0 000 4zM9 21a2 2 0 100-4 2 2 0 000 4z"></path>
+                        </svg>
+                        <span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center hidden">0</span>
+                    </div>
+                    <span class="hidden md:block text-sm">カート</span>
+                </a>
+                
+                <!-- ハンバーガーメニュー（モバイル） -->
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- ナビゲーション（デスクトップ） -->
+        <nav class="hidden md:block border-t border-gray-200">
+            <ul class="flex space-x-8 py-4">
+                <li class="dropdown relative group">
+                    <a href="/categories/charaffine" class="flex items-center space-x-1 text-gray-700 hover:text-iei-primary transition-colors font-medium">
+                        <span>キャラフィネ</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </a>
+                    <!-- ドロップダウンメニュー -->
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="py-2">
+                            <a href="/categories/moomin" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-iei-primary transition-colors">ムーミン</a>
+                            <a href="/categories/kitty" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-iei-primary transition-colors">ハローキティ</a>
+                            <a href="/categories/snoopy" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-iei-primary transition-colors">スヌーピー</a>
+                            <a href="/categories/peterrabbit" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-iei-primary transition-colors">ピーターラビット</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/categories/premico" class="text-gray-700 hover:text-iei-primary transition-colors font-medium">プレミコ</a>
+                </li>
+                <li class="dropdown relative group">
+                    <a href="/categories/jewelry" class="flex items-center space-x-1 text-gray-700 hover:text-iei-primary transition-colors font-medium">
+                        <span>女性ジュエリー・雑貨</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </a>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="py-2">
+                            <a href="/categories/jewelry" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-iei-primary transition-colors">ジュエリー</a>
+                            <a href="/categories/bags" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-iei-primary transition-colors">バッグ・小物</a>
+                            <a href="/categories/apparel" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-iei-primary transition-colors">アパレル</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/categories/mens" class="text-gray-700 hover:text-iei-primary transition-colors font-medium">男性</a>
+                </li>
+                <li>
+                    <a href="/categories/coin" class="text-gray-700 hover:text-iei-primary transition-colors font-medium">コイン・切手</a>
+                </li>
+                <li>
+                    <a href="/categories/interior" class="text-gray-700 hover:text-iei-primary transition-colors font-medium">インテリア・美術工芸品</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- 検索バー -->
+        <div class="hidden md:block py-4 border-t border-gray-200">
+            <form class="flex max-w-md mx-auto">
+                <input type="text" 
+                       placeholder="商品番号・キーワードで探す" 
+                       class="flex-1 px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-iei-primary focus:border-transparent">
+                <button type="submit" 
+                        class="px-6 py-2 bg-iei-primary text-white rounded-r-lg hover:bg-iei-secondary transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- モバイルメニュー -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+        <div class="px-4 py-4 space-y-4">
+            <!-- 検索（モバイル） -->
+            <form class="flex">
+                <input type="text" 
+                       placeholder="商品検索" 
+                       class="flex-1 px-3 py-2 border border-gray-300 rounded-l-lg text-sm focus:outline-none focus:ring-2 focus:ring-iei-primary">
+                <button type="submit" 
+                        class="px-4 py-2 bg-iei-primary text-white rounded-r-lg">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </button>
+            </form>
+            
+            <!-- メニュー項目 -->
+            <nav class="space-y-2">
+                <a href="/categories/charaffine" class="block py-2 text-gray-700 font-medium border-b border-gray-100">キャラフィネ</a>
+                <div class="pl-4 space-y-1">
+                    <a href="/categories/moomin" class="block py-1 text-sm text-gray-600">ムーミン</a>
+                    <a href="/categories/kitty" class="block py-1 text-sm text-gray-600">ハローキティ</a>
+                    <a href="/categories/snoopy" class="block py-1 text-sm text-gray-600">スヌーピー</a>
+                </div>
+                <a href="/categories/premico" class="block py-2 text-gray-700 font-medium border-b border-gray-100">プレミコ</a>
+                <a href="/categories/jewelry" class="block py-2 text-gray-700 font-medium border-b border-gray-100">女性ジュエリー・雑貨</a>
+                <a href="/categories/mens" class="block py-2 text-gray-700 font-medium border-b border-gray-100">男性</a>
+                <a href="/categories/coin" class="block py-2 text-gray-700 font-medium border-b border-gray-100">コイン・切手</a>
+                <a href="/categories/interior" class="block py-2 text-gray-700 font-medium border-b border-gray-100">インテリア・美術工芸品</a>
+            </nav>
+            
+            <!-- アクションボタン（モバイル） -->
+            <div class="flex space-x-4 pt-4 border-t border-gray-200">
+                <a href="/favorites" class="flex-1 text-center py-2 text-sm text-gray-600 border border-gray-300 rounded-lg">お気に入り</a>
+                <a href="/login" class="flex-1 text-center py-2 text-sm text-white bg-iei-primary rounded-lg">ログイン</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- お知らせバー -->
+    <div class="bg-iei-secondary text-white text-center py-2 text-sm">
+        <div class="container mx-auto px-4">
+            <span class="mr-4">📞 お電話でのご注文・お問い合わせ</span>
+            <a href="tel:0120-247-417" class="font-bold hover:underline">0120-247-417</a>
+            <span class="ml-4 text-xs">(毎日 朝6:00〜夜21:00)</span>
+        </div>
+    </div>
+</div>
+
+<script>
+// ヘッダーコンポーネントの初期化
+$(document).ready(function() {
+    // モバイルメニュートグル
+    $('#mobile-menu-button').click(function() {
+        $('#mobile-menu').toggleClass('hidden');
+        $(this).find('svg').toggleClass('rotate-180');
+    });
+    
+    // カート数量の更新
+    function updateCartCount() {
+        const cart = JSON.parse(localStorage.getItem('iei_cart') || '[]');
+        const count = cart.length;
+        const $cartCount = $('#cart-count');
+        
+        if (count > 0) {
+            $cartCount.text(count).removeClass('hidden');
+        } else {
+            $cartCount.addClass('hidden');
+        }
+    }
+    
+    // 初期カート数量表示
+    updateCartCount();
+    
+    // ローカルストレージの変更を監視
+    $(window).on('storage', updateCartCount);
+    
+    // ヘッダー固定のスクロール処理
+    let isFixed = false;
+    $(window).scroll(function() {
+        const scrollTop = $(window).scrollTop();
+        const $header = $('#header-component');
+        
+        if (scrollTop > 100 && !isFixed) {
+            $header.addClass('fixed top-0 left-0 right-0 z-50 animate-slideDown');
+            $('body').css('padding-top', $header.outerHeight() + 'px');
+            isFixed = true;
+        } else if (scrollTop <= 100 && isFixed) {
+            $header.removeClass('fixed top-0 left-0 right-0 z-50 animate-slideDown');
+            $('body').css('padding-top', '0');
+            isFixed = false;
+        }
+    });
+});
+</script>
+
+<style>
+/* ヘッダーアニメーション */
+.animate-slideDown {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* ドロップダウンの矢印回転 */
+.dropdown:hover svg {
+    transform: rotate(180deg);
+}
+</style>

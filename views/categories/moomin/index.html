@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charaffine：ムーミン｜インペリアル・エンタープライズ株式会社 I･E･I</title>
+<meta name="description" content="xxxxxxxx">
+<meta name="keywords" content="xxxxxxxx">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com/3.4.1"></script>
+<script>
+// Tailwind config will be loaded from external file in production
+tailwind.config = {
+    theme: {
+        extend: {
+            colors: {
+                'iei-primary': '#2C5282',
+                'iei-secondary': '#ED8936', 
+                'moomin': '#7FB3D5',
+            }
+        }
+    }
+}
+</script>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="../../../css/custom.css">
+
+<!-- Slick Carousel -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body id="charaffine" class="bg-gray-50 font-noto">
+
+<div id="wrapper" class="min-h-screen">
+
+<header>
+<!-- ヘッダーコンポーネント -->
+<div class="bg-white shadow-md relative z-50" id="header-component">
+    <div class="container mx-auto px-4">
+        <!-- トップヘッダー -->
+        <div class="flex items-center justify-between py-4">
+            <!-- ロゴエリア -->
+            <div class="flex items-center space-x-4">
+                <a href="/" class="flex items-center space-x-2">
+                    <div class="w-12 h-12 bg-iei-primary rounded-full flex items-center justify-center text-white font-bold">
+                        IEI
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="text-lg font-bold text-gray-800">インペリアル・エンタープライズ</div>
+                        <div class="text-sm text-gray-600">I・E・I オンラインショップ</div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- 右側アクションボタン -->
+            <div class="flex items-center space-x-4">
+                <!-- 電話番号（PC版） -->
+                <div class="hidden lg:flex flex-col text-right">
+                    <div class="text-xs text-gray-600">お問い合わせ・お申込み　毎日6:00～21:00</div>
+                    <div class="text-lg font-bold text-iei-primary">
+                        <a href="tel:0120247417" class="hover:text-iei-secondary transition-colors">0120-247-417</a>
+                    </div>
+                </div>
+                
+                <!-- カートボタン -->
+                <div class="relative">
+                    <a href="/cart" class="flex items-center space-x-2 bg-iei-secondary hover:bg-opacity-80 text-white px-4 py-2 rounded-lg transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.42-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                        </svg>
+                        <span class="text-sm hidden md:block">カート</span>
+                        <span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold hidden">0</span>
+                    </a>
+                </div>
+                
+                <!-- モバイルメニューボタン -->
+                <button id="mobile-menu-button" class="md:hidden flex flex-col space-y-1 p-2">
+                    <span class="block w-6 h-0.5 bg-gray-600"></span>
+                    <span class="block w-6 h-0.5 bg-gray-600"></span>
+                    <span class="block w-6 h-0.5 bg-gray-600"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 電話番号（モバイル版） -->
+        <div class="lg:hidden text-center py-3 bg-gray-50 border-t">
+            <div class="text-xs text-gray-600">お問い合わせ・お申込み　毎日6:00～21:00</div>
+            <div class="text-lg font-bold text-iei-primary">
+                <a href="tel:0120247417" class="hover:text-iei-secondary transition-colors">0120-247-417</a>
+            </div>
+        </div>
+        
+        <!-- ナビゲーション -->
+        <nav class="hidden md:block bg-gray-50 border-t">
+            <ul class="flex space-x-8 px-4 py-3">
+                <li><a href="/categories/charaffine/" class="text-gray-700 hover:text-iei-primary transition-colors font-medium">キャラフィネ</a></li>
+                <li><a href="/categories/premico/" class="text-gray-700 hover:text-iei-primary transition-colors font-medium">プレミコ</a></li>
+                <li><a href="/guide/" class="text-gray-700 hover:text-iei-primary transition-colors">ご利用ガイド</a></li>
+                <li><a href="/contact/" class="text-gray-700 hover:text-iei-primary transition-colors">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        
+        <!-- モバイルメニュー -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-gray-50 border-t absolute top-full left-0 right-0 z-60 shadow-lg">
+            <ul class="py-4 space-y-2">
+                <li><a href="/categories/charaffine/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-medium">キャラフィネ</a></li>
+                <li><a href="/categories/premico/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-medium">プレミコ</a></li>
+                <li><a href="/guide/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">ご利用ガイド</a></li>
+                <li><a href="/contact/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+</header>
+
+<main class="container mx-auto px-4 py-6">
+    <!-- パンくずナビ -->
+    <nav class="bread-clumbs text-sm text-gray-600 mb-8">
+        <a href="/categories/charaffine/" class="text-iei-primary hover:text-iei-secondary transition-colors">キャラフィネ</a>
+        <span class="mx-2">｜</span>
+        <span class="font-medium">ムーミン</span>
+    </nav>
+
+    <!-- スライダーエリア -->
+    <section id="slide-area" class="relative mb-16">
+        <ul class="slider01">
+            <li>
+                <a href="../../../views/products/51300/51325.html" class="block transform hover:scale-105 transition-transform duration-200">
+                    <img src="../../../public/img/categories/moomin/slide01.jpg" alt="商品スライド1" class="w-full max-w-2xl h-auto rounded-lg shadow-md">
+                </a>
+            </li>
+            <li>
+                <a href="../../../views/products/51300/51325.html" class="block transform hover:scale-105 transition-transform duration-200">
+                    <img src="../../../public/img/categories/moomin/slide02.jpg" alt="商品スライド2" class="w-full max-w-2xl h-auto rounded-lg shadow-md">
+                </a>
+            </li>
+            <li>
+                <a href="../../../views/products/51300/51325.html" class="block transform hover:scale-105 transition-transform duration-200">
+                    <img src="../../../public/img/categories/moomin/slide03.jpg" alt="商品スライド3" class="w-full max-w-2xl h-auto rounded-lg shadow-md">
+                </a>
+            </li>
+            <li>
+                <a href="../../../views/products/51300/51325.html" class="block transform hover:scale-105 transition-transform duration-200">
+                    <img src="../../../public/img/categories/moomin/slide01.jpg" alt="商品スライド1" class="w-full max-w-2xl h-auto rounded-lg shadow-md">
+                </a>
+            </li>
+            <li>
+                <a href="../../../views/products/51300/51325.html" class="block transform hover:scale-105 transition-transform duration-200">
+                    <img src="../../../public/img/categories/moomin/slide02.jpg" alt="商品スライド2" class="w-full max-w-2xl h-auto rounded-lg shadow-md">
+                </a>
+            </li>
+            <li>
+                <a href="../../../views/products/51300/51325.html" class="block transform hover:scale-105 transition-transform duration-200">
+                    <img src="../../../public/img/categories/moomin/slide03.jpg" alt="商品スライド3" class="w-full max-w-2xl h-auto rounded-lg shadow-md">
+                </a>
+            </li>
+        </ul>
+        <div class="arrow_box"></div>
+    </section>
+
+    <!-- 商品リストエリア -->
+    <section id="content">
+        <div class="flex justify-between items-center mb-6">
+            <p class="result-list text-sm text-gray-600">全24件中　1〜4件を表示</p>
+        </div>
+        
+        <ul id="item-list" class="space-y-6">
+            <li class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/3 p-6">
+                        <img src="../../../public/img/categories/moomin/item_thum02.jpg" 
+                             alt="商品画像" 
+                             class="w-full h-auto max-w-80 mx-auto rounded">
+                    </div>
+                    <div class="md:w-2/3 p-6">
+                        <dl>
+                            <dt class="text-xl font-bold text-gray-800 mb-3 leading-relaxed">
+                                セイコー　スナフキン 釣り人の時間 オフィシャルライセンスウオッチ
+                            </dt>
+                            <dd class="text-gray-600 leading-relaxed mb-4">
+                                旅人スナフキンは、人生の達人。風の吹くまま気の向くまま、ふらりと旅に出ては、釣りをしたり、詩や曲をつくったり・・何ものにもとらわれない自由な生き方は、永遠の憧れです。そんなスナフキンと共有する豊かな時間をイメージした、スペシャルな腕時計が誕生しました。
+                            </dd>
+                        </dl>
+                        <div class="btn-link">
+                            <a href="../../../views/products/51300/51325.html" 
+                               class="inline-block bg-iei-primary hover:bg-iei-secondary text-white px-6 py-2 rounded-lg transition-colors duration-200 font-medium">
+                                詳細はこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/3 p-6">
+                        <img src="../../../public/img/categories/moomin/item_thum01.jpg" 
+                             alt="商品画像" 
+                             class="w-full h-auto max-w-80 mx-auto rounded">
+                    </div>
+                    <div class="md:w-2/3 p-6">
+                        <dl>
+                            <dt class="text-xl font-bold text-gray-800 mb-3 leading-relaxed">
+                                ＜ムーミン谷のやすらぎ＞ 京染め工房の手染めのれん
+                            </dt>
+                            <dd class="text-gray-600 leading-relaxed mb-4">
+                                「のれん」で楽しむムーミンの世界。光と影が戯れる軽やかな風情を楽しんで。森をゆくムーミンとリトルミイ、のんびりと釣りを楽しむスナフキン・・『ムーミン』に出てくる印象的な場面が、心なごむ2種類の「のれん」になりました。京都の熟練職人が一枚一枚手染めしたのれんは、そのまま飾るだけでムーミン谷さながらにお部屋の雰囲気を一新します。
+                            </dd>
+                        </dl>
+                        <div class="btn-link">
+                            <a href="#" 
+                               class="inline-block bg-iei-primary hover:bg-iei-secondary text-white px-6 py-2 rounded-lg transition-colors duration-200 font-medium">
+                                詳細はこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/3 p-6">
+                        <img src="../../../public/img/categories/moomin/item_thum03.jpg" 
+                             alt="商品画像" 
+                             class="w-full h-auto max-w-80 mx-auto rounded">
+                    </div>
+                    <div class="md:w-2/3 p-6">
+                        <dl>
+                            <dt class="text-xl font-bold text-gray-800 mb-3 leading-relaxed">
+                                ミムラねえさん＆リトルミイ ふっくらかわいいランタン型バッグ
+                            </dt>
+                            <dd class="text-gray-600 leading-relaxed mb-4">
+                                おしゃれなミムラねえさんとキュートなリトルミイ、ふたりの個性をかわいいフォルムに込めたバッグが誕生しました。一番上のミムラねえさんは面倒見のいいしっかり者、末っ子のリトルミイは好奇心が強くていたずら好き・・ムーミンの世界を彩るふたりの姿をジャカード織で表現。自分らしいおしゃれのかたち、ミムラねえさんとリトルミイの気分で楽しんで。
+                            </dd>
+                        </dl>
+                        <div class="btn-link">
+                            <a href="#" 
+                               class="inline-block bg-iei-primary hover:bg-iei-secondary text-white px-6 py-2 rounded-lg transition-colors duration-200 font-medium">
+                                詳細はこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/3 p-6">
+                        <img src="../../../public/img/categories/moomin/item_thum04.jpg" 
+                             alt="商品画像" 
+                             class="w-full h-auto max-w-80 mx-auto rounded">
+                    </div>
+                    <div class="md:w-2/3 p-6">
+                        <dl>
+                            <dt class="text-xl font-bold text-gray-800 mb-3 leading-relaxed">
+                                スナフキン 星空のおさんぽ デニム調レザーのやわらか4Eコンフォートシューズ
+                            </dt>
+                            <dd class="text-gray-600 leading-relaxed mb-4">
+                                星空の下、のんびり過ごすスナフキン。夜空のようなネイビーのデニム調レザーに瞬く星とスナフキンの姿を刺繍であしらったコンフォートシューズです。足にやさしい８つの機能性はもちろん、シックなカラーが幅広いコーディネートにマッチして、大人の上質カジュアルを演出します。
+                            </dd>
+                        </dl>
+                        <div class="btn-link">
+                            <a href="#" 
+                               class="inline-block bg-iei-primary hover:bg-iei-secondary text-white px-6 py-2 rounded-lg transition-colors duration-200 font-medium">
+                                詳細はこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-4">
+        <!-- Newsletter Section -->
+        <div class="text-center mb-8">
+            <h3 class="text-xl font-bold mb-4">メールニュース</h3>
+            <p class="text-gray-300 mb-4">最新商品情報やお得なキャンペーン情報をお届けします</p>
+            <form class="flex flex-col sm:flex-row max-w-md mx-auto">
+                <input type="email" placeholder="メールアドレスを入力" 
+                       class="flex-1 px-4 py-2 rounded-l-lg sm:rounded-r-none text-gray-800 focus:outline-none focus:ring-2 focus:ring-iei-secondary">
+                <button type="submit" 
+                        class="bg-iei-secondary hover:bg-opacity-80 px-6 py-2 rounded-r-lg sm:rounded-l-none font-medium transition-colors">
+                    登録する
+                </button>
+            </form>
+        </div>
+        
+        <!-- Footer Links -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h4 class="font-bold mb-4">ショップ情報</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="/categories/charaffine/" class="hover:text-white transition-colors">キャラフィネ</a></li>
+                    <li><a href="/categories/premico/" class="hover:text-white transition-colors">プレミコ</a></li>
+                    <li><a href="/guide/" class="hover:text-white transition-colors">ご利用ガイド</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">サポート</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="/contact/" class="hover:text-white transition-colors">お問い合わせ</a></li>
+                    <li><a href="/faq/" class="hover:text-white transition-colors">よくある質問</a></li>
+                    <li><a href="/returns/" class="hover:text-white transition-colors">返品・交換</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">会社情報</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="/about/" class="hover:text-white transition-colors">会社概要</a></li>
+                    <li><a href="/privacy/" class="hover:text-white transition-colors">プライバシーポリシー</a></li>
+                    <li><a href="/terms/" class="hover:text-white transition-colors">利用規約</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="text-center mb-8">
+            <div class="text-iei-secondary font-bold text-xl">0120-247-417</div>
+            <div class="text-gray-300 text-sm">お問い合わせ・お申込み　毎日6:00～21:00</div>
+        </div>
+    </div>
+    
+    <div class="border-t border-gray-700 py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm text-gray-400">
+                &copy; 2024 Imperial Enterprises Inc. All Rights Reserved.<br>
+                <span class="text-xs">I・E・Iはインペリアル・エンタープライズ株式会社の略称です</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- ページトップボタン -->
+<div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
+    <a href="#" class="block bg-moomin hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+        ↑
+    </a>
+</div>
+
+</div>
+
+<!-- JavaScript (body閉じタグ直前) -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="../../../public/js/common.js"></script>
+<script>
+// Moomin page specific slider
+$(document).ready(function() {
+    // Slick slider
+    $('.slider01').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        dots: true,
+        arrows: false, // PC版でも矢印を非表示
+        centerMode: true,
+        variableWidth: true, // 元の設定に戻す
+        responsive: [{
+            breakpoint: 768, // md breakpoint
+            settings: {
+                centerMode: false,
+                variableWidth: false,
+                slidesToShow: 1,
+                dots: true,
+                arrows: false
+            }
+        }]
+    });
+});
+</script>
+
+</body>
+</html>

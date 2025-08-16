@@ -1,0 +1,56 @@
+{
+  "name": "iei-online-shop-prototype",
+  "version": "1.0.0",
+  "description": "インペリアル・エンタープライズ株式会社 I･E･I オンラインショップ リニューアル プロトタイプ",
+  "main": "index.html",
+  "scripts": {
+    "dev": "Live Server または任意のローカルサーバーで実行",
+    "build": "本番環境ではLaravel Mixまたはwebpackでビルド",
+    "lint": "ESLintとPrettierでコード品質チェック",
+    "test": "Jest等でテスト実行"
+  },
+  "keywords": [
+    "ecommerce",
+    "japan", 
+    "tailwind",
+    "prototype",
+    "laravel-ready"
+  ],
+  "author": "I･E･I Development Team",
+  "license": "Proprietary",
+  "dependencies": {
+    "jquery": "3.7.1",
+    "alpinejs": "3.13.5",
+    "slick-carousel": "1.8.1",
+    "tailwindcss": "3.4.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "プロジェクトのリポジトリURL"
+  },
+  "notes": {
+    "development": "このプロトタイプはCDNを使用してブラウザで直接実行可能",
+    "production": "本番環境ではLaravel 10.x + npm パッケージでビルド",
+    "migration": "views/ディレクトリをLaravelのresources/views/に移行",
+    "cdn_versions": {
+      "tailwind": "3.4.1",
+      "jquery": "3.7.1", 
+      "alpinejs": "3.13.5",
+      "slick": "1.8.1"
+    }
+  }
+}
