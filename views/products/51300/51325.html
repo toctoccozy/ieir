@@ -419,6 +419,518 @@
             </section>
         </main>
 
+        <!-- 案内セクション -->
+        <section class="bg-gray-50 py-8">
+            <div class="px-6">
+                <!-- A. 簡易案内（フル幅） -->
+                <div class="mb-8">
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <div class="flex items-center mb-4">
+                            <svg class="w-9 h-9 mr-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            </svg>
+                            <h3 class="text-lg md:text-base font-bold text-gray-800">商品代金支払いのタイミングについて</h3>
+                        </div>
+                        <div class="space-y-4 text-sm md:text-xs">
+                            <div>
+                                <h4 class="font-medium text-red-600 mb-2">【郵便振替・コンビニ払いの場合】</h4>
+                                <p class="text-gray-700">商品のお受け取り後の後払いとなります。<br>
+                                商品の到着後、同封の請求書に記載の期日までにお支払いください。</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-red-600 mb-2">【代金引換払いの場合】</h4>
+                                <p class="text-gray-700">商品お届けの際に、配送業者へ商品代金をお支払いいただきます。</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-red-600 mb-2">【クレジットカードの場合】</h4>
+                                <p class="text-gray-700">商品の発送後の決済となります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- レスポンシブグリッド -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- デスクトップ表示：左カラム：B/C/D -->
+                    <div class="hidden md:block space-y-6">
+                        <!-- B. お届け -->
+                        <div class="bg-white rounded-lg p-6 shadow-sm">
+                            <div class="flex items-center mb-4">
+                                <svg class="w-9 h-9 mr-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <h3 class="text-base font-bold text-gray-800">お届け</h3>
+                            </div>
+                            <div class="text-xs text-gray-700 space-y-2">
+                                <p>ご注文いただいた商品はご注文受付後、基本的に約1～4週間でお届けいたします。</p>
+                                <p>お届け詳細につきましては配達確度でお届けします。</p>
+                                <p>配達曜日・お届け時間のご指定は注文フォームにてご選択ください。</p>
+                                <p>誠に申し訳ございませんが配達日指定は承っておりません。なお、事情がある場合は注文フォームの通信欄にその旨ご記入ください。できる限り対応させて頂きます。</p>
+                            </div>
+                        </div>
+
+                        <!-- C. 発送手数料 -->
+                        <div class="bg-white rounded-lg p-6 shadow-sm">
+                            <div class="flex items-center mb-4">
+                                <svg class="w-9 h-9 mr-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                </svg>
+                                <h3 class="text-base font-bold text-gray-800">発送手数料</h3>
+                            </div>
+                            <div class="text-xs text-gray-700 mb-4">
+                                <p>ご注文いただいた商品の発送手数料は、ご注文金額にかかわらず以下の通りとなります。</p>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="w-full border-collapse border border-gray-300 text-xs">
+                                    <thead>
+                                        <tr class="bg-gray-100">
+                                            <th class="border border-gray-300 px-3 py-2 text-left">通常商品<br><span class="text-xs">※お届け先1ヶ所につき</span></th>
+                                            <th class="border border-gray-300 px-3 py-2 text-center">1点</th>
+                                            <th class="border border-gray-300 px-3 py-2 text-center">770円（税込）</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="border border-gray-300 px-3 py-2"></td>
+                                            <td class="border border-gray-300 px-3 py-2 text-center">2点以上</td>
+                                            <td class="border border-gray-300 px-3 py-2 text-center">1,320円（税込）</td>
+                                        </tr>
+                                        <tr class="bg-gray-50">
+                                            <td class="border border-gray-300 px-3 py-2 font-medium">大型商品</td>
+                                            <td class="border border-gray-300 px-3 py-2 text-center">1点ごとに</td>
+                                            <td class="border border-gray-300 px-3 py-2 text-center">2,200円（税込）</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-2">※全国一律料金</p>
+                        </div>
+
+                        <!-- D. お問い合わせ -->
+                        <div class="bg-white rounded-lg p-6 shadow-sm">
+                            <div class="flex items-center mb-4">
+                                <svg class="w-9 h-9 mr-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                <h3 class="text-base font-bold text-gray-800">お問い合わせ</h3>
+                            </div>
+                            <div class="text-xs text-gray-700 space-y-3">
+                                <div>
+                                    <h4 class="font-medium mb-2">お電話でのお問い合わせ</h4>
+                                    <p>フリーコール：0120-247-417（年中無休/6:00～21:00/通話料無料）</p>
+                                    <p class="text-xs">※一部のIP電話/携帯電話/PHSからは03-5810-8136（平日/9：30～17：00/通話料お客様負担）</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-2">メールでのお問い合わせ</h4>
+                                    <p>cs@iei.co.jp <a href="mailto:cs@iei.co.jp" class="text-blue-600 hover:text-blue-800 underline">（お問い合わせフォームへ）</a></p>
+                                    <p class="text-xs">※メールでのお問い合わせの場合、ご返答までにお時間をいただく場合がございます。あらかじめご了承ください。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- スマホ表示：アコーディオン -->
+                    <div class="md:hidden space-y-3">
+                        <!-- B. お届け -->
+                        <div class="bg-white rounded-lg shadow-sm">
+                            <button class="w-full p-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion('delivery')">
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <h3 class="text-base font-bold text-gray-800">お届け</h3>
+                                </div>
+                                <svg class="w-5 h-5 text-gray-500 transform transition-transform accordion-arrow" id="delivery-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-content hidden px-4 pb-4" id="delivery-content">
+                                <div class="text-sm text-gray-700 space-y-2">
+                                    <p>ご注文いただいた商品はご注文受付後、基本的に約1～4週間でお届けいたします。</p>
+                                    <p>お届け詳細につきましては配達確度でお届けします。</p>
+                                    <p>配達曜日・お届け時間のご指定は注文フォームにてご選択ください。</p>
+                                    <p>誠に申し訳ございませんが配達日指定は承っておりません。なお、事情がある場合は注文フォームの通信欄にその旨ご記入ください。できる限り対応させて頂きます。</p>
+                                </div>
+                                <div class="mt-4 text-right">
+                                    <button onclick="toggleAccordion('delivery')" class="text-blue-600 underline text-lg font-medium">閉じる</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- C. 発送手数料 -->
+                        <div class="bg-white rounded-lg shadow-sm">
+                            <button class="w-full p-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion('shipping')">
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                    </svg>
+                                    <h3 class="text-base font-bold text-gray-800">発送手数料</h3>
+                                </div>
+                                <svg class="w-5 h-5 text-gray-500 transform transition-transform accordion-arrow" id="shipping-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-content hidden px-4 pb-4" id="shipping-content">
+                                <div class="text-sm text-gray-700 mb-4">
+                                    <p>ご注文いただいた商品の発送手数料は、ご注文金額にかかわらず以下の通りとなります。</p>
+                                </div>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full border-collapse border border-gray-300 text-sm">
+                                        <thead>
+                                            <tr class="bg-gray-100">
+                                                <th class="border border-gray-300 px-3 py-2 text-left">通常商品<br><span class="text-xs">※お届け先1ヶ所につき</span></th>
+                                                <th class="border border-gray-300 px-3 py-2 text-center">1点</th>
+                                                <th class="border border-gray-300 px-3 py-2 text-center">770円（税込）</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="border border-gray-300 px-3 py-2"></td>
+                                                <td class="border border-gray-300 px-3 py-2 text-center">2点以上</td>
+                                                <td class="border border-gray-300 px-3 py-2 text-center">1,320円（税込）</td>
+                                            </tr>
+                                            <tr class="bg-gray-50">
+                                                <td class="border border-gray-300 px-3 py-2 font-medium">大型商品</td>
+                                                <td class="border border-gray-300 px-3 py-2 text-center">1点ごとに</td>
+                                                <td class="border border-gray-300 px-3 py-2 text-center">2,200円（税込）</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-2">※全国一律料金</p>
+                                <div class="mt-4 text-right">
+                                    <button onclick="toggleAccordion('shipping')" class="text-blue-600 underline text-lg font-medium">閉じる</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- D. お問い合わせ -->
+                        <div class="bg-white rounded-lg shadow-sm">
+                            <button class="w-full p-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion('contact')">
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                    <h3 class="text-base font-bold text-gray-800">お問い合わせ</h3>
+                                </div>
+                                <svg class="w-5 h-5 text-gray-500 transform transition-transform accordion-arrow" id="contact-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-content hidden px-4 pb-4" id="contact-content">
+                                <div class="text-sm text-gray-700 space-y-3">
+                                    <div>
+                                        <h4 class="font-medium mb-2">お電話でのお問い合わせ</h4>
+                                        <p>フリーコール：0120-247-417（年中無休/6:00～21:00/通話料無料）</p>
+                                        <p class="text-xs">※一部のIP電話/携帯電話/PHSからは03-5810-8136（平日/9：30～17：00/通話料お客様負担）</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium mb-2">メールでのお問い合わせ</h4>
+                                        <p>cs@iei.co.jp <a href="mailto:cs@iei.co.jp" class="text-blue-600 hover:text-blue-800 underline">（お問い合わせフォームへ）</a></p>
+                                        <p class="text-xs">※メールでのお問い合わせの場合、ご返答までにお時間をいただく場合がございます。あらかじめご了承ください。</p>
+                                    </div>
+                                </div>
+                                <div class="mt-4 text-right">
+                                    <button onclick="toggleAccordion('contact')" class="text-blue-600 underline text-lg font-medium">閉じる</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- E. お支払い -->
+                        <div class="bg-white rounded-lg shadow-sm">
+                            <button class="w-full p-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion('payment')">
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                    </svg>
+                                    <h3 class="text-base font-bold text-gray-800">お支払い</h3>
+                                </div>
+                                <svg class="w-5 h-5 text-gray-500 transform transition-transform accordion-arrow" id="payment-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-content hidden px-4 pb-4" id="payment-content">
+                                <div class="text-sm text-gray-700 space-y-4">
+                                    <div>
+                                        <p class="font-medium mb-2">■以下のお支払い方法が、ご利用いただけます。</p>
+                                        <ul class="space-y-1 ml-4">
+                                            <li>▸ 後払い＜ゆうちょ銀行（郵便局）、コンビニエンストア＞</li>
+                                            <li>▸ 代金引換払い</li>
+                                            <li>▸ クレジットカード払い（1回、分割、リボ）</li>
+                                        </ul>
+                                        <p class="text-xs mt-2">※お申込内容によりお支払い方法を変更していただく場合がございます。</p>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-medium mb-2">後払い＜ゆうちょ銀行（郵便局）、コンビニエンストア＞</h4>
+                                        <p class="text-xs mb-3">商品到着後2週間以内に、商品同梱、もしくは別途送付いたします専用の払込用紙にて、ゆうちょ銀行（郵便局）または下記のコンビニエンストアよりお支払いください。<br>※払込み手数料はお客様のご負担にてお願いいたします。</p>
+                                        <p class="font-medium text-xs mb-2">■ご利用いただけるコンビニエンストア</p>
+                                        <p class="text-xs mb-3">セブンイレブン、ローソン、ファミリーマート、ミニストップ、セイコーマート、デイリーヤマザキ、ポプラ、MMK設置店</p>
+                                        <p class="font-medium text-xs mb-2">払込手数料</p>
+
+                                        <!-- 手数料テーブル -->
+                                        <div class="space-y-4">
+                                            <table class="w-full border-collapse border border-gray-300 text-xs">
+                                                <thead>
+                                                    <tr class="bg-gray-100">
+                                                        <th class="border border-gray-300 px-2 py-1 text-center" colspan="3">ゆうちょ銀行（郵便局）</th>
+                                                    </tr>
+                                                    <tr class="bg-gray-50">
+                                                        <th class="border border-gray-300 px-2 py-1"></th>
+                                                        <th class="border border-gray-300 px-2 py-1 text-center">窓口</th>
+                                                        <th class="border border-gray-300 px-2 py-1 text-center">ATM</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="border border-gray-300 px-2 py-1">5万円未満</td>
+                                                        <td class="border border-gray-300 px-2 py-1 text-center">122円（税込）</td>
+                                                        <td class="border border-gray-300 px-2 py-1 text-center">71円（税込）</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="border border-gray-300 px-2 py-1">5万円以上</td>
+                                                        <td class="border border-gray-300 px-2 py-1 text-center">336円（税込）</td>
+                                                        <td class="border border-gray-300 px-2 py-1 text-center">285円（税込）</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <table class="w-full border-collapse border border-gray-300 text-xs">
+                                                <thead>
+                                                    <tr class="bg-gray-100">
+                                                        <th class="border border-gray-300 px-2 py-1 text-center" colspan="3">コンビニ払い</th>
+                                                    </tr>
+                                                    <tr class="bg-gray-50">
+                                                        <th class="border border-gray-300 px-2 py-1"></th>
+                                                        <th class="border border-gray-300 px-2 py-1 text-center">A</th>
+                                                        <th class="border border-gray-300 px-2 py-1 text-center">B</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="border border-gray-300 px-2 py-1">1万円未満</td>
+                                                        <td class="border border-gray-300 px-2 py-1 text-center">110円（税込）</td>
+                                                        <td class="border border-gray-300 px-2 py-1 text-center">110円（税込）</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="border border-gray-300 px-2 py-1">1万円以上、5万円未満</td>
+                                                        <td class="border border-gray-300 px-2 py-1 text-center">220円（税込）</td>
+                                                        <td class="border border-gray-300 px-2 py-1 text-center">220円（税込）</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="border border-gray-300 px-2 py-1">5万円以上</td>
+                                                        <td class="border border-gray-300 px-2 py-1 text-center">440円（税込）</td>
+                                                        <td class="border border-gray-300 px-2 py-1 text-center">550円（税込）</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                        <div class="text-xs mt-2 space-y-1">
+                                            <p>A：セブンイレブン</p>
+                                            <p>B：ローソン、ファミリーマート、ミニストップ、セイコーマート、デイリーヤマザキ、ポプラ、MMK設置店</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-xs space-y-2">
+                                        <p>※30万円を超えるお支払いの場合、コンビニエンストアではお取り扱いできません。ゆうちょ銀行（郵便局）でお支払いください。</p>
+                                        <p>※10万円を超える現金によるゆうちょ銀行（郵便局）からのお振込みは、本人確認のために運転免許証・健康保険証等が必要となります。</p>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-medium mb-2">代金引換払い（商品お届け時払い）</h4>
+                                        <div class="text-xs space-y-1">
+                                            <p>・商品お届け時に商品と交換で、配達員に現金にて代金をお支払いください。なお、お支払いは一括払いのみとなります。</p>
+                                            <p>・代引手数料は無料です。</p>
+                                            <p>・50万円を超えるお取引では利用できません。</p>
+                                            <p>・お申込者とお届け先が異なる場合にはご利用いただけません。</p>
+                                            <p>・なお、代金引換払いがご利用いただけない地域がございます。<a href="mailto:cs@iei.co.jp" class="text-blue-600 hover:text-blue-800 underline">詳しくは弊社顧客サービスまでご確認ください。</a></p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-medium mb-2">■クレジットカードのご利用に関して</h4>
+                                        <div class="text-xs space-y-2">
+                                            <p>下記カード会社のマークがプリントされているカードをご利用いただけます。ご利用の際にはカード番号/有効期限/お支払い方法をご指定ください。</p>
+                                            
+                                            <!-- クレジットカードロゴ（一旦ヘッダーロゴで代用） -->
+                                            <div class="flex flex-wrap gap-2 my-3">
+                                                <img src="/public/img/logo.png" alt="クレジットカード" class="h-6 opacity-60">
+                                                <img src="/public/img/logo.png" alt="クレジットカード" class="h-6 opacity-60">
+                                                <img src="/public/img/logo.png" alt="クレジットカード" class="h-6 opacity-60">
+                                                <img src="/public/img/logo.png" alt="クレジットカード" class="h-6 opacity-60">
+                                            </div>
+                                            
+                                            <p>※上記のカードであっても海外発行のクレジットカードなど、発行形態によりご利用いただけない場合がございますので、あらかじめご了承ください。</p>
+                                            
+                                            <div class="space-y-1">
+                                                <p>ご利用可能なお支払い回数は以下のようになっております。</p>
+                                                <p>アメックス：1回払い / 分割払い（3・5・6・10・12・15・18・20・24回払い）</p>
+                                                <p>ダイナース：1回払い / リボ払い</p>
+                                                <p>その他のカード：1回払い / リボ払い / 分割払い（2・3・5・6・10・12・15・18・20・24回払い）</p>
+                                                <p>※分割払いおよびリボ払いの場合は各カード会社規定の分割手数料がかかります。</p>
+                                            </div>
+                                            
+                                            <div class="mt-3">
+                                                <p class="font-medium">【ご注意】</p>
+                                                <p>デビットカードのご利用は、リスクをご理解の上、お客様の責任のもとでご利用いただきますようお願いいたします。</p>
+                                                <a href="mailto:cs@iei.co.jp" class="text-blue-600 hover:text-blue-800 underline">詳しくはこちらをご覧ください。</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4 text-right">
+                                    <button onclick="toggleAccordion('payment')" class="text-blue-600 underline text-lg font-medium">閉じる</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- デスクトップ表示：右カラム：E -->
+                    <div class="hidden md:block">
+                        <!-- E. お支払い -->
+                        <div class="bg-white rounded-lg p-6 shadow-sm">
+                            <div class="flex items-center mb-4">
+                                <svg class="w-9 h-9 mr-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                                <h3 class="text-base font-bold text-gray-800">お支払い</h3>
+                            </div>
+                            <div class="text-xs text-gray-700 space-y-4">
+                                <div>
+                                    <p class="font-medium mb-2">■以下のお支払い方法が、ご利用いただけます。</p>
+                                    <ul class="space-y-1 ml-4">
+                                        <li>▸ 後払い＜ゆうちょ銀行（郵便局）、コンビニエンストア＞</li>
+                                        <li>▸ 代金引換払い</li>
+                                        <li>▸ クレジットカード払い（1回、分割、リボ）</li>
+                                    </ul>
+                                    <p class="text-xs mt-2">※お申込内容によりお支払い方法を変更していただく場合がございます。</p>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-medium mb-2">後払い＜ゆうちょ銀行（郵便局）、コンビニエンストア＞</h4>
+                                    <p class="text-xs mb-3">商品到着後2週間以内に、商品同梱、もしくは別途送付いたします専用の払込用紙にて、ゆうちょ銀行（郵便局）または下記のコンビニエンストアよりお支払いください。<br>※払込み手数料はお客様のご負担にてお願いいたします。</p>
+                                    <p class="font-medium text-xs mb-2">■ご利用いただけるコンビニエンストア</p>
+                                    <p class="text-xs mb-3">セブンイレブン、ローソン、ファミリーマート、ミニストップ、セイコーマート、デイリーヤマザキ、ポプラ、MMK設置店</p>
+                                    <p class="font-medium text-xs mb-2">払込手数料</p>
+
+                                    <!-- 手数料テーブル -->
+                                    <div class="space-y-4">
+                                        <table class="w-full border-collapse border border-gray-300 text-xs">
+                                            <thead>
+                                                <tr class="bg-gray-100">
+                                                    <th class="border border-gray-300 px-2 py-1 text-center" colspan="3">ゆうちょ銀行（郵便局）</th>
+                                                </tr>
+                                                <tr class="bg-gray-50">
+                                                    <th class="border border-gray-300 px-2 py-1"></th>
+                                                    <th class="border border-gray-300 px-2 py-1 text-center">窓口</th>
+                                                    <th class="border border-gray-300 px-2 py-1 text-center">ATM</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="border border-gray-300 px-2 py-1">5万円未満</td>
+                                                    <td class="border border-gray-300 px-2 py-1 text-center">122円（税込）</td>
+                                                    <td class="border border-gray-300 px-2 py-1 text-center">71円（税込）</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-gray-300 px-2 py-1">5万円以上</td>
+                                                    <td class="border border-gray-300 px-2 py-1 text-center">336円（税込）</td>
+                                                    <td class="border border-gray-300 px-2 py-1 text-center">285円（税込）</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table class="w-full border-collapse border border-gray-300 text-xs">
+                                            <thead>
+                                                <tr class="bg-gray-100">
+                                                    <th class="border border-gray-300 px-2 py-1 text-center" colspan="3">コンビニ払い</th>
+                                                </tr>
+                                                <tr class="bg-gray-50">
+                                                    <th class="border border-gray-300 px-2 py-1"></th>
+                                                    <th class="border border-gray-300 px-2 py-1 text-center">A</th>
+                                                    <th class="border border-gray-300 px-2 py-1 text-center">B</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="border border-gray-300 px-2 py-1">1万円未満</td>
+                                                    <td class="border border-gray-300 px-2 py-1 text-center">110円（税込）</td>
+                                                    <td class="border border-gray-300 px-2 py-1 text-center">110円（税込）</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-gray-300 px-2 py-1">1万円以上、5万円未満</td>
+                                                    <td class="border border-gray-300 px-2 py-1 text-center">220円（税込）</td>
+                                                    <td class="border border-gray-300 px-2 py-1 text-center">220円（税込）</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-gray-300 px-2 py-1">5万円以上</td>
+                                                    <td class="border border-gray-300 px-2 py-1 text-center">440円（税込）</td>
+                                                    <td class="border border-gray-300 px-2 py-1 text-center">550円（税込）</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="text-xs mt-2 space-y-1">
+                                        <p>A：セブンイレブン</p>
+                                        <p>B：ローソン、ファミリーマート、ミニストップ、セイコーマート、デイリーヤマザキ、ポプラ、MMK設置店</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-xs space-y-2">
+                                    <p>※30万円を超えるお支払いの場合、コンビニエンストアではお取り扱いできません。ゆうちょ銀行（郵便局）でお支払いください。</p>
+                                    <p>※10万円を超える現金によるゆうちょ銀行（郵便局）からのお振込みは、本人確認のために運転免許証・健康保険証等が必要となります。</p>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-medium mb-2">代金引換払い（商品お届け時払い）</h4>
+                                    <div class="text-xs space-y-1">
+                                        <p>・商品お届け時に商品と交換で、配達員に現金にて代金をお支払いください。なお、お支払いは一括払いのみとなります。</p>
+                                        <p>・代引手数料は無料です。</p>
+                                        <p>・50万円を超えるお取引では利用できません。</p>
+                                        <p>・お申込者とお届け先が異なる場合にはご利用いただけません。</p>
+                                        <p>・なお、代金引換払いがご利用いただけない地域がございます。<a href="mailto:cs@iei.co.jp" class="text-blue-600 hover:text-blue-800 underline">詳しくは弊社顧客サービスまでご確認ください。</a></p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-medium mb-2">■クレジットカードのご利用に関して</h4>
+                                    <div class="text-xs space-y-2">
+                                        <p>下記カード会社のマークがプリントされているカードをご利用いただけます。ご利用の際にはカード番号/有効期限/お支払い方法をご指定ください。</p>
+                                        
+                                        <!-- クレジットカードロゴ（一旦ヘッダーロゴで代用） -->
+                                        <div class="flex flex-wrap gap-2 my-3">
+                                            <img src="/public/img/logo.png" alt="クレジットカード" class="h-6 opacity-60">
+                                            <img src="/public/img/logo.png" alt="クレジットカード" class="h-6 opacity-60">
+                                            <img src="/public/img/logo.png" alt="クレジットカード" class="h-6 opacity-60">
+                                            <img src="/public/img/logo.png" alt="クレジットカード" class="h-6 opacity-60">
+                                        </div>
+                                        
+                                        <p>※上記のカードであっても海外発行のクレジットカードなど、発行形態によりご利用いただけない場合がございますので、あらかじめご了承ください。</p>
+                                        
+                                        <div class="space-y-1">
+                                            <p>ご利用可能なお支払い回数は以下のようになっております。</p>
+                                            <p>アメックス：1回払い / 分割払い（3・5・6・10・12・15・18・20・24回払い）</p>
+                                            <p>ダイナース：1回払い / リボ払い</p>
+                                            <p>その他のカード：1回払い / リボ払い / 分割払い（2・3・5・6・10・12・15・18・20・24回払い）</p>
+                                            <p>※分割払いおよびリボ払いの場合は各カード会社規定の分割手数料がかかります。</p>
+                                        </div>
+                                        
+                                        <div class="mt-3">
+                                            <p class="font-medium">【ご注意】</p>
+                                            <p>デビットカードのご利用は、リスクをご理解の上、お客様の責任のもとでご利用いただきますようお願いいたします。</p>
+                                            <a href="mailto:cs@iei.co.jp" class="text-blue-600 hover:text-blue-800 underline">詳しくはこちらをご覧ください。</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- ページトップボタン -->
         <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
             <a href="#" class="block bg-moomin hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
@@ -648,6 +1160,40 @@
                 }
             });
         });
+
+        // アコーディオン機能
+        function toggleAccordion(sectionId) {
+            const content = document.getElementById(sectionId + '-content');
+            const arrow = document.getElementById(sectionId + '-arrow');
+            
+            // 他のアコーディオンを閉じる
+            const allContents = document.querySelectorAll('[id$="-content"]');
+            const allArrows = document.querySelectorAll('[id$="-arrow"]');
+            
+            allContents.forEach(function(otherContent) {
+                if (otherContent.id !== sectionId + '-content' && !otherContent.classList.contains('hidden')) {
+                    otherContent.classList.add('hidden');
+                }
+            });
+            
+            allArrows.forEach(function(otherArrow) {
+                if (otherArrow.id !== sectionId + '-arrow') {
+                    otherArrow.classList.remove('rotate-180');
+                }
+            });
+            
+            // 選択されたアコーディオンをトグル
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                arrow.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                arrow.classList.remove('rotate-180');
+            }
+        }
+
+        // グローバルスコープに関数を追加
+        window.toggleAccordion = toggleAccordion;
     });
 </script>
 </body>
