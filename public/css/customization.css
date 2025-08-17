@@ -20,6 +20,10 @@
 .c-bg-premico {
  background-color: #2C5282;
 }
+.c-bg-premico-50 {
+ background-color: #2C5282;
+ opacity: 0.9;
+}
 
 /* 電話番号カラー */
 .c-text-phone {
