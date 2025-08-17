@@ -134,19 +134,19 @@
                     <div class="flex flex-col md:flex-row items-center justify-center mb-4">
                         <div class="flex-1 max-w-md">
                             <a href="tel:0120-247-417" class="block md:hidden">
-                                <img src="/public/img/parts/moomin/green/btn_tel.png" 
+                                <img src="/public/img/products/51300/51325/btn_tel.png" 
                                     alt="お電話でのお申し込みはこちら" 
                                     class="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity">
                             </a>
                             <div class="hidden md:block">
-                                <img src="/public/img/parts/moomin/green/btn_tel.png" 
+                                <img src="/public/img/products/51300/51325/btn_tel.png" 
                                     alt="お電話でのお申し込みはこちら" 
                                     class="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity">
                             </div>
                         </div>
                         <div class="flex-1 max-w-md">
                             <a href="#price_area" class="block">
-                                <img src="/public/img/parts/moomin/green/btn_buy.png" 
+                                <img src="/public/img/products/51300/51325/btn_buy.png" 
                                     alt="購入する" 
                                     class="w-full h-auto cursor-pointer">
                             </a>
@@ -219,10 +219,10 @@
                 <div class="px-2 mb-3">
                     <!-- ギャラリータイトル(A) -->
                     <!-- <div class="text-center mb-2">
-                        <img src="/public/img/parts/moomin/green/pc_gallery_title.png" 
+                        <img src="/public/img/products/51300/51325/pc/pc_gallery_title.png" 
                             alt="ギャラリー" 
                             class="hidden md:inline-block max-w-full h-auto mx-2">
-                        <img src="/public/img/parts/moomin/green/sp_gallery_title.png" 
+                        <img src="/public/img/products/51300/51325/sp/sp_gallery_title.png" 
                             alt="ギャラリー" 
                             class="md:hidden max-w-full h-auto mx-2">
                     </div> -->
@@ -311,10 +311,10 @@
                 <div class="px-2 mb-8">
                     <!-- 価格タイトルバナー(A) -->
                     <!-- <div class="text-center">
-                        <img src="/public/img/parts/moomin/green/pc_price_title.png" 
+                        <img src="/public/img/products/51300/51325/pc/pc_price_title.png" 
                             alt="仕様／価格" 
                             class="hidden md:inline-block max-w-full h-auto mx-2">
-                        <img src="/public/img/parts/moomin/green/sp_price_title.png" 
+                        <img src="/public/img/products/51300/51325/sp/sp_price_title.png" 
                             alt="仕様／価格" 
                             class="md:hidden max-w-full h-auto mx-2">
                     </div> -->
@@ -556,7 +556,7 @@
 
 <!-- JavaScript -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="/public/js/common.js"></script>
+<!-- <script src="/public/js/common.js"></script> -->
 <script src="/public/js/product.js"></script>
 
 <script>
@@ -612,6 +612,42 @@
                 }
             });
         }
+
+        // スムーススクロール機能
+        const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+        smoothScrollLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const startPosition = window.pageYOffset;
+                    const distance = targetPosition - startPosition;
+                    const duration = 800;
+                    let start = null;
+
+                    window.requestAnimationFrame(step);
+
+                    function step(timestamp) {
+                        if (!start) start = timestamp;
+                        const progress = timestamp - start;
+                        const progressRatio = Math.min(progress / duration, 1);
+                        const easeInOutCubic = progressRatio < 0.5
+                            ? 4 * progressRatio * progressRatio * progressRatio
+                            : 1 - Math.pow(-2 * progressRatio + 2, 3) / 2;
+                        
+                        window.scrollTo(0, startPosition + distance * easeInOutCubic);
+                        
+                        if (progress < duration) {
+                            window.requestAnimationFrame(step);
+                        }
+                    }
+                }
+            });
+        });
     });
 </script>
 </body>
