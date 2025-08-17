@@ -22,7 +22,15 @@
 }
 .c-bg-premico-50 {
  background-color: #2C5282;
- opacity: 0.9;
+ opacity: 0.95;
+}
+
+/* セカンドカラー */
+.c-text-second {
+ color: #3e9aaf;
+}
+.c-bg-second {
+ background-color: #3e9aaf;
 }
 
 /* 電話番号カラー */
