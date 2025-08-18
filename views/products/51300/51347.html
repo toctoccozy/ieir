@@ -21,25 +21,48 @@
         <header>
             <!-- ヘッダー -->
             <div class="mx-auto bg-white border-b relative z-50">
-                <!-- ヘッダー上段 -->
                 <div class="px-4 pt-2">
                     <div class="flex items-center justify-between h-12">
-                        <!-- ハンバーガーメニュー（左） -->
-                        <div class="w-12 h-full hover:opacity-50 duration-200">
+                        <!-- スマホ: ハンバーガーメニュー（左） / PC: ロゴ（左） -->
+                        <div class="sm:hidden w-12 h-full hover:opacity-50 duration-200">
                             <button class="hamburger-button relative w-full h-full bg-transparent border-none z-70 cursor-pointer px-1 py-1" id="js-hamburger">
                                 <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </button>
                         </div>
-                        <!-- ロゴ（中央） -->
-                        <div class="flex-1 flex justify-center">
+                        
+                        <!-- スマホ: ロゴ（中央） / PC: ロゴ（左） -->
+                        <div class="flex-1 flex justify-center sm:flex-none sm:justify-start">
                             <a href="/">
-                                <img class="h-10" src="/public/img/parts/logo/premico_header.png" alt="PREMICO">
+                                <img class="w-36 h-auto" src="/public/img/parts/logo/logo_premico.png" alt="PREMICO">
                             </a>
                         </div>
-                        <!-- カート（右） -->
-                        <div class="w-12 flex justify-end">
+                        
+                        <!-- スマホ: カート（右） / PC: カート・利用ガイド・申込問い合わせ（右） -->
+                        <div class="w-12 flex justify-end sm:w-auto sm:flex sm:items-center sm:gap-4">
+                            <!-- PCのみ: 利用ガイド -->
+                            <a href="/" class="hidden sm:flex items-center gap-1 text-gray-800 hover:opacity-50 duration-200">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-xs text-gray-800">ご利用ガイド</span>
+                            </a>
+                            
+                            <!-- PCのみ: 申込・問い合わせ -->
+                            <div class="hidden sm:flex flex-col justify-center">
+                                <div class="c-text-xxs text-gray-800 tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
+                                <div class="flex justify-end items-center space-x-1 -mt-1">
+                                    <div class="w-5 h-5 bg-gray-800 rounded-full flex items-center justify-center">
+                                        <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-xl text-gray-800">0120-247-417</span>
+                                </div>
+                            </div>
+                            
+                            <!-- カート（スマホ・PC共通） -->
                             <a href="/cart" class="relative flex items-center text-gray-600 hover:opacity-50 duration-200">
                                 <div class="relative">
                                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,34 +74,13 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- ヘッダー下段 -->
-                <div class="flex items-center justify-between h-10 px-4 md:h-10">
-                    <!-- ストリートファイターロゴ（左） -->
-                    <div class="max-w-[50%]">
-                        <img class="max-h-8" src="/public/img/parts/logo/streetfighter_logo.png" alt="ストリートファイター">
-                    </div>
-                    
-                    <!-- 電話番号エリア（右） -->
-                    <div class="flex flex-col justify-center">
-                        <div class="text-xs c-text-phone tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
-                        <div class="flex justify-end items-center space-x-1 -mt-1">
-                            <div class="w-5 h-5 c-bg-phone rounded-full flex items-center justify-center">
-                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                                </svg>
-                            </div>
-                            <a href="tel:0120-247-417" class="text-2xl c-text-phone hover:opacity-80 duration-200">0120-247-417</a>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <!-- メニュー開いたとき -->
             <nav class="fixed left-0 top-0 w-4/5 md:w-3/5 h-screen -translate-x-full bg-white transition-transform duration-200 ease-in-out z-[999] shadow-xl" id="js-nav">
                 <!-- 固定ヘッダー（閉じるボタン） -->
                 <div class="fixed top-0 w-full h-16 bg-white border-b border-gray-100 flex items-center px-4 z-20">
-                    <button class="w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors" id="js-close-menu">
+                    <button class="w-8 h-8 bg-gray-100 hover:bg-white rounded-full flex items-center justify-center transition-colors" id="js-close-menu">
                         <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
@@ -319,15 +321,61 @@
                         <form method="post" name="form_cart" class="space-y-4 px-4">
                             <input type="hidden" name="item_no" value="51347">
                             <input type="hidden" name="amount1" value="1">
-                            <!-- サイズ選択 -->
+                            <!-- モデル・サイズ選択 -->
                             <div>
-                                <label for="model-select" class="block text-sm font-medium text-gray-700 mb-2">モデルをお選びください</label>
-                                <select id="model-select" name="m5mdl" class="md:text-sm w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent">
-                                    <option value="" disabled selected>モデル選択</option>
-                                    <option value="RYU">リュウモデル</option>
-                                    <option value="KEN">ケンモデル</option>
-                                    <option value="CHUNLI">春麗モデル</option>
-                                </select>
+                                <label class="block text-sm font-medium text-gray-700 mb-3">モデルをお選びください</label>
+                                <div class="space-y-3">
+                                    <!-- 春麗モデル -->
+                                    <div class="flex flex-col md:flex-row md:items-center gap-2 p-3 bg-gray-200 border border-gray-200 rounded-lg">
+                                        <div class="flex items-center">
+                                            <input type="checkbox" id="model-chunli" name="models[]" value="CHUNLI" class="w-4 h-4 border-gray-300 rounded focus:ring-blue-500 c-accent-premico">
+                                            <label for="model-chunli" class="ml-2 text-sm font-medium text-gray-700">春麗モデル</label>
+                                        </div>
+                                        <div class="flex items-center gap-2 md:ml-auto">
+                                            <label for="size-chunli" class="text-sm text-gray-600">サイズ:</label>
+                                            <select id="size-chunli" name="size_chunli" class="text-sm px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:border-transparent bg-white">
+                                                <option value="">サイズを選択</option>
+                                                <option value="S">S (約14cm)</option>
+                                                <option value="M">M (約16cm)</option>
+                                                <option value="L">L (約18cm)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- キャミィモデル -->
+                                    <div class="flex flex-col md:flex-row md:items-center gap-2 p-3 bg-gray-200 border border-gray-200 rounded-lg">
+                                        <div class="flex items-center">
+                                            <input type="checkbox" id="model-cammy" name="models[]" value="CAMMY" class="w-4 h-4 border-gray-300 rounded focus:ring-blue-500 c-accent-premico">
+                                            <label for="model-cammy" class="ml-2 text-sm font-medium text-gray-700">キャミィモデル</label>
+                                        </div>
+                                        <div class="flex items-center gap-2 md:ml-auto">
+                                            <label for="size-cammy" class="text-sm text-gray-600">サイズ:</label>
+                                            <select id="size-cammy" name="size_cammy" class="text-sm px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:border-transparent bg-white">
+                                                <option value="">サイズを選択</option>
+                                                <option value="S">S (約14cm)</option>
+                                                <option value="M">M (約16cm)</option>
+                                                <option value="L">L (約18cm)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- ジュリモデル -->
+                                    <div class="flex flex-col md:flex-row md:items-center gap-2 p-3 bg-gray-200 border border-gray-200 rounded-lg">
+                                        <div class="flex items-center">
+                                            <input type="checkbox" id="model-juri" name="models[]" value="JURI" class="w-4 h-4 border-gray-300 rounded focus:ring-blue-500 c-accent-premico">
+                                            <label for="model-juri" class="ml-2 text-sm font-medium text-gray-700">ジュリモデル</label>
+                                        </div>
+                                        <div class="flex items-center gap-2 md:ml-auto">
+                                            <label for="size-juri" class="text-sm text-gray-600">サイズ:</label>
+                                            <select id="size-juri" name="size_juri" class="text-sm px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:border-transparent bg-white">
+                                                <option value="">サイズを選択</option>
+                                                <option value="S">S (約14cm)</option>
+                                                <option value="M">M (約16cm)</option>
+                                                <option value="L">L (約18cm)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- カートにいれるボタン -->
                             <div class="md:w-[80%] mx-auto">
@@ -347,6 +395,49 @@
                                 <a href="#" class="text-iei-primary hover:text-iei-secondary underline transition-colors sm:text-sm">この商品をメールで問い合わせ</a>
                             </div>
                         </form>
+
+                        <script>
+                            // フォーム送信時のバリデーション
+                            document.addEventListener('DOMContentLoaded', function() {
+                                const form = document.querySelector('form[name="form_cart"]');
+                                const cartButton = form.querySelector('button');
+
+                                cartButton.addEventListener('click', function(e) {
+                                    e.preventDefault();
+                                    
+                                    // モデル選択チェック
+                                    const checkboxes = document.querySelectorAll('input[name="models[]"]');
+                                    let hasSelection = false;
+                                    let hasError = false;
+                                    
+                                    checkboxes.forEach(checkbox => {
+                                        if (checkbox.checked) {
+                                            hasSelection = true;
+                                            const modelId = checkbox.id.replace('model-', '');
+                                            const sizeSelect = document.getElementById('size-' + modelId);
+                                            
+                                            if (!sizeSelect.value) {
+                                                alert(checkbox.nextElementSibling.textContent + 'のサイズを選択してください。');
+                                                hasError = true;
+                                                return;
+                                            }
+                                        }
+                                    });
+
+                                    if (!hasSelection) {
+                                        alert('モデルを選択してください。');
+                                        return;
+                                    }
+
+                                    if (hasError) {
+                                        return;
+                                    }
+
+                                    // バリデーション通過後は通常のフォーム送信
+                                    form.submit();
+                                });
+                            });
+                        </script>
                     </div>
                 </div>
                 <!-- 仕様詳細 -->
@@ -375,8 +466,9 @@
                     <div class="mb-8">
                         <div class="bg-white rounded-lg p-6 shadow-sm">
                             <div class="flex items-center mb-4">
-                                <svg class="w-9 h-9 mr-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                <svg class="w-9 h-9 mr-4 c-text-second" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                                    <circle cx="12" cy="13" r="8"/>
+                                    <path d="M12 9L12 13M18 7L20 5M15 2L9 2"/>
                                 </svg>
                                 <h3 class="text-lg md:text-base font-bold text-gray-800">商品代金支払いのタイミングについて</h3>
                             </div>
@@ -421,8 +513,9 @@
                             <!-- C. 発送手数料 -->
                             <div class="bg-white rounded-lg p-6 shadow-sm">
                                 <div class="flex items-center mb-4">
-                                    <svg class="w-9 h-9 mr-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                    <svg class="w-9 h-9 mr-4 c-text-second" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                        <path d="M101.94,26.06l-.08,34L63.28,98.67c-2.2,2.2-4.39,3.32-6.51,3.32a10.18,10.18,0,0,1-6.84-3.33L29.34,78.06c-4.44-4.43-4.44-8.92,0-13.34L67.9,26.14l34-.08m10-10-48.22.12-41.5,41.5c-9.7,9.7-6.83,20.64,0,27.49l20.59,20.59A20,20,0,0,0,56.77,112c4.45,0,9.15-1.81,13.58-6.24l41.5-41.5L112,16Z"/>
+                                        <path d="M83.3,40.42a4.4,4.4,0,1,1-3.1,1.29,4.39,4.39,0,0,1,3.1-1.29m0-10a14.4,14.4,0,1,0,10.18,4.22A14.34,14.34,0,0,0,83.3,30.42Z"/>
                                     </svg>
                                     <h3 class="text-base font-bold text-gray-800">発送手数料</h3>
                                 </div>
@@ -444,7 +537,7 @@
                                                 <td class="border border-gray-300 px-3 py-2 text-center">2点以上</td>
                                                 <td class="border border-gray-300 px-3 py-2 text-center">1,320円（税込）</td>
                                             </tr>
-                                            <tr class="bg-gray-50">
+                                            <tr class="bg-gray-100">
                                                 <td class="border border-gray-300 px-3 py-2 font-medium">大型商品</td>
                                                 <td class="border border-gray-300 px-3 py-2 text-center">1点ごとに</td>
                                                 <td class="border border-gray-300 px-3 py-2 text-center">2,200円（税込）</td>
@@ -484,8 +577,11 @@
                             <div class="bg-white rounded-lg shadow-sm">
                                 <button class="w-full p-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion('delivery')">
                                     <div class="flex items-center">
-                                        <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        <svg class="w-5 h-5 mr-3 c-text-second" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                            <path d="M116.683,354.34c-26.836,0-48.607,21.764-48.607,48.6c0,26.85,21.771,48.614,48.607,48.614c26.844,0,48.608-21.764,48.608-48.614C165.29,376.104,143.526,354.34,116.683,354.34z M116.683,424.826c-12.08,0-21.872-9.799-21.872-21.886c0-12.073,9.792-21.865,21.872-21.865c12.08,0,21.872,9.792,21.872,21.865C138.554,415.027,128.762,424.826,116.683,424.826z"/>
+                                            <path d="M403.8,354.34c-26.836,0-48.6,21.764-48.6,48.6c0,26.85,21.764,48.614,48.6,48.614c26.843,0,48.606-21.764,48.606-48.614C452.406,376.104,430.643,354.34,403.8,354.34z M403.8,424.826c-12.073,0-21.865-9.799-21.865-21.886c0-12.073,9.792-21.865,21.865-21.865c12.079,0,21.871,9.792,21.871,21.865C425.671,415.027,415.879,424.826,403.8,424.826z"/>
+                                            <path d="M200.127,128.622H90.502c-3.561,0-6.957,1.582-9.23,4.331l-78.48,94.163C0.986,229.268,0,231.994,0,234.815v82.595v43.189c0,6.648,5.389,12.029,12.03,12.029h36.844c11.626-25.9,37.621-44.024,67.81-44.024c30.196,0,56.183,18.124,67.81,44.024h27.671V140.652C212.163,134.003,206.767,128.622,200.127,128.622z"/>
+                                            <path d="M497.568,60.446H252.043c-7.964,0-14.425,6.46-14.425,14.432v226.703c0,7.972,6.461,14.432,14.425,14.432h245.525c7.971,0,14.432-6.46,14.432-14.432V74.878C512,66.906,505.539,60.446,497.568,60.446z"/>
                                         </svg>
                                         <h3 class="text-base font-bold text-gray-800">お届け</h3>
                                     </div>
@@ -510,8 +606,9 @@
                             <div class="bg-white rounded-lg shadow-sm">
                                 <button class="w-full p-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion('shipping')">
                                     <div class="flex items-center">
-                                        <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                        <svg class="w-5 h-5 mr-3 c-text-second" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                            <path d="M101.94,26.06l-.08,34L63.28,98.67c-2.2,2.2-4.39,3.32-6.51,3.32a10.18,10.18,0,0,1-6.84-3.33L29.34,78.06c-4.44-4.43-4.44-8.92,0-13.34L67.9,26.14l34-.08m10-10-48.22.12-41.5,41.5c-9.7,9.7-6.83,20.64,0,27.49l20.59,20.59A20,20,0,0,0,56.77,112c4.45,0,9.15-1.81,13.58-6.24l41.5-41.5L112,16Z"/>
+                                            <path d="M83.3,40.42a4.4,4.4,0,1,1-3.1,1.29,4.39,4.39,0,0,1,3.1-1.29m0-10a14.4,14.4,0,1,0,10.18,4.22A14.34,14.34,0,0,0,83.3,30.42Z"/>
                                         </svg>
                                         <h3 class="text-base font-bold text-gray-800">発送手数料</h3>
                                     </div>
@@ -538,7 +635,7 @@
                                                     <td class="border border-gray-300 px-3 py-2 text-center">2点以上</td>
                                                     <td class="border border-gray-300 px-3 py-2 text-center">1,320円（税込）</td>
                                                 </tr>
-                                                <tr class="bg-gray-50">
+                                                <tr class="bg-gray-100">
                                                     <td class="border border-gray-300 px-3 py-2 font-medium">大型商品</td>
                                                     <td class="border border-gray-300 px-3 py-2 text-center">1点ごとに</td>
                                                     <td class="border border-gray-300 px-3 py-2 text-center">2,200円（税込）</td>
@@ -557,8 +654,8 @@
                             <div class="bg-white rounded-lg shadow-sm">
                                 <button class="w-full p-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion('contact')">
                                     <div class="flex items-center">
-                                        <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                        <svg class="w-5 h-5 mr-3 c-text-second" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                            <path d="M165.038,106.71 L156.772032,113.05581 L156.191363,113.585364 C151.004556,118.377839 146.876423,123.885164 143.786922,130.092721 C141.51654,134.630213 139.592628,141.02803 138.309261,149.377248 L80,149.377256 L150.11448,209.47533 C141.366891,219.139172 136.843212,230.90732 136.843212,244.908876 C136.843212,247.503027 136.988305,250.014916 137.275115,252.446011 L42.6666667,170.710589 L42.6666667,362.710589 L341.333333,362.710589 L341.333333,170.710589 L242.592094,256.016904 C243.201772,252.637604 243.509878,249.104725 243.509878,245.415472 C243.509878,231.969501 239.477066,220.644723 231.777234,211.283609 L304,149.377256 L263.368151,149.37771 C277.809561,138.431104 287.979291,127.989133 294.288724,118.41053 C296.719678,114.720001 298.832043,110.821517 300.611881,106.710516 L384,106.710589 L384,405.377256 L1.42108547e-14,405.377256 L1.42108547e-14,106.710589 L165.038,106.71 Z M193.310118,298.593378 L192,299.723922 L190.772231,298.662413 C191.626926,298.655851 192.472874,298.632807 193.310118,298.593378 Z M192.087825,213.333333 C201.319182,213.333333 208.946194,216.372881 214.969092,222.452067 C220.991989,228.531253 224.003392,236.186409 224.003392,245.417766 C224.003392,254.536545 220.991989,262.135414 214.969092,268.2146 C208.946194,274.293786 201.319182,277.333333 192.087825,277.333333 C182.631313,277.333333 174.919869,274.293786 168.953261,268.2146 C162.986652,262.135414 160.003392,254.367681 160.003392,244.91117 C160.003392,235.904968 163.04294,228.390531 169.122126,222.367634 C175.201312,216.344737 182.856469,213.333333 192.087825,213.333333 Z"/>
                                         </svg>
                                         <h3 class="text-base font-bold text-gray-800">お問い合わせ</h3>
                                     </div>
@@ -589,8 +686,10 @@
                             <div class="bg-white rounded-lg shadow-sm">
                                 <button class="w-full p-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion('payment')">
                                     <div class="flex items-center">
-                                        <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                        <svg class="w-5 h-5 mr-3 c-text-second" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="3" y="6" width="18" height="13" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3 10H20.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7 15H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                         <h3 class="text-base font-bold text-gray-800">お支払い</h3>
                                     </div>
@@ -624,7 +723,7 @@
                                                         <tr class="bg-gray-100">
                                                             <th class="border border-gray-300 px-2 py-1 text-center" colspan="3">ゆうちょ銀行（郵便局）</th>
                                                         </tr>
-                                                        <tr class="bg-gray-50">
+                                                        <tr class="bg-gray-100">
                                                             <th class="border border-gray-300 px-2 py-1"></th>
                                                             <th class="border border-gray-300 px-2 py-1 text-center">窓口</th>
                                                             <th class="border border-gray-300 px-2 py-1 text-center">ATM</th>
@@ -649,7 +748,7 @@
                                                         <tr class="bg-gray-100">
                                                             <th class="border border-gray-300 px-2 py-1 text-center" colspan="3">コンビニ払い</th>
                                                         </tr>
-                                                        <tr class="bg-gray-50">
+                                                        <tr class="bg-gray-100">
                                                             <th class="border border-gray-300 px-2 py-1"></th>
                                                             <th class="border border-gray-300 px-2 py-1 text-center">A</th>
                                                             <th class="border border-gray-300 px-2 py-1 text-center">B</th>
@@ -770,7 +869,7 @@
                                                     <tr class="bg-gray-100">
                                                         <th class="border border-gray-300 px-2 py-1 text-center" colspan="3">ゆうちょ銀行（郵便局）</th>
                                                     </tr>
-                                                    <tr class="bg-gray-50">
+                                                    <tr class="bg-gray-100">
                                                         <th class="border border-gray-300 px-2 py-1"></th>
                                                         <th class="border border-gray-300 px-2 py-1 text-center">窓口</th>
                                                         <th class="border border-gray-300 px-2 py-1 text-center">ATM</th>
@@ -795,7 +894,7 @@
                                                     <tr class="bg-gray-100">
                                                         <th class="border border-gray-300 px-2 py-1 text-center" colspan="3">コンビニ払い</th>
                                                     </tr>
-                                                    <tr class="bg-gray-50">
+                                                    <tr class="bg-gray-100">
                                                         <th class="border border-gray-300 px-2 py-1"></th>
                                                         <th class="border border-gray-300 px-2 py-1 text-center">A</th>
                                                         <th class="border border-gray-300 px-2 py-1 text-center">B</th>
