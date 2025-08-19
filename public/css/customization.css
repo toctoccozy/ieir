@@ -80,10 +80,30 @@
  font-family: 'Playfair Display', serif;
 }
 
-
-
-
-
+.c-bg-kitty {
+ background-color: #d65db1;
+}
+.c-bg-snoopy {
+ background-color : #f6eb4d;
+}
+.c-text-snoopy {
+ color: #e53631;
+}
+.c-bg-collection-jwelly {
+ background-color : #9861c8;
+}
+.c-bg-collection-ladies {
+ background-color : #cc3d3d;
+}
+.c-bg-collection-mens {
+ background-color : #2f2f2f;
+}
+.c-bg-collection-coin {
+ background-color : #ae9447;
+}
+.c-bg-collection-gallery {
+ background-color : #743f09;
+}
 
 
 
