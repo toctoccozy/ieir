@@ -25,7 +25,7 @@
             <!-- ヘッダー -->
             <div class="mx-auto bg-white border-b relative z-50">
                 <!-- ヘッダー上段 -->
-                <div class="px-4 pt-2">
+                <div class="px-2 pt-2">
                     <div class="flex items-center justify-between h-12">
                         <!-- ハンバーガーメニュー（左） -->
                         <div class="w-12 h-full hover:opacity-50 duration-200">
@@ -153,7 +153,7 @@
             <!-- 商品リストエリア -->
             <section class="px-6">
                 <div class="">
-                    <p class="ml-5 text-sm text-gray-600 mb-6">全24件中　1〜4件を表示</p>
+                    <p class="text-sm sm:text-xs text-gray-600 mb-6 text-right">全24件を表示</p>
                 </div>
                 
                 <ul class="">
@@ -182,7 +182,7 @@
                                 </div>
                             </div>
                         </div>
-                        <span class="block border-b c-border-moomin-green my-2 mb-6"></span>
+                        <span class="block border-b c-border-moomin-green my-2 mb-6 md:my-8"></span>
                     </li>
 
                     <li class="bg-white overflow-hidden duration-200">
@@ -209,7 +209,7 @@
                                 </div>
                             </div>
                         </div>
-                        <span class="block border-b c-border-moomin-green my-2 mb-6"></span>
+                        <span class="block border-b c-border-moomin-green my-2 mb-6 md:my-8"></span>
                     </li>
 
                     <li class="bg-white overflow-hidden duration-200">
@@ -236,7 +236,7 @@
                                 </div>
                             </div>
                         </div>
-                        <span class="block border-b c-border-moomin-green my-2 mb-6"></span>
+                        <span class="block border-b c-border-moomin-green my-2 mb-6 md:my-8"></span>
                     </li>
 
                     <li class="bg-white overflow-hidden duration-200">
@@ -270,7 +270,7 @@
 
         <!-- ページトップボタン -->
         <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
-            <a href="#" class="block bg-moomin hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+            <a href="#" class="block c-bg-moomin-green hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
                 ↑
             </a>
         </div>
@@ -403,7 +403,6 @@
 
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="/public/js/common.js"></script>
     <script src="/public/js/product.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
@@ -574,6 +573,25 @@
         }
     }
     </style>
+    
+    <script>
+    // ページトップボタン
+    const pagetop = document.getElementById('pagetop');
+    if (pagetop) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                pagetop.classList.remove('hidden');
+            } else {
+                pagetop.classList.add('hidden');
+            }
+        });
+        
+        pagetop.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+    </script>
 </body>
 </html>
 

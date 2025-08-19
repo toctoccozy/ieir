@@ -32,6 +32,9 @@
 .c-bg-second {
  background-color: #3e9aaf;
 }
+.c-border-second {
+ border-color: #3e9aaf;
+}
 
 /* 電話番号カラー */
 .c-text-phone {
@@ -56,7 +59,26 @@
  accent-color: #2C5282;
 }
 
+/* セカンドカラーのグラデーション */
+.c-bg-second-gradient {
+ background: linear-gradient(135deg, #3e9aaf 0%, #5ec5dc 50%, #3e9aaf 100%);
+}
+.c-bg-second-gradient-2 {
+ background: linear-gradient(90deg, #3e9aaf 0%, #5ec5dc 25%, #5ec5dc 75%, #3e9aaf 100%);
+}
 
+/* プレミコグラデーション */
+.c-bg-premico-gradient {
+ background: linear-gradient(135deg, #2C5282 0%, #3e6fa7 50%, #2C5282 100%);
+}
+.c-bg-premico-gradient-2 {
+ background: linear-gradient(90deg, #1e3a5f 0%, #2C5282 25%, #3e6fa7 75%, #2C5282 100%);
+}
+
+
+.c-font-family-title {
+ font-family: 'Playfair Display', serif;
+}
 
 
 
