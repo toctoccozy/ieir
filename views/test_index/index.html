@@ -113,8 +113,8 @@
 </head>
 
 <body class="bg-white">
-    <div class="min-h-screen mw-full mx-auto">
-        <header>
+    <div class="min-h-screen mw-full">
+        <header class="pb-6 mx-auto xl:w-[80%]">
             <!-- ヘッダー -->
             <div class="mx-auto bg-white border-b relative z-50 h-20">
                 <!-- ヘッダー上段 -->
@@ -372,8 +372,8 @@
             </nav>
         </header>
 
-        <!-- メインコンテンツ -->
-        <main class="pb-6">
+        <!-- スライダー＆検索窓 -->
+        <div class="w-full mx-auto">
             <!-- スライダーセクション -->
             <section class="pt-4">
                 <!-- メインスライダー -->
@@ -481,9 +481,9 @@
                     </a>
                 </div>
             </section>
+        </div>
 
-
-
+        <main class="pb-6 px-1 mx-auto xl:w-[80%]">
             <!-- 新着のお知らせセクション -->
             <section class="py-6 px-2 md:flex md:items-start">
                 <h2 class="mb-6 text-center md:flex md:items-center">
@@ -596,7 +596,7 @@
             </section>
 
             <!-- PickUpセクション -->
-            <section class="py-6 px-1">
+            <section class="py-6 ">
                 <h2 class="mb-6 text-center md:flex md:items-center">
                     <div class="flex items-center justify-center mb-2">
                         <div class="flex-1 h-px bg-gray-300 md:hidden"></div>
@@ -682,7 +682,7 @@
             </section>
 
             <!-- お電話でのお申込/お問い合わせセクション -->
-            <section class="py-2 px-2 flex flex-col gap-4 lg:mx-8">
+            <section class="py-2 flex flex-col gap-4 lg:mx-8">
                 <div class="md:m-6 flex flex-col md:flex-row items-center md:justify-around c-bg-second-gradient rounded-lg p-6 text-white text-center shadow-lg">
                     <div class="md:text-left">
                         <p class="text-base font-medium">お電話でのお申込／お問い合わせ</p>
@@ -698,7 +698,7 @@
             </section>
 
             <!-- カテゴリーセクション -->
-            <section class="py-6 px-1">
+            <section class="py-6">
                 <h2 class="mb-6 text-center md:flex md:items-center">
                     <div class="flex items-center justify-center mb-2">
                         <div class="flex-1 h-px bg-gray-300 md:hidden"></div>
@@ -714,10 +714,10 @@
                     <!-- IEIとはグリッド -->
                     <div class="bg-white overflow-hidden flex items-center">
                         <div class="border rounded-lg c-border-second">
-                            <div class="lg:flex mt-1 flex-col items-center p-1 hidden">
+                            <!-- <div class="lg:flex mt-1 flex-col items-center p-1 hidden">
                                 <img class="h-10" src="/public/img/parts/logo/logo_iei.jpg" alt="I･E･I">
-                            </div>
-                            <p class="text-sm text-gray-700 leading-tight p-4 lg:pt-0">
+                            </div> -->
+                            <p class="text-sm md:text-xs text-gray-700 leading-tight p-4">
                                 当サイトでは、"他では決して手に入らない"というオリジナリティにこだわったユニークな商品を多数取り揃え、ハウスブランドや特集ページを通じてお客様にご提案しております。<br>
                                 皆様の暮らしと心にゆとりと潤いそして感動を提供したいというのが私達の最大の願いです。
                             </p>
@@ -730,7 +730,7 @@
                             <div class="p-2">
                                 <img src="/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                             </div>
-                            <div class="px-2">
+                            <div class="">
                                 <img src="/public/img/top/categories001.jpg" alt="スヌーピー" class="w-full aspect-square object-cover">
                             </div>
                             <div class="p-3">
@@ -745,7 +745,7 @@
                             <div class="p-2">
                                 <img src="/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                             </div>
-                            <div class="px-2">
+                            <div class="">
                                 <img src="/public/img/top/categories002.jpg" alt="ムーミン" class="w-full aspect-square object-cover">
                             </div>
                             <div class="p-3">
@@ -760,7 +760,7 @@
                             <div class="p-2">
                                 <img src="/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                             </div>
-                            <div class="px-2">
+                            <div class="">
                                 <img src="/public/img/top/categories003.jpg" alt="ハローキティ" class="w-full aspect-square object-cover">
                             </div>
                             <div class="p-3">
@@ -775,7 +775,7 @@
                             <div class="p-2">
                                 <img src="/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                             </div>
-                            <div class="px-2">
+                            <div class="">
                                 <img src="/public/img/top/categories004.jpg" alt="女性アパレル・雑貨" class="w-full aspect-square object-cover">
                             </div>
                             <div class="p-3">
@@ -790,7 +790,7 @@
                             <div class="p-2">
                                 <img src="/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                             </div>
-                            <div class="px-2">
+                            <div class="">
                                 <img src="/public/img/top/categories005.jpg" alt="女性ジュエリー" class="w-full aspect-square object-cover">
                             </div>
                             <div class="p-3">
@@ -805,7 +805,7 @@
                             <div class="p-2">
                                 <img src="/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                             </div>
-                            <div class="px-2">
+                            <div class="">
                                 <img src="/public/img/top/categories006.jpg" alt="男性アパレル・雑貨" class="w-full aspect-square object-cover">
                             </div>
                             <div class="p-3">
@@ -820,7 +820,7 @@
                             <div class="p-2">
                                 <img src="/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                             </div>
-                            <div class="px-2">
+                            <div class="">
                                 <img src="/public/img/top/categories007.jpg" alt="コイン・切手" class="w-full aspect-square object-cover">
                             </div>
                             <div class="p-3">
@@ -835,7 +835,7 @@
                             <div class="p-2">
                                 <img src="/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                             </div>
-                            <div class="px-2">
+                            <div class="">
                                 <img src="/public/img/top/categories008.jpg" alt="インテリア・美術工芸品" class="w-full aspect-square object-cover">
                             </div>
                             <div class="p-3">
@@ -850,7 +850,7 @@
                             <div class="p-2">
                                 <img src="/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                             </div>
-                            <div class="px-2">
+                            <div class="">
                                 <img src="/public/img/top/categories009.jpg" alt="プレミコ" class="w-full aspect-square object-cover">
                             </div>
                             <div class="p-3">
@@ -865,7 +865,7 @@
                             <div class="p-2">
                                 <img src="/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                             </div>
-                            <div class="px-2">
+                            <div class="">
                                 <img src="/public/img/top/categories010.jpg" alt="座る椅子を快適に" class="w-full aspect-square object-cover">
                             </div>
                             <div class="p-3">
@@ -880,7 +880,7 @@
                             <div class="p-2">
                                 <img src="/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                             </div>
-                            <div class="px-2">
+                            <div class="">
                                 <img src="/public/img/top/categories011.jpg" alt="ガーデン商品" class="w-full aspect-square object-cover">
                             </div>
                             <div class="p-3">
@@ -895,7 +895,7 @@
                             <div class="p-2">
                                 <img src="/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                             </div>
-                            <div class="px-2">
+                            <div class="">
                                 <img src="/public/img/top/categories012.jpg" alt="ヨーロッパからの贈り物" class="w-full aspect-square object-cover">
                             </div>
                             <div class="p-3">
@@ -910,7 +910,7 @@
                             <div class="p-2">
                                 <img src="/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                             </div>
-                            <div class="px-2">
+                            <div class="">
                                 <img src="/public/img/top/categories013.jpg" alt="旅！EVERYDAY" class="w-full aspect-square object-cover">
                             </div>
                             <div class="p-3">
@@ -925,7 +925,7 @@
                             <div class="p-2">
                                 <img src="/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                             </div>
-                            <div class="px-2">
+                            <div class="">
                                 <img src="/public/img/top/categories014.jpg" alt="睡眠をもっと心地よく" class="w-full aspect-square object-cover">
                             </div>
                             <div class="p-3">
@@ -940,7 +940,7 @@
                             <div class="p-2">
                                 <img src="/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                             </div>
-                            <div class="px-2">
+                            <div class="">
                                 <img src="/public/img/top/categories015.jpg" alt="おしゃれな喪服の専門通販" class="w-full aspect-square object-cover">
                             </div>
                             <div class="p-3">
@@ -952,7 +952,7 @@
             </section>
 
             <!-- 新聞・雑誌に掲載中の商品セクション -->
-            <section class="py-6 px-1">
+            <section class="py-6">
                 <h2 class="mb-6 text-center md:flex md:items-center">
                     <div class="flex items-center justify-center mb-2">
                         <div class="flex-1 h-px bg-gray-300 md:hidden"></div>
