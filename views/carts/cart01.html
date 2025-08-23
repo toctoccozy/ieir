@@ -52,70 +52,71 @@
     <div class="min-h-screen mw-full">
         <header class="pb-6 mx-auto xl:w-[80%]">
             <!-- ヘッダー -->
-            <div class="mx-auto bg-white border-b relative z-50 h-20">
+            <div class="mx-auto bg-white border-b relative z-50 h-24">
                 <!-- ヘッダー上段 -->
                 <div class="px-2 pt-2">
-                    <div class="flex items-center justify-between h-12">
+                    <div class="flex items-center justify-between h-12 lg:h-14">
                         <!-- ハンバーガーメニュー（左） -->
-                        <div class="w-12 h-full hover:opacity-50 duration-200">
+                        <div class="md:ml-2 w-12 h-full hover:opacity-50 duration-200">
                             <button class="hamburger-button relative w-full h-full bg-transparent border-none z-70 cursor-pointer px-1 py-1" id="js-hamburger">
                                 <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </button>
                         </div>
+
                         <!-- ロゴ（中央/左） -->
-                        <div class="flex-1 flex justify-center md:justify-start items-center gap-3">
+                        <div class="lg:ml-4 flex-1 flex justify-center lg:justify-start items-center gap-3 lg:mt-2">
                             <a href="/">
-                                <img class="h-10" src="/public/img/parts/logo/logo_iei.jpg" alt="I･E･I">
+                                <img class="h-12 w-auto lg:h-18 lg:w-auto" src="/public/img/parts/logo/logo_iei.jpg" alt="I･E･I">
                             </a>
                             <a href="/categories/premico" class="hover:opacity-70 transition-opacity duration-200">
-                                <img class="h-6" src="/public/img/parts/logo/logo_premico.png" alt="PREMICO">
+                                <img class="h-8 w-auto lg:h-18 lg:w-auto" src="/public/img/parts/logo/logo_premico.png" alt="PREMICO">
                             </a>
-                            <!-- md以上で下段のロゴを表示 -->
-                            <div class="hidden md:flex items-center gap-3 ml-4">
+                            <!-- lg以上で下のロゴを表示 -->
+                            <div class="hidden lg:flex items-center gap-3 ml-4">
                                 <a href="/categories/charaffine" class="hover:opacity-70 transition-opacity duration-200">
-                                    <img src="/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ" class="h-6 w-auto">
+                                    <img src="/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ" class="w-auto h-10">
                                 </a>
                                 <a href="/categories/moomin" class="hover:opacity-70 transition-opacity duration-200">
-                                    <img src="/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン" class="h-4 w-auto">
+                                    <img src="/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン" class="w-auto h-6">
                                 </a>
                                 <a href="/categories/snoopy" class="hover:opacity-70 transition-opacity duration-200">
-                                    <img src="/public/img/parts/logo/logo_snoopy.jpg" alt="スヌーピー" class="h-5 w-auto">
+                                    <img src="/public/img/parts/logo/logo_snoopy.jpg" alt="スヌーピー" class="w-auto h-10">
                                 </a>
                             </div>
                         </div>
                         <!-- ログイン・カート（右） -->
                         <div class="w-20 flex justify-end gap-2">
                             <a href="/login" class="flex items-center text-gray-600 hover:opacity-50 duration-200">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-8 h-8 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                                 </svg>
                             </a>
-                            <a href="/cart" class="relative flex items-center text-gray-600 hover:opacity-50 duration-200">
+                            <a href="/cart" class="mr-3 relative flex items-center text-gray-600 hover:opacity-50 duration-200">
                                 <div class="relative">
-                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg class="w-8 h-8 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5-5M17 21a2 2 0 100-4 2 2 0 000 4zM9 21a2 2 0 100-4 2 2 0 000 4z"></path>
                                     </svg>
-                                    <span class="absolute -top-1 -right-1 c-bg-premico text-white rounded-full h-4 w-4 flex items-center justify-center text-xs font-bold">1</span>
+                                    <span class="absolute -top-1 -right-1 c-bg-premico text-white rounded-full h-4 w-4 flex items-center justify-center text-xs font-bold">0</span>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- ヘッダー下段 - md未満のみ表示 -->
-                <div class="flex items-center justify-between h-5 px-4 sm:h-5 md:hidden">
+                <!-- ヘッダー下段 - lg未満のみ表示 -->
+                <div class="flex items-start justify-between h-8 px-4 sm:h-5 lg:hidden">
                     <!-- ブランドロゴエリア（中央） - md未満のみ表示 -->
-                    <div class="flex items-center justify-center gap-4 w-full md:hidden">
+                    <div class="flex items-center justify-center gap-4 w-full lg:hidden">
                         <a href="/categories/charaffine" class="hover:opacity-70 transition-opacity duration-200">
-                            <img src="/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ" class="h-6 w-auto">
+                            <img src="/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ" class="h-8 w-auto">
                         </a>
                         <a href="/categories/moomin" class="hover:opacity-70 transition-opacity duration-200">
-                            <img src="/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン" class="h-4 w-auto">
+                            <img src="/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン" class="h-6 w-auto">
                         </a>
                         <a href="/categories/snoopy" class="hover:opacity-70 transition-opacity duration-200">
-                            <img src="/public/img/parts/logo/logo_snoopy.jpg" alt="スヌーピー" class="h-5 w-auto">
+                            <img src="/public/img/parts/logo/logo_snoopy.jpg" alt="スヌーピー" class="h-8 w-auto">
                         </a>
                     </div>
                 </div>
