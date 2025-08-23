@@ -26,9 +26,9 @@
             <div class="mx-auto bg-white border-b relative z-50">
                 <!-- ヘッダー上段 -->
                 <div class="px-2 pt-2">
-                    <div class="flex items-center justify-between h-12">
+                    <div class="flex items-center justify-between h-12 md:h-14">
                         <!-- ハンバーガーメニュー（左） -->
-                        <div class="w-12 h-full hover:opacity-50 duration-200">
+                        <div class="md:ml-2 w-12 h-full hover:opacity-50 duration-200">
                             <button class="hamburger-button relative w-full h-full bg-transparent border-none z-70 cursor-pointer px-1 py-1" id="js-hamburger">
                                 <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
@@ -38,14 +38,14 @@
                         <!-- ロゴ（中央） -->
                         <div class="flex-1 flex justify-center">
                             <a href="/">
-                                <img class="h-10" src="/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ">
+                                <img class="w-36 h-auto md:w-60" src="/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ">
                             </a>
                         </div>
                         <!-- カート（右） -->
                         <div class="w-12 flex justify-end">
-                            <a href="/cart" class="relative flex items-center text-gray-600 hover:opacity-50 duration-200">
+                            <a href="/cart" class="mr-3 relative flex items-center text-gray-600 hover:opacity-50 duration-200">
                                 <div class="relative">
-                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg class="w-8 h-8 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5-5M17 21a2 2 0 100-4 2 2 0 000 4zM9 21a2 2 0 100-4 2 2 0 000 4z"></path>
                                     </svg>
                                     <span class="absolute -top-1 -right-1 c-bg-premico text-white rounded-full h-4 w-4 flex items-center justify-center text-xs font-bold">3</span>
@@ -56,22 +56,22 @@
                 </div>
                 
                 <!-- ヘッダー下段 -->
-                <div class="flex items-center justify-between h-14 px-4 md:h-10">
+                <div class="flex items-center justify-between h-10 px-4 md:h-16">
                     <!-- ムーミンロゴ（左） -->
                     <div class="max-w-[50%]">
-                        <img class="max-h-8" src="/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン">
+                        <img class="md:w-32 w-24 h-auto" src="/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン">
                     </div>
                     
                     <!-- 電話番号エリア（右） -->
                     <div class="flex flex-col justify-center">
-                        <div class="text-xs c-text-phone tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
+                        <div class="text-sm md:text-base c-text-phone tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
                         <div class="flex justify-end items-center space-x-1 -mt-1">
-                            <div class="w-5 h-5 c-bg-phone rounded-full flex items-center justify-center">
-                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <div class="w-5 h-5 md:w-8 md:h-8 c-bg-phone rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 md:w-5 md:h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                                 </svg>
                             </div>
-                            <a href="tel:0120-247-417" class="text-2xl c-text-phone hover:opacity-80 duration-200">0120-247-417</a>
+                            <a href="tel:0120-247-417" class="text-2xl md:text-3xl c-text-phone hover:opacity-80 duration-200">0120-247-417</a>
                         </div>
                     </div>
                 </div>
@@ -106,164 +106,86 @@
         </header>
 
         <!-- パンくずナビ -->
-        <nav class="bread-clumbs text-sm md:text-xs text-gray-600 mx-auto p-3 leading-snug tracking-tighter">
+        <nav class="bread-clumbs text-sm sm:text-base xl:w-[80%] text-gray-600 mx-auto p-3 leading-snug tracking-tighter">
             <a href="/categories/charaffine/" class="text-blue-800 hover:text-blue-400 transition-colors">キャラフィネ</a>
             <span class="mx-2">｜</span>
             <a href="/categories/moomin/" class="text-blue-800 hover:text-blue-400 transition-colors">ムーミン</a>
         </nav>
 
         <!-- スライダーエリア -->
-        <section id="slide-area" class="relative mb-12">
-            <ul class="slider01">
-                <li>
-                    <a href="/public/views/products/51300/51325.html" class="block transform hover:scale-105 transition-transform duration-200">
-                        <img src="/public/img/categories/moomin/slide04.jpg" alt="商品スライド1" class="w-full h-auto shadow-md">
-                    </a>
-                </li>
-                <li>
-                    <a href="/public/views/products/51300/51325.html" class="block transform hover:scale-105 transition-transform duration-200">
-                        <img src="/public/img/categories/moomin/slide05.jpg" alt="商品スライド2" class="w-full h-auto shadow-md">
-                    </a>
-                </li>
-                <li>
-                    <a href="/public/views/products/51300/51325.html" class="block transform hover:scale-105 transition-transform duration-200">
-                        <img src="/public/img/categories/moomin/slide06.jpg" alt="商品スライド3" class="w-full h-auto shadow-md">
-                    </a>
-                </li>
-                <li>
-                    <a href="/public/views/products/51300/51325.html" class="block transform hover:scale-105 transition-transform duration-200">
-                        <img src="/public/img/categories/moomin/slide04.jpg" alt="商品スライド1" class="w-full h-auto shadow-md">
-                    </a>
-                </li>
-                <li>
-                    <a href="/public/views/products/51300/51325.html" class="block transform hover:scale-105 transition-transform duration-200">
-                        <img src="/public/img/categories/moomin/slide05.jpg" alt="商品スライド2" class="w-full h-auto shadow-md">
-                    </a>
-                </li>
-                <li>
-                    <a href="/public/views/products/51300/51325.html" class="block transform hover:scale-105 transition-transform duration-200">
-                        <img src="/public/img/categories/moomin/slide06.jpg" alt="商品スライド3" class="w-full h-auto shadow-md">
-                    </a>
-                </li>
-            </ul>
-            <div class="arrow_box"></div>
+        <section id="slide-area" class="pt-4 mb-12">
+            <div class="main-slider">
+                <div class="slider-main">
+                    <div>
+                        <a href="/public/views/products/51300/51325.html">
+                            <img src="/public/img/categories/moomin/slide04.jpg" alt="商品スライド1" class="w-full h-auto">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/public/views/products/51300/51325.html">
+                            <img src="/public/img/categories/moomin/slide05.jpg" alt="商品スライド2" class="w-full h-auto">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/public/views/products/51300/51325.html">
+                            <img src="/public/img/categories/moomin/slide06.jpg" alt="商品スライド3" class="w-full h-auto">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/public/views/products/51300/51325.html">
+                            <img src="/public/img/categories/moomin/slide04.jpg" alt="商品スライド4" class="w-full h-auto">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/public/views/products/51300/51325.html">
+                            <img src="/public/img/categories/moomin/slide05.jpg" alt="商品スライド5" class="w-full h-auto">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/public/views/products/51300/51325.html">
+                            <img src="/public/img/categories/moomin/slide06.jpg" alt="商品スライド6" class="w-full h-auto">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <main class="pb-6 px-1 mx-auto xl:w-[80%]">
             <!-- 商品リストエリア -->
-            <section>
+            <section class="px-2 sm:px-4">
                 <div class="">
-                    <p class="text-sm sm:text-xs text-gray-600 mb-6 text-right">全24件を表示</p>
+                    <p class="text-sm sm:text-base text-gray-600 mb-6 text-right">全24件を表示</p>
                 </div>
                 
                 <ul class="">
                     <li class="bg-white overflow-hidden duration-200">
                         <div class="flex flex-col sm:flex-row">
-                            <div class="sm:w-[40%] p-6 sm:p-0">
+                            <div class="sm:w-[30%] p-8 sm:p-0">
                                 <!-- LPの価格の横の画像? -->
                                 <img src="/public/img/products/51300/51325/pc/price_img.jpg" 
                                     alt="商品画像" 
                                     class="w-full h-auto mx-auto">
                             </div>
-                            <div class="sm:w-[60%] p-0 sm:p-0">
+                            <div class="sm:w-[70%] p-0 sm:p-0">
                                 <dl>
-                                    <dt class="text-lg font-bold text-gray-800 mb-3 sm:text-base sm:leading-tigher">
+                                    <dt class="text-xl font-bold text-gray-800 mb-3 sm:text-2xl sm:leading-tigher">
                                         セイコー　スナフキン 釣り人の時間 オフィシャルライセンスウオッチ
                                     </dt>
-                                    <dd class="text-gray-600 leading-tigher sm:text-sm">
+                                    <dd class="text-gray-600 leading-tigher sm:text-lg">
                                         旅人スナフキンは、人生の達人。風の吹くまま気の向くまま、ふらりと旅に出ては、釣りをしたり、詩や曲をつくったり・・何ものにもとらわれない自由な生き方は、永遠の憧れです。そんなスナフキンと共有する豊かな時間をイメージした、スペシャルな腕時計が誕生しました。
                                     </dd>
                                 </dl>
                                 <div class="flex justify-center my-6">
                                     <a href="/views/products/51300/51325.html" 
-                                    class="inline-block c-bg-moomin-green hover:opacity-50 text-lg sm:text-sm text-white px-6 py-2 rounded-full transition-colors duration-200 font-medium">
+                                    class="inline-block c-bg-moomin-green hover:opacity-50 text-lg sm:text-xl text-white px-6 py-2 rounded-full transition-colors duration-200 font-medium">
                                         詳細はこちら
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <span class="block border-b c-border-moomin-green my-2 mb-6 md:my-8"></span>
+                        <span class="block border-b c-border-moomin-green my-2 mb-6 sm:my-8"></span>
                     </li>
 
-                    <li class="bg-white overflow-hidden duration-200">
-                        <div class="flex flex-col sm:flex-row">
-                            <div class="sm:w-[40%] p-6 sm:p-0">
-                                <img src="/public/img/products/51300/51325/pc/price_img.jpg" 
-                                    alt="商品画像" 
-                                    class="w-full h-auto mx-auto">
-                            </div>
-                            <div class="sm:w-[60%] p-0 sm:p-0">
-                                <dl>
-                                    <dt class="text-lg font-bold text-gray-800 mb-3 sm:text-base sm:leading-tigher">
-                                        ＜ムーミン谷のやすらぎ＞ 京染め工房の手染めのれん
-                                    </dt>
-                                    <dd class="text-gray-600 leading-tigher sm:text-sm">
-                                        「のれん」で楽しむムーミンの世界。光と影が戯れる軽やかな風情を楽しんで。森をゆくムーミンとリトルミイ、のんびりと釣りを楽しむスナフキン・・『ムーミン』に出てくる印象的な場面が、心なごむ2種類の「のれん」になりました。京都の熟練職人が一枚一枚手染めしたのれんは、そのまま飾るだけでムーミン谷さながらにお部屋の雰囲気を一新します。
-                                    </dd>
-                                </dl>
-                                <div class="flex justify-center my-6">
-                                    <a href="/views/products/51300/51325.html" 
-                                    class="inline-block c-bg-moomin-green hover:opacity-50 text-lg sm:text-sm text-white px-6 py-2 rounded-full transition-colors duration-200 font-medium">
-                                        詳細はこちら
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="block border-b c-border-moomin-green my-2 mb-6 md:my-8"></span>
-                    </li>
-
-                    <li class="bg-white overflow-hidden duration-200">
-                        <div class="flex flex-col sm:flex-row">
-                            <div class="sm:w-[40%] p-6 sm:p-0">
-                                <img src="/public/img/products/51300/51325/pc/price_img.jpg" 
-                                    alt="商品画像" 
-                                    class="w-full h-auto mx-auto">
-                            </div>
-                            <div class="sm:w-[60%] p-0 sm:p-0">
-                                <dl>
-                                    <dt class="text-lg font-bold text-gray-800 mb-3 sm:text-base sm:leading-tigher">
-                                        ミムラねえさん＆リトルミイ ふっくらかわいいランタン型バッグ
-                                    </dt>
-                                    <dd class="text-gray-600 leading-tigher sm:text-sm">
-                                        おしゃれなミムラねえさんとキュートなリトルミイ、ふたりの個性をかわいいフォルムに込めたバッグが誕生しました。一番上のミムラねえさんは面倒見のいいしっかり者、末っ子のリトルミイは好奇心が強くていたずら好き・・ムーミンの世界を彩るふたりの姿をジャカード織で表現。自分らしいおしゃれのかたち、ミムラねえさんとリトルミイの気分で楽しんで。
-                                    </dd>
-                                </dl>
-                                <div class="flex justify-center my-6">
-                                    <a href="/views/products/51300/51325.html" 
-                                    class="inline-block c-bg-moomin-green hover:opacity-50 text-lg sm:text-sm text-white px-6 py-2 rounded-full transition-colors duration-200 font-medium">
-                                        詳細はこちら
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="block border-b c-border-moomin-green my-2 mb-6 md:my-8"></span>
-                    </li>
-
-                    <li class="bg-white overflow-hidden duration-200">
-                        <div class="flex flex-col sm:flex-row">
-                            <div class="sm:w-[40%] p-6 sm:p-0">
-                                <img src="/public/img/products/51300/51325/pc/price_img.jpg" 
-                                    alt="商品画像" 
-                                    class="w-full h-auto mx-auto">
-                            </div>
-                            <div class="sm:w-[60%] p-0 sm:p-0">
-                                <dl>
-                                    <dt class="text-lg font-bold text-gray-800 mb-3 sm:text-base sm:leading-tigher">
-                                        スナフキン 星空のおさんぽ デニム調レザーのやわらか4Eコンフォートシューズ
-                                    </dt>
-                                    <dd class="text-gray-600 leading-tigher sm:text-sm">
-                                        星空の下、のんびり過ごすスナフキン。夜空のようなネイビーのデニム調レザーに瞬く星とスナフキンの姿を刺繍であしらったコンフォートシューズです。足にやさしい８つの機能性はもちろん、シックなカラーが幅広いコーディネートにマッチして、大人の上質カジュアルを演出します。
-                                    </dd>
-                                </dl>
-                                <div class="flex justify-center my-6">
-                                    <a href="/views/products/51300/51325.html" 
-                                    class="inline-block c-bg-moomin-green hover:opacity-50 text-lg sm:text-sm text-white px-6 py-2 rounded-full transition-colors duration-200 font-medium">
-                                        詳細はこちら
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
                 </ul>
             </section>
         </main>
@@ -281,9 +203,9 @@
         <!-- メインフッター -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 p-8">
             <!-- 会社情報 -->
-            <div class="sm:text-xs">
+            <div class="">
                 <h3 class="text-lg font-bold mb-4">インペリアル・エンタープライズ株式会社 I・E・I</h3>
-                <div class="space-y-2 text-sm text-gray-300">
+                <div class="space-y-2 text-gray-300">
                     <p>〒***-****<br>東京都荒川区東日暮里*******</p>
                     <p class="flex items-center space-x-2">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -298,7 +220,7 @@
             <!-- カテゴリリンク -->
             <div>
                 <h3 class="text-lg font-bold mb-4">商品カテゴリ</h3>
-                <ul class="space-y-1 text-sm text-gray-300">
+                <ul class="space-y-1 text-gray-300">
                     <li><a href="/categories/charaffine" class="hover:opacity-50 transition-colors">キャラフィネ</a></li>
                     <li><a href="/categories/moomin" class="hover:opacity-50 transition-colors">・ムーミン</a></li>
                     <li><a href="/categories/kitty" class="hover:opacity-50 transition-colors">・ハローキティ</a></li>
@@ -314,7 +236,7 @@
             <!-- サポート情報 -->
             <div>
                 <h3 class="text-lg font-bold mb-4">サポート</h3>
-                <ul class="space-y-1 text-sm text-gray-300">
+                <ul class="space-y-1 text-gray-300">
                     <li><a href="/guide/" class="hover:opacity-50  transition-colors">ご利用ガイド</a></li>
                     <li><a href="/guide/shipping" class="hover:opacity-50  transition-colors">送料・お届けについて</a></li>
                     <li><a href="/guide/payment" class="hover:opacity-50  transition-colors">お支払い方法</a></li>
@@ -462,114 +384,113 @@
         });
     </script>
     <script>
-    // ムーミンスライダー
+    // メインスライダー
     $(document).ready(function() {
-        // Slick slider
-        $('.slider01').slick({
+        $('.slider-main').slick({
             infinite: true,
             autoplay: true,
             autoplaySpeed: 4000,
             dots: true,
-            arrows: true, // PC版で矢印を表示
-            prevArrow: '<button type="button" class="slick-prev">＜</button>',
-            nextArrow: '<button type="button" class="slick-next">＞</button>',
-            centerMode: true, // センターモードで前後を見せる
-            centerPadding: '60px', // 前後のスライドの見える量
-            slidesToShow: 1, // メインは1枚表示
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev absolute left-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#78A962" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>',
+            nextArrow: '<button type="button" class="slick-next absolute right-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#78A962" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>',
+            centerMode: true,
+            centerPadding: '180px',
+            slidesToShow: 1,
             slidesToScroll: 1,
-            responsive: [{
-                breakpoint: 768, // md breakpoint
-                settings: {
-                    centerMode: false, // モバイルではセンターモードオフ
-                    centerPadding: '0px',
-                    slidesToShow: 1, // モバイルで1枚表示
-                    slidesToScroll: 1,
-                    dots: true,
-                    arrows: false, // モバイルで矢印非表示
-                    variableWidth: false
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        centerPadding: '20px',
+                        dots: true,
+                        arrows: false
+                    }
                 }
-            }]
+            ]
         });
     });
     </script>
     
     <style>
-    /* Slick矢印のカスタムスタイル */
-    .slick-prev,
-    .slick-next {
-        z-index: 10;
-        width: 36px;
-        height: 36px;
-        /* background: rgba(255, 255, 255, 0.9); */
-        border-radius: 50%;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        transition: all 0.3s ease;
-    }
-    
-    /* .slick-prev:hover,
-    .slick-next:hover {
-        background: #fff;
-        transform: scale(1.1);
-    } */
-    
-    .slick-prev {
-        left: 7px;
-    }
-    
-    .slick-next {
-        right: 16px;
-    }
-    
-    .slick-prev:before,
-    .slick-next:before {
-        color: #333;
-        font-size: 45px;
-        font-weight: bold;
-    }
-    
     /* PC版：スライド間のスペース */
-    .slick-slide {
-        margin: 0 0px;
-    }
-    
-    .slick-list {
-        margin: 0 -10px;
-    }
-    
-    /* センターモードの前後のスライドを半透明に */
-    .slick-slide:not(.slick-center) {
-        opacity: 0.5;
-        transform: scale(0.9);
-        transition: all 0.3s ease;
-    }
-    
-    .slick-slide.slick-center {
-        opacity: 1;
-        transform: scale(1);
-    }
-    
-    /* モバイル用調整 */
-    @media (max-width: 767px) {
-        /* モバイルでは矢印を完全に非表示 */
-        .slick-prev,
-        .slick-next {
-            display: none !important;
+    @media (min-width: 768px) {
+        .slider-main .slick-slide {
+            margin: 0 10px;
         }
         
-        /* モバイルではスライドを画面幅いっぱいに */
-        .slick-slide {
+        .slider-main .slick-list {
+            margin: 0 -10px;
+        }
+        
+        /* センターモードの前後のスライドを半透明に */
+        .slider-main .slick-slide:not(.slick-center) {
+            opacity: 0.6;
+            transform: scale(0.95);
+            transition: all 0.3s ease;
+        }
+        
+        .slider-main .slick-slide.slick-center {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    /* モバイルではスライドを画面幅いっぱいに */
+    @media (max-width: 767px) {
+        .slider-main .slick-slide {
             margin: 0;
             opacity: 1 !important;
             transform: scale(1) !important;
         }
         
-        .slick-list {
+        .slider-main .slick-list {
             margin: 0;
         }
-        
-        .slider01 img {
-            width: 100% !important;
-            max-width: 100% !important;
+    }
+    
+    /* ドットのスタイル調整 */
+    .slick-dots {
+        position: relative;
+        bottom: auto;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+    
+    .slick-dots li button:before {
+        font-size: 8px;
+        color: rgba(100, 100, 100, 0.8);
+    }
+    
+    .slick-dots li.slick-active button:before {
+        color: #78A962;
+    }
+    
+    @media (max-width: 767px) {
+        .slick-dots li {
+            margin: 0 1px;
+        }
+    }
+    
+    /* PC版ではドットを非表示 */
+    @media (min-width: 768px) {
+        .slick-dots {
+            display: none;
+        }
+    }
+    
+    /* デフォルトの矢印アイコンを非表示 */
+    .slick-prev:before,
+    .slick-next:before {
+        display: none !important;
+        content: '' !important;
+    }
+    
+    /* スマホ版では矢印を非表示 */
+    @media (max-width: 767px) {
+        .slider-main .slick-prev,
+        .slider-main .slick-next {
+            display: none !important;
         }
     }
     </style>

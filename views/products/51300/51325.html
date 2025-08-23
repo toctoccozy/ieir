@@ -18,14 +18,14 @@
 
 <body class="bg-white">
     <div class="min-h-screen mx-auto">
-        <header class="pb-6 mx-auto xl:w-[80%]">
+        <header class="pb-2 mx-auto xl:w-[80%]">
             <!-- ヘッダー -->
             <div class="mx-auto bg-white border-b relative z-50">
                 <!-- ヘッダー上段 -->
                 <div class="px-2 pt-2">
-                    <div class="flex items-center justify-between h-12">
+                    <div class="flex items-center justify-between h-12 md:h-14">
                         <!-- ハンバーガーメニュー（左） -->
-                        <div class="w-12 h-full hover:opacity-50 duration-200">
+                        <div class="md:ml-2 w-12 h-full hover:opacity-50 duration-200">
                             <button class="hamburger-button relative w-full h-full bg-transparent border-none z-70 cursor-pointer px-1 py-1" id="js-hamburger">
                                 <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
@@ -35,14 +35,14 @@
                         <!-- ロゴ（中央） -->
                         <div class="flex-1 flex justify-center">
                             <a href="/">
-                                <img class="h-10" src="/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ">
+                                <img class="w-36 h-auto md:w-60" src="/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ">
                             </a>
                         </div>
                         <!-- カート（右） -->
                         <div class="w-12 flex justify-end">
-                            <a href="/cart" class="relative flex items-center text-gray-600 hover:opacity-50 duration-200">
+                            <a href="/cart" class="mr-3 relative flex items-center text-gray-600 hover:opacity-50 duration-200">
                                 <div class="relative">
-                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg class="w-8 h-8 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5-5M17 21a2 2 0 100-4 2 2 0 000 4zM9 21a2 2 0 100-4 2 2 0 000 4z"></path>
                                     </svg>
                                     <span class="absolute -top-1 -right-1 c-bg-premico text-white rounded-full h-4 w-4 flex items-center justify-center text-xs font-bold">3</span>
@@ -53,22 +53,22 @@
                 </div>
                 
                 <!-- ヘッダー下段 -->
-                <div class="flex items-center justify-between h-10 px-4 md:h-10">
+                <div class="flex items-center justify-between h-10 px-4 md:h-16">
                     <!-- ムーミンロゴ（左） -->
                     <div class="max-w-[50%]">
-                        <img class="max-h-8" src="/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン">
+                        <img class="md:w-32 w-24 h-auto" src="/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン">
                     </div>
                     
                     <!-- 電話番号エリア（右） -->
                     <div class="flex flex-col justify-center">
-                        <div class="text-xs c-text-phone tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
+                        <div class="text-sm md:text-base c-text-phone tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
                         <div class="flex justify-end items-center space-x-1 -mt-1">
-                            <div class="w-5 h-5 c-bg-phone rounded-full flex items-center justify-center">
-                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <div class="w-5 h-5 md:w-8 md:h-8 c-bg-phone rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 md:w-5 md:h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                                 </svg>
                             </div>
-                            <a href="tel:0120-247-417" class="text-2xl c-text-phone hover:opacity-80 duration-200">0120-247-417</a>
+                            <a href="tel:0120-247-417" class="text-2xl md:text-3xl c-text-phone hover:opacity-80 duration-200">0120-247-417</a>
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
         </header>
 
         <!-- パンくずナビ -->
-        <nav class="bread-clumbs text-sm sm:text-xs xl:w-[80%] text-gray-600 mx-auto p-3 leading-snug tracking-tighter">
+        <nav class="bread-clumbs text-sm sm:text-base xl:w-[80%] text-gray-600 mx-auto p-3 leading-snug tracking-tighter">
             <a href="/categories/charaffine/" class="text-blue-800 hover:text-blue-400 transition-colors">キャラフィネ</a>
             <span class="mx-2">｜</span>
             <a href="/categories/moomin/" class="text-blue-800 hover:text-blue-400 transition-colors">ムーミン</a>
@@ -120,19 +120,19 @@
                         <!-- PC版キービジュアル（md以上で表示） -->
                         <img src="/public/img/products/51300/51325/pc/pc_keyvisual.jpg" 
                             alt="スナフキン 釣り人の時間　限定版オフィシャルライセンスウオッチ" 
-                            class="hidden md:block w-full max-w-4xl mx-auto h-auto">
+                            class="hidden md:block w-full mx-auto h-auto">
                         <!-- SP版キービジュアル（md未満で表示） -->
                         <img src="/public/img/products/51300/51325/sp/sp_keyvisual.jpg" 
                             alt="スナフキン 釣り人の時間　限定版オフィシャルライセンスウオッチ" 
-                            class="md:hidden w-full max-w-md mx-auto h-auto">
+                            class="md:hidden w-full mx-auto h-auto">
                     </h1>
                 </div>
                 
                 <!-- 購入ボタン 画像がある場合は画像優先(A)、ない場合は画像なし(B)にて -->
                 <div class="">
                     <!-- 購入ボタン(A)) -->
-                    <div class="flex flex-col md:flex-row items-center justify-center mb-4">
-                        <div class="flex-1 max-w-md">
+                    <div class="flex flex-col sm:flex-row items-center justify-center mb-4">
+                        <div class="flex-1">
                             <a href="tel:0120-247-417" class="block md:hidden">
                                 <img src="/public/img/products/51300/51325/btn_tel.png" 
                                     alt="お電話でのお申し込みはこちら" 
@@ -144,7 +144,7 @@
                                     class="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity">
                             </div>
                         </div>
-                        <div class="flex-1 max-w-md">
+                        <div class="flex-1">
                             <a href="#price_area" class="block">
                                 <img src="/public/img/products/51300/51325/btn_buy.png" 
                                     alt="購入する" 
@@ -154,14 +154,14 @@
                     </div>
 
                     <!-- 購入ボタン(B) -->
-                    <div class="mb-4 px-2 sm:max-w-md md:max-w-none mx-auto">
-                        <a href="#price_area" class="block bg-gradient-to-b from-[#ffd500] to-[#fea500] hover:opacity-70 text-white font-medium py-4 rounded-lg flex gap-8 items-center justify-center transition-all duration-200 shadow-md hover:shadow-lg">
+                    <div class="mb-4 px-2 mx-auto">
+                        <a href="#price_area" class="bg-gradient-to-b from-[#ffd500] to-[#fea500] hover:opacity-70 text-white font-medium py-4 rounded-lg flex gap-8 items-center justify-center transition-all duration-200 shadow-md hover:shadow-lg">
                             <span class="">
                                 <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </span>
-                            <span class="text-center text-lg font-bold">
+                            <span class="text-center text-lg sm:text-xl font-bold">
                                 カートへ移動
                             </span>
                             <span class="">
@@ -180,11 +180,11 @@
                         <img src="/public/img/products/51300/51325/pc/pc_lead.jpg" 
                             alt="商品説明" 
                             loading="lazy"
-                            class="hidden md:block w-full max-w-4xl mx-auto h-auto">
+                            class="hidden md:block w-full mx-auto h-auto">
                         <img src="/public/img/products/51300/51325/sp/sp_lead.jpg" 
                             alt="商品説明" 
                             loading="lazy"
-                            class="md:hidden w-full max-w-md mx-auto h-auto">
+                            class="md:hidden w-full mx-auto h-auto">
                     </div>
                     
                     <!-- 特徴1 -->
@@ -192,11 +192,11 @@
                         <img src="/public/img/products/51300/51325/pc/pc_feature01.jpg" 
                             alt="特徴1" 
                             loading="lazy"
-                            class="hidden md:block w-full max-w-4xl mx-auto h-auto">
+                            class="hidden md:block w-full mx-auto h-auto">
                         <img src="/public/img/products/51300/51325/sp/sp_feature01.jpg" 
                             alt="特徴1" 
                             loading="lazy"
-                            class="md:hidden w-full max-w-md mx-auto h-auto">
+                            class="md:hidden w-full mx-auto h-auto">
                     </div>
                     
                     <!-- 特徴2 -->
@@ -204,17 +204,17 @@
                         <img src="/public/img/products/51300/51325/pc/pc_feature02.jpg" 
                             alt="特徴2" 
                             loading="lazy"
-                            class="hidden md:block w-full max-w-4xl mx-auto h-auto">
+                            class="hidden md:block w-full mx-auto h-auto">
                         <img src="/public/img/products/51300/51325/sp/sp_feature02.jpg" 
                             alt="特徴2" 
                             loading="lazy"
-                            class="md:hidden w-full max-w-md mx-auto h-auto">
+                            class="md:hidden w-full mx-auto h-auto">
                     </div>
                 </div>
             </section>
 
             <!-- ギャラリー部分 -->
-            <section class="my-8 w-full max-w-md sm:max-w-lg md:max-w-3xl mx-auto">
+            <section class="my-8 w-full mx-auto">
                 <!-- ギャラリー ギャラリータイトル画像がある場合はギャラリータイトル画像優先(A)、ない場合は画像なし(B)にて -->
                 <div class="px-2 mb-3">
                     <!-- ギャラリータイトル(A) -->
@@ -229,7 +229,7 @@
 
                     <!-- ギャラリータイトル(B) -->
                     <div class="flex items-end c-text-moomin-green">
-                        <span class="text-4xl font-light">Gallery</span>
+                        <span class="text-4xl md:text-[3rem] font-light">Gallery</span>
                         <div class="flex-1">
                             <span class="c-text-xxs ml-3">ギャラリー</span>
                             <div class="border-b border-dotted c-border-moomin-green mr-2"></div>
@@ -306,7 +306,7 @@
             </section>
 
             <!-- 価格・購入エリア -->
-            <section id="price_area" class="my-8 w-full max-w-md sm:max-w-lg md:max-w-3xl mx-auto">
+            <section id="price_area" class="my-8 w-full mx-auto">
                 <!-- 価格タイトルバナーがある場合は価格タイトルバナー優先(A)、ない場合は画像なし(B)にて -->
                 <div class="px-2 mb-8">
                     <!-- 価格タイトルバナー(A) -->
@@ -320,7 +320,7 @@
                     </div> -->
                     <!-- 画像なし 価格タイトルバナー(B) -->
                     <div class="flex items-end c-text-moomin-green">
-                        <span class="text-4xl font-light">Price/Spec</span>
+                        <span class="text-4xl md:text-[3rem] font-light">Price/Spec</span>
                         <div class="flex-1">
                             <span class="c-text-xxs ml-3">価格/仕様</span>
                             <div class="border-b border-dotted c-border-moomin-green"></div>
@@ -339,9 +339,9 @@
                             class="w-full h-auto object-contain">
                     </div>
                     <!-- 価格・購入情報 -->
-                    <div class="p-4 md:w-[60%] md:p-2">
+                    <div class="p-4 md:w-[60%] md:p-2 md:ml-8">
                         <!-- 商品名 -->
-                        <h3 class="border-l-8 border-gray-800 pl-2 text-xl md:text-base font-bold text-gray-800 mb-4 md:mb-1 tracking-tighter">
+                        <h3 class="border-l-8 border-gray-800 pl-2 text-xl sm:text-3xl font-bold text-gray-800 mb-4 md:mb-1 tracking-tighter">
                             MOOMIN　セイコー<br>
                             スナフキン　釣り人の時間<br>
                             オフィシャルライセンスウオッチ
@@ -349,14 +349,14 @@
                         
                         <!-- 納期・お届け -->
                         <div class="py-2">
-                            <p class="text-blue-700 font-bold text-lg md:text-sm">商品は10月中旬より順次発送予定です。</p>
+                            <p class="text-blue-700 font-bold text-lg sm:text-xl">商品は10月中旬より順次発送予定です。</p>
                         </div>
 
                         <!-- 価格 -->
-                        <div class="space-y-2 md: space-y-1 mb-6 text-gray-600">
-                            <p class="text-xl md:text-base">月々 5,800円（税込6,380円）×7回払い</p>
-                            <p class="md:text-sm">一括価格39,800円（税込43,780円）</p>
-                            <p class="ml-4 md:text-sm">発送手数料700円（税込770円）</p>
+                        <div class="space-y-2 md:space-y-1 mb-6 text-gray-600 sm:text-lg">
+                            <p class="text-xl">月々 5,800円（税込6,380円）×7回払い</p>
+                            <p class="">一括価格39,800円（税込43,780円）</p>
+                            <p class="ml-4">発送手数料700円（税込770円）</p>
                         </div>
                         
                         <!-- 購入フォーム -->
@@ -365,8 +365,8 @@
                             <input type="hidden" name="amount1" value="1">
                             <!-- サイズ選択 -->
                             <div>
-                                <label for="size-select" class="block sm:text-xs font-medium text-gray-700 mb-2">サイズをお選びください</label>
-                                <select id="size-select" name="m5siz" class="sm:text-xs w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent">
+                                <label for="size-select" class="block font-medium text-gray-700 mb-2">サイズをお選びください</label>
+                                <select id="size-select" name="m5siz" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent">
                                     <option value="" disabled selected>サイズ選択</option>
                                     <option value="L">L (19.5cm)</option>
                                     <option value="M">M (17.5cm)</option>
@@ -388,7 +388,7 @@
                             </div>
                             <!-- お問い合わせ -->
                             <div class="text-center">
-                                <a href="#" class="text-iei-primary hover:text-iei-secondary underline transition-colors sm:text-sm">この商品をメールで問い合わせ</a>
+                                <a href="#" class="text-iei-primary hover:text-iei-secondary underline transition-colors sm:text-base">この商品をメールで問い合わせ</a>
                             </div>
                         </form>
                     </div>
@@ -396,7 +396,7 @@
                 <!-- 仕様詳細 -->
                 <div class="px-6">
                     <h4 class="font-bold text-gray-800 mb-3">仕　様</h4>
-                    <p class="leading-snug text-sm sm:text-xs">
+                    <p class="leading-snug text-sm sm:text-base">
                         【腕時計 仕様】<br>
                         ●材質：ケース・裏蓋＝ステンレススチール　バンド＝牛革（裏側は合成皮革）　風防＝カーブハードレックス<br>
                         ●サイズ（約）：42.8×35×厚さ6.9mm<br>
@@ -413,7 +413,7 @@
                 <!-- 関連商品バナー -->
                 <div class="text-center mt-8">
                     <a href="/categories/moomin/" class="inline-block c-bg-moomin-green hover:bg-opacity-50 text-white px-8 py-4 rounded-lg transition-all duration-200 transform hover:scale-105">
-                        <span class="font-medium">ムーミンのI･E･Iオリジナル商品はこちら</span>
+                        <span class="font-medium md:text-lg">ムーミンのI･E･Iオリジナル商品はこちら</span>
                     </a>
                 </div>
             </section>
@@ -421,7 +421,6 @@
 
         <!-- 案内セクション -->
         <section class="pb-6 px-1 mx-auto xl:w-[80%]">
-
             <!-- A. 簡易案内（フル幅） -->
             <div class="mb-8">
                 <div class="bg-white rounded-lg p-6 shadow-sm">
@@ -432,7 +431,7 @@
                         </svg>
                         <h3 class="text-lg md:text-base font-bold text-gray-800">商品代金支払いのタイミングについて</h3>
                     </div>
-                    <div class="space-y-2 text-sm sm:text-xs">
+                    <div class="space-y-2">
                         <div>
                             <h4 class="font-medium text-red-600 mb-1">【郵便振替・コンビニ払いの場合】</h4>
                             <p class="text-gray-700">商品のお受け取り後の後払いとなります。<br>
@@ -465,14 +464,14 @@
                                     <path d="M200.127,128.622H90.502c-3.561,0-6.957,1.582-9.23,4.331l-78.48,94.163C0.986,229.268,0,231.994,0,234.815v82.595v43.189c0,6.648,5.389,12.029,12.03,12.029h36.844c11.626-25.9,37.621-44.024,67.81-44.024c30.196,0,56.183,18.124,67.81,44.024h27.671V140.652C212.163,134.003,206.767,128.622,200.127,128.622z"/>
                                     <path d="M497.568,60.446H252.043c-7.964,0-14.425,6.46-14.425,14.432v226.703c0,7.972,6.461,14.432,14.425,14.432h245.525c7.971,0,14.432-6.46,14.432-14.432V74.878C512,66.906,505.539,60.446,497.568,60.446z"/>
                                 </svg>
-                                <h3 class="text-base font-bold text-gray-800">お届け</h3>
+                                <h3 class="text-lg font-bold text-gray-800">お届け</h3>
                             </div>
                             <svg class="w-5 h-5 text-gray-500 transform transition-transform block md:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </div>
                         <div class="guide-content hidden md:block px-4 pb-4 border-t border-gray-200">
-                            <div class="text-sm sm:text-xs text-gray-700 space-y-2 pt-4">
+                            <div class="text-sm sm:text-base text-gray-700 space-y-2 pt-4">
                                 <p>ご注文いただいた商品はご注文受付後、基本的に約1～4週間でお届けいたします。</p>
                                 <p>お届け詳細につきましては配達確度でお届けします。</p>
                                 <p>配達曜日・お届け時間のご指定は注文フォームにてご選択ください。</p>
@@ -490,17 +489,17 @@
                                     <path d="M101.94,26.06l-.08,34L63.28,98.67c-2.2,2.2-4.39,3.32-6.51,3.32a10.18,10.18,0,0,1-6.84-3.33L29.34,78.06c-4.44-4.43-4.44-8.92,0-13.34L67.9,26.14l34-.08m10-10-48.22.12-41.5,41.5c-9.7,9.7-6.83,20.64,0,27.49l20.59,20.59A20,20,0,0,0,56.77,112c4.45,0,9.15-1.81,13.58-6.24l41.5-41.5L112,16Z"/>
                                     <path d="M83.3,40.42a4.4,4.4,0,1,1-3.1,1.29,4.39,4.39,0,0,1,3.1-1.29m0-10a14.4,14.4,0,1,0,10.18,4.22A14.34,14.34,0,0,0,83.3,30.42Z"/>
                                 </svg>
-                                <h3 class="text-base font-bold text-gray-800">発送手数料</h3>
+                                <h3 class="text-lg font-bold text-gray-800">発送手数料</h3>
                             </div>
                             <svg class="w-5 h-5 text-gray-500 transform transition-transform block md:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </div>
                         <div class="guide-content hidden md:block px-4 pb-4 border-t border-gray-200">
-                            <div class="text-sm sm:text-xs text-gray-700 pt-4">
+                            <div class="text-sm sm:text-base text-gray-700 pt-4">
                                 <p class="mb-4">ご注文いただいた商品の発送手数料は、ご注文金額にかかわらず以下の通りとなります。</p>
                                 <div class="overflow-x-auto">
-                                    <table class="w-full border-collapse border border-gray-300 text-sm sm:text-xs">
+                                    <table class="w-full border-collapse border border-gray-300 text-sm sm:text-base">
                                         <!-- <thead> -->
                                             <tr class="bg-gray-100">
                                                 <th class="border border-gray-300 px-3 py-2 text-left" rowspan="2">通常商品<br><span class="text-xs">※お届け先<br>1ヶ所につき</span></th>
@@ -534,23 +533,23 @@
                                 <svg class="w-6 h-6 md:w-9 md:h-9 mr-3 md:mr-4 c-text-second" viewBox="0 0 512 512" fill="currentColor">
                                     <path d="M165.038,106.71 L156.772032,113.05581 L156.191363,113.585364 C151.004556,118.377839 146.876423,123.885164 143.786922,130.092721 C141.51654,134.630213 139.592628,141.02803 138.309261,149.377248 L80,149.377256 L150.11448,209.47533 C141.366891,219.139172 136.843212,230.90732 136.843212,244.908876 C136.843212,247.503027 136.988305,250.014916 137.275115,252.446011 L42.6666667,170.710589 L42.6666667,362.710589 L341.333333,362.710589 L341.333333,170.710589 L242.592094,256.016904 C243.201772,252.637604 243.509878,249.104725 243.509878,245.415472 C243.509878,231.969501 239.477066,220.644723 231.777234,211.283609 L304,149.377256 L263.368151,149.37771 C277.809561,138.431104 287.979291,127.989133 294.288724,118.41053 C296.719678,114.720001 298.832043,110.821517 300.611881,106.710516 L384,106.710589 L384,405.377256 L1.42108547e-14,405.377256 L1.42108547e-14,106.710589 L165.038,106.71 Z M193.310118,298.593378 L192,299.723922 L190.772231,298.662413 C191.626926,298.655851 192.472874,298.632807 193.310118,298.593378 Z M192.087825,213.333333 C201.319182,213.333333 208.946194,216.372881 214.969092,222.452067 C220.991989,228.531253 224.003392,236.186409 224.003392,245.417766 C224.003392,254.536545 220.991989,262.135414 214.969092,268.2146 C208.946194,274.293786 201.319182,277.333333 192.087825,277.333333 C182.631313,277.333333 174.919869,274.293786 168.953261,268.2146 C162.986652,262.135414 160.003392,254.367681 160.003392,244.91117 C160.003392,235.904968 163.04294,228.390531 169.122126,222.367634 C175.201312,216.344737 182.856469,213.333333 192.087825,213.333333 Z M202.004136,7.10542736e-15 C230.924384,7.10542736e-15 252.931349,7.11836342 268.025689,21.3553038 C281.344225,34.1421855 288.003392,50.7517001 288.003392,71.184346 C288.003392,85.0258159 284.768939,96.8567995 278.299936,106.677652 C272.639559,115.270898 263.094741,124.494818 249.665251,134.349625 L243.671917,138.61174 C230.987661,147.443916 223.186858,154.199771 220.269465,158.879506 C217.352071,163.559241 215.893396,171.896953 215.893396,183.892894 L215.893396,192 L159.765563,192 L159.765563,174.599382 C159.765563,157.857795 161.414499,146.191588 164.712423,139.600412 C166.61507,135.77753 169.151896,132.383125 172.322976,129.417096 L175.864212,126.350196 C177.319014,125.153033 179.048209,123.781003 181.0518,122.234105 L201.463099,107.048386 C210.084435,100.47372 215.940947,95.3079488 219.03275,91.5509784 C223.155153,86.5416845 225.216324,80.6756258 225.216324,73.9526262 C225.216324,65.5159207 222.330685,58.8259773 216.55932,53.8825953 C210.787954,48.9392132 202.955504,46.4675592 193.061735,46.4675592 C176.825806,46.4675592 157.228826,53.2563688 134.270208,66.8341916 L117.336726,22.9371782 C145.495915,7.6456496 173.718103,7.10542736e-15 202.004136,7.10542736e-15 Z"/>
                                 </svg>
-                                <h3 class="text-base font-bold text-gray-800">お問い合わせ</h3>
+                                <h3 class="text-lg font-bold text-gray-800">お問い合わせ</h3>
                             </div>
                             <svg class="w-5 h-5 text-gray-500 transform transition-transform block md:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </div>
                         <div class="guide-content hidden md:block px-4 pb-4 border-t border-gray-200">
-                            <div class="text-sm sm:text-xs text-gray-700 space-y-3 pt-4">
+                            <div class="text-sm sm:text-base text-gray-700 space-y-3 pt-4">
                                 <div>
                                     <h4 class="font-medium mb-2">■お電話でのお問い合わせ</h4>
                                     <p>フリーコール：0120-247-417（年中無休/6:00～21:00/通話料無料）</p>
-                                    <p class="text-xs">※一部のIP電話/携帯電話/PHSからは03-5810-8136（平日/9：30～17：00/通話料お客様負担）</p>
+                                    <p class="text-xs sm:text-base">※一部のIP電話/携帯電話/PHSからは03-5810-8136（平日/9：30～17：00/通話料お客様負担）</p>
                                 </div>
                                 <div>
                                     <h4 class="font-medium mb-2">■メールでのお問い合わせ</h4>
                                     <p>cs@iei.co.jp <a href="mailto:cs@iei.co.jp" class="text-blue-600 hover:text-blue-800 underline">（お問い合わせフォームへ）</a></p>
-                                    <p class="text-xs">※メールでのお問い合わせの場合、ご返答までにお時間をいただく場合がございます。あらかじめご了承ください。</p>
+                                    <p class="text-xs sm:text-base">※メールでのお問い合わせの場合、ご返答までにお時間をいただく場合がございます。あらかじめご了承ください。</p>
                                 </div>
                             </div>
                         </div>
@@ -569,14 +568,14 @@
                                     <path d="M3 10H20.5"/>
                                     <path d="M7 15H9"/>
                                 </svg>
-                                <h3 class="text-base font-bold text-gray-800">お支払い</h3>
+                                <h3 class="text-lg font-bold text-gray-800">お支払い</h3>
                             </div>
                             <svg class="w-5 h-5 text-gray-500 transform transition-transform block md:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </div>
                         <div class="guide-content hidden md:block px-4 pb-4 border-t border-gray-200">
-                            <div class="text-sm sm:text-xs text-gray-700 space-y-4 pt-4">
+                            <div class="text-sm sm:text-base text-gray-700 space-y-4 pt-4">
                                 <div>
                                     <p class="font-medium mb-2">■以下のお支払い方法が、ご利用いただけます。</p>
                                     <ul class="space-y-1 ml-4">
@@ -596,7 +595,7 @@
                                     <!-- 手数料テーブル -->
                                     <div class="space-y-4">
                                         <p class="font-medium mb-2 underline">払込手数料</p>
-                                        <table class="w-full border-collapse border border-gray-300 text-sm sm:text-xs">
+                                        <table class="w-full border-collapse border border-gray-300 text-sm">
                                             <thead>
                                                 <tr class="bg-gray-100">
                                                     <th class="border border-gray-300 px-2 py-1 text-center" colspan="3">ゆうちょ銀行（郵便局）</th>
@@ -621,7 +620,7 @@
                                             </tbody>
                                         </table>
 
-                                        <table class="w-full border-collapse border border-gray-300 text-sm sm:text-xs">
+                                        <table class="w-full border-collapse border border-gray-300 text-sm">
                                             <thead>
                                                 <tr class="bg-gray-100">
                                                     <th class="border border-gray-300 px-2 py-1 text-center" colspan="3">コンビニ払い</th>
@@ -652,20 +651,20 @@
                                         </table>
                                     </div>
                                     
-                                    <div class="text-sm sm:text-xs mt-2 space-y-1">
+                                    <div class="text-sm sm:text-base mt-2 space-y-1">
                                         <p>A：セブンイレブン</p>
                                         <p>B：ローソン、ファミリーマート、ミニストップ、セイコーマート、デイリーヤマザキ、ポプラ、MMK設置店</p>
                                     </div>
                                 </div>
 
-                                <div class="text-sm sm:text-xs space-y-2">
+                                <div class="text-sm sm:text-base space-y-2">
                                     <p>※30万円を超えるお支払いの場合、コンビニエンストアではお取り扱いできません。ゆうちょ銀行（郵便局）でお支払いください。</p>
                                     <p>※10万円を超える現金によるゆうちょ銀行（郵便局）からのお振込みは、本人確認のために運転免許証・健康保険証等が必要となります。</p>
                                 </div>
 
                                 <div>
                                     <h4 class="font-medium mb-2 underline">代金引換払い（商品お届け時払い）</h4>
-                                    <div class="text-sm sm:text-xs space-y-1">
+                                    <div class="text-sm sm:text-base space-y-1">
                                         <p>・商品お届け時に商品と交換で、配達員に現金にて代金をお支払いください。なお、お支払いは一括払いのみとなります。</p>
                                         <p>・代引手数料は無料です。</p>
                                         <p>・50万円を超えるお取引では利用できません。</p>
@@ -676,7 +675,7 @@
 
                                 <div>
                                     <h4 class="font-medium mb-2">■クレジットカードのご利用に関して</h4>
-                                    <div class="text-sm sm:text-xs space-y-2">
+                                    <div class="text-sm sm:text-base space-y-2">
                                         <p>下記カード会社のマークがプリントされているカードをご利用いただけます。ご利用の際にはカード番号/有効期限/お支払い方法をご指定ください。</p>
                                         
                                         <!-- クレジットカードロゴ（一旦ヘッダーロゴで代用） -->
@@ -722,9 +721,9 @@
         <!-- メインフッター -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 p-8">
             <!-- 会社情報 -->
-            <div class="sm:text-xs">
+            <div class="">
                 <h3 class="text-lg font-bold mb-4">インペリアル・エンタープライズ株式会社 I・E・I</h3>
-                <div class="space-y-2 text-sm text-gray-300">
+                <div class="space-y-2 text-gray-300">
                     <p>〒***-****<br>東京都荒川区東日暮里*******</p>
                     <p class="flex items-center space-x-2">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -739,7 +738,7 @@
             <!-- カテゴリリンク -->
             <div>
                 <h3 class="text-lg font-bold mb-4">商品カテゴリ</h3>
-                <ul class="space-y-1 text-sm text-gray-300">
+                <ul class="space-y-1 text-gray-300">
                     <li><a href="/categories/charaffine" class="hover:opacity-50 transition-colors">キャラフィネ</a></li>
                     <li><a href="/categories/moomin" class="hover:opacity-50 transition-colors">・ムーミン</a></li>
                     <li><a href="/categories/kitty" class="hover:opacity-50 transition-colors">・ハローキティ</a></li>
@@ -755,7 +754,7 @@
             <!-- サポート情報 -->
             <div>
                 <h3 class="text-lg font-bold mb-4">サポート</h3>
-                <ul class="space-y-1 text-sm text-gray-300">
+                <ul class="space-y-1 text-gray-300">
                     <li><a href="/guide/" class="hover:opacity-50  transition-colors">ご利用ガイド</a></li>
                     <li><a href="/guide/shipping" class="hover:opacity-50  transition-colors">送料・お届けについて</a></li>
                     <li><a href="/guide/payment" class="hover:opacity-50  transition-colors">お支払い方法</a></li>
