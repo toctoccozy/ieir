@@ -14,7 +14,7 @@ ieir/
 │   │   ├── style.css        # 空ファイル（将来用）
 │   │   └── top.css          # 空ファイル（将来用）
 │   ├── img/                  # 画像リソース
-│   │   ├── categories/       # カテゴリページ用画像
+│   │   ├── category/       # カテゴリページ用画像
 │   │   │   └── moomin/      # ムーミンカテゴリ画像
 │   │   ├── parts/            # 共通パーツ画像
 │   │   │   ├── icons/       # アイコン画像
@@ -41,10 +41,10 @@ ieir/
     ├── about/                # 空ディレクトリ（将来用）
     ├── admin/                # 空ディレクトリ（将来用）
     ├── auth/                 # 空ディレクトリ（将来用）
-    ├── carts/                # 空ディレクトリ（将来用）
+    ├── cart/                # 空ディレクトリ（将来用）
     ├── components/           # コンポーネント
     ├── contents/             # 空ディレクトリ（将来用）
-    ├── categories/           # カテゴリページ
+    ├── category/           # カテゴリページ
     │   └── moomin/
     │       └── index.html    # ムーミンカテゴリトップ
     └── products/             # 商品詳細ページ
@@ -65,7 +65,7 @@ ieir/
 | `/premico/goods_img/51347/` | `/public/img/products/51300/51347/` | 画像をpc/sp別に整理 |
 | `/premico/streetfighter/cmn_img/` | `/public/img/products/51300/51347/` | 商品フォルダ内に統合 |
 | `/moomin/cmn_img/green/` | `/public/img/products/51300/51325/` | 商品フォルダ内に統合 |
-| `/moomin/index.html` | `/views/categories/moomin/index.html` | 新規作成 |
+| `/moomin/index.html` | `/views/category/moomin/index.html` | 新規作成 |
 | （存在しなかった） | `/views/index.html` | トップページ新規作成 |
 | （存在しなかった） | `/views/test_index/index.html` | テスト版トップページ |
 

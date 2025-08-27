@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ご注文完了 | I･E･Iオンラインショップ</title>
-    <meta name="description" content="I･E･Iオンラインショップのご注文完了">
-    <meta name="keywords" content="I･E･I,キャラフィネ,ムーミン,PREMICO,キャラクターグッズ,通販,完了">
+    <title>ログイン | I･E･Iオンラインショップ</title>
+    <meta name="description" content="I･E･Iオンラインショップへのログイン">
+    <meta name="keywords" content="I･E･I,キャラフィネ,ムーミン,PREMICO,キャラクターグッズ,通販,ログイン">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com/3.4.1"></script>
     <script>
@@ -90,18 +90,18 @@
                             <a href="/">
                                 <img class="h-12 w-auto lg:h-18 lg:w-auto" src="/public/img/parts/logo/logo_iei.jpg" alt="I･E･I">
                             </a>
-                            <a href="/categories/premico" class="hover:opacity-70 transition-opacity duration-200">
+                            <a href="/category/premico" class="hover:opacity-70 transition-opacity duration-200">
                                 <img class="h-8 w-auto lg:h-18 lg:w-auto" src="/public/img/parts/logo/logo_premico.png" alt="PREMICO">
                             </a>
                             <!-- lg以上で下のロゴを表示 -->
                             <div class="hidden lg:flex items-center gap-3 ml-4">
-                                <a href="/categories/charaffine" class="hover:opacity-70 transition-opacity duration-200">
+                                <a href="/category/charaffine" class="hover:opacity-70 transition-opacity duration-200">
                                     <img src="/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ" class="w-auto h-10">
                                 </a>
-                                <a href="/categories/moomin" class="hover:opacity-70 transition-opacity duration-200">
+                                <a href="/category/moomin" class="hover:opacity-70 transition-opacity duration-200">
                                     <img src="/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン" class="w-auto h-6">
                                 </a>
-                                <a href="/categories/snoopy" class="hover:opacity-70 transition-opacity duration-200">
+                                <a href="/category/snoopy" class="hover:opacity-70 transition-opacity duration-200">
                                     <img src="/public/img/parts/logo/logo_snoopy.jpg" alt="スヌーピー" class="w-auto h-10">
                                 </a>
                             </div>
@@ -129,13 +129,13 @@
                 <div class="flex items-start justify-between h-8 px-4 sm:h-5 lg:hidden">
                     <!-- ブランドロゴエリア（中央） - md未満のみ表示 -->
                     <div class="flex items-center justify-center gap-4 w-full lg:hidden">
-                        <a href="/categories/charaffine" class="hover:opacity-70 transition-opacity duration-200">
+                        <a href="/category/charaffine" class="hover:opacity-70 transition-opacity duration-200">
                             <img src="/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ" class="h-8 w-auto">
                         </a>
-                        <a href="/categories/moomin" class="hover:opacity-70 transition-opacity duration-200">
+                        <a href="/category/moomin" class="hover:opacity-70 transition-opacity duration-200">
                             <img src="/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン" class="h-6 w-auto">
                         </a>
-                        <a href="/categories/snoopy" class="hover:opacity-70 transition-opacity duration-200">
+                        <a href="/category/snoopy" class="hover:opacity-70 transition-opacity duration-200">
                             <img src="/public/img/parts/logo/logo_snoopy.jpg" alt="スヌーピー" class="h-8 w-auto">
                         </a>
                     </div>
@@ -198,133 +198,78 @@
         </header>
 
     <!-- メインコンテンツ -->
-    <main class="container mx-auto px-2 py-4 max-w-3xl">
-        <!-- プログレスバー -->
-        <div class="mx-auto mb-4">
-            <div class="flex items-center justify-between">
-                <!-- Step 1: カート -->
-                <div class="progress-step completed">
-                    <div class="flex flex-col items-center">
-                        <div class="step-circle w-10 h-10 rounded-full flex items-center justify-center mb-2">
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+    <main class="container mx-auto px-4 py-8 max-w-2xl">
+        <div class="px-6">
+            <!-- ログインタイトル -->
+            <div class="text-center mb-4">
+                <h1 class="text-2xl font-bold c-text-premico">ログイン</h1>
+                <p class="text-gray-600 text-sm mt-2">メールアドレスとパスワードを入力してください</p>
+            </div>
+            
+            <!-- エラーメッセージエリア -->
+            <div id="login_error" class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-4 hidden">
+                <p class="text-sm">メールアドレスまたはパスワードが正しくありません</p>
+            </div>
+            
+            <!-- フォーム -->
+            <form id="loginForm" class="space-y-2">
+                <!-- メールアドレス入力 -->
+                <div class="p-4">
+                    <label for="email" class="block text-lg font-bold c-text-premico mb-3">
+                        メールアドレス <span class="text-red-600 text-sm font-medium">※必須</span>
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="example@email.com"
+                        class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white"
+                        required>
+                </div>
+                
+                <!-- パスワード入力 -->
+                <div class="p-4">
+                    <label for="password" class="block text-lg font-bold c-text-premico mb-3">
+                        パスワード <span class="text-red-600 text-sm font-medium">※必須</span>
+                    </label>
+                    <div class="relative">
+                        <input type="password" name="password" id="password" placeholder="パスワードを入力"
+                            class="w-full pl-4 pr-12 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white"
+                            required>
+                        <button type="button" id="togglePassword" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700">
+                            <svg id="eyeOpen" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                             </svg>
-                        </div>
-                        <span class="text-xs md:text-sm font-medium text-gray-700">カート</span>
+                            <svg id="eyeClosed" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path>
+                            </svg>
+                        </button>
                     </div>
                 </div>
                 
-                <!-- Step 2: 購入情報入力 -->
-                <div class="progress-step completed">
-                    <div class="flex flex-col items-center">
-                        <div class="step-circle w-10 h-10 rounded-full flex items-center justify-center mb-2">
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                        </div>
-                        <span class="text-xs md:text-sm font-medium text-gray-700">購入情報入力</span>
-                    </div>
+                <!-- ログインボタン -->
+                <div class="mt-8">
+                    <button type="button" onclick="validateLoginForm()" 
+                        class="w-full c-bg-premico-gradient hover:opacity-80 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-between gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
+                        <span class="flex-1 text-center">ログイン</span>
+                        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
                 </div>
                 
-                <!-- Step 3: 確認 -->
-                <div class="progress-step completed">
-                    <div class="flex flex-col items-center">
-                        <div class="step-circle w-10 h-10 rounded-full flex items-center justify-center mb-2">
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                        </div>
-                        <span class="text-xs md:text-sm font-medium text-gray-700">確認</span>
+                <!-- パスワードを忘れた方・新規登録リンク -->
+                <div class="text-center mt-6 pt-6 space-y-3">
+                    <p>
+                        <a href="/views/auth/forgot-password.html" class="text-blue-600 text-sm hover:c-text-premico underline">パスワードを忘れた方はこちら</a>
+                    </p>
+                    <div class="pt-3">
+                        <p class="text-gray-600">
+                            新規登録は
+                            <a href="/views/auth/register.html" class="text-blue-600 font-medium hover:c-text-premico underline">こちら</a>
+                        </p>
                     </div>
                 </div>
-                
-                <!-- Step 4: 完了 -->
-                <div class="progress-step completed">
-                    <div class="flex flex-col items-center">
-                        <div class="step-circle w-10 h-10 rounded-full flex items-center justify-center mb-2">
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                        </div>
-                        <span class="text-xs md:text-sm font-medium text-gray-700">完了</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 完了画面タイトル -->
-        <div class="text-center mb-8">
-            <div class="mb-6">
-                <div class="w-16 h-16 c-bg-premico rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                </div>
-                <h1 class="text-2xl font-bold c-text-premico mb-4">ご購入ありがとうございます</h1>
-                <p class="text-gray-700 mb-2">登録されたメールアドレスに確認メールをお送りしました。</p>
-            </div>
-        </div>
-
-        <!-- 会員登録案内 -->
-        <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
-            <div class="text-center">
-                <svg class="w-12 h-12 c-text-premico mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                </svg>
-                <h3 class="text-lg font-bold text-blue-800 mb-3">すでにご入力いただいたお客様情報により、新規会員登録が可能です。</h3>
-                <p class="text-gray-700 mb-4">次回よりお買い物が簡単に！</p>
-                <button type="button" 
-                    class="px-6 py-3 c-bg-premico-gradient hover:opacity-80 text-white font-medium rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
-                    会員登録する
-                </button>
-            </div>
-        </div>
-
-        <!-- 商品代金支払いのタイミングについて -->
-        <div class="bg-gray-50 rounded-lg p-6 mb-6">
-            <div class="flex items-center mb-4">
-                <svg class="w-9 h-9 mr-4 c-text-second" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
-                    <circle cx="12" cy="13" r="8"/>
-                    <path d="M12 9L12 13M18 7L20 5M15 2L9 2"/>
-                </svg>
-                <h3 class="text-lg font-bold text-gray-800">商品代金支払いのタイミングについて</h3>
-            </div>
-            <div class="space-y-3 text-sm">
-                <div>
-                    <h4 class="font-medium text-red-600 mb-1">【郵便振替・コンビニ払いの場合】</h4>
-                    <p class="text-gray-700">商品のお受け取り後の後払いとなります。<br>
-                    商品の到着後、同封の請求書に記載の期日までにお支払いください。</p>
-                </div>
-                <div>
-                    <h4 class="font-medium text-red-600 mb-1">【代金引換払いの場合】</h4>
-                    <p class="text-gray-700">商品お届けの際に、配送業者へ商品代金をお支払いいただきます。</p>
-                </div>
-                <div>
-                    <h4 class="font-medium text-red-600 mb-1">【クレジットカードの場合】</h4>
-                    <p class="text-gray-700">商品の発送後の決済となります。</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- ボタン -->
-        <div class="flex justify-center mt-8 mb-4">
-            <div class="w-full max-w-md flex flex-col gap-3">
-                <a href="/" 
-                    class="w-full c-bg-premico-gradient hover:opacity-80 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
-                    </svg>
-                    トップページへ
-                </a>
-                <a href="/mypage/orders" 
-                    class="w-full px-4 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors font-medium text-center">
-                    注文履歴を確認する
-                </a>
-            </div>
+            </form>
         </div>
     </main>
-
-    </div>
 
     <!-- フッターコンポーネント -->
     <footer class="c-bg-premico text-white">
@@ -349,15 +294,15 @@
             <div>
                 <h3 class="text-lg font-bold mb-4">商品カテゴリ</h3>
                 <ul class="space-y-1 text-gray-300">
-                    <li><a href="/categories/charaffine" class="hover:opacity-50 transition-colors">キャラフィネ</a></li>
-                    <li><a href="/categories/moomin" class="hover:opacity-50 transition-colors">・ムーミン</a></li>
-                    <li><a href="/categories/kitty" class="hover:opacity-50 transition-colors">・ハローキティ</a></li>
-                    <li><a href="/categories/snoopy" class="hover:opacity-50 transition-colors">・スヌーピー</a></li>
-                    <li><a href="/categories/premico" class="hover:opacity-50 transition-colors"><span class="tracking-wider">PREMICO</span> (プレミコ)</a></li>
-                    <li><a href="/categories/jewelry" class="hover:opacity-50 transition-colors">女性ジュエリー・雑貨</a></li>
-                    <li><a href="/categories/mens" class="hover:opacity-50 transition-colors">男性</a></li>
-                    <li><a href="/categories/coin" class="hover:opacity-50 transition-colors">コイン・切手</a></li>
-                    <li><a href="/categories/interior" class="hover:opacity-50 transition-colors">インテリア・美術工芸品</a></li>
+                    <li><a href="/category/charaffine" class="hover:opacity-50 transition-colors">キャラフィネ</a></li>
+                    <li><a href="/category/moomin" class="hover:opacity-50 transition-colors">・ムーミン</a></li>
+                    <li><a href="/category/kitty" class="hover:opacity-50 transition-colors">・ハローキティ</a></li>
+                    <li><a href="/category/snoopy" class="hover:opacity-50 transition-colors">・スヌーピー</a></li>
+                    <li><a href="/category/premico" class="hover:opacity-50 transition-colors"><span class="tracking-wider">PREMICO</span> (プレミコ)</a></li>
+                    <li><a href="/category/jewelry" class="hover:opacity-50 transition-colors">女性ジュエリー・雑貨</a></li>
+                    <li><a href="/category/mens" class="hover:opacity-50 transition-colors">男性</a></li>
+                    <li><a href="/category/coin" class="hover:opacity-50 transition-colors">コイン・切手</a></li>
+                    <li><a href="/category/interior" class="hover:opacity-50 transition-colors">インテリア・美術工芸品</a></li>
                 </ul>
             </div>
             
@@ -451,6 +396,8 @@
         </div>
     </footer>
 
+    </div>
+
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
@@ -488,7 +435,55 @@
                 });
             }
         }
+        
+        // パスワード表示/非表示切り替え機能
+        const togglePassword = document.querySelector('#togglePassword');
+        const passwordInput = document.querySelector('#password');
+        const eyeOpen = document.querySelector('#eyeOpen');
+        const eyeClosed = document.querySelector('#eyeClosed');
+        
+        if (togglePassword && passwordInput) {
+            togglePassword.addEventListener('click', function() {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+                
+                // アイコンの表示切り替え
+                if (type === 'text') {
+                    eyeOpen.classList.add('hidden');
+                    eyeClosed.classList.remove('hidden');
+                } else {
+                    eyeOpen.classList.remove('hidden');
+                    eyeClosed.classList.add('hidden');
+                }
+            });
+        }
     });
+    
+    // ログインフォームバリデーション
+    function validateLoginForm() {
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const loginError = document.getElementById('login_error');
+        
+        // エラーメッセージを一旦非表示にする
+        loginError.classList.add('hidden');
+        
+        // 基本的なバリデーション
+        if (!email || !password) {
+            loginError.textContent = 'メールアドレスとパスワードを入力してください';
+            loginError.classList.remove('hidden');
+            return false;
+        }
+        
+        // バリデーションが通った場合
+        console.log('ログインフォームバリデーション成功');
+        // 実際のログイン処理をここに記述
+        // 例: document.getElementById('loginForm').submit();
+        
+        // デモ用：ログイン失敗を表示（実際の実装では削除）
+        // loginError.textContent = 'メールアドレスまたはパスワードが正しくありません';
+        // loginError.classList.remove('hidden');
+    }
     </script>
 </body>
 </html>
