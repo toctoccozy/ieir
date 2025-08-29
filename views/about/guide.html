@@ -1,0 +1,1359 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I･E･Iオンラインショップ｜インペリアル・エンタープライズ株式会社</title>
+    <meta name="description" content="キャラフィネ、ムーミン、PREMICOなど人気キャラクターグッズを取り扱うI･E･Iオンラインショップです。">
+    <meta name="keywords" content="I･E･I,キャラフィネ,ムーミン,PREMICO,キャラクターグッズ,通販">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                scrollbar: ['rounded']
+            }
+        }
+    }
+    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/css/customization.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+    
+    <style>
+    /* PC版：スライド間のスペース */
+    @media (min-width: 768px) {
+        .slider-main .slick-slide {
+            margin: 0 10px;
+        }
+        
+        .slider-main .slick-list {
+            margin: 0 -10px;
+        }
+        
+        /* センターモードの前後のスライドを半透明に */
+        .slider-main .slick-slide:not(.slick-center) {
+            opacity: 0.6;
+            transform: scale(0.95);
+            transition: all 0.3s ease;
+        }
+        
+        .slider-main .slick-slide.slick-center {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    /* モバイルではスライドを画面幅いっぱいに */
+    @media (max-width: 767px) {
+        .slider-main .slick-slide {
+            margin: 0;
+            opacity: 1 !important;
+            transform: scale(1) !important;
+        }
+        
+        .slider-main .slick-list {
+            margin: 0;
+        }
+    }
+    
+    /* ドットのスタイル調整 */
+    .slick-dots {
+        position: relative;
+        bottom: auto;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+    
+    .slick-dots li button:before {
+        font-size: 8px;
+        color: rgba(100, 100, 100, 0.8);
+    }
+    
+    .slick-dots li.slick-active button:before {
+        color: #333;
+    }
+    @media (max-width: 767px) {
+        .slick-dots li {
+            margin: 0 1px; /* デフォルトは5px、2pxに縮める */
+        }
+    }
+
+
+    /* PC版ではドットを非表示 */
+    @media (min-width: 1024px) {
+        .slick-dots {
+            display: none !important;
+        }
+    }
+    
+    /* デフォルトの矢印アイコンを非表示 */
+    .slick-prev:before,
+    .slick-next:before {
+        display: none !important;
+        content: '' !important;
+    }
+    
+    /* スマホ版では矢印を非表示 */
+    @media (max-width: 767px) {
+        .slider-main .slick-prev,
+        .slider-main .slick-next {
+            display: none !important;
+        }
+    }
+
+    </style>
+</head>
+
+<body class="bg-white">
+    <div class="min-h-screen mw-full">
+        <header class="pb-6 mx-auto xl:w-[80%]">
+            <!-- ヘッダー -->
+            <div class="mx-auto bg-white border-b relative z-50 h-24">
+                <!-- ヘッダー上段 -->
+                <div class="px-2 pt-2">
+                    <div class="flex items-center justify-between h-12 lg:h-14">
+                        <!-- ハンバーガーメニュー（左） -->
+                        <div class="md:ml-2 w-12 h-full hover:opacity-50 duration-200">
+                            <button class="hamburger-button relative w-full h-full bg-transparent border-none z-70 cursor-pointer px-1 py-1" id="js-hamburger">
+                                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- ロゴ（中央/左） -->
+                        <div class="lg:ml-4 flex-1 flex justify-center lg:justify-start items-center gap-3 lg:mt-2">
+                            <a href="/">
+                                <img class="h-12 w-auto lg:h-18 lg:w-auto" src="/public/img/parts/logo/logo_iei.jpg" alt="I･E･I">
+                            </a>
+                            <a href="/category/premico" class="hover:opacity-70 transition-opacity duration-200">
+                                <img class="h-8 w-auto lg:h-18 lg:w-auto" src="/public/img/parts/logo/logo_premico.png" alt="PREMICO">
+                            </a>
+                            <!-- lg以上で下のロゴを表示 -->
+                            <div class="hidden lg:flex items-center gap-3 ml-4">
+                                <a href="/category/charaffine" class="hover:opacity-70 transition-opacity duration-200">
+                                    <img src="/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ" class="w-auto h-10">
+                                </a>
+                                <a href="/category/moomin" class="hover:opacity-70 transition-opacity duration-200">
+                                    <img src="/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン" class="w-auto h-6">
+                                </a>
+                                <a href="/category/snoopy" class="hover:opacity-70 transition-opacity duration-200">
+                                    <img src="/public/img/parts/logo/logo_snoopy.jpg" alt="スヌーピー" class="w-auto h-10">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ログイン・カート（右） -->
+                        <div class="w-20 flex justify-end gap-2">
+                            <a href="/login" class="flex items-center text-gray-600 hover:opacity-50 duration-200">
+                                <svg class="w-8 h-8 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                            </a>
+                            <a href="/cart" class="mr-3 relative flex items-center text-gray-600 hover:opacity-50 duration-200">
+                                <div class="relative">
+                                    <svg class="w-8 h-8 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5-5M17 21a2 2 0 100-4 2 2 0 000 4zM9 21a2 2 0 100-4 2 2 0 000 4z"></path>
+                                    </svg>
+                                    <span class="absolute -top-1 -right-1 c-bg-premico text-white rounded-full h-4 w-4 flex items-center justify-center text-xs font-bold">0</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ヘッダー下段 - lg未満のみ表示 -->
+                <div class="flex items-start justify-between h-8 px-4 sm:h-5 lg:hidden">
+                    <!-- ブランドロゴエリア（中央） - md未満のみ表示 -->
+                    <div class="flex items-center justify-center gap-4 w-full lg:hidden">
+                        <a href="/category/charaffine" class="hover:opacity-70 transition-opacity duration-200">
+                            <img src="/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ" class="h-8 w-auto">
+                        </a>
+                        <a href="/category/moomin" class="hover:opacity-70 transition-opacity duration-200">
+                            <img src="/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン" class="h-6 w-auto">
+                        </a>
+                        <a href="/category/snoopy" class="hover:opacity-70 transition-opacity duration-200">
+                            <img src="/public/img/parts/logo/snoopy_logo.png" alt="スヌーピー" class="h-4 w-auto">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- メニュー開いたとき -->
+            <nav class="fixed left-0 top-0 w-4/5 md:w-3/5 lg:w-1/2 h-screen -translate-x-full c-bg-premico-50 transition-transform duration-200 ease-in-out z-[999] shadow-xl" id="js-nav">
+                <!-- 固定ヘッダー（閉じるボタンとログイン関連ボタン） -->
+                <div class="fixed top-0 w-full h-16 c-bg-premico border-b border-gray-100 flex items-center justify-center md:justify-center px-4 z-20">
+                    <button class="w-8 h-8 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full flex items-center justify-center transition-colors absolute left-4" id="js-close-menu">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    <div class="flex space-x-2 absolute right-4 md:relative md:right-auto">
+                        <a href="/register" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                            </svg>
+                            新規登録
+                        </a>
+                        <a href="/login" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+                            </svg>
+                            ログイン
+                        </a>
+                    </div>
+                </div>
+                <!-- メニューコンテンツ -->
+                <div class="h-full overflow-y-auto pt-16 pb-10">
+                    <!-- A. 主要アクション -->
+                    <div class="px-6 py-4 border-b border-white border-opacity-20">
+                        <div class="space-y-3">
+                            <a href="/cgi-bin/goods/itemno.cgi" class="block bg-[#49a941] hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
+                                <div class="flex items-center text-white">
+                                    <span class="font-medium text-sm flex-1 pr-2">ダイレクトメール・カタログからのご注文</span>
+                                    <div class="bg-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 c-text-second" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/cgi-bin/goods/media.cgi" class="block bg-[#49a941] hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
+                                <div class="flex items-center text-white">
+                                    <span class="font-medium text-sm flex-1 pr-2">広告掲載中の商品</span>
+                                    <div class="bg-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 c-text-second" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- B. サポート情報 -->
+                    <div class="px-6 py-4 border-b border-white border-opacity-20">
+                        <h3 class="text-white font-medium mb-3">サポート・ガイド</h3>
+                        <ul class="space-y-2">
+                            <li><a href="/guide" class="flex items-center justify-between text-white text-sm hover:opacity-70 transition-opacity">
+                                <span>ご利用ガイド</span>
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a></li>
+                            <li><a href="/guide/shipping" class="flex items-center justify-between text-white text-sm hover:opacity-70 transition-opacity">
+                                <span>送料・お届けについて</span>
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a></li>
+                            <li><a href="/guide/payment" class="flex items-center justify-between text-white text-sm hover:opacity-70 transition-opacity">
+                                <span>お支払い方法</span>
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a></li>
+                            <li><a href="/guide/return" class="flex items-center justify-between text-white text-sm hover:opacity-70 transition-opacity">
+                                <span>返品・交換について</span>
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a></li>
+                            <li><a href="/faq" class="flex items-center justify-between text-white text-sm hover:opacity-70 transition-opacity">
+                                <span>よくある質問</span>
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- C. お問い合わせ -->
+                    <div class="px-6 py-4 border-b border-white border-opacity-20">
+                        <a href="/contact" class="block bg-[#49a941] hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
+                            <div class="flex items-center text-white">
+                                <span class="font-medium flex-1 pr-2">お問い合わせ</span>
+                                <div class="bg-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-3 h-3 c-text-second" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- D. 商品カテゴリ（アコーディオン） -->
+                    <div class="px-6 py-4 border-b border-white border-opacity-20">
+                        <button class="w-full flex items-center justify-between text-white font-medium mb-2" id="category-toggle">
+                            <span>商品カテゴリ</span>
+                            <svg class="w-4 h-4 transform transition-transform duration-200" id="category-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="space-y-3 overflow-hidden transition-all duration-200 max-h-0" id="category-content">
+                            <div class="pt-2">
+                                <!-- 1. プレミコ -->
+                                <div class="mb-3">
+                                    <a href="/category/premico" class="block text-white text-sm font-medium hover:opacity-70 transition-opacity py-1 border-l-2 border-white pl-3">
+                                        プレミコ
+                                    </a>
+                                </div>
+                                
+                                <!-- 2. キャラフィネ -->
+                                <div class="mb-3">
+                                    <div class="text-white text-sm font-medium py-1 border-l-2 border-white pl-3 mb-2">
+                                        キャラフィネ
+                                    </div>
+                                    <ul class="ml-6 space-y-1">
+                                        <li><a href="/category/snoopy" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・SNOOPY</a></li>
+                                        <li><a href="/category/moomin" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・MOOMIN</a></li>
+                                        <li><a href="/category/kitty" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・ハローキティ</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- 3. IEIコレクション -->
+                                <div>
+                                    <div class="text-white text-sm font-medium py-1 border-l-2 border-white pl-3 mb-2">
+                                        IEIコレクション
+                                    </div>
+                                    <ul class="ml-6 space-y-1">
+                                        <li><a href="/category/jewelry" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・女性ジュエリー</a></li>
+                                        <li><a href="/category/accessories" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・女性アパレル・雑貨</a></li>
+                                        <li><a href="/category/mens" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・男性アパレル・雑貨</a></li>
+                                        <li><a href="/category/coin" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・コイン・切手</a></li>
+                                        <li><a href="/category/interior" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・インテリア・美術工芸品</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- E. 会社情報 -->
+                    <div class="px-6 py-4 pb-8 mb-12">
+                        <div class="text-white">
+                            <h4 class="text-sm font-medium mb-2">インペリアル・エンタープライズ株式会社 I・E・I</h4>
+                            <div class="space-y-1 text-xs text-white text-opacity-90">
+                                <a href="tel:0120247417" class="flex items-center space-x-2 hover:opacity-70 transition-opacity">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                    <span class="font-medium">0120-247-417</span>
+                                </a>
+                                <p class="ml-5 text-opacity-80 text-white">毎日 朝6:00〜夜21:00</p>
+                                <p class="ml-5 text-opacity-80 text-white">※携帯電話からもOK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <main id="top" class="pb-6 px-4 mx-auto xl:w-[80%]">
+            <!-- パンくずナビ -->
+            <nav class="text-sm text-gray-600 mb-6">
+                <a href="/" class="text-blue-600 hover:text-blue-800 transition-colors">ホーム</a>
+                <span class="mx-2 text-gray-400">›</span>
+                <span class="text-gray-800 font-medium">ご利用ガイド</span>
+            </nav>
+
+            <!-- タイトル -->
+            <div class="text-center mb-8">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">ご利用ガイド</h1>
+                <p class="text-gray-600">I・E・Iオンラインショップのご利用方法について</p>
+            </div>
+
+            <!-- ナビゲーション -->
+            <div class="bg-gray-50 rounded-lg p-6 mb-8">
+                <h2 class="text-lg font-bold c-text-premico mb-4">目次</h2>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                    <li><a href="#guide01" class="c-text-premico hover:text-blue-800 transition-colors">ご利用環境について</a></li>
+                    <li><a href="#guide02" class="c-text-premico hover:text-blue-800 transition-colors">アフターサービスについて</a></li>
+                    <li><a href="#guide03" class="c-text-premico hover:text-blue-800 transition-colors">発送手数料、消費税、その他の手数料について</a></li>
+                    <li><a href="#guide04" class="c-text-premico hover:text-blue-800 transition-colors">個人情報の取り扱いについて</a></li>
+                    <li><a href="#guide05" class="c-text-premico hover:text-blue-800 transition-colors">お支払いについて</a></li>
+                    <li><a href="#guide06" class="c-text-premico hover:text-blue-800 transition-colors">オンライン会員について</a></li>
+                    <li><a href="#guide07" class="c-text-premico hover:text-blue-800 transition-colors">商品のお届けについて</a></li>
+                    <li><a href="#guide08" class="c-text-premico hover:text-blue-800 transition-colors">セキュリティについて</a></li>
+                    <li><a href="#guide09" class="c-text-premico hover:text-blue-800 transition-colors">返品交換について</a></li>
+                    <li><a href="#guide10" class="c-text-premico hover:text-blue-800 transition-colors">会社概要、著作権について</a></li>
+                </ul>
+            </div>
+
+            <!-- ガイド内容 -->
+            <div class="space-y-12">
+                <!-- ご利用環境について -->
+                <section id="guide01" class="bg-white rounded-lg shadow-sm border p-6">
+                    <h2 class="text-2xl font-bold c-text-premico mb-4 pl-6 border-l-4 border-[#2C5282] bg-gradient-to-r from-[#2C5282]/10 to-transparent py-3 rounded-r-lg shadow-sm">
+                        ご利用環境について
+                    </h2>
+                    
+                    <p class="mb-6">お客様に本サイトを快適にご利用いただくために、当サイトのご利用に関して以下の環境を推奨しております。</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">【PC】</h4>
+                            <div class="bg-gray-50 p-4 rounded">
+                                <p><strong>・Windows</strong><br>
+                                OS：Windows 7 以上<br>
+                                ブラウザ：Internet Explorer 11以上 / Google Chrome 最新版 / Firefox 最新版 / Microsoft Edge 最新版</p>
+                                
+                                <p class="mt-3"><strong>・Mac</strong><br>
+                                OS：Mac OS X 以上<br>
+                                ブラウザ：Safari 最新版 / Google Chrome 最新版</p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">【スマートフォン】</h4>
+                            <div class="bg-gray-50 p-4 rounded">
+                                <p><strong>・Android</strong><br>
+                                OS：Android 5.0 以上<br>
+                                ブラウザ：Chrome</p>
+                                
+                                <p class="mt-3"><strong>・iPhone</strong><br>
+                                OS：iOS 9.0 以上<br>
+                                ブラウザ：Safari</p>
+                                
+                                <p class="mt-3 text-sm text-gray-600">※上記環境に含まれる場合でも、一部端末や、お客様の端末設定状況により、ご利用いただけない場合がございます。</p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">【推奨設定】</h4>
+                            <ul class="bg-blue-50 p-4 rounded space-y-1">
+                                <li>・JavaScriptを有効にする</li>
+                                <li>・Cookie利用を有効にする</li>
+                                <li>・スタイルシートを有効にする</li>
+                                <li>・SSLを有効にする</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <p class="text-right mt-4"><a href="#top" class="text-blue-600 hover:text-blue-800 text-sm">ページの先頭へ</a></p>
+                </section>
+
+                <!-- アフターサービスについて -->
+                <section id="guide02" class="bg-white rounded-lg shadow-sm border p-6">
+                    <h2 class="text-2xl font-bold c-text-premico mb-4 pl-6 border-l-4 border-[#2C5282] bg-gradient-to-r from-[#2C5282]/10 to-transparent py-3 rounded-r-lg shadow-sm">
+                        アフターサービスについて
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <p>・商品は原則として、商品発送日から1年間品質を保証します。</p>
+                        
+                        <div class="bg-yellow-50 border border-yellow-200 p-4 rounded">
+                            <p class="text-sm">
+                                ※商品が保証期間中に、正しい使用法にもかかわらず故障した場合は、無料で修理、または交換いたします。<br>
+                                ※お客様に責任があると思われる故障については有料になりますので、ご了承ください。<br>
+                                ※商品によっては保証のないものもございます。（衣料品などの消耗品）
+                            </p>
+                        </div>
+                        
+                        <p>・保証期間後の故障については基本的に有料になります。</p>
+                        <p>・商品の性質によっては修理できない場合もございます。</p>
+                        
+                        <div class="bg-blue-50 border border-blue-200 p-4 rounded">
+                            <p class="text-sm">
+                                ※保証書が同封されないケースや、日付印・販売店印がない場合がありますが、<br>
+                                お取引はシステムにて管理しておりますので、アフターサービスに関してはご安心ください。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-right mt-4"><a href="#top" class="text-blue-600 hover:text-blue-800 text-sm">ページの先頭へ</a></p>
+                </section>
+
+                <!-- 発送手数料、消費税について -->
+                <section id="guide03" class="bg-white rounded-lg shadow-sm border p-6">
+                    <h2 class="text-2xl font-bold c-text-premico mb-4 pl-6 border-l-4 border-[#2C5282] bg-gradient-to-r from-[#2C5282]/10 to-transparent py-3 rounded-r-lg shadow-sm">
+                        発送手数料、消費税、その他の手数料について
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">発送手数料（送料）</h3>
+                            <div class="overflow-x-auto">
+                                <table class="w-full border border-gray-300 text-sm">
+                                    <tr class="bg-gray-50">
+                                        <th rowspan="2" class="border border-gray-300 p-3">通常商品<br><span class="text-xs">※お届け先1ヵ所につき</span></th>
+                                        <td class="border border-gray-300 p-3">1点</td>
+                                        <td class="border border-gray-300 p-3">770円（税込）</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <td class="border border-gray-300 p-3">2点以上</td>
+                                        <td class="border border-gray-300 p-3">1,320円（税込）</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="border border-gray-300 p-3 bg-gray-50">大型商品</th>
+                                        <td class="border border-gray-300 p-3">1点ごとに</td>
+                                        <td class="border border-gray-300 p-3">2,200円（税込）</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-2">※全国一律料金</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">消費税</h3>
+                            <ul class="space-y-1">
+                                <li>・商品代金および発送手数料には消費税が加算されます。</li>
+                                <li>・金額の端数は切り捨てになります。</li>
+                                <li>・非課税商品には消費税がかかりません。</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">払込手数料</h3>
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                                <!-- ゆうちょ銀行 -->
+                                <div>
+                                    <h4 class="font-semibold mb-2">ゆうちょ銀行（郵便局）</h4>
+                                    <div class="overflow-x-auto">
+                                        <table class="w-full border border-gray-300 text-sm">
+                                            <tr class="bg-gray-50">
+                                                <th class="border border-gray-300 p-2"></th>
+                                                <th class="border border-gray-300 p-2">窓口</th>
+                                                <th class="border border-gray-300 p-2">ATM</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="border border-gray-300 p-2 bg-gray-50">5万円未満</th>
+                                                <td class="border border-gray-300 p-2">122円（税込）</td>
+                                                <td class="border border-gray-300 p-2">71円（税込）</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="border border-gray-300 p-2 bg-gray-50">5万円以上</th>
+                                                <td class="border border-gray-300 p-2">336円（税込）</td>
+                                                <td class="border border-gray-300 p-2">285円（税込）</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                                <!-- コンビニ払い -->
+                                <div>
+                                    <h4 class="font-semibold mb-2">コンビニ払い</h4>
+                                    <div class="overflow-x-auto">
+                                        <table class="w-full border border-gray-300 text-sm">
+                                            <tr class="bg-gray-50">
+                                                <th class="border border-gray-300 p-2"></th>
+                                                <th class="border border-gray-300 p-2">A</th>
+                                                <th class="border border-gray-300 p-2">B</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="border border-gray-300 p-2 bg-gray-50">1万円未満</th>
+                                                <td class="border border-gray-300 p-2">110円（税込）</td>
+                                                <td class="border border-gray-300 p-2">110円（税込）</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="border border-gray-300 p-2 bg-gray-50">1万円以上、5万円未満</th>
+                                                <td class="border border-gray-300 p-2">220円（税込）</td>
+                                                <td class="border border-gray-300 p-2">220円（税込）</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="border border-gray-300 p-2 bg-gray-50">5万円以上</th>
+                                                <td class="border border-gray-300 p-2">440円（税込）</td>
+                                                <td class="border border-gray-300 p-2">550円（税込）</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <p class="text-xs text-gray-600 mt-2">
+                                        A：セブンイレブン<br>
+                                        B：ローソン、ファミリーマート、ミニストップ、セイコーマート、デイリーヤマザキ、ポプラ、MMK設置店
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">代金引換払い</h3>
+                            <p>・代引き手数料は無料です。</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-right mt-4"><a href="#top" class="text-blue-600 hover:text-blue-800 text-sm">ページの先頭へ</a></p>
+                </section>
+
+                <!-- 個人情報の取り扱い -->
+                <section id="guide04" class="bg-white rounded-lg shadow-sm border p-6">
+                    <h2 class="text-2xl font-bold c-text-premico mb-4 pl-6 border-l-4 border-[#2C5282] bg-gradient-to-r from-[#2C5282]/10 to-transparent py-3 rounded-r-lg shadow-sm">
+                        個人情報の取り扱いについて
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <p><a href="/privacy" class="text-blue-600 hover:text-blue-800 underline">弊社の個人情報保護ポリシーはこちら</a></p>
+                        
+                        <div class="bg-blue-50 border border-blue-200 p-4 rounded">
+                            <p class="font-semibold mb-2">郵便振替・コンビニエンスストア払いをご利用のお客様へ</p>
+                            <ul class="text-sm space-y-1">
+                                <li><a href="#top" class="text-blue-600 hover:text-blue-800 underline">個人信用情報の取り扱いに関する同意条項等</a></li>
+                                <li><a href="#top" class="text-blue-600 hover:text-blue-800 underline">SMS（ショートメッセージサービス）によるご連絡の開始について</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <p class="text-right mt-4"><a href="#top" class="text-blue-600 hover:text-blue-800 text-sm">ページの先頭へ</a></p>
+                </section>
+
+                <!-- お支払いについて -->
+                <section id="guide05" class="bg-white rounded-lg shadow-sm border p-6">
+                    <h2 class="text-2xl font-bold c-text-premico mb-4 pl-6 border-l-4 border-[#2C5282] bg-gradient-to-r from-[#2C5282]/10 to-transparent py-3 rounded-r-lg shadow-sm">
+                        お支払いについて
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <p class="mb-4">以下のお支払い方法がご利用いただけます。</p>
+                            <ul class="space-y-1 mb-4">
+                                <li>・後払い ＜ゆうちょ・コンビニ・スマホ決済＞</li>
+                                <li>・代金引換払い</li>
+                                <li>・クレジットカード払い（1回、分割、リボ）</li>
+                            </ul>
+                            
+                            <div class="bg-yellow-50 border border-yellow-200 p-4 rounded text-sm">
+                                <p>※メーカー直送の場合など、商品によって支払方法を限定させていただく場合がございます。<br>
+                                ※お申し込み内容によりお支払い方法を変更していただく場合がございます。<br>
+                                ※会社(法人)でお買い上げの場合も、必ず個人名でご注文ください。<br>
+                                また、会社宛の領収書発行を希望される場合は、顧客サービス部にお申し付けください。<br>
+                                ※勤務先にお届けする場合も、必ず個人名とお届け先の電話番号を入力ください。<br>
+                                （勤務先にお届けする場合で、郵便振替、コンビニ支払い等、後払いをご利用の場合は、ご自宅も併せてご登録お願いいたします。）</p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">後払い＜ゆうちょ銀行（郵便局）、コンビニエンスストア＞</h3>
+                            <div class="space-y-4">
+                                <p>・商品到着後2週間以内に、商品同梱、もしくは別途送付いたします専用の払込用紙にて、ゆうちょ銀行(郵便局)または下記のコンビニエンスストアか、スマホ決済よりお支払いください。<br>
+                                ※払込み手数料はお客様のご負担にてお願いいたします。</p>
+                                
+                                <div class="bg-gray-50 p-4 rounded">
+                                    <p class="font-semibold mb-2">■ご利用いただけるコンビニエンスストア</p>
+                                    <p>セブンイレブン、ローソン、ファミリーマート、ミニストップ、セイコーマート、<br>
+                                    デイリーヤマザキ、ポプラ、MMK設置店</p>
+                                </div>
+                                
+                                <div class="bg-blue-50 p-4 rounded">
+                                    <p class="mb-3">スマートフォンの決済アプリからお支払いできる便利なスマホ決済をご用意。<br>
+                                    郵便局やコンビニエンスストアに行くことなく、24時間いつでも、スマホやタブレットがあれば簡単にお支払いが可能です。</p>
+                                    
+                                    <div class="grid grid-cols-3 md:grid-cols-6 gap-4 mb-3">
+                                        <img src="/public/img/parts/icons/guide/icon_logo01.png" alt="決済アプリ1" class="w-full h-auto">
+                                        <img src="/public/img/parts/icons/guide/icon_logo02.png" alt="決済アプリ2" class="w-full h-auto">
+                                        <img src="/public/img/parts/icons/guide/icon_logo03.png" alt="決済アプリ3" class="w-full h-auto">
+                                        <img src="/public/img/parts/icons/guide/icon_logo04.png" alt="決済アプリ4" class="w-full h-auto">
+                                        <img src="/public/img/parts/icons/guide/icon_logo05.png" alt="決済アプリ5" class="w-full h-auto">
+                                        <img src="/public/img/parts/icons/guide/icon_logo06.png" alt="決済アプリ6" class="w-full h-auto">
+                                    </div>
+                                    
+                                    <p class="text-sm">スマホ決済について詳しくはこちらのページよりご確認ください。</p>
+                                </div>
+                                
+                                <div class="text-sm text-gray-600 space-y-1">
+                                    <p>※30万円を超えるお支払いの場合、ゆうちょ銀行(郵便局)でお支払ください。コンビニエンスストア・スマホ決済ではお取り扱いできません。</p>
+                                    <p>※10万円を超える現金によるゆうちょ銀行(郵便局)からのお振込みは、本人確認のために運転免許証・健康保険証等が必要になります。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">代金引換払い</h3>
+                            <div class="space-y-2">
+                                <p>・商品お届け時に商品と交換で、現金にて代金をお支払いください。<br>
+                                （※お届け先と申込者が異なるギフト扱いにはご利用いただけません。）</p>
+                                
+                                <div class="bg-yellow-50 border border-yellow-200 p-3 rounded text-sm">
+                                    <p>※一部、代引きがお取扱いできない地域があります。<br>
+                                    決済方法の変更をお願いする場合がございますのでご了承ください。</p>
+                                </div>
+                                
+                                <p>・代引手数料は無料です。</p>
+                                <p>・50万円を超えるお取引では利用できません。</p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">クレジットカード払い（デビットカード払いのご注意）</h3>
+                            <div class="space-y-4">
+                                <p>・カード会社からのご請求（お支払い）は商品の発送後となります。<br>
+                                ・下記カード会社のマークがプリントされているカードをご利用いただけます。</p>
+                                
+                                <div class="flex justify-center">
+                                    <img src="/public/img/parts/icons/guide/card.gif" alt="利用可能クレジットカード" class="h-auto max-w-full">
+                                </div>
+                                
+                                <div class="bg-yellow-50 border border-yellow-200 p-3 rounded text-sm">
+                                    <p>※上記のカードであっても海外発行のクレジットカードなど、発行形態によりご利用いただけない場合がございますので、あらかじめご了承ください。</p>
+                                </div>
+                                
+                                <div>
+                                    <p class="mb-2">・利用可能なお支払い回数は以下のようになっております。</p>
+                                    <ul class="text-sm space-y-1 ml-4">
+                                        <li>アメックス 1回、分割（3、5、6、10、12、15、18、20、24）</li>
+                                        <li>ダイナース 1回、リボのみ</li>
+                                        <li>その他のカード 1回、リボ、分割（2、3、5、6、10、12、15、18、20、24）</li>
+                                    </ul>
+                                    
+                                    <div class="bg-blue-50 border border-blue-200 p-3 rounded text-sm mt-3">
+                                        <p>※分割およびリボ払いには、各カード会社規定の分割手数料がかかります。</p>
+                                    </div>
+                                </div>
+                                
+                                <p>・各カード会社の規約にもとづき、ご利用指定口座から振替にてお支払いいただきます。</p>
+                                
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-800 mb-2">デビットカードのご利用について</h4>
+                                    <div class="bg-red-50 border border-red-200 p-4 rounded">
+                                        <p class="mb-3">・当オンラインショップでは、次の理由により、デビットカード(VISA、JCB）のご利用は推奨いたしません。<br>
+                                        ご利用になられる場合は、リスクをご理解の上、お客様の責任のもとでご利用いただきますようお願いいたします。</p>
+                                        
+                                        <div class="space-y-3 text-sm">
+                                            <div>
+                                                <p class="font-semibold">1. 注文と同時に口座から引き落とされます。</p>
+                                                <p>お届けまでにお時間がかかる商品の場合でも、注文時に口座より引き落とされてしまいます。</p>
+                                            </div>
+                                            
+                                            <div>
+                                                <p class="font-semibold">2. システム上、一時的に二重請求(二重払い)になる場合があります。</p>
+                                                <p>この場合、カード会社より返金が行われますが、概ね返金までにお時間がかかります。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-right mt-4"><a href="#top" class="text-blue-600 hover:text-blue-800 text-sm">ページの先頭へ</a></p>
+                </section>
+
+                <!-- オンライン会員について -->
+                <section id="guide06" class="bg-white rounded-lg shadow-sm border p-6">
+                    <h2 class="text-2xl font-bold c-text-premico mb-4 pl-6 border-l-4 border-[#2C5282] bg-gradient-to-r from-[#2C5282]/10 to-transparent py-3 rounded-r-lg shadow-sm">
+                        オンライン会員について
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <p>I・E・I オンラインショップ会員とは、弊社の運営するウェブサイト、「使ってよかったオンライン」「I・E・I オリジナルショップ」の2店共通の会員制度です。<br>
+                        一度登録すれば、次回からの煩わしいお客様個人データの入力作業を省くことができます。もちろん登録・退会は無料です。<br>
+                        また、ご注文履歴の確認や会員限定のお得なイベントなどのサービスが受けられます。<br>
+                        もちろん会員になられなくてもご利用いただけますが、様々なメリットのある会員登録をお勧めいたします。</p>
+                        
+                        <div class="bg-blue-50 border border-blue-200 p-4 rounded">
+                            <h4 class="font-semibold mb-2">■すでにお取引のあるお客様へ</h4>
+                            <p class="text-sm">この会員制度は、オンラインショップ限定で2006年11月9日に開始したサービスです。それまでに弊社にて商品を購入されたり、オンラインショップをご利用になられているお客様も新規にご登録いただきますようお願いいたします。</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-right mt-4"><a href="#top" class="text-blue-600 hover:text-blue-800 text-sm">ページの先頭へ</a></p>
+                </section>
+
+                <!-- 商品のお届けについて -->
+                <section id="guide07" class="bg-white rounded-lg shadow-sm border p-6">
+                    <h2 class="text-2xl font-bold c-text-premico mb-4 pl-6 border-l-4 border-[#2C5282] bg-gradient-to-r from-[#2C5282]/10 to-transparent py-3 rounded-r-lg shadow-sm">
+                        商品のお届けについて
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <p>・ご注文確認後、約1〜4週間でお届けいたします。受注生産品など、商品ページに別途納期の記載がある商品は、この限りではございません。</p>
+                        
+                        <p>・お届日・時間のご指定は注文フォームの備考欄にご記入ください。</p>
+                        
+                        <div class="bg-blue-50 border border-blue-200 p-4 rounded">
+                            <p class="text-sm">※配送時間指定は下記の内容になります。<br>
+                            午前中、12〜14時、14〜16時、16〜18時、18〜21時<br>
+                            ※ご希望に添えない場合は、別途ご連絡いたします。</p>
+                        </div>
+                        
+                        <p>・万一品切れなどでお届けが大幅に遅れる場合は、郵便・電話・メール等でご連絡いたします。</p>
+                        
+                        <p>・お支払いが郵便振替・コンビニエンスストア払いの場合、お届けが少々遅れる場合がございます。</p>
+                        
+                        <p>・代金引換の場合は原則として、配達店より在宅確認の上お伺いいたします。</p>
+                        
+                        <p>・2点以上ご注文の場合、別送となる場合がございます。</p>
+                        
+                        <p>・海外への発送は、お受けいたしません。</p>
+                        
+                        <div class="bg-gray-50 p-4 rounded">
+                            <p>・基本的に佐川急便にて商品をお届けします。<br>
+                            但し、メーカー直送の記載のある商品に関しては、メーカー指定の配送業者によるお届けとなります。<br>
+                            商品によりお届け方法が異なってまいりますので、配送業者はこちらで選択させていただきます。</p>
+                            
+                            <div class="bg-yellow-100 border border-yellow-300 p-2 rounded mt-3">
+                                <p class="text-sm">※佐川急便による代引きのカード決済は利用いただけません。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-right mt-4"><a href="#top" class="text-blue-600 hover:text-blue-800 text-sm">ページの先頭へ</a></p>
+                </section>
+
+                <!-- セキュリティについて -->
+                <section id="guide08" class="bg-white rounded-lg shadow-sm border p-6">
+                    <h2 class="text-2xl font-bold c-text-premico mb-4 pl-6 border-l-4 border-[#2C5282] bg-gradient-to-r from-[#2C5282]/10 to-transparent py-3 rounded-r-lg shadow-sm">
+                        セキュリティについて
+                    </h2>
+                    
+                    <div class="text-center mb-6">
+                        <div class="inline-flex items-center justify-center w-32 h-16 bg-green-100 rounded-lg mb-4">
+                            <div class="w-8 h-6 bg-green-600 rounded flex items-center justify-center text-white text-xs font-bold">SSL</div>
+                        </div>
+                        <p class="text-sm text-gray-600">クリックして証明書の内容をご確認ください。</p>
+                    </div>
+                    
+                    <p>このサイトでは、運営主体であるインペリアル・エンタープライズ株式会社の実在性を証明するとともに、お客様のプライバシー保護のため、デジタルIDを導入し、お客様情報を入力するページにおいてSSL暗号化通信を実現しています。</p>
+                    
+                    <p class="text-right mt-4"><a href="#top" class="text-blue-600 hover:text-blue-800 text-sm">ページの先頭へ</a></p>
+                </section>
+
+                <!-- 返品交換について -->
+                <section id="guide09" class="bg-white rounded-lg shadow-sm border p-6">
+                    <h2 class="text-2xl font-bold c-text-premico mb-4 pl-6 border-l-4 border-[#2C5282] bg-gradient-to-r from-[#2C5282]/10 to-transparent py-3 rounded-r-lg shadow-sm">
+                        返品交換について
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <p>・商品の返品・交換の際は、商品に同封の「ご連絡カード」にその旨をご記入いただき、商品と共に下記までご返送ください。<br>
+                            返送は、必ず宅配便または郵便小包でお願いします。定形外郵便等、保険のない方法での返送はおやめください。</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded">
+                            <h4 class="font-semibold mb-2">・返送先</h4>
+                            <address class="not-italic text-sm">
+                                〒252-1124<br>
+                                神奈川県綾瀬市吉岡2668-1<br>
+                                HMK綾瀬第二センター内<br>
+                                インペリアル・エンタープライズ(株)<br>
+                                返品係
+                            </address>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <p>・送料は商品の不備など弊社理由によるものは弊社負担、お客様のご都合によるものはお客様の負担とさせていただきます。</p>
+                            
+                            <p>・お客様のご都合による返品、交換は商品到着後2週間以内にお願いいたします。</p>
+                            
+                            <p>・サイズ、タイプ、色柄についての交換の場合、まれに品切れのため交換をお断りする場合がございますので、あらかじめご了承ください。</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-3">・返品・交換の出来ない商品</h4>
+                            <p class="mb-3">次に該当する商品は、原則として返品・交換はお受けできませんので、ご了承ください。</p>
+                            
+                            <div class="bg-red-50 border border-red-200 p-4 rounded">
+                                <ol class="text-sm space-y-1">
+                                    <li>(1)商品到着後に2週間以上経過した商品。</li>
+                                    <li>(2)開封後の下着、靴下等の衛生商品。</li>
+                                    <li>(3)既にご使用・ご着用された商品。タグをはずした商品。</li>
+                                    <li>(4)お客様の責任により生じた傷・汚れのある商品。</li>
+                                    <li>(5)セット商品の一部のみ。</li>
+                                    <li>(6)食料品・健康食品・化粧品。</li>
+                                    <li>(7)返品不可と明記されている商品。</li>
+                                    <li>(8)サイズ調整・名入れなどお客様用に加工された商品。</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-right mt-4"><a href="#top" class="text-blue-600 hover:text-blue-800 text-sm">ページの先頭へ</a></p>
+                </section>
+
+                <!-- 会社概要、著作権について -->
+                <section id="guide10" class="bg-white rounded-lg shadow-sm border p-6">
+                    <h2 class="text-2xl font-bold c-text-premico mb-4 pl-6 border-l-4 border-[#2C5282] bg-gradient-to-r from-[#2C5282]/10 to-transparent py-3 rounded-r-lg shadow-sm">
+                        会社概要、著作権について
+                        <span class="text-sm font-normal">（<a href="https://www.iei.co.jp/company/" target="_blank" class="c-text-premico hover:text-blue-800 underline">詳しい情報はこちらから→</a>）</span>
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        <!-- 会社情報テーブル -->
+                        <div class="space-y-4">
+                            <div class="overflow-x-auto">
+                                <table class="w-full border border-gray-300">
+                                    <tr class="bg-gray-50">
+                                        <th class="border border-gray-300 p-3 text-left w-1/4">名称</th>
+                                        <td class="border border-gray-300 p-3">インペリアル・エンタープライズ株式会社<br>略称： I・E・I（アイ・イー・アイ）</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="border border-gray-300 p-3 text-left bg-gray-50">所在地</th>
+                                        <td class="border border-gray-300 p-3">〒116-0014 東京都荒川区東日暮里5丁目7番18号 コスモパークビル6階</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <th class="border border-gray-300 p-3 text-left">設立年月日</th>
+                                        <td class="border border-gray-300 p-3">昭和57年（1982年）9月1日</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="border border-gray-300 p-3 text-left bg-gray-50">代表者名</th>
+                                        <td class="border border-gray-300 p-3">代表取締役社長　原 良郎</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            <div class="overflow-x-auto">
+                                <table class="w-full border border-gray-300">
+                                    <tr class="bg-gray-50">
+                                        <th class="border border-gray-300 p-3 text-left w-1/4">店舗名</th>
+                                        <td class="border border-gray-300 p-3">I・E・I　オリジナルショップ</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="border border-gray-300 p-3 text-left bg-gray-50">店舗運営責任者</th>
+                                        <td class="border border-gray-300 p-3">原　良郎</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <th class="border border-gray-300 p-3 text-left">営業時間</th>
+                                        <td class="border border-gray-300 p-3">9：30〜17：00</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="border border-gray-300 p-3 text-left bg-gray-50">休日</th>
+                                        <td class="border border-gray-300 p-3">土・日曜、祝日、年末年始</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <th class="border border-gray-300 p-3 text-left">お問い合わせ先</th>
+                                        <td class="border border-gray-300 p-3">
+                                            <div class="space-y-2">
+                                                <div class="flex items-center space-x-2">
+                                                    <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                                    </svg>
+                                                    <a href="tel:0120-247-417" class="text-blue-600 hover:text-blue-800 font-bold text-lg">0120-247-417</a>
+                                                </div>
+                                                <div class="flex items-center space-x-2">
+                                                    <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                                    </svg>
+                                                    <a href="/contact" class="text-blue-600 hover:text-blue-800 underline">お問い合わせフォームへ</a>
+                                                </div>
+                                                <p class="text-sm"><a href="https://iei.co.jp/wholesale/" target="_blank" class="text-blue-600 hover:text-blue-800 underline">商品の卸販売については、こちらのページをご覧ください。</a></p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            <div class="overflow-x-auto">
+                                <table class="w-full border border-gray-300">
+                                    <tr class="bg-gray-50">
+                                        <th class="border border-gray-300 p-3 text-left w-1/4">古物営業法に基づく表示</th>
+                                        <td class="border border-gray-300 p-3">インペリアル・エンタープライズ株式会社<br>東京都公安委員会許可　第301130607195号</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-3">著作権について</h4>
+                            <p>当ウェブサイト(<a href="https://iei.jp" class="text-blue-600 hover:text-blue-800 underline">https://iei.jp</a>)に使用している文章・写真・イラスト等の著作権は、当社(インペリアル・エンタープライズ株式会社)または第三者に帰属しています。<br>
+                            本ウェブサイトのコンテンツを許可なく複写、複製、翻訳、転載、販売など二次利用することを禁止します。</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-right mt-4"><a href="#top" class="text-blue-600 hover:text-blue-800 text-sm">ページの先頭へ</a></p>
+                </section>
+
+                <!-- 特定国際種事業者に関する表示 -->
+                <section class="bg-white rounded-lg shadow-sm border p-6">
+                    <h2 class="text-2xl font-bold c-text-premico mb-4 pl-6 border-l-4 border-[#2C5282] bg-gradient-to-r from-[#2C5282]/10 to-transparent py-3 rounded-r-lg shadow-sm">
+                        特定国際種事業者に関する表示
+                    </h2>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="w-full border border-gray-300">
+                            <tr class="bg-gray-50">
+                                <th class="border border-gray-300 p-3 text-left w-1/3">登録番号</th>
+                                <td class="border border-gray-300 p-3">02785</td>
+                            </tr>
+                            <tr>
+                                <th class="border border-gray-300 p-3 text-left bg-gray-50">事業者名称</th>
+                                <td class="border border-gray-300 p-3">インペリアル・エンタープライズ株式会社</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <th class="border border-gray-300 p-3 text-left">住所</th>
+                                <td class="border border-gray-300 p-3">東京都荒川区東日暮里5丁目7番18号 コスモパークビル6階</td>
+                            </tr>
+                            <tr>
+                                <th class="border border-gray-300 p-3 text-left bg-gray-50">代表者の氏名</th>
+                                <td class="border border-gray-300 p-3">代表取締役社長　原 良郎</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <th class="border border-gray-300 p-3 text-left">譲渡し又は引渡しの義務の対象とする<br>特別特定器官等の種別</th>
+                                <td class="border border-gray-300 p-3">ぞう科の牙及びその加工品</td>
+                            </tr>
+                            <tr>
+                                <th class="border border-gray-300 p-3 text-left bg-gray-50">登録の有効期間の満了の日</th>
+                                <td class="border border-gray-300 p-3">2026年5月31日</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <p class="text-right mt-4"><a href="#top" class="text-blue-600 hover:text-blue-800 text-sm">ページの先頭へ</a></p>
+                </section>
+            </div>
+        </main>
+
+        <!-- ページトップボタン -->
+        <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
+            <a href="#top" class="block c-bg-second hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+                ↑
+            </a>
+        </div>
+    </div>
+
+    <!-- フッターコンポーネント -->
+    <footer class="c-bg-premico text-white">
+        <!-- メインフッター -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 p-8">
+            <!-- 会社情報 -->
+            <div class="">
+                <h3 class="text-lg font-bold mb-4">インペリアル・エンタープライズ株式会社 I・E・I</h3>
+                <div class="space-y-2 text-gray-300">
+                    <p>〒***-****<br>東京都荒川区東日暮里*******</p>
+                    <p class="flex items-center space-x-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <a href="tel:0120-247-417" class="hover:text-iei-secondary transition-colors">0120-247-417</a>
+                    </p>
+                    <p class="text-xs pl-4">受付時間：毎日 朝6:00〜夜21:00<br>※携帯電話からもOK</p>
+                </div>
+            </div>
+            
+            <!-- カテゴリリンク -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">商品カテゴリ</h3>
+                <ul class="space-y-1 text-gray-300">
+                    <li><a href="/category/charaffine" class="hover:opacity-50 transition-colors">キャラフィネ</a></li>
+                    <li><a href="/category/moomin" class="hover:opacity-50 transition-colors">・ムーミン</a></li>
+                    <li><a href="/category/kitty" class="hover:opacity-50 transition-colors">・ハローキティ</a></li>
+                    <li><a href="/category/snoopy" class="hover:opacity-50 transition-colors">・スヌーピー</a></li>
+                    <li><a href="/category/premico" class="hover:opacity-50 transition-colors"><span class="tracking-wider">PREMICO</span> (プレミコ)</a></li>
+                    <li><a href="/category/jewelry" class="hover:opacity-50 transition-colors">女性ジュエリー・雑貨</a></li>
+                    <li><a href="/category/mens" class="hover:opacity-50 transition-colors">男性</a></li>
+                    <li><a href="/category/coin" class="hover:opacity-50 transition-colors">コイン・切手</a></li>
+                    <li><a href="/category/interior" class="hover:opacity-50 transition-colors">インテリア・美術工芸品</a></li>
+                </ul>
+            </div>
+            
+            <!-- サポート情報 -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">サポート</h3>
+                <ul class="space-y-1 text-gray-300">
+                    <li><a href="/guide/" class="hover:opacity-50  transition-colors">ご利用ガイド</a></li>
+                    <li><a href="/guide/shipping" class="hover:opacity-50  transition-colors">送料・お届けについて</a></li>
+                    <li><a href="/guide/payment" class="hover:opacity-50  transition-colors">お支払い方法</a></li>
+                    <li><a href="/guide/return" class="hover:opacity-50  transition-colors">返品・交換について</a></li>
+                    <li><a href="/faq" class="hover:opacity-50  transition-colors">よくある質問</a></li>
+                    <li><a href="/contact" class="hover:opacity-50  transition-colors">お問い合わせ</a></li>
+                    <li><a href="/sitemap.html" class="hover:opacity-50  transition-colors">サイトマップ</a></li>
+                </ul>
+            </div>
+            
+            <!-- SNS・ニュースレター -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">フォロー・配信</h3>
+                
+                <!-- SNSアイコン -->
+                <div class="flex space-x-4 mb-6">
+                    <a href="#top" class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-iei-primary transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
+                    <a href="#top" class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-iei-primary transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                        </svg>
+                    </a>
+                    <a href="#top" class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-iei-primary transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.098.118.112.222.083.343-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.758-1.378l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.624 0 11.99-5.367 11.99-11.989C24.007 5.367 18.641.001 12.017.001z"/>
+                        </svg>
+                    </a>
+                    <a href="#top" class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-iei-primary transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- ニュースレター登録 -->
+                <div>
+                    <p class="text-sm text-gray-300 mb-3">新着商品やお得な情報をお届け</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 法的情報・認証マーク -->
+        <div class="border-t border-gray-400 py-2">
+            <div class="px-2">
+                <div class="flex flex-col lg:flex-row justify-between items-center space-y-2 lg:space-y-0">
+                    <!-- 法的リンク -->
+                    <div class="flex flex-wrap justify-center lg:justify-start space-x-4 text-sm text-gray-200">
+                        <a href="/terms" class="hover:opacity-50 transition-colors">利用規約</a>
+                        <span>|</span>
+                        <a href="/privacy" class="hover:opacity-50 transition-colors">プライバシーポリシー</a>
+                        <span>|</span>
+                        <a href="/tokusho" class="hover:opacity-50 transition-colors">特定商取引法に基づく表示</a>
+                        <span>|</span>
+                        <a href="/company" class="hover:opacity-50 transition-colors">会社概要</a>
+                    </div>
+                    
+                    <!-- 認証マーク -->
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center space-x-2 text-sm text-gray-400">
+                            <div class="w-8 h-6 bg-gray-600 rounded flex items-center justify-center text-xs font-bold">SSL</div>
+                            <span>暗号化通信</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-sm text-gray-400">
+                            <div class="w-16 h-6 bg-gray-600 rounded flex items-center justify-center text-xs font-bold">JADMA</div>
+                            <span>日本通販協会会員</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- コピーライト -->
+        <div class="py-1 pb-8">
+            <div class="container mx-auto px-4 text-center">
+                <p class="c-text-xxs text-gray-400 leading-tight">
+                    &copy; 2024 Imperial Enterprises Inc. All Rights Reserved.<br>
+                    <span class="">I・E・Iはインペリアル・エンタープライズ株式会社の略称です</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="/public/js/product.js"></script>
+
+<script>
+    // DOMの準備完了を待つ
+    document.addEventListener('DOMContentLoaded', function() {
+        // ハンバーガーメニュー機能
+        const ham = document.querySelector('#js-hamburger');
+        const nav = document.querySelector('#js-nav');
+        const closeMenu = document.querySelector('#js-close-menu');
+
+        // メニューを閉じる共通関数
+        function closeNavMenu() {
+            if (ham) ham.classList.remove('active');
+            if (nav) nav.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        if (ham && nav) {
+            // メニューボタンクリック
+            ham.addEventListener('click', function () {
+                ham.classList.toggle('active');
+                nav.classList.toggle('active');
+                
+                // 背景スクロール制御
+                if (nav.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // 閉じるボタンクリック
+            if (closeMenu) {
+                closeMenu.addEventListener('click', closeNavMenu);
+            }
+
+            // メニュー外をクリックしてメニューを閉じる
+            document.addEventListener('click', function(e) {
+                if (nav.classList.contains('active')) {
+                    // クリックされた要素がメニュー内またはハンバーガーボタンでない場合
+                    if (!nav.contains(e.target) && !ham.contains(e.target)) {
+                        closeNavMenu();
+                    }
+                }
+            });
+
+            // メニュー内のリンククリックでメニューを閉じる
+            const menuLinks = nav.querySelectorAll('a');
+            menuLinks.forEach(function(link) {
+                link.addEventListener('click', closeNavMenu);
+            });
+
+            // ESCキーでメニューを閉じる
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && nav.classList.contains('active')) {
+                    closeNavMenu();
+                }
+            });
+        }
+
+        // 商品カテゴリアコーディオン機能
+        const categoryToggle = document.querySelector('#category-toggle');
+        const categoryContent = document.querySelector('#category-content');
+        const categoryArrow = document.querySelector('#category-arrow');
+
+        if (categoryToggle && categoryContent && categoryArrow) {
+            categoryToggle.addEventListener('click', function() {
+                const isOpen = categoryContent.style.maxHeight && categoryContent.style.maxHeight !== '0px';
+                
+                if (isOpen) {
+                    // 閉じる
+                    categoryContent.style.maxHeight = '0px';
+                    categoryArrow.style.transform = 'rotate(0deg)';
+                } else {
+                    // 開く
+                    categoryContent.style.maxHeight = categoryContent.scrollHeight + 'px';
+                    categoryArrow.style.transform = 'rotate(180deg)';
+                }
+            });
+        }
+
+        // スムーススクロール機能
+        const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+        smoothScrollLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const startPosition = window.pageYOffset;
+                    const distance = targetPosition - startPosition;
+                    const duration = 800;
+                    let start = null;
+
+                    window.requestAnimationFrame(step);
+
+                    function step(timestamp) {
+                        if (!start) start = timestamp;
+                        const progress = timestamp - start;
+                        const progressRatio = Math.min(progress / duration, 1);
+                        const easeInOutCubic = progressRatio < 0.5
+                            ? 4 * progressRatio * progressRatio * progressRatio
+                            : 1 - Math.pow(-2 * progressRatio + 2, 3) / 2;
+                        
+                        window.scrollTo(0, startPosition + distance * easeInOutCubic);
+                        
+                        if (progress < duration) {
+                            window.requestAnimationFrame(step);
+                        }
+                    }
+                }
+            });
+        });
+
+        // ページトップボタン
+        const pagetop = document.getElementById('pagetop');
+        if (pagetop) {
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    pagetop.classList.remove('hidden');
+                } else {
+                    pagetop.classList.add('hidden');
+                }
+            });
+
+            pagetop.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    });
+
+    // jQuery ready
+    $(document).ready(function() {
+        // メインスライダー
+        $('.slider-main').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            dots: true, // ドット表示を有効化
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev absolute left-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#2C5282" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>',
+            nextArrow: '<button type="button" class="slick-next absolute right-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#2C5282" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>',
+            centerMode: true, // センターモードで前後を見せる
+            centerPadding: '180px', // 前後のスライドの見える量
+            slidesToShow: 1, // メインは1枚表示
+            slidesToScroll: 1,
+            asNavFor: '.slider-thumbnail', // サムネイルスライダーと連動
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        centerPadding: '20px', // モバイル・タブレットサイズ
+                        dots: true, // ドット表示
+                        asNavFor: null // サムネイルとの連動を解除
+                    }
+                }
+            ]
+        });
+
+        // サムネイルスライダー
+        $('.slider-thumbnail').slick({
+            infinite: true,
+            autoplay: false,
+            dots: false,
+            arrows: false,
+            slidesToShow: 7, // デスクトップで5つ表示
+            slidesToScroll: 1,
+            asNavFor: '.slider-main', // メインスライダーと連動
+            centerMode: true,
+            focusOnSelect: true, // クリックでスライド切り替え
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3, // モバイル・タブレットで3つ表示
+                        centerPadding: '10px'
+                    }
+                }
+            ]
+        });
+
+        // サムネイル画像のアクティブ状態管理
+        $('.slider-thumbnail').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+            $('.slider-thumbnail img').removeClass('opacity-100').addClass('opacity-60');
+        });
+
+        $('.slider-thumbnail').on('afterChange', function(event, slick, currentSlide) {
+            $('.slider-thumbnail img').removeClass('opacity-100').addClass('opacity-60');
+            $('.slider-thumbnail .slick-current img').removeClass('opacity-60').addClass('opacity-100');
+        });
+
+        // 初期状態でアクティブなサムネイルを設定
+        $('.slider-thumbnail .slick-current img').removeClass('opacity-60').addClass('opacity-100');
+        
+        // 検索機能の拡張
+        const searchInput = document.getElementById('search-input');
+        const searchForm = searchInput.closest('form');
+        
+        // Enter キーでの検索
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                searchForm.submit();
+            }
+        });
+        
+        // フォーカス時のスタイル変更
+        searchInput.addEventListener('focus', function() {
+            this.parentElement.classList.add('ring-2', 'ring-blue-200');
+        });
+        
+        searchInput.addEventListener('blur', function() {
+            this.parentElement.classList.remove('ring-2', 'ring-blue-200');
+        });
+        
+    });
+</script>
+</body>
+</html>
