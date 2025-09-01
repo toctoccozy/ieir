@@ -54,13 +54,13 @@
     /* モバイルではスライドを画面幅いっぱいに */
     @media (max-width: 767px) {
         .slider-main .slick-slide {
-            margin: 0;
+            margin: 0 7px;
             opacity: 1 !important;
             transform: scale(1) !important;
         }
         
         .slider-main .slick-list {
-            margin: 0;
+            margin: 0 -7px;
         }
     }
     
@@ -116,10 +116,10 @@
     <div class="min-h-screen mw-full">
         <header class="pb-6 mx-auto xl:w-[80%]">
             <!-- ヘッダー -->
-            <div class="mx-auto bg-white border-b relative z-50 h-24">
+            <div class="mx-auto bg-white border-b relative z-50 h-24 lg:h-16">
                 <!-- ヘッダー上段 -->
                 <div class="px-2 pt-2">
-                    <div class="flex items-center justify-between h-12 lg:h-14">
+                    <div class="flex items-center justify-between h-12">
                         <!-- ハンバーガーメニュー（左） -->
                         <div class="md:ml-2 w-12 h-full hover:opacity-50 duration-200">
                             <button class="hamburger-button relative w-full h-full bg-transparent border-none z-70 cursor-pointer px-1 py-1" id="js-hamburger">
@@ -410,13 +410,13 @@
 
             <!-- 検索セクション -->
             <section class="py-1 px-4 md:mt-4">
-                <div class="max-w-lg mx-auto">
+                <div class="max-w-xl mx-auto">
                     <!-- 検索フォーム -->
                     <form class="relative" action="/search" method="GET">
                         <div class="relative flex items-center">
                             <!-- 検索入力フィールド -->
                             <input type="text" name="q" id="search-input" placeholder="商品番号・キーワードで検索" 
-                                class="sm:text-sm w-full pl-4 pr-12 py-2 border border-gray-300 rounded-l-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm" autocomplete="off"
+                                class="sm:text-sm w-full pl-4 pr-12 py-3 md:py-4 border border-gray-300 rounded-l-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm" autocomplete="off"
                             >
                             
                             <!-- 検索ボタン（アイコンのみ） -->
@@ -695,12 +695,12 @@
                 <!-- カテゴリーグリッド -->
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1">
                     <!-- IEIとはグリッド -->
-                    <div class="bg-white overflow-hidden flex items-center">
+                    <div class="bg-white overflow-hidden flex items-center mx-2">
                         <div class="border rounded-lg c-border-second">
                             <!-- <div class="lg:flex mt-1 flex-col items-center p-1 hidden">
                                 <img class="h-10" src="/public/img/parts/logo/logo_iei.jpg" alt="I･E･I">
                             </div> -->
-                            <p class="text-sm lg:text-base text-gray-700 leading-tight p-4">
+                            <p class="text-lg sm:text-base text-gray-700 leading-tight p-4">
                                 当サイトでは、"他では決して手に入らない"というオリジナリティにこだわったユニークな商品を多数取り揃え、ハウスブランドや特集ページを通じてお客様にご提案しております。<br>
                                 皆様の暮らしと心にゆとりと潤いそして感動を提供したいというのが私達の最大の願いです。
                             </p>
@@ -1095,7 +1095,7 @@
                 <!-- もっと見るボタン -->
                 <div class="w-full sm:w-[50%] px-6 mx-auto">
                     <button class="w-full c-bg-premico-gradient hover:opacity-80 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
-                        <a href="#" class="flex flex items-center justify-center gap-2">
+                        <a href="#" class="flex items-center justify-center gap-2">
                             <span class="text-base">もっと見る</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1404,13 +1404,13 @@
             prevArrow: '<button type="button" class="slick-prev absolute left-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#2C5282" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>',
             nextArrow: '<button type="button" class="slick-next absolute right-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#2C5282" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>',
             centerMode: true, // センターモードで前後を見せる
-            centerPadding: '180px', // 前後のスライドの見える量
+            centerPadding: '380px', // 前後のスライドの見える量
             slidesToShow: 1, // メインは1枚表示
             slidesToScroll: 1,
             asNavFor: '.slider-thumbnail', // サムネイルスライダーと連動
             responsive: [
                 {
-                    breakpoint: 1024,
+                    breakpoint: 1280,
                     settings: {
                         centerPadding: '20px', // モバイル・タブレットサイズ
                         dots: true, // ドット表示
