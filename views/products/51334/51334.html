@@ -1,0 +1,511 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>{{ $goods->getTitleTag() }}｜コレクション｜インペリアル・エンタープライズ株式会社 I･E･I</title>
+    <meta name="description" content="{{ $goods->getSeoDescription() }}">
+    <meta name="keywords" content="{{ $goods->getSeoKeywords() }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <?php include public_path() . '/include/head.html'; ?>
+
+    <script>
+        (function($) {
+            $(function() {
+                var $header = $('#top-head');
+                // Nav Fixed
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 350) {
+                        $header.addClass('fixed');
+                    } else {
+                        $header.removeClass('fixed');
+                    }
+                });
+                // Nav Toggle Button
+                $('#nav-toggle').click(function() {
+                    $header.toggleClass('open');
+                });
+            });
+        })(jQuery);
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            var pagetop = $('#pagetop');
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
+            pagetop.click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+    <script src="{{ asset('/sys/js/goods.js') }}"></script>
+
+</head>
+
+
+<body id="collection" class="product">
+
+    <?php include public_path() . '/body_ga_tag.html'; ?>
+
+    <div id="wrapper">
+
+        <header id="top-head">
+            <?php include public_path() . '/include/header.html'; ?>
+        </header>
+
+
+        <section id="content">
+            <p class="bread-clumbs"><a href="/premico/">コレクション</a>
+                @if ($goods->getIeiCategory()->isNotEmpty())
+                    ｜<a
+                        href="/premico/{{ $goods->getIeiCategory()->first()->getIeiCategoryName() }}/list">{{ $goods->getIeiCategory()->first()->getIeiCategoryJpName() }}</a>
+                @endif
+                ｜{{ $goods->getGoodsName() }}
+            </p>
+
+            <!--PCのみ↓-->
+            <section class="pc_main">
+                <h1><img src="/ieir/views/products/51334/pc_key_visual.jpg" alt="{{ $goods->getGoodsName() }}"
+                        width="1000" height="500"></h1>
+
+                <ul class="btn-telbuy">
+                    <li class="tel"><img src="/ieir/views/products/51334/pc_btn_buy.png" alt="お電話でのお申し込みはこちら"
+                            width="500" height="83"></li>
+                    <li class="cart"><a href="#lp03"><img src="/img/products/51334/pc_btn_tell.png"
+                                alt="購入する" width="500" height="83"></a></li>
+                </ul>
+
+            <p class="pdt-dscrptn">
+                <img src="/ieir/views/products/51334/pc_lead_01.jpg" alt="xxxxxxxxx" width="1000" height="1868">
+                <img src="/ieir/views/products/51334/pc_lead_02.jpg" alt="xxxxxxxxx" width="1000" height="2249">
+            </p>
+            </section>
+            <!--PCのみ↑-->
+
+            <!--SPのみ↓-->
+            <section class="sp_main">
+                <p><img src="/ieir/views/products/51334/sp_key_visual.jpg" alt="" width="750"
+                        height="750"></p>
+
+                <ul class="btn-telbuy">
+                    <li><a href="tel:0120-247-417"><img src="/ieir/views/products/51334/sp_btn_tel.png" alt="今すぐ電話でお申し込み" width="690" height="120"></a></li>
+                    <li class="cart"><a href="#lp03"><img src="/ieir/views/products/51334/sp_btn_buy.png" alt="購入する" width="690" height="120"></a></li>
+                </ul>
+                <p class="pdt-dscrptn">
+                    <img src="/ieir/views/products/51334/sp_lead_01.jpg" alt="" width="640" height="954">
+                    <img src="/ieir/views/products/51334/sp_lead_02.jpg" alt="" width="640" height="1572">
+                </p>
+            </section>
+            <!--SPのみ↑-->
+
+            <section id="gallery">
+                <h2 class="hdr_gly" id="lp02">
+                    <img src="/ieir/views/products/51334/pc_gallery_title.png" alt="ギャラリー" width="1000" height="80" class="pcv">
+                    <img src="/ieir/views/products/51334/sp_gallery_title.png" alt="" width="700" height="87" class="spv">
+                </h2>
+
+                <p class="image"><img src="/ieir/views/products/51334/title_img.jpg" alt="" width="698" height="580"></p>
+
+                <div class="photo-area">
+                    <ul>
+                        <li><img src="/ieir/views/products/51334/gallery_01.jpg" alt="" width="273" height="136"></li>
+                        <li><img src="/ieir/views/products/51334/gallery_02.jpg" alt="" width="273" height="136"></li>
+                        <li><img src="/ieir/views/products/51334/gallery_03.jpg" alt="" width="273" height="136"></li>
+                        <li><img src="/ieir/views/products/51334/gallery_04.jpg" alt="" width="273" height="136"></li>
+                        <li><img src="/ieir/views/products/51334/gallery_05.jpg" alt="" width="273" height="136"></li>
+                        <li><img src="/ieir/views/products/51334/gallery_06.jpg" alt="" width="273" height="136"></li>
+                        <li><img src="/ieir/views/products/51334/gallery_07.jpg" alt="" width="273" height="136"></li>
+                        <li><img src="/ieir/views/products/51334/gallery_08.jpg" alt="" width="273" height="136"></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="price_area">
+                <h2 class="hdr_price" id="lp03"><img src="/ieir/views/products/51334/pc_price_title.png"
+                        alt="仕様／価格" width="1000" height="80" class="pcv"><img
+                        src="/ieir/views/products/51334/sp_price_title.png" alt="" width="690"
+                        height="86" class="spv"></h2>
+
+                <p class="image"><img src="/ieir/views/products/51334/product_img.jpg" alt=""
+                        width="439" height="439"></p>
+
+                <div class="text-area">
+                    <!-- 紐づけコードあり -->
+                    @if ($goods->isConnect())
+                        <!-- 紐づけコードあり 金額が異なる場合 -->
+                        @if ($goods->connectGoodsDifferentPrice())
+                            @foreach ($goods->getConnectGoods() as $connect_goods)
+                                <h3>{{ $connect_goods->getGoodsName() }}</h3>
+                                @if ($connect_goods->getPriceText() !== '')
+                                    {!! $connect_goods->getPriceText() !!}
+                                @else
+                                    @if ($connect_goods->isGetM1shsg_0() === true)
+                                        <p class="price">{!! $connect_goods->getSoroM1shsg_0_text() !!}</p>
+                                    @endif
+                                    @if ($connect_goods->isGetM1shsg_1() === true)
+                                        <p class="credit">{!! $connect_goods->getSoroM1shsg_1_text() !!}</p>
+                                    @endif
+                                    @if ($connect_goods->isM1tsry() === true)
+                                        <p class="fee">{!! $connect_goods->getSoroM1tsry_text() !!}</p>
+                                    @endif
+                                @endif
+
+                                <div class="method">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>仕　様<br>
+                                        ●材質：ケース＝ゴールドIP仕上げステンレススチール、裏蓋＝ステンレススチール、文字盤＝ダイヤモンド1石、風防＝サファイアガラス、バンド＝牛革（クロコダイル型押し）<br>
+                                        ●ケースサイズ（約）：縦51×最大幅43×厚さ9mm<br>
+                                        ●手首回り（約）：16.0〜22.5cm<br>
+                                        ●ムーブメント：日本製クオーツ（平均月差±20秒以内）<br>
+                                        ●日常生活用強化防水（5気圧防水）<br>
+                                        ●2年間品質保証<br>
+                                        ●フランス製</dd>
+                                    </dl>
+                                </div>
+                                
+                                <br>
+                            @endforeach
+                        @else
+                            <!-- 紐づけコードあり 金額が同じ場合 -->
+                            <h3>{{ $goods->getGoodsName() }}</h3>
+                            @if ($goods->getPriceText() !== '')
+                                {!! $goods->getPriceText() !!}
+                            @else
+                                @if ($goods->isGetM1shsg_0() === true)
+                                    <p class="price">{!! $goods->getSoroM1shsg_0_text() !!}</p>
+                                @endif
+                                @if ($goods->isGetM1shsg_1() === true)
+                                    <p class="credit">{!! $goods->getSoroM1shsg_1_text() !!}</p>
+                                @endif
+                                @if ($goods->isM1tsry() === true)
+                                    <p class="fee">{!! $goods->getSoroM1tsry_text() !!}</p>
+                                @endif
+                            @endif
+
+                            <div class="method">
+                                <dl>
+                                    <dt></dt>
+                                    <dd>仕　様<br>
+                                    ●材質：ケース＝ゴールドIP仕上げステンレススチール、裏蓋＝ステンレススチール、文字盤＝ダイヤモンド1石、風防＝サファイアガラス、バンド＝牛革（クロコダイル型押し）<br>
+                                    ●ケースサイズ（約）：縦51×最大幅43×厚さ9mm<br>
+                                    ●手首回り（約）：16.0〜22.5cm<br>
+                                    ●ムーブメント：日本製クオーツ（平均月差±20秒以内）<br>
+                                    ●日常生活用強化防水（5気圧防水）<br>
+                                    ●2年間品質保証<br>
+                                    ●フランス製</dd>
+                                </dl>
+                            </div>
+                            <br>
+                        @endif
+                        <!-- 紐づけコードあり カート -->
+                        <div class="form">
+                            @if ($goods->isConnectGoodsAllOpenFlg() === true)
+
+                                <span class="atn">下記を選択していただき、”カートに入れる”ボタンを押してください。</span><br>
+
+                                @foreach ($goods->getConnectGoods() as $connect_goods)
+                                    <!-- 表示のみ 以外 -->
+                                    @if ($connect_goods->isDisplayOnly() === false)
+                                        <input type="hidden" name="item_no"
+                                            class="item_no{{ $connect_goods->getItemNo() }}"
+                                            value="{{ $connect_goods->getItemNo() }}">
+                                        <input type="hidden" name="medium_code"
+                                            class="medium_code{{ $connect_goods->getItemNo() }}"
+                                            value="{{ $connect_goods->getMediumCode() }}">
+                                        <input type="hidden" name="amount"
+                                            class="amount{{ $connect_goods->getItemNo() }}" value="1">
+                                        <input type="hidden" name="ex_volume{{ $connect_goods->getItemNo() }}"
+                                            value="{{ $connect_goods->isVolume() }}">
+                                        <p>
+                                            <span>
+                                                @if ($connect_goods->isNgCartMessage() || $connect_goods->isOkCartMessage())
+                                                    <!-- メッセージあり 受注NG or OK -->
+                                                    @if ($connect_goods->getMessage() !== '')
+                                                        <!-- メッセージあり 受注NG or OK -->
+                                                        {!! $connect_goods->getMessage() !!}
+                                                        <br>
+                                                    @endif
+                                                @else
+                                                    <!-- メッセージなし 納期表示 -->
+                                                    @if ($goods->getGoodsDeliveryText() !== '')
+                                                        {!! $goods->getGoodsDeliveryText() !!}
+                                                        <br>
+                                                    @endif
+                                                @endif
+
+                                                @if ($connect_goods->isNgCartMessage())
+                                                    <!-- メッセージあり 受注NG -->
+                                                    &nbsp;&nbsp;{{ $connect_goods->getShortGoodsName() }}
+                                                @else
+                                                    <!-- メッセージあり 受注OK or メッセージなし -->
+                                                    <label>
+                                                        <input type="checkbox" class="connect_check"
+                                                            value="{{ $connect_goods->getItemNo() }}">&nbsp;&nbsp;{{ $connect_goods->getShortGoodsName() }}
+                                                    </label>
+                                                @endif
+                                            </span><br>
+
+                                            <!-- イニシャルの指定あり -->
+                                            @if ($connect_goods->isInitial() && !$connect_goods->isNgCartMessage())
+                                                <br>
+                                                <span class="atn">{!! $connect_goods->getInitialTitle() !!}</span><br>
+                                                <input type="text" name="initial" value=""
+                                                    class="initial{{ $connect_goods->getItemNo() }}"><br>
+                                            @endif
+
+                                            @if ($connect_goods->isCosize() && !$connect_goods->isNgCartMessage())
+                                                @if ($connect_goods->isColor())
+                                                    <span class="select">
+                                                        <select name="m5clr"
+                                                            class="m5clr{{ $connect_goods->getItemNo() }}"
+                                                            data-item_no="{{ $connect_goods->getItemNo() }}"
+                                                            data-data_type="m5clr">
+                                                            <option value="">▼お選びください</option>
+                                                            @foreach ($connect_goods->getColorArray() as $key => $color)
+                                                                <option value="{{ $color->m5clr }}">
+                                                                    {{ $color->color_name }}
+                                                                </option>
+                                                            @endforeach
+                                                        </select>
+                                                    </span>
+                                                    @if ($connect_goods->isSize() || $connect_goods->isType())
+                                                        <br>
+                                                    @endif
+                                                @else
+                                                    <input type="hidden" name="m5clr" value="">
+                                                @endif
+                                                @if ($connect_goods->isSize())
+                                                    <span class="select">
+                                                        <select name="m5siz"
+                                                            class="m5siz{{ $connect_goods->getItemNo() }}"
+                                                            data-item_no="{{ $connect_goods->getItemNo() }}"
+                                                            data-data_type="m5siz">
+                                                            <option value="">▼お選びください</option>
+                                                            @if (!$connect_goods->isColor())
+                                                                @foreach ($connect_goods->getSizeArray() as $size)
+                                                                    <option value="{{ $size->m5siz }}">
+                                                                        {{ $size->size_name }}
+                                                                    </option>
+                                                                @endforeach
+                                                            @endif
+                                                        </select>
+                                                    </span>
+                                                    @if ($connect_goods->isType())
+                                                        <br>
+                                                    @endif
+                                                @else
+                                                    <input type="hidden" name="m5siz" value="">
+                                                @endif
+
+                                                @if ($connect_goods->isType())
+                                                    <span class="select">
+                                                        <select name="type_code"
+                                                            class="type_code{{ $connect_goods->getItemNo() }}"
+                                                            data-item_no="{{ $connect_goods->getItemNo() }}"
+                                                            data-data_type="type_code">
+                                                            <option value="">▼お選びください</option>
+                                                            @if (!$connect_goods->isColor() && !$connect_goods->isSize())
+                                                                @foreach ($connect_goods->getTypeArray() as $type)
+                                                                    <option value="{{ $type->type_code }}">
+                                                                        {{ $type->type_name }}
+                                                                    </option>
+                                                                @endforeach
+                                                            @endif
+                                                        </select>
+                                                    </span>
+                                                @else
+                                                    <input type="hidden" name="type_code" value="">
+                                                @endif
+                                            @endif
+                                        </p>
+                                    @endif
+                                @endforeach
+                        </div>
+                        <p class="cart-in" id="cart">
+                            <a onClick="javascript:void(0);">
+                                <img src="/ieir/views/products/51334/sp_price_cart.png" alt="カートに入れる"
+                                    width="690" height="104" class="add-cart-connect"
+                                    data-tor-smoothScroll="noSmooth">
+                            </a>
+                        </p>
+                    @endif
+                    <p class="goods-contact"><a
+                            href="/inquiry/index?item_no={{ $goods->getItemNo() }}">この商品のお問い合わせ</a></p>
+                @else
+                    <!-- 紐づけコードなし -->
+                    <h3>{{ $goods->getGoodsName() }}</h3>
+                    @if ($goods->isM1srs() === true)
+                        <!-- 産直商品 -->
+                        <br>この商品は毎月1回頒布形式でお届けします。<br><br>
+                        <p class="price">{!! $goods->getSoroM1srs_1_total_text() !!}</p>
+                        <p class="credit">{!! $goods->getSoroM1srs_1_text() !!}</p>
+                        <p class="fee">{!! $goods->getSoroM1srs_1_soryo_text() !!}</p>
+                    @else
+                        <!-- 通常商品 -->
+                        @if ($goods->getPriceText() !== '')
+                            {!! $goods->getPriceText() !!}
+                        @else
+                            @if ($goods->isGetM1shsg_0() === true)
+                                <p class="price">{!! $goods->getSoroM1shsg_0_text() !!}</p>
+                            @endif
+                            @if ($goods->isGetM1shsg_1() === true)
+                                <p class="credit">{!! $goods->getSoroM1shsg_1_text() !!}</p>
+                            @endif
+                            @if ($goods->isM1tsry() === true)
+                                <p class="fee">{!! $goods->getSoroM1tsry_text() !!}</p>
+                            @endif
+                        @endif
+                    @endif
+
+                    <div class="method">
+                        <dl>
+                            <dt></dt>
+                            <dd>仕　様<br>
+                            ●材質：ケース＝ゴールドIP仕上げステンレススチール、裏蓋＝ステンレススチール、文字盤＝ダイヤモンド1石、風防＝サファイアガラス、バンド＝牛革（クロコダイル型押し）<br>
+                            ●ケースサイズ（約）：縦51×最大幅43×厚さ9mm<br>
+                            ●手首回り（約）：16.0〜22.5cm<br>
+                            ●ムーブメント：日本製クオーツ（平均月差±20秒以内）<br>
+                            ●日常生活用強化防水（5気圧防水）<br>
+                            ●2年間品質保証<br>
+                            ●フランス製</dd>
+                        </dl>
+                    </div>
+
+                    @if ($goods->isNgCartMessage() || $goods->isOkCartMessage())
+                        <!-- メッセージあり 受注NG or OK -->
+                        {!! $goods->getMessage() !!}<br>
+                    @else
+                        <!-- メッセージなし 納期表示 -->
+                        {!! $goods->getGoodsDeliveryText() !!}<br>
+                    @endif
+
+                    <!-- 紐づけコードなし カート -->
+                    <!-- 表示のみ 以外 -->
+                    @if ($goods->isDisplayOnly() === false)
+                        <form methos="post" action="/cart" name="cartForm{{ $goods->getItemNo() }}">
+                            <input type="hidden" name="item_no" value="{{ $goods->getItemNo() }}">
+                            <input type="hidden" name="medium_code" value="{{ $goods->getMediumCode() }}">
+                            <input type="hidden" name="amount1" value="1">
+                            <input type="hidden" name="ex_volume" value="{{ $goods->isVolume() }}">
+
+                            @if ($goods->isInitial() && !$goods->isNgCartMessage())
+                                <!-- イニシャルの指定あり -->
+                                <br>
+                                <span class="atn">{!! $goods->getInitialTitle() !!}</span><br>
+                                <input type="text" name="initial" value=""><br>
+                            @endif
+
+                            @if ($goods->isCosize() && !$goods->isNgCartMessage())
+                                <span class="atn">下記を選択していただき、”カートに入れる”ボタンを押してください。</span><br>
+                                @if ($goods->isColor())
+                                    <span class="select">
+                                        <select name="m5clr" class="m5clr{{ $goods->getItemNo() }}"
+                                            data-item_no="{{ $goods->getItemNo() }}" data-data_type="m5clr">
+                                            <option value="">▼お選びください</option>
+                                            @foreach ($goods->getColorArray() as $key => $color)
+                                                <option value="{{ $color->m5clr }}">
+                                                    {{ $color->color_name }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                    </span>
+                                    @if ($goods->isSize() || $goods->isType())
+                                        <br>
+                                    @endif
+                                @else
+                                    <input type="hidden" name="m5clr" value="">
+                                @endif
+                                @if ($goods->isSize())
+                                    <span class="select">
+                                        <select name="m5siz" class="m5siz{{ $goods->getItemNo() }}"
+                                            data-item_no="{{ $goods->getItemNo() }}" data-data_type="m5siz">
+                                            <option value="">▼お選びください</option>
+                                            @if (!$goods->isColor())
+                                                @foreach ($goods->getSizeArray() as $size)
+                                                    <option value="{{ $size->m5siz }}">
+                                                        {{ $size->size_name }}
+                                                    </option>
+                                                @endforeach
+                                            @endif
+                                        </select>
+                                    </span>
+                                    @if ($goods->isType())
+                                        <br>
+                                    @endif
+                                @else
+                                    <input type="hidden" name="m5siz" value="">
+                                @endif
+
+                                @if ($goods->isType())
+                                    <span class="select">
+                                        <select name="type_code" class="type_code{{ $goods->getItemNo() }}"
+                                            data-item_no="{{ $goods->getItemNo() }}" data-data_type="type_code">
+                                            <option value="">▼お選びください</option>
+                                            @if (!$goods->isColor() && !$goods->isSize())
+                                                @foreach ($goods->getTypeArray() as $type)
+                                                    <option value="{{ $type->type_code }}">
+                                                        {{ $type->type_name }}
+                                                    </option>
+                                                @endforeach
+                                            @endif
+                                        </select>
+                                    </span>
+                                @else
+                                    <input type="hidden" name="type_code" value="">
+                                @endif
+                            @endif
+
+                            @if (!$goods->isNgCartMessage())
+                                <p class="cart-in" id="cart">
+                                    <a onClick="javascript:void(0);">
+                                        <img src="/ieir/views/products/51334/sp_price_cart.png" alt="カートに入れる"
+                                            width="690" height="104" class="add-cart"
+                                            data-item_no="{{ $goods->getItemNo() }}"
+                                            data-tor-smoothScroll="noSmooth">
+                                    </a>
+                                </p>
+                            @endif
+                        </form>
+                    @endif
+                    <p class="goods-contact"><a
+                            href="/inquiry/index?item_no={{ $goods->getItemNo() }}">この商品のお問い合わせ</a>
+                    </p>
+                    @endif
+
+                </div>
+
+            </section>
+            <!--//contents -->
+
+
+            <section id="foot-atn">
+                <?php include public_path() . '/include/contact-box.html'; ?>
+                <?php include public_path() . '/include/credit.html'; ?>
+            </section>
+
+        </section>
+
+        <footer>
+            <?php include public_path() . '/include/footer.html'; ?>
+        </footer>
+
+        <p id="pagetop"><a href="#"><img src="/common/img/icon_pagetop.png" alt="" width="61"
+                    height="61"></a></p>
+
+    </div>
+
+</body>
+
+</html>

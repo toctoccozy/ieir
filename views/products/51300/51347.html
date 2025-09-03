@@ -18,7 +18,7 @@
 
 <body class="bg-white">
     <div class="min-h-screen mx-auto">
-        <header class="pb-6 mx-auto xl:w-[80%]">
+        <header class="pb-6 mx-auto max-w-5xl">
             <!-- ヘッダー -->
             <div class="mx-auto bg-white border-b relative z-50">
                 <div class="px-2 pt-2">
@@ -107,7 +107,7 @@
         <!-- パンくずは削除 -->
 
         <!-- メインコンテンツ -->
-        <main class="pb-6 px-1 mx-auto xl:w-[80%]">
+        <main class="pb-6 px-1 mx-auto max-w-5xl">
             <section class="">
                 <!-- メインビジュアル -->
                 <div class="text-center mb-4">
@@ -183,11 +183,11 @@
             </section>
 
             <!-- ギャラリー部分 -->
-            <section class="my-8 w-full mx-auto">
+            <section class="my-8 mx-auto">
                 <!-- ギャラリー ギャラリータイトル画像がある場合はギャラリータイトル画像優先(A)、ない場合は画像なし(B)にて -->
                 <div class="px-2 mb-3">
                     <!-- ギャラリータイトル(A) -->
-                    <div class="text-left mb-2">
+                    <div class="text-left">
                         <img src="/ieir/public/img/products/51300/51347/pc/pc_gallery_title.png" 
                             alt="ギャラリー" 
                             class="hidden md:inline-block h-auto mx-2">
@@ -210,67 +210,67 @@
                     
                     <!-- ギャラリーサムネイル一覧 -->
                     <!-- クリック→自動でgallery_**_l.jpg画像がメインに配置(product.js) -->
-                    <div class="photo-area md:w-[35%]">
-                        <ul class="flex flex-wrap justify-center gap-3 p-0 list-none">
+                    <div class="photo-area md:w-[35%] p-4">
+                        <ul class="w-full grid grid-cols-4 md:grid-cols-2 md:gap-4 gap-2 p-0 list-none">
                             <li>
                                 <img src="/ieir/public/img/products/51300/51347/pc/gallery_01_l.jpg" 
                                     alt="サムネイル1" 
                                     loading="lazy"
-                                    class="w-20 h-auto sm:w-24 sm:h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200 ring-4">
+                                    class="w-full h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200 ring-4">
                             </li>
                             <li>
                                 <img src="/ieir/public/img/products/51300/51347/pc/gallery_02_l.jpg" 
                                     alt="サムネイル2" 
                                     loading="lazy"
-                                    class="w-20 h-auto sm:w-24 sm:h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
+                                    class="w-full h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
                             </li>
                             <li>
                                 <img src="/ieir/public/img/products/51300/51347/pc/gallery_03_l.jpg" 
                                     alt="サムネイル3" 
                                     loading="lazy"
-                                    class="w-20 h-auto sm:w-24 sm:h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
+                                    class="w-full h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
                             </li>
                             <li>
                                 <img src="/ieir/public/img/products/51300/51347/pc/gallery_04_l.jpg" 
                                     alt="サムネイル4" 
                                     loading="lazy"
-                                    class="w-20 h-auto sm:w-24 sm:h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
+                                    class="w-full h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
                             </li>
                             <li>
                                 <img src="/ieir/public/img/products/51300/51347/pc/gallery_05_l.jpg" 
                                     alt="サムネイル5" 
                                     loading="lazy"
-                                    class="w-20 h-auto sm:w-24 sm:h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
+                                    class="w-full h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
                             </li>
                             <li>
                                 <img src="/ieir/public/img/products/51300/51347/pc/gallery_06_l.jpg" 
                                     alt="サムネイル6" 
                                     loading="lazy"
-                                    class="w-20 h-auto sm:w-24 sm:h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
+                                    class="w-full h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
                             </li>
                             <li>
                                 <img src="/ieir/public/img/products/51300/51347/pc/gallery_07_l.jpg" 
                                     alt="サムネイル7" 
                                     loading="lazy"
-                                    class="w-20 h-auto sm:w-24 sm:h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
+                                    class="w-full h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
                             </li>
                             <li>
                                 <img src="/ieir/public/img/products/51300/51347/pc/gallery_08_l.jpg" 
                                     alt="サムネイル8" 
                                     loading="lazy"
-                                    class="w-20 h-auto sm:w-24 sm:h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
+                                    class="w-full h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
                             </li>
                             <li>
                                 <img src="/ieir/public/img/products/51300/51347/pc/gallery_09_l.jpg" 
                                     alt="サムネイル9" 
                                     loading="lazy"
-                                    class="w-20 h-auto sm:w-24 sm:h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
+                                    class="w-full h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
                             </li>
                             <li>
                                 <img src="/ieir/public/img/products/51300/51347/pc/gallery_10_l.jpg" 
                                     alt="サムネイル10" 
                                     loading="lazy"
-                                    class="w-20 h-auto sm:w-24 sm:h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
+                                    class="w-full h-auto object-cover cursor-pointer border-2 border-transparent hover:opacity-70 transition-all duration-200">
                             </li>
                         </ul>
                     </div>
@@ -278,7 +278,7 @@
             </section>
 
             <!-- 価格・購入エリア -->
-            <section id="price_area" class="my-8 w-full mx-auto">
+            <section id="price_area" class="my-8 mx-auto">
                 <!-- 価格タイトルバナーがある場合は価格タイトルバナー優先(A)、ない場合は画像なし(B)にて -->
                 <div class="px-2 mb-8">
                     <!-- 価格タイトルバナー(A) -->
@@ -303,9 +303,9 @@
                             class="w-full h-auto object-contain">
                     </div>
                     <!-- 価格・購入情報 -->
-                    <div class="p-4 md:w-[60%] md:p-2 md:ml-8">
+                    <div class="p-4 md:w-[60%] md:ml-8">
                         <!-- 商品名 -->
-                        <h3 class="border-l-8 border-gray-800 pl-2 text-xl sm:text-3xl font-bold text-gray-800 mb-4 md:mb-1 tracking-tighter">
+                        <h3 class="border-l-8 border-gray-800 pl-2 text-xl sm:text-2xl font-bold text-gray-800 mb-4 md:mb-1 tracking-tighter">
                             ストリートファイター6×セイコー<br>
                             コラボウオッチ
                         </h3>
@@ -334,7 +334,7 @@
                                     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 p-3 bg-gray-200 border border-gray-200 rounded-lg">
                                         <div class="flex items-center">
                                             <input type="checkbox" id="model-a" name="models[]" value="CHUNLI" class="w-4 h-4 border-gray-300 rounded focus:ring-blue-500 c-accent-premico">
-                                            <label for="model-a" class="ml-2 text-sm sm:text-base font-medium text-gray-700">春麗モデル</label>
+                                            <label for="model-a" class="ml-2 text-base font-medium text-gray-700">春麗モデル</label>
                                         </div>
                                         <div class="flex items-center justify-end gap-2 md:ml-auto">
                                             <label for="size-a" class="text-sm sm:text-base text-gray-600 pl-4">サイズ:</label>
@@ -351,7 +351,7 @@
                                     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 p-3 bg-gray-200 border border-gray-200 rounded-lg">
                                         <div class="flex items-center">
                                             <input type="checkbox" id="model-b" name="models[]" value="CAMMY" class="w-4 h-4 border-gray-300 rounded focus:ring-blue-500 c-accent-premico">
-                                            <label for="model-b" class="ml-2 text-sm sm:text-base font-medium text-gray-700">キャミィモデル</label>
+                                            <label for="model-b" class="ml-2 text-base font-medium text-gray-700">キャミィモデル</label>
                                         </div>
                                         <div class="flex items-center justify-end gap-2 md:ml-auto">
                                             <label for="size-b" class="text-sm sm:text-base text-gray-600 pl-4">サイズ:</label>
@@ -371,7 +371,7 @@
                                             <label for="model-c" class="ml-2 text-sm sm:text-base font-medium text-gray-700">ジュリモデル</label>
                                         </div>
                                         <div class="flex items-center justify-end gap-2 md:ml-auto">
-                                            <label for="size-c" class="text-sm sm:text-base text-gray-600 pl-4">サイズ:</label>
+                                            <label for="size-c" class="text-base text-gray-600 pl-4">サイズ:</label>
                                             <select id="size-c" name="size_c" class="text-sm sm:text-base px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:border-transparent bg-white">
                                                 <option value="">サイズを選択</option>
                                                 <option value="S">S (約14cm)</option>
@@ -714,8 +714,10 @@
 
         <!-- ページトップボタン -->
         <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
-            <a href="#" class="block c-bg-premico hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
-                ↑
+            <a href="#" class="c-bg-second hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform  hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
             </a>
         </div>
     </div>

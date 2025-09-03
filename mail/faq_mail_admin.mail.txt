@@ -1,0 +1,17 @@
+お名前：%%var=name%%
+
+e-mail：%%var=email%%
+
+連絡先電話番号：%%var=tel%%
+
+商品名：
+%%var=goods_name%%
+
+お問い合わせ内容：
+%%var=contents%%
+
+添付ファイル：
+%%var=file_name%%
+
+問い合わせ番号：%%var=inquiry_no%%
+
