@@ -360,26 +360,26 @@
         <div class="bg-gray-100 rounded-lg p-6 mt-6">
             <h3 class="text-base font-medium mb-4">お支払い方法を選択してください。</h3>
             <div class="space-y-3">
-                <!-- 代金引換え -->
-                <div class="flex items-center">
-                    <input type="radio" id="payment_cash_on_delivery" name="payment_type" value="cash_on_delivery" class="mr-3 w-5 h-5 c-accent-premico" x-model="paymentType" @change="onPaymentTypeChange()">
-                    <label for="payment_cash_on_delivery" class="text-gray-700 cursor-pointer">代金引換え</label>
-                </div>
                 <!-- クレジットカード -->
                 <div class="flex items-center">
-                    <input type="radio" id="payment_credit_card" name="payment_type" value="credit_card" class="mr-3 w-5 h-5 c-accent-premico" x-model="paymentType" @change="onPaymentTypeChange()">
+                    <input type="radio" id="payment_credit_card" name="payment_type" value="credit_card" class="mr-3 w-5 h-5 c-accent-premico" x-model="paymentType" checked>
                     <label for="payment_credit_card" class="text-gray-700 cursor-pointer">クレジットカード</label>
                 </div>
-                <!-- 後払い -->
+                <!-- 代金引換え -->
                 <div class="flex items-center">
-                    <input type="radio" id="payment_deferred" name="payment_type" value="deferred_payment" class="mr-3 w-5 h-5 c-accent-premico" x-model="paymentType" @change="onPaymentTypeChange()">
-                    <label for="payment_deferred" class="text-gray-700 cursor-pointer">後払い(ゆうちょ・コンビニ・スマホ決済)</label>
+                    <input type="radio" id="payment_cash_on_delivery" name="payment_type" value="cash_on_delivery" class="mr-3 w-5 h-5 c-accent-premico" x-model="paymentType">
+                    <label for="payment_cash_on_delivery" class="text-gray-700 cursor-pointer">代金引換え</label>
+                </div>
+                <!-- あと払い -->
+                <div class="flex items-center">
+                    <input type="radio" id="payment_deferred" name="payment_type" value="deferred_payment" class="mr-3 w-5 h-5 c-accent-premico" x-model="paymentType">
+                    <label for="payment_deferred" class="text-gray-700 cursor-pointer">あと払い(ゆうちょ・コンビニ・スマホ決済)</label>
                 </div>
             </div>
         </div>
 
         <!-- 商品表示エリア -->
-        <div x-show="paymentType" x-transition>
+        <div class="mt-6">
             <!-- クレジットカードの場合：cart01.htmlの流れに従う -->
             <div x-show="paymentType === 'credit_card'" class="space-y-6 mt-6">
                 <!-- 商品A -->
@@ -1081,7 +1081,7 @@
         return {
             paymentMethod: 'lump_sum',
             showPaymentMessage: false,
-            paymentType: '', // 最初は未選択
+            paymentType: 'credit_card', // クレジットカードをデフォルトに
             cartPaymentMethod: 'lump_sum',  // カート全体の支払い方法
             item1PaymentMethod: 'lump_sum',  // 商品1の支払い方法
             item2PaymentMethod: 'lump_sum',  // 商品2の支払い方法

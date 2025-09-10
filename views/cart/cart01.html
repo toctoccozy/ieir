@@ -52,19 +52,10 @@
     <div class="min-h-screen mw-full">
         <header class="pb-6 mx-auto max-w-6xl">
             <!-- ヘッダー -->
-            <div class="mx-auto bg-white border-b relative z-50 h-24 lg:h-16">
+            <div class="mx-auto bg-white border-b relative z-50 h-16 lg:h-16">
                 <!-- ヘッダー上段 -->
                 <div class="px-2 pt-2">
                     <div class="flex items-center justify-between h-12">
-                        <!-- ハンバーガーメニュー（左） -->
-                        <div class="md:ml-2 w-12 h-full hover:opacity-50 duration-200">
-                            <button class="hamburger-button relative w-full h-full bg-transparent border-none z-70 cursor-pointer px-1 py-1" id="js-hamburger">
-                                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-
                         <!-- ロゴ（中央/左） -->
                         <div class="lg:ml-4 flex-1 flex justify-center lg:justify-start items-center gap-3 lg:mt-2">
                             <a href="/ieir/views">
@@ -73,18 +64,6 @@
                             <a href="/ieir/views/category/premico" class="hover:opacity-70 transition-opacity duration-200">
                                 <img class="h-6 w-auto lg:h-18 lg:w-auto" src="/ieir/public/img/parts/logo/logo_premico.png" alt="PREMICO">
                             </a>
-                            <!-- lg以上で下のロゴを表示 -->
-                            <div class="hidden lg:flex items-center gap-3 ml-4">
-                                <a href="/ieir/views/category/charaffine" class="hover:opacity-70 transition-opacity duration-200">
-                                    <img src="/ieir/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ" class="w-auto h-8">
-                                </a>
-                                <a href="/ieir/views/category/moomin" class="hover:opacity-70 transition-opacity duration-200">
-                                    <img src="/ieir/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン" class="w-auto h-4">
-                                </a>
-                                <a href="/ieir/views/category/snoopy" class="hover:opacity-70 transition-opacity duration-200">
-                                    <img src="/ieir/public/img/parts/logo/snoopy_logo.png" alt="スヌーピー" class="w-auto h-4">
-                                </a>
-                            </div>
                         </div>
                         <!-- ログイン・カート（右） -->
                         <div class="w-20 flex justify-end gap-2">
@@ -104,191 +83,7 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- ヘッダー下段 - lg未満のみ表示 -->
-                <div class="flex items-start justify-between h-8 px-4 sm:h-5 lg:hidden">
-                    <!-- ブランドロゴエリア（中央） - md未満のみ表示 -->
-                    <div class="flex items-center justify-center gap-4 w-full lg:hidden">
-                        <a href="/ieir/views/category/charaffine" class="hover:opacity-70 transition-opacity duration-200">
-                            <img src="/ieir/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ" class="h-7 w-auto">
-                        </a>
-                        <a href="/ieir/views/category/moomin" class="hover:opacity-70 transition-opacity duration-200">
-                            <img src="/ieir/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン" class="h-5 w-auto">
-                        </a>
-                        <a href="/ieir/views/category/snoopy" class="hover:opacity-70 transition-opacity duration-200">
-                            <img src="/ieir/public/img/parts/logo/snoopy_logo.png" alt="スヌーピー" class="h-4 w-auto">
-                        </a>
-                    </div>
-                </div>
             </div>
-
-            <!-- メニュー開いたとき -->
-            <nav class="fixed left-0 top-0 w-4/5 md:w-3/5 lg:w-1/2 h-screen -translate-x-full c-bg-premico-50 transition-transform duration-200 ease-in-out z-[999] shadow-xl" id="js-nav">
-                <!-- 固定ヘッダー（閉じるボタンとログイン関連ボタン） -->
-                <div class="fixed top-0 w-full h-16 c-bg-premico border-b border-gray-100 flex items-center justify-center md:justify-center px-4 z-20">
-                    <button class="w-8 h-8 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full flex items-center justify-center transition-colors absolute left-4" id="js-close-menu">
-                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                    <div class="flex space-x-2 absolute right-4 md:relative md:right-auto">
-                        <a href="/ieir/register" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
-                            </svg>
-                            新規登録
-                        </a>
-                        <a href="/ieir/login" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
-                            </svg>
-                            ログイン
-                        </a>
-                    </div>
-                </div>
-                <!-- メニューコンテンツ -->
-                <div class="h-full overflow-y-auto pt-16 pb-10">
-                    <!-- A. 主要アクション -->
-                    <div class="px-6 py-4 border-b border-white border-opacity-20">
-                        <div class="space-y-3">
-                            <a href="/ieir/cgi-bin/goods/itemno.cgi" class="block bg-[#49a941] hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
-                                <div class="flex items-center text-white">
-                                    <span class="font-medium text-sm flex-1 pr-2">ダイレクトメール・カタログからのご注文</span>
-                                    <div class="bg-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-3 h-3 c-text-second" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="/ieir/cgi-bin/goods/media.cgi" class="block bg-[#49a941] hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
-                                <div class="flex items-center text-white">
-                                    <span class="font-medium text-sm flex-1 pr-2">広告掲載中の商品</span>
-                                    <div class="bg-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-3 h-3 c-text-second" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- B. サポート情報 -->
-                    <div class="px-6 py-4 border-b border-white border-opacity-20">
-                        <h3 class="text-white font-medium mb-3">サポート・ガイド</h3>
-                        <ul class="space-y-2">
-                            <li><a href="/ieir/guide" class="flex items-center justify-between text-white text-sm hover:opacity-70 transition-opacity">
-                                <span>ご利用ガイド</span>
-                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                </svg>
-                            </a></li>
-                            <li><a href="/ieir/guide/shipping" class="flex items-center justify-between text-white text-sm hover:opacity-70 transition-opacity">
-                                <span>送料・お届けについて</span>
-                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                </svg>
-                            </a></li>
-                            <li><a href="/ieir/guide/payment" class="flex items-center justify-between text-white text-sm hover:opacity-70 transition-opacity">
-                                <span>お支払い方法</span>
-                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                </svg>
-                            </a></li>
-                            <li><a href="/ieir/guide/return" class="flex items-center justify-between text-white text-sm hover:opacity-70 transition-opacity">
-                                <span>返品・交換について</span>
-                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                </svg>
-                            </a></li>
-                            <li><a href="/ieir/faq" class="flex items-center justify-between text-white text-sm hover:opacity-70 transition-opacity">
-                                <span>よくある質問</span>
-                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                </svg>
-                            </a></li>
-                        </ul>
-                    </div>
-                    
-                    <!-- C. お問い合わせ -->
-                    <div class="px-6 py-4 border-b border-white border-opacity-20">
-                        <a href="/ieir/contact" class="block bg-[#49a941] hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
-                            <div class="flex items-center text-white">
-                                <span class="font-medium flex-1 pr-2">お問い合わせ</span>
-                                <div class="bg-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-3 h-3 c-text-second" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <!-- D. 商品カテゴリ（アコーディオン） -->
-                    <div class="px-6 py-4 border-b border-white border-opacity-20">
-                        <button class="w-full flex items-center justify-between text-white font-medium mb-2" id="category-toggle">
-                            <span>商品カテゴリ</span>
-                            <svg class="w-4 h-4 transform transition-transform duration-200" id="category-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <div class="space-y-3 overflow-hidden transition-all duration-200 max-h-0" id="category-content">
-                            <div class="pt-2">
-                                <!-- 1. プレミコ -->
-                                <div class="mb-3">
-                                    <a href="/ieir/category/premico" class="block text-white text-sm font-medium hover:opacity-70 transition-opacity py-1 border-l-2 border-white pl-3">
-                                        プレミコ
-                                    </a>
-                                </div>
-                                
-                                <!-- 2. キャラフィネ -->
-                                <div class="mb-3">
-                                    <div class="text-white text-sm font-medium py-1 border-l-2 border-white pl-3 mb-2">
-                                        キャラフィネ
-                                    </div>
-                                    <ul class="ml-6 space-y-1">
-                                        <li><a href="/ieir/category/snoopy" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・SNOOPY</a></li>
-                                        <li><a href="/ieir/category/moomin" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・MOOMIN</a></li>
-                                        <li><a href="/ieir/category/kitty" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・ハローキティ</a></li>
-                                    </ul>
-                                </div>
-                                
-                                <!-- 3. IEIコレクション -->
-                                <div>
-                                    <div class="text-white text-sm font-medium py-1 border-l-2 border-white pl-3 mb-2">
-                                        IEIコレクション
-                                    </div>
-                                    <ul class="ml-6 space-y-1">
-                                        <li><a href="/ieir/category/jewelry" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・女性ジュエリー</a></li>
-                                        <li><a href="/ieir/category/accessories" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・女性アパレル・雑貨</a></li>
-                                        <li><a href="/ieir/category/mens" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・男性アパレル・雑貨</a></li>
-                                        <li><a href="/ieir/category/coin" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・コイン・切手</a></li>
-                                        <li><a href="/ieir/category/interior" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・インテリア・美術工芸品</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- E. 会社情報 -->
-                    <div class="px-6 py-4 pb-8 mb-12">
-                        <div class="text-white">
-                            <h4 class="text-sm font-medium mb-2">インペリアル・エンタープライズ株式会社 I・E・I</h4>
-                            <div class="space-y-1 text-xs text-white text-opacity-90">
-                                <a href="tel:0120247417" class="flex items-center space-x-2 hover:opacity-70 transition-opacity">
-                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                                    </svg>
-                                    <span class="font-medium">0120-247-417</span>
-                                </a>
-                                <p class="ml-5 text-opacity-80 text-white">毎日 朝6:00〜夜21:00</p>
-                                <p class="ml-5 text-opacity-80 text-white">※携帯電話からもOK</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
         </header>
 
     <!-- メインコンテンツ -->
@@ -341,7 +136,7 @@
         <!-- ショッピングカートタイトル -->
         <div class="text-center mb-4">
             <h1 class="text-2xl font-bold c-text-premico mb-2">ショッピングカート</h1>
-            <p class="text-gray-800 text-left pl-4">ショッピングカートには下記の商品が入っています。</p>
+            <p class="text-gray-800 text-left pl-4">ショッピングカートには下記の商品が入っています。<span class="text-green-600">コメント：メニューボタンは削除したっぴ。商品画像の有無＝A:SKUごとに画像ある商品は出す、画像ない商品は出さない。B:一律で画像は出さない。お支払い方法は多いものをデフォルトにする。クーポンコードの場所についての注釈を追加。</span></p>
         </div>
         <!-- 戻るボタン -->
         <div class="flex justify-end mb-4">
