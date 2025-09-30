@@ -87,20 +87,13 @@
     }
 
 
-    /* PC版でもドットを表示 */
+    /* PC版ではドットを非表示 */
     @media (min-width: 1024px) {
         .slick-dots {
-            display: block !important;
-        }
-
-        /* lg以上：センターのスライド画像のみヘッダー幅に制限 */
-        .slider-main .slick-slide.slick-center img {
-            max-width: 72rem; /* max-w-6xl = 1152px */
-            margin-left: auto;
-            margin-right: auto;
+            display: none !important;
         }
     }
-
+    
     /* デフォルトの矢印アイコンを非表示 */
     .slick-prev:before,
     .slick-next:before {
@@ -123,7 +116,7 @@
     <div class="min-h-screen mw-full">
         <header class="pb-6 mx-auto max-w-6xl">
             <!-- ヘッダー -->
-            <div class="mx-auto bg-white border-b relative z-50 h-16">
+            <div class="mx-auto bg-white border-b relative z-50 h-16 lg:h-16">
                 <!-- ヘッダー上段 -->
                 <div class="px-2 pt-2">
                     <div class="flex items-center justify-between h-12">
@@ -194,9 +187,9 @@
                     <!-- A. 主要アクション -->
                     <div class="px-6 py-4 border-b border-white border-opacity-20">
                         <div class="space-y-3">
-                            <a href="/ieir/cgi-bin/goods/itemno.cgi" class="block bg-[#49a941] hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
+                            <a href="/ieir/cgi-bin/goods/itemno.cgi" class="block bg-gradient-to-b from-[#fbbf24] to-[#d97706] hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
                                 <div class="flex items-center text-white">
-                                    <span class="font-medium text-sm flex-1 pr-2">ダイレクトメール・カタログからのご注文</span>
+                            <span class="flex-1 text-center tracking-tighter">ダイレクトメール・カタログからのご注文</span>
                                     <div class="bg-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">
                                         <svg class="w-3 h-3 c-text-second" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -204,7 +197,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="/ieir/cgi-bin/goods/media.cgi" class="block bg-[#49a941] hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
+                            <a href="/ieir/cgi-bin/goods/media.cgi" class="block bg-gradient-to-b from-[#fbbf24] to-[#d97706] hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
                                 <div class="flex items-center text-white">
                                     <span class="font-medium text-sm flex-1 pr-2">広告掲載中の商品</span>
                                     <div class="bg-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">
@@ -393,7 +386,7 @@
                     <!-- 検索フォーム -->
                     <form class="flex h-14 md:h-16" action="/ieir/search" method="GET">
                         <!-- 検索入力フィールド -->
-                        <input type="text" name="q" id="search-input" placeholder="商品番号・キーワードを入力"
+                        <input type="text" name="q" id="search-input" placeholder="商品番号・キーワードで検索"
                             class="flex-1 pl-4 pr-4 py-3 md:py-4 border-y border-l border-gray-300 rounded-l-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm text-base" autocomplete="off"
                         >
 
@@ -414,11 +407,11 @@
                 <div class="flex flex-col md:flex-row sm:items-stretch gap-4 w-full md:px-8 lg:w-[80%] xl:w-[60%] mx-auto">
                     <!-- ダイレクトメール・カタログからのご注文 -->
                     <a href="/order" class="block flex-1">
-                        <button class="w-full h-14 md:h-16 c-bg-premico-gradient hover:opacity-80 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-between gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
+                        <button class="w-full h-14 md:h-16 bg-gradient-to-b from-[#fbbf24] to-[#d97706] hover:opacity-80 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-between gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
                             <svg class="w-7 h-7 flex-shrink-0" fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16,6l-13,0c-0.552,0 -1,0.448 -1,1l0,22c0,0.552 0.448,1 1,1l22,0c0.552,0 1,-0.448 1,-1l0,-13c0,-0.552 -0.448,-1 -1,-1c-0.552,-0 -1,0.448 -1,1l0,12c0,0 -20,0 -20,0c0,0 0,-20 0,-20c-0,0 12,0 12,0c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1Zm-9,19l14,-0c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1l-14,0c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1Zm-0,-4l4,0c0.552,-0 1,-0.448 1,-1c-0,-0.552 -0.448,-1 -1,-1l-4,0c-0.552,-0 -1,0.448 -1,1c-0,0.552 0.448,1 1,1Zm22.707,-13.293c0.391,-0.39 0.391,-1.024 0,-1.414l-4,-4c-0.39,-0.391 -1.024,-0.391 -1.414,-0l-10,10c-0.14,0.139 -0.235,0.317 -0.274,0.511l-1,5c-0.065,0.328 0.037,0.667 0.274,0.903c0.236,0.237 0.575,0.339 0.903,0.274l5,-1c0.194,-0.039 0.372,-0.134 0.511,-0.274l10,-10Zm-22.707,9.293l4,0c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1l-4,0c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1Zm0,-4l5,-0c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1l-5,-0c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1Z"/>
                             </svg>
-                            <span class="flex-1 text-center tracking-tighter">ダイレクトメール・カタログからのご注文</span>
+                            <span class="flex-1 text-center">ダイレクトメール・カタログからのご注文</span>
                             <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
@@ -427,7 +420,7 @@
 
                     <!-- 広告掲載中の商品 -->
                     <a href="/advertised-products" class="block flex-1">
-                        <button class="w-full h-14 md:h-16 c-bg-premico-gradient hover:opacity-80 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-between gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
+                        <button class="w-full h-14 md:h-16 bg-gradient-to-b from-[#fbbf24] to-[#d97706] hover:opacity-80 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-between gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
                             <svg class="w-9 h-9 flex-shrink-0" fill="currentColor" viewBox="-2 0 19 19" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2.644 15.26a16.9 16.9 0 0 1-.706-.014l-.11-.025a1.51 1.51 0 0 1-1.14-1.185l-.018-.092c-.005-.106-.01-.406-.01-.667V4.434a.477.477 0 0 1 .476-.475H11.77a.476.476 0 0 1 .475.475v1.529h1.591a.506.506 0 0 1 .504.504v7.192a1.6 1.6 0 0 1-1.6 1.6zm0-1.109h8.572a1.598 1.598 0 0 1-.077-.491v-2.174a2.16 2.16 0 0 1-.003-.109v-6.31H1.769v8.21c0 .218.003.43.006.544l.002.008a.401.401 0 0 0 .3.312l.01.002c.133.004.358.008.557.008zM9.91 6.815H2.95v1.109h6.96zm-4 2.383H2.95v3.532h2.96zm4.002.026H7.033v1.109h2.878zm0 2.41H7.033v1.108h2.878zm2.336-4.563v6.589a.492.492 0 0 0 .984 0V7.07z"/>
                             </svg>
@@ -454,90 +447,148 @@
                     <div class="hidden md:block md:flex-1 md:h-px md:bg-gray-300 md:ml-4"></div>
                 </h2>
                 
-                <!-- スクロール可能な商品リスト -->
-                <div class="max-h-60 overflow-y-scroll block space-y-1 sm:space-y-1 rounded-lg px-4 md:ml-12">
-                    <!-- 商品アイテム1 -->
-                    <div class="bg-white p-2 border-b border-gray-100 mr-4 md:mx-2">
-                        <p class="text-base text-gray-800 leading-relaxed">
-                            <a href="/51434" class="text-base hover:text-blue-600 transition-colors">ミムラねえさん＆リトルミイ 軽量ミニトート</a>
-                        </p>
+                <!-- 新着グリッド -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1 gap-y-3 mb-6">
+                    <!-- 商品1 -->
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/ieir/public/img/tmp_media/paper008.jpg" alt="2024年 干支記念貨幣　瑞祥飛龍" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3">
+                                <p class="text-sm text-gray-800 leading-tight">2024年 干支記念貨幣　瑞祥飛龍</p>
+                            </div>
+                        </a>
                     </div>
-                    
-                    <!-- 商品アイテム2 -->
-                    <div class="bg-white p-2 border-b border-gray-100 mr-4 md:mx-2">
-                        <p class="text-base text-gray-800 leading-relaxed">
-                            <a href="/51372" class="text-base hover:text-blue-600 transition-colors">純金のハローキティ ダイヤモンド入り24金製宝飾ペンダント</a>
-                        </p>
+
+                    <!-- 商品2 -->
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/ieir/public/img/tmp_media/paper007.jpg" alt="＜純金のふくろう＞ダイヤモンド入り24金製宝飾ペンダント" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3">
+                                <p class="text-sm text-gray-800 leading-tight">＜純金のふくろう＞ダイヤモンド入り24金製宝飾ペンダント</p>
+                            </div>
+                        </a>
                     </div>
-                    
-                    <!-- 商品アイテム3 -->
-                    <div class="bg-white p-2 border-b border-gray-100 mr-4 md:mx-2">
-                        <p class="text-base text-gray-800 leading-relaxed">
-                            <a href="/51105" class="text-base hover:text-blue-600 transition-colors">スヌーピー しあわせのサンセットビーチ　ダイヤモンド入り きらきらグラデーションウオッチ</a>
-                        </p>
+                    <!-- 商品3 -->
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/ieir/public/img/tmp_media/paper006.jpg" alt="923形ドクターイエロー（T4）引退記念 公式メモリアル金貨・銀貨" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3">
+                                <p class="text-sm text-gray-800 leading-tight">923形ドクターイエロー（T4）引退記念 公式メモリアル金貨・銀貨</p>
+                            </div>
+                        </a>
                     </div>
-                    
-                    <!-- 商品アイテム4 -->
-                    <div class="bg-white p-2 border-b border-gray-100 mr-4 md:mx-2">
-                        <p class="text-base text-gray-800 leading-relaxed">
-                            <a href="/51453" class="text-base hover:text-blue-600 transition-colors">アイシナモロール 波佐見焼コーヒードリッパー＆マグセット</a>
-                        </p>
+                    <!-- 商品4 -->
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/ieir/public/img/tmp_media/paper004.jpg" alt="放映50周年記念 アルプスの少女ハイジ 公式アニバーサリーウオッチ" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3">
+                                <p class="text-sm text-gray-800 leading-tight">放映50周年記念 アルプスの少女ハイジ 公式アニバーサリーウオッチ</p>
+                            </div>
+                        </a>
                     </div>
-                    
-                    <!-- 商品アイテム5 -->
-                    <div class="bg-white p-2 border-b border-gray-100 mr-4 md:mx-2">
-                        <p class="text-base text-gray-800 leading-relaxed">
-                            <a href="/51433" class="text-base hover:text-blue-600 transition-colors">阪神タイガース創設90周年記念＜勝利の猛虎＞純金ペンダント／純銀リング</a>
-                        </p>
+
+                    <!-- 商品5 -->
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/ieir/public/img/tmp_media/paper005.jpg" alt="セイコー すみっコぐらし™ × ドクターイエロー コラボウオッチ" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3">
+                                <p class="text-sm text-gray-800 leading-tight">セイコー すみっコぐらし™ × ドクターイエロー コラボウオッチ</p>
+                            </div>
+                        </a>
                     </div>
-                    
-                    <!-- 商品アイテム6 -->
-                    <div class="bg-white p-2 border-b border-gray-100 mr-4 md:mx-2">
-                        <p class="text-base text-gray-800 leading-relaxed">
-                            <a href="/51442" class="text-base hover:text-blue-600 transition-colors">甲州印伝　しあわせの白へび福財布</a>
-                        </p>
+
+                    <!-- 商品6 -->
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/ieir/public/img/tmp_media/paper003.jpg" alt="北陸新幹線 W7系かがやきウオッチ" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3">
+                                <p class="text-sm text-gray-800 leading-tight">北陸新幹線 W7系かがやきウオッチ</p>
+                            </div>
+                        </a>
                     </div>
-                    
-                    <!-- 商品アイテム7 -->
-                    <div class="bg-white p-2 border-b border-gray-100 mr-4 md:mx-2">
-                        <p class="text-base text-gray-800 leading-relaxed">
-                            <a href="/51354" class="text-base hover:text-blue-600 transition-colors">靴職人のソフトローファー</a>
-                        </p>
+
+                    <!-- 商品7 -->
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/ieir/public/img/tmp_media/paper002.jpg" alt="大谷翔平 54本塁打59盗塁達成記念　公式プリントサイン入りフォトフレーム" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3">
+                                <p class="text-sm text-gray-800 leading-tight">大谷翔平 54本塁打59盗塁達成記念　公式プリントサイン入りフォトフレーム</p>
+                            </div>
+                        </a>
                     </div>
-                    
-                    <!-- 商品アイテム8 -->
-                    <div class="bg-white p-2 border-b border-gray-100 mr-4 md:mx-2">
-                        <p class="text-base text-gray-800 leading-relaxed">
-                            <a href="/51485" class="text-base hover:text-blue-600 transition-colors">天皇陛下御即位七年記念＜皇居の寿ぎ〜慶花に瑞鳥〜＞公式プルーフ金貨コレクション</a>
-                        </p>
+
+                    <!-- 商品8 -->
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/ieir/public/img/tmp_media/paper001.jpg" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3">
+                                <p class="text-sm text-gray-800 leading-tight">大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ</p>
+                            </div>
+                        </a>
                     </div>
-                    
-                    <!-- 商品アイテム9 -->
-                    <div class="bg-white p-2 border-b border-gray-100 mr-4 md:mx-2">
-                        <p class="text-base text-gray-800 leading-relaxed">
-                            <a href="/51392" class="text-base hover:text-blue-600 transition-colors">森の音色と憩いの時間　オルゴールとからくり仕掛けのカッコウ時計</a>
-                        </p>
+
+                    <!-- 商品9 -->
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200 lg:hidden">
+                        <a href="#" class="block">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/ieir/public/img/tmp_media/paper009.jpg" alt="火の鳥 連載70周年記念 純金製 公式カラー金貨" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3">
+                                <p class="text-sm text-gray-800 leading-tight">火の鳥 連載70周年記念 純金製 公式カラー金貨</p>
+                            </div>
+                        </a>
                     </div>
-                    
-                    <!-- 商品アイテム10 -->
-                    <div class="bg-white p-2 border-b border-gray-100 mr-4 md:mx-2">
-                        <p class="text-base text-gray-800 leading-relaxed">
-                            <a href="/51434" class="text-base hover:text-blue-600 transition-colors">ミムラねえさん＆リトルミイ 軽量ミニトート</a>
-                        </p>
+
+                    <!-- 商品10 -->
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200 lg:hidden">
+                        <a href="#" class="block">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/ieir/public/img/tmp_media/paper010.jpg" alt="上皇陛下 卒寿記念 特別奉祝大型カラー金貨" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3">
+                                <p class="text-sm text-gray-800 leading-tight">上皇陛下 卒寿記念 特別奉祝大型カラー金貨</p>
+                            </div>
+                        </a>
                     </div>
-                    
-                    <!-- 商品アイテム11 -->
-                    <div class="bg-white p-2 border-b border-gray-100 mr-4 md:mx-2">
-                        <p class="text-base text-gray-800 leading-relaxed">
-                            <a href="/51372" class="text-base hover:text-blue-600 transition-colors">純金のハローキティ ダイヤモンド入り24金製宝飾ペンダント</a>
-                        </p>
+
+                    <!-- 商品11 -->
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/ieir/public/img/tmp_media/paper011.jpg" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3">
+                                <p class="text-sm text-gray-800 leading-tight">大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ</p>
+                            </div>
+                        </a>
                     </div>
-                    
-                    <!-- 商品アイテム12 -->
-                    <div class="bg-white p-2 border-b border-gray-100 mr-4 md:mx-2">
-                        <p class="text-base text-gray-800 leading-relaxed">
-                            <a href="/51105" class="text-base hover:text-blue-600 transition-colors">スヌーピー しあわせのサンセットビーチ　ダイヤモンド入り きらきらグラデーションウオッチ</a>
-                        </p>
+
+                    <!-- 商品12 -->
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/ieir/public/img/tmp_media/paper012.jpg" alt="大谷翔平 54本塁打59盗塁達成記念　公式プリントサイン入りフォトフレーム" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3">
+                                <p class="text-sm text-gray-800 leading-tight">大谷翔平 54本塁打59盗塁達成記念　公式プリントサイン入りフォトフレーム</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -1064,7 +1115,7 @@
                         </svg>
                     </a>
                     <!-- Instagram -->
-                    <a href="#" class="w-8 h-8 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 rounded-full flex items-center justify-center transition-colors">
+                    <a href="#" class="w-8 h-8 bg-gradient-to-b from-[#fbbf24] to-[#d97706] hover:opacity-80 rounded-full flex items-center justify-center transition-colors">
                         <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>
@@ -1269,10 +1320,10 @@
             prevArrow: '<button type="button" class="slick-prev absolute left-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#2C5282" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>',
             nextArrow: '<button type="button" class="slick-next absolute right-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#2C5282" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>',
             centerMode: true, // センターモードで前後を見せる
-            centerPadding: '280px', // 前後のスライドの見える量
+            centerPadding: '380px', // 前後のスライドの見える量
             slidesToShow: 1, // メインは1枚表示
             slidesToScroll: 1,
-            // asNavFor削除（サムネイルスライダーとの連動を解除）
+            asNavFor: '.slider-thumbnail', // サムネイルスライダーと連動
             responsive: [
                 {
                     breakpoint: 1280,
@@ -1285,7 +1336,40 @@
             ]
         });
 
-        // サムネイルスライダー関連のコードを削除（ドット表示に統一）
+        // サムネイルスライダー
+        $('.slider-thumbnail').slick({
+            infinite: true,
+            autoplay: false,
+            dots: false,
+            arrows: false,
+            slidesToShow: 7, // デスクトップで5つ表示
+            slidesToScroll: 1,
+            asNavFor: '.slider-main', // メインスライダーと連動
+            centerMode: true,
+            focusOnSelect: true, // クリックでスライド切り替え
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3, // モバイル・タブレットで3つ表示
+                        centerPadding: '10px'
+                    }
+                }
+            ]
+        });
+
+        // サムネイル画像のアクティブ状態管理
+        $('.slider-thumbnail').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+            $('.slider-thumbnail img').removeClass('opacity-100').addClass('opacity-60');
+        });
+
+        $('.slider-thumbnail').on('afterChange', function(event, slick, currentSlide) {
+            $('.slider-thumbnail img').removeClass('opacity-100').addClass('opacity-60');
+            $('.slider-thumbnail .slick-current img').removeClass('opacity-60').addClass('opacity-100');
+        });
+
+        // 初期状態でアクティブなサムネイルを設定
+        $('.slider-thumbnail .slick-current img').removeClass('opacity-60').addClass('opacity-100');
         
         // 検索機能の拡張
         const searchInput = document.getElementById('search-input');

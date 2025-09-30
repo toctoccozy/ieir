@@ -87,10 +87,17 @@
     }
 
 
-    /* PC版ではドットを非表示 */
+    /* PC版でもドットを表示 */
     @media (min-width: 1024px) {
         .slick-dots {
-            display: none !important;
+            display: block !important;
+        }
+
+        /* lg以上：センターのスライド画像のみヘッダー幅に制限 */
+        .slider-main .slick-slide.slick-center img {
+            max-width: 72rem; /* max-w-6xl = 1152px */
+            margin-left: auto;
+            margin-right: auto;
         }
     }
     
@@ -411,7 +418,7 @@
                             <svg class="w-7 h-7 flex-shrink-0" fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16,6l-13,0c-0.552,0 -1,0.448 -1,1l0,22c0,0.552 0.448,1 1,1l22,0c0.552,0 1,-0.448 1,-1l0,-13c0,-0.552 -0.448,-1 -1,-1c-0.552,-0 -1,0.448 -1,1l0,12c0,0 -20,0 -20,0c0,0 0,-20 0,-20c-0,0 12,0 12,0c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1Zm-9,19l14,-0c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1l-14,0c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1Zm-0,-4l4,0c0.552,-0 1,-0.448 1,-1c-0,-0.552 -0.448,-1 -1,-1l-4,0c-0.552,-0 -1,0.448 -1,1c-0,0.552 0.448,1 1,1Zm22.707,-13.293c0.391,-0.39 0.391,-1.024 0,-1.414l-4,-4c-0.39,-0.391 -1.024,-0.391 -1.414,-0l-10,10c-0.14,0.139 -0.235,0.317 -0.274,0.511l-1,5c-0.065,0.328 0.037,0.667 0.274,0.903c0.236,0.237 0.575,0.339 0.903,0.274l5,-1c0.194,-0.039 0.372,-0.134 0.511,-0.274l10,-10Zm-22.707,9.293l4,0c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1l-4,0c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1Zm0,-4l5,-0c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1l-5,-0c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1Z"/>
                             </svg>
-                            <span class="flex-1 text-center">ダイレクトメール・カタログからのご注文</span>
+                            <span class="flex-1 text-center tracking-tighter">ダイレクトメール・カタログからのご注文</span>
                             <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
@@ -1278,10 +1285,10 @@
             prevArrow: '<button type="button" class="slick-prev absolute left-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#2C5282" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>',
             nextArrow: '<button type="button" class="slick-next absolute right-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#2C5282" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>',
             centerMode: true, // センターモードで前後を見せる
-            centerPadding: '380px', // 前後のスライドの見える量
+            centerPadding: '280px', // 前後のスライドの見える量
             slidesToShow: 1, // メインは1枚表示
             slidesToScroll: 1,
-            asNavFor: '.slider-thumbnail', // サムネイルスライダーと連動
+            // asNavFor削除（サムネイルスライダーとの連動を解除）
             responsive: [
                 {
                     breakpoint: 1280,

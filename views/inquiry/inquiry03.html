@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ショッピングカート | I･E･Iオンラインショップ</title>
-    <meta name="description" content="I･E･Iオンラインショップのショッピングカート">
-    <meta name="keywords" content="I･E･I,キャラフィネ,ムーミン,PREMICO,キャラクターグッズ,通販,カート">
+    <title>お問い合わせ完了 | I･E･Iオンラインショップ</title>
+    <meta name="description" content="お問い合わせを受け付けました。ご登録のメールアドレスに確認メールをお送りしております。">
+    <meta name="keywords" content="I･E･I,お問い合わせ,完了,PREMICO,キャラクターグッズ,通販">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com/3.4.1"></script>
     <script>
@@ -25,7 +25,12 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
     
     <style>
-    /* プログレスバーの接続線のみ */
+    /* プログレスバーのスタイル */
+    .progress-step {
+        position: relative;
+        flex: 1;
+    }
+    
     .progress-step::after {
         content: '';
         position: absolute;
@@ -41,6 +46,21 @@
         display: none;
     }
     
+    .progress-step.active .step-circle {
+        background-color: #2C5282;
+        color: white;
+    }
+    
+    .progress-step.active ~ .progress-step .step-circle {
+        background-color: white;
+        color: #9ca3af;
+    }
+    
+    .progress-step.completed .step-circle {
+        background-color: #10b981;
+        color: white;
+    }
+    
     .progress-step.active::after,
     .progress-step.completed::after {
         background-color: #2C5282;
@@ -52,7 +72,7 @@
     <div class="min-h-screen mw-full">
         <header class="pb-6 mx-auto max-w-6xl">
             <!-- ヘッダー -->
-            <div class="mx-auto bg-white border-b relative z-50 h-24 lg:h-16">
+            <div class="mx-auto bg-white border-b relative z-50 h-16">
                 <!-- ヘッダー上段 -->
                 <div class="px-2 pt-2">
                     <div class="flex items-center justify-between h-12">
@@ -73,18 +93,6 @@
                             <a href="/ieir/views/category/premico" class="hover:opacity-70 transition-opacity duration-200">
                                 <img class="h-6 w-auto lg:h-18 lg:w-auto" src="/ieir/public/img/parts/logo/logo_premico.png" alt="PREMICO">
                             </a>
-                            <!-- lg以上で下のロゴを表示 -->
-                            <div class="hidden lg:flex items-center gap-3 ml-4">
-                                <a href="/ieir/views/category/charaffine" class="hover:opacity-70 transition-opacity duration-200">
-                                    <img src="/ieir/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ" class="w-auto h-8">
-                                </a>
-                                <a href="/ieir/views/category/moomin" class="hover:opacity-70 transition-opacity duration-200">
-                                    <img src="/ieir/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン" class="w-auto h-4">
-                                </a>
-                                <a href="/ieir/views/category/snoopy" class="hover:opacity-70 transition-opacity duration-200">
-                                    <img src="/ieir/public/img/parts/logo/snoopy_logo.png" alt="スヌーピー" class="w-auto h-4">
-                                </a>
-                            </div>
                         </div>
                         <!-- ログイン・カート（右） -->
                         <div class="w-20 flex justify-end gap-2">
@@ -102,22 +110,6 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- ヘッダー下段 - lg未満のみ表示 -->
-                <div class="flex items-start justify-between h-8 px-4 sm:h-5 lg:hidden">
-                    <!-- ブランドロゴエリア（中央） - md未満のみ表示 -->
-                    <div class="flex items-center justify-center gap-4 w-full lg:hidden">
-                        <a href="/ieir/views/category/charaffine" class="hover:opacity-70 transition-opacity duration-200">
-                            <img src="/ieir/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ" class="h-7 w-auto">
-                        </a>
-                        <a href="/ieir/views/category/moomin" class="hover:opacity-70 transition-opacity duration-200">
-                            <img src="/ieir/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン" class="h-5 w-auto">
-                        </a>
-                        <a href="/ieir/views/category/snoopy" class="hover:opacity-70 transition-opacity duration-200">
-                            <img src="/ieir/public/img/parts/logo/snoopy_logo.png" alt="スヌーピー" class="h-4 w-auto">
-                        </a>
                     </div>
                 </div>
             </div>
@@ -296,381 +288,100 @@
         <!-- プログレスバー -->
         <div class="mx-auto mb-4">
             <div class="flex items-center justify-between">
-                <!-- Step 1: カート -->
-                <div class="progress-step relative flex-1 active">
+                <!-- Step 1: 入力 -->
+                <div class="progress-step completed">
                     <div class="flex flex-col items-center">
-                        <div class="w-10 h-10 rounded-full border-2 c-border-premico flex items-center justify-center mb-2 c-bg-premico text-white">
-                            <span class="text-sm font-semibold">1</span>
+                        <div class="step-circle w-10 h-10 rounded-full flex items-center justify-center mb-2">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
                         </div>
-                        <span class="text-xs md:text-sm font-medium text-gray-700">カート</span>
+                        <span class="text-xs md:text-sm font-medium text-gray-700">入力</span>
                     </div>
                 </div>
                 
-                <!-- Step 2: 購入情報入力 -->
-                <div class="progress-step relative flex-1">
+                <!-- Step 2: 確認 -->
+                <div class="progress-step completed">
                     <div class="flex flex-col items-center">
-                        <div class="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center mb-2 bg-white text-gray-400">
-                            <span class="text-sm font-semibold">2</span>
+                        <div class="step-circle w-10 h-10 rounded-full flex items-center justify-center mb-2">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
                         </div>
-                        <span class="text-xs md:text-sm font-medium text-gray-500">購入情報入力</span>
+                        <span class="text-xs md:text-sm font-medium text-gray-700">確認</span>
                     </div>
                 </div>
-                
-                <!-- Step 3: 確認 -->
-                <div class="progress-step relative flex-1">
+
+                <!-- Step 3: 完了 -->
+                <div class="progress-step completed">
                     <div class="flex flex-col items-center">
-                        <div class="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center mb-2 bg-white text-gray-400">
-                            <span class="text-sm font-semibold">3</span>
+                        <div class="step-circle w-10 h-10 rounded-full flex items-center justify-center mb-2">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
                         </div>
-                        <span class="text-xs md:text-sm font-medium text-gray-500">確認</span>
-                    </div>
-                </div>
-                
-                <!-- Step 4: 完了 -->
-                <div class="progress-step relative flex-1">
-                    <div class="flex flex-col items-center">
-                        <div class="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center mb-2 bg-white text-gray-400">
-                            <span class="text-sm font-semibold">4</span>
-                        </div>
-                        <span class="text-xs md:text-sm font-medium text-gray-500">完了</span>
+                        <span class="text-xs md:text-sm font-medium text-gray-700">完了</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- ショッピングカートタイトル -->
-        <div class="text-center mb-4">
-            <h1 class="text-2xl font-bold c-text-premico mb-2">ショッピングカート</h1>
-            <p class="text-gray-800 text-left pl-4">ショッピングカートには下記の商品が入っています。</p>
+        <!-- 完了メッセージ -->
+        <div class="text-center mb-8 mt-8">
+            <!-- チェックマークアイコン -->
+            <div class="flex justify-center mb-6">
+                <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center">
+                    <svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- メインメッセージ -->
+            <h1 class="text-2xl md:text-3xl font-bold c-text-premico mb-4">お問い合わせを受け付けました</h1>
+            <p class="text-lg text-gray-700 mb-2">お問い合わせ、ありがとうございます</p>
+            <p class="text-gray-600 mb-4">ご登録のメールアドレスに確認メールをお送りしました。<br>2営業日以内にご返信いたします。</p>
+            <p class=" text-gray-600 mb-8">対応時間：毎日 朝6:00〜夜21:00</p>
         </div>
-        <!-- 戻るボタン -->
-        <div class="flex justify-end mb-4">
-            <button onclick="history.back()" class="inline-flex items-center text-gray-400 hover:text-gray-600 text-sm px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors">
-                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+
+        <!-- 注意事項 -->
+        <div class="bg-orange-50 border border-orange-200 rounded-lg p-6 mb-8 max-w-2xl mx-auto">
+            <h2 class="text-lg font-bold text-orange-800 mb-4 flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
                 </svg>
-                戻る
-            </button>
+                ご確認ください
+            </h2>
+            <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>確認メールが届かない場合は、迷惑メールフォルダをご確認ください。</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>メールが届かない場合は、お手数ですがお電話にてお問い合わせください。</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span class="font-medium">お問い合わせ先：<a href="tel:0120247417" class="c-text-premico hover:opacity-70">0120-247-417</a>（毎日 朝6:00〜夜21:00）</span>
+                </li>
+            </ul>
         </div>
-        
-        <!-- ボーダー -->
-        <div class="border-b border-gray-200 mb-4"></div>
 
-        <!-- カート内容 -->
-        <div class="max-w-4xl mx-auto">
-            <!-- カート商品リスト -->
-            <div class="space-y-6">
-                <!-- 商品A (1つ目の商品のみ表示) -->
-                <div class="border-b border-gray-200">
-                    <div class="flex flex-row">
-                        <!-- 左：商品画像 -->
-                        <div class="ml-1 w-[35%] flex-shrink-0 sm:w-[200px]">
-                            <div class="aspect-square">
-                                <img src="/ieir/public/img/tmp_cart/item001.jpg" alt="ハローキティ 花あそび 浅草文庫® 牛革製長財布 ピンク Mサイズ" class="w-full h-full object-cover rounded">
-                            </div>
-                        </div>
-                        <!-- 右：商品番号・商品名・注文数 -->
-                        <div class="p-3">
-                            <div class="flex justify-between items-center pb-2">
-                                <span class="text-sm sm:text-base text-gray-600">商品番号　51362501</span>
-                                <button class="text-gray-400 hover:text-red-500 transition-all duration-200 ease-in-out hover:scale-110">
-                                    <svg class="w-5 h-5 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="flex-1 sm:flex sm:flex-col">
-                                <!-- 商品名 -->
-                                <h3 class="text-base sm:text-lg font-medium mb-3 mt-6">ハローキティ 花あそび 浅草文庫® 牛革製長財布 ピンク Mサイズ</h3>
-                                <!-- 注文数 -->
-                                <div class="flex items-center mb-3 sm:mb-auto">
-                                    <span class="mr-3 text-gray-600">注文数：</span>
-                                    <select class="border border-gray-300 rounded px-2 py-1 bg-white">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- 商品B (1つ目の商品のみ表示) -->
-                <div class="border-b border-gray-200">
-                    <div class="flex flex-row">
-                        <!-- 左：商品画像 -->
-                        <div class="ml-1 w-[35%] flex-shrink-0 sm:w-[200px]">
-                            <div class="aspect-square">
-                                <img src="/ieir/public/img/tmp_cart/item002.jpg" alt="ハローキティ 花あそび 浅草文庫® 牛革製長財布 ピンク Mサイズ" class="w-full h-full object-cover rounded">
-                            </div>
-                        </div>
-                        <!-- 右：商品番号・商品名・注文数 -->
-                        <div class="p-3">
-                            <div class="flex justify-between items-center pb-2">
-                                <span class="text-sm sm:text-base text-gray-600">商品番号　51999501</span>
-                                <button class="text-gray-400 hover:text-red-500 transition-all duration-200 ease-in-out hover:scale-110">
-                                    <svg class="w-5 h-5 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="flex-1 sm:flex sm:flex-col">
-                                <!-- 商品名 -->
-                                <h3 class="text-base sm:text-lg font-medium mb-3 mt-6">ハローキティ 花あそび 浅草文庫® 牛革製長財布 ピンク Mサイズ</h3>
-                                <!-- 注文数 -->
-                                <div class="flex items-center mb-3 sm:mb-auto">
-                                    <span class="mr-3 text-gray-600">注文数：</span>
-                                    <select class="border border-gray-300 rounded px-2 py-1 bg-white">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                
-                <!-- 支払い方法選択 -->
-                <div class="bg-gray-100 rounded-lg p-6 mt-6">
-                    <!-- 一段目: タイトル -->
-                    <h3 class="text-base font-medium mb-4">支払い方法を選択して、分割オプションを確認してください。</h3>
-                    
-                    <!-- お支払い方法選択 -->
-                    <div class="space-y-3 mb-6">
-                        <h4 class="text-sm font-medium text-gray-600 mb-2">お支払い方法</h4>
-                        
-                        <!-- 代金引換え -->
-                        <div class="flex items-center">
-                            <input type="radio" id="payment_cash_on_delivery" name="payment_type" value="cash_on_delivery" class="mr-3 w-5 h-5 c-accent-premico" x-model="paymentType" @change="onPaymentTypeChange()">
-                            <label for="payment_cash_on_delivery" class="text-gray-700 cursor-pointer">代金引換え</label>
-                        </div>
-                        
-                        <!-- クレジットカード -->
-                        <div class="flex items-center">
-                            <input type="radio" id="payment_credit_card" name="payment_type" value="credit_card" class="mr-3 w-5 h-5 c-accent-premico" x-model="paymentType" @change="onPaymentTypeChange()">
-                            <label for="payment_credit_card" class="text-gray-700 cursor-pointer">クレジットカード</label>
-                        </div>
-                        
-                        <!-- 後払い -->
-                        <div class="flex items-center">
-                            <input type="radio" id="payment_deferred" name="payment_type" value="deferred_payment" class="mr-3 w-5 h-5 c-accent-premico" x-model="paymentType" @change="onPaymentTypeChange()">
-                            <label for="payment_deferred" class="text-gray-700 cursor-pointer">後払い(ゆうちょ・コンビニ・スマホ決済)</label>
-                        </div>
-                    </div>
-                    
-                    <!-- 分割オプション表示エリア -->
-                    <div x-show="paymentType" x-transition>
-                        <!-- クレジットカードの場合：カート全体の分割選択のみ -->
-                        <div x-show="paymentType === 'credit_card'" class="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                            <h4 class="text-sm font-medium text-blue-800 mb-3">カート全体の支払い方法</h4>
-                            <div class="space-y-2">
-                                <div class="flex items-center">
-                                    <input type="radio" id="cart_lump_sum" name="cart_payment_method" value="lump_sum" class="mr-3 w-4 h-4 c-accent-premico" x-model="cartPaymentMethod" @change="onCartPaymentChange()">
-                                    <label for="cart_lump_sum" class="text-gray-700 cursor-pointer text-sm">一括払い</label>
-                                </div>
-                                <div class="flex items-center">
-                                    <input type="radio" id="cart_installment" name="cart_payment_method" value="installment" class="mr-3 w-4 h-4 c-accent-premico" x-model="cartPaymentMethod" @change="onCartPaymentChange()">
-                                    <label for="cart_installment" class="text-gray-700 cursor-pointer text-sm">分割払い</label>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- 代金引換・後払いの場合：商品ごとの分割選択 -->
-                        <div x-show="paymentType === 'cash_on_delivery' || paymentType === 'deferred_payment'" class="bg-green-50 border border-green-200 rounded-lg p-4">
-                            <h4 class="text-sm font-medium text-green-800 mb-3">各商品の支払い方法を選択</h4>
-                            <div class="space-y-4">
-                                <!-- 商品A の分割選択 -->
-                                <div class="border-b border-green-200 pb-3">
-                                    <div class="text-xs text-gray-600 mb-2">商品番号　51362501</div>
-                                    <div class="text-sm font-medium text-gray-800 mb-3">ハローキティ 花あそび 浅草文庫® 牛革製長財布</div>
-                                    <div class="flex items-center space-x-4 mb-2">
-                                        <div class="flex items-center">
-                                            <input type="radio" id="item1_lump_sum" name="item1_payment" value="lump_sum" class="mr-2 w-4 h-4 c-accent-premico" x-model="item1PaymentMethod" @change="onItemPaymentChange()">
-                                            <label for="item1_lump_sum" class="text-gray-700 cursor-pointer text-sm">一括払い</label>
-                                        </div>
-                                        <div class="flex items-center">
-                                            <input type="radio" id="item1_installment" name="item1_payment" value="installment" class="mr-2 w-4 h-4 c-accent-premico" x-model="item1PaymentMethod" @change="onItemPaymentChange()">
-                                            <label for="item1_installment" class="text-gray-700 cursor-pointer text-sm">分割払い</label>
-                                        </div>
-                                    </div>
-                                    <!-- 金額表示 -->
-                                    <div class="text-right text-sm">
-                                        <div x-show="item1PaymentMethod === 'lump_sum'" class="text-green-700 font-medium">
-                                            一括　¥43,780(税込)
-                                        </div>
-                                        <div x-show="item1PaymentMethod === 'installment'" class="text-green-700 font-medium">
-                                            分割　¥44,660(税込) - 6,380円×7回
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- 商品B の分割選択 -->
-                                <div class="pb-3">
-                                    <div class="text-xs text-gray-600 mb-2">商品番号　51999501</div>
-                                    <div class="text-sm font-medium text-gray-800 mb-3">ハローキティ 花あそび 浅草文庫® 牛革製長財布</div>
-                                    <div class="flex items-center space-x-4 mb-2">
-                                        <div class="flex items-center">
-                                            <input type="radio" id="item2_lump_sum" name="item2_payment" value="lump_sum" class="mr-2 w-4 h-4 c-accent-premico" x-model="item2PaymentMethod" @change="onItemPaymentChange()">
-                                            <label for="item2_lump_sum" class="text-gray-700 cursor-pointer text-sm">一括払い</label>
-                                        </div>
-                                        <div class="flex items-center">
-                                            <input type="radio" id="item2_installment" name="item2_payment" value="installment" class="mr-2 w-4 h-4 c-accent-premico" x-model="item2PaymentMethod" @change="onItemPaymentChange()">
-                                            <label for="item2_installment" class="text-gray-700 cursor-pointer text-sm">分割払い</label>
-                                        </div>
-                                    </div>
-                                    <!-- 金額表示 -->
-                                    <div class="text-right text-sm">
-                                        <div x-show="item2PaymentMethod === 'lump_sum'" class="text-green-700 font-medium">
-                                            一括　¥43,780(税込)
-                                        </div>
-                                        <div x-show="item2PaymentMethod === 'installment'" class="text-green-700 font-medium">
-                                            分割　¥44,660(税込) - 6,380円×7回
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- メッセージ表示エリア -->
-                    <div x-show="showPaymentMessage" x-transition class="mt-4 p-3 bg-red-100 border border-red-300 rounded text-sm text-red-800">
-                        金額が変更されました。ご確認ください。
-                    </div>
-                </div>
-                
-                
-                <!-- クーポンコード入力 -->
-                <div class="bg-gray-100 rounded-lg p-6 mt-6">
-                    <!-- タイトル -->
-                    <h3 class="text-base font-medium mb-4">クーポンをお持ちの方は、クーポンコードを入力して追加ボタンを押してください。</h3>
-                    
-                    <!-- クーポンコード入力フォーム -->
-                    <div class="flex items-center gap-3">
-                        <!-- 入力フィールド -->
-                        <input type="text" name="coupon" value="" placeholder="クーポンコードを入力" 
-                            class="flex-1 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm">
-                        
-                        <!-- 追加ボタン -->
-                        <button 
-                            type="button"
-                            class="c-bg-premico hover:opacity-80 text-white px-6 py-2 rounded-lg transition-all duration-200 whitespace-nowrap">
-                            追加
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- 金額詳細 -->
-                <div class="bg-white rounded-lg px-6">
-                    <div class="space-y-3">
-                        <!-- 小計(税抜) -->
-                        <div class="flex justify-between">
-                            <span class="text-gray-700">小計(税抜)</span>
-                            <span class="font-medium">¥43,780</span>
-                        </div>
-                        
-                        <!-- 発送手数料(税抜) -->
-                        <div class="flex justify-between">
-                            <span class="text-gray-700 ml-4">発送手数料(税抜)</span>
-                            <span class="font-medium">¥660</span>
-                        </div>
-                        
-                        <!-- 合計(10%対象) -->
-                        <div class="flex justify-between">
-                            <span class="text-gray-700 font-semibold">合計(10%対象)</span>
-                            <span class="font-semibold">¥44,440</span>
-                        </div>
-                        
-                        <!-- 消費税(10%対象) -->
-                        <div class="flex justify-between">
-                            <span class="text-gray-700 ml-4">消費税(10%対象)</span>
-                            <span class="font-medium">¥4,444</span>
-                        </div>
-                        
-                        <!-- 区切り線 -->
-                        <div class="border-t border-gray-200 pt-3">
-                            <!-- 合計(税込) -->
-                            <div class="flex justify-between items-center">
-                                <span class="text-lg font-semibold">合計(税込)</span>
-                                <span class="text-xl font-bold c-text-premico">¥48,884</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- ログイン・購入手続きセクション -->
-                <div class="mt-6 border-t border-gray-200">
-                    <!-- 説明テキスト（背景白） -->
-                    <div class="my-4">
-                        <h3 class="text-base font-bold">購入方法を選択してください</h3>
-                    </div>
-                    
-                    <!-- 購入方法選択（背景グレー） -->
-                    <div class="bg-gray-100 rounded-lg p-6 mb-6">
-                        <!-- ラジオボタン選択 -->
-                        <div class="space-y-3 mb-6">
-                            <div class="flex items-center">
-                                <input type="radio" id="purchase_as_member" name="purchase_method" value="member" 
-                                    class="mr-3 w-5 h-5 c-accent-premico" x-model="purchaseMethod" @change="onPurchaseMethodChange()">
-                                <label for="purchase_as_member" class="text-gray-700 cursor-pointer font-medium">ログインして購入（会員の方）</label>
-                            </div>
-                            
-                            <div class="flex items-center">
-                                <input type="radio" id="purchase_as_guest" name="purchase_method" value="guest" 
-                                    class="mr-3 w-5 h-5 c-accent-premico" x-model="purchaseMethod" @change="onPurchaseMethodChange()">
-                                <label for="purchase_as_guest" class="text-gray-700 cursor-pointer font-medium">ゲストで購入（会員登録せずに購入）</label>
-                            </div>
-                        </div>
-                        
-                        <!-- ログインフォーム（会員選択時のみ表示） -->
-                        <div x-show="purchaseMethod === 'member'" x-transition class="space-y-4 mb-6">
-                            <!-- 説明テキスト -->
-                            <p class=" text-red-600 mb-4">会員登録したときのメールアドレス・パスワードを入力してください。</p>
-                            
-                            <!-- メールアドレス -->
-                            <div>
-                                <label class="block text-sm text-gray-700 mb-2">メールアドレス</label>
-                                <input type="email" name="email" placeholder="メールアドレスを入力" 
-                                    class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white">
-                            </div>
-                            
-                            <!-- パスワード -->
-                            <div>
-                                <label class="block text-sm text-gray-700 mb-2">パスワード</label>
-                                <input type="password" name="password" placeholder="パスワードを入力" 
-                                    class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white">
-                                <div class="text-right mt-2">
-                                    <a href="#" class="text-sm text-blue-600 underline hover:text-blue-800">パスワードを忘れた方はこちら</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- 購入手続きボタン -->
-                        <button type="button" 
-                            onclick="location.href='cart02.html'"
-                            class="w-full c-bg-premico-gradient hover:opacity-80 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-between gap-2 transition-all duration-200 shadow-md hover:shadow-lg"
-                            :disabled="!purchaseMethod">
-                            <span class="flex-1 text-center" x-text="purchaseMethod === 'member' ? 'ログインして購入手続きへ' : '購入手続きへ'">購入手続きへ</span>
-                            <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+        <!-- ボタン -->
+        <div class="flex justify-center mt-8 mb-4">
+            <div class="w-full max-w-md flex flex-col gap-3">
+                <a href="/ieir/views/"
+                    class="w-full c-bg-premico-gradient hover:opacity-80 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-between gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
+                    <span class="flex-1 text-center">トップページへ戻る</span>
+                    <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+                <a href="/ieir/views/category/premico"
+                    class="w-full px-4 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors font-medium text-center">
+                    商品を見る
+                </a>
             </div>
         </div>
     </main>
@@ -722,7 +433,7 @@
                     <li><a href="/ieir/guide/return" class="hover:opacity-50  transition-colors">返品・交換について</a></li>
                     <li><a href="/ieir/faq" class="hover:opacity-50  transition-colors">よくある質問</a></li>
                     <li><a href="/ieir/contact" class="hover:opacity-50  transition-colors">お問い合わせ</a></li>
-                    <li><a href="/sitemap.html" class="hover:opacity-50  transition-colors">サイトマップ</a></li>
+                    <li><a href="/ieir/sitemap.html" class="hover:opacity-50  transition-colors">サイトマップ</a></li>
                 </ul>
             </div>
             
@@ -775,7 +486,7 @@
                         <span>|</span>
                         <a href="/ieir/privacy" class="hover:opacity-50 transition-colors">プライバシーポリシー</a>
                         <span>|</span>
-                        <a href="/tokusho" class="hover:opacity-50 transition-colors">特定商取引法に基づく表示</a>
+                        <a href="/ieir/tokusho" class="hover:opacity-50 transition-colors">特定商取引法に基づく表示</a>
                         <span>|</span>
                         <a href="/ieir/company" class="hover:opacity-50 transition-colors">会社概要</a>
                     </div>
@@ -848,46 +559,31 @@
     <script>
     function cartApp() {
         return {
-            paymentType: '',  // 支払い方法
-            cartPaymentMethod: 'lump_sum',  // クレジットカード時のカート全体の支払い方法
-            item1PaymentMethod: 'lump_sum',  // 商品1の支払い方法
-            item2PaymentMethod: 'lump_sum',  // 商品2の支払い方法
-            showPaymentMessage: false,
-            purchaseMethod: 'guest',  // 'member' or 'guest'
-            
-            // 支払い方法変更時の処理
-            onPaymentTypeChange() {
-                this.showPaymentMessage = true;
-                
-                // 支払い方法に応じてデフォルト値を設定
-                if (this.paymentType === 'credit_card') {
-                    this.cartPaymentMethod = 'lump_sum';
-                } else if (this.paymentType === 'cash_on_delivery' || this.paymentType === 'deferred_payment') {
-                    this.item1PaymentMethod = 'lump_sum';
-                    this.item2PaymentMethod = 'lump_sum';
-                }
-                
-                // 3秒後にメッセージを非表示
-                setTimeout(() => {
-                    this.showPaymentMessage = false;
-                }, 3000);
-            },
-            
-            // カート全体の支払い方法変更時
-            onCartPaymentChange() {
-                console.log('カート全体の支払い方法:', this.cartPaymentMethod);
-            },
-            
-            // 個別商品の支払い方法変更時
-            onItemPaymentChange() {
-                console.log('商品1:', this.item1PaymentMethod, '商品2:', this.item2PaymentMethod);
-            },
-            
-            // 購入方法変更時の処理
-            onPurchaseMethodChange() {
-                // 必要に応じて処理を追加
-            }
+            // お問い合わせフォーム用の空のオブジェクト
         }
+    }
+
+    // フォームバリデーション
+    function validateForm() {
+        const privacyAgreement = document.getElementById('privacy_agreement');
+        const privacyError = document.getElementById('privacy_error');
+        
+        // エラーメッセージを一旦非表示にする
+        privacyError.classList.add('hidden');
+        
+        // 個人情報同意チェックのバリデーション
+        if (!privacyAgreement.checked) {
+            privacyError.classList.remove('hidden');
+            // チェックボックスまでスクロール
+            privacyAgreement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            return false;
+        }
+        
+        // バリデーションが通った場合、フォームを送信または次のページに遷移
+        // ここで実際の送信処理やページ遷移を行う
+        console.log('フォームバリデーション成功');
+        alert('お問い合わせを受け付けました。確認画面に移動します。');
+        // 例: window.location.href = 'inquiry02.html';
     }
     </script>
 </body>
