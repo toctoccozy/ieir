@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I･E･Iオンラインショップ｜インペリアル・エンタープライズ株式会社</title>
-    <meta name="description" content="キャラフィネ、ムーミン、プレミコなど人気キャラクターグッズを取り扱うI･E･Iオンラインショップです。">
-    <meta name="keywords" content="I･E･I,キャラフィネ,ムーミン,プレミコ,キャラクターグッズ,通販">
-    <!-- Tailwind CSS -->
+    <meta name="description" content="キャラフィネ、ムーミン、PREMICOなど人気キャラクターグッズを取り扱うI･E･Iオンラインショップです。">
+    <meta name="keywords" content="I･E･I,キャラフィネ,ムーミン,PREMICO,キャラクターグッズ,通販">
+        <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com/3.4.1"></script>
     <script>
     tailwind.config = {
@@ -54,13 +54,13 @@
     /* モバイルではスライドを画面幅いっぱいに */
     @media (max-width: 767px) {
         .slider-main .slick-slide {
-            margin: 0 7px;
+            margin: 0 5px;
             opacity: 1 !important;
             transform: scale(1) !important;
         }
         
         .slider-main .slick-list {
-            margin: 0 -7px;
+            margin: 0 -5px;
         }
     }
     
@@ -87,10 +87,10 @@
     }
 
 
-    /* PC版ではドットを非表示 */
+    /* PC版でもドットを表示 */
     @media (min-width: 1024px) {
         .slick-dots {
-            display: none !important;
+            display: block !important;
         }
     }
     
@@ -109,6 +109,52 @@
         }
     }
 
+    /* 新着のお知らせカルーセル */
+    .newarrival-slider .slick-slide {
+        margin: 0 2.5px;
+    }
+    
+    .newarrival-slider .slick-list {
+        margin: 0 -2.5px;
+    }
+    
+    .newarrival-slider img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    /* モバイル版では矢印を非表示 */
+    @media (max-width: 448px) {
+        .newarrival-slider .slick-prev,
+        .newarrival-slider .slick-next {
+            display: none !important;
+        }
+    }
+    
+    /* PickUpカルーセル */
+    .pickup-slider .slick-slide {
+        margin: 0 2.5px;
+    }
+    
+    .pickup-slider .slick-list {
+        margin: 0 -2.5px;
+    }
+    
+    .pickup-slider img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    /* モバイル版では矢印を非表示 */
+    @media (max-width: 448px) {
+        .pickup-slider .slick-prev,
+        .pickup-slider .slick-next {
+            display: none !important;
+        }
+    }
+
     </style>
 </head>
 
@@ -116,10 +162,10 @@
     <div class="min-h-screen mw-full">
         <header class="pb-6 mx-auto max-w-6xl">
             <!-- ヘッダー -->
-            <div class="mx-auto bg-white border-b relative z-50 h-16">
+            <div class="mx-auto bg-white border-b relative z-50 h-18">
                 <!-- ヘッダー上段 -->
                 <div class="px-2 pt-2">
-                    <div class="flex items-center justify-between h-12">
+                    <div class="flex items-center justify-between h-12 lg:h-14">
                         <!-- ハンバーガーメニュー（左） -->
                         <div class="md:ml-2 w-12 h-full hover:opacity-50 duration-200">
                             <button class="hamburger-button relative w-full h-full bg-transparent border-none z-70 cursor-pointer px-1 py-1" id="js-hamburger">
@@ -130,16 +176,25 @@
                         </div>
 
                         <!-- ロゴ（中央/左） -->
-                        <div class="lg:ml-4 flex-1 flex justify-center lg:justify-start items-center gap-3 lg:mt-2">
-                            <a href="/ieir/views">
-                                <img class="h-10 w-auto lg:h-18 lg:w-auto" src="/ieir/public/img/parts/logo/logo_iei.jpg" alt="I･E･I">
-                            </a>
-                            <a href="/ieir/views/category/premico" class="hover:opacity-70 transition-opacity duration-200">
-                                <img class="h-6 w-auto lg:h-18 lg:w-auto" src="/ieir/public/img/parts/logo/logo_premico.png" alt="PREMICO">
+                        <div class="lg:ml-4 flex-1 flex justify-center lg:justify-start items-center gap-3 lg:mt-1">
+                            <a href="/ieir/category/premico" class="hover:opacity-70 transition-opacity duration-200">
+                                <img class="h-6 w-auto lg:h-8 lg:w-auto" src="/ieir/public/img/parts/logo/logo_premico.png" alt="PREMICO">
                             </a>
                         </div>
                         <!-- ログイン・カート（右） -->
-                        <div class="w-20 flex justify-end gap-2">
+                        <div class="w-20 lg:w-[40%] flex justify-end gap-2">
+                            <!-- 電話番号エリア（右） -->
+                            <div class="lg:flex flex-col justify-center hidden">
+                                <div class="text-xs text-gray-700 tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
+                                <div class="flex justify-end items-center space-x-1">
+                                    <div class="lg:w-6 lg:h-6 bg-gray-700 rounded-full flex items-center justify-center">
+                                        <svg class="lg:w-4 lg:h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                        </svg>
+                                    </div>
+                                    <a href="tel:0120-247-417" class="lg:text-2xl text-gray-700 hover:opacity-80 duration-200">0120-247-417</a>
+                                </div>
+                            </div>
                             <a href="/ieir/login" class="flex items-center text-gray-600 hover:opacity-50 duration-200">
                                 <svg class="w-8 h-8 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
@@ -327,7 +382,8 @@
             </nav>
         </header>
 
-        <main class="pb-6 px-4 mx-auto max-w-4xl">
+
+        <main class="pb-6 px-1 mx-auto max-w-6xl">
             <!-- 戻るボタン -->
             <div class="pt-4">
                 <button onclick="history.back()" class="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors">
@@ -338,188 +394,97 @@
                 </button>
             </div>
             
-            <!-- 検索ボックス -->
-            <section class="py-4 mt-2">
-                <div class="max-w-xl mx-auto">
-                    <!-- 見出し -->
-                    <div class="flex items-center gap-3 mb-3">
-                        <!-- <div class="flex items-center justify-center w-10 h-10 c-bg-premico-gradient rounded-full flex-shrink-0">
-                        </div> -->
-                        <div>
-                            <!-- <h3 class="text-base font-bold text-gray-800 leading-sung tracking-tight">商品をお探しの方</h3> -->
-                            <p class="text-gray-700 leading-tight tracking-tight">再度検索する場合、キーワードや商品番号、申込番号を下記に入力して検索してください</p>
-                        </div>
-                    </div>
-                    <!-- 検索フォーム -->
-                    <form class="flex h-12" action="/ieir/search" method="GET">
-                        <input type="text" name="q" id="search-input" placeholder="商品番号・キーワード"
-                            class="flex-1 pl-3 pr-3 py-2 border-y border-l border-gray-300 rounded-l-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-base md:text-sm" autocomplete="off"
-                        >
-                        <button
-                            type="submit"
-                            class="c-bg-premico hover:opacity-80 text-white px-4 rounded-r-lg transition-all duration-200 font-medium text-sm border-y border-r border-gray-300"
-                            aria-label="検索"
-                        >
-                            検索
-                        </button>
-                    </form>
-                </div>
-            </section>
-            
-            <!-- 検索結果セクション -->
+            <!-- 商品一覧 -->
             <section class="py-6">
                 <h2 class="mb-6 text-center md:flex md:items-center">
                     <div class="flex items-center justify-center mb-2">
                         <div class="flex-1 h-px bg-gray-300 md:hidden"></div>
-                        <span class="px-4 text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl">Results</span>
+                        <span class="px-4 text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl">Products</span>
                         <div class="flex-1 h-px bg-gray-300 md:hidden"></div>
                     </div>
-                    <div class="text-xs c-text-xxs font-normal text-gray-600">検索結果</div>
+                    <div class="text-xs c-text-xxs font-normal text-gray-600">PREMICO商品一覧</div>
                     <div class="hidden md:block md:flex-1 md:h-px md:bg-gray-300 md:ml-4"></div>
                 </h2>
-                <div class="mb-6">
-                    <div class="text-left text-base text-gray-600">検索キーワード: <span class="font-bold">「商品名」</span></div>
-                    <div class="text-right text-base text-gray-600">120件の商品が見つかりました</div>
-                </div>
                 
-                <!-- 検索結果リスト（2カラムレイアウト） -->
-                <div class="space-y-4 mb-8">
+                <!-- 商品グリッド -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 gap-y-1 mb-6">
                     <!-- 商品1 -->
-                    <div class="flex gap-4 p-4 bg-white border-b border-gray-200 hover:shadow-md transition-shadow duration-200">
-                        <a href="#" class="flex gap-4 w-full">
-                            <!-- 左側：画像 -->
-                            <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32">
-                                <img src="/ieir/public/img/tmp_media/paper001.jpg" alt="商品画像" class="w-full h-full object-cover rounded">
-                            </div>
-                            <!-- 右側：商品情報 -->
-                            <div class="flex-1 flex flex-col pt-2">
-                                <h3 class="text-base md:text-lg font-bold text-gray-800 mb-2 line-clamp-2 flex-grow">大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ</h3>
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="">
+                                <img src="/ieir/public/img/category/premico/banner/banner_01.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
-                    
                     <!-- 商品2 -->
-                    <div class="flex gap-4 p-4 bg-white border-b border-gray-200 hover:shadow-md transition-shadow duration-200">
-                        <a href="#" class="flex gap-4 w-full">
-                            <!-- 左側：画像 -->
-                            <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32">
-                                <img src="/ieir/public/img/tmp_media/paper002.jpg" alt="商品画像" class="w-full h-full object-cover rounded">
-                            </div>
-                            <!-- 右側：商品情報 -->
-                            <div class="flex-1 flex flex-col pt-2">
-                                <h3 class="text-base md:text-lg font-bold text-gray-800 mb-2 line-clamp-2 flex-grow">大谷翔平 54本塁打59盗塁達成記念　公式プリントサイン入りフォトフレーム</h3>
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="">
+                                <img src="/ieir/public/img/category/premico/banner/banner_02.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
-                    
                     <!-- 商品3 -->
-                    <div class="flex gap-4 p-4 bg-white border-b border-gray-200 hover:shadow-md transition-shadow duration-200">
-                        <a href="#" class="flex gap-4 w-full">
-                            <!-- 左側：画像 -->
-                            <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32">
-                                <img src="/ieir/public/img/tmp_media/paper003.jpg" alt="商品画像" class="w-full h-full object-cover rounded">
-                            </div>
-                            <!-- 右側：商品情報 -->
-                            <div class="flex-1 flex flex-col pt-2">
-                                <h3 class="text-base md:text-lg font-bold text-gray-800 mb-2 line-clamp-2 flex-grow">北陸新幹線 W7系かがやきウオッチ</h3>
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="">
+                                <img src="/ieir/public/img/category/premico/banner/banner_03.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
-                    
                     <!-- 商品4 -->
-                    <div class="flex gap-4 p-4 bg-white border-b border-gray-200 hover:shadow-md transition-shadow duration-200">
-                        <a href="#" class="flex gap-4 w-full">
-                            <!-- 左側：画像 -->
-                            <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32">
-                                <img src="/ieir/public/img/tmp_media/paper004.jpg" alt="商品画像" class="w-full h-full object-cover rounded">
-                            </div>
-                            <!-- 右側：商品情報 -->
-                            <div class="flex-1 flex flex-col pt-2">
-                                <h3 class="text-base md:text-lg font-bold text-gray-800 mb-2 line-clamp-2 flex-grow">放映50周年記念 アルプスの少女ハイジ 公式アニバーサリーウオッチ</h3>
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="">
+                                <img src="/ieir/public/img/category/premico/banner/banner_04.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
-                    
                     <!-- 商品5 -->
-                    <div class="flex gap-4 p-4 bg-white border-b border-gray-200 hover:shadow-md transition-shadow duration-200">
-                        <a href="#" class="flex gap-4 w-full">
-                            <!-- 左側：画像 -->
-                            <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32">
-                                <img src="/ieir/public/img/tmp_media/paper005.jpg" alt="商品画像" class="w-full h-full object-cover rounded">
-                            </div>
-                            <!-- 右側：商品情報 -->
-                            <div class="flex-1 flex flex-col pt-2">
-                                <h3 class="text-base md:text-lg font-bold text-gray-800 mb-2 line-clamp-2 flex-grow">セイコー すみっコぐらし™ × ドクターイエロー コラボウオッチ</h3>
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="">
+                                <img src="/ieir/public/img/category/premico/banner/banner_05.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
-                    
                     <!-- 商品6 -->
-                    <div class="flex gap-4 p-4 bg-white border-b border-gray-200 hover:shadow-md transition-shadow duration-200">
-                        <a href="#" class="flex gap-4 w-full">
-                            <!-- 左側：画像 -->
-                            <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32">
-                                <img src="/ieir/public/img/tmp_media/paper006.jpg" alt="商品画像" class="w-full h-full object-cover rounded">
-                            </div>
-                            <!-- 右側：商品情報 -->
-                            <div class="flex-1 flex flex-col pt-2">
-                                <h3 class="text-base md:text-lg font-bold text-gray-800 mb-2 line-clamp-2 flex-grow">923形ドクターイエロー（T4）引退記念 公式メモリアル金貨・銀貨</h3>
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="">
+                                <img src="/ieir/public/img/category/premico/banner/banner_06.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
-                    
                     <!-- 商品7 -->
-                    <div class="flex gap-4 p-4 bg-white border-b border-gray-200 hover:shadow-md transition-shadow duration-200">
-                        <a href="#" class="flex gap-4 w-full">
-                            <!-- 左側：画像 -->
-                            <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32">
-                                <img src="/ieir/public/img/tmp_media/paper007.jpg" alt="商品画像" class="w-full h-full object-cover rounded">
-                            </div>
-                            <!-- 右側：商品情報 -->
-                            <div class="flex-1 flex flex-col pt-2">
-                                <h3 class="text-base md:text-lg font-bold text-gray-800 mb-2 line-clamp-2 flex-grow">＜純金のふくろう＞ダイヤモンド入り24金製宝飾ペンダント</h3>
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="">
+                                <img src="/ieir/public/img/category/premico/banner/banner_07.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
-                    
                     <!-- 商品8 -->
-                    <div class="flex gap-4 p-4 bg-white border-b border-gray-200 hover:shadow-md transition-shadow duration-200">
-                        <a href="#" class="flex gap-4 w-full">
-                            <!-- 左側：画像 -->
-                            <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32">
-                                <img src="/ieir/public/img/tmp_media/paper008.jpg" alt="商品画像" class="w-full h-full object-cover rounded">
-                            </div>
-                            <!-- 右側：商品情報 -->
-                            <div class="flex-1 flex flex-col pt-2">
-                                <h3 class="text-base md:text-lg font-bold text-gray-800 mb-2 line-clamp-2 flex-grow">2024年 干支記念貨幣　瑞祥飛龍</h3>
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="">
+                                <img src="/ieir/public/img/category/premico/banner/banner_08.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
-                    
                     <!-- 商品9 -->
-                    <div class="flex gap-4 p-4 bg-white border-b border-gray-200 hover:shadow-md transition-shadow duration-200">
-                        <a href="#" class="flex gap-4 w-full">
-                            <!-- 左側：画像 -->
-                            <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32">
-                                <img src="/ieir/public/img/tmp_media/paper009.jpg" alt="商品画像" class="w-full h-full object-cover rounded">
-                            </div>
-                            <!-- 右側：商品情報 -->
-                            <div class="flex-1 flex flex-col pt-2">
-                                <h3 class="text-base md:text-lg font-bold text-gray-800 mb-2 line-clamp-2 flex-grow">火の鳥 連載70周年記念 純金製 公式カラー金貨</h3>
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="">
+                                <img src="/ieir/public/img/category/premico/banner/banner_09.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
-                    
                     <!-- 商品10 -->
-                    <div class="flex gap-4 p-4 bg-white border-b border-gray-200 hover:shadow-md transition-shadow duration-200">
-                        <a href="#" class="flex gap-4 w-full">
-                            <!-- 左側：画像 -->
-                            <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32">
-                                <img src="/ieir/public/img/tmp_media/paper010.jpg" alt="商品画像" class="w-full h-full object-cover rounded">
-                            </div>
-                            <!-- 右側：商品情報 -->
-                            <div class="flex-1 flex flex-col pt-2">
-                                <h3 class="text-base md:text-lg font-bold text-gray-800 mb-2 line-clamp-2 flex-grow">上皇陛下 卒寿記念 特別奉祝大型カラー金貨</h3>
+                    <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
+                        <a href="#" class="block">
+                            <div class="">
+                                <img src="/ieir/public/img/category/premico/banner/banner_10.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -554,15 +519,12 @@
                     120件中 1-10件を表示
                 </div>
             </section>
-
         </main>
 
         <!-- ページトップボタン -->
         <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
-            <a href="#" class="c-bg-second hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform  hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
-                </svg>
+            <a href="#" class="c-bg-second hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+                ↑
             </a>
         </div>
     </div>
@@ -594,7 +556,7 @@
                     <li><a href="/ieir/category/moomin" class="hover:opacity-50 transition-colors">・ムーミン</a></li>
                     <li><a href="/ieir/category/kitty" class="hover:opacity-50 transition-colors">・ハローキティ</a></li>
                     <li><a href="/ieir/category/snoopy" class="hover:opacity-50 transition-colors">・スヌーピー</a></li>
-                    <li><a href="/ieir/category/premico" class="hover:opacity-50 transition-colors"><span class="tracking-wider">プレミコ</span> (プレミコ)</a></li>
+                    <li><a href="/ieir/category/premico" class="hover:opacity-50 transition-colors"><span class="tracking-wider">PREMICO</span> (プレミコ)</a></li>
                     <li><a href="/ieir/category/jewelry" class="hover:opacity-50 transition-colors">女性ジュエリー・雑貨</a></li>
                     <li><a href="/ieir/category/mens" class="hover:opacity-50 transition-colors">男性</a></li>
                     <li><a href="/ieir/category/coin" class="hover:opacity-50 transition-colors">コイン・切手</a></li>
@@ -849,7 +811,7 @@
             centerPadding: '380px', // 前後のスライドの見える量
             slidesToShow: 1, // メインは1枚表示
             slidesToScroll: 1,
-            asNavFor: '.slider-thumbnail', // サムネイルスライダーと連動
+            // asNavFor削除（サムネイルスライダーとの連動を解除）
             responsive: [
                 {
                     breakpoint: 1280,
@@ -862,40 +824,51 @@
             ]
         });
 
-        // サムネイルスライダー
-        $('.slider-thumbnail').slick({
-            infinite: true,
+        // サムネイルスライダー関連のコードを削除（ドット表示に統一）
+        
+        // 新着のお知らせカルーセル
+        $('.newarrival-slider').slick({
+            infinite: false,
             autoplay: false,
             dots: false,
-            arrows: false,
-            slidesToShow: 7, // デスクトップで5つ表示
-            slidesToScroll: 1,
-            asNavFor: '.slider-main', // メインスライダーと連動
-            centerMode: true,
-            focusOnSelect: true, // クリックでスライド切り替え
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#2C5282" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>',
+            nextArrow: '<button type="button" class="slick-next absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#2C5282" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>',
+            slidesToShow: 5.5,
+            slidesToScroll: 3,
             responsive: [
                 {
-                    breakpoint: 1024,
+                    breakpoint: 640,
                     settings: {
-                        slidesToShow: 3, // モバイル・タブレットで3つ表示
-                        centerPadding: '10px'
+                        slidesToShow: 2.5,
+                        slidesToScroll: 2,
+                        arrows: false
                     }
                 }
             ]
         });
-
-        // サムネイル画像のアクティブ状態管理
-        $('.slider-thumbnail').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-            $('.slider-thumbnail img').removeClass('opacity-100').addClass('opacity-60');
+        
+        // PickUpカルーセル
+        $('.pickup-slider').slick({
+            infinite: false,
+            autoplay: false,
+            dots: false,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#2C5282" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>',
+            nextArrow: '<button type="button" class="slick-next absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#2C5282" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>',
+            slidesToShow: 5.5,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 2.5,
+                        slidesToScroll: 2,
+                        arrows: false
+                    }
+                }
+            ]
         });
-
-        $('.slider-thumbnail').on('afterChange', function(event, slick, currentSlide) {
-            $('.slider-thumbnail img').removeClass('opacity-100').addClass('opacity-60');
-            $('.slider-thumbnail .slick-current img').removeClass('opacity-60').addClass('opacity-100');
-        });
-
-        // 初期状態でアクティブなサムネイルを設定
-        $('.slider-thumbnail .slick-current img').removeClass('opacity-60').addClass('opacity-100');
         
         // 検索機能の拡張
         const searchInput = document.getElementById('search-input');
