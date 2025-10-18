@@ -62,6 +62,9 @@
         .slider-main .slick-list {
             margin: 0 -7px;
         }
+        .slick-dotted.slick-slider {
+            margin-bottom: 10px;
+        }
     }
     
     /* ドットのスタイル調整 */
@@ -69,7 +72,7 @@
         position: relative;
         bottom: auto;
         margin-top: 0px;
-        margin-bottom: 0;
+        margin-bottom: 0px;
     }
     
     .slick-dots li button:before {
@@ -382,7 +385,7 @@
             <!-- スライダーセクション -->
             <section class="">
                 <!-- メインスライダー -->
-                <div class="main-slider mb-4">
+                <div class="">
                     <div class="slider-main">
                         <div><img src="/ieir/public/img/tmp_top_slider/slider-image001.jpg" alt="スライド1" class="w-full h-auto"></div>
                         <div><img src="/ieir/public/img/tmp_top_slider/slider-image002.jpg" alt="スライド2" class="w-full h-auto"></div>
@@ -395,43 +398,10 @@
                         <div><img src="/ieir/public/img/tmp_top_slider/slider-image009.jpg" alt="スライド9" class="w-full h-auto"></div>
                     </div>
                 </div>
-
-                <!-- サムネイルスライダー -->
-                <!-- <div class="thumbnail-slider px-4 max-w-4xl mx-auto hidden lg:block">
-                    <div class="slider-thumbnail">
-                        <div class="p-1">
-                            <img src="/ieir/public/img/tmp_top_slider/slider-image001.jpg" alt="サムネイル1" class="w-full h-auto cursor-pointer opacity-60 hover:opacity-100 transition-opacity duration-200 rounded">
-                        </div>
-                        <div class="p-1">
-                            <img src="/ieir/public/img/tmp_top_slider/slider-image002.jpg" alt="サムネイル2" class="w-full h-auto cursor-pointer opacity-60 hover:opacity-100 transition-opacity duration-200 rounded">
-                        </div>
-                        <div class="p-1">
-                            <img src="/ieir/public/img/tmp_top_slider/slider-image003.jpg" alt="サムネイル3" class="w-full h-auto cursor-pointer opacity-60 hover:opacity-100 transition-opacity duration-200 rounded">
-                        </div>
-                        <div class="p-1">
-                            <img src="/ieir/public/img/tmp_top_slider/slider-image004.jpg" alt="サムネイル4" class="w-full h-auto cursor-pointer opacity-60 hover:opacity-100 transition-opacity duration-200 rounded">
-                        </div>
-                        <div class="p-1">
-                            <img src="/ieir/public/img/tmp_top_slider/slider-image005.jpg" alt="サムネイル5" class="w-full h-auto cursor-pointer opacity-60 hover:opacity-100 transition-opacity duration-200 rounded">
-                        </div>
-                        <div class="p-1">
-                            <img src="/ieir/public/img/tmp_top_slider/slider-image006.jpg" alt="サムネイル6" class="w-full h-auto cursor-pointer opacity-60 hover:opacity-100 transition-opacity duration-200 rounded">
-                        </div>
-                        <div class="p-1">
-                            <img src="/ieir/public/img/tmp_top_slider/slider-image007.jpg" alt="サムネイル7" class="w-full h-auto cursor-pointer opacity-60 hover:opacity-100 transition-opacity duration-200 rounded">
-                        </div>
-                        <div class="p-1">
-                            <img src="/ieir/public/img/tmp_top_slider/slider-image008.jpg" alt="サムネイル8" class="w-full h-auto cursor-pointer opacity-60 hover:opacity-100 transition-opacity duration-200 rounded">
-                        </div>
-                        <div class="p-1">
-                            <img src="/ieir/public/img/tmp_top_slider/slider-image009.jpg" alt="サムネイル9" class="w-full h-auto cursor-pointer opacity-60 hover:opacity-100 transition-opacity duration-200 rounded">
-                        </div>
-                    </div>
-                </div> -->
             </section>
 
             <!-- お買い物方法選択セクション -->
-            <section class="px-4 sm:px-12 md:px-20">
+            <section class="px-1 sm:px-12 md:px-20">
                 <div class="max-w-6xl mx-auto md:space-y-6 lg:max-w-4xl">
                     <!-- 1段目: 商品検索（全幅） -->
                     <div class="bg-white border-t border-b md:border-2 border-gray-200 md:rounded-xl p-4 md:shadow-sm md:hover:shadow-md transition-shadow duration-200">
@@ -441,7 +411,7 @@
                             </div>
                             <div>
                                 <h3 class="text-base font-bold text-gray-800 leading-sung tracking-tight">商品をお探しの方</h3>
-                                <p class=" text-gray-600 leading-sung tracking-tight">キーワードや商品番号、申込番号を下記に入力して検索してください</p>
+                                <p class=" text-gray-600 leading-tight tracking-tight">キーワードや商品番号、申込番号を下記に入力して検索してください</p>
                             </div>
                         </div>
                         <!-- 検索フォーム -->
@@ -465,7 +435,7 @@
                         <!-- カード2: カタログ注文 -->
                         <div class="flex-1 flex flex-col justify-between bg-white border-b md:border-2 border-gray-200 md:rounded-xl p-4 md:shadow-sm md:hover:shadow-md transition-shadow duration-200">
                             <!-- 見出し -->
-                            <div class="flex items-center gap-3 pb-1">
+                            <div class="flex items-center gap-3 pb-1 md:pb-3">
                                 <div class="hidden sm:flex items-center justify-center w-10 h-10 bg-amber-50 rounded-full flex-shrink-0">
                                     <svg class="w-6 h-6 text-amber-300" fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16,6l-13,0c-0.552,0 -1,0.448 -1,1l0,22c0,0.552 0.448,1 1,1l22,0c0.552,0 1,-0.448 1,-1l0,-13c0,-0.552 -0.448,-1 -1,-1c-0.552,-0 -1,0.448 -1,1l0,12c0,0 -20,0 -20,0c0,0 0,-20 0,-20c-0,0 12,0 12,0c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1Zm-9,19l14,-0c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1l-14,0c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1Zm-0,-4l4,0c0.552,-0 1,-0.448 1,-1c-0,-0.552 -0.448,-1 -1,-1l-4,0c-0.552,-0 -1,0.448 -1,1c-0,0.552 0.448,1 1,1Zm22.707,-13.293c0.391,-0.39 0.391,-1.024 0,-1.414l-4,-4c-0.39,-0.391 -1.024,-0.391 -1.414,-0l-10,10c-0.14,0.139 -0.235,0.317 -0.274,0.511l-1,5c-0.065,0.328 0.037,0.667 0.274,0.903c0.236,0.237 0.575,0.339 0.903,0.274l5,-1c0.194,-0.039 0.372,-0.134 0.511,-0.274l10,-10Zm-22.707,9.293l4,0c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1l-4,0c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1Zm0,-4l5,-0c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1l-5,-0c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1Z"/>
@@ -473,7 +443,7 @@
                                 </div>
                                 <div class="">
                                     <!-- <h3 class="text-base font-bold text-gray-800">カタログをお持ちの方</h3> -->
-                                    <p class=" text-gray-600 leading-sung tracking-tight">ダイレクトメール・カタログの商品番号がわかる場合</p>
+                                    <p class=" text-gray-600 leading-tight tracking-tight">ダイレクトメール・カタログの商品番号がわかる場合</p>
                                 </div>
                             </div>
                             <!-- ボタン -->
@@ -490,7 +460,7 @@
                         <!-- カード3: 広告商品 -->
                         <div class="flex-1 flex flex-col justify-between bg-white md:border-2 border-gray-200 md:rounded-xl p-4 md:shadow-sm md:hover:shadow-md transition-shadow duration-200">
                             <!-- 見出し -->
-                            <div class="flex items-center gap-3 pb-1">
+                            <div class="flex items-center gap-3 pb-1 md:pb-3">
                                 <div class="hidden sm:flex items-center justify-center w-10 h-10 bg-amber-50 rounded-full flex-shrink-0">
                                     <svg class="w-6 h-6 text-amber-300" fill="currentColor" viewBox="-2 0 19 19" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M2.644 15.26a16.9 16.9 0 0 1-.706-.014l-.11-.025a1.51 1.51 0 0 1-1.14-1.185l-.018-.092c-.005-.106-.01-.406-.01-.667V4.434a.477.477 0 0 1 .476-.475H11.77a.476.476 0 0 1 .475.475v1.529h1.591a.506.506 0 0 1 .504.504v7.192a1.6 1.6 0 0 1-1.6 1.6zm0-1.109h8.572a1.598 1.598 0 0 1-.077-.491v-2.174a2.16 2.16 0 0 1-.003-.109v-6.31H1.769v8.21c0 .218.003.43.006.544l.002.008a.401.401 0 0 0 .3.312l.01.002c.133.004.358.008.557.008zM9.91 6.815H2.95v1.109h6.96zm-4 2.383H2.95v3.532h2.96zm4.002.026H7.033v1.109h2.878zm0 2.41H7.033v1.108h2.878zm2.336-4.563v6.589a.492.492 0 0 0 .984 0V7.07z"/>
@@ -498,7 +468,7 @@
                                 </div>
                                 <div class="">
                                     <!-- <h3 class="text-base font-bold text-gray-800">広告をご覧の方</h3> -->
-                                    <p class=" text-gray-600 leading-sung tracking-tight">新聞・雑誌などに掲載されている商品はこちら</p>
+                                    <p class=" text-gray-600 leading-tight tracking-tight">新聞・雑誌などに掲載されている商品はこちら</p>
                                 </div>
                             </div>
                             <!-- ボタン -->
