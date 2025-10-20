@@ -160,9 +160,9 @@
 
         <!-- パンくずナビ -->
         <nav class="bread-clumbs text-sm sm:text-base text-gray-600 mx-auto pl-3 leading-snug tracking-tighter max-w-6xl">
-            <a href="/ieir/views/category/collection/" class="text-blue-800 hover:text-blue-400 transition-colors">コレクション</a>
+            <a href="/ieir/views/category/collection/" class="text-blue-800 hover:text-blue-400 transition-colors">■■■</a>
             <span class="mx-2">｜</span>
-            <a href="/ieir/views/category/collection/jewelry/" class="text-blue-800 hover:text-blue-400 transition-colors">女性ジュエリー</a>
+            <a href="/ieir/views/category/collection/jewelry/" class="text-blue-800 hover:text-blue-400 transition-colors">■■■</a>
         </nav>
 
         <!-- メインコンテンツ -->
@@ -173,70 +173,77 @@
                 <div class="p-3">
                     <img src="/ieir/views/products/51495/51495_01.jpg" alt="ギ・ラロッシュ　ノワール エレガンス　優雅なタックですっきりきれいなセレモニーワンピース" class="w-full mx-auto h-auto">
                 </div>
-
                 <!-- 商品紹介文 -->
                 <div class="p-3">
                     <p class="text-start sm:text-center leading-relaxed font-bold">
-                        パリのエレガンスが薫るこだわりのディテールと<br>
-                        フォーマルシーンに求められる品格。<br>
-                        サイドからバックにあしらわれたタックが揺れて<br>
-                        凛と美しい佇まいを演出します。<br>
-                        <br>
-                        動きやすく締め付け感の少ない、ゆったりとした着心地なのに<br>
-                        スリムに見えるシルエットもうれしい仕上がり。<br>
-                        名門「ギ・ラロッシュ」がおくる洗練のブラックフォーマルです。
+                    パリのエレガンスが薫るこだわりのディテールとフォーマルシーンに求められる品格。<br>
+                    サイドからバックにあしらわれたタックが揺れて凛と美しい佇まいを演出します。<br>
+                    <br>
+                    動きやすく締め付け感の少ない、ゆったりとした着心地なのにスリムに見えるシルエットもうれしい仕上がり。<br>
+                    名門「ギ・ラロッシュ」がおくる洗練のブラックフォーマルです。
                     </p>
                 </div>
+                <!-- 下記はAかBどちらかを利用 -->
+                    <!-- B:商品メイン画像＆箇条書き(main_600x600画像がない場合) -->
+                    <div class="flex flex-col md:flex-row p-3">
+                        <!-- 指示　ul classのclearfix部分は下記を利用 -->
+                        <ul class="border-l-4 pl-2 c-border-collection-gradient text-start w-full md:p-3 leading-relaxed space-y-2">
+                            <li>■フランスの名門ブランド「ギ・ラロッシュ」のオリジナル</li>
+                            <li>■品格のある漆黒の上質生地を使用</li>
+                            <li>■ストレッチが効いてシワになりにくい素材</li>
+                            <li>■ご家庭で洗濯可能</li>
+                        </ul>
+                    </div>
 
-                <!-- 商品メイン画像＆箇条書き -->
-                <div class="flex flex-col md:flex-row p-3">
-                    <!-- <img src="/ieir/views/products/51495/51495_01.jpg" alt="ギ・ラロッシュ　ノワール エレガンス　セレモニーワンピース" class="w-full md:w-[50%] mx-auto h-auto p-4"> -->
-                    <!-- 指示　ul classのclearfix部分は下記を利用 -->
-                    <ul class="border-l-4 pl-2 c-border-collection-gradient text-start w-full md:p-3 leading-relaxed space-y-2">
-                        <li>■フランスの名門ブランド「ギ・ラロッシュ」のオリジナル</li>
-                        <li>■品格のある漆黒の上質生地を使用</li>
-                        <li>■ストレッチが効いてシワになりにくい素材</li>
-                        <li>■ご家庭で洗濯可能</li>
-                    </ul>
-                </div>
-                
                 <!-- 商品詳細 -->
                 <div class="flex flex-col space-y-3 mt-6">
-                    <!-- 第1段落 -->
+                    <!-- 指示　p部分は下記を利用 -->
                     <p class="text-start px-1 sm:p-3 leading-relaxed">
-                        正統派のスタイルに、奥ゆかしくも優雅なタック使い——フランスを代表する高級ブランド「ギ・ラロッシュ」から、あらたまった席にふさわしい品格と着心地の良さを両立したブラックフォーマルが誕生しました。揺れるドレープがどこから見ても美しく、体のラインが出にくいシルエットがうれしい仕上がり。礼節を伝える奥深い漆黒の色合いで、慶弔どちらのシーンでも自信をもってお召しいただけるセレモニーワンピースです。
+                    正統派のスタイルに、奥ゆかしくも優雅なタック使い——フランスを代表する高級ブランド「ギ・ラロッシュ」から、あらたまった席にふさわしい品格と着心地の良さを両立したブラックフォーマルが誕生しました。<br>
+                    揺れるドレープがどこから見ても美しく、体のラインが出にくいシルエットがうれしい仕上がり。<br>
+                    礼節を伝える奥深い漆黒の色合いで、慶弔どちらのシーンでも自信をもってお召しいただけるセレモニーワンピースです。
                     </p>
 
-                    <!-- 51495_02.jpg -->
+                    <!-- 指示　img部分は下記を利用 -->
                     <img src="/ieir/views/products/51495/51495_02.jpg" alt="軽やかに揺れるタックがエレガント。すっきり見えてらくらく着こなせるブラックフォーマル" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
 
-                    <!-- h2見出し -->
+                    <!-- 指示　h2部分は下記を利用 -->
                     <h2 class="text-white rounded-md font-bold text-lg c-bg-collection-gradient text-center sm:p-3 py-2 mx-1">
-                        ゆとりのある着心地と動きやすさで<br>
-                        長時間の式典でも楽に美しく
+                    ゆとりのある着心地と動きやすさで<br>
+                    長時間の式典でも楽に美しく
                     </h2>
 
-                    <!-- 第2段落 -->
+                    <!-- 指示　p部分は下記を利用 -->
                     <p class="text-start px-1 sm:p-3 leading-relaxed">
-                        素材には、シワになりにくく、しなやかな風合いの高品質な生地を使用。フェミニンなAラインが気になる腰回りを自然にカバーするだけでなく、一日中着用しても疲れにくい、ゆったり楽な着心地を実現しています。窮屈さや服のシワにとらわれることなく、穏やかに想いに寄り添うための心づくしです。さらに、サイドからバックにかけてあしらわれたタックもポイント。縦のラインを強調することで、すっきりとしたスタイルに見せてくれます。袖口のスリットなど細部のディテールにも、真のエレガンスを追求するギ・ラロッシュならではのこだわりが込められました。
+                    素材には、シワになりにくく、しなやかな風合いの高品質な生地を使用。<br>
+                    フェミニンなAラインが気になる腰回りを自然にカバーするだけでなく、一日中着用しても疲れにくい、ゆったり楽な着心地を実現しています。<br>
+                    窮屈さや服のシワにとらわれることなく、穏やかに想いに寄り添うための心づくしです。<br>
+                    さらに、サイドからバックにかけてあしらわれたタックもポイント。<br>
+                    縦のラインを強調することで、すっきりとしたスタイルに見せてくれます。<br>
+                    袖口のスリットなど細部のディテールにも、真のエレガンスを追求するギ・ラロッシュならではのこだわりが込められました。
                     </p>
 
-                    <!-- 51495_03.jpg -->
+                    <!-- 指示　img部分は下記を利用 -->
                     <img src="/ieir/views/products/51495/51495_03.jpg" alt="念珠やブレスレットが持ちやすく、手首が華奢に見えるスリット入りの袖口。スリムに見えて優雅な印象のサイドのタック使い。Aラインのシルエットで体型カバーも。脱ぎ着しやすく動きやすい、程よく伸縮性のある生地を使用。シワになりにくいので畳んで持ち運ぶ際も安心。すっきりした見た目に見える後ろファスナー。繊細なタックと豊かなドレープで後ろ姿も美しく。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
 
-                    <!-- 第3段落 -->
+                    <!-- 指示　p部分は下記を利用 -->
                     <p class="text-start px-1 sm:p-3 leading-relaxed">
-                        ギ・ラロッシュ＜ノワール エレガンス＞優雅なタックですっきりきれいなセレモニーワンピースは、ご家庭でお洗濯ができるウォッシャブルでお手入れもしやすく、いつでも清潔にお召しいただけます。いざという時の一着として、ぜひこの機会にお申し込みください。
+                    ギ・ラロッシュ＜ノワール エレガンス＞優雅なタックですっきりきれいなセレモニーワンピースは、ご家庭でお洗濯ができるウォッシャブルでお手入れもしやすく、いつでも清潔にお召しいただけます。<br>
+                    いざという時の一着として、ぜひこの機会にお申し込みください。
                     </p>
 
-                    <!-- 51495_04.jpg -->
-                    <img src="/ieir/views/products/51495/51495_04.jpg" alt="お手持ちの服とのコーディネートで特別なお出かけにも。季節を問わず幅広いシーンで活躍します" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <!-- 指示　img部分は下記を利用 -->
+                    <img src="/ieir/views/products/51495/51495_04.jpg" alt="お手持ちの服とのコーディネートで特別なお出かけにも。季節を問わず幅広いシーンで活躍します" loading="lazy" class="w-full max-w-xl mx-auto h-auto p-4">
 
-                    <!-- Box: ギ・ラロッシュについて -->
-                    <div class="p-3 m-1 border c-border-collection-gradient border-1 rounded-md">
+                    <!-- 指示　classのbox1部分は下記を利用 -->
+                    <div class="p-3 m-1 border c-border-collection-jewelry border-1 rounded-md">
                         <h3 class="font-bold p-2">ギ・ラロッシュ</h3>
                         <p class="leading-relaxed p-2">
-                            1957年、ギ・ラロッシュによって創設されたフランスを代表する高級ブランド。コレクションにデビューすると同時に、瞬く間に上流階級の人々の絶大なる支持を獲得。「唯一無二でありながら典型的たるべし」という創業者のブランド哲学のもと、世界のモードをリードしつづけ、高級プレタポルテやブランドフレグランスなどの先駆けとなる。1985年と89年にデ・ドール賞を受賞、また87年には、文化勲章にあたるレジオン・ドヌール勲章が贈られる。"知的で上質な真のエレガンス"で世界中の人々を魅了している。
+                        1957年、ギ・ラロッシュによって創設されたフランスを代表する高級ブランド。<br>
+                        コレクションにデビューすると同時に、瞬く間に上流階級の人々の絶大なる支持を獲得。<br>
+                        「唯一無二でありながら典型的たるべし」という創業者のブランド哲学のもと、世界のモードをリードしつづけ、高級プレタポルテやブランドフレグランスなどの先駆けとなる。<br>
+                        1985年と89年にデ・ドール賞を受賞、また87年には、文化勲章にあたるレジオン・ドヌール勲章が贈られる。<br>
+                        "知的で上質な真のエレガンス"で世界中の人々を魅了している。
                         </p>
                     </div>
                 </div>
@@ -249,8 +256,8 @@
                     <!-- 商品画像 -->
                     <div class="flex justify-center p-12 sm:px-32 md:p-4 md:w-[40%] md:items-start">
                         <!-- 拡大画像 -->
-                        <img src="/ieir/views/products/51495/51495_01.jpg"
-                            alt="ギ・ラロッシュ　ノワール エレガンス　セレモニーワンピース"
+                        <img src="/ieir/views/products/51495/51495_01.jpg" 
+                            alt="商品詳細画像" 
                             loading="lazy"
                             class="w-full h-auto object-contain">
                     </div>
@@ -259,35 +266,35 @@
                     <div class="p-4 md:w-[60%] md:p-2 md:ml-8">
                         <!-- 商品番号 -->
                         <div class="mb-2 pl-2">
-                            <span class=" text-gray-900 tracking-wide">商品番号：51495</span>
+                            <span class=" text-gray-900 tracking-wide">商品番号：■■■</span>
                         </div>
                         <!-- 商品名 -->
                         <h3 class="border-l-8 border-gray-800 pl-2 text-xl sm:text-3xl font-bold text-gray-800 mb-4 md:mb-1 tracking-tighter">
-                            ギ・ラロッシュ<br>
-                            ノワール エレガンス<br>
-                            優雅なタックですっきりきれいなセレモニーワンピース
+                            ■■■<br>
+                            ■■■<br>
+                            ■■■
                         </h3>
                         
                         <!-- 納期・お届け -->
                         <!-- <div class="py-2">
-                            <p class="text-blue-700 font-bold text-lg sm:text-xl">商品は10月中旬より順次発送予定です。</p>
+                            <p class="text-blue-700 font-bold text-lg sm:text-xl">■■■</p>
                         </div> -->
 
                         <!-- 価格 -->
                         <div class="space-y-2 md:space-y-1 mb-6 text-gray-600 sm:text-lg">
-                            <p class="text-xl">一括価格39,800円（税込43,780円）</p>
-                            <p class="ml-4">発送手数料700円（税込770円）</p>
+                            <p class="text-xl">月々 ■■■円（税込■■■円）×■■■回払い</p>
+                            <p class="">一括価格■■■円（税込■■■円）</p>
+                            <p class="ml-4">発送手数料■■■円（税込■■■円）</p>
                         </div>
                         
                         <!-- 仕様詳細 -->
                         <div class="px-6 border-b border-gray-200 pb-3">
                             <h4 class="font-bold text-gray-800 mb-3">仕　様</h4>
                             <p class="leading-snug text-sm sm:text-base mb-3">
-                                ●材質：表地＝ポリエステル93％、ポリウレタン7％　裏地＝ポリエステル100％<br>
-                                ●袖スリット（約）：6cm<br>
-                                ●中国製
+                            ●材質：表地＝ポリエステル93％、ポリウレタン7％　裏地＝ポリエステル100％<br>
+                            ●袖スリット（約）：6cm<br>
+                            ●中国製
                             </p>
-                            <!-- サイズ表 -->
                             <div class="flex justify-center mt-4">
                                 <img src="/ieir/views/products/51495/51495_size.jpg" alt="サイズ表" class="max-w-md w-full h-auto">
                             </div>
@@ -295,19 +302,18 @@
 
                         <!-- 購入フォーム -->
                         <form method="post" name="form_cart" class="space-y-4 px-4">
-                            <input type="hidden" name="item_no" value="51495">
+                            <input type="hidden" name="item_no" value="■■■■">
                             <input type="hidden" name="amount1" value="1">
-                            <!-- サイズ選択 -->
-                            <div>
+                            <!-- サイズ・カラー選択 -->
+                            <!-- <div>
                                 <label for="size-select" class="block font-bold text-gray-700 mb-2">サイズをお選びください</label>
-                                <select id="size-select" name="size" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent">
+                                <select id="size-select" name="m5siz" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent">
                                     <option value="" disabled selected>サイズ選択</option>
-                                    <option value="S">S</option>
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                    <option value="LL">LL</option>
+                                    <option value="L">L (19.5cm)</option>
+                                    <option value="M">M (17.5cm)</option>
+                                    <option value="S">S (16.5cm)</option>
                                 </select>
-                            </div>
+                            </div> -->
                             <!-- カートにいれるボタン -->
                             <div class="md:w-[70%] mx-auto">
                                 <button class="w-full c-btn-amber-gradient py-4 px-6 rounded-lg flex items-center justify-between transition-all duration-200 shadow-md hover:shadow-lg">
@@ -337,7 +343,7 @@
                                 </div>
                                 <!-- お問い合わせ -->
                                 <div class="text-center">
-                                    <a href="#" class="text-iei-primary hover:text-iei-secondary underline transition-colors sm:text-base">この商品をメールで問い合わせ</a>
+                                    <a href="■■■" class="text-iei-primary hover:text-iei-secondary underline transition-colors sm:text-base">この商品をメールで問い合わせ</a>
                                 </div>
                             </div>
                         </form>
