@@ -122,6 +122,14 @@
  border-color : #743f09;
 }
 
+/* コレクションページ内共通グラデーション */
+.c-bg-collection-gradient {
+ background: linear-gradient(135deg, #993300 0%, #c36231 50%, #993300 100%);
+}
+.c-border-collection-gradient {
+ border-color: #993300;
+}
+
 /* アンバーグラデーションボタン */
 /* カード内の主要ボタン（ご注文はこちらから・商品を見る） */
 .c-btn-amber-gradient {
