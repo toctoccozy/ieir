@@ -314,6 +314,11 @@ customization.cssに以下のカスタムクラスを定義：
 　https://iei.jp/cgi-bin/goods/itemno_list.cgi
 　にはパラメータは入っていない、<input type="hidden" name="item_no1" value="82150002">　がある。
 
+`その他`
+- 管理画面に<meta property="og:description">を入力できる項目を追加
+- 検索したときのURLに検索ワード含める(トップから検索したらパラメータあるが、検索ページの検索に入れると出ない)
+- 管理画面上で、「納期表示」メニューの「終了後」半年を経過したら自動的に消えるように(メンテナンスのため)
+- ソースコードで見たときにhttpになっている箇所がある
 
 
 
