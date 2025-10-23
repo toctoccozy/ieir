@@ -393,7 +393,31 @@
                     <span class="text-base font-medium">プレミコトップに戻る</span>
                 </button>
             </div>
-            
+            <!-- 検索セクション -->
+            <section class="px-4 mt-4">
+                <div class="max-w-xl mx-auto">
+                    <!-- 検索フォーム -->
+                    <form class="relative" action="/ieir/search" method="GET">
+                        <div class="relative flex items-center">
+                            <!-- 検索入力フィールド -->
+                            <input type="text" name="q" id="search-input" placeholder="商品番号・キーワードで検索" 
+                                class="w-full pl-4 pr-12 py-3 border border-gray-300 rounded-l-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm" autocomplete="off"
+                            >
+                            
+                            <!-- 検索ボタン（アイコンのみ） -->
+                            <button 
+                                type="submit" 
+                                class="absolute right-0 top-0 bottom-0 c-bg-premico hover:opacity-80 text-white px-3 rounded-r-lg transition-all duration-200"
+                                aria-label="検索"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
             <!-- 商品一覧 -->
             <section class="py-6">
                 <h2 class="mb-6 text-center md:flex md:items-center">
@@ -405,14 +429,32 @@
                     <div class="text-xs c-text-xxs font-normal text-gray-600">PREMICO商品一覧</div>
                     <div class="hidden md:block md:flex-1 md:h-px md:bg-gray-300 md:ml-4"></div>
                 </h2>
-                
+            <!-- 絞り込みと件数表示 -->
+            <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
+                <!-- 商品種類選択 -->
+                <div class="px-4 w-full sm:w-1/2">
+                    <label for="product-type-select" class="block font-bold text-gray-700 mb-2">商品を絞り込む</label>
+                    <select id="product-type-select" name="product_type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent">
+                        <option value="" selected>すべて</option>
+                        <option value="watch">時計</option>
+                        <option value="apparel">アパレル・雑貨</option>
+                        <option value="jewelry">ジュエリー・ペンダント</option>
+                        <option value="glass">グラス</option>
+                        <option value="other">その他</option>
+                    </select>
+                </div>
+                <!-- 件数表示 -->
+                <div class="text-right">
+                    <p class="text-sm sm:text-base text-gray-600">全24件を表示</p>
+                </div>
+            </div>
                 <!-- 商品グリッド -->
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 gap-y-1 mb-6">
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 gap-y-1 mb-6">
                     <!-- 商品1 -->
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_01.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51462_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -420,7 +462,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_02.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51463_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -428,7 +470,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_03.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51488_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -436,7 +478,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_04.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51502_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -444,7 +486,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_05.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51503_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -452,7 +494,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_06.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51505_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -460,7 +502,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_07.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51506_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -468,7 +510,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_08.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51518_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -476,7 +518,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_09.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51519_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -484,7 +526,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_10.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51535_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -493,7 +535,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_01.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51462_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -501,7 +543,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_02.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51463_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -509,7 +551,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_03.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51488_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -517,7 +559,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_04.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51502_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -525,7 +567,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_05.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51503_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -533,7 +575,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_06.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51505_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -541,7 +583,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_07.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51506_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -549,7 +591,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_08.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51518_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -557,7 +599,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_09.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51519_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
@@ -565,12 +607,11 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block">
                             <div class="">
-                                <img src="/ieir/public/img/category/premico/banner/banner_10.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
+                                <img src="/ieir/public/img/category/premico/top_image/51535_l.png" alt="大谷翔平　ドジャースワールドシリーズ優勝記念　2024カットピース入りコラージュ" loading="lazy" class="w-full h-auto object-cover">
                             </div>
                         </a>
                     </div>
                 </div>
-                
                 <!-- ページネーション -->
                 <div class="flex justify-center items-center space-x-2 mt-8">
                     <!-- 前へボタン -->
