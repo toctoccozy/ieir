@@ -37,14 +37,34 @@
 }
 
 /* ムーミンカラー */
-.c-text-moomin-green {
+.c-text-moomin {
  color: #4fa250;
 }
-.c-bg-moomin-green {
- background-color: #4fa250;
+.c-bg-moomin {
+ background: linear-gradient(to right, #4fa250, #6bbd6d);
 }
-.c-border-moomin-green {
+.c-border-moomin {
  border-color: #4fa250;
+}
+/* スヌーピーカラー */
+.c-text-snoopy {
+ color: #646d02;
+}
+.c-bg-snoopy {
+ background:linear-gradient(to right, #646d02, #8a9603);
+}
+.c-border-snoopy {
+ border-color : #646d02;
+}
+/* キティカラー */
+.c-text-kitty {
+ color: #d65db1;
+}
+.c-bg-kitty {
+ background: linear-gradient(to right, #d65db1, #e87dcd);
+}
+.c-border-kitty {
+ border-color: #d65db1;
 }
 
 /* アクセントカラー */
@@ -67,19 +87,10 @@
  font-family: 'Playfair Display', serif;
 }
 
-/* キャラフィネ設定 */
-.c-bg-kitty {
- background-color: #d65db1;
-}
-.c-bg-snoopy {
- background-color : #f6eb4d;
-}
-.c-text-snoopy {
- color: #e53631;
-}
+
 
 /* コレクション設定 */
-.c-bg-collection-jewelry {
+.c-bg-collection {
  background-color : #be4c00;
 }
 .c-border-collection {

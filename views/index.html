@@ -223,13 +223,13 @@
                         </svg>
                     </button>
                     <div class="flex space-x-2 absolute right-4 md:relative md:right-auto">
-                        <a href="/ieir/views/auth/login.html" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
+                        <a href="/ieir/views/auth/login" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
                             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
                             </svg>
                             ログイン
                         </a>
-                        <a href="/ieir/views/auth/register.html" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
+                        <a href="/ieir/views/auth/register" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
                             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
                             </svg>
@@ -269,7 +269,7 @@
                         <div class="space-y-4">
                             <div>
                                 <p class="text-white text-sm mt-1.5 mb-0.5">商品番号がわかる場合</p>
-                                <a href="/ieir/cgi-bin/goods/itemno.cgi" class="h-auto ml-1 block c-btn-amber-gradient hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
+                                <a href="/ieir/views/cart/direct01" class="h-auto ml-1 block c-btn-amber-gradient hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
                                     <div class="flex items-start text-white gap-2">
                                         <span class="flex-1 tracking-tighter leading-tight">ダイレクトメール・カタログからのご注文</span>
                                         <div class="bg-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -282,7 +282,7 @@
                             </div>
                             <div>
                                 <p class="text-white text-sm mt-1.5 mb-0.5">新聞・雑誌などに掲載されている商品はこちら</p>
-                                <a href="/ieir/cgi-bin/goods/media.cgi" class="ml-1 block c-btn-amber-gradient hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
+                                <a href="/ieir/views/contents/advertise" class="ml-1 block c-btn-amber-gradient hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
                                     <div class="flex items-start text-white gap-2">
                                         <span class="flex-1 tracking-tighter break-all leading-tight">広告掲載中の商品</span>
                                         <div class="bg-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -298,7 +298,7 @@
 
                     <!-- B. 購入履歴の確認 -->
                     <div class="px-6 py-4 border-b border-white border-opacity-20">
-                        <a href="/ieir/cgi-bin/order/history.cgi" class="ml-1 block c-btn-amber-gradient hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
+                        <a href="/ieir/views/account/history_search" class="ml-1 block c-btn-amber-gradient hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
                             <div class="flex items-start text-white gap-2">
                                 <span class="font-medium flex-1 break-all leading-tight">購入履歴の確認</span>
                                 <div class="bg-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -314,31 +314,31 @@
                     <div class="px-6 py-4 border-b border-white border-opacity-20">
                         <h3 class="text-white font-medium mb-3">サポート・ガイド</h3>
                         <ul class="space-y-2">
-                            <li><a href="/ieir/guide" class="flex items-center justify-between text-white hover:opacity-70 transition-opacity">
+                            <li><a href="/ieir/views/about/guide" class="flex items-center justify-between text-white hover:opacity-70 transition-opacity">
                                 <span>ご利用ガイド</span>
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                                 </svg>
                             </a></li>
-                            <li><a href="/ieir/guide/shipping" class="flex items-center justify-between text-white hover:opacity-70 transition-opacity">
+                            <li><a href="/ieir/views/about/guide#guide07" class="flex items-center justify-between text-white hover:opacity-70 transition-opacity">
                                 <span>送料・お届けについて</span>
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                                 </svg>
                             </a></li>
-                            <li><a href="/ieir/guide/payment" class="flex items-center justify-between text-white hover:opacity-70 transition-opacity">
+                            <li><a href="/ieir/views/about/guide#guide05" class="flex items-center justify-between text-white hover:opacity-70 transition-opacity">
                                 <span>お支払い方法</span>
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                                 </svg>
                             </a></li>
-                            <li><a href="/ieir/guide/return" class="flex items-center justify-between text-white hover:opacity-70 transition-opacity">
+                            <li><a href="/ieir/views/about/guide#guide09" class="flex items-center justify-between text-white hover:opacity-70 transition-opacity">
                                 <span>返品・交換について</span>
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                                 </svg>
                             </a></li>
-                            <li><a href="/ieir/faq" class="flex items-center justify-between text-white hover:opacity-70 transition-opacity">
+                            <li><a href="/ieir/views/about/faq" class="flex items-center justify-between text-white hover:opacity-70 transition-opacity">
                                 <span>よくある質問</span>
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -349,7 +349,7 @@
 
                     <!-- D. お問い合わせ -->
                     <div class="px-6 py-4 border-b border-white border-opacity-20">
-                        <a href="/ieir/contact" class="ml-1 block c-btn-amber-gradient hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
+                        <a href="/ieir/views/inquiry/inquiry01" class="ml-1 block c-btn-amber-gradient hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
                             <div class="flex items-start text-white gap-2">
                                 <span class="font-medium flex-1 break-all leading-tight">お問い合わせ</span>
                                 <div class="bg-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -373,34 +373,34 @@
                             <div class="pt-2">
                                 <!-- 1. プレミコ -->
                                 <div class="mb-3">
-                                    <a href="/ieir/category/premico" class="block text-white font-medium hover:opacity-70 transition-opacity py-1 border-l-2 border-white pl-3">
+                                    <a href="/ieir/views/category/premico" class="block text-white font-medium hover:opacity-70 transition-opacity py-1 border-l-2 border-white pl-3">
                                         プレミコ
                                     </a>
                                 </div>
 
                                 <!-- 2. キャラフィネ -->
                                 <div class="mb-3">
-                                    <div class="text-white font-medium py-1 border-l-2 border-white pl-3 mb-2">
+                                    <a href="/ieir/views/category/charaffine" class="block text-white font-medium hover:opacity-70 transition-opacity py-1 border-l-2 border-white pl-3">
                                         キャラフィネ
-                                    </div>
+                                    </a>
                                     <ul class="ml-6 space-y-1">
-                                        <li><a href="/ieir/category/snoopy" class="block text-white hover:opacity-70 transition-opacity py-1">・SNOOPY</a></li>
-                                        <li><a href="/ieir/category/moomin" class="block text-white hover:opacity-70 transition-opacity py-1">・MOOMIN</a></li>
-                                        <li><a href="/ieir/category/kitty" class="block text-white hover:opacity-70 transition-opacity py-1">・ハローキティ</a></li>
+                                        <li><a href="/ieir/views/category/charaffine/moomin" class="block text-white hover:opacity-70 transition-opacity py-1">・MOOMIN</a></li>
+                                        <li><a href="/ieir/views/category/charaffine/snoopy" class="block text-white hover:opacity-70 transition-opacity py-1">・SNOOPY</a></li>
+                                        <li><a href="/ieir/views/category/charaffine/kitty" class="block text-white hover:opacity-70 transition-opacity py-1">・ハローキティ</a></li>
                                     </ul>
                                 </div>
 
                                 <!-- 3. IEIコレクション -->
                                 <div>
-                                    <div class="text-white font-medium py-1 border-l-2 border-white pl-3 mb-2">
+                                    <a href="/ieir/views/category/collection" class="block text-white font-medium hover:opacity-70 transition-opacity py-1 border-l-2 border-white pl-3">
                                         IEIコレクション
-                                    </div>
+                                    </a>
                                     <ul class="ml-6 space-y-1">
-                                        <li><a href="/ieir/category/jewelry" class="block text-white hover:opacity-70 transition-opacity py-1">・女性ジュエリー</a></li>
-                                        <li><a href="/ieir/category/accessories" class="block text-white hover:opacity-70 transition-opacity py-1">・女性アパレル・雑貨</a></li>
-                                        <li><a href="/ieir/category/mens" class="block text-white hover:opacity-70 transition-opacity py-1">・男性アパレル・雑貨</a></li>
-                                        <li><a href="/ieir/category/coin" class="block text-white hover:opacity-70 transition-opacity py-1">・コイン・切手</a></li>
-                                        <li><a href="/ieir/category/interior" class="block text-white hover:opacity-70 transition-opacity py-1">・インテリア・美術工芸品</a></li>
+                                        <li><a href="/ieir/views/category/collection/jewelry" class="block text-white hover:opacity-70 transition-opacity py-1">・女性ジュエリー</a></li>
+                                        <li><a href="/ieir/views/category/collection/ladies" class="block text-white hover:opacity-70 transition-opacity py-1">・女性アパレル・雑貨</a></li>
+                                        <li><a href="/ieir/views/category/collection/mens" class="block text-white hover:opacity-70 transition-opacity py-1">・男性アパレル・雑貨</a></li>
+                                        <li><a href="/ieir/views/category/collection/coin" class="block text-white hover:opacity-70 transition-opacity py-1">・コイン・切手</a></li>
+                                        <li><a href="/ieir/views/category/collection/collectable" class="block text-white hover:opacity-70 transition-opacity py-1">・インテリア・美術工芸品</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -462,13 +462,13 @@
                             </div>
                         </div>
                         <!-- 検索フォーム -->
-                        <form class="flex h-12" action="/ieir/search" method="GET">
+                        <form class="flex h-12" action="/ieir/views/contents/search" method="GET">
                             <input type="text" name="q" id="search-input" placeholder="商品番号・キーワード"
                                 class="flex-1 pl-3 pr-3 py-2 border-y border-l border-gray-300 rounded-l-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-base md:text-sm" autocomplete="off"
                             >
                             <button
                                 type="submit"
-                                class="c-bg-premico hover:opacity-80 text-white px-4 rounded-r-lg transition-all duration-200 font-medium text-sm border-y border-r border-gray-300"
+                                class="c-bg-premico hover:opacity-80 text-white px-4 md:px-8 rounded-r-lg transition-all duration-200 font-medium border-y border-r border-gray-300"
                                 aria-label="検索"
                             >
                                 検索
@@ -494,7 +494,7 @@
                                 </div>
                             </div>
                             <!-- ボタン -->
-                            <a href="/ieir/views/cart/direct01/direct01" class="block">
+                            <a href="/ieir/views/cart/direct01" class="block">
                                 <button class="c-btn-amber-gradient">
                                     <span class="">ご注文はこちらから</span>
                                     <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -519,7 +519,7 @@
                                 </div>
                             </div>
                             <!-- ボタン -->
-                            <a href="/advertised-products" class="block">
+                            <a href="/ieir/views/contents/advertise" class="block">
                                 <button class="c-btn-amber-gradient">
                                     <span class="">商品を見る</span>
                                     <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -854,7 +854,7 @@
                 <!-- もっと見るボタン -->
                 <div class="w-full px-6 mx-auto">
                     <button class="w-full md:w-[50%] md:mx-auto c-btn-amber-gradient py-3 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
-                        <a href="#" class="flex items-center justify-center gap-2">
+                        <a href="/ieir/views/contents/advertise" class="flex items-center justify-center gap-2">
                             <span class="text-base">もっと見る</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1179,12 +1179,12 @@
             <div>
                 <h3 class="text-lg font-bold mb-4">サポート</h3>
                 <ul class="space-y-1 text-gray-300">
-                    <li><a href="/ieir/guide/" class="hover:opacity-50  transition-colors">ご利用ガイド</a></li>
-                    <li><a href="/ieir/guide/shipping" class="hover:opacity-50  transition-colors">送料・お届けについて</a></li>
-                    <li><a href="/ieir/guide/payment" class="hover:opacity-50  transition-colors">お支払い方法</a></li>
-                    <li><a href="/ieir/guide/return" class="hover:opacity-50  transition-colors">返品・交換について</a></li>
-                    <li><a href="/ieir/faq" class="hover:opacity-50  transition-colors">よくある質問</a></li>
-                    <li><a href="/ieir/contact" class="hover:opacity-50  transition-colors">お問い合わせ</a></li>
+                    <li><a href="/ieir/views/about/guide" class="hover:opacity-50  transition-colors">ご利用ガイド</a></li>
+                    <li><a href="/ieir/views/about/guide#guide07" class="hover:opacity-50  transition-colors">送料・お届けについて</a></li>
+                    <li><a href="/ieir/views/about/guide#guide05" class="hover:opacity-50  transition-colors">お支払い方法</a></li>
+                    <li><a href="/ieir/views/about/guide#guide09" class="hover:opacity-50  transition-colors">返品・交換について</a></li>
+                    <li><a href="/ieir/views/about/faq" class="hover:opacity-50  transition-colors">よくある質問</a></li>
+                    <li><a href="/ieir/views/inquiry/inquiry01" class="hover:opacity-50  transition-colors">お問い合わせ</a></li>
                     <li><a href="/sitemap.html" class="hover:opacity-50  transition-colors">サイトマップ</a></li>
                 </ul>
             </div>
@@ -1234,13 +1234,13 @@
                 <div class="flex flex-col lg:flex-row justify-between items-center space-y-2 lg:space-y-0">
                     <!-- 法的リンク -->
                     <div class="flex flex-wrap justify-center lg:justify-start space-x-4 text-sm text-gray-200">
-                        <a href="/ieir/terms" class="hover:opacity-50 transition-colors">利用規約</a>
+                        <a href="/ieir/views/about/terms" class="hover:opacity-50 transition-colors">利用規約</a>
                         <span>|</span>
-                        <a href="/ieir/privacy" class="hover:opacity-50 transition-colors">プライバシーポリシー</a>
+                        <a href="/ieir/views/about/privacy" class="hover:opacity-50 transition-colors">プライバシーポリシー</a>
                         <span>|</span>
-                        <a href="/tokusho" class="hover:opacity-50 transition-colors">特定商取引法に基づく表示</a>
+                        <a href="/ieir/views/about/commerce" class="hover:opacity-50 transition-colors">特定商取引法に基づく表示</a>
                         <span>|</span>
-                        <a href="/ieir/company" class="hover:opacity-50 transition-colors">会社概要</a>
+                        <a href="/ieir/views/about/company" class="hover:opacity-50 transition-colors">会社概要</a>
                     </div>
                     
                     <!-- 認証マーク -->
