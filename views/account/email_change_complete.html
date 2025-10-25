@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ショッピングカート | I･E･Iオンラインショップ</title>
-    <meta name="description" content="I･E･Iオンラインショップのショッピングカート">
-    <meta name="keywords" content="I･E･I,キャラフィネ,ムーミン,PREMICO,キャラクターグッズ,通販,カート">
+    <title>メールアドレス認証完了 | I･E･Iオンラインショップ</title>
+    <meta name="description" content="I･E･Iオンラインショップのメールアドレス認証完了">
+    <meta name="keywords" content="I･E･I,キャラフィネ,ムーミン,PREMICO,キャラクターグッズ,通販,認証完了">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com/3.4.1"></script>
     <script>
@@ -23,52 +23,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
-    
-    <style>
-    /* プログレスバーのスタイル */
-    .progress-step {
-        position: relative;
-        flex: 1;
-    }
-    
-    .progress-step::after {
-        content: '';
-        position: absolute;
-        top: 20px;
-        left: 50%;
-        width: 100%;
-        height: 2px;
-        background-color: #e5e7eb;
-        z-index: -1;
-    }
-    
-    .progress-step:last-child::after {
-        display: none;
-    }
-    
-    .progress-step.active .step-circle {
-        background-color: #2C5282;
-        color: white;
-    }
-    
-    .progress-step.active ~ .progress-step .step-circle {
-        background-color: white;
-        color: #9ca3af;
-    }
-    
-    .progress-step.completed .step-circle {
-        background-color: #10b981;
-        color: white;
-    }
-    
-    .progress-step.active::after,
-    .progress-step.completed::after {
-        background-color: #2C5282;
-    }
-    </style>
 </head>
 
-<body class="bg-white" x-data="cartApp()">
+<body class="bg-white">
     <div class="min-h-screen mw-full">
         <header class="pb-6 mx-auto max-w-6xl">
             <!-- ヘッダー -->
@@ -96,7 +53,7 @@
                         </div>
                         <!-- ログイン・カート（右） -->
                         <div class="w-20 flex justify-end gap-2">
-                            <a href="/ieir/login" class="flex items-center text-gray-600 hover:opacity-50 duration-200">
+                            <a href="/ieir/views/account/mypage.html" class="flex items-center text-gray-600 hover:opacity-50 duration-200">
                                 <svg class="w-8 h-8 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                                 </svg>
@@ -116,7 +73,7 @@
 
             <!-- メニュー開いたとき -->
             <nav class="fixed left-0 top-0 w-4/5 md:w-3/5 lg:w-1/2 h-screen -translate-x-full c-bg-premico-50 transition-transform duration-200 ease-in-out z-[999] shadow-xl" id="js-nav">
-                <!-- 固定ヘッダー（閉じるボタンとログイン関連ボタン） -->
+                <!-- 固定ヘッダー（閉じるボタンとログアウトボタン） -->
                 <div class="fixed top-0 w-full h-16 c-bg-premico border-b border-gray-100 flex items-center justify-center md:justify-center px-4 z-20">
                     <button class="w-8 h-8 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full flex items-center justify-center transition-colors absolute left-4" id="js-close-menu">
                         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -124,18 +81,18 @@
                         </svg>
                     </button>
                     <div class="flex space-x-2 absolute right-4 md:relative md:right-auto">
-                        <a href="/ieir/register" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
+                        <a href="/ieir/views/account/mypage.html" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
                             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                             </svg>
-                            新規登録
+                            マイページ
                         </a>
-                        <a href="/ieir/login" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
+                        <button onclick="handleLogout()" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
                             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
                             </svg>
-                            ログイン
-                        </a>
+                            ログアウト
+                        </button>
                     </div>
                 </div>
                 <!-- メニューコンテンツ -->
@@ -165,7 +122,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <!-- B. サポート情報 -->
                     <div class="px-6 py-4 border-b border-white border-opacity-20">
                         <h3 class="text-white font-medium mb-3">サポート・ガイド</h3>
@@ -202,7 +159,7 @@
                             </a></li>
                         </ul>
                     </div>
-                    
+
                     <!-- C. お問い合わせ -->
                     <div class="px-6 py-4 border-b border-white border-opacity-20">
                         <a href="/ieir/contact" class="block bg-[#49a941] hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
@@ -216,7 +173,7 @@
                             </div>
                         </a>
                     </div>
-                    
+
                     <!-- D. 商品カテゴリ（アコーディオン） -->
                     <div class="px-6 py-4 border-b border-white border-opacity-20">
                         <button class="w-full flex items-center justify-between text-white font-medium mb-2" id="category-toggle">
@@ -233,7 +190,7 @@
                                         プレミコ
                                     </a>
                                 </div>
-                                
+
                                 <!-- 2. キャラフィネ -->
                                 <div class="mb-3">
                                     <div class="text-white text-sm font-medium py-1 border-l-2 border-white pl-3 mb-2">
@@ -245,7 +202,7 @@
                                         <li><a href="/ieir/category/kitty" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・ハローキティ</a></li>
                                     </ul>
                                 </div>
-                                
+
                                 <!-- 3. IEIコレクション -->
                                 <div>
                                     <div class="text-white text-sm font-medium py-1 border-l-2 border-white pl-3 mb-2">
@@ -262,7 +219,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- E. 会社情報 -->
                     <div class="px-6 py-4 pb-8 mb-12">
                         <div class="text-white">
@@ -284,235 +241,79 @@
         </header>
 
     <!-- メインコンテンツ -->
-    <main class="container mx-auto px-2 py-4 max-w-3xl">
-        <!-- プログレスバー -->
-        <div class="mx-auto mb-4">
-            <div class="flex items-center justify-between">
-                <!-- Step 1: 問い合わせ内容入力 -->
-                <div class="progress-step relative flex-1 active">
-                    <div class="flex flex-col items-center">
-                        <div class="w-10 h-10 rounded-full border-2 c-border-premico flex items-center justify-center mb-2 c-bg-premico text-white">
-                            <span class="text-sm font-semibold">1</span>
-                        </div>
-                        <span class="text-xs md:text-sm font-medium text-gray-700">入力</span>
-                    </div>
-                </div>
-                
-                <!-- Step 2: 確認 -->
-                <div class="progress-step relative flex-1">
-                    <div class="flex flex-col items-center">
-                        <div class="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center mb-2 bg-white text-gray-400">
-                            <span class="text-sm font-semibold">2</span>
-                        </div>
-                        <span class="text-xs md:text-sm font-medium text-gray-500">確認</span>
-                    </div>
-                </div>
-                
-                <!-- Step 3: 完了 -->
-                <div class="progress-step relative flex-1">
-                    <div class="flex flex-col items-center">
-                        <div class="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center mb-2 bg-white text-gray-400">
-                            <span class="text-sm font-semibold">3</span>
-                        </div>
-                        <span class="text-xs md:text-sm font-medium text-gray-500">完了</span>
-                    </div>
-                </div>
-            </div>
+    <main class="container mx-auto px-4 py-6 max-w-3xl">
+        <!-- タイトル -->
+        <div class="mb-8">
+            <h1 class="text-center text-2xl font-bold c-text-premico">メールアドレス認証完了</h1>
         </div>
 
-        <!-- お問い合わせタイトル -->
-        <div class="text-left mb-8">
-            <h1 class="text-2xl font-bold c-text-premico mb-6 text-center">お問い合わせ内容入力</h1>
-            <div class="pl-4">
-                <p class="text-gray-800">お急ぎの場合、下記のよくあるご質問にてご確認いただくか、お電話でご連絡ください。
-                メールでのお問い合わせは、返信にお時間をいただいております。</p>
-                <p class="text-gray-800">■お電話でのお問い合わせ <strong>0120-247-417 </strong>(毎日朝6時〜夜21時)</p>
+        <!-- 成功メッセージ -->
+        <div class="space-y-6">
+            <!-- 成功アイコン -->
+            <div class="flex justify-center mb-6">
+                <div class="w-20 h-20 c-bg-premico rounded-full flex items-center justify-center">
+                    <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
             </div>
-        </div>
 
-        <!-- よくある質問ボタン -->
-        <div class="mb-6 ml-6">
-            <a href="views/about/faq.html" class="inline-flex items-center c-bg-premico hover:opacity-80 text-white px-6 py-3 rounded-lg transition-all duration-200 shadow-md">
-                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                よくあるご質問
-            </a>
-        </div>
-        <!-- 戻るボタン -->
-        <div class="flex justify-end mb-4">
-            <button onclick="history.back()" class="inline-flex items-center text-gray-400 hover:text-gray-600 text-sm px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors">
-                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-                </svg>
-                戻る
-            </button>
-        </div>
+            <!-- メッセージボックス -->
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                <h2 class="text-xl font-bold c-text-premico mb-4 text-center">メールアドレスの変更が完了しました</h2>
 
-        <!-- ご注文後のお問い合わせについて -->
-        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-4">
-            <h3 class="text-lg font-medium text-yellow-800 mb-3">ご注文後のお問い合わせについて</h3>
-            <div class="text-yellow-700 space-y-2">
-                <p>●<strong>オンラインショップでご注文された方</strong>…注文内容確認メールに記載の「注文番号」をご記入ください。</p>
-                <p>●<strong>お電話・はがき・FAXにてご注文された方</strong>…ご注文者様の「お客様番号」をご記入ください。</p>
-            </div>
-        </div>
-        
-        <!-- ボーダー -->
-        <div class="border-b border-gray-200 mb-4"></div>
+                <div class="space-y-4 text-gray-700">
+                    <p class="text-center">
+                        メールアドレスの認証が完了し、変更が正常に処理されました。
+                    </p>
 
-        <!-- お問い合わせフォーム -->
-        <div class="max-w-4xl mx-auto px-4">
-            <!-- 1. 姓名セクション -->
-            <div class="bg-gray-100 rounded-lg p-4 mb-4">
-                <!-- お名前入力 -->
-                <div class="py-2 mb-2">
-                    <h3 class="text-lg font-bold c-text-premico mb-1">
-                        お名前 <span class="text-red-600 text-sm font-medium">※必須</span>
-                    </h3>
-                    <div class="grid grid-cols-2 gap-2 sm:ml-12">
-                        <div>
-                            <label class="block text-sm text-gray-700 mb-2">姓</label>
-                            <input type="text" name="last_name" value="" 
-                                class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white">
-                        </div>
-                        <div>
-                            <label class="block text-sm text-gray-700 mb-2">名</label>
-                            <input type="text" name="first_name" value="" 
-                                class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white">
-                        </div>
+                    <div class="bg-white rounded-lg p-4 border border-gray-300">
+                        <p class="text-sm text-gray-600 text-center mb-2">変更後のメールアドレス</p>
+                        <p class="text-center font-medium text-lg c-text-premico break-all">
+                            new-email@example.com
+                        </p>
+                    </div>
+
+                    <div class="pt-4 text-base">
+                        <p class="c-text-premico font-medium mb-2">今後のログインについて</p>
+                        <ul class="space-y-2 ml-4">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 c-text-premico mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                                今後は新しいメールアドレスでログインしてください
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 c-text-premico mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                                旧メールアドレスに変更完了の通知メールを送信しました
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 c-text-premico mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                                身に覚えのない変更の場合は、至急カスタマーサポートまでご連絡ください
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            
-            <!-- 2. メールアドレスセクション -->
-            <div class="bg-gray-100 rounded-lg p-4 mb-4">
-                <!-- メールアドレス入力 -->
-                <div class="py-2 mb-2">
-                    <h3 class="text-lg font-bold c-text-premico mb-1">
-                        メールアドレス <span class="text-red-600 text-sm font-medium">※必須</span>
-                    </h3>
-                    <div class="sm:ml-12">
-                        <input type="email" name="email" value="" 
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white"
-                            placeholder="example@email.com">
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 3. 電話番号セクション -->
-            <div class="bg-gray-100 rounded-lg p-4 mb-4">
-                <!-- お電話番号入力 -->
-                <div class="py-2 mb-2">
-                    <h3 class="text-lg font-bold c-text-premico mb-1">
-                        お電話番号 <span class="text-red-600 text-sm font-medium">※必須</span>
-                    </h3>
-                    <div class="flex items-center gap-3 sm:ml-12">
-                        <input type="text" name="tel1" value="" maxlength="4" 
-                            class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
-                        <span class="text-gray-700">-</span>
-                        <input type="text" name="tel2" value="" maxlength="4" 
-                            class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
-                        <span class="text-gray-700">-</span>
-                        <input type="text" name="tel3" value="" maxlength="4" 
-                            class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
-                    </div>
-                    <p class="text-sm text-gray-600 mt-2">※メールアドレスの入力間違いなど、お電話でご連絡する場合がございますので、ご入力をお願いいたします。</p>
-                </div>
-            </div>
-            
-            <!-- 4. 商品名セクション -->
-            <div class="bg-gray-100 rounded-lg p-4 mb-4">
-                <!-- 商品名入力 -->
-                <div class="py-2 mb-2">
-                    <h3 class="text-lg font-bold c-text-premico mb-1">
-                        商品名
-                    </h3>
-                    <div class="sm:ml-12">
-                        <input type="text" name="product_name" value="" 
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white"
-                            placeholder="商品名を入力してください">
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 5. お問い合わせ内容セクション -->
-            <div class="bg-gray-100 rounded-lg p-4 mb-4">
-                <!-- お問い合わせ内容入力 -->
-                <div class="py-2 mb-2">
-                    <h3 class="text-lg font-bold c-text-premico mb-1">
-                        お問い合わせ内容 <span class="text-red-600 text-sm font-medium">※必須</span>
-                    </h3>
-                    <div class="sm:ml-12">
-                        <textarea name="inquiry_content" rows="6" maxlength="500" 
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white resize-vertical"
-                            placeholder="お問い合わせ内容を入力してください（最大500文字）"></textarea>
-                        <p class="text-sm text-gray-600 mt-2">※500文字以内で入力してください</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 6. 個人情報の取扱についてセクション -->
-            <div class="bg-gray-100 rounded-lg p-4 mb-4">
-                <div class="py-2 mb-2">
-                    <h3 class="text-lg font-bold c-text-premico">
-                        個人情報の取扱について
-                    </h3>
-                    
-                    <!-- スクロール可能なテキストエリア -->
-                    <div class="py-2 mb-4 sm:ml-12">
-                        <div class="border border-gray-300 rounded-lg p-4 bg-white max-h-48 overflow-y-auto text-sm text-gray-700 leading-relaxed">
-                            <p class="mb-3">【個人情報の取扱について】</p>
-                            <p class="mb-3">インペリアル・エンタープライズ株式会社（以下、「当社」）は、お客様の個人情報の保護を重要な責務と考え、個人情報の保護に関する法律および関連する法令等を遵守し、お客様の個人情報を適切に取り扱います。</p>
-                            <p class="mb-3">■個人情報の収集目的</p>
-                            <p class="mb-3">当社は、以下の目的で個人情報を収集いたします。1. 商品の販売・配送に関する業務 2. お客様へのサービス提供 3. お客様からのお問い合わせへの対応 4. 新商品やキャンペーン等の情報提供 5. アフターサービス・メンテナンスのご案内</p>
-                            <p class="mb-3">■個人情報の利用</p>
-                            <p class="mb-3">当社は、収集した個人情報を上記の目的の範囲内で利用し、目的外での利用は行いません。ただし、法令に基づく場合や、お客様の生命、身体または財産の保護のために必要な場合等を除きます。</p>
-                            <p class="mb-3">■個人情報の第三者提供</p>
-                            <p class="mb-3">当社は、法令に基づく場合や、お客様の同意がある場合を除き、個人情報を第三者に提供することはありません。</p>
-                            <p class="mb-3">■個人情報の管理</p>
-                            <p class="mb-3">当社は、個人情報の漏洩、滅失、毀損等を防止するため、適切な安全管理措置を講じます。また、個人情報を取り扱う従業員に対して、適切な監督を行います。</p>
-                            <p class="mb-3">■お問い合わせ窓口</p>
-                            <p>個人情報の取扱に関するお問い合わせは、下記までご連絡ください。インペリアル・エンタープライズ株式会社 個人情報保護責任者 TEL: 0120-247-417</p>
-                        </div>
-                    </div>
-                    
-                    <!-- 同意チェックボックス -->
-                    <div class="py-2 sm:ml-12">
-                        <div class="flex items-start">
-                            <input type="checkbox" id="privacy_agreement" name="privacy_agreement" value="agree" required
-                                class="mt-1 mr-3 w-5 h-5 c-accent-premico border-2 border-red-500 rounded">
-                            <label for="privacy_agreement" class="text-gray-800 cursor-pointer font-medium">
-                                個人情報の取扱に同意する <span class="text-red-600 text-sm font-medium">※必須</span>
-                            </label>
-                        </div>
-                        <!-- エラーメッセージ -->
-                        <div id="privacy_error" class="mt-2 text-red-600 text-sm hidden">
-                            個人情報の取扱についての同意にチェックを入れてください
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 確認するボタン -->
-            <div class="flex justify-center mt-8 mb-4">
-                <div class="w-full max-w-md">
-                    <button type="button" onclick="validateForm()" 
-                        class="w-full c-bg-premico-gradient hover:opacity-80 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-between gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
-                        <span class="flex-1 text-center">確認する</span>
-                        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </button>
-                </div>
+
+            <!-- ボタン -->
+            <div class="flex justify-center mt-8 pb-8">
+                <a href="/ieir/views/account/mypage.html" class="inline-flex items-center justify-center c-bg-premico-gradient hover:opacity-80 text-white px-8 py-3 rounded-lg transition-all duration-200 shadow-md">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                    </svg>
+                    マイページに戻る
+                </a>
             </div>
         </div>
     </main>
 
-    </div>
-
     <!-- フッターコンポーネント -->
-    <footer class="c-bg-premico text-white">
+    <footer class="c-bg-premico text-white mt-12">
         <!-- メインフッター -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 p-8">
             <!-- 会社情報 -->
@@ -529,7 +330,7 @@
                     <p class="text-xs pl-4">受付時間：毎日 朝6:00〜夜21:00<br>※携帯電話からもOK</p>
                 </div>
             </div>
-            
+
             <!-- カテゴリリンク -->
             <div>
                 <h3 class="text-lg font-bold mb-4">商品カテゴリ</h3>
@@ -545,7 +346,7 @@
                     <li><a href="/ieir/category/interior" class="hover:opacity-50 transition-colors">インテリア・美術工芸品</a></li>
                 </ul>
             </div>
-            
+
             <!-- サポート情報 -->
             <div>
                 <h3 class="text-lg font-bold mb-4">サポート</h3>
@@ -556,14 +357,14 @@
                     <li><a href="/ieir/guide/return" class="hover:opacity-50  transition-colors">返品・交換について</a></li>
                     <li><a href="/ieir/faq" class="hover:opacity-50  transition-colors">よくある質問</a></li>
                     <li><a href="/ieir/contact" class="hover:opacity-50  transition-colors">お問い合わせ</a></li>
-                    <li><a href="/ieir/sitemap.html" class="hover:opacity-50  transition-colors">サイトマップ</a></li>
+                    <li><a href="/sitemap.html" class="hover:opacity-50  transition-colors">サイトマップ</a></li>
                 </ul>
             </div>
-            
+
             <!-- SNS・ニュースレター -->
             <div>
                 <h3 class="text-lg font-bold mb-4">フォロー・配信</h3>
-                
+
                 <!-- SNSアイコン -->
                 <div class="flex space-x-4 mb-6">
                     <!-- X (Twitter) -->
@@ -591,14 +392,14 @@
                         </svg>
                     </a>
                 </div>
-                
+
                 <!-- ニュースレター登録 -->
                 <div>
                     <p class="text-sm text-gray-300 mb-3">新着商品やお得な情報をお届け</p>
                 </div>
             </div>
         </div>
-        
+
         <!-- 法的情報・認証マーク -->
         <div class="border-t border-gray-400 py-2">
             <div class="px-2">
@@ -609,11 +410,11 @@
                         <span>|</span>
                         <a href="/ieir/privacy" class="hover:opacity-50 transition-colors">プライバシーポリシー</a>
                         <span>|</span>
-                        <a href="/ieir/tokusho" class="hover:opacity-50 transition-colors">特定商取引法に基づく表示</a>
+                        <a href="/tokusho" class="hover:opacity-50 transition-colors">特定商取引法に基づく表示</a>
                         <span>|</span>
                         <a href="/ieir/company" class="hover:opacity-50 transition-colors">会社概要</a>
                     </div>
-                    
+
                     <!-- 認証マーク -->
                     <div class="flex items-center space-x-4">
                         <div class="flex items-center space-x-2 text-sm text-gray-400">
@@ -628,7 +429,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- コピーライト -->
         <div class="py-1 pb-8">
             <div class="container mx-auto px-4 text-center">
@@ -639,6 +440,8 @@
             </div>
         </div>
     </footer>
+
+    </div>
 
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -661,7 +464,7 @@
             ham.addEventListener('click', function () {
                 ham.classList.toggle('active');
                 nav.classList.toggle('active');
-                
+
                 // bodyのスクロールを制御
                 if (nav.classList.contains('active')) {
                     document.body.style.overflow = 'hidden';
@@ -677,36 +480,35 @@
                 });
             }
         }
-    });
-    </script>
-    <script>
-    function cartApp() {
-        return {
-            // お問い合わせフォーム用の空のオブジェクト
-        }
-    }
 
-    // フォームバリデーション
-    function validateForm() {
-        const privacyAgreement = document.getElementById('privacy_agreement');
-        const privacyError = document.getElementById('privacy_error');
-        
-        // エラーメッセージを一旦非表示にする
-        privacyError.classList.add('hidden');
-        
-        // 個人情報同意チェックのバリデーション
-        if (!privacyAgreement.checked) {
-            privacyError.classList.remove('hidden');
-            // チェックボックスまでスクロール
-            privacyAgreement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            return false;
+        // カテゴリアコーディオン
+        const categoryToggle = document.getElementById('category-toggle');
+        const categoryContent = document.getElementById('category-content');
+        const categoryArrow = document.getElementById('category-arrow');
+
+        if (categoryToggle && categoryContent) {
+            categoryToggle.addEventListener('click', function() {
+                if (categoryContent.style.maxHeight && categoryContent.style.maxHeight !== '0px') {
+                    categoryContent.style.maxHeight = '0px';
+                    categoryArrow.style.transform = 'rotate(0deg)';
+                } else {
+                    categoryContent.style.maxHeight = categoryContent.scrollHeight + 'px';
+                    categoryArrow.style.transform = 'rotate(180deg)';
+                }
+            });
         }
-        
-        // バリデーションが通った場合、フォームを送信または次のページに遷移
-        // ここで実際の送信処理やページ遷移を行う
-        console.log('フォームバリデーション成功');
-        alert('お問い合わせを受け付けました。確認画面に移動します。');
-        // 例: window.location.href = 'inquiry02.html';
+    });
+
+    // ログアウト処理
+    function handleLogout() {
+        // 確認ダイアログ
+        if (confirm('ログアウトしてもよろしいですか?')) {
+            // TODO: 実際のログアウト処理をここに実装
+            console.log('ログアウト処理を実行');
+
+            // ログインページにリダイレクト
+            window.location.href = '/ieir/login';
+        }
     }
     </script>
 </body>

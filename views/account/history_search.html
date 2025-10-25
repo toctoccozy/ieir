@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ショッピングカート | I･E･Iオンラインショップ</title>
-    <meta name="description" content="I･E･Iオンラインショップのショッピングカート">
-    <meta name="keywords" content="I･E･I,キャラフィネ,ムーミン,PREMICO,キャラクターグッズ,通販,カート">
+    <title>購入履歴を検索 | I･E･Iオンラインショップ</title>
+    <meta name="description" content="I･E･Iオンラインショップの購入履歴の検索">
+    <meta name="keywords" content="I･E･I,キャラフィネ,ムーミン,PREMICO,キャラクターグッズ,通販,購入履歴,検索">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com/3.4.1"></script>
     <script>
@@ -23,49 +23,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
-    
-    <style>
-    /* プログレスバーのスタイル */
-    .progress-step {
-        position: relative;
-        flex: 1;
-    }
-    
-    .progress-step::after {
-        content: '';
-        position: absolute;
-        top: 20px;
-        left: 50%;
-        width: 100%;
-        height: 2px;
-        background-color: #e5e7eb;
-        z-index: -1;
-    }
-    
-    .progress-step:last-child::after {
-        display: none;
-    }
-    
-    .progress-step.active .step-circle {
-        background-color: #2C5282;
-        color: white;
-    }
-    
-    .progress-step.active ~ .progress-step .step-circle {
-        background-color: white;
-        color: #9ca3af;
-    }
-    
-    .progress-step.completed .step-circle {
-        background-color: #10b981;
-        color: white;
-    }
-    
-    .progress-step.active::after,
-    .progress-step.completed::after {
-        background-color: #2C5282;
-    }
-    </style>
 </head>
 
 <body class="bg-white" x-data="cartApp()">
@@ -285,231 +242,107 @@
 
     <!-- メインコンテンツ -->
     <main class="container mx-auto px-2 py-4 max-w-3xl">
-        <!-- プログレスバー -->
-        <div class="mx-auto mb-4">
-            <div class="flex items-center justify-between">
-                <!-- Step 1: 問い合わせ内容入力 -->
-                <div class="progress-step relative flex-1 active">
-                    <div class="flex flex-col items-center">
-                        <div class="w-10 h-10 rounded-full border-2 c-border-premico flex items-center justify-center mb-2 c-bg-premico text-white">
-                            <span class="text-sm font-semibold">1</span>
-                        </div>
-                        <span class="text-xs md:text-sm font-medium text-gray-700">入力</span>
-                    </div>
-                </div>
-                
-                <!-- Step 2: 確認 -->
-                <div class="progress-step relative flex-1">
-                    <div class="flex flex-col items-center">
-                        <div class="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center mb-2 bg-white text-gray-400">
-                            <span class="text-sm font-semibold">2</span>
-                        </div>
-                        <span class="text-xs md:text-sm font-medium text-gray-500">確認</span>
-                    </div>
-                </div>
-                
-                <!-- Step 3: 完了 -->
-                <div class="progress-step relative flex-1">
-                    <div class="flex flex-col items-center">
-                        <div class="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center mb-2 bg-white text-gray-400">
-                            <span class="text-sm font-semibold">3</span>
-                        </div>
-                        <span class="text-xs md:text-sm font-medium text-gray-500">完了</span>
-                    </div>
-                </div>
+        <!-- タイトルと説明文 -->
+        <div class="mb-6">
+            <h1 class="text-center text-2xl font-bold c-text-premico mb-4">購入履歴を検索</h1>
+            <div class="text-gray-800 px-2">
+                <p>ご注文時の情報を入力して、購入履歴を確認できます。</p>
             </div>
         </div>
 
-        <!-- お問い合わせタイトル -->
-        <div class="text-left mb-8">
-            <h1 class="text-2xl font-bold c-text-premico mb-6 text-center">お問い合わせ内容入力</h1>
-            <div class="pl-4">
-                <p class="text-gray-800">お急ぎの場合、下記のよくあるご質問にてご確認いただくか、お電話でご連絡ください。
-                メールでのお問い合わせは、返信にお時間をいただいております。</p>
-                <p class="text-gray-800">■お電話でのお問い合わせ <strong>0120-247-417 </strong>(毎日朝6時〜夜21時)</p>
-            </div>
-        </div>
-
-        <!-- よくある質問ボタン -->
-        <div class="mb-6 ml-6">
-            <a href="views/about/faq.html" class="inline-flex items-center c-bg-premico hover:opacity-80 text-white px-6 py-3 rounded-lg transition-all duration-200 shadow-md">
-                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                よくあるご質問
-            </a>
-        </div>
-        <!-- 戻るボタン -->
-        <div class="flex justify-end mb-4">
-            <button onclick="history.back()" class="inline-flex items-center text-gray-400 hover:text-gray-600 text-sm px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors">
-                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-                </svg>
-                戻る
-            </button>
-        </div>
-
-        <!-- ご注文後のお問い合わせについて -->
-        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-4">
-            <h3 class="text-lg font-medium text-yellow-800 mb-3">ご注文後のお問い合わせについて</h3>
-            <div class="text-yellow-700 space-y-2">
-                <p>●<strong>オンラインショップでご注文された方</strong>…注文内容確認メールに記載の「注文番号」をご記入ください。</p>
-                <p>●<strong>お電話・はがき・FAXにてご注文された方</strong>…ご注文者様の「お客様番号」をご記入ください。</p>
-            </div>
-        </div>
-        
-        <!-- ボーダー -->
-        <div class="border-b border-gray-200 mb-4"></div>
-
-        <!-- お問い合わせフォーム -->
-        <div class="max-w-4xl mx-auto px-4">
-            <!-- 1. 姓名セクション -->
-            <div class="bg-gray-100 rounded-lg p-4 mb-4">
-                <!-- お名前入力 -->
-                <div class="py-2 mb-2">
-                    <h3 class="text-lg font-bold c-text-premico mb-1">
-                        お名前 <span class="text-red-600 text-sm font-medium">※必須</span>
-                    </h3>
-                    <div class="grid grid-cols-2 gap-2 sm:ml-12">
-                        <div>
-                            <label class="block text-sm text-gray-700 mb-2">姓</label>
-                            <input type="text" name="last_name" value="" 
-                                class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white">
-                        </div>
-                        <div>
-                            <label class="block text-sm text-gray-700 mb-2">名</label>
-                            <input type="text" name="first_name" value="" 
-                                class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 2. メールアドレスセクション -->
-            <div class="bg-gray-100 rounded-lg p-4 mb-4">
-                <!-- メールアドレス入力 -->
-                <div class="py-2 mb-2">
-                    <h3 class="text-lg font-bold c-text-premico mb-1">
-                        メールアドレス <span class="text-red-600 text-sm font-medium">※必須</span>
-                    </h3>
-                    <div class="sm:ml-12">
-                        <input type="email" name="email" value="" 
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white"
-                            placeholder="example@email.com">
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 3. 電話番号セクション -->
-            <div class="bg-gray-100 rounded-lg p-4 mb-4">
-                <!-- お電話番号入力 -->
-                <div class="py-2 mb-2">
-                    <h3 class="text-lg font-bold c-text-premico mb-1">
-                        お電話番号 <span class="text-red-600 text-sm font-medium">※必須</span>
-                    </h3>
-                    <div class="flex items-center gap-3 sm:ml-12">
-                        <input type="text" name="tel1" value="" maxlength="4" 
-                            class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
-                        <span class="text-gray-700">-</span>
-                        <input type="text" name="tel2" value="" maxlength="4" 
-                            class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
-                        <span class="text-gray-700">-</span>
-                        <input type="text" name="tel3" value="" maxlength="4" 
-                            class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
-                    </div>
-                    <p class="text-sm text-gray-600 mt-2">※メールアドレスの入力間違いなど、お電話でご連絡する場合がございますので、ご入力をお願いいたします。</p>
-                </div>
-            </div>
-            
-            <!-- 4. 商品名セクション -->
-            <div class="bg-gray-100 rounded-lg p-4 mb-4">
-                <!-- 商品名入力 -->
-                <div class="py-2 mb-2">
-                    <h3 class="text-lg font-bold c-text-premico mb-1">
-                        商品名
-                    </h3>
-                    <div class="sm:ml-12">
-                        <input type="text" name="product_name" value="" 
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white"
-                            placeholder="商品名を入力してください">
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 5. お問い合わせ内容セクション -->
-            <div class="bg-gray-100 rounded-lg p-4 mb-4">
-                <!-- お問い合わせ内容入力 -->
-                <div class="py-2 mb-2">
-                    <h3 class="text-lg font-bold c-text-premico mb-1">
-                        お問い合わせ内容 <span class="text-red-600 text-sm font-medium">※必須</span>
-                    </h3>
-                    <div class="sm:ml-12">
-                        <textarea name="inquiry_content" rows="6" maxlength="500" 
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white resize-vertical"
-                            placeholder="お問い合わせ内容を入力してください（最大500文字）"></textarea>
-                        <p class="text-sm text-gray-600 mt-2">※500文字以内で入力してください</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 6. 個人情報の取扱についてセクション -->
-            <div class="bg-gray-100 rounded-lg p-4 mb-4">
-                <div class="py-2 mb-2">
-                    <h3 class="text-lg font-bold c-text-premico">
-                        個人情報の取扱について
-                    </h3>
-                    
-                    <!-- スクロール可能なテキストエリア -->
-                    <div class="py-2 mb-4 sm:ml-12">
-                        <div class="border border-gray-300 rounded-lg p-4 bg-white max-h-48 overflow-y-auto text-sm text-gray-700 leading-relaxed">
-                            <p class="mb-3">【個人情報の取扱について】</p>
-                            <p class="mb-3">インペリアル・エンタープライズ株式会社（以下、「当社」）は、お客様の個人情報の保護を重要な責務と考え、個人情報の保護に関する法律および関連する法令等を遵守し、お客様の個人情報を適切に取り扱います。</p>
-                            <p class="mb-3">■個人情報の収集目的</p>
-                            <p class="mb-3">当社は、以下の目的で個人情報を収集いたします。1. 商品の販売・配送に関する業務 2. お客様へのサービス提供 3. お客様からのお問い合わせへの対応 4. 新商品やキャンペーン等の情報提供 5. アフターサービス・メンテナンスのご案内</p>
-                            <p class="mb-3">■個人情報の利用</p>
-                            <p class="mb-3">当社は、収集した個人情報を上記の目的の範囲内で利用し、目的外での利用は行いません。ただし、法令に基づく場合や、お客様の生命、身体または財産の保護のために必要な場合等を除きます。</p>
-                            <p class="mb-3">■個人情報の第三者提供</p>
-                            <p class="mb-3">当社は、法令に基づく場合や、お客様の同意がある場合を除き、個人情報を第三者に提供することはありません。</p>
-                            <p class="mb-3">■個人情報の管理</p>
-                            <p class="mb-3">当社は、個人情報の漏洩、滅失、毀損等を防止するため、適切な安全管理措置を講じます。また、個人情報を取り扱う従業員に対して、適切な監督を行います。</p>
-                            <p class="mb-3">■お問い合わせ窓口</p>
-                            <p>個人情報の取扱に関するお問い合わせは、下記までご連絡ください。インペリアル・エンタープライズ株式会社 個人情報保護責任者 TEL: 0120-247-417</p>
-                        </div>
-                    </div>
-                    
-                    <!-- 同意チェックボックス -->
-                    <div class="py-2 sm:ml-12">
-                        <div class="flex items-start">
-                            <input type="checkbox" id="privacy_agreement" name="privacy_agreement" value="agree" required
-                                class="mt-1 mr-3 w-5 h-5 c-accent-premico border-2 border-red-500 rounded">
-                            <label for="privacy_agreement" class="text-gray-800 cursor-pointer font-medium">
-                                個人情報の取扱に同意する <span class="text-red-600 text-sm font-medium">※必須</span>
-                            </label>
-                        </div>
-                        <!-- エラーメッセージ -->
-                        <div id="privacy_error" class="mt-2 text-red-600 text-sm hidden">
-                            個人情報の取扱についての同意にチェックを入れてください
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 確認するボタン -->
-            <div class="flex justify-center mt-8 mb-4">
-                <div class="w-full max-w-md">
-                    <button type="button" onclick="validateForm()" 
-                        class="w-full c-bg-premico-gradient hover:opacity-80 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-between gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
-                        <span class="flex-1 text-center">確認する</span>
-                        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        <!-- 会員向け案内 -->
+        <div class="bg-gray-100 border border-gray-300 rounded-lg p-4 mb-6">
+            <h3 class="text-lg font-bold c-text-premico mb-3">会員の方はこちら</h3>
+            <div class="text-gray-700">
+                <p>会員登録済みの方は、ログインすることで簡単に購入履歴を確認できます。</p>
+                <div class="mt-5 text-center">
+                    <a href="/ieir/login" class="inline-flex items-center c-bg-premico-gradient hover:opacity-80 text-white px-6 py-2 rounded-lg transition-all duration-200 shadow-md">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
                         </svg>
-                    </button>
+                        ログインして購入履歴を確認する
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 非会員向け案内と検索フォーム -->
+        <div class="bg-gray-100 border border-gray-300 rounded-lg p-4 mb-6">
+            <h3 class="text-lg c-text-premico font-bold mb-3">会員ではない方、ログインしないで履歴を見る方はこちら</h3>
+            <div class="text-gray-700 mb-4">
+                <p>注文番号は、ご購入時にお送りした確認メールに記載されています。メールをご確認の上、入力してください。</p>
+            </div>
+
+            <!-- エラーメッセージエリア -->
+            <div id="search_error" class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-4 hidden">
+                <p class="text-sm" id="error_message"></p>
+            </div>
+
+            <!-- 検索フォーム -->
+            <div class="max-w-4xl mx-auto">
+                <!-- 1. 注文番号セクション -->
+                <div class="mb-4">
+                    <div class="py-2 mb-2">
+                        <h3 class="text-lg text-gray-600 mb-1">
+                            注文番号 <span class="text-red-600 text-sm font-medium">※必須</span>
+                        </h3>
+                        <div class="sm:ml-12">
+                            <input type="text" name="order_number" id="order_number" value="" maxlength="8" pattern="[0-9]{8}"
+                                class="w-48 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white"
+                                placeholder="注文番号を入力">
+                            <p class="text-sm text-gray-600 mt-2">※8桁の数字で入力してください</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. 電話番号セクション -->
+                <div class="mb-4">
+                    <div class="py-2 mb-2">
+                        <h3 class="text-lg text-gray-600 mb-1">
+                            ご注文時に入力された電話番号 <span class="text-red-600 text-sm font-medium">※必須</span>
+                        </h3>
+                        <div class="flex items-center gap-3 sm:ml-12">
+                            <input type="text" name="tel1" id="tel1" value="" maxlength="4"
+                                class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
+                            <span class="text-gray-700">-</span>
+                            <input type="text" name="tel2" id="tel2" value="" maxlength="4"
+                                class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
+                            <span class="text-gray-700">-</span>
+                            <input type="text" name="tel3" id="tel3" value="" maxlength="4"
+                                class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. メールアドレスセクション -->
+                <div class="mb-4">
+                    <div class="py-2 mb-2">
+                        <h3 class="text-lg text-gray-600 mb-1">
+                            ご注文時に入力されたメールアドレス <span class="text-red-600 text-sm font-medium">※必須</span>
+                        </h3>
+                        <div class="sm:ml-12">
+                            <input type="email" name="email" id="email" value=""
+                                class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white"
+                                placeholder="example@email.com">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 検索ボタン -->
+                <div class="flex justify-center mt-8 mb-4">
+                    <div class="w-full max-w-md">
+                        <button type="button" onclick="validateSearchForm()"
+                            class="w-full c-bg-premico-gradient hover:opacity-80 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-between gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
+                            <span class="flex-1 text-center">購入履歴を確認する</span>
+                            <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-
-    </div>
 
     <!-- フッターコンポーネント -->
     <footer class="c-bg-premico text-white">
@@ -556,7 +389,7 @@
                     <li><a href="/ieir/guide/return" class="hover:opacity-50  transition-colors">返品・交換について</a></li>
                     <li><a href="/ieir/faq" class="hover:opacity-50  transition-colors">よくある質問</a></li>
                     <li><a href="/ieir/contact" class="hover:opacity-50  transition-colors">お問い合わせ</a></li>
-                    <li><a href="/ieir/sitemap.html" class="hover:opacity-50  transition-colors">サイトマップ</a></li>
+                    <li><a href="/sitemap.html" class="hover:opacity-50  transition-colors">サイトマップ</a></li>
                 </ul>
             </div>
             
@@ -609,7 +442,7 @@
                         <span>|</span>
                         <a href="/ieir/privacy" class="hover:opacity-50 transition-colors">プライバシーポリシー</a>
                         <span>|</span>
-                        <a href="/ieir/tokusho" class="hover:opacity-50 transition-colors">特定商取引法に基づく表示</a>
+                        <a href="/tokusho" class="hover:opacity-50 transition-colors">特定商取引法に基づく表示</a>
                         <span>|</span>
                         <a href="/ieir/company" class="hover:opacity-50 transition-colors">会社概要</a>
                     </div>
@@ -640,6 +473,8 @@
         </div>
     </footer>
 
+    </div>
+
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
@@ -661,7 +496,7 @@
             ham.addEventListener('click', function () {
                 ham.classList.toggle('active');
                 nav.classList.toggle('active');
-                
+
                 // bodyのスクロールを制御
                 if (nav.classList.contains('active')) {
                     document.body.style.overflow = 'hidden';
@@ -678,35 +513,75 @@
             }
         }
     });
-    </script>
-    <script>
-    function cartApp() {
-        return {
-            // お問い合わせフォーム用の空のオブジェクト
-        }
-    }
 
-    // フォームバリデーション
-    function validateForm() {
-        const privacyAgreement = document.getElementById('privacy_agreement');
-        const privacyError = document.getElementById('privacy_error');
-        
+    // 検索フォームバリデーション
+    function validateSearchForm() {
+        const orderNumber = document.getElementById('order_number').value.trim();
+        const tel1 = document.getElementById('tel1').value.trim();
+        const tel2 = document.getElementById('tel2').value.trim();
+        const tel3 = document.getElementById('tel3').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const searchError = document.getElementById('search_error');
+        const errorMessage = document.getElementById('error_message');
+
         // エラーメッセージを一旦非表示にする
-        privacyError.classList.add('hidden');
-        
-        // 個人情報同意チェックのバリデーション
-        if (!privacyAgreement.checked) {
-            privacyError.classList.remove('hidden');
-            // チェックボックスまでスクロール
-            privacyAgreement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        searchError.classList.add('hidden');
+
+        // 1. すべての項目が入力されているかチェック
+        if (!orderNumber || !tel1 || !tel2 || !tel3 || !email) {
+            errorMessage.textContent = 'すべての項目を入力してください。';
+            searchError.classList.remove('hidden');
+            // 最初の空欄にフォーカス
+            if (!orderNumber) {
+                document.getElementById('order_number').focus();
+            } else if (!tel1) {
+                document.getElementById('tel1').focus();
+            } else if (!tel2) {
+                document.getElementById('tel2').focus();
+            } else if (!tel3) {
+                document.getElementById('tel3').focus();
+            } else if (!email) {
+                document.getElementById('email').focus();
+            }
             return false;
         }
-        
-        // バリデーションが通った場合、フォームを送信または次のページに遷移
-        // ここで実際の送信処理やページ遷移を行う
-        console.log('フォームバリデーション成功');
-        alert('お問い合わせを受け付けました。確認画面に移動します。');
-        // 例: window.location.href = 'inquiry02.html';
+
+        // 2. 注文番号が8桁の数字かチェック
+        if (!/^\d{8}$/.test(orderNumber)) {
+            errorMessage.textContent = '注文番号は8桁の数字で入力してください。';
+            searchError.classList.remove('hidden');
+            document.getElementById('order_number').focus();
+            return false;
+        }
+
+        // 3. 電話番号が数字のみかチェック
+        if (!/^\d+$/.test(tel1) || !/^\d+$/.test(tel2) || !/^\d+$/.test(tel3)) {
+            errorMessage.textContent = '電話番号は数字のみで入力してください。';
+            searchError.classList.remove('hidden');
+            if (!/^\d+$/.test(tel1)) {
+                document.getElementById('tel1').focus();
+            } else if (!/^\d+$/.test(tel2)) {
+                document.getElementById('tel2').focus();
+            } else {
+                document.getElementById('tel3').focus();
+            }
+            return false;
+        }
+
+        // 4. メールアドレスの形式チェック
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            errorMessage.textContent = '正しいメールアドレスを入力してください。';
+            searchError.classList.remove('hidden');
+            document.getElementById('email').focus();
+            return false;
+        }
+
+        // バリデーションが通った場合、購入履歴画面に遷移
+        console.log('検索フォームバリデーション成功');
+        window.location.href = '/ieir/views/account/history.html';
+
+        return true;
     }
     </script>
 </body>

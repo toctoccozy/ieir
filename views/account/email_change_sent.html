@@ -3,47 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOOMIN　セイコー スナフキン　釣り人の時間 オフィシャルライセンスウオッチ｜Charaffine：ムーミン｜インペリアル・エンタープライズ株式会社 I･E･I</title>
-    <meta name="description" content="xxxxxxxx">
-    <meta name="keywords" content="xxxxxxxx">
+    <title>確認メール送信完了 | I･E･Iオンラインショップ</title>
+    <meta name="description" content="I･E･Iオンラインショップの確認メール送信完了">
+    <meta name="keywords" content="I･E･I,キャラフィネ,ムーミン,PREMICO,キャラクターグッズ,通販,メールアドレス変更">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com/3.4.1"></script>
-    <!-- Slick Carousel CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                scrollbar: ['rounded']
+            }
+        }
+    }
+    </script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/ieir/public/css/customization.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
-    
-    <style>
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .animate-fade-in {
-            animation: fadeIn 0.8s ease-out forwards;
-        }
-    </style>
 </head>
 
 <body class="bg-white">
     <div class="min-h-screen mw-full">
         <header class="pb-6 mx-auto max-w-6xl">
             <!-- ヘッダー -->
-            <div class="mx-auto bg-white border-b relative z-50 h-18">
+            <div class="mx-auto bg-white border-b relative z-50 h-16">
                 <!-- ヘッダー上段 -->
                 <div class="px-2 pt-2">
-                    <div class="flex items-center justify-between h-12 lg:h-14">
+                    <div class="flex items-center justify-between h-12">
                         <!-- ハンバーガーメニュー（左） -->
                         <div class="md:ml-2 w-12 h-full hover:opacity-50 duration-200">
                             <button class="hamburger-button relative w-full h-full bg-transparent border-none z-70 cursor-pointer px-1 py-1" id="js-hamburger">
@@ -54,26 +43,17 @@
                         </div>
 
                         <!-- ロゴ（中央/左） -->
-                        <div class="lg:ml-4 flex-1 flex justify-center lg:justify-start items-center gap-3 lg:mt-1">
-                            <a href="/ieir/category/premico" class="hover:opacity-70 transition-opacity duration-200">
-                                <img class="h-6 w-auto lg:h-8 lg:w-auto" src="/ieir/public/img/parts/logo/logo_premico.png" alt="PREMICO">
+                        <div class="lg:ml-4 flex-1 flex justify-center lg:justify-start items-center gap-3 lg:mt-2">
+                            <a href="/ieir/views">
+                                <img class="h-10 w-auto lg:h-18 lg:w-auto" src="/ieir/public/img/parts/logo/logo_iei.jpg" alt="I･E･I">
+                            </a>
+                            <a href="/ieir/views/category/premico" class="hover:opacity-70 transition-opacity duration-200">
+                                <img class="h-6 w-auto lg:h-18 lg:w-auto" src="/ieir/public/img/parts/logo/logo_premico.png" alt="PREMICO">
                             </a>
                         </div>
                         <!-- ログイン・カート（右） -->
-                        <div class="w-20 lg:w-[40%] flex justify-end gap-2">
-                            <!-- 電話番号エリア（右） -->
-                            <div class="lg:flex flex-col justify-center hidden">
-                                <div class="text-xs text-gray-700 tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
-                                <div class="flex justify-end items-center space-x-1">
-                                    <div class="lg:w-6 lg:h-6 bg-gray-700 rounded-full flex items-center justify-center">
-                                        <svg class="lg:w-4 lg:h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                                        </svg>
-                                    </div>
-                                    <a href="tel:0120-247-417" class="lg:text-2xl text-gray-700 hover:opacity-80 duration-200">0120-247-417</a>
-                                </div>
-                            </div>
-                            <a href="/ieir/login" class="flex items-center text-gray-600 hover:opacity-50 duration-200">
+                        <div class="w-20 flex justify-end gap-2">
+                            <a href="/ieir/views/account/mypage.html" class="flex items-center text-gray-600 hover:opacity-50 duration-200">
                                 <svg class="w-8 h-8 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                                 </svg>
@@ -93,7 +73,7 @@
 
             <!-- メニュー開いたとき -->
             <nav class="fixed left-0 top-0 w-4/5 md:w-3/5 lg:w-1/2 h-screen -translate-x-full c-bg-premico-50 transition-transform duration-200 ease-in-out z-[999] shadow-xl" id="js-nav">
-                <!-- 固定ヘッダー（閉じるボタンとログイン関連ボタン） -->
+                <!-- 固定ヘッダー（閉じるボタンとログアウトボタン） -->
                 <div class="fixed top-0 w-full h-16 c-bg-premico border-b border-gray-100 flex items-center justify-center md:justify-center px-4 z-20">
                     <button class="w-8 h-8 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full flex items-center justify-center transition-colors absolute left-4" id="js-close-menu">
                         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -101,18 +81,18 @@
                         </svg>
                     </button>
                     <div class="flex space-x-2 absolute right-4 md:relative md:right-auto">
-                        <a href="/ieir/register" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
+                        <a href="/ieir/views/account/mypage.html" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
                             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                             </svg>
-                            新規登録
+                            マイページ
                         </a>
-                        <a href="/ieir/login" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
+                        <button onclick="handleLogout()" class="bg-white c-text-premico rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors flex items-center whitespace-nowrap">
                             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
                             </svg>
-                            ログイン
-                        </a>
+                            ログアウト
+                        </button>
                     </div>
                 </div>
                 <!-- メニューコンテンツ -->
@@ -142,7 +122,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <!-- B. サポート情報 -->
                     <div class="px-6 py-4 border-b border-white border-opacity-20">
                         <h3 class="text-white font-medium mb-3">サポート・ガイド</h3>
@@ -179,7 +159,7 @@
                             </a></li>
                         </ul>
                     </div>
-                    
+
                     <!-- C. お問い合わせ -->
                     <div class="px-6 py-4 border-b border-white border-opacity-20">
                         <a href="/ieir/contact" class="block bg-[#49a941] hover:opacity-80 rounded-lg p-3 transition-all duration-200 shadow-md">
@@ -193,7 +173,7 @@
                             </div>
                         </a>
                     </div>
-                    
+
                     <!-- D. 商品カテゴリ（アコーディオン） -->
                     <div class="px-6 py-4 border-b border-white border-opacity-20">
                         <button class="w-full flex items-center justify-between text-white font-medium mb-2" id="category-toggle">
@@ -210,7 +190,7 @@
                                         プレミコ
                                     </a>
                                 </div>
-                                
+
                                 <!-- 2. キャラフィネ -->
                                 <div class="mb-3">
                                     <div class="text-white text-sm font-medium py-1 border-l-2 border-white pl-3 mb-2">
@@ -222,7 +202,7 @@
                                         <li><a href="/ieir/category/kitty" class="block text-white text-sm hover:opacity-70 transition-opacity py-1">・ハローキティ</a></li>
                                     </ul>
                                 </div>
-                                
+
                                 <!-- 3. IEIコレクション -->
                                 <div>
                                     <div class="text-white text-sm font-medium py-1 border-l-2 border-white pl-3 mb-2">
@@ -239,7 +219,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- E. 会社情報 -->
                     <div class="px-6 py-4 pb-8 mb-12">
                         <div class="text-white">
@@ -260,94 +240,94 @@
             </nav>
         </header>
 
-        <main class="pb-6 px-1 mx-auto  max-w-6xl">
-            <!-- ワンピースロゴ -->
-            <section class="py-8 md:py-12">
-                <div class="flex justify-center px-4">
-                    <div class="block w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] max-w-[500px]">
-                        <img src="/ieir/public/img/category/onepiece/onepiece_logo.png" 
-                             alt="ONE PIECE" 
-                             class="w-full h-auto object-contain animate-fade-in">
+    <!-- メインコンテンツ -->
+    <main class="container mx-auto px-4 py-6 max-w-3xl">
+        <!-- タイトル -->
+        <div class="mb-8">
+            <h1 class="text-center text-2xl font-bold c-text-premico">確認メール送信完了</h1>
+        </div>
+
+        <!-- 成功メッセージ -->
+        <div class="space-y-6">
+            <!-- メール送信完了アイコン -->
+            <div class="flex justify-center mb-6">
+                <div class="w-20 h-20 c-bg-premico rounded-full flex items-center justify-center">
+                    <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- メッセージボックス -->
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                <h2 class="text-xl font-bold c-text-premico mb-4 text-center">確認メールを送信しました</h2>
+
+                <div class="space-y-4 text-gray-700">
+                    <p class="text-center">
+                        下記のメールアドレス宛に確認メールを送信しました。
+                    </p>
+
+                    <div class="bg-white rounded-lg p-4 border border-gray-300">
+                        <p class="text-center font-medium text-lg c-text-premico break-all">
+                            new-email@example.com
+                        </p>
+                    </div>
+
+                    <div class="pt-4 space-y-3 text-base">
+                        <p class="flex items-start">
+                            <svg class="w-5 h-5 c-text-premico mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                            メール内の認証リンクをクリックして、メールアドレスの変更を完了してください。
+                        </p>
+
+                        <p class="flex items-start">
+                            <svg class="w-5 h-5 c-text-premico mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            認証リンクの有効期限は<strong class="c-text-premico">24時間</strong>です。
+                        </p>
+
+                        <p class="flex items-start">
+                            <svg class="w-5 h-5 c-text-premico mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            認証が完了するまで、現在のメールアドレスのままです。
+                        </p>
                     </div>
                 </div>
-            </section>
-            
-            <!-- 商品リストエリア -->
-            <section class="px-2 sm:px-4">
-                <div class="">
-                    <p class="text-sm sm:text-base text-gray-600 mb-6 text-right">全24件を表示</p>
-                </div>
-                
-                <ul class="">
-                    <li class="bg-white overflow-hidden duration-200">
-                        <div class="flex flex-col md:flex-row">
-                            <div class="md:w-[40%] p-8 sm:px-20 md:p-0">
-                                <!-- LPの価格の横の画像 -->
-                                <img src="/ieir/public/img/category/onepiece/item_thum01.jpg" 
-                                    alt="商品画像" 
-                                    class="w-full h-auto mx-auto">
-                            </div>
-                            <div class="md:w-[60%] p-2">
-                                <dl class="md:p-2">
-                                    <dt class="text-xl font-bold text-gray-800 mb-3 md:text-2xl sm:leading-tigher">
-                                        セイコー×ONE PIECE モンキー・D・ルフィ ギア5 エディション
-                                    </dt>
-                                    <dd class="text-gray-600 md:text-lg">
-                                        ワンピースとセイコーのコラボウオッチに、ルフィの新形態“ギア5”登場を記念した限定モデルが誕生！神々しい白のフェイス。3つのインダイヤルには、Dの文字や悪魔の実モチーフの柄、そして自由自在に躍動する“ギア5”のルフィのシルエットがデザインされています。
-                                    </dd>
-                                </dl>
-                                <div class="flex justify-center my-6">
-                                    <a href="/ieir/views/products/51300/51325.html" 
-                                    class="inline-block c-bg-premico hover:opacity-50 text-lg sm:text-xl text-white px-12 py-2 rounded-full transition-colors duration-200 font-medium">
-                                        詳細はこちら
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="block border-b c-border-premico my-2 mb-6 sm:my-8"></span>
-                    </li>
-                    <li class="bg-white overflow-hidden duration-200">
-                        <div class="flex flex-col md:flex-row">
-                            <div class="md:w-[40%] p-8 sm:px-20 md:p-0">
-                                <!-- LPの価格の横の画像 -->
-                                <img src="/ieir/public/img/category/onepiece/item_thum02.jpg" 
-                                    alt="商品画像" 
-                                    class="w-full h-auto mx-auto">
-                            </div>
-                            <div class="md:w-[60%] p-2">
-                                <dl class="md:p-2">
-                                    <dt class="text-xl font-bold text-gray-800 mb-3 md:text-2xl sm:leading-tigher">
-                                        ONE PIECE グラデーションレザーウォレット
-                                    </dt>
-                                    <dd class="text-gray-600 md:text-lg">
-                                        ルフィ・ゾロ・サンジ・エースをイメージしたグラデーションレザーに、迫力あるエンボスが施されたレザーウォレット。特注カラーで染め上げた牛革にそれぞれの技のエフェクトやモチーフが、ダイナミックな型押しで表現されています。                                    </dd>
-                                </dl>
-                                <div class="flex justify-center my-6">
-                                    <a href="/ieir/views/products/51300/51325.html" 
-                                    class="inline-block c-bg-premico hover:opacity-50 text-lg sm:text-xl text-white px-12 py-2 rounded-full transition-colors duration-200 font-medium">
-                                        詳細はこちら
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="block border-b c-border-premico my-2 mb-6 sm:my-8"></span>
-                    </li>
-                </ul>
-            </section>
-        </main>
+            </div>
 
-        <!-- ページトップボタン -->
-        <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
-            <a href="#" class="c-bg-second hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform  hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
-                </svg>
-            </a>
+            <!-- 注意事項 -->
+            <div class="bg-gray-100 border border-gray-300 rounded-lg p-6">
+                <h3 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    メールが届かない場合
+                </h3>
+                <ul class="text-sm text-gray-700 space-y-2 ml-7">
+                    <li>• 迷惑メールフォルダをご確認ください</li>
+                    <li>• メールアドレスが正しいかご確認ください</li>
+                    <li>• しばらく時間を置いてから再度お試しください</li>
+                    <li>• 上記を確認しても届かない場合は、<a href="/ieir/contact" class="text-blue-600 hover:text-blue-800 underline">お問い合わせ</a>ください</li>
+                </ul>
+            </div>
+
+            <!-- ボタン -->
+            <div class="flex justify-center mt-8 pb-8">
+                <a href="/ieir/views/account/mypage.html" class="inline-flex items-center justify-center c-bg-premico-gradient hover:opacity-80 text-white px-8 py-3 rounded-lg transition-all duration-200 shadow-md">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                    </svg>
+                    マイページに戻る
+                </a>
+            </div>
         </div>
-    </div>
+    </main>
 
     <!-- フッターコンポーネント -->
-    <footer class="c-bg-premico text-white">
+    <footer class="c-bg-premico text-white mt-12">
         <!-- メインフッター -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 p-8">
             <!-- 会社情報 -->
@@ -364,7 +344,7 @@
                     <p class="text-xs pl-4">受付時間：毎日 朝6:00〜夜21:00<br>※携帯電話からもOK</p>
                 </div>
             </div>
-            
+
             <!-- カテゴリリンク -->
             <div>
                 <h3 class="text-lg font-bold mb-4">商品カテゴリ</h3>
@@ -380,7 +360,7 @@
                     <li><a href="/ieir/category/interior" class="hover:opacity-50 transition-colors">インテリア・美術工芸品</a></li>
                 </ul>
             </div>
-            
+
             <!-- サポート情報 -->
             <div>
                 <h3 class="text-lg font-bold mb-4">サポート</h3>
@@ -394,11 +374,11 @@
                     <li><a href="/sitemap.html" class="hover:opacity-50  transition-colors">サイトマップ</a></li>
                 </ul>
             </div>
-            
+
             <!-- SNS・ニュースレター -->
             <div>
                 <h3 class="text-lg font-bold mb-4">フォロー・配信</h3>
-                
+
                 <!-- SNSアイコン -->
                 <div class="flex space-x-4 mb-6">
                     <!-- X (Twitter) -->
@@ -426,14 +406,14 @@
                         </svg>
                     </a>
                 </div>
-                
+
                 <!-- ニュースレター登録 -->
                 <div>
                     <p class="text-sm text-gray-300 mb-3">新着商品やお得な情報をお届け</p>
                 </div>
             </div>
         </div>
-        
+
         <!-- 法的情報・認証マーク -->
         <div class="border-t border-gray-400 py-2">
             <div class="px-2">
@@ -448,7 +428,7 @@
                         <span>|</span>
                         <a href="/ieir/company" class="hover:opacity-50 transition-colors">会社概要</a>
                     </div>
-                    
+
                     <!-- 認証マーク -->
                     <div class="flex items-center space-x-4">
                         <div class="flex items-center space-x-2 text-sm text-gray-400">
@@ -463,7 +443,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- コピーライト -->
         <div class="py-1 pb-8">
             <div class="container mx-auto px-4 text-center">
@@ -475,196 +455,75 @@
         </div>
     </footer>
 
+    </div>
+
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="/ieir/public/js/product.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
     <script>
-        // DOMの準備完了を待つ
-        document.addEventListener('DOMContentLoaded', function() {
-            // ハンバーガーメニュー機能
-            const ham = document.querySelector('#js-hamburger');
-            const nav = document.querySelector('#js-nav');
-            const overlay = document.querySelector('#js-overlay');
-            const closeMenu = document.querySelector('#js-close-menu');
+    // ハンバーガーメニュー機能
+    document.addEventListener('DOMContentLoaded', function() {
+        const ham = document.querySelector('#js-hamburger');
+        const nav = document.querySelector('#js-nav');
+        const closeMenu = document.querySelector('#js-close-menu');
 
-            // メニューを閉じる共通関数
-            function closeNavMenu() {
-                if (ham) ham.classList.remove('active');
-                if (nav) nav.classList.remove('active');
-                if (overlay) overlay.classList.remove('active');
-                document.body.style.overflow = '';
-            }
+        // メニューを閉じる共通関数
+        function closeNavMenu() {
+            if (ham) ham.classList.remove('active');
+            if (nav) nav.classList.remove('active');
+            document.body.style.overflow = '';
+        }
 
-            if (ham && nav && overlay) {
-                // メニューボタンクリック
-                ham.addEventListener('click', function () {
-                    ham.classList.toggle('active');
-                    nav.classList.toggle('active');
-                    overlay.classList.toggle('active');
-                    
-                    // 背景スクロール制御
-                    if (nav.classList.contains('active')) {
-                        document.body.style.overflow = 'hidden';
-                    } else {
-                        document.body.style.overflow = '';
-                    }
-                });
+        if (ham && nav) {
+            // メニューボタンクリック
+            ham.addEventListener('click', function () {
+                ham.classList.toggle('active');
+                nav.classList.toggle('active');
 
-                // 閉じるボタンクリック
-                if (closeMenu) {
-                    closeMenu.addEventListener('click', closeNavMenu);
+                // bodyのスクロールを制御
+                if (nav.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
                 }
+            });
 
-                // オーバーレイクリックでメニューを閉じる
-                overlay.addEventListener('click', closeNavMenu);
-
-                // メニュー内のリンククリックでメニューを閉じる
-                const menuLinks = nav.querySelectorAll('a');
-                menuLinks.forEach(function(link) {
-                    link.addEventListener('click', closeNavMenu);
-                });
-
-                // ESCキーでメニューを閉じる
-                document.addEventListener('keydown', function(e) {
-                    if (e.key === 'Escape' && nav.classList.contains('active')) {
-                        closeNavMenu();
-                    }
+            // 閉じるボタンクリック
+            if (closeMenu) {
+                closeMenu.addEventListener('click', function() {
+                    closeNavMenu();
                 });
             }
-        });
-    </script>
-    <script>
-    // メインスライダー
-    $(document).ready(function() {
-        $('.slider-main').slick({
-            infinite: true,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            dots: true,
-            arrows: true,
-            prevArrow: '<button type="button" class="slick-prev absolute left-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#78A962" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>',
-            nextArrow: '<button type="button" class="slick-next absolute right-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#78A962" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>',
-            centerMode: true,
-            centerPadding: '180px',
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        centerPadding: '20px',
-                        dots: true,
-                        arrows: false
-                    }
+        }
+
+        // カテゴリアコーディオン
+        const categoryToggle = document.getElementById('category-toggle');
+        const categoryContent = document.getElementById('category-content');
+        const categoryArrow = document.getElementById('category-arrow');
+
+        if (categoryToggle && categoryContent) {
+            categoryToggle.addEventListener('click', function() {
+                if (categoryContent.style.maxHeight && categoryContent.style.maxHeight !== '0px') {
+                    categoryContent.style.maxHeight = '0px';
+                    categoryArrow.style.transform = 'rotate(0deg)';
+                } else {
+                    categoryContent.style.maxHeight = categoryContent.scrollHeight + 'px';
+                    categoryArrow.style.transform = 'rotate(180deg)';
                 }
-            ]
-        });
+            });
+        }
     });
-    </script>
-    
-    <style>
-    /* PC版：スライド間のスペース */
-    @media (min-width: 768px) {
-        .slider-main .slick-slide {
-            margin: 0 10px;
+
+    // ログアウト処理
+    function handleLogout() {
+        // 確認ダイアログ
+        if (confirm('ログアウトしてもよろしいですか?')) {
+            // TODO: 実際のログアウト処理をここに実装
+            console.log('ログアウト処理を実行');
+
+            // ログインページにリダイレクト
+            window.location.href = '/ieir/login';
         }
-        
-        .slider-main .slick-list {
-            margin: 0 -10px;
-        }
-        
-        /* センターモードの前後のスライドを半透明に */
-        .slider-main .slick-slide:not(.slick-center) {
-            opacity: 0.6;
-            transform: scale(0.95);
-            transition: all 0.3s ease;
-        }
-        
-        .slider-main .slick-slide.slick-center {
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
-    
-    /* モバイルではスライドを画面幅いっぱいに */
-    @media (max-width: 767px) {
-        .slider-main .slick-slide {
-            margin: 0;
-            opacity: 1 !important;
-            transform: scale(1) !important;
-        }
-        
-        .slider-main .slick-list {
-            margin: 0;
-        }
-    }
-    
-    /* ドットのスタイル調整 */
-    .slick-dots {
-        position: relative;
-        bottom: auto;
-        margin-top: 0px;
-        margin-bottom: 0;
-    }
-    
-    .slick-dots li button:before {
-        font-size: 8px;
-        color: rgba(100, 100, 100, 0.8);
-    }
-    
-    .slick-dots li.slick-active button:before {
-        color: #78A962;
-    }
-    
-    @media (max-width: 767px) {
-        .slick-dots li {
-            margin: 0 1px;
-        }
-    }
-    
-    /* PC版ではドットを非表示 */
-    @media (min-width: 768px) {
-        .slick-dots {
-            display: none;
-        }
-    }
-    
-    /* デフォルトの矢印アイコンを非表示 */
-    .slick-prev:before,
-    .slick-next:before {
-        display: none !important;
-        content: '' !important;
-    }
-    
-    /* スマホ版では矢印を非表示 */
-    @media (max-width: 767px) {
-        .slider-main .slick-prev,
-        .slider-main .slick-next {
-            display: none !important;
-        }
-    }
-    </style>
-    
-    <script>
-    // ページトップボタン
-    const pagetop = document.getElementById('pagetop');
-    if (pagetop) {
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 100) {
-                pagetop.classList.remove('hidden');
-            } else {
-                pagetop.classList.add('hidden');
-            }
-        });
-        
-        pagetop.addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
     }
     </script>
 </body>
 </html>
-

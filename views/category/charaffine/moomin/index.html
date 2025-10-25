@@ -8,9 +8,6 @@
     <meta name="keywords" content="xxxxxxxx">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com/3.4.1"></script>
-    <!-- Slick Carousel CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/ieir/public/css/customization.css">
     <!-- Google Fonts -->
@@ -24,54 +21,110 @@
         <header class="pb-6 mx-auto max-w-6xl">
             <!-- ヘッダー -->
             <div class="mx-auto bg-white border-b relative z-50">
-                <!-- ヘッダー上段 -->
-                <div class="px-2 pt-2">
-                    <div class="flex items-center justify-between h-12 md:h-10">
-                        <!-- ハンバーガーメニュー（左） -->
-                        <div class="md:ml-2 w-12 h-full hover:opacity-50 duration-200">
-                            <button class="hamburger-button relative w-full h-full bg-transparent border-none z-70 cursor-pointer px-1 py-1" id="js-hamburger">
-                                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- md以下用（2段構成） -->
+                <div class="md:hidden">
+                    <!-- ヘッダー上段 -->
+                    <div class="px-2 pt-2">
+                        <div class="flex items-center justify-between h-12">
+                            <!-- ハンバーガーメニュー（左） -->
+                            <div class="w-12 h-full hover:opacity-50 duration-200">
+                                <button class="hamburger-button relative w-full h-full bg-transparent border-none z-70 cursor-pointer px-1 py-1 flex flex-col items-center justify-center" id="js-hamburger">
+                                    <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 6H22M2 12H22M2 18H22" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <!-- ロゴ（中央） -->
+                            <div class="flex-1 flex justify-center">
+                                <a href="/ieir/">
+                                    <img class="h-10 w-auto" src="/ieir/public/img/parts/logo/logo_iei.jpg" alt="I･E･I">
+                                </a>
+                            </div>
+                            <!-- カート（右） -->
+                            <div class="w-12 flex justify-end">
+                                <a href="/ieir/cart" class="mr-3 relative flex items-center text-gray-600 hover:opacity-50 duration-200">
+                                    <div class="relative">
+                                        <svg class="w-8 h-8 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5-5M17 21a2 2 0 100-4 2 2 0 000 4zM9 21a2 2 0 100-4 2 2 0 000 4z"></path>
+                                        </svg>
+                                        <span class="absolute -top-1 -right-1 c-bg-premico text-white rounded-full h-4 w-4 flex items-center justify-center text-xs font-bold">3</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ヘッダー下段 -->
+                    <div class="flex items-center justify-between h-10 px-4">
+                        <!-- ムーミンロゴ（左） -->
+                        <div class="max-w-[50%]">
+                            <img class="w-20 h-auto" src="/ieir/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン">
+                        </div>
+
+                        <!-- 電話番号エリア（右） -->
+                        <div class="flex flex-col justify-center">
+                            <div class="text-sm text-gray-700 tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
+                            <div class="flex justify-end items-center space-x-1 -mt-1">
+                                <div class="w-5 h-5 bg-gray-700 rounded-full flex items-center justify-center">
+                                    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                    </svg>
+                                </div>
+                                <a href="tel:0120-247-417" class="text-2xl text-gray-700 hover:opacity-80 duration-200">0120-247-417</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- md以上用（1段構成） -->
+                <div class="hidden md:flex items-center justify-between h-16 px-4">
+                    <!-- 左側グループ -->
+                    <div class="flex items-center gap-4">
+                        <!-- ハンバーガーメニュー -->
+                        <div class="w-12 h-12 lg:w-16 lg:h-auto hover:opacity-50 duration-200">
+                            <button class="hamburger-button relative w-full h-full bg-transparent border-none z-70 cursor-pointer px-1 py-1 lg:py-0 flex flex-col items-center justify-center" id="js-hamburger-desktop">
+                                <svg width="40px" height="40px" class="lg:w-10 lg:h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 6H22M2 12H22M2 18H22" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
+                                <span class="hidden lg:block text-[0.625rem] text-gray-700 leading-tight">メニュー</span>
                             </button>
                         </div>
-                        <!-- ロゴ（中央） -->
-                        <div class="flex-1 flex justify-center">
+                        <!-- IEIロゴ -->
+                        <div>
                             <a href="/ieir/">
-                                <img class="h-12 lg:h-14 w-auto" src="/ieir/public/img/parts/logo/charaffine_header.png" alt="キャラフィネ">
+                                <img class="h-10 w-auto" src="/ieir/public/img/parts/logo/logo_iei.jpg" alt="I･E･I">
                             </a>
                         </div>
-                        <!-- カート（右） -->
-                        <div class="w-12 flex justify-end">
-                            <a href="/ieir/cart" class="mr-3 relative flex items-center text-gray-600 hover:opacity-50 duration-200">
+                        <!-- Moominロゴ -->
+                        <div>
+                            <img class="w-auto h-6" src="/ieir/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン">
+                        </div>
+                    </div>
+
+                    <!-- 右側グループ -->
+                    <div class="flex items-center gap-6">
+                        <!-- 電話番号 -->
+                        <div class="flex flex-col justify-center">
+                            <div class="text-sm text-gray-700 tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
+                            <div class="flex justify-end items-center space-x-1 -mt-1">
+                                <div class="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                    </svg>
+                                </div>
+                                <a href="tel:0120-247-417" class="mt-1 text-2xl text-gray-700 hover:opacity-80 duration-200">0120-247-417</a>
+                            </div>
+                        </div>
+                        <!-- カート -->
+                        <div>
+                            <a href="/ieir/cart" class="relative flex items-center text-gray-600 hover:opacity-50 duration-200">
                                 <div class="relative">
-                                    <svg class="w-8 h-8 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5-5M17 21a2 2 0 100-4 2 2 0 000 4zM9 21a2 2 0 100-4 2 2 0 000 4z"></path>
                                     </svg>
                                     <span class="absolute -top-1 -right-1 c-bg-premico text-white rounded-full h-4 w-4 flex items-center justify-center text-xs font-bold">3</span>
                                 </div>
                             </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- ヘッダー下段 -->
-                <div class="flex items-center justify-between h-10 px-4 md:h-16">
-                    <!-- ムーミンロゴ（左） -->
-                    <div class="max-w-[50%]">
-                        <img class="md:w-32 w-20 h-auto" src="/ieir/public/img/parts/logo/moomin_logo_green.png" alt="ムーミン">
-                    </div>
-                    
-                    <!-- 電話番号エリア（右） -->
-                    <div class="flex flex-col justify-center">
-                        <div class="text-sm md:text-base c-text-phone tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
-                        <div class="flex justify-end items-center space-x-1 -mt-1">
-                            <div class="w-5 h-5 md:w-8 md:h-8 c-bg-phone rounded-full flex items-center justify-center">
-                                <svg class="w-3 h-3 md:w-5 md:h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                                </svg>
-                            </div>
-                            <a href="tel:0120-247-417" class="text-2xl md:text-3xl c-text-phone hover:opacity-80 duration-200">0120-247-417</a>
                         </div>
                     </div>
                 </div>
@@ -106,51 +159,20 @@
         </header>
 
         <!-- パンくずナビ -->
-        <nav class="bread-clumbs text-sm sm:text-base  max-w-6xl text-gray-600 mx-auto pl-3 leading-snug tracking-tighter">
+        <nav class="bread-clumbs text-sm sm:text-base text-gray-600 mx-auto pl-3 leading-snug tracking-tighter max-w-6xl">
             <a href="/ieir/category/charaffine/" class="text-blue-800 hover:text-blue-400 transition-colors">キャラフィネ</a>
             <span class="mx-2">｜</span>
             <a href="/ieir/category/moomin/" class="text-blue-800 hover:text-blue-400 transition-colors">ムーミン</a>
         </nav>
 
-        <!-- スライダーエリア -->
-        <section id="slide-area" class="pt-4">
-            <div class="main-slider">
-                <div class="slider-main">
-                    <div>
-                        <a href="/ieir/views/products/51300/51325.html">
-                            <img src="/ieir/public/img/category/moomin/slide04.jpg" alt="商品スライド1" class="w-full h-auto">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="/ieir/views/products/51300/51325.html">
-                            <img src="/ieir/public/img/category/moomin/slide05.jpg" alt="商品スライド2" class="w-full h-auto">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="/ieir/views/products/51300/51325.html">
-                            <img src="/ieir/public/img/category/moomin/slide06.jpg" alt="商品スライド3" class="w-full h-auto">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="/ieir/views/products/51300/51325.html">
-                            <img src="/ieir/public/img/category/moomin/slide04.jpg" alt="商品スライド4" class="w-full h-auto">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="/ieir/views/products/51300/51325.html">
-                            <img src="/ieir/public/img/category/moomin/slide05.jpg" alt="商品スライド5" class="w-full h-auto">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="/ieir/views/products/51300/51325.html">
-                            <img src="/ieir/public/img/category/moomin/slide06.jpg" alt="商品スライド6" class="w-full h-auto">
-                        </a>
-                    </div>
-                </div>
+        <!-- スライダーではなく画像、画像がない場合は詰める -->
+        <section class="pt-4">
+            <div class="w-full max-w-4xl mx-auto">
+                <img src="/ieir/public/img/category/charaffine/moomin_category.jpg" alt="ムーミンカテゴリー画像" class="w-full h-auto">
             </div>
         </section>
 
-        <main class="pb-6 px-1 mx-auto  max-w-6xl">
+        <main class="py-8 px-1 mx-auto max-w-5xl">
             <!-- 商品カテゴリセクション -->
             <section class="mb-8 px-2 sm:px-4">
                 <h2 class="text-center text-2xl md:text-3xl font-bold text-gray-800 mb-6">
@@ -160,39 +182,104 @@
             
             <!-- 商品リストエリア -->
             <section class="px-2 sm:px-4">
-                <div class="">
-                    <p class="text-sm sm:text-base text-gray-600 mb-6 text-right">全24件を表示</p>
+                <!-- 絞り込みと件数表示 -->
+                <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
+                    <!-- 商品種類選択 -->
+                    <div class="px-4 w-full sm:w-1/2">
+                        <label for="product-type-select" class="block font-bold text-gray-700 mb-2">商品を絞り込む</label>
+                        <select id="product-type-select" name="product_type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent">
+                            <option value="" selected>すべて</option>
+                            <option value="watch">時計</option>
+                            <option value="apparel">アパレル・雑貨</option>
+                            <option value="jewelry">ジュエリー・ペンダント</option>
+                            <option value="other">その他</option>
+                        </select>
+                    </div>
+                    <!-- 件数表示 -->
+                    <div class="text-right">
+                        <p class="text-sm sm:text-base text-gray-600">全24件を表示</p>
+                    </div>
                 </div>
                 
-                <ul class="">
-                    <li class="bg-white overflow-hidden duration-200">
+                <ul class="space-y-4">
+                    <li class="bg-white overflow-hidden duration-200 border border-green-500 rounded-md p-4">
                         <div class="flex flex-col md:flex-row">
-                            <div class="md:w-[40%] p-8 sm:px-20 md:p-0">
+                            <div class="md:w-[40%] max-w-sm h-auto mx-auto p-4">
                                 <!-- LPの価格の横の画像? -->
-                                <img src="/ieir/public/img/products/51300/51325/pc/price_img.jpg" 
-                                    alt="商品画像" 
+                                <img src="/ieir/public/img/category/moomin/item_thum01.jpg"
+                                    alt="商品画像"
                                     class="w-full h-auto mx-auto">
                             </div>
                             <div class="md:w-[60%] p-2">
                                 <dl>
-                                    <dt class="text-xl font-bold text-gray-800 mb-3 md:text-2xl sm:leading-tigher">
+                                    <dt class="text-lg font-bold text-gray-800 mb-3 md:text-xl">
                                         セイコー　スナフキン 釣り人の時間 オフィシャルライセンスウオッチ
                                     </dt>
-                                    <dd class="text-gray-600 md:text-lg">
+                                    <dd class="text-gray-600 leading-relaxed">
                                         旅人スナフキンは、人生の達人。風の吹くまま気の向くまま、ふらりと旅に出ては、釣りをしたり、詩や曲をつくったり・・何ものにもとらわれない自由な生き方は、永遠の憧れです。そんなスナフキンと共有する豊かな時間をイメージした、スペシャルな腕時計が誕生しました。
                                     </dd>
                                 </dl>
                                 <div class="flex justify-center my-6">
-                                    <a href="/views/products/51300/51325.html" 
+                                    <a href="/views/products/51300/51325.html"
                                     class="inline-block c-bg-moomin-green hover:opacity-50 text-lg sm:text-xl text-white px-12 py-2 rounded-full transition-colors duration-200 font-medium">
                                         詳細はこちら
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <span class="block border-b c-border-moomin-green my-2 mb-6 sm:my-8"></span>
                     </li>
-
+                    <li class="bg-white overflow-hidden duration-200 border border-green-500 rounded-md p-4">
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-[40%] max-w-sm h-auto mx-auto p-4">
+                                <!-- LPの価格の横の画像? -->
+                                <img src="/ieir/public/img/category/moomin/item_thum02.jpg"
+                                    alt="商品画像"
+                                    class="w-full h-auto mx-auto">
+                            </div>
+                            <div class="md:w-[60%] p-2">
+                                <dl>
+                                    <dt class="text-lg font-bold text-gray-800 mb-3 md:text-xl">
+                                        セイコー　スナフキン 釣り人の時間 オフィシャルライセンスウオッチ
+                                    </dt>
+                                    <dd class="text-gray-600 leading-relaxed">
+                                        旅人スナフキンは、人生の達人。風の吹くまま気の向くまま、ふらりと旅に出ては、釣りをしたり、詩や曲をつくったり・・何ものにもとらわれない自由な生き方は、永遠の憧れです。そんなスナフキンと共有する豊かな時間をイメージした、スペシャルな腕時計が誕生しました。
+                                    </dd>
+                                </dl>
+                                <div class="flex justify-center my-6">
+                                    <a href="/views/products/51300/51325.html"
+                                    class="inline-block c-bg-moomin-green hover:opacity-50 text-lg sm:text-xl text-white px-12 py-2 rounded-full transition-colors duration-200 font-medium">
+                                        詳細はこちら
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                        <li class="bg-white overflow-hidden duration-200 border border-green-500 rounded-md p-4">
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-[40%] max-w-sm h-auto mx-auto p-4">
+                                <!-- LPの価格の横の画像? -->
+                                <img src="/ieir/public/img/category/moomin/item_thum03.jpg"
+                                    alt="商品画像"
+                                    class="w-full h-auto mx-auto">
+                            </div>
+                            <div class="md:w-[60%] p-2">
+                                <dl>
+                                    <dt class="text-lg font-bold text-gray-800 mb-3 md:text-xl">
+                                        セイコー　スナフキン 釣り人の時間 オフィシャルライセンスウオッチ
+                                    </dt>
+                                    <dd class="text-gray-600 leading-relaxed">
+                                        旅人スナフキンは、人生の達人。風の吹くまま気の向くまま、ふらりと旅に出ては、釣りをしたり、詩や曲をつくったり・・何ものにもとらわれない自由な生き方は、永遠の憧れです。そんなスナフキンと共有する豊かな時間をイメージした、スペシャルな腕時計が誕生しました。
+                                    </dd>
+                                </dl>
+                                <div class="flex justify-center my-6">
+                                    <a href="/views/products/51300/51325.html"
+                                    class="inline-block c-bg-moomin-green hover:opacity-50 text-lg sm:text-xl text-white px-12 py-2 rounded-full transition-colors duration-200 font-medium">
+                                        詳細はこちら
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </section>
         </main>
@@ -339,39 +426,51 @@
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/ieir/public/js/product.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
         // DOMの準備完了を待つ
         document.addEventListener('DOMContentLoaded', function() {
             // ハンバーガーメニュー機能
-            const ham = document.querySelector('#js-hamburger');
+            const hamMobile = document.querySelector('#js-hamburger');
+            const hamDesktop = document.querySelector('#js-hamburger-desktop');
             const nav = document.querySelector('#js-nav');
             const overlay = document.querySelector('#js-overlay');
             const closeMenu = document.querySelector('#js-close-menu');
 
             // メニューを閉じる共通関数
             function closeNavMenu() {
-                if (ham) ham.classList.remove('active');
+                if (hamMobile) hamMobile.classList.remove('active');
+                if (hamDesktop) hamDesktop.classList.remove('active');
                 if (nav) nav.classList.remove('active');
                 if (overlay) overlay.classList.remove('active');
                 document.body.style.overflow = '';
             }
 
-            if (ham && nav && overlay) {
-                // メニューボタンクリック
-                ham.addEventListener('click', function () {
-                    ham.classList.toggle('active');
-                    nav.classList.toggle('active');
-                    overlay.classList.toggle('active');
-                    
-                    // 背景スクロール制御
-                    if (nav.classList.contains('active')) {
-                        document.body.style.overflow = 'hidden';
-                    } else {
-                        document.body.style.overflow = '';
-                    }
-                });
+            // メニューを開く共通関数
+            function toggleNavMenu() {
+                if (hamMobile) hamMobile.classList.toggle('active');
+                if (hamDesktop) hamDesktop.classList.toggle('active');
+                if (nav) nav.classList.toggle('active');
+                if (overlay) overlay.classList.toggle('active');
+
+                // 背景スクロール制御
+                if (nav.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            }
+
+            if (nav && overlay) {
+                // モバイルハンバーガーメニューボタンクリック
+                if (hamMobile) {
+                    hamMobile.addEventListener('click', toggleNavMenu);
+                }
+
+                // デスクトップハンバーガーメニューボタンクリック
+                if (hamDesktop) {
+                    hamDesktop.addEventListener('click', toggleNavMenu);
+                }
 
                 // 閉じるボタンクリック
                 if (closeMenu) {
@@ -396,118 +495,7 @@
             }
         });
     </script>
-    <script>
-    // メインスライダー
-    $(document).ready(function() {
-        $('.slider-main').slick({
-            infinite: true,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            dots: true,
-            arrows: true,
-            prevArrow: '<button type="button" class="slick-prev absolute left-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#78A962" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>',
-            nextArrow: '<button type="button" class="slick-next absolute right-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#78A962" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>',
-            centerMode: true,
-            centerPadding: '180px',
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        centerPadding: '20px',
-                        dots: true,
-                        arrows: false
-                    }
-                }
-            ]
-        });
-    });
-    </script>
-    
-    <style>
-    /* PC版：スライド間のスペース */
-    @media (min-width: 768px) {
-        .slider-main .slick-slide {
-            margin: 0 10px;
-        }
-        
-        .slider-main .slick-list {
-            margin: 0 -10px;
-        }
-        
-        /* センターモードの前後のスライドを半透明に */
-        .slider-main .slick-slide:not(.slick-center) {
-            opacity: 0.6;
-            transform: scale(0.95);
-            transition: all 0.3s ease;
-        }
-        
-        .slider-main .slick-slide.slick-center {
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
-    
-    /* モバイルではスライドを画面幅いっぱいに */
-    @media (max-width: 767px) {
-        .slider-main .slick-slide {
-            margin: 0;
-            opacity: 1 !important;
-            transform: scale(1) !important;
-        }
-        
-        .slider-main .slick-list {
-            margin: 0;
-        }
-    }
-    
-    /* ドットのスタイル調整 */
-    .slick-dots {
-        position: relative;
-        bottom: auto;
-        margin-top: 0px;
-        margin-bottom: 0;
-    }
-    
-    .slick-dots li button:before {
-        font-size: 8px;
-        color: rgba(100, 100, 100, 0.8);
-    }
-    
-    .slick-dots li.slick-active button:before {
-        color: #78A962;
-    }
-    
-    @media (max-width: 767px) {
-        .slick-dots li {
-            margin: 0 1px;
-        }
-    }
-    
-    /* PC版ではドットを非表示 */
-    @media (min-width: 768px) {
-        .slick-dots {
-            display: none;
-        }
-    }
-    
-    /* デフォルトの矢印アイコンを非表示 */
-    .slick-prev:before,
-    .slick-next:before {
-        display: none !important;
-        content: '' !important;
-    }
-    
-    /* スマホ版では矢印を非表示 */
-    @media (max-width: 767px) {
-        .slider-main .slick-prev,
-        .slider-main .slick-next {
-            display: none !important;
-        }
-    }
-    </style>
-    
+
     <script>
     // ページトップボタン
     const pagetop = document.getElementById('pagetop');
