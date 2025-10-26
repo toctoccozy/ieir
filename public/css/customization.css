@@ -47,7 +47,7 @@
  border-color: #4fa250;
 }
 /* スヌーピーカラー */
-.c-text-snoopy {
+/* .c-text-snoopy {
  color: #646d02;
 }
 .c-bg-snoopy {
@@ -55,6 +55,17 @@
 }
 .c-border-snoopy {
  border-color : #646d02;
+} */
+
+/* スヌーピーカラー */
+.c-text-snoopy {
+ color: #a680a8;
+}
+.c-bg-snoopy {
+ background-color:#a680a8;
+}
+.c-border-snoopy {
+ border-color : #a680a8;
 }
 /* キティカラー */
 .c-text-kitty {
@@ -65,6 +76,10 @@
 }
 .c-border-kitty {
  border-color: #d65db1;
+}
+/* キャラフィネ共通フォント */
+.c-font-family-charaffine {
+ font-family: 'Zen Maru Gothic', sans-serif;
 }
 
 /* アクセントカラー */
