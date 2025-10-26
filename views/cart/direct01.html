@@ -69,7 +69,7 @@
 </head>
 
 <body class="bg-white" x-data="cartApp()">
-    <div class="min-h-screen mw-full">
+    <div class="mw-full">
         <header class="pb-6 mx-auto max-w-6xl">
             <!-- ヘッダー -->
             <div class="mx-auto bg-white border-b relative z-50 h-16">
@@ -324,7 +324,9 @@
             <!-- ショッピングカートタイトル -->
             <div class="text-center mb-4">
                 <h1 class="text-2xl font-bold c-text-premico mb-2">ダイレクトメール・カタログからの注文</h1>
-                <p class="text-gray-800 text-left pl-4">ダイレクトメール・カタログの８ケタの商品番号を入力し、「次へ」ボタンを押してください
+                <p class="text-gray-800 text-left pl-4">ダイレクトメール・カタログの８ケタの商品番号を入力し、「次へ」ボタンを押してください。<br>
+                    ・商品番号の確認方法は<button type="button" onclick="window.open('/ieir/views/contents/product_number_guide.html', '_blank')" class="underline text-blue-600 cursor-pointer hover:opacity-50">こちら（別タブで開く）</button><br>
+                    ・新聞・雑誌をご覧になってのお申し込みは<a href="/ieir/views/contents/advertise" class="underline text-blue-600 cursor-pointer hover:opacity-50">こちら</a>
                 </p>
             </div>
             
@@ -333,79 +335,56 @@
                 <!-- 商品入力セクション -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <!-- 商品1 -->
-                    <div class="space-y-2">
-                        <label for="product1" class="block text-sm font-medium text-gray-700">商品１</label>
+                    <div class="flex items-center gap-2">
+                        <label for="product1" class="w-16 block text-sm font-medium text-gray-700">商品１</label>
                         <input type="text" name="product1" id="product1" placeholder="８ケタの商品番号を入力"
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm"
+                            class="w-[80%] pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm"
                             maxlength="8" pattern="[0-9]{8}" autocomplete="off">
                     </div>
                     
                     <!-- 商品2 -->
-                    <div class="space-y-2">
-                        <label for="product2" class="block text-sm font-medium text-gray-700">商品２</label>
+                    <div class="flex items-center gap-2">
+                        <label for="product2" class="w-16 block text-sm font-medium text-gray-700">商品２</label>
                         <input type="text" name="product2" id="product2" placeholder="８ケタの商品番号を入力"
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm"
+                            class="w-[80%] pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm"
                             maxlength="8" pattern="[0-9]{8}" autocomplete="off">
                     </div>
                     
                     <!-- 商品3 -->
-                    <div class="space-y-2">
-                        <label for="product3" class="block text-sm font-medium text-gray-700">商品３</label>
+                    <div class="flex items-center gap-2">
+                        <label for="product3" class="w-16 block text-sm font-medium text-gray-700">商品３</label>
                         <input type="text" name="product3" id="product3" placeholder="８ケタの商品番号を入力"
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm"
+                            class="w-[80%] pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm"
                             maxlength="8" pattern="[0-9]{8}" autocomplete="off">
                     </div>
                     
                     <!-- 商品4 -->
-                    <div class="space-y-2">
-                        <label for="product4" class="block text-sm font-medium text-gray-700">商品４</label>
+                    <div class="flex items-center gap-2">
+                        <label for="product4" class="w-16 block text-sm font-medium text-gray-700">商品４</label>
                         <input type="text" name="product4" id="product4" placeholder="８ケタの商品番号を入力"
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm"
+                            class="w-[80%] pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm"
                             maxlength="8" pattern="[0-9]{8}" autocomplete="off">
                     </div>
                     
                     <!-- 商品5 -->
-                    <div class="space-y-2">
-                        <label for="product5" class="block text-sm font-medium text-gray-700">商品５</label>
+                    <div class="flex items-center gap-2">
+                        <label for="product5" class="w-16 block text-sm font-medium text-gray-700">商品５</label>
                         <input type="text" name="product5" id="product5" placeholder="８ケタの商品番号を入力"
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm"
+                            class="w-[80%] pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm"
                             maxlength="8" pattern="[0-9]{8}" autocomplete="off">
                     </div>
                     
                     <!-- 商品6 -->
-                    <div class="space-y-2">
-                        <label for="product6" class="block text-sm font-medium text-gray-700">商品６</label>
+                    <div class="flex items-center gap-2">
+                        <label for="product6" class="w-16 block text-sm font-medium text-gray-700">商品６</label>
                         <input type="text" name="product6" id="product6" placeholder="８ケタの商品番号を入力"
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm"
+                            class="w-[80%] pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white shadow-sm"
                             maxlength="8" pattern="[0-9]{8}" autocomplete="off">
                     </div>
                 </div>
-                
-                <!-- 商品番号位置説明画像 -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 mb-8">
-                    <!-- ダイレクトメール -->
-                    <div class="space-y-3">
-                        <h3 class="text-lg font-medium text-gray-800">■ ダイレクトメールの商品番号の位置</h3>
-                        <div class="bg-gray-50 p-4 rounded-lg">
-                            <img src="/ieir/public/img/parts/icons/direct_nav1.png" 
-                                alt="ダイレクトメールの商品番号の位置" 
-                                class="w-full h-auto rounded-md shadow-sm">
-                        </div>
-                    </div>
-                    
-                    <!-- カタログ -->
-                    <div class="space-y-3">
-                        <h3 class="text-lg font-medium text-gray-800">■ カタログの商品番号の位置</h3>
-                        <div class="bg-gray-50 p-4 rounded-lg">
-                            <img src="/ieir/public/img/parts/icons/direct_nav2.png" 
-                                alt="カタログの商品番号の位置" 
-                                class="w-full h-auto rounded-md shadow-sm">
-                        </div>
-                    </div>
-                </div>
-                
+
                 <!-- 次へボタン -->
-                <div class="w-full sm:w-[50%] px-6 mx-auto mt-8">
+                <div class="w-full sm:w-[50%] px-6 mx-auto mt-12">
                     <button type="submit" 
                         class="w-full c-bg-premico-gradient hover:opacity-80 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-between gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
                         <span class="flex-1 text-center">次へ</span>

@@ -338,6 +338,33 @@
                 </button>
             </div>
             
+                        <!-- 検索ボックス -->
+            <section class="py-4 mt-2">
+                <div class="max-w-xl mx-auto">
+                    <!-- 見出し -->
+                    <div class="flex items-center gap-3 mb-3">
+                        <!-- <div class="flex items-center justify-center w-10 h-10 c-bg-premico-gradient rounded-full flex-shrink-0">
+                        </div> -->
+                        <div>
+                            <!-- <h3 class="text-base font-bold text-gray-800 leading-sung tracking-tight">商品をお探しの方</h3> -->
+                            <p class="text-gray-700 leading-tight tracking-tight">該当する商品が見つからない場合、キーワードや商品番号、申込み番号を下記に入力して検索してください。</p>
+                        </div>
+                    </div>
+                    <!-- 検索フォーム -->
+                    <form class="flex h-12" action="/ieir/search" method="GET">
+                        <input type="text" name="q" id="search-input" placeholder="商品番号・キーワード"
+                            class="flex-1 pl-3 pr-3 py-2 border-y border-l border-gray-300 rounded-l-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-base md:text-sm" autocomplete="off"
+                        >
+                        <button
+                            type="submit"
+                            class="c-bg-premico hover:opacity-80 text-white px-4 md:px-8 rounded-r-lg transition-all duration-200 font-medium border-y border-r border-gray-300"
+                            aria-label="検索"
+                        >
+                            検索
+                        </button>
+                    </form>
+                </div>
+            </section>
             <!-- 新聞・雑誌に掲載中の商品セクション -->
             <section class="py-6">
                 <h2 class="mb-6 text-center md:flex md:items-center">

@@ -24,6 +24,9 @@
  background-color: #2C5282;
  opacity: 0.95;
 }
+.c-border-premico {
+ border-color: #2C5282;
+}
 
 /* セカンドカラー */
 .c-text-second {
