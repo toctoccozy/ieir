@@ -69,7 +69,7 @@
 </head>
 
 <body class="bg-white" x-data="cartApp()">
-    <div class="min-h-screen mw-full">
+    <div class="mw-full">
         <header class="pb-6 mx-auto max-w-6xl">
             <!-- ヘッダー -->
             <div class="mx-auto bg-white border-b relative z-50 h-16">
@@ -285,11 +285,11 @@
 
     <!-- メインコンテンツ -->
     <main class="container mx-auto px-4 py-8 max-w-2xl">
-        <div class="px-6">
+        <div class="px-6 sm:px-12">
             <!-- 新規登録タイトル -->
             <div class="text-center mb-4">
                 <h1 class="text-2xl font-bold c-text-premico">新規登録</h1>
-                <p class="text-gray-600 text-sm mt-2">アカウント情報をご入力ください</p>
+                <p class="text-gray-600 mt-2">アカウント情報をご入力ください</p>
             </div>
             
             <!-- フォーム -->
@@ -302,7 +302,7 @@
                     <input type="email" name="email" id="email" placeholder="example@email.com"
                         class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white"
                         required>
-                    <p class="text-xs text-gray-600 mt-2">※ログイン時に使用します</p>
+                    <p class="text-sm text-gray-600 mt-2">※ログイン時に使用します</p>
                 </div>
                 
                 <!-- パスワード入力 -->
@@ -324,7 +324,7 @@
                             </svg>
                         </button>
                     </div>
-                    <p class="text-xs text-gray-600 mt-2">※半角英数字を使用してください</p>
+                    <p class="text-sm text-gray-600 mt-2">※半角英数字を使用してください</p>
                 </div>
                 
                 <!-- パスワード（確認用）入力 -->
@@ -346,14 +346,14 @@
                             </svg>
                         </button>
                     </div>
-                    <p class="text-xs text-gray-600 mt-2">※確認のため、上記と同じパスワードを入力してください</p>
+                    <p class="text-sm text-gray-600 mt-2">※確認のため、上記と同じパスワードを入力してください</p>
                 </div>
                 
                 <!-- 利用規約同意 -->
                 <div class="p-4">
                     <div class="flex items-start">
                         <input type="checkbox" id="terms_agreement" name="terms_agreement" value="agree"
-                            class="mt-1 mr-3 w-5 h-5 c-accent-premico border-2 border-gray-300 rounded">
+                            class="mt-1 mr-3 w-5 h-5 c-accent-premico border-2 border-gray-300 rounded mr-8">
                         <label for="terms_agreement" class="text-gray-800 cursor-pointer">
                             <a href="/ieir/views/about/rules.html" target="_blank" class="text-blue-600 underline hover:c-text-premico">利用規約</a>と
                             <a href="/ieir/views/about/privacy.html" target="_blank" class="text-blue-600 underline hover:c-text-premico">プライバシーポリシー</a>に同意する
@@ -368,7 +368,7 @@
                 <!-- 登録ボタン -->
                 <div class="mt-8">
                     <button type="button" onclick="validateRegisterForm()" 
-                        class="w-full c-bg-premico-gradient hover:opacity-80 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-between gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
+                        class="w-full sm:w-[60%] sm:mx-auto c-bg-premico-gradient hover:opacity-80 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-between gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
                         <span class="flex-1 text-center">登録する</span>
                         <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>

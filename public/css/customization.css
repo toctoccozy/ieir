@@ -49,16 +49,6 @@
 .c-border-moomin {
  border-color: #4fa250;
 }
-/* スヌーピーカラー */
-/* .c-text-snoopy {
- color: #646d02;
-}
-.c-bg-snoopy {
- background:linear-gradient(to right, #646d02, #8a9603);
-}
-.c-border-snoopy {
- border-color : #646d02;
-} */
 
 /* スヌーピーカラー */
 .c-text-snoopy {
@@ -108,17 +98,17 @@
 
 
 /* コレクション設定 */
-.c-bg-collection {
- background-color : #be4c00;
+.c-bg-collection { /* コレクション以下の詳細ボタン */
+  background: linear-gradient(to right, #f15438, #eb6d57);
 }
-.c-border-collection {
- border-color : #be4c00;
+.c-border-collection { /* コレクション以下の商品の囲み */
+ border-color : #f15438;
 }
-.c-bg-collection-gradient {
- background: linear-gradient(135deg, #be4c00 0%, #d46809 50%, #be4c00 100%);
+.c-bg-collection-gradient { /*詳細ページのh2など */
+ background: linear-gradient(135deg, #561408 0%, #a15244 50%, #561408 100%);
 }
-.c-border-collection-gradient {
- border-color: #be4c00;
+.c-border-collection-gradient { /*詳細ページ内の囲み */
+ border-color: #561408;
 }
 
 /* アクションボタン */
