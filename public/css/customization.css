@@ -114,7 +114,7 @@
 /* アクションボタン */
 /* カード内の主要ボタン（ご注文はこちらから・商品を見る） */
 .c-btn-amber-gradient {
-    width: 100%;
+    /* width: 100%; */
  height: 3rem;
  background: linear-gradient(to bottom, #e67e22,#be4c00);
  color: white;
