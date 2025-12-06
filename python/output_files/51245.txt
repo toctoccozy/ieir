@@ -1,0 +1,155 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I アートギャラリー</p>
+<h1>2024年 干支記念貨幣　瑞祥飛龍</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51245503" target="_self"><img alt="2024年 干支記念貨幣　瑞祥飛龍" src="/image/goods/51245_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>【金貨】<br/>
+●品位：.9999金<br/>
+●サイズ：縦約48×横約29mm<br/>
+●重さ：1/2オンス（約15.5グラム）<br/>
+●発行数：500点<br/>
+●額面：100ドル（クックアイランド・ドル）<br/>
+<br/>
+【銀貨】<br/>
+●品位：.9999銀<br/>
+●サイズ：縦約98×横約60mm<br/>
+●重さ：3オンス（約93.3グラム）<br/>
+●発行数：950点<br/>
+●額面：20ドル（クックアイランド・ドル）<br/>
+<br/>
+●品質：プルーフ品質<br/>
+●発行：クック諸島政府<br/>
+●鋳造：マイヤーズ造幣所（ドイツ）<br/>
+<br/>
+【ケース仕様】<br/>
+●材質：木、ポリウレタン、レーヨン、鉄<br/>
+●サイズ（約）：閉じた状態で縦13.5×横9.7×厚さ4cm<br/>
+●日本製</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>2024年 干支記念貨幣　瑞祥飛龍【金貨】　　　　　　　　　　</h3>
+<div class="price_area">
+                
+
+
+                        
+                          
+                        
+
+
+                        
+                          
+                            月々 <span>19,800円（税込21,780円）×30回払い</span><br/>
+                          
+                          
+                            一括価格 <span>499,800円（税込549,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart1">
+<input name="item_no" type="hidden" value="51245503"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51245"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart1(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51245503');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51245503');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<div class="cart_area">
+<h3>2024年 干支記念貨幣　瑞祥飛龍【銀貨】　　　　　　　　　　</h3>
+<div class="price_area">
+                
+
+
+                        
+                          
+                        
+
+
+                        
+                          
+                            月々 <span>8,800円（税込9,680円）×12回払い</span><br/>
+                          
+                          
+                            一括価格 <span>99,800円（税込109,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart2">
+<input name="item_no" type="hidden" value="51245502"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51245"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart2(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51245502');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51245502');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="クック諸島政府発行　2024年 干支記念貨幣　瑞祥飛龍" height="230" src="/image/goods/51245_01.jpg" width="580"/></p>
+<p class="intro">
+		古より<ruby><rb>崇</rb><rp>（</rp><rt>あが</rt><rp>）</rp></ruby>められる吉祥の神獣「龍」。<br/>
+		飛翔の年「辰年」に運気上昇を力強く祈念する<br/>
+		縁起の良い限定発行の小判形法定貨幣。<br/>
+<br/>
+		最高品位.9999の純金と純銀の貨面に浮かぶ<br/>
+		雅やかな輝きを放つ「昇龍」と「双龍」が<br/>
+		新春を寿ぎ開運へ導きます。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>最高品位.9999の純金と純銀製</li>
+<li class="stt"><span class="sq01">■</span>珍しい小判形の記念貨幣</li>
+<li class="stt"><span class="sq01">■</span>完全未使用</li>
+<li class="stt"><span class="sq01">■</span>精緻なレリーフで表現された干支の辰と吉祥の意匠</li>
+<li class="stt"><span class="sq01">■</span>コインの発行証明書が付属</li>
+<li class="stt"><span class="sq01">■</span>金貨500点、銀貨950点の限定版</li>
+<li class="stt"><span class="sq01">■</span>千両箱をイメージした特製ケース</li>
+</ul>
+<p class="center-img"><img alt="千両箱さながらの特製ケースが、金銀小判の趣をいっそう高めます。" height="435" src="/image/goods/51245_02.jpg" width="580"/></p>
+<h2>2024年「<ruby><rb>甲辰</rb><rp>（</rp><rt>きのえたつ</rt><rp>）</rp></ruby>」は活力に満ちた成長の年</h2>
+<p class="flt-l"><img alt="精緻なレリーフで浮かぶ龍の姿" height="140" src="/image/goods/51245_03.jpg" width="135"/></p>
+<p>
+		古代中国で発祥した「干支」は、季節や天候の移り変わりの目安として利用され、日本でも、12年で一巡する十二支として、暮らしに深く根付いてきました。2024年は、隆盛と幸運の象徴とされる龍の「辰」年にして、十干（じっかん）は物事のはじまりや芽吹きを表す「甲」であることから、これからの成長や実りに大いに期待が持てる年とされています。驚異的な力強さを誇る龍にちなんだ活力みなぎる年でもあるので、新たな学びや挑戦にもふさわしい一年といえるでしょう。<br/>
+		そんな希望に満ちた「甲辰」の年によせて、さらなる吉祥を呼ぶ限定版のコインが発行されます。最高品位.9999の純金と純銀で鋳造された小判形の貨幣に、開運や出世の縁起物とされる龍の姿が浮かび上がる干支記念貨幣〈瑞祥飛龍〉。重なり合う龍の鱗の立体感にも注目の、クック諸島政府から公式に発行される真正な法定貨幣です。
+	</p>
+<h2>絢爛豪華な金銀の輝きに、めでたき龍の姿が刻まれて</h2>
+<p class="flt-r"><img alt="銀貨には、陰陽を司り幸運を招く双龍が刻まれています" height="140" src="/image/goods/51245_04.jpg" width="135"/></p>
+<p>
+		異例の大型記念貨幣であり大変珍しい小判形の金貨と銀貨は、それだけでも収集家には見逃せない逸品。艶やかな貨面には、天高く飛翔する迫力ある龍の姿が精緻な凹凸（レリーフ）で見事に表現されました。金貨には、霊峰富士を背景に、旭日輝く天空を飛ぶ、吉瑞と福徳をもたらす「昇龍」の姿。銀貨には、永遠を意味する縁起の良いエ霞の意匠と共に、陰陽を司り幸運を招く「双龍」が旭日の輝きを浴びて並ぶ姿が浮かびます。<br/>
+		さらに貨面には、江戸時代の小判にも刻まれた茣蓙目（ござめ）と呼ばれる横線や、幕府お墨付きの証であった五三桐（ごさんのきり）、辰年の守護本尊を表す梵字も刻印され、コレクター魂をくすぐります。コインのもう一方の面には、鶴が翔け、富士山がそびえ、めでたさはいっそう高まるばかり。その中央にはクック諸島の法定貨幣の証として、元首チャールズ3世の公式肖像が刻印されました。
+	</p>
+<p class="center-img"><img alt="合わせてお求めいただくと、所蔵価値がいちだんと高まります／①金貨：額面100クックアイランド・ドル、品位.9999金、縦約48×横約29ミリ、1／2オンス（約15.5グラム）、限定500点発行／②銀貨：額面20クックアイランド・ドル、品位.9999銀、縦約98×横約60ミリ、3オンス（約93.3グラム）、限定950点発行／鋳造：マイヤーズ鋳造所（ドイツ）。金貨・銀貨とも表面には元首チャールズ3世（英国国王）の肖像が刻まれています。" height="480" src="/image/goods/51245_05.jpg" width="580"/></p>
+<h2>格調高い干支の縁起物で、実りある一年に</h2>
+<p>2024年 干支記念貨幣〈瑞祥飛龍〉は、最高水準の鋳造技術で打刻された完全未使用のコインで、発行数は金貨500点のみ、銀貨950点のみと高い希少性を誇ります。コインは風格ある千両箱さながらの特製ケースに収め、正真正銘の法定貨幣であることを示す発行証明書を添えてお届けします。金銀に輝く開運招福の龍にあやかって、幸せに満ちた飛翔の一年となさるためにも、どうぞこの機会にお申し込みください。</p>
+<p class="center-img"><img alt="千両箱さながらの特製ケースに収めてお届け。金銀小判の趣をいっそう高めます。①金貨：限定500点発行、②銀貨：限定950点発行" height="400" src="/image/goods/51245_06.jpg" width="580"/></p>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="クック諸島　国章" height="52" src="/image/goods/51245_07.jpg" width="45"/>　クック諸島</h3>
+<p>南太平洋にある15の島々で構成された自治国家で、総面積は約237平方キロメートル。1770年代にこの島々を発見した英国の探検家、キャプテン・ジェームズ・クックの名にちなみ、クック諸島と名づけられた。元首はイギリスのチャールズ3世。</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

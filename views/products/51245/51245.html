@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ $goods->getTitleTag() }}</title>
+    <meta name="description" content="{{ $goods->getSeoDescription() }}">
+    <meta name="keywords" content="{{ $goods->getSeoKeywords() }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="og:url" content="{{ config('app.url') . '/' . $goods->getM1prgc() }}" />
+	<meta property="og:title" content="{{ $goods->getTitleTag() }}" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="{{ $goods->getTwDescription() }}" />
+	<meta property="og:site_name" content="{{ $goods->isPremico() ? 'PREMICO(プレミコ) オンラインショップ' : 'I・E・Iオンラインショップ' }}" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/customization.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-white">
+    <div class="min-h-screen mx-auto">
+    <?php include public_path() . '/include/header_new.html'; ?>
+
+        <!-- パンくずナビ -->
+        <nav class="bread-clumbs text-sm sm:text-base text-gray-600 mx-auto pl-3 leading-snug tracking-tighter max-w-6xl">
+            <a href="/collection" class="text-blue-800 hover:text-blue-400 transition-colors">コレクション</a>
+                @if ($goods->getIeiCategory()->isNotEmpty())
+                    <span class="mx-2">｜</span>
+                    <a href="/collection/{{ $goods->getIeiCategory()->first()->getIeiCategoryName() }}" class="text-blue-800 hover:text-blue-400 transition-colors">
+                        {{ $goods->getIeiCategory()->first()->getIeiCategoryJpName() }}
+                    </a>
+                @endif
+        </nav>
+
+        <!-- メインコンテンツ -->
+        <main class="pt-4 pb-6 px-1 mx-auto max-w-5xl">
+            <!-- 商品説明 -->
+            <section class="mx-auto max-w-3xl">
+                <!-- トップ画像 -->
+                <div class="p-3">
+                    <img src="/image/goods/51245_01.jpg" alt="クック諸島政府発行　2024年 干支記念貨幣　瑞祥飛龍" class="w-full mx-auto h-auto">
+                </div>
+                <!-- 商品紹介文 -->
+                <div class="p-3">
+                    <p class="text-start sm:text-center leading-relaxed font-bold">
+                        古より<ruby><rb>崇</rb><rp>（</rp><rt>あが</rt><rp>）</rp></ruby>められる吉祥の神獣「龍」。<br>
+                        飛翔の年「辰年」に運気上昇を力強く祈念する縁起の良い限定発行の小判形法定貨幣。<br>
+                        <br>
+                        最高品位.9999の純金と純銀の貨面に浮かぶ雅やかな輝きを放つ「昇龍」と「双龍」が新春を寿ぎ開運へ導きます。<br>
+                    </p>
+                </div>
+                <!-- 下記はAかBどちらかを利用 -->
+                    <!-- A:商品メイン画像＆箇条書き(main_600x600画像がある場合) -->
+                    <div class="flex flex-col md:flex-row p-3">
+                        <img src="/image/goods/51245_main_600x600.jpg" alt="2024年 干支記念貨幣　瑞祥飛龍" class="w-full md:w-[50%] mx-auto h-auto p-4">
+                        <!-- 指示　ul classのclearfix部分は下記を利用 -->
+                        <ul class="text-start w-full md:w-[50%] md:p-3 leading-relaxed">
+                            <li>■最高品位.9999の純金と純銀製</li>
+                            <li>■珍しい小判形の記念貨幣</li>
+                            <li>■完全未使用</li>
+                            <li>■精緻なレリーフで表現された干支の辰と吉祥の意匠</li>
+                            <li>■コインの発行証明書が付属</li>
+                            <li>■金貨500点、銀貨950点の限定版</li>
+                            <li>■千両箱をイメージした特製ケース</li>
+                        </ul>
+                    </div>
+
+                <!-- 商品詳細 -->
+                <div class="flex flex-col space-y-3 mt-6">
+                    <!-- 指示　img部分は下記を利用 -->
+                    <img src="/image/goods/51245_02.jpg" alt="千両箱さながらの特製ケースが、金銀小判の趣をいっそう高めます。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4"
+                    >
+                    <!-- 指示　h2部分は下記を利用 -->
+                    <h2 class="text-white rounded-md font-bold text-lg c-bg-collection-gradient text-center sm:p-3 py-2 mx-1">
+                        2024年「<ruby><rb>甲辰</rb><rp>（</rp><rt>きのえたつ</rt><rp>）</rp></ruby>」は活力に満ちた成長の年
+                    </h2>
+                    <!-- 指示　classのflt-1部分は下記を利用(ここはbrタグ不要) -->
+                    <div class="flex flex-col sm:flex-row">
+                        <img src="/image/goods/51245_03.jpg" alt="精緻なレリーフで浮かぶ龍の姿" loading="lazy" class="mx-auto max-w-[10rem] p-3 sm:m-3 object-contain"
+                        >
+                        <p class="text-start px-1 sm:p-3 leading-relaxed">
+                            古代中国で発祥した「干支」は、季節や天候の移り変わりの目安として利用され、日本でも、12年で一巡する十二支として、暮らしに深く根付いてきました。2024年は、隆盛と幸運の象徴とされる龍の「辰」年にして、十干（じっかん）は物事のはじまりや芽吹きを表す「甲」であることから、これからの成長や実りに大いに期待が持てる年とされています。驚異的な力強さを誇る龍にちなんだ活力みなぎる年でもあるので、新たな学びや挑戦にもふさわしい一年といえるでしょう。<br>
+                            そんな希望に満ちた「甲辰」の年によせて、さらなる吉祥を呼ぶ限定版のコインが発行されます。<br>
+                            最高品位.9999の純金と純銀で鋳造された小判形の貨幣に、開運や出世の縁起物とされる龍の姿が浮かび上がる干支記念貨幣〈瑞祥飛龍〉。<br>
+                            重なり合う龍の鱗の立体感にも注目の、クック諸島政府から公式に発行される真正な法定貨幣です。<br>
+                        </p>
+                    </div>
+                    <!-- 指示　h2部分は下記を利用 -->
+                    <h2 class="text-white rounded-md font-bold text-lg c-bg-collection-gradient text-center sm:p-3 py-2 mx-1">
+                        絢爛豪華な金銀の輝きに、めでたき龍の姿が刻まれて
+                    </h2>
+                    <!-- 指示　classのflt-1部分は下記を利用(ここはbrタグ不要) -->
+                    <div class="flex flex-col sm:flex-row">
+                        <img src="/image/goods/51245_04.jpg" alt="銀貨には、陰陽を司り幸運を招く双龍が刻まれています" loading="lazy" class="mx-auto max-w-[10rem] p-3 sm:m-3 object-contain"
+                        >
+                        <p class="text-start px-1 sm:p-3 leading-relaxed">
+                            異例の大型記念貨幣であり大変珍しい小判形の金貨と銀貨は、それだけでも収集家には見逃せない逸品。艶やかな貨面には、天高く飛翔する迫力ある龍の姿が精緻な凹凸（レリーフ）で見事に表現されました。金貨には、霊峰富士を背景に、旭日輝く天空を飛ぶ、吉瑞と福徳をもたらす「昇龍」の姿。銀貨には、永遠を意味する縁起の良いエ霞の意匠と共に、陰陽を司り幸運を招く「双龍」が旭日の輝きを浴びて並ぶ姿が浮かびます。<br>
+                            さらに貨面には、江戸時代の小判にも刻まれた茣蓙目（ござめ）と呼ばれる横線や、幕府お墨付きの証であった五三桐（ごさんのきり）、辰年の守護本尊を表す梵字も刻印され、コレクター魂をくすぐります。<br>
+                            コインのもう一方の面には、鶴が翔け、富士山がそびえ、めでたさはいっそう高まるばかり。<br>
+                            その中央にはクック諸島の法定貨幣の証として、元首チャールズ3世の公式肖像が刻印されました。<br>
+                        </p>
+                    </div>
+                    <!-- 指示　img部分は下記を利用 -->
+                    <img src="/image/goods/51245_05.jpg" alt="合わせてお求めいただくと、所蔵価値がいちだんと高まります／①金貨：額面100クックアイランド・ドル、品位.9999金、縦約48×横約29ミリ、1／2オンス（約15.5グラム）、限定500点発行／②銀貨：額面20クックアイランド・ドル、品位.9999銀、縦約98×横約60ミリ、3オンス（約93.3グラム）、限定950点発行／鋳造：マイヤーズ鋳造所（ドイツ）。金貨・銀貨とも表面には元首チャールズ3世（英国国王）の肖像が刻まれています。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4"
+                    >
+                    <!-- 指示　h2部分は下記を利用 -->
+                    <h2 class="text-white rounded-md font-bold text-lg c-bg-collection-gradient text-center sm:p-3 py-2 mx-1">
+                        格調高い干支の縁起物で、実りある一年に
+                    </h2>
+                    <!-- 指示　p部分は下記を利用 -->
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        2024年 干支記念貨幣〈瑞祥飛龍〉は、最高水準の鋳造技術で打刻された完全未使用のコインで、発行数は金貨500点のみ、銀貨950点のみと高い希少性を誇ります。<br>
+                        コインは風格ある千両箱さながらの特製ケースに収め、正真正銘の法定貨幣であることを示す発行証明書を添えてお届けします。<br>
+                        金銀に輝く開運招福の龍にあやかって、幸せに満ちた飛翔の一年となさるためにも、どうぞこの機会にお申し込みください。<br>
+                    </p>
+                    <!-- 指示　img部分は下記を利用 -->
+                    <img src="/image/goods/51245_06.jpg" alt="千両箱さながらの特製ケースに収めてお届け。金銀小判の趣をいっそう高めます。①金貨：限定500点発行、②銀貨：限定950点発行" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4"
+                    >
+                    <!-- 指示　classのbox1部分は下記を利用(ここはbrタグ不要) -->
+                    <div class="p-3 m-1 border c-border-collection-gradient border-1 rounded-md">
+                        <h3 class="font-bold p-2 flex items-center"><img src="/image/goods/51245_07.jpg" alt="クック諸島　国章" class="w-12 object-contain mr-2">クック諸島</h3>
+                        <p class="leading-relaxed flex p-2 flex-col sm:flex-row">
+                            <span class="flex-1">南太平洋にある15の島々で構成された自治国家で、総面積は約237平方キロメートル。1770年代にこの島々を発見した英国の探検家、キャプテン・ジェームズ・クックの名にちなみ、クック諸島と名づけられた。元首はイギリスのチャールズ3世。</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 価格・購入エリア -->
+            <section id="price_area" class="my-8 w-full mx-auto">
+                <!-- 商品情報 -->
+                <div class="flex flex-col">
+                    <!-- 価格・購入情報 -->
+                    <!-- 紐づけコードあり カート -->
+                    <!-- 表示のみ 以外 -->
+                    @if ($goods->isConnectGoodsAllOpenFlg() === true)
+                        @foreach ($goods->getConnectGoods() as $connect_goods)
+                        <div class="p-4 flex flex-col md:flex-row md:p-2 md:ml-8">
+                            <!-- 表示のみ 以外 -->
+                            <!-- 商品番号 -->
+                            <div class="flex flex-col md:w-[40%]">
+                                <div class="mb-2 pl-2">
+                                    <span class=" text-gray-900 tracking-wide">商品番号：{{ $connect_goods->getItemNo() }}</span>
+                                </div>
+                                <!-- 商品名 -->
+                                <h3 class="border-l-8 border-gray-800 pl-2 text-xl font-bold text-gray-800 mb-4 md:mb-1 tracking-tighter">
+                                    {{ $connect_goods->getGoodsName() }}
+                                </h3>
+
+                                <!-- 納期・お届け -->
+                                @if ($connect_goods->isNgCartMessage() || $connect_goods->isOkCartMessage())
+                                    <!-- メッセージあり 受注NG or OK -->
+                                    @if ($connect_goods->getMessage() !== '')
+                                        <!-- メッセージあり 受注NG or OK -->
+                                        <div class="py-2">
+                                            <p class="text-blue-700 font-bold text-lg">
+                                                {!! $connect_goods->getMessage() !!}
+                                            </p>
+                                        </div>
+                                    @endif
+                                @else
+                                    <!-- メッセージなし 納期表示 -->
+                                    @if ($goods->getGoodsDeliveryText() !== '')
+                                        <div class="py-2">
+                                            <p class="text-blue-700 font-bold text-lg">
+                                                {!! $goods->getGoodsDeliveryText() !!}
+                                            </p>
+                                        </div>
+                                    @endif
+                                @endif
+                                <!-- 価格 -->
+                                <div class="space-y-2 md:space-y-1 mb-6 text-gray-600">
+                                    <p class="text-lg">{!! $connect_goods->getSoroM1shsg_0_text() !!}</p>
+                                    <p class="">{!! $connect_goods->getSoroM1shsg_1_text() !!}</p>
+                                    <p class="ml-4">{!! $connect_goods->getSoroM1tsry_text() !!}</p>
+                                </div>
+                            </div>
+
+                            <!-- 仕様詳細 -->
+                            @if ($connect_goods->isDisplayOnly() === false)
+                                <div class="px-6 pb-3 md:w-[60%]">
+                                    <h4 class="font-bold text-gray-800 mb-3">仕　様</h4>
+                                    <p class="leading-snug text-sm">
+                                    @if (str_ends_with($connect_goods->getItemNo(), '503'))
+                                    <!-- 金貨の仕様 -->
+                                    ●品位：.9999金<br>
+                                    ●サイズ：縦約48×横約29mm<br>
+                                    ●重さ：1/2オンス（約15.5グラム）<br>
+                                    ●発行数：500点<br>
+                                    ●額面：100ドル（クックアイランド・ドル）<br>
+                                    <br>
+                                    ●品質：プルーフ品質<br>
+                                    ●発行：クック諸島政府<br>
+                                    ●鋳造：マイヤーズ造幣所（ドイツ）<br>
+                                    <br>
+                                    【ケース仕様】<br>
+                                    ●材質：木、ポリウレタン、レーヨン、鉄<br>
+                                    ●サイズ（約）：閉じた状態で縦13.5×横9.7×厚さ4cm<br>
+                                    ●日本製
+                                    @elseif (str_ends_with($connect_goods->getItemNo(), '502'))
+                                    <!-- 銀貨の仕様 -->
+                                    ●品位：.9999銀<br>
+                                    ●サイズ：縦約98×横約60mm<br>
+                                    ●重さ：3オンス（約93.3グラム）<br>
+                                    ●発行数：950点<br>
+                                    ●額面：20ドル（クックアイランド・ドル）<br>
+                                    <br>
+                                    ●品質：プルーフ品質<br>
+                                    ●発行：クック諸島政府<br>
+                                    ●鋳造：マイヤーズ造幣所（ドイツ）<br>
+                                    <br>
+                                    【ケース仕様】<br>
+                                    ●材質：木、ポリウレタン、レーヨン、鉄<br>
+                                    ●サイズ（約）：閉じた状態で縦13.5×横9.7×厚さ4cm<br>
+                                    ●日本製
+                                    @endif
+                                    </p>
+
+                                    <!-- 購入フォーム -->
+                                    <form method="post" action="/cart" name="cartForm{{ $connect_goods->getItemNo() }}">
+                                        <input type="hidden" name="item_no" value="{{ $connect_goods->getItemNo() }}">
+                                        <input type="hidden" name="medium_code" value="{{ $connect_goods->getMediumCode() }}">
+                                        <input type="hidden" name="amount1" value="1">
+                                        <input type="hidden" name="ex_volume" value="{{ $connect_goods->isVolume() }}">
+
+                                        <!-- イニシャルの指定あり -->
+                                        @if ($connect_goods->isInitial() && !$connect_goods->isNgCartMessage())
+                                            <span class="atn">{!! $connect_goods->getInitialTitle() !!}</span><br>
+                                            <input type="text" name="initial" value=""><br>
+                                        @endif
+
+                                        <!-- サイズ・カラー選択 -->
+                                        @if ($connect_goods->isCosize() && !$connect_goods->isNgCartMessage())
+                                            @if ($connect_goods->isColor())
+                                                <div>
+                                                    <span class="select">
+                                                        <select name="m5clr" class="m5clr{{ $connect_goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                            data-item_no="{{ $connect_goods->getItemNo() }}" data-data_type="m5clr">
+                                                            <option value="">▼お選びください</option>
+                                                            @foreach ($connect_goods->getColorArray() as $key => $color)
+                                                                <option value="{{ $color->m5clr }}">
+                                                                    {{ $color->color_name }}
+                                                                </option>
+                                                            @endforeach
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                                @if ($connect_goods->isSize() || $connect_goods->isType())
+                                                    <br>
+                                                @endif
+                                            @else
+                                                <input type="hidden" name="m5clr" value="">
+                                            @endif
+                                            @if ($connect_goods->isSize())
+                                                <div>
+                                                    <span class="select">
+                                                        <select name="m5siz" class="m5siz{{ $connect_goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                            data-item_no="{{ $connect_goods->getItemNo() }}" data-data_type="m5siz">
+                                                            <option value="">▼お選びください</option>
+                                                            @if (!$connect_goods->isColor())
+                                                                @foreach ($connect_goods->getSizeArray() as $size)
+                                                                    <option value="{{ $size->m5siz }}">
+                                                                        {{ $size->size_name }}
+                                                                    </option>
+                                                                @endforeach
+                                                            @endif
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                                @if ($connect_goods->isType())
+                                                    <br>
+                                                @endif
+                                            @else
+                                                <input type="hidden" name="m5siz" value="">
+                                            @endif
+                                            @if ($connect_goods->isType())
+                                                <div>
+                                                    <span class="select">
+                                                        <select name="type_code" class="type_code{{ $connect_goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                            data-item_no="{{ $connect_goods->getItemNo() }}" data-data_type="type_code">
+                                                            <option value="">▼お選びください</option>
+                                                            @if (!$connect_goods->isColor() && !$connect_goods->isSize())
+                                                                @foreach ($connect_goods->getTypeArray() as $type)
+                                                                    <option value="{{ $type->type_code }}">
+                                                                        {{ $type->type_name }}
+                                                                    </option>
+                                                                @endforeach
+                                                            @endif
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                            @else
+                                                <input type="hidden" name="type_code" value="">
+                                            @endif
+                                        @endif
+
+                                        <!-- カートにいれるボタン -->
+                                        <div class="md:w-[70%] mx-auto">
+                                            <button type="button" data-item_no="{{ $connect_goods->getItemNo() }}" class="add-cart w-full c-btn-amber-gradient py-4 px-6 rounded-lg flex items-center justify-between transition-all duration-200 shadow-md hover:shadow-lg">
+                                                <?xml version="1.0" encoding="utf-8"?>
+                                                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none;">
+                                                    <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="flex-1 text-center text-lg font-bold" style="pointer-events: none;">カートに入れる</span>
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="pointer-events: none;">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <div class="flex flex-col lg:flex-row lg:justify-between space-y-3 pt-3">
+                                        <!-- お問い合わせ -->
+                                        <div class="text-center">
+                                            <a href="/inquiry/index?item_no={{ $connect_goods->getItemNo() }}" class="text-iei-primary hover:text-iei-secondary underline transition-colors sm:text-base">この商品をメールで問い合わせ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+                        </div>
+                        <!-- 商品の間のborder -->
+                        <div class="border-t border-gray-200 mx-4 mb-4"></div>
+                        @endforeach
+                    @endif
+                    <!-- お電話 -->
+                    <div class="flex flex-col items-center">
+                        <div class="text-sm md:text-base text-gray-600 tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
+                        <div class="flex items-center space-x-1 -mt-1">
+                            <div class="w-5 h-5 md:w-8 md:h-8 bg-gray-600 rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 md:w-5 md:h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                </svg>
+                            </div>
+                            <a href="tel:0120-247-417" class="text-2xl md:text-3xl text-gray-600 hover:opacity-80 duration-200">0120-247-417</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="border-t border-gray-300 mb-4 xl:w-[80%] mx-auto"></div>
+        <!-- 案内セクション -->
+        <?php include public_path() . '/include/footer_guidance.html'; ?>
+
+        <!-- ページトップボタン -->
+        <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
+            <a href="#" class="c-bg-second hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform  hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- フッターコンポーネント -->
+    <?php include public_path() . '/include/footer_new.html'; ?>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/js/product.js"></script>
+
+    <script>
+    // DOMの準備完了を待つ
+    document.addEventListener('DOMContentLoaded', function() {
+        // ハンバーガーメニュー機能
+        const ham = document.querySelector('#js-hamburger');
+        const nav = document.querySelector('#js-nav');
+        //const overlay = document.querySelector('#js-overlay');
+        const closeMenu = document.querySelector('#js-close-menu');
+
+        // メニューを閉じる共通関数
+        function closeNavMenu() {
+            if (ham) ham.classList.remove('active');
+            if (nav) nav.classList.remove('active');
+            //if (overlay) overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        if (ham && nav /*&& overlay*/) {
+            // メニューボタンクリック
+            ham.addEventListener('click', function () {
+                ham.classList.toggle('active');
+                nav.classList.toggle('active');
+                //overlay.classList.toggle('active');
+
+                // 背景スクロール制御
+                if (nav.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // 閉じるボタンクリック
+            if (closeMenu) {
+                closeMenu.addEventListener('click', closeNavMenu);
+            }
+
+            // オーバーレイクリックでメニューを閉じる
+            //overlay.addEventListener('click', closeNavMenu);
+            // メニュー外をクリックしてメニューを閉じる
+            document.addEventListener('click', function(e) {
+                if (nav.classList.contains('active')) {
+                    // クリックされた要素がメニュー内またはハンバーガーボタンでない場合
+                    if (!nav.contains(e.target) && !ham.contains(e.target)) {
+                        closeNavMenu();
+                    }
+                }
+            });
+
+            // メニュー内のリンククリックでメニューを閉じる
+            const menuLinks = nav.querySelectorAll('a');
+            menuLinks.forEach(function(link) {
+                link.addEventListener('click', closeNavMenu);
+            });
+
+            // ESCキーでメニューを閉じる
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && nav.classList.contains('active')) {
+                    closeNavMenu();
+                }
+            });
+        }
+
+        // スムーススクロール機能
+        const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+        smoothScrollLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const startPosition = window.pageYOffset;
+                    const distance = targetPosition - startPosition;
+                    const duration = 800;
+                    let start = null;
+
+                    window.requestAnimationFrame(step);
+
+                    function step(timestamp) {
+                        if (!start) start = timestamp;
+                        const progress = timestamp - start;
+                        const progressRatio = Math.min(progress / duration, 1);
+                        const easeInOutCubic = progressRatio < 0.5
+                            ? 4 * progressRatio * progressRatio * progressRatio
+                            : 1 - Math.pow(-2 * progressRatio + 2, 3) / 2;
+
+                        window.scrollTo(0, startPosition + distance * easeInOutCubic);
+
+                        if (progress < duration) {
+                            window.requestAnimationFrame(step);
+                        }
+                    }
+                }
+            });
+        });
+
+        // アコーディオン機能
+        function toggleAccordion(sectionId) {
+            const content = document.getElementById(sectionId + '-content');
+            const arrow = document.getElementById(sectionId + '-arrow');
+
+            // 他のアコーディオンを閉じる
+            const allContents = document.querySelectorAll('[id$="-content"]');
+            const allArrows = document.querySelectorAll('[id$="-arrow"]');
+
+            allContents.forEach(function(otherContent) {
+                if (otherContent.id !== sectionId + '-content' && !otherContent.classList.contains('hidden')) {
+                    otherContent.classList.add('hidden');
+                }
+            });
+
+            allArrows.forEach(function(otherArrow) {
+                if (otherArrow.id !== sectionId + '-arrow') {
+                    otherArrow.classList.remove('rotate-180');
+                }
+            });
+
+            // 選択されたアコーディオンをトグル
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                arrow.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                arrow.classList.remove('rotate-180');
+            }
+        }
+
+        // グローバルスコープに関数を追加
+        window.toggleAccordion = toggleAccordion;
+    });
+    </script>
+    <!-- アコーディオン機能のJavaScript -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // アコーディオン機能の初期化
+        const guideHeaders = document.querySelectorAll('.guide-header');
+
+        guideHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                // PCサイズではアコーディオン無効
+                if (window.innerWidth >= 768) return;
+
+                const item = header.closest('[data-section]');
+                const content = item.querySelector('.guide-content');
+                const arrow = header.querySelector('svg:last-child');
+
+                // 現在のコンテンツの表示状態を切り替え
+                const isHidden = content.classList.contains('hidden');
+
+                if (isHidden) {
+                    // 他のアコーディオンを閉じる
+                    document.querySelectorAll('.guide-content').forEach(otherContent => {
+                        if (!otherContent.classList.contains('md:block')) {
+                            otherContent.classList.add('hidden');
+                        }
+                    });
+
+                    document.querySelectorAll('.guide-header svg:last-child').forEach(otherArrow => {
+                        otherArrow.classList.remove('rotate-180');
+                    });
+
+                    // 選択したアコーディオンを開く
+                    content.classList.remove('hidden');
+                    if (arrow) arrow.classList.add('rotate-180');
+                } else {
+                    // 選択したアコーディオンを閉じる
+                    content.classList.add('hidden');
+                    if (arrow) arrow.classList.remove('rotate-180');
+                }
+            });
+        });
+
+        // リサイズ時にPC表示では全て表示
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                document.querySelectorAll('.guide-content').forEach(content => {
+                    content.classList.remove('hidden');
+                });
+                document.querySelectorAll('.guide-header svg:last-child').forEach(arrow => {
+                    arrow.classList.remove('rotate-180');
+                });
+            }
+        });
+    });
+
+    // ページトップボタン
+    const pagetop = document.getElementById('pagetop');
+    if (pagetop) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                pagetop.classList.remove('hidden');
+            } else {
+                pagetop.classList.add('hidden');
+            }
+        });
+
+        pagetop.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+    </script>
+    <script src="{{ asset('/sys/js/goods.js') }}"></script>
+    <script src="{{ asset('/sys/js/common.js') }}"></script>
+</body>
+</html>

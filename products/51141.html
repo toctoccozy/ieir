@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ $goods->getTitleTag() }}</title>
+    <meta name="description" content="{{ $goods->getSeoDescription() }}">
+    <meta name="keywords" content="{{ $goods->getSeoKeywords() }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="format-detection" content="telephone=no">
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="og:url" content="{{ config('app.url') . '/' . $goods->getM1prgc() }}" />
+	<meta property="og:title" content="{{ $goods->getTitleTag() }}" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="{{ $goods->getTwDescription() }}" />
+	<meta property="og:site_name" content="{{ $goods->isPremico() ? 'PREMICO(プレミコ) オンラインショップ' : 'I・E・Iオンラインショップ' }}" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/customization.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-white">
+    <div class="min-h-screen mx-auto">
+    <?php include public_path() . '/include/header_new.html'; ?>
+
+        <!-- パンくずナビ -->
+        <nav class="bread-clumbs text-sm sm:text-base text-gray-600 mx-auto pl-3 leading-snug tracking-tighter max-w-6xl mt-4">
+            <a href="/{{ $goods->getShowFlagName() }}" class="text-blue-800 hover:text-blue-400 transition-colors">{{ $goods->getShowFlagJpName() }}</a>
+                @if ($goods->getIeiCategory()->isNotEmpty())
+                    <span class="mx-2">｜</span>
+                    <a href="/collection/{{ $goods->getIeiCategory()->first()->getIeiCategoryName() }}" class="text-blue-800 hover:text-blue-400 transition-colors">
+                        {{ $goods->getIeiCategory()->first()->getIeiCategoryJpName() }}
+                    </a>
+                @endif
+        </nav>
+
+        <!-- メインコンテンツ -->
+        <main class="pt-4 pb-2 px-1 mx-auto max-w-5xl">
+            <!-- 商品説明 -->
+            <section class="mx-auto max-w-3xl">
+                <!-- トップ画像 -->
+                <div class="p-3">
+                    <img src="/image/goods/51141_01.jpg" alt="月の光をまとった幸運のシンボル＜純金の子猫＞ダイヤモンド入り24金製宝飾ペンダント" class="w-full mx-auto h-auto">
+                </div>
+                <!-- 商品紹介文 -->
+                <div class="p-3">
+                    <p class="text-start leading-relaxed font-bold">
+                        愛くるしい姿で周りをたちまち笑顔にする幸せの使者「子猫」が純金ペンダントに。<br>
+                        ダイヤモンドの首輪をしたあどけない姿かたちをやわらかな毛並みまでも精緻に立体表現。<br>
+                        ブラックダイヤのつぶらな瞳を輝かせあなたに幸運をはこびます。
+                    </p>
+                </div>
+                <!-- A:商品メイン画像＆箇条書き(main_600x600画像がある場合) -->
+                <div class="flex flex-col md:flex-row p-3">
+                    <img src="/image/goods/51141_main_600x600.jpg" alt="＜純金の子猫＞ダイヤモンド入り24金製宝飾ペンダント" class="w-full md:w-[50%] mx-auto h-auto p-4">
+                    <ul class="text-start w-full md:w-[50%] md:p-3 leading-relaxed">
+                        <li>■幸せのシンボル「子猫」を精巧に立体表現したペンダント</li>
+                        <li>■最高品位.999の純金製</li>
+                        <li>■ブラックダイヤモンドの瞳</li>
+                        <li>■首輪に煌めくダイヤモンド</li>
+                        <li>■18金製チェーン</li>
+                    </ul>
+                </div>
+
+                <!-- 商品詳細 -->
+                <div class="flex flex-col space-y-3 mt-6">
+                    <img src="/image/goods/51141_02.jpg" alt="着用イメージ" loading="lazy" class="w-full max-w-[350px] mx-auto h-auto p-4">
+                    <img src="/image/goods/51141_03.jpg" alt="その輝きは純粋無垢…幸せを連れてくる純金の子猫" loading="lazy" class="w-full max-w-[350px] mx-auto h-auto p-4">
+                    <h2 class="text-white rounded-md font-bold text-lg c-bg-collection-gradient text-center sm:p-3 py-2 mx-1">
+                        純金のピュアな輝きとダイヤモンドの煌めき…<br>幸せを招く愛くるしい子猫をそっと胸に抱きしめて
+                    </h2>
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        それは、月の光に照らされた幸運の子猫―どんな人もたちまち笑顔にしてしまう愛くるしい子猫が、この上なくリッチなゴールドジュエリーになりました。<br>
+                        幼い福猫に宿る無限の幸せパワーが、限りなくピュアな黄金の月あかりをまとってすくすく育ち、次から次へと福を招いてくれる素敵な純金ペンダントです。
+                    </p>
+                    <img src="/image/goods/51141_04.jpg" alt="子猫の姿をぐるりと360度立体的に表現。ちょこんと座った姿にも心がなごんで…／好奇心いっぱいのつぶらな瞳に輝くのは強い意志を表すブラックダイヤモンド。／ダイヤモンドが燦然と煌めくお洒落な首輪。その輝きは変わらぬ美しさの象徴。／幸せを呼ぶ黄金の子猫：猫は貴重な仏典をネズミの害から守る動物として、奈良時代に日本にもたらされ、やがて商売繁盛の招き猫など、招福の縁起物でおなじみとなりました。特に子猫は、富と幸運を招くといわれ、大切にされてきた歴史があります。黄金の子猫は、月のパワーを表す黄金の輝きと、幼い福猫としての無限の可能性がひとつになった幸運のモチーフです。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        あどけない表情から、ふんわりと柔らかそうな毛並みまで、精緻な立体造形に表現された子猫のペンダントトップは、贅沢な24金製。<br>
+                        純度99.9％のゴールドならではの輝きが心くすぐります。<br>
+                        あなたをじっと見つめるつぶらな瞳はブラックダイヤモンド。<br>
+                        そして子猫が着けている首輪で燦然と輝くのは、永遠の美の象徴ダイヤモンドという豪華さ。<br>
+                        純金とダイヤモンドという不変の価値と気品ある煌めきの組み合わせが、微笑みを誘う幼い福猫の姿とともに、あふれんばかりの幸せオーラであなたを美しく輝かせることでしょう。<br>
+                        ＜純金の子猫＞ダイヤモンド入り24金製宝飾ペンダントは、近年価格が高騰している純金製。<br>
+                        ころんとした福々しい子猫の姿に心癒され、身に着ける方も周囲の方も幸せに包まれるラッキージュエリーとして、ぜひこの好機にお求めください。
+                    </p>
+                    <img src="/image/goods/51141_05.jpg" alt="ペンダントはギフトケースに収めてお届けします。贈り物にも喜ばれます。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <!-- box1 -->
+                    <div class="p-3 m-1 border c-border-collection-gradient border-1 rounded-md">
+                        <h3 class="font-bold p-2">高騰の一途をたどる美しくも価値ある貴金属「純金」</h3>
+                        <p class="leading-relaxed flex p-2 flex-col sm:flex-row">
+                            <span class="flex-1">眩い黄金の輝きで世界中の人々を魅了する「純金」は、地球上の採掘可能な埋蔵量のうち既に約7割が産出されたといわれています。しかも、埋蔵されている残りの大部分は採掘が困難な場所にあり、近い将来は、地上にある在庫を再利用する以外に手段がなくなる可能性も。希少化が進むことでさらなる高騰が期待されています。</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 価格・購入エリア -->
+            <section id="price_area" class="my-8 w-full mx-auto">
+                <!-- 商品画像以下 -->
+                <div class="flex flex-col md:flex-row">
+                    <!-- 商品画像 -->
+                    <div class="flex justify-center p-12 sm:px-32 md:p-4 md:w-[40%] md:items-start">
+                        <!-- 拡大画像 -->
+                        <img src="/image/goods/51141_main_600x600.jpg"
+                            alt="＜純金の子猫＞ダイヤモンド入り24金製宝飾ペンダント"
+                            loading="lazy"
+                            class="w-full h-auto object-contain">
+                    </div>
+
+                    <!-- 価格・購入情報 -->
+                    <div class="p-4 md:w-[60%] md:p-2 md:ml-8">
+                        <!-- 商品番号 -->
+                        <div class="mb-2 pl-2">
+                            <span class=" text-gray-900 tracking-wide">商品番号：{{ $goods->getItemNo() }}</span>
+                        </div>
+                        <!-- 商品名 -->
+                        <h3 class="border-l-8 border-gray-800 pl-2 text-xl font-bold text-gray-800 mb-4 md:mb-1 tracking-tighter">
+                            {{ $goods->getGoodsName() }}
+                        </h3>
+
+                        <!-- 納期・お届け -->
+						@if ($goods->isNgCartMessage() || $goods->isOkCartMessage())
+							<!-- メッセージあり 受注NG or OK -->
+							<div class="py-2"><p class="text-blue-700 font-bold text-lg">{!! $goods->getMessage() !!}</p></div>
+						@else
+							<!-- メッセージなし 納期表示 -->
+							<div class="py-2"><p class="text-blue-700 font-bold text-lg">{!! $goods->getGoodsDeliveryText() !!}</p></div>
+						@endif
+
+                        <!-- 価格 -->
+                        <div class="space-y-2 md:space-y-1 mb-6 text-gray-600">
+                            <p class="text-lg">{!! $goods->getSoroM1shsg_0_text() !!}</p>
+                            <p class="">{!! $goods->getSoroM1shsg_1_text() !!}</p>
+                            <p class="ml-4">{!! $goods->getSoroM1tsry_text() !!}</p>
+                        </div>
+
+                        <!-- 仕様詳細 -->
+                        <div class="px-6 border-b border-gray-200 pb-3">
+                            <h4 class="font-bold text-gray-800 mb-3">仕　様</h4>
+                            <p class="leading-snug text-sm">
+                                ●材質：ペンダントトップ＝24金（中空）、ダイヤモンド1石（約0.01ct）、ブラックダイヤモンド2石（計約0.02ct）　チェーン＝18金<br>
+                                ●サイズ（約）：ペンダントトップ＝縦14×横8.2×厚さ10.2mm　チェーン＝最長45cm（フリーアジャスター）<br>
+                                ●重さ（約）：ペンダントトップ＝1.7g<br>
+                                ●日本製
+                            </p>
+
+                            <!-- 購入フォーム -->
+                            <!-- 紐づけコードなし カート -->
+                            <!-- 表示のみ 以外 -->
+                            @if ($goods->isDisplayOnly() === false && !$goods->isNgCartMessage())
+                                <form method="post" action="/cart" name="cartForm{{ $goods->getItemNo() }}">
+                                <input type="hidden" name="item_no" value="{{ $goods->getItemNo() }}">
+                                <input type="hidden" name="medium_code" value="{{ $goods->getMediumCode() }}">
+                                <input type="hidden" name="amount1" value="1">
+                                <input type="hidden" name="ex_volume" value="{{ $goods->isVolume() }}">
+
+								<!-- イニシャルの指定あり -->
+                                @if ($goods->isInitial() && !$goods->isNgCartMessage())
+									<span class="atn">{!! $goods->getInitialTitle() !!}</span><br>
+									<input type="text" name="initial" value=""><br>
+								@endif
+
+                                <!-- サイズ・カラー選択 -->
+								@if ($goods->isCosize() && !$goods->isNgCartMessage())
+									@if ($goods->isColor())
+                                        <div>
+                                            <span class="select">
+                                                <select name="m5clr" class="m5clr{{ $goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                    data-item_no="{{ $goods->getItemNo() }}" data-data_type="m5clr">
+                                                    <option value="">▼お選びください</option>
+                                                    @foreach ($goods->getColorArray() as $key => $color)
+                                                        <option value="{{ $color->m5clr }}">
+                                                            {{ $color->color_name }}
+                                                        </option>
+                                                    @endforeach
+                                                </select>
+                                            </span>
+                                        </div>
+                                        @if ($goods->isSize() || $goods->isType())
+                                            <br>
+                                        @endif
+    								@else
+	    								<input type="hidden" name="m5clr" value="">
+		    						@endif
+			    					@if ($goods->isSize())
+                                        <div>
+                                            <span class="select">
+                                                <select name="m5siz" class="m5siz{{ $goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                    data-item_no="{{ $goods->getItemNo() }}" data-data_type="m5siz">
+                                                    <option value="">▼お選びください</option>
+                                                    @if (!$goods->isColor())
+                                                        @foreach ($goods->getSizeArray() as $size)
+                                                            <option value="{{ $size->m5siz }}">
+                                                                {{ $size->size_name }}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </span>
+                                        </div>
+                                        @if ($goods->isType())
+                                            <br>
+                                        @endif
+                                    @else
+                                        <input type="hidden" name="m5siz" value="">
+                                    @endif
+                                    @if ($goods->isType())
+                                        <div>
+                                            <span class="select">
+                                                <select name="type_code" class="type_code{{ $goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                    data-item_no="{{ $goods->getItemNo() }}" data-data_type="type_code">
+                                                    <option value="">▼お選びください</option>
+                                                    @if (!$goods->isColor() && !$goods->isSize())
+                                                        @foreach ($goods->getTypeArray() as $type)
+                                                            <option value="{{ $type->type_code }}">
+                                                                {{ $type->type_name }}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </span>
+                                        </div>
+                                    @else
+                                        <input type="hidden" name="type_code" value="">
+                                    @endif
+                                @endif
+                                @if (!$goods->isNgCartMessage())
+                                    <div class="md:w-[70%] mx-auto mt-4">
+                                        <button type="button" data-item_no="{{ $goods->getItemNo() }}" class="add-cart w-full c-btn-amber-gradient py-4 px-6 rounded-lg flex items-center justify-between transition-all duration-200 shadow-md hover:shadow-lg">
+                                            <?xml version="1.0" encoding="utf-8"?>
+                                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none;">
+                                                <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span class="flex-1 text-center text-lg font-bold" style="pointer-events: none;">カートに入れる</span>
+                                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="pointer-events: none;">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                @endif
+    					        </form>
+                            @endif
+                            <div class="flex flex-col lg:flex-row lg:justify-between space-y-3 pt-3">
+                            <!-- お電話 -->
+                            <div class="flex flex-col items-center mt-2">
+                                <div class="text-sm md:text-base text-gray-600 tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
+                                    <div class="flex items-center space-x-1 -mt-1">
+                                        <div class="w-5 h-5 md:w-8 md:h-8 bg-gray-600 rounded-full flex items-center justify-center">
+                                            <svg class="w-3 h-3 md:w-5 md:h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                            </svg>
+                                        </div>
+                                        <a href="tel:0120-247-417" class="text-2xl md:text-3xl text-gray-600 hover:opacity-80 duration-200">0120-247-417</a>
+                                    </div>
+                                </div>
+                                <!-- お問い合わせ -->
+                                <div class="text-center">
+                                    <a href="/inquiry/index?item_no={{ $goods->getItemNo() }}" class="text-iei-primary hover:text-iei-secondary underline transition-colors sm:text-base">この商品をメールで問い合わせ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- <div class="border-t border-gray-300 mb-4 xl:w-[80%] mx-auto"></div> -->
+        <!-- 案内セクション -->
+        <?php include public_path() . '/include/footer_guidance.html'; ?>
+
+        <!-- ページトップボタン -->
+        <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
+            <a href="#" class="c-bg-second hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform  hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- フッターコンポーネント -->
+    <?php include public_path() . '/include/footer_new.html'; ?>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/js/product.js"></script>
+    <script src="{{ asset('/sys/js/goods.js') }}"></script>
+    <script src="{{ asset('/sys/js/common.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>「スリムに見える魔法の服」ワインレッド クラッシィ　 ゆったりAラインワンピース</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51411501" target="_self"><img alt="「スリムに見える魔法の服」ワインレッド クラッシィ　 ゆったりAラインワンピース" src="/image/goods/51411_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：ポリエステル100％　ボタン＝ポリエステル、樹脂<br/>
+●スリット（約）：6cm<br/>
+●日本製<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="153" src="/image/goods/51411_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>「スリムに見える魔法の服」ワインレッド クラッシィ　 ゆったりAラインワンピース</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,980円（税込5,478円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>29,800円（税込32,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51411501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51411"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Ｓサイズ</option>
+<option class="p999" value="999-M">Ｍサイズ</option>
+<option class="p999" value="999-L">Ｌサイズ</option>
+<option class="p999" value="999-LL">ＬＬサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51411501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51411501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="マダム・ナディーヌの「スリムに見える魔法の服」ワインレッド クラッシィ クチュール仕立ての12枚はぎゆったりAラインワンピース　デザイン：ナディーヌ・ビュタン" height="340" src="/image/goods/51411_01.jpg" width="580"/></p>
+<p class="intro">
+		華やぎの中に大人の落ち着きが漂う<br/>
+		ワインレッドの存在感に、スリムに見える魔法のシルエット。<br/>
+		豊かなドレープを生み出す、計算された12枚はぎのAラインが<br/>
+		腰回りをふんわりカバーしながら肩や胸元をすっきり見せ<br/>
+		着るだけでどの角度からも美しい、理想のスタイルが完成。<br/>
+		ほっそり、ゆったり、動きやすい。<br/>
+		マダム・ナディーヌならではのセンスが光る、待望の逸品です。<br/>
+<br/>
+<span style="text-decoration: underline;">ご家庭でお洗濯できます</span>
+</p>
+<p class="center-img"><img alt="ほっそり、ゆったり、エレガント。パリのエスプリ、シルエットの魔法" height="580" src="/image/goods/51411_02.jpg" width="520"/></p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>フランスの著名デザイナー、ナディーヌ・ビュタンのオリジナル</li>
+<li class="stt"><span class="sq01">■</span>華やかさの中に、落ち着いた雰囲気のあるワインレッドカラー</li>
+<li class="stt"><span class="sq01">■</span>計算された12枚はぎのAラインがつくるゆったりスリムなシルエット</li>
+<li class="stt"><span class="sq01">■</span>シワになりにくく、落ち感の美しい快適素材</li>
+<li class="stt"><span class="sq01">■</span>ご家庭でお洗濯できます</li>
+<li class="stt"><span class="sq01">■</span>SからLLまでの豊富なサイズ</li>
+</ul>
+<p>
+		パリの街を、優雅に散歩するかのように──。フレンチテイストあふれる華やぎとゆったり感、そして気になる体型をスリムに見せる巧みな仕立て…。フランスの著名デザイナー、マダム・ナディーヌがおくる大人気のAラインワンピースに、大人の気品と麗しさが香り立つワインレッドのアイテムが登場しました。エレガントにスタイリッシュに、そしておしゃれに。そんな意味を込めた一着＜ワインレッド クラッシィ＞。着るだけで、誰よりも美しいあなたを演出する逸品です。
+	</p>
+<p class="center-img"><img alt="360度、どの角度からもほっそり、きちんとした印象。日本の熟練職人が仕立てた12枚はぎの逸品" height="490" src="/image/goods/51411_03.jpg" width="580"/></p>
+<h2>ほっそり、ゆったり、パリの彩り。あなたの美が目覚める秋色ワンピース</h2>
+<p>
+		華やかなのに、落ち着きのある大人の赤…。マダム・ナディーヌがこだわったのは深みのあるトーンと暖色の効果でフェミニンな雰囲気を強調するワインレッドカラー。ヴィンテージワインを思わせる高貴な印象で、お友達とのお茶会からあらたまった場所まで幅広く活躍します。さらに素晴らしいのが、しっとり滑らかな手触りも魅力の上質生地で仕立てた、空気をはらんで豊かに広がる12枚はぎのAライン。肩や胸はすっきりと、腰回りはふんわりカバーし、脚は華奢に見せてくれる絶妙なシルエットを叶えながらも驚くほどゆったりした着心地はマダム・ナディーヌだからこそ。さらに首もとを美しくカバーする知的な立襟や端正なくるみボタン、袖口のスリットなど、細かな部分にまでパリのセンスが尽くされました。
+	</p>
+<p class="center-img"><img alt="凛と美しい表情を演出する立襟が首もとをカバーして、若々しく。／ワインレッドカラーの共布で丹念に仕立てたくるみボタン。正統派の印象が漂います。／お手もとの所作を美しく見せるスリット使いの袖口。／両サイドにはハンカチや小物等に便利な程よい大きさのポケットをプラス。" height="280" src="/image/goods/51411_04.jpg" width="580"/></p>
+<p>
+		マダム・ナディーヌの「スリムに見える魔法の服」＜ワインレッド クラッシィ＞クチュール仕立ての12枚はぎ ゆったりAラインワンピースはI･E･I社の特別企画商品です。ご家庭で洗えるウォッシャブルでお手入れ簡単な本品を、どうぞこの好機にお求めください。
+	</p>
+<p class="center-img"><img alt="ボタンをはずしてコート風に。流れるようなドレープも美しい、重ね着が完成" height="560" src="/image/goods/51411_05.jpg" width="450"/></p>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="ナディーヌ・ビュタン ロゴ" height="20" src="/image/goods/51411_06.jpg" width="271"/>　ナディーヌ・ビュタン</h3>
+<p class="flt-r"><img alt="ナディーヌ・ビュタン近影" height="167" src="/image/goods/51411_07.jpg" width="125"/></p>
+<p>
+				フランスを代表する衣装デザイナー。映画、演劇、テレビドラマのコスチューム・デザインを数多く手がけ、鬼才ジャン・リュック・ゴダールの映画の衣装スタイリストとして活躍。また体の不自由な人のためのファッション・デザインにも積極的に取り組んでいる。
+			</p>
+<p class="center-img">
+<img alt="この一着にかけられたのは、あなたがきれいに見える特別な赤とシルエットの魔法。ナディーヌ・ビュタン
+" height="231" src="/image/goods/51411_08.jpg" width="330"/>
+</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

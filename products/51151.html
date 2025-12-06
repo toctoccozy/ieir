@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ $goods->getTitleTag() }}</title>
+    <meta name="description" content="{{ $goods->getSeoDescription() }}">
+    <meta name="keywords" content="{{ $goods->getSeoKeywords() }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="og:url" content="{{ config('app.url') . '/' . $goods->getM1prgc() }}" />
+	<meta property="og:title" content="{{ $goods->getTitleTag() }}" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="{{ $goods->getTwDescription() }}" />
+	<meta property="og:site_name" content="{{ $goods->isPremico() ? 'PREMICO(プレミコ) オンラインショップ' : 'I・E・Iオンラインショップ' }}" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/customization.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-white">
+    <div class="min-h-screen mx-auto">
+    <?php include public_path() . '/include/header_new.html'; ?>
+
+        <!-- パンくずナビ -->
+        <nav class="bread-clumbs text-sm sm:text-base text-gray-600 mx-auto pl-3 leading-snug tracking-tighter max-w-6xl mt-4">
+            <a href="/{{ $goods->getShowFlagName() }}" class="text-blue-800 hover:text-blue-400 transition-colors">{{ $goods->getShowFlagJpName() }}</a>
+                @if ($goods->getIeiCategory()->isNotEmpty())
+                    <span class="mx-2">｜</span>
+                    <a href="/collection/{{ $goods->getIeiCategory()->first()->getIeiCategoryName() }}" class="text-blue-800 hover:text-blue-400 transition-colors">
+                        {{ $goods->getIeiCategory()->first()->getIeiCategoryJpName() }}
+                    </a>
+                @endif
+        </nav>
+
+        <!-- メインコンテンツ -->
+        <main class="pt-4 pb-2 px-1 mx-auto max-w-5xl">
+            <!-- 商品説明 -->
+            <section class="mx-auto max-w-3xl">
+                <!-- トップ画像 -->
+                <div class="p-3">
+                    <img src="/image/goods/51151_01.jpg" alt="白木結衣 筆 絹本肉筆画　春月夜" class="w-full mx-auto h-auto">
+                </div>
+                <!-- 商品紹介文 -->
+                <div class="p-3">
+                    <p class="text-start leading-relaxed font-bold">
+                        春の到来を告げる花々に夜空に浮かぶ朧月穏やかな里山の情景に、うさぎの親子が佇んで──<br>
+                        どこか懐かしさを感じる自然豊かな里山の春月夜を画題に古来より長寿や幸運の象徴とされてきたうさぎが安らぎと幸福感をもたらす貴重な肉筆作品。<br>
+                        「前田青邨記念大賞」「日展」入選に輝く白木結衣画伯がやわらかな朧月の光から、花びらの一枚に至るまで繊細な筆づかいで情緒豊かに描き上げます。
+                    </p>
+                </div>
+                <!-- A:商品メイン画像＆箇条書き(main_600x600画像がある場合) -->
+                <div class="flex flex-col md:flex-row p-3">
+                    <img src="/image/goods/51151_main_600x600.jpg" alt="白木結衣筆　絹本肉筆画　春月夜" class="w-full md:w-[50%] mx-auto h-auto p-4">
+                    <ul class="text-start w-full md:w-[50%] md:p-3 leading-relaxed">
+                        <li>■気鋭の日本画家によるオリジナル肉筆画</li>
+                        <li>■正絹絵絹に一筆一筆丹念に手描き</li>
+                        <li>■干支にちなんだ「卯（兎）」の作品</li>
+                        <li>■作品の趣に合わせた典雅な掛け軸または金箔仕上げの飾り額にてご提供</li>
+                        <li>■作者の直筆署名・題字・落款入りの桐箱または題箋が付属</li>
+                    </ul>
+                </div>
+
+                <!-- 商品詳細 -->
+                <div class="flex flex-col space-y-3 mt-6">
+                    <img src="/image/goods/51151_05.jpg" alt="額装：画寸＝約45×52･5センチ、額寸＝約63･5×71×厚さ3センチ" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <img src="/image/goods/51151_08.jpg" alt="花の香りがほのかに漂う春の夜。朧月のやわらかな光を眺めていると、心がほっと落ち着き、優しくあたたかな気持ちに包まれます。このたび描かせていただく『春月夜』は、生命の輝きで彩られた里山の自然を題材に、幸せの象徴であるうさぎと、春の夜ならではの幻想的な雰囲気を重ねて表現した作品です。月の光が、淡く穏やかに野原を照らすように、世の中が光に満ち、日々の暮らしが幸せであふれるよう願いを込めました。この作品が皆さまのもとへ安らぎを運び、心豊かに過ごす一助となれば幸いです。白木結衣" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        うっすらと霞がかった稜線に、夜空に浮かぶ朧月。<br>
+                        春の花々で鮮やかに彩られた野原では、あたたかな風に誘われて現れたうさぎの親子が、やわらかな光を纏う月を見上げて──いつの時代も変わることなく繰り返されてきた里山の春の情景。<br>
+                        このたび、現代日本画壇で実績を重ねてきた注目の女流画家、白木結衣画伯により、吉祥の動物として古来より親しまれてきたうさぎと春の風情を描いた貴重な肉筆作品を、特別にご案内できる運びとなりました。<br>
+                        眺める人々の心を明るく照らし、幸せが満ちあふれるようにとの祈りが込められた名作『春月夜』のご案内です。
+                    </p>
+                    <h2 class="text-white rounded-md font-bold text-lg c-bg-collection-gradient text-center sm:p-3 py-2 mx-1">
+                        注目の女流画家が一筆一筆心を込めて描く<br>春の夜の詩情豊かな風景
+                    </h2>
+                    <div class="flex flex-col sm:flex-row">
+                        <img src="/image/goods/51151_03.jpg" alt="白木結衣画伯の繊細な筆致" loading="lazy" class="mx-auto max-w-[10rem] p-3 sm:m-3 object-contain">
+                        <p class="text-start px-1 sm:p-3 leading-relaxed">
+                            白木結衣画伯は、「前田青邨記念大賞」「日展」をはじめとする権威ある公募展に相次いで入選を果たすなど、若くして輝かしい実績を積み上げてきた実力派です。<br>
+                            みずみずしい感性で自然の情景をとらえた作品世界は、細部に至るまで白木画伯ならではの、たおやかな情緒と趣にあふれ、繊細優美な画調とともに高い評価を得ています。<br>
+                            ここにご案内するのは、待ちわびた春の到来を、朧月に照らされた里山の情景にうつして描いた肉筆画。<br>
+                            白木画伯がその麗筆をふるい、毛の柔らかさが伝わってくるほど丹念に描き込んだ愛らしいうさぎの姿や、野山に咲き誇る春の花々、夜空に浮かび辺りを明るく照らす月と、詩情豊かなモチーフを一風景に表現しました。
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row-reverse">
+                        <img src="/image/goods/51151_04.jpg" alt="朧月に照らされた菜の花" loading="lazy" class="mx-auto max-w-[10rem] p-3 sm:m-3 object-contain">
+                        <p class="text-start px-1 sm:p-3 leading-relaxed">
+                            濃紺の夜空から月光が明るく降り注ぐ野原への、グラデーションも美しい背景。<br>
+                            霞がかった稜線がぼんやりと浮かび上がるその向こうには、満月の朧月がやわらかな光をたたえ、幻想的な春の夜を演出しています。<br>
+                            手前の野原を彩るのは、つくしやたんぽぽ、蓮華に菜の花、桜といった花々。<br>
+                            特に桜は、月明かりに浮かぶシルエットとしてさりげなく描写され、白木画伯の洗練されたセンスが遺憾なく発揮されています。<br>
+                            そして、毛の一本一本に至るまでふんわりと立体的に描かれたのは三羽のうさぎ。<br>
+                            うさぎは古来より長寿や子孫繁栄、幸せの象徴としても親しまれており、跳ねる特徴から卯年は景気が良くなるともいわれている吉祥の動物です。<br>
+                            その愛らしいうさぎたちが、まるで月を愛でるかのように親子で仲睦まじく憩いの時間を過ごしている姿は、心癒されるだけでなく、眺めているだけで幸せな気持ちで満たされそうなほど、いきいきとした魅力にあふれています。<br>
+                            肉筆画だからこそ直にご覧いただける巧みな筆はこびや色彩美とともに、心温まる世界観をお楽しみください。
+                        </p>
+                    </div>
+                    <img src="/image/goods/51151_02.jpg" alt="軸装：画寸＝約45×52·8センチ、軸寸＝約136×68センチ（軸先寸＝73センチ）" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <h2 class="text-white rounded-md font-bold text-lg c-bg-collection-gradient text-center sm:p-3 py-2 mx-1">
+                        暮らしを彩り幸福を願う吉祥の美術作品<br>画趣に合わせた掛け軸と飾り額をご用意
+                    </h2>
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        暮らしに彩りと安らぎをもたらし、幸福を願う吉祥の芸術作品、白木結衣筆『春月夜』は、インペリアル・アートギャラリーの特別企画商品です。<br>
+                        日本画の繊細な表現が際立つ「正絹絵絹」を用いた絹本画で、小唐草貴船緞子の中廻しに、木瓜紋金襴の一文字・風帯、軸先には陶製黄瀬戸釉美濃焼を用いた風雅な軸装、または金箔仕上げ木製枠と金襴張りマットを使用した豪華な額装のいずれかよりお選びいただけます。<br>
+                        なお、本作品は、一点一点白木画伯ご自身による手描きのため、ご提供数にも限りがございます。<br>
+                        ぜひお早めにお申し込みください。
+                    </p>
+                    <img src="/image/goods/51151_06.jpg" alt="大和三段一文字廻し表装の掛け軸：掛け軸には、画伯直筆の題字・署名・落款が入った桐箱が付属します。／金箔仕上げの飾り額：飾り額には、画伯直筆の題字・署名・落款が入った桐製の題箋が付属します。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <div class="p-3 m-1 border c-border-collection-gradient border-1 rounded-md">
+                        <h3 class="font-bold p-2">白木結衣　略歴</h3>
+                        <p class="leading-relaxed p-2 text-sm">
+                            2007年　岐阜県立加納高等学校美術科（日本画専攻）卒業<br>
+                            2008年　金沢美術工芸大学 美術工芸学部美術科（日本画専攻）入学<br>
+                            2010年　第5回前田青邨記念大賞 入選／グループ展「あれから四年・・・」展<br>
+                            2011年　第5回奈良県万葉日本画大賞展 入選／第43回日展 初入選<br>
+                            2012年　金沢美術工芸大学 美術工芸学部美術科（日本画専攻）卒業／第23回臥龍桜日本画大賞展 入選<br>
+                            2014年　西濃美術展出品／第64回大垣市美術展 日本画奨励賞 受賞<br>
+                            2015年　第7回前田青邨記念大賞 入選
+                        </p>
+                        <img src="/image/goods/51151_07.jpg" alt="白木結衣 近影と作業風景。作品は一点一点、白木画伯が心を込めて描き上げた肉筆画。繊細で細やかな筆はこびや、絶妙な絵の具の滲みなど、肉筆画だからこその味わい深さをお楽しみください。" loading="lazy" class="w-full max-w-sm mx-auto h-auto p-4">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 価格・購入エリア -->
+            <section id="price_area" class="my-8 w-full mx-auto">
+                <!-- 商品情報 -->
+                <div class="flex flex-col">
+                    <!-- 価格・購入情報 -->
+                    @if ($goods->isConnectGoodsAllOpenFlg() === true)
+                        @foreach ($goods->getConnectGoods() as $connect_goods)
+                        <div class="p-4 flex flex-col md:flex-row md:p-2 md:ml-8">
+                            <div class="flex flex-col md:w-[40%]">
+                                <div class="mb-2 pl-2">
+                                    <span class=" text-gray-900 tracking-wide">商品番号：{{ $connect_goods->getItemNo() }}</span>
+                                </div>
+                                <h3 class="border-l-8 border-gray-800 pl-2 text-xl font-bold text-gray-800 mb-4 md:mb-1 tracking-tighter">
+                                    {{ $connect_goods->getGoodsName() }}
+                                </h3>
+                                @if ($connect_goods->isNgCartMessage() || $connect_goods->isOkCartMessage())
+                                    @if ($connect_goods->getMessage() !== '')
+                                        <div class="py-2">
+                                            <p class="text-blue-700 font-bold text-lg">
+                                                {!! $connect_goods->getMessage() !!}
+                                            </p>
+                                        </div>
+                                    @endif
+                                @else
+                                    @if ($goods->getGoodsDeliveryText() !== '')
+                                        <div class="py-2">
+                                            <p class="text-blue-700 font-bold text-lg">
+                                                {!! $goods->getGoodsDeliveryText() !!}
+                                            </p>
+                                        </div>
+                                    @endif
+                                @endif
+                                <div class="space-y-2 md:space-y-1 mb-6 text-gray-600">
+                                    <p class="text-lg">{!! $connect_goods->getSoroM1shsg_0_text() !!}</p>
+                                    <p class="">{!! $connect_goods->getSoroM1shsg_1_text() !!}</p>
+                                    <p class="ml-4">{!! $connect_goods->getSoroM1tsry_text() !!}</p>
+                                </div>
+                            </div>
+                            @if ($connect_goods->isDisplayOnly() === false)
+                                <div class="px-6 pb-3 md:w-[60%]">
+                                    <h4 class="font-bold text-gray-800 mb-3">仕　様</h4>
+                                    <p class="leading-snug text-sm">
+                                        @if ($connect_goods->getItemNo() == '51151501')
+                                        ●材質：本紙＝絵絹（正絹）　天地＝綿紬　中廻し＝小唐草貴船緞子　一文字・風帯＝木瓜紋金襴　軸先＝陶製黄瀬戸釉美濃焼<br>
+                                        ●サイズ（約）：画寸＝45×52.8cm　軸寸＝136×68cm（軸先寸＝73cm）<br>
+                                        ●重さ（約）：570g<br>
+                                        ●大和三段一文字廻し表装<br>
+                                        ●日本製<br>
+                                        <br>
+                                        ※肉筆画のため、一点一点色合いなどが異なる場合がございます。
+                                        @elseif ($connect_goods->getItemNo() == '51151502')
+                                        ●材質：本紙＝絵絹（正絹）　額＝金箔仕上げ木製枠、金襴張りマット、前面アクリル板<br>
+                                        ●サイズ（約）：画寸＝45×52.5cm　額寸＝63.5×71×厚さ３cm<br>
+                                        ●重さ（約）：3.2kg<br>
+                                        ●高級額装<br>
+                                        ●日本製<br>
+                                        <br>
+                                        ※肉筆画のため、一点一点色合いなどが異なる場合がございます。
+                                        @endif
+                                    </p>
+                                    <form method="post" action="/cart" name="cartForm{{ $connect_goods->getItemNo() }}">
+                                        <input type="hidden" name="item_no" value="{{ $connect_goods->getItemNo() }}">
+                                        <input type="hidden" name="medium_code" value="{{ $connect_goods->getMediumCode() }}">
+                                        <input type="hidden" name="amount1" value="1">
+                                        <input type="hidden" name="ex_volume" value="{{ $connect_goods->isVolume() }}">
+                                        @if ($connect_goods->isInitial() && !$connect_goods->isNgCartMessage())
+                                            <span class="atn">{!! $connect_goods->getInitialTitle() !!}</span><br>
+                                            <input type="text" name="initial" value=""><br>
+                                        @endif
+                                        @if ($connect_goods->isCosize() && !$connect_goods->isNgCartMessage())
+                                            @if ($connect_goods->isColor())
+                                                <div>
+                                                    <span class="select">
+                                                        <select name="m5clr" class="m5clr{{ $connect_goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                            data-item_no="{{ $connect_goods->getItemNo() }}" data-data_type="m5clr">
+                                                            <option value="">▼お選びください</option>
+                                                            @foreach ($connect_goods->getColorArray() as $key => $color)
+                                                                <option value="{{ $color->m5clr }}">
+                                                                    {{ $color->color_name }}
+                                                                </option>
+                                                            @endforeach
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                                @if ($connect_goods->isSize() || $connect_goods->isType())
+                                                    <br>
+                                                @endif
+                                            @else
+                                                <input type="hidden" name="m5clr" value="">
+                                            @endif
+                                            @if ($connect_goods->isSize())
+                                                <div>
+                                                    <span class="select">
+                                                        <select name="m5siz" class="m5siz{{ $connect_goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                            data-item_no="{{ $connect_goods->getItemNo() }}" data-data_type="m5siz">
+                                                            <option value="">▼お選びください</option>
+                                                            @if (!$connect_goods->isColor())
+                                                                @foreach ($connect_goods->getSizeArray() as $size)
+                                                                    <option value="{{ $size->m5siz }}">
+                                                                        {{ $size->size_name }}
+                                                                    </option>
+                                                                @endforeach
+                                                            @endif
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                                @if ($connect_goods->isType())
+                                                    <br>
+                                                @endif
+                                            @else
+                                                <input type="hidden" name="m5siz" value="">
+                                            @endif
+                                            @if ($connect_goods->isType())
+                                                <div>
+                                                    <span class="select">
+                                                        <select name="type_code" class="type_code{{ $connect_goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                            data-item_no="{{ $connect_goods->getItemNo() }}" data-data_type="type_code">
+                                                            <option value="">▼お選びください</option>
+                                                            @if (!$connect_goods->isColor() && !$connect_goods->isSize())
+                                                                @foreach ($connect_goods->getTypeArray() as $type)
+                                                                    <option value="{{ $type->type_code }}">
+                                                                        {{ $type->type_name }}
+                                                                    </option>
+                                                                @endforeach
+                                                            @endif
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                            @else
+                                                <input type="hidden" name="type_code" value="">
+                                            @endif
+                                        @endif
+                                        <div class="md:w-[70%] mx-auto mt-4">
+                                            <button type="button" data-item_no="{{ $connect_goods->getItemNo() }}" class="add-cart w-full c-btn-amber-gradient py-4 px-6 rounded-lg flex items-center justify-between transition-all duration-200 shadow-md hover:shadow-lg">
+                                                <?xml version="1.0" encoding="utf-8"?>
+                                                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none;">
+                                                    <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="flex-1 text-center text-lg font-bold" style="pointer-events: none;">カートに入れる</span>
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="pointer-events: none;">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <div class="flex flex-col lg:flex-row lg:justify-between space-y-3 pt-3">
+                                        <div class="text-center">
+                                            <a href="/inquiry/index?item_no={{ $connect_goods->getItemNo() }}" class="text-iei-primary hover:text-iei-secondary underline transition-colors sm:text-base">この商品をメールで問い合わせ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+                        </div>
+                        <div class="border-t border-gray-200 mx-4 mb-4"></div>
+                        @endforeach
+                    @endif
+                    <!-- お電話 -->
+                    <div class="flex flex-col items-center">
+                        <div class="text-sm md:text-base text-gray-600 tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
+                        <div class="flex items-center space-x-1 -mt-1">
+                            <div class="w-5 h-5 md:w-8 md:h-8 bg-gray-600 rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 md:w-5 md:h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                </svg>
+                            </div>
+                            <a href="tel:0120-247-417" class="text-2xl md:text-3xl text-gray-600 hover:opacity-80 duration-200">0120-247-417</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- <div class="border-t border-gray-300 mb-4 xl:w-[80%] mx-auto"></div> -->
+        <!-- 案内セクション -->
+        <?php include public_path() . '/include/footer_guidance.html'; ?>
+
+        <!-- ページトップボタン -->
+        <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
+            <a href="#" class="c-bg-second hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform  hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- フッターコンポーネント -->
+    <?php include public_path() . '/include/footer_new.html'; ?>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/js/product.js"></script>
+    <script src="{{ asset('/sys/js/goods.js') }}"></script>
+    <script src="{{ asset('/sys/js/common.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ $goods->getTitleTag() }}</title>
+    <meta name="description" content="{{ $goods->getSeoDescription() }}">
+    <meta name="keywords" content="{{ $goods->getSeoKeywords() }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="og:url" content="{{ config('app.url') . '/' . $goods->getM1prgc() }}" />
+	<meta property="og:title" content="{{ $goods->getTitleTag() }}" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="{{ $goods->getTwDescription() }}" />
+	<meta property="og:site_name" content="{{ $goods->isPremico() ? 'PREMICO(プレミコ) オンラインショップ' : 'I・E・Iオンラインショップ' }}" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/customization.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-white">
+    <div class="min-h-screen mx-auto">
+    <?php include public_path() . '/include/header_new.html'; ?>
+
+        <!-- パンくずナビ -->
+        <nav class="bread-clumbs text-sm sm:text-base text-gray-600 mx-auto pl-3 leading-snug tracking-tighter max-w-6xl mt-4">
+            <a href="/{{ $goods->getShowFlagName() }}" class="text-blue-800 hover:text-blue-400 transition-colors">{{ $goods->getShowFlagJpName() }}</a>
+                @if ($goods->getIeiCategory()->isNotEmpty())
+                    <span class="mx-2">｜</span>
+                    <a href="/collection/{{ $goods->getIeiCategory()->first()->getIeiCategoryName() }}" class="text-blue-800 hover:text-blue-400 transition-colors">
+                        {{ $goods->getIeiCategory()->first()->getIeiCategoryJpName() }}
+                    </a>
+                @endif
+        </nav>
+
+        <!-- メインコンテンツ -->
+        <main class="pt-4 pb-2 px-1 mx-auto max-w-5xl">
+            <!-- 商品説明 -->
+            <section class="mx-auto max-w-3xl">
+                <!-- トップ画像 -->
+                <div class="p-3">
+                    <img src="/image/goods/51161_01.jpg" alt="純金.999と天然ダイヤモンド＜インフィニティ・エレガンス＞ハンドメイド宝飾ネックレス" class="w-full mx-auto h-auto">
+                </div>
+                <!-- 追加画像 -->
+                <div class="p-3">
+                    <img src="/image/goods/51161_02.jpg" alt="ネックレス正面アップ" class="w-full max-w-md mx-auto h-auto">
+                </div>
+                <!-- 商品紹介文 -->
+                <div class="p-3">
+                    <p class="text-start leading-relaxed font-bold">
+                        「純金の<ruby><rb>∞</rb><rp>（</rp><rt>インフィニティ</rt><rp>）</rp></ruby>」に悠久の美と幸福への願いを込めて──<br>
+                        最高品位の純金.999と永遠の美の象徴・天然ダイヤモンドを用いた<br>
+                        エレガントな輝きにあふれるハイジュエリー。<br>
+                        日本の熟練職人がハンドメイドで作り上げた<br>
+                        心満たされるほどの無限大の煌めきを<br>
+                        格式ある英国宝石学協会会員に輝く宝飾芸術家から。
+                    </p>
+                </div>
+                <!-- A:商品メイン画像＆箇条書き(main_600x600画像がある場合) -->
+                <div class="flex flex-col md:flex-row p-3">
+                    <img src="/image/goods/51161_main_600x600.jpg" alt="＜インフィニティ・エレガンス＞ハンドメイド宝飾ネックレス" class="w-full md:w-[50%] mx-auto h-auto p-4">
+                    <ul class="text-start w-full md:w-[50%] md:p-3 leading-relaxed">
+                        <li>■格式ある英国宝石学協会会員によるオリジナルデザイン</li>
+                        <li>■創業60余年の歴史を誇る老舗、英工芸の純金細工職人による手作り手仕上げ</li>
+                        <li>■無限に広がる輝きと幸せをデザインした「 ∞（インフィニティ）」</li>
+                        <li>■最高品位.999の純金製</li>
+                        <li>■天然ダイヤモンド1石</li>
+                        <li>■軽やかな着け心地</li>
+                    </ul>
+                </div>
+
+                <!-- 商品詳細 -->
+                <div class="flex flex-col space-y-3 mt-6">
+                    <img src="/image/goods/51161_03.jpg" alt="着用イメージ" loading="lazy" class="w-full max-w-sm mx-auto h-auto p-4">
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        古代エジプトの時代から富と権力の象徴とされ、永遠に輝き続ける不変性から人々を魅了し続けている純金。<br>
+                        「地中の太陽」とも称され、その明るく力強い輝きで、人々に自信とエネルギーをもたらすともいわれています。<br>
+                        そんな純金を惜しみなく用いて、格式ある英国宝石学協会会員である著名な宝飾芸術家、ロス・マンセル氏がかつてないほど豊かな煌めきを放つ、高級宝飾ネックレスをデザインしました。<br>
+                        未来永劫変わらぬ資産価値を誇る純金.999と、永遠の美のシンボルである天然ダイヤモンドの2つの輝きが、あなたの心を幸せで満たす＜インフィニティ・エレガンス＞ハンドメイド宝飾ネックレスの誕生です。
+                    </p>
+                    <img src="/image/goods/51161_05.jpg" alt="純金細工職人が匠の技を駆使して生み出す∞（インフィニティ）の曲線美" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <h2 class="text-white rounded-md font-bold text-lg c-bg-collection-gradient text-center sm:p-3 py-2 mx-1">
+                        幾重にも連なる黄金の煌めき<br>
+                        熟練職人の卓越の技が生む、圧倒的な美しさ
+                    </h2>
+                    <div class="flex flex-col sm:flex-row">
+                        <img src="/image/goods/51161_04.jpg" alt="中央に煌めくダイヤモンド" loading="lazy" class="mx-auto max-w-[10rem] p-3 sm:m-3 object-contain">
+                        <p class="text-start px-1 sm:p-3 leading-relaxed">
+                            色あせることのない黄金の輝きに、悠久の美と幸福を願って──ロス・マンセル氏が想いを込めてデザインした、幾重にも連なる「純金の∞」の宝飾ネックレス。制作にあたったのは、創業60余年の歴史を誇る純金細工の老舗「英工芸」。熟練職人が、一点一点ハンドメイドで、匠の技を駆使した繊細かつエレガントな作品です。パーツから留め具に至るまで、すべて純度99.9％の純金で作られた贅沢な逸品。メインとなる∞パーツは、大きさの異なる3種類のパーツが用いられ、作品にさりげなく奥行きを持たせるために、中央のダイヤモンドに向かって徐々にサイズが大きくなるよう繋ぎ合わせています。さらに、2連に重なった豪華なデザインも魅力。光の当たる角度によって絶妙に変化する純金の艶めきとダイヤモンドの煌めきが重なり、いっそうラグジュアリーで優美な輝きを胸元にもたらすことでしょう。<br>
+                            身に着けるたびに、自信と心の高鳴りを感じさせる本作品。煌びやかな純金製でありながらも軽やかな着け心地で、幅広いシーンでお召しいただけますので、この好機にぜひお申し込みください。
+                        </p>
+                    </div>
+                    <img src="/image/goods/51161_06.jpg" alt="特製ギフトケースに収めてお届けします。大切な方への贈り物にも最適です。" loading="lazy" class="w-full max-w-md mx-auto h-auto p-4">
+                    <div class="p-3 m-1 border c-border-collection-gradient border-1 rounded-md">
+                        <h3 class="font-bold p-2">高騰の一途をたどる美しくも価値ある貴金属 「純金」</h3>
+                        <p class="leading-relaxed flex p-2 flex-col sm:flex-row">
+                            <span class="flex-1">眩い黄金の輝きで世界中の人々を魅了する「純金」は、地球上の採掘可能な埋蔵量のうち既に75％が産出されたといわれており、希少化が進むことで価格は高騰の一途をたどっています。本作品は、資産としても注目される純金を99.9％という純度そのままに流麗な造形で仕上げたジュエリー。ダイヤモンドとともに煌めく∞（インフィニティ）のフォルムが、無限の美と価値を予感させます。</span>
+                        </p>
+                    </div>
+                    <div class="p-3 m-1 border c-border-collection-gradient border-1 rounded-md">
+                        <h3 class="font-bold p-2">ロス・マンセル</h3>
+                        <p class="leading-relaxed flex p-2 flex-col sm:flex-row">
+                            <span class="flex-1">イギリスが生んだ屈指の女流宝飾芸術家。若くして権威ある英国宝石学協会に名を連ね、英国王室の宝飾史やデザインにも造詣が深い。毎年、華麗で格調高い宝飾作品を発表し、国際ジュエリー・コンテストをはじめ、内外のコンクールで数多くの賞を受賞。宝飾界の最高峰に君臨するデザイナーであることを証明しつづけている。</span>
+                            <img src="/image/goods/51161_07.jpg" alt="ロス・マンセル近影" class="w-32 object-contain sm:mt-0 sm:ml-2 mx-auto sm:mx-0">
+                        </p>
+                    </div>
+                    <div class="p-3 m-1 border c-border-collection-gradient border-1 rounded-md">
+                        <h3 class="font-bold p-2">英工芸</h3>
+                        <p class="leading-relaxed flex p-2 flex-col sm:flex-row">
+                            <span class="flex-1">1955年創業。社団法人日本ジュエリー協会、日本貴金属製鎖工業組合に所属し、熟練の職人技を駆使した純金細工等のハンドメイドジュエリーを制作。1998年のJJAコンテストでは東京都知事賞および日本商工会議所会頭賞、2002年には中小企業庁長官賞など、国内のジュエリー・コンテストにて多数の受賞歴を誇る。</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 価格・購入エリア -->
+            <section id="price_area" class="my-8 w-full mx-auto">
+                <!-- 商品画像以下 -->
+                <div class="flex flex-col md:flex-row">
+                    <!-- 商品画像 -->
+                    <div class="flex justify-center p-12 sm:px-32 md:p-4 md:w-[40%] md:items-start">
+                        <!-- 拡大画像 -->
+                        <img src="/image/goods/51161_main_600x600.jpg"
+                            alt="商品詳細画像"
+                            loading="lazy"
+                            class="w-full h-auto object-contain">
+                    </div>
+
+                    <!-- 価格・購入情報 -->
+                    <div class="p-4 md:w-[60%] md:p-2 md:ml-8">
+                        <!-- 商品番号 -->
+                        <div class="mb-2 pl-2">
+                            <span class=" text-gray-900 tracking-wide">商品番号：{{ $goods->getItemNo() }}</span>
+                        </div>
+                        <!-- 商品名 -->
+                        <h3 class="border-l-8 border-gray-800 pl-2 text-xl font-bold text-gray-800 mb-4 md:mb-1 tracking-tighter">
+                            {{ $goods->getGoodsName() }}
+                        </h3>
+
+                        <!-- 納期・お届け -->
+						@if ($goods->isNgCartMessage() || $goods->isOkCartMessage())
+							<!-- メッセージあり 受注NG or OK -->
+							<div class="py-2"><p class="text-blue-700 font-bold text-lg">{!! $goods->getMessage() !!}</p></div>
+						@else
+							<!-- メッセージなし 納期表示 -->
+							<div class="py-2"><p class="text-blue-700 font-bold text-lg">{!! $goods->getGoodsDeliveryText() !!}</p></div>
+						@endif
+
+                        <!-- 価格 -->
+                        <div class="space-y-2 md:space-y-1 mb-6 text-gray-600">
+                            <p class="text-lg">{!! $goods->getSoroM1shsg_0_text() !!}</p>
+                            <p class="">{!! $goods->getSoroM1shsg_1_text() !!}</p>
+                            <p class="ml-4">{!! $goods->getSoroM1tsry_text() !!}</p>
+                        </div>
+
+                        <!-- 仕様詳細 -->
+                        <div class="px-6 border-b border-gray-200 pb-3">
+                            <h4 class="font-bold text-gray-800 mb-3">仕　様</h4>
+                            <p class="leading-snug text-sm">
+                                ●材質：24金（.999金）、ダイヤモンド1石（約0.02ct）<br>
+                                ●サイズ（約）：長さ45cm<br>
+                                ●重さ（約）：6.6g<br>
+                                ●日本製
+                            </p>
+
+                            <!-- 購入フォーム -->
+                            <!-- 紐づけコードなし カート -->
+                            <!-- 表示のみ 以外 -->
+                            @if ($goods->isDisplayOnly() === false && !$goods->isNgCartMessage())
+                                <form method="post" action="/cart" name="cartForm{{ $goods->getItemNo() }}">
+                                <input type="hidden" name="item_no" value="{{ $goods->getItemNo() }}">
+                                <input type="hidden" name="medium_code" value="{{ $goods->getMediumCode() }}">
+                                <input type="hidden" name="amount1" value="1">
+                                <input type="hidden" name="ex_volume" value="{{ $goods->isVolume() }}">
+
+								<!-- イニシャルの指定あり -->
+                                @if ($goods->isInitial() && !$goods->isNgCartMessage())
+									<span class="atn">{!! $goods->getInitialTitle() !!}</span><br>
+									<input type="text" name="initial" value=""><br>
+								@endif
+
+                                <!-- サイズ・カラー選択 -->
+								@if ($goods->isCosize() && !$goods->isNgCartMessage())
+									@if ($goods->isColor())
+                                        <div>
+                                            <span class="select">
+                                                <select name="m5clr" class="m5clr{{ $goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                    data-item_no="{{ $goods->getItemNo() }}" data-data_type="m5clr">
+                                                    <option value="">▼お選びください</option>
+                                                    @foreach ($goods->getColorArray() as $key => $color)
+                                                        <option value="{{ $color->m5clr }}">
+                                                            {{ $color->color_name }}
+                                                        </option>
+                                                    @endforeach
+                                                </select>
+                                            </span>
+                                        </div>
+                                        @if ($goods->isSize() || $goods->isType())
+                                            <br>
+                                        @endif
+    								@else
+	    								<input type="hidden" name="m5clr" value="">
+		    						@endif
+			    					@if ($goods->isSize())
+                                        <div>
+                                            <span class="select">
+                                                <select name="m5siz" class="m5siz{{ $goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                    data-item_no="{{ $goods->getItemNo() }}" data-data_type="m5siz">
+                                                    <option value="">▼お選びください</option>
+                                                    @if (!$goods->isColor())
+                                                        @foreach ($goods->getSizeArray() as $size)
+                                                            <option value="{{ $size->m5siz }}">
+                                                                {{ $size->size_name }}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </span>
+                                        </div>
+                                        @if ($goods->isType())
+                                            <br>
+                                        @endif
+                                    @else
+                                        <input type="hidden" name="m5siz" value="">
+                                    @endif
+                                    @if ($goods->isType())
+                                        <div>
+                                            <span class="select">
+                                                <select name="type_code" class="type_code{{ $goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                    data-item_no="{{ $goods->getItemNo() }}" data-data_type="type_code">
+                                                    <option value="">▼お選びください</option>
+                                                    @if (!$goods->isColor() && !$goods->isSize())
+                                                        @foreach ($goods->getTypeArray() as $type)
+                                                            <option value="{{ $type->type_code }}">
+                                                                {{ $type->type_name }}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </span>
+                                        </div>
+                                    @else
+                                        <input type="hidden" name="type_code" value="">
+                                    @endif
+                                @endif
+                                @if (!$goods->isNgCartMessage())
+                                    <div class="md:w-[70%] mx-auto mt-4">
+                                        <button type="button" data-item_no="{{ $goods->getItemNo() }}" class="add-cart w-full c-btn-amber-gradient py-4 px-6 rounded-lg flex items-center justify-between transition-all duration-200 shadow-md hover:shadow-lg">
+                                            <?xml version="1.0" encoding="utf-8"?>
+                                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none;">
+                                                <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span class="flex-1 text-center text-lg font-bold" style="pointer-events: none;">カートに入れる</span>
+                                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="pointer-events: none;">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                @endif
+    					        </form>
+                            @endif
+                            <div class="flex flex-col lg:flex-row lg:justify-between space-y-3 pt-3">
+                            <!-- お電話 -->
+                            <div class="flex flex-col items-center">
+                                <div class="text-sm md:text-base text-gray-600 tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
+                                    <div class="flex items-center space-x-1 -mt-1">
+                                        <div class="w-5 h-5 md:w-8 md:h-8 bg-gray-600 rounded-full flex items-center justify-center">
+                                            <svg class="w-3 h-3 md:w-5 md:h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                            </svg>
+                                        </div>
+                                        <a href="tel:0120-247-417" class="text-2xl md:text-3xl text-gray-600 hover:opacity-80 duration-200">0120-247-417</a>
+                                    </div>
+                                </div>
+                                <!-- お問い合わせ -->
+                                <div class="text-center">
+                                    <a href="/inquiry/index?item_no={{ $goods->getItemNo() }}" class="text-iei-primary hover:text-iei-secondary underline transition-colors sm:text-base">この商品をメールで問い合わせ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- <div class="border-t border-gray-300 mb-4 xl:w-[80%] mx-auto"></div> -->
+        <!-- 案内セクション -->
+        <?php include public_path() . '/include/footer_guidance.html'; ?>
+
+        <!-- ページトップボタン -->
+        <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
+            <a href="#" class="c-bg-second hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform  hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- フッターコンポーネント -->
+    <?php include public_path() . '/include/footer_new.html'; ?>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/js/product.js"></script>
+    <script src="{{ asset('/sys/js/goods.js') }}"></script>
+    <script src="{{ asset('/sys/js/common.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ $goods->getTitleTag() }}</title>
+    <meta name="description" content="{{ $goods->getSeoDescription() }}">
+    <meta name="keywords" content="{{ $goods->getSeoKeywords() }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="og:url" content="{{ config('app.url') . '/' . $goods->getM1prgc() }}" />
+	<meta property="og:title" content="{{ $goods->getTitleTag() }}" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="{{ $goods->getTwDescription() }}" />
+	<meta property="og:site_name" content="{{ $goods->isPremico() ? 'PREMICO(プレミコ) オンラインショップ' : 'I・E・Iオンラインショップ' }}" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/customization.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-white">
+    <div class="min-h-screen mx-auto">
+    <?php include public_path() . '/include/header_new.html'; ?>
+
+        <!-- パンくずナビ -->
+        <nav class="bread-clumbs text-sm sm:text-base text-gray-600 mx-auto pl-3 leading-snug tracking-tighter max-w-6xl mt-4">
+            <a href="/{{ $goods->getShowFlagName() }}" class="text-blue-800 hover:text-blue-400 transition-colors">{{ $goods->getShowFlagJpName() }}</a>
+                @if ($goods->getIeiCategory()->isNotEmpty())
+                    <span class="mx-2">｜</span>
+                    <a href="/collection/{{ $goods->getIeiCategory()->first()->getIeiCategoryName() }}" class="text-blue-800 hover:text-blue-400 transition-colors">
+                        {{ $goods->getIeiCategory()->first()->getIeiCategoryJpName() }}
+                    </a>
+                @endif
+        </nav>
+
+        <!-- メインコンテンツ -->
+        <main class="pt-4 pb-2 px-1 mx-auto max-w-5xl">
+            <!-- 商品説明 -->
+            <section class="mx-auto max-w-3xl">
+                <!-- トップ画像 -->
+                <div class="p-3">
+                    <img src="/image/goods/51306_01.jpg" alt="辰年 開運招福　甲州印伝 瑞祥白龍 長財布／甲州印伝　伝統工芸士 山本裕輔 作" class="w-full mx-auto h-auto">
+                </div>
+                <!-- 商品紹介文 -->
+                <div class="p-3">
+                    <p class="text-start leading-relaxed font-bold">
+                        2024年「辰年」は龍の勢いを得て万事上向きに──福が福を呼び、富が富を生む白龍づくしのめでたき開運財布。<br>
+                        なめらかな鹿革につややかな白漆で浮かび上がるのは龍の鱗に見立てた魔除けの三角文と、瑞気みなぎる龍の姿。<br>
+                        国指定の伝統的工芸品・甲州印伝の技が光る逸品です。
+                    </p>
+                </div>
+                <!-- A:商品メイン画像＆箇条書き(main_600x600画像がある場合) -->
+                <div class="flex flex-col md:flex-row p-3">
+                    <img src="/image/goods/51306_main_600x600.jpg" alt="甲州印伝 瑞祥白龍 長財布" class="w-full md:w-[50%] mx-auto h-auto p-4">
+                    <ul class="text-start w-full md:w-[50%] md:p-3 leading-relaxed">
+                        <li>■甲州印伝の伝統工芸士が一点一点手づくり</li>
+                        <li>■2024年の干支「辰」がモチーフ</li>
+                        <li>■なめらかな感触の鹿革に白漆</li>
+                        <li>■たっぷり11ポケット</li>
+                        <li>■本水晶と黄金虎目石の根付が付属（ダイヤモンド入り）</li>
+                        <li>■風水的に好ましい開運カラー 黄色と黒の2色をご用意</li>
+                    </ul>
+                </div>
+
+                <!-- 商品詳細 -->
+                <div class="flex flex-col space-y-3 mt-6">
+                    <img src="/image/goods/51306_02.jpg" alt="継ぎ目のない贅沢な一枚革。印伝の美しさが際立ちます。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        龍、それは森羅万象を操り、五穀豊穣や富貴繁栄を招く伝説の瑞獣。<br>
+                        自然界の気を採り入れて運気向上をめざす風水術においても、万物のエネルギーの源として古来崇められてきました。<br>
+                        ここにご案内するのは、2024年の干支「辰」にちなんで龍の意匠をちりばめた開運財布、その名も＜瑞祥白龍 長財布＞。<br>
+                        漆と鹿革の芸術・甲州印伝の技をいまに受け継ぐ伝統工芸士・山本裕輔氏が、一点一点手づくりする逸品です。
+                    </p>
+                    <img src="/image/goods/51306_03.jpg" alt="一対の双龍を含む９種類の龍。９は陽の極みを意味する最大の奇数であり、久につながる縁起のいい数です。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <h2 class="text-white rounded-md font-bold text-lg c-bg-collection-gradient text-center sm:p-3 py-2 mx-1">
+                        つややかな白漆で浮かび上がる<br>龍のさまざまな姿と龍の鱗の三角文
+                    </h2>
+                    <div class="flex flex-col sm:flex-row">
+                        <img src="/image/goods/51306_04.jpg" alt="本水晶と黄金虎目石の根付" loading="lazy" class="mx-auto max-w-[10rem] p-3 sm:m-3 object-contain">
+                        <p class="text-start px-1 sm:p-3 leading-relaxed">
+                            鹿革に漆を置いて文様を摺り出す甲州印伝は、経済産業大臣指定の伝統的工芸品。武田信玄の庇護の下、武将たちの武具甲冑に用いられたのを機に盛んとなり、今日まで脈々と受け継がれてきました。そんな甲州印伝の美しき伝統から生まれたのが、こちらの＜瑞祥白龍 長財布＞です。なめらかな鹿革につややかな白漆で浮かび上がるのは、龍の中でも富や財を素早くもたらすと伝えられる白龍。「再生」「魔除け」の意味をもつ三角文を龍の鱗に見立て白龍のモチーフ九種類を並べたデザインは、日本古来の九頭龍伝説にも通じ、めでたさの極みです。地色は、風水で"財を招く"といわれる黄色と、"財が安定する"とされる黒の2種類。どちらも白漆がひときわ映える精緻な仕上がりで、かすれやムラが出ぬよう一気に漆を摺り込む卓越の妙技の賜物です。印伝の美しさが際立つスリムな薄型の長財布に、合計11のポケットを配置した使いやすさも魅力。新札をきちんと揃えておける、風水的にも望ましい長財布となりました。
+                        </p>
+                    </div>
+                    <img src="/image/goods/51306_05.jpg" alt="ファスナー付き小銭入れ、マチ付き札入れの他、3つの長ポケットを完備。／各種カードをすっきり収納。使い勝手も抜群です。／お札が折れない長財布は、「お金がゆっくり休息でき、出ていきたくなくなる」といわれています。／金龍が刻まれたダイヤモンド入り本水晶と黄金虎目石の根付が付属。／お財布の内側にも印伝革が贅沢に用いられています。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        甲州印伝＜瑞祥白龍 長財布＞は、富裕層の間で密かに好まれている開運カラーの黄色または黒よりお選びいただけます。<br>
+                        いずれも金龍が刻まれた本水晶の根付が付属します。
+                    </p>
+                    <img src="/image/goods/51306_06.jpg" alt="開運カラーの黄色と黒。風水では、黄色は「金の気」で財をもたらすとされる金運アップに好適なカラー。また、黒い財布は蓄財向きとされ、黒字につながることから縁起のいい色として好まれています。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <div class="p-3 m-1 border c-border-collection-gradient border-1 rounded-md">
+                        <h3 class="font-bold p-2">経済産業大臣指定「伝統的工芸品」　甲州印伝</h3>
+                        <p class="leading-relaxed flex p-2 flex-col sm:flex-row">
+                            <span class="flex-1">きめ細かな天然の鹿革に漆で文様を描く甲州印伝。奈良時代までさかのぼる鹿革工芸の技を受け継ぎ、江戸時代に甲州の革職人が漆づけの技法を発展させました。型紙を乗せて漆を均一に摺り込み、温湿度を調整した室で硬化。昔ながらの手作業で、高度な技を要する多くの工程を経て完成する甲州印伝は、国の伝統的工芸品に指定されています。</span>
+                        </p>
+                    </div>
+                    <div class="p-3 m-1 border c-border-collection-gradient border-1 rounded-md">
+                        <h3 class="font-bold p-2">甲州印伝 伝統工芸士　山本裕輔氏</h3>
+                        <p class="leading-relaxed flex p-2 flex-col sm:flex-row">
+                            <span class="flex-1">1982年生まれ。父である伝統工芸士・山本誠氏に師事し、若くして甲州印伝の技法を習得。「全国伝統的工芸品公募展」日本伝統工芸士会会長賞受賞をはじめ、「全国伝統的工芸品コンクール」などで数々の賞に輝く。2018年、伝統工芸士に認定。祖父の代から続く「印傳の山本」を継ぎ、古くからの伝統技術を守りつつ、甲州印伝の新たな可能性を追求している。</span>
+                            <img src="/image/goods/51306_07.jpg" alt="山本氏近影" class="w-24 object-contain sm:mt-0 sm:ml-2 mx-auto sm:mx-0">
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 価格・購入エリア -->
+            <section id="price_area" class="my-8 w-full mx-auto">
+                <!-- 商品情報 -->
+                <div class="flex flex-col">
+                    <!-- 価格・購入情報 -->
+                    <!-- 紐づけコードあり カート -->
+                    <!-- 表示のみ 以外 -->
+                    @if ($goods->isConnectGoodsAllOpenFlg() === true)
+                        @foreach ($goods->getConnectGoods() as $connect_goods)
+                        <div class="p-4 flex flex-col md:flex-row md:p-2 md:ml-8">
+                            <!-- 表示のみ 以外 -->
+                            <!-- 商品番号 -->
+                            <div class="flex flex-col md:w-[40%]">
+                                <div class="mb-2 pl-2">
+                                    <span class=" text-gray-900 tracking-wide">商品番号：{{ $connect_goods->getItemNo() }}</span>
+                                </div>
+                                <!-- 商品名 -->
+                                <h3 class="border-l-8 border-gray-800 pl-2 text-xl font-bold text-gray-800 mb-4 md:mb-1 tracking-tighter">
+                                    {{ $connect_goods->getGoodsName() }}
+                                </h3>
+
+                                <!-- 納期・お届け -->
+                                @if ($connect_goods->isNgCartMessage() || $connect_goods->isOkCartMessage())
+                                    <!-- メッセージあり 受注NG or OK -->
+                                    @if ($connect_goods->getMessage() !== '')
+                                        <!-- メッセージあり 受注NG or OK -->
+                                        <div class="py-2">
+                                            <p class="text-blue-700 font-bold text-lg">
+                                                {!! $connect_goods->getMessage() !!}
+                                            </p>
+                                        </div>
+                                    @endif
+                                @else
+                                    <!-- メッセージなし 納期表示 -->
+                                    @if ($goods->getGoodsDeliveryText() !== '')
+                                        <div class="py-2">
+                                            <p class="text-blue-700 font-bold text-lg">
+                                                {!! $goods->getGoodsDeliveryText() !!}
+                                            </p>
+                                        </div>
+                                    @endif
+                                @endif
+                                <!-- 価格 -->
+                                <div class="space-y-2 md:space-y-1 mb-6 text-gray-600">
+                                    <p class="text-lg">{!! $connect_goods->getSoroM1shsg_0_text() !!}</p>
+                                    <p class="">{!! $connect_goods->getSoroM1shsg_1_text() !!}</p>
+                                    <p class="ml-4">{!! $connect_goods->getSoroM1tsry_text() !!}</p>
+                                </div>
+                            </div>
+
+                            <!-- 仕様詳細 -->
+                            @if ($connect_goods->isDisplayOnly() === false)
+                                <div class="px-6 pb-3 md:w-[60%]">
+                                    <h4 class="font-bold text-gray-800 mb-3">仕　様</h4>
+                                    <p class="leading-snug text-sm">
+                                        ●材質：財布＝鹿革・漆、牛革、ポリエステル  根付＝本水晶、黄金虎目石、ダイヤモンド1石<br>
+                                        ●サイズ（約）：閉じた状態で縦8.5×横18.5×厚さ2.5cm<br>
+                                        ●重さ（約）：財布＝75ｇ<br>
+                                        ●ポケット仕様：ファスナー付き小銭入れ、札入れ、長ポケット×3、カード入れ×6<br>
+                                        ●日本製<br>
+                                        <br>
+                                        ※本作品は一点一点手づくり、手仕上げされるため、柄の出方などが写真と多少異なる場合がございます。<br>
+                                        ※天然皮革を使用しているため、多少の傷などがある場合がございます。
+                                    </p>
+
+                                    <!-- 購入フォーム -->
+                                    <form method="post" action="/cart" name="cartForm{{ $connect_goods->getItemNo() }}">
+                                        <input type="hidden" name="item_no" value="{{ $connect_goods->getItemNo() }}">
+                                        <input type="hidden" name="medium_code" value="{{ $connect_goods->getMediumCode() }}">
+                                        <input type="hidden" name="amount1" value="1">
+                                        <input type="hidden" name="ex_volume" value="{{ $connect_goods->isVolume() }}">
+
+                                        <!-- イニシャルの指定あり -->
+                                        @if ($connect_goods->isInitial() && !$connect_goods->isNgCartMessage())
+                                            <span class="atn">{!! $connect_goods->getInitialTitle() !!}</span><br>
+                                            <input type="text" name="initial" value=""><br>
+                                        @endif
+
+                                        <!-- サイズ・カラー選択 -->
+                                        @if ($connect_goods->isCosize() && !$connect_goods->isNgCartMessage())
+                                            @if ($connect_goods->isColor())
+                                                <div>
+                                                    <span class="select">
+                                                        <select name="m5clr" class="m5clr{{ $connect_goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                            data-item_no="{{ $connect_goods->getItemNo() }}" data-data_type="m5clr">
+                                                            <option value="">▼お選びください</option>
+                                                            @foreach ($connect_goods->getColorArray() as $key => $color)
+                                                                <option value="{{ $color->m5clr }}">
+                                                                    {{ $color->color_name }}
+                                                                </option>
+                                                            @endforeach
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                                @if ($connect_goods->isSize() || $connect_goods->isType())
+                                                    <br>
+                                                @endif
+                                            @else
+                                                <input type="hidden" name="m5clr" value="">
+                                            @endif
+                                            @if ($connect_goods->isSize())
+                                                <div>
+                                                    <span class="select">
+                                                        <select name="m5siz" class="m5siz{{ $connect_goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                            data-item_no="{{ $connect_goods->getItemNo() }}" data-data_type="m5siz">
+                                                            <option value="">▼お選びください</option>
+                                                            @if (!$connect_goods->isColor())
+                                                                @foreach ($connect_goods->getSizeArray() as $size)
+                                                                    <option value="{{ $size->m5siz }}">
+                                                                        {{ $size->size_name }}
+                                                                    </option>
+                                                                @endforeach
+                                                            @endif
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                                @if ($connect_goods->isType())
+                                                    <br>
+                                                @endif
+                                            @else
+                                                <input type="hidden" name="m5siz" value="">
+                                            @endif
+                                            @if ($connect_goods->isType())
+                                                <div>
+                                                    <span class="select">
+                                                        <select name="type_code" class="type_code{{ $connect_goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                            data-item_no="{{ $connect_goods->getItemNo() }}" data-data_type="type_code">
+                                                            <option value="">▼お選びください</option>
+                                                            @if (!$connect_goods->isColor() && !$connect_goods->isSize())
+                                                                @foreach ($connect_goods->getTypeArray() as $type)
+                                                                    <option value="{{ $type->type_code }}">
+                                                                        {{ $type->type_name }}
+                                                                    </option>
+                                                                @endforeach
+                                                            @endif
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                            @else
+                                                <input type="hidden" name="type_code" value="">
+                                            @endif
+                                        @endif
+
+                                        <!-- カートにいれるボタン -->
+                                        <div class="md:w-[70%] mx-auto mt-4">
+                                            <button type="button" data-item_no="{{ $connect_goods->getItemNo() }}" class="add-cart w-full c-btn-amber-gradient py-4 px-6 rounded-lg flex items-center justify-between transition-all duration-200 shadow-md hover:shadow-lg">
+                                                <?xml version="1.0" encoding="utf-8"?>
+                                                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none;">
+                                                    <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="flex-1 text-center text-lg font-bold" style="pointer-events: none;">カートに入れる</span>
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="pointer-events: none;">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <div class="flex flex-col lg:flex-row lg:justify-between space-y-3 pt-3">
+                                        <!-- お問い合わせ -->
+                                        <div class="text-center">
+                                            <a href="/inquiry/index?item_no={{ $connect_goods->getItemNo() }}" class="text-iei-primary hover:text-iei-secondary underline transition-colors sm:text-base">この商品をメールで問い合わせ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+                        </div>
+                        <!-- 商品の間のborder -->
+                        <div class="border-t border-gray-200 mx-4 mb-4"></div>
+                        @endforeach
+                    @endif
+                    <!-- お電話 -->
+                    <div class="flex flex-col items-center">
+                        <div class="text-sm md:text-base text-gray-600 tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
+                        <div class="flex items-center space-x-1 -mt-1">
+                            <div class="w-5 h-5 md:w-8 md:h-8 bg-gray-600 rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 md:w-5 md:h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                </svg>
+                            </div>
+                            <a href="tel:0120-247-417" class="text-2xl md:text-3xl text-gray-600 hover:opacity-80 duration-200">0120-247-417</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- <div class="border-t border-gray-300 mb-4 xl:w-[80%] mx-auto"></div> -->
+        <!-- 案内セクション -->
+        <?php include public_path() . '/include/footer_guidance.html'; ?>
+
+        <!-- ページトップボタン -->
+        <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
+            <a href="#" class="c-bg-second hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform  hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- フッターコンポーネント -->
+    <?php include public_path() . '/include/footer_new.html'; ?>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/js/product.js"></script>
+    <script src="{{ asset('/sys/js/goods.js') }}"></script>
+    <script src="{{ asset('/sys/js/common.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>＜しあわせのShip's Cat金貨＞純金コインの宝飾ペンダント</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51459502" target="_self"><img alt="＜しあわせのShip's Cat金貨＞純金コインの宝飾ペンダント" src="/image/goods/51459_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：ペンダントトップ＝金貨（品位.9999）　フレーム・バチカン＝18金、ダイヤモンド1石（約0.01ct）　チェーン＝24金仕上げスターリング・シルバー（925銀）<br/>
+●サイズ（約）：ペンダントトップ＝縦25.5×横14.5mm（フレーム含む）　チェーン＝最長45cm（フリーアジャスター）<br/>
+●日本製</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>＜しあわせのShip's Cat金貨＞純金コインの宝飾ペンダント</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>11,500円（税込12,650円）×12回払い</span><br/>
+                          
+                          
+                            一括価格 <span>129,800円（税込142,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51459502"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51459"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51459502');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51459502');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="クック諸島政府発行　しあわせのShip's Cat（シップスキャット）コイン 純金コインの宝飾ペンダント　限定2025点" height="300" src="/image/goods/51459_01.jpg" width="580"/></p>
+<p class="intro">
+		それは、浮き輪から顔を出す可愛いシップスキャット（船乗り猫）。<br/>
+		航海の安全を守ってきた幸せのシンボルが<br/>
+		貴重なコインジュエリーになりました。<br/>
+<br/>
+		最高品位.9999の金貨とダイヤモンド、本物だけが持つ至高の輝きが<br/>
+		周囲の羨望を集める贅沢な宝飾ペンダント。<br/>
+		つぶらな瞳の子猫がどんな時もあなたを見守り<br/>
+		心に癒しをもたらして…。
+	</p>
+<p class="center-img"><img alt="船とともに世界を旅した「シップスキャット（船乗り猫）」：シップスキャットは船のロープや積み荷の食料を狙うねずみの駆除を目的に、商船や軍艦で飼われていた猫です。古来より猫は神秘的な能力を持ち、天候を操ると信じられてきたため、安全な航海へと導く縁起の良い動物として大切にされてきました。また、故郷を離れて仕事をする船員たちにとっても、シップスキャットはかけがえのない仲間となり、癒しをもたらしてきたといわれています。" height="300" src="/image/goods/51459_02.jpg" width="580"/></p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>クック諸島政府が発行する真正な法定金貨を使用</li>
+<li class="stt"><span class="sq01">■</span>最高品位.9999の純金製</li>
+<li class="stt"><span class="sq01">■</span>ダイヤモンド1石</li>
+<li class="stt"><span class="sq01">■</span>ロープノットをモチーフにした18金製のバチカンとフレーム</li>
+<li class="stt"><span class="sq01">■</span>高度な技術で浮かび上がる美しい凹凸（レリーフ）</li>
+<li class="stt"><span class="sq01">■</span>裏表2つの表情が楽しめるリバーシブルタイプ</li>
+<li class="stt"><span class="sq01">■</span>チェーンはSV925に純金仕上げ</li>
+<li class="stt"><span class="sq01">■</span>発行国の発行証明書が付属</li>
+</ul>
+<p class="center-img"><img alt="見つめるほどに癒される幸せの子猫──。本物の輝きが周囲の羨望を集めるペンダント" height="500" src="/image/goods/51459_03.jpg" width="450"/></p>
+<p>
+		古の時代より船員たちと船に乗り、ねずみの駆除を任され、様々な迷信から航海の安全を守ると信じられてきたシップスキャット（船乗り猫）。そんな幸運の子猫が、純度99.99％以上の本物の金貨を使用したコインペンダントになりました。富の象徴である純金のコインとラッキーシンボルの相乗効果が、幸せを予感させる優美なジュエリーのご案内です。
+	</p>
+<p class="center-img"><img alt="価値ある純金コインをそのまま使用／品質：プルーフ、品位：.9999金、重さ：1/25オンス（約1.2グラム）、直径：約13.92ミリ、額面：10クックアイランド・ドル、発行：クック諸島政府、発行年：2025年、発行数：限定2025点" height="586" src="/image/goods/51459_04.jpg" width="580"/></p>
+<h2>装いに自信をもたらす純金の煌めき<br/>
+	愛らしいシップスキャットに癒されて</h2>
+<p class="flt-l"><img alt="ロープノットをイメージしたバチカンには、ダイヤモンドが煌めいて。" height="230" src="/image/goods/51459_05.jpg" width="150"/></p>
+<p>
+		黄金の艶やかな輝きに浮かび上がるのは、つぶらな瞳でこちらを見つめる子猫の姿。浮き輪から顔を出した愛らしいシップスキャットのやわらかな毛並みや魔除けともされる煌めく星が7つ、高度な鋳造技術と精緻な凹凸（レリーフ）で立体的に表現されています。最高品位の金貨は、その美しさと価値を損なわないよう加工を施すことなく、そのままの状態でフレームにセット。18金製のバチカンは、船の係留や錨を固定する際のロープノットをイメージしており、幸運のシップスキャットにふさわしく幸せを逃さず繋ぎとめることができるようにと願いを込めてデザインされました。さらにバチカンの中央では、永遠の美しさを象徴するダイヤモンドが気品ある輝きを放ちます。
+	</p>
+<p class="center-img"><img alt="ペンダントはリバーシブル：反対側の面には元首チャールズ3世（英国国王）の公式肖像が。" height="450" src="/image/goods/51459_06.jpg" width="450"/></p>
+<p>
+		＜しあわせのShip's Cat金貨＞純金コインの宝飾ペンダントは、2025点のみ発行される貴重な金貨を用いた限定版で、コインの発行証明書を添えてお届けいたします。近年価格が高騰している希少な純金を用いた「身に着ける資産」として美しさを引き立てるコインペンダント。幸運祈願のお守りのようにも身に着けやすい逸品ですので、この好機にお申し込みいただき、周囲と差をつける限りなくピュアな輝きをお楽しみください。
+	</p>
+<p class="center-img"><img alt="ペンダントはギフトケースに収めてお届けします。贈り物にも最適です。" height="570" src="/image/goods/51459_07.jpg" width="530"/></p>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="クック諸島　国章" height="52" src="/image/goods/51459_08.jpg" width="45"/>　クック諸島</h3>
+<p>南太平洋にある15の島々で構成された自治国家で、総面積は約237平方キロメートル。1770年代にこの島々を発見した英国の探検家、キャプテン・ジェームズ・クックの名にちなみ、クック諸島と名づけられた。元首はイギリスのチャールズ3世。</p>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3>プルーフコインとは…</h3>
+<p>国賓やVIPに贈る記念品として、各国が特殊な技法を駆使して発行する貨幣。模様を鮮明にするため、極印（型）を2回以上打ちつけるなどして入念に製造される。発行数が少ないため、収集家の希求の的。</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

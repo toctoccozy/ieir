@@ -1,0 +1,140 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>甲州印伝　しあわせの白へび福財布</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51442501" target="_self"><img alt="甲州印伝　しあわせの白へび福財布" src="/image/goods/51442_main_600x600_lotteryoff.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：財布＝鹿革・漆、牛革、ポリエステル　根付＝ルチルクオーツ（針水晶）1石、本水晶1石<br/>
+●サイズ（約）：閉じた状態で縦8.5×横18.5×厚さ2.5cm<br/>
+●重さ（約）：財布＝75g<br/>
+●ポケット仕様：ファスナー付き小銭入れ、札入れ、長ポケット×3、カード入れ×6<br/>
+●日本製<br/>
+※本作品は一点一点手づくり、手仕上げされるため、柄の出方などが写真と多少異なる場合があります。<br/>
+※天然皮革を使用しているため、多少の傷などが見られる場合があります。</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>甲州印伝　しあわせの白へび福財布【黄色】</h3>
+<div class="price_area">
+<font color="#0000ff">販売終了</font><br/>
+                        
+
+
+                        
+                          
+                            月々 <span>4,980円（税込5,478円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>29,800円（税込32,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart1">
+<input name="item_no" type="hidden" value="51442501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51442"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51442501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51442501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<div class="cart_area">
+<h3>甲州印伝　しあわせの白へび福財布【黒色】</h3>
+<div class="price_area">
+                
+
+
+                        
+                          
+                        
+
+
+                        
+                          
+                            月々 <span>4,980円（税込5,478円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>29,800円（税込32,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart2">
+<input name="item_no" type="hidden" value="51442502"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51442"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart2(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51442502');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51442502');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="巳年 開運招福　甲州印伝 しあわせの白へび 福財布" height="260" src="/image/goods/51442_01.jpg" width="580"/></p>
+<p class="intro">
+		巳年は弁財天の使者・白へびを懐に実入り良く──<br/>
+		財福の象徴と尊ばれる白へびをちりばめた干支の春財布。<br/>
+		なめらかな鹿革につややかな白漆で浮かび上がるのは<br/>
+		末広の扇が連なる里山で、春爛漫を寿ぐ愛らしい白へび。<br/>
+		福寿草や蝶の細かい文様にも不老長寿と繁栄の願いを込めて…<br/>
+		国指定の伝統的工芸品、甲州印伝の名匠がおくる逸品です。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>甲州印伝の伝統工芸士による手づくり</li>
+<li class="stt"><span class="sq01">■</span>2025年の干支「巳」にちなんだ吉祥文様</li>
+<li class="stt"><span class="sq01">■</span>なめらかな感触の鹿革に白漆</li>
+<li class="stt"><span class="sq01">■</span>たっぷり入る11ポケット</li>
+<li class="stt"><span class="sq01">■</span>針水晶の根付が付属</li>
+<li class="stt"><span class="sq01">■</span>風水的に好ましい開運カラー 黄色と黒の2色をご用意</li>
+</ul>
+<p class="center-img"><img alt="継ぎ目のない贅沢な一枚革。印伝の美しさが際立ちます。" height="420" src="/image/goods/51442_02.jpg" width="450"/></p>
+<p>
+<span style="font-size:1.25em;">富の象徴「白へび」が住まう福財布を懐に──<br/>
+		甲州印伝の美しき伝統が息づいています</span><br/>
+		“へびの夢を見たら金運を授かる”ともいわれるように、へびは古より富の象徴とされ、金運を招く縁起物として尊ばれてきました。中でも、神々しい純白の鱗に包まれた白へびは、神社にも祀られ、蓄財の神とされる弁財天の使者として崇められています。ここにご案内するのは、2025年の干支「巳」にちなんで、白へびの意匠を愛らしくちりばめた甲州印伝の長財布。漆と鹿革の芸術・甲州印伝の技をいまに受け継ぐ伝統工芸士・山本裕輔氏が一点一点手づくりする逸品です。
+	</p>
+<p class="center-img"><img alt="福寿草の咲く里山で、蝶が永遠の生命を寿ぎ、弁財天さまの使者・白へびが愛らしい姿を見せて…。お財布いっぱい福が貯まる縁起のいい文様" height="580" src="/image/goods/51442_03.jpg" width="580"/></p>
+<h2>弁財天さまの使い・白へびがあちこちに…<br/>
+	つややかな白漆で細密に描かれた福づくしの文様</h2>
+<p class="flt-l"><img alt="金色のルチルが煌めく金運祈願の天然石・針水晶（ルチルクオーツ）の根付。" height="305" src="/image/goods/51442_04.jpg" width="135"/></p>
+<p>
+		鹿革に漆を置いて文様を摺り出す甲州印伝は、経済産業大臣指定の伝統的工芸品。武田信玄の庇護の下、武将たちの武具甲冑に用いられたのを機に盛んとなり、今日まで脈々と受け継がれてきました。そんな甲州印伝の美しき伝統から生まれたのが、＜しあわせの白へび福財布＞です。なめらかな鹿革につややかな白漆で浮かび上がるのは、干支の巳にちなむ上品な趣の意匠。末広がりの扇が連なる里山のそこかしこで、富をもたらす弁財天の使い・白へびが愛らしい姿を見せています。不老長寿の福寿草が咲き、永遠の生命を象徴する蝶が戯れる春爛漫の景色は、まさに縁起のいい春財布そのもの。ぷっくりとした漆の質感と細部まで精緻な仕上がりは、かすれやムラが出ぬよう一気に漆を摺り込む卓越の妙技の賜物です。<br/>
+		地色は、風水で〝財を招く〟といわれる黄色と、〝財が安定する〟とされる黒の2種類で、合計11のポケットがすっきりと配置されたスマートな薄型のデザインも魅力。新札をきちんと揃えておける、風水的にも望ましい長財布となりました。
+	</p>
+<p class="center-img"><img alt="しあわせ貯まるスリムな薄型11ポケット。札入れは束でお札が入るマチ付き／お札が折れない長財布は「お金がゆっくり休息でき、出ていきたくなくなる」といわれています。／各種カードをすっきり収納。使い勝手も抜群です。／お札がたくさん入るたっぷりとしたマチ。／お財布の内側にも印伝革が贅沢に用いられています。／煌めく針水晶の根付がファスナーの引き手に。" height="800" src="/image/goods/51442_05.jpg" width="580"/></p>
+<p>
+		甲州印伝＜しあわせの白へび福財布＞は、開運カラーの黄色または黒よりお選びいただけます。いずれも金運祈願の天然石・針水晶の根付が付属します。
+	</p>
+<p class="center-img"><img alt="富の象徴・白へびの愛らしい姿をちりばめた福財布／開運カラーの黄色と黒：風水では、黄色は「金の気」で財をもたらすとされる金運アップに好適なカラー。また、黒い財布は蓄財向きとされ、黒字につながることから縁起のいい色として好まれています。" height="480" src="/image/goods/51442_06.jpg" width="540"/></p>
+<div class="box1">
+<div class="box-text">
+<h3>経済産業大臣指定「伝統的工芸品」　甲州印伝</h3>
+<p>きめ細かな天然の鹿革に漆で文様を描く甲州印伝。奈良時代までさかのぼる鹿革工芸の技を受け継ぎ、江戸時代に甲州の革職人が漆づけの技法を発展させました。型紙を乗せて漆を均一に摺り込み、温湿度を調整した室で硬化。昔ながらの手作業で、高度な技を要する多くの工程を経て完成する甲州印伝は、国の伝統的工芸品に指定されています。</p>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3>甲州印伝 伝統工芸士　山本裕輔氏</h3>
+<p class="flt-r"><img alt="山本氏近影" height="175" src="/image/goods/51306_07.jpg" width="125"/></p>
+<p>1982年生まれ。父である伝統工芸士・山本誠氏に師事し、若くして甲州印伝の技法を習得。「全国伝統的工芸品公募展」日本伝統工芸士会会長賞受賞をはじめ、「全国伝統的工芸品コンクール」などで数々の賞に輝く。2018年、伝統工芸士に認定。祖父の代から続く「印傳の山本」を継ぎ、古くからの伝統技術を守りつつ、甲州印伝の新たな可能性を追求している。</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

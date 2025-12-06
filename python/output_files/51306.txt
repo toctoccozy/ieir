@@ -1,0 +1,145 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>甲州印伝 瑞祥白龍 長財布</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51306503" target="_self"><img alt="甲州印伝 瑞祥白龍 長財布" src="/image/goods/51306_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：財布＝鹿革・漆、牛革、ポリエステル  根付＝本水晶、黄金虎目石、ダイヤモンド1石<br/>
+●サイズ（約）：閉じた状態で縦8.5×横18.5×厚さ2.5cm<br/>
+●重さ（約）：財布＝75ｇ<br/>
+●ポケット仕様：ファスナー付き小銭入れ、札入れ、長ポケット×3、カード入れ×6<br/>
+●日本製<br/>
+<br/>
+※本作品は一点一点手づくり、手仕上げされるため、柄の出方などが写真と多少異なる場合がございます。<br/>
+※天然皮革を使用しているため、多少の傷などがある場合がございます。</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>甲州印伝 瑞祥白龍 長財布【黄色】</h3>
+<div class="price_area">
+                
+
+
+                        
+                          
+                        
+
+
+                        
+                          
+                            月々 <span>5,900円（税込6,490円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>34,800円（税込38,280円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart1">
+<input name="item_no" type="hidden" value="51306503"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51306"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart1(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51306503');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51306503');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<div class="cart_area">
+<h3>甲州印伝 瑞祥白龍長財布【黒色】</h3>
+<div class="price_area">
+                
+
+
+                        
+                          
+                        
+
+
+                        
+                          
+                            月々 <span>5,900円（税込6,490円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>34,800円（税込38,280円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart2">
+<input name="item_no" type="hidden" value="51306504"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51306"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart2(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51306504');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51306504');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="辰年 開運招福　甲州印伝 瑞祥白龍 長財布／甲州印伝　伝統工芸士 山本裕輔 作" height="260" src="/image/goods/51306_01.jpg" width="580"/></p>
+<p class="intro">
+		2024年「辰年」は龍の勢いを得て万事上向きに──<br/>
+		福が福を呼び、富が富を生む白龍づくしのめでたき開運財布。<br/>
+<br/>
+		なめらかな鹿革につややかな白漆で浮かび上がるのは<br/>
+		龍の鱗に見立てた魔除けの三角文と、瑞気みなぎる龍の姿。<br/>
+		国指定の伝統的工芸品・甲州印伝の技が光る逸品です。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>甲州印伝の伝統工芸士が一点一点手づくり</li>
+<li class="stt"><span class="sq01">■</span>2024年の干支「辰」がモチーフ</li>
+<li class="stt"><span class="sq01">■</span>なめらかな感触の鹿革に白漆</li>
+<li class="stt"><span class="sq01">■</span>たっぷり11ポケット</li>
+<li class="stt"><span class="sq01">■</span>本水晶と黄金虎目石の根付が付属（ダイヤモンド入り）</li>
+<li class="stt"><span class="sq01">■</span>風水的に好ましい開運カラー 黄色と黒の2色をご用意</li>
+</ul>
+<p class="center-img"><img alt="継ぎ目のない贅沢な一枚革。印伝の美しさが際立ちます。" height="420" src="/image/goods/51306_02.jpg" width="350"/></p>
+<p>
+		龍、それは森羅万象を操り、五穀豊穣や富貴繁栄を招く伝説の瑞獣。自然界の気を採り入れて運気向上をめざす風水術においても、万物のエネルギーの源として古来崇められてきました。ここにご案内するのは、2024年の干支「辰」にちなんで龍の意匠をちりばめた開運財布、その名も＜瑞祥白龍 長財布＞。漆と鹿革の芸術・甲州印伝の技をいまに受け継ぐ伝統工芸士・山本裕輔氏が、一点一点手づくりする逸品です。
+	</p>
+<p class="center-img"><img alt="一対の双龍を含む９種類の龍。９は陽の極みを意味する最大の奇数であり、久につながる縁起のいい数です。" height="396" src="/image/goods/51306_03.jpg" width="580"/></p>
+<h2>つややかな白漆で浮かび上がる<br/>
+	龍のさまざまな姿と龍の鱗の三角文</h2>
+<p class="flt-l"><img alt="本水晶と黄金虎目石の根付" height="200" src="/image/goods/51306_04.jpg" width="135"/></p>
+<p>
+		鹿革に漆を置いて文様を摺り出す甲州印伝は、経済産業大臣指定の伝統的工芸品。武田信玄の庇護の下、武将たちの武具甲冑に用いられたのを機に盛んとなり、今日まで脈々と受け継がれてきました。そんな甲州印伝の美しき伝統から生まれたのが、こちらの＜瑞祥白龍 長財布＞です。なめらかな鹿革につややかな白漆で浮かび上がるのは、龍の中でも富や財を素早くもたらすと伝えられる白龍。「再生」「魔除け」の意味をもつ三角文を龍の鱗に見立て白龍のモチーフ九種類を並べたデザインは、日本古来の九頭龍伝説にも通じ、めでたさの極みです。地色は、風水で“財を招く”といわれる黄色と、“財が安定する”とされる黒の2種類。どちらも白漆がひときわ映える精緻な仕上がりで、かすれやムラが出ぬよう一気に漆を摺り込む卓越の妙技の賜物です。印伝の美しさが際立つスリムな薄型の長財布に、合計11のポケットを配置した使いやすさも魅力。新札をきちんと揃えておける、風水的にも望ましい長財布となりました。
+	</p>
+<p class="center-img"><img alt="ファスナー付き小銭入れ、マチ付き札入れの他、3つの長ポケットを完備。／各種カードをすっきり収納。使い勝手も抜群です。／お札が折れない長財布は、「お金がゆっくり休息でき、出ていきたくなくなる」といわれています。／金龍が刻まれたダイヤモンド入り本水晶と黄金虎目石の根付が付属。／お財布の内側にも印伝革が贅沢に用いられています。" height="725" src="/image/goods/51306_05.jpg" width="580"/></p>
+<p>
+		甲州印伝＜瑞祥白龍 長財布＞は、富裕層の間で密かに好まれている開運カラーの黄色または黒よりお選びいただけます。いずれも金龍が刻まれた本水晶の根付が付属します。
+	</p>
+<p class="center-img"><img alt="開運カラーの黄色と黒。風水では、黄色は「金の気」で財をもたらすとされる金運アップに好適なカラー。また、黒い財布は蓄財向きとされ、黒字につながることから縁起のいい色として好まれています。" height="500" src="/image/goods/51306_06.jpg" width="540"/></p>
+<div class="box1">
+<div class="box-text">
+<h3>経済産業大臣指定「伝統的工芸品」　甲州印伝</h3>
+<p>きめ細かな天然の鹿革に漆で文様を描く甲州印伝。奈良時代までさかのぼる鹿革工芸の技を受け継ぎ、江戸時代に甲州の革職人が漆づけの技法を発展させました。型紙を乗せて漆を均一に摺り込み、温湿度を調整した室で硬化。昔ながらの手作業で、高度な技を要する多くの工程を経て完成する甲州印伝は、国の伝統的工芸品に指定されています。</p>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3>甲州印伝 伝統工芸士　山本裕輔氏</h3>
+<p class="flt-r"><img alt="山本氏近影" height="175" src="/image/goods/51306_07.jpg" width="125"/></p>
+<p>1982年生まれ。父である伝統工芸士・山本誠氏に師事し、若くして甲州印伝の技法を習得。「全国伝統的工芸品公募展」日本伝統工芸士会会長賞受賞をはじめ、「全国伝統的工芸品コンクール」などで数々の賞に輝く。2018年、伝統工芸士に認定。祖父の代から続く「印傳の山本」を継ぎ、古くからの伝統技術を守りつつ、甲州印伝の新たな可能性を追求している。</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

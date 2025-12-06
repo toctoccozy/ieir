@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ $goods->getTitleTag() }}</title>
+    <meta name="description" content="{{ $goods->getSeoDescription() }}">
+    <meta name="keywords" content="{{ $goods->getSeoKeywords() }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="og:url" content="{{ config('app.url') . '/' . $goods->getM1prgc() }}" />
+	<meta property="og:title" content="{{ $goods->getTitleTag() }}" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="{{ $goods->getTwDescription() }}" />
+	<meta property="og:site_name" content="{{ $goods->isPremico() ? 'PREMICO(プレミコ) オンラインショップ' : 'I・E・Iオンラインショップ' }}" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/customization.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-white">
+    <div class="min-h-screen mx-auto">
+    <?php include public_path() . '/include/header_new.html'; ?>
+
+        <!-- パンくずナビ -->
+        <nav class="bread-clumbs text-sm sm:text-base text-gray-600 mx-auto pl-3 leading-snug tracking-tighter max-w-6xl">
+            <a href="/collection" class="text-blue-800 hover:text-blue-400 transition-colors">コレクション</a>
+                @if ($goods->getIeiCategory()->isNotEmpty())
+                    <span class="mx-2">｜</span>
+                    <a href="/collection/{{ $goods->getIeiCategory()->first()->getIeiCategoryName() }}" class="text-blue-800 hover:text-blue-400 transition-colors">
+                        {{ $goods->getIeiCategory()->first()->getIeiCategoryJpName() }}
+                    </a>
+                @endif
+        </nav>
+
+        <!-- メインコンテンツ -->
+        <main class="pt-4 pb-6 px-1 mx-auto max-w-5xl">
+            <!-- 商品説明 -->
+            <section class="mx-auto max-w-3xl">
+                <!-- トップ画像 -->
+                <div class="p-3">
+                    <img src="/image/goods/51381_01.jpg" alt="ダイヤモンド・ブラック　高級オーストリッチ革の2WAYショルダーバッグ　デザイン：ヒラリー・ビーン" class="w-full mx-auto h-auto">
+                </div>
+                <!-- 商品紹介文 -->
+                <div class="p-3">
+                    <p class="text-start sm:text-center leading-relaxed font-bold">
+                        凛とした気品とオーラは、まさにブラックダイヤモンド──奥深い光をまとった革の宝石オーストリッチに心ときめく主役級のショルダーバッグ。<br>
+                        <br>
+                        ラグジュアリーな光沢感は熟練の職人が手間をかけて繊細な光の層を重ねた上質のオーストリッチレザーならでは。<br>
+                        プラチナ色の金具とカットクリスタルのチャームがクールな煌めきのアクセントを添えて。<br>
+                        <br>
+                        幅広いシーンで活躍するコンパクトな2WAY仕様。<br>
+                        人気のハイブランド「ヒラリー・ビーンNYコレクション」から。<br>
+                    </p>
+                </div>
+                <!-- 下記はAかBどちらかを利用 -->
+                    <!-- A:商品メイン画像＆箇条書き(main_600x600画像がある場合) -->
+                    <div class="flex flex-col md:flex-row p-3">
+                        <img src="/image/goods/51381_main_600x600.jpg" alt="＜ダイヤモンド・ブラック＞高級オーストリッチ革の2WAYショルダーバッグ" class="w-full md:w-[50%] mx-auto h-auto p-4">
+                        <!-- 指示　ul classのclearfix部分は下記を利用 -->
+                        <ul class="text-start w-full md:w-[50%] md:p-3 leading-relaxed">
+                            <li>■米国の著名デザイナーが手掛ける高級ブランドのオリジナル</li>
+                            <li>■職人が一枚一枚染め上げたパール仕上げの天然オーストリッチ革</li>
+                            <li>■長財布も入るゆとりの収納力</li>
+                            <li>■ポシェットにもなるコンパクトな2WAY</li>
+                            <li>■クリスタルのチャーム付き</li>
+                        </ul>
+                    </div>
+
+                <!-- 商品詳細 -->
+                <div class="flex flex-col space-y-3 mt-6">
+                    <!-- 指示　img部分は下記を利用 -->
+                    <img src="/image/goods/51381_02.jpg" alt="ブラックダイヤモンドのオーラをまとったオーストリッチをあなたに" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4"
+                    >
+                    <!-- 指示　p部分は下記を利用 -->
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        自然が生み出した美しい模様と高い希少性──高級レザーの代名詞オーストリッチの奥深い魅力をいちだんと高めた、ジュエリーのようなバッグが誕生しました。<br>
+                        ニューヨークやハリウッドのセレブ御用達として名高い人気デザイナー、ヒラリー・ビーンがおくるコンパクトな2WAYショルダーバッグ＜ダイヤモンド・ブラック＞。<br>
+                        文字通り、ブラックダイヤさながらの強いオーラをまとったオーストリッチ革で、あなたをひときわ輝かせる逸品です。<br>
+                    </p>
+                    <!-- 指示　img部分は下記を利用 -->
+                    <img src="/image/goods/51381_05.jpg" alt="オーストリッチ、長く愛用できるラグジュアリーレザー：軽くて柔らかく、丈夫で美しいオーストリッチ革。その耐久性は牛革の数倍ともいわれています。独特の突起「クイルマーク」が存在するのは、革１枚あたりわずか40％程度。＜ダイヤモンド・ブラック＞は、このクイルマークが整然と並ぶもっとも希少な部位を、バッグ正面に使用しています。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4"
+                    >
+                    <!-- 指示　p部分は下記を利用 -->
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        その美しい存在感は、まさにジュエリー級。<br>
+                        上質のオーストリッチ革を深い濃墨色に染め上げ、さらに職人の手作業で繊細な光の層を重ねていくパール加工により、ブラックダイヤの奥深い輝きを表現しています。<br>
+                        ふっくらとしたフォルムは、オーストリッチ革の柔らかさを生かしたもの。<br>
+                        正面にはクイルマークの粒がきれいに揃った希少部位が、贅沢な「フルポイント」で使用されました。<br>
+                    </p>
+                    <!-- 指示　img部分は下記を利用 -->
+                    <img src="/image/goods/51381_03.jpg" alt="美しさと機能性の融合。一流の気配り、すみずみまで。／内側には鍵やスマートフォンの収納に便利なファスナーポケットとオープンポケットを完備。／長財布が余裕で入る程よいサイズ感。仕切りがないので、ポーチやメガネケースなどもすっきり収まります。安心のファスナー開閉。／ブラックダイヤモンドをイメージしたクリスタルガラスのチャームが凛とした煌めきのアクセントを添えて。／使いやすさの決め手、3つの外ポケット。１、移動時にも出し入れしやすいオープンポケット。正面のファスナーポケットとメインルームの間に設けられています。２、オーストリッチをフルポイントで使用した正面のファスナーポケット。厚みのあるモノも入るふっくらとした仕立て。３、バッグの背面にもファスナーポケットをプラス。大切なチケットなどが、すぐに取り出せて便利です。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4"
+                    >
+                    <!-- 指示　h2部分は下記を利用 -->
+                    <h2 class="text-white rounded-md font-bold text-lg c-bg-collection-gradient text-center sm:p-3 py-2 mx-1">
+                        ジュエリーと呼びたい最愛バッグ<br>格上オーストリッチを日常でも旅先でも
+                    </h2>
+                    <!-- 指示　p部分は下記を利用 -->
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        使いやすさをとことん追求した機能的なデザインも魅力です。<br>
+                        横幅24センチのコンパクトなサイズながら、長財布も入るゆとりの収納力。<br>
+                        ポケットの大きさや配置にも、細やかな気配りが行き届いています。<br>
+                        長短2本のストラップが付属しますので、斜め掛けにしたり、ハンドバッグにしたりと、その日の気分で思いのまま。<br>
+                        ブラックダイヤモンドをイメージしたクリスタルガラスのチャームが揺れるたび、凛とした光のインパクトが、あなたをその場の主役にすることでしょう。<br>
+                        日常から旅行まで、幅広いシーンでおしゃれを格上げする最愛バッグとして、ぜひこの機会にお求めください。<br>
+                    </p>
+                    <!-- 指示　img部分は下記を利用 -->
+                    <img src="/image/goods/51381_04.jpg" alt="別格の気品を印象づける自信のオーストリッチ。美しいフォルムとやわらかな風合いを心ゆくまで。ショルダーストラップとハンドストラップは着脱自在。斜め掛けにしたりハンドバッグにしたり、２つのスタイルが思いのまま。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4"
+                    >
+                    <!-- 指示　classのbox1部分は下記を利用(ここはbrタグ不要) -->
+                    <div class="p-3 m-1 border c-border-collection-gradient border-1 rounded-md">
+                        <h3 class="font-bold p-2">ヒラリー・ビーン　「私たちは、最もすてきな時代にいる。」</h3>
+                        <p class="leading-relaxed flex p-2 flex-col sm:flex-row">
+                            <img src="/image/goods/51381_06.jpg" alt="ヒラリー・ビーン" class="w-36 object-contain sm:mt-0 sm:mr-2 mx-auto sm:mx-0">
+                            <span class="flex-1">トップモデル・女優として活躍後、デザイナーに転身。アーティスティックな表現でファッション界に新風を巻き起こし、その作品は『エル』『イタリアン・ヴォーグ』など一流ファッション誌の常連となっている。ロサンゼルスを拠点に活動し、ニューヨークでも毎年ショーを開催。ハイブランド「ヒラリー・ビーンＮＹコレクション」を展開。マドンナをはじめ大物セレブの熱烈な支持を獲得している。</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 価格・購入エリア -->
+            <section id="price_area" class="my-8 w-full mx-auto">
+                <!-- 商品画像以下 -->
+                <div class="flex flex-col md:flex-row">
+                    <!-- 商品画像 -->
+                    <div class="flex justify-center p-12 sm:px-32 md:p-4 md:w-[40%] md:items-start">
+                        <!-- 拡大画像 -->
+                        <img src="/image/goods/51381_main_600x600.jpg"
+                            alt="＜ダイヤモンド・ブラック＞高級オーストリッチ革の2WAYショルダーバッグ"
+                            loading="lazy"
+                            class="w-full h-auto object-contain">
+                    </div>
+
+                    <!-- 価格・購入情報 -->
+                    <div class="p-4 md:w-[60%] md:p-2 md:ml-8">
+                        <!-- 商品番号 -->
+                        <div class="mb-2 pl-2">
+                            <span class=" text-gray-900 tracking-wide">商品番号：{{ $goods->getItemNo() }}</span>
+                        </div>
+                        <!-- 商品名 -->
+                        <h3 class="border-l-8 border-gray-800 pl-2 text-xl font-bold text-gray-800 mb-4 md:mb-1 tracking-tighter">
+                            {{ $goods->getGoodsName() }}
+                        </h3>
+
+                        <!-- 納期・お届け -->
+						@if ($goods->isNgCartMessage() || $goods->isOkCartMessage())
+							<!-- メッセージあり 受注NG or OK -->
+							<div class="py-2"><p class="text-blue-700 font-bold text-lg">{!! $goods->getMessage() !!}</p></div>
+						@else
+							<!-- メッセージなし 納期表示 -->
+							<div class="py-2"><p class="text-blue-700 font-bold text-lg">{!! $goods->getGoodsDeliveryText() !!}</p></div>
+						@endif
+
+                        <!-- 価格 -->
+                        <div class="space-y-2 md:space-y-1 mb-6 text-gray-600">
+                            <p class="text-lg">{!! $goods->getSoroM1shsg_0_text() !!}</p>
+                            <p class="">{!! $goods->getSoroM1shsg_1_text() !!}</p>
+                            <p class="ml-4">{!! $goods->getSoroM1tsry_text() !!}</p>
+                        </div>
+
+                        <!-- 仕様詳細 -->
+                        <div class="px-6 border-b border-gray-200 pb-3">
+                            <h4 class="font-bold text-gray-800 mb-3">仕　様</h4>
+                            <p class="leading-snug text-sm">
+                            <!-- 指示　仕様はここに記載 -->
+                            ●材質：本体＝オーストリッチ革にパール加工〈前面のみフルポイント〉　ショルダーストラップ･ハンドストラップ＝牛革（一部オーストリッチ革）　裏地＝ポリエステル　金具＝真鍮、亜鉛ダイキャスト　チャーム＝クリスタルガラス<br>
+                            ●サイズ（約）：本体＝縦19×横24×マチ10cm　ショルダーストラップ＝幅1.8×長さ106～114cm　ハンドストラップ＝最大幅3.6×長さ39cm<br>
+                            ●重さ（約）：470g（両ストラップ装着時）<br>
+                            ●ポケット仕様：外側＝ファスナーポケット×2、マグネット付きオープンポケット×1　内側＝ファスナーポケット×1、オープンポケット×1<br>
+                            ●底鋲4個付き<br>
+                            ●日本製<br>
+                            <br>
+                            ※天然皮革を使用しているため、斑模様の出方などが一点一点異なります。
+                            </p>
+
+                            <!-- 購入フォーム -->
+                            <!-- 紐づけコードなし カート -->
+                            <!-- 表示のみ 以外 -->
+                            @if ($goods->isDisplayOnly() === false && !$goods->isNgCartMessage())
+                                <form method="post" action="/cart" name="cartForm{{ $goods->getItemNo() }}">
+                                <input type="hidden" name="item_no" value="{{ $goods->getItemNo() }}">
+                                <input type="hidden" name="medium_code" value="{{ $goods->getMediumCode() }}">
+                                <input type="hidden" name="amount1" value="1">
+                                <input type="hidden" name="ex_volume" value="{{ $goods->isVolume() }}">
+
+								<!-- イニシャルの指定あり -->
+                                @if ($goods->isInitial() && !$goods->isNgCartMessage())
+									<span class="atn">{!! $goods->getInitialTitle() !!}</span><br>
+									<input type="text" name="initial" value=""><br>
+								@endif
+
+                                <!-- サイズ・カラー選択 -->
+								@if ($goods->isCosize() && !$goods->isNgCartMessage())
+									@if ($goods->isColor())
+                                        <div>
+                                            <span class="select">
+                                                <select name="m5clr" class="m5clr{{ $goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                    data-item_no="{{ $goods->getItemNo() }}" data-data_type="m5clr">
+                                                    <option value="">▼お選びください</option>
+                                                    @foreach ($goods->getColorArray() as $key => $color)
+                                                        <option value="{{ $color->m5clr }}">
+                                                            {{ $color->color_name }}
+                                                        </option>
+                                                    @endforeach
+                                                </select>
+                                            </span>
+                                        </div>
+                                        @if ($goods->isSize() || $goods->isType())
+                                            <br>
+                                        @endif
+    								@else
+	    								<input type="hidden" name="m5clr" value="">
+		    						@endif
+			    					@if ($goods->isSize())
+                                        <div>
+                                            <span class="select">
+                                                <select name="m5siz" class="m5siz{{ $goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                    data-item_no="{{ $goods->getItemNo() }}" data-data_type="m5siz">
+                                                    <option value="">▼お選びください</option>
+                                                    @if (!$goods->isColor())
+                                                        @foreach ($goods->getSizeArray() as $size)
+                                                            <option value="{{ $size->m5siz }}">
+                                                                {{ $size->size_name }}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </span>
+                                        </div>
+                                        @if ($goods->isType())
+                                            <br>
+                                        @endif
+                                    @else
+                                        <input type="hidden" name="m5siz" value="">
+                                    @endif
+                                    @if ($goods->isType())
+                                        <div>
+                                            <span class="select">
+                                                <select name="type_code" class="type_code{{ $goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                    data-item_no="{{ $goods->getItemNo() }}" data-data_type="type_code">
+                                                    <option value="">▼お選びください</option>
+                                                    @if (!$goods->isColor() && !$goods->isSize())
+                                                        @foreach ($goods->getTypeArray() as $type)
+                                                            <option value="{{ $type->type_code }}">
+                                                                {{ $type->type_name }}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </span>
+                                        </div>
+                                    @else
+                                        <input type="hidden" name="type_code" value="">
+                                    @endif
+                                @endif
+                                @if (!$goods->isNgCartMessage())
+                                    <div class="md:w-[70%] mx-auto">
+                                        <button type="button" data-item_no="{{ $goods->getItemNo() }}" class="add-cart w-full c-btn-amber-gradient py-4 px-6 rounded-lg flex items-center justify-between transition-all duration-200 shadow-md hover:shadow-lg">
+                                            <?xml version="1.0" encoding="utf-8"?>
+                                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none;">
+                                                <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span class="flex-1 text-center text-lg font-bold" style="pointer-events: none;">カートに入れる</span>
+                                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="pointer-events: none;">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                @endif
+    					        </form>
+                            @endif
+                            <div class="flex flex-col lg:flex-row lg:justify-between space-y-3 pt-3">
+                            <!-- お電話 -->
+                            <div class="flex flex-col items-center">
+                                <div class="text-sm md:text-base text-gray-600 tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
+                                    <div class="flex items-center space-x-1 -mt-1">
+                                        <div class="w-5 h-5 md:w-8 md:h-8 bg-gray-600 rounded-full flex items-center justify-center">
+                                            <svg class="w-3 h-3 md:w-5 md:h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                            </svg>
+                                        </div>
+                                        <a href="tel:0120-247-417" class="text-2xl md:text-3xl text-gray-600 hover:opacity-80 duration-200">0120-247-417</a>
+                                    </div>
+                                </div>
+                                <!-- お問い合わせ -->
+                                <div class="text-center">
+                                    <a href="/inquiry/index?item_no={{ $goods->getItemNo() }}" class="text-iei-primary hover:text-iei-secondary underline transition-colors sm:text-base">この商品をメールで問い合わせ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="border-t border-gray-300 mb-4 xl:w-[80%] mx-auto"></div>
+        <!-- 案内セクション -->
+        <?php include public_path() . '/include/footer_guidance.html'; ?>
+
+        <!-- ページトップボタン -->
+        <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
+            <a href="#" class="c-bg-second hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform  hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- フッターコンポーネント -->
+    <?php include public_path() . '/include/footer_new.html'; ?>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/js/product.js"></script>
+
+    <script>
+    // DOMの準備完了を待つ
+    document.addEventListener('DOMContentLoaded', function() {
+        // ハンバーガーメニュー機能
+        const ham = document.querySelector('#js-hamburger');
+        const nav = document.querySelector('#js-nav');
+        //const overlay = document.querySelector('#js-overlay');
+        const closeMenu = document.querySelector('#js-close-menu');
+
+        // メニューを閉じる共通関数
+        function closeNavMenu() {
+            if (ham) ham.classList.remove('active');
+            if (nav) nav.classList.remove('active');
+            //if (overlay) overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        if (ham && nav) {
+            // メニューボタンクリック
+            ham.addEventListener('click', function () {
+                ham.classList.toggle('active');
+                nav.classList.toggle('active');
+                //overlay.classList.toggle('active');
+
+                // 背景スクロール制御
+                if (nav.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // 閉じるボタンクリック
+            if (closeMenu) {
+                closeMenu.addEventListener('click', closeNavMenu);
+            }
+
+            // オーバーレイクリックでメニューを閉じる
+            //overlay.addEventListener('click', closeNavMenu);
+            // メニュー外をクリックしてメニューを閉じる
+            document.addEventListener('click', function(e) {
+                if (nav.classList.contains('active')) {
+                    // クリックされた要素がメニュー内またはハンバーガーボタンでない場合
+                    if (!nav.contains(e.target) && !ham.contains(e.target)) {
+                        closeNavMenu();
+                    }
+                }
+            });
+
+            // メニュー内のリンククリックでメニューを閉じる
+            const menuLinks = nav.querySelectorAll('a');
+            menuLinks.forEach(function(link) {
+                link.addEventListener('click', closeNavMenu);
+            });
+
+            // ESCキーでメニューを閉じる
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && nav.classList.contains('active')) {
+                    closeNavMenu();
+                }
+            });
+        }
+
+        // スムーススクロール機能
+        const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+        smoothScrollLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const startPosition = window.pageYOffset;
+                    const distance = targetPosition - startPosition;
+                    const duration = 800;
+                    let start = null;
+
+                    window.requestAnimationFrame(step);
+
+                    function step(timestamp) {
+                        if (!start) start = timestamp;
+                        const progress = timestamp - start;
+                        const progressRatio = Math.min(progress / duration, 1);
+                        const easeInOutCubic = progressRatio < 0.5
+                            ? 4 * progressRatio * progressRatio * progressRatio
+                            : 1 - Math.pow(-2 * progressRatio + 2, 3) / 2;
+
+                        window.scrollTo(0, startPosition + distance * easeInOutCubic);
+
+                        if (progress < duration) {
+                            window.requestAnimationFrame(step);
+                        }
+                    }
+                }
+            });
+        });
+
+        // アコーディオン機能
+        function toggleAccordion(sectionId) {
+            const content = document.getElementById(sectionId + '-content');
+            const arrow = document.getElementById(sectionId + '-arrow');
+
+            // 他のアコーディオンを閉じる
+            const allContents = document.querySelectorAll('[id$="-content"]');
+            const allArrows = document.querySelectorAll('[id$="-arrow"]');
+
+            allContents.forEach(function(otherContent) {
+                if (otherContent.id !== sectionId + '-content' && !otherContent.classList.contains('hidden')) {
+                    otherContent.classList.add('hidden');
+                }
+            });
+
+            allArrows.forEach(function(otherArrow) {
+                if (otherArrow.id !== sectionId + '-arrow') {
+                    otherArrow.classList.remove('rotate-180');
+                }
+            });
+
+            // 選択されたアコーディオンをトグル
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                arrow.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                arrow.classList.remove('rotate-180');
+            }
+        }
+
+        // グローバルスコープに関数を追加
+        window.toggleAccordion = toggleAccordion;
+    });
+    </script>
+    <!-- アコーディオン機能のJavaScript -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // アコーディオン機能の初期化
+        const guideHeaders = document.querySelectorAll('.guide-header');
+
+        guideHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                // PCサイズではアコーディオン無効
+                if (window.innerWidth >= 768) return;
+
+                const item = header.closest('[data-section]');
+                const content = item.querySelector('.guide-content');
+                const arrow = header.querySelector('svg:last-child');
+
+                // 現在のコンテンツの表示状態を切り替え
+                const isHidden = content.classList.contains('hidden');
+
+                if (isHidden) {
+                    // 他のアコーディオンを閉じる
+                    document.querySelectorAll('.guide-content').forEach(otherContent => {
+                        if (!otherContent.classList.contains('md:block')) {
+                            otherContent.classList.add('hidden');
+                        }
+                    });
+
+                    document.querySelectorAll('.guide-header svg:last-child').forEach(otherArrow => {
+                        otherArrow.classList.remove('rotate-180');
+                    });
+
+                    // 選択したアコーディオンを開く
+                    content.classList.remove('hidden');
+                    if (arrow) arrow.classList.add('rotate-180');
+                } else {
+                    // 選択したアコーディオンを閉じる
+                    content.classList.add('hidden');
+                    if (arrow) arrow.classList.remove('rotate-180');
+                }
+            });
+        });
+
+        // リサイズ時にPC表示では全て表示
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                document.querySelectorAll('.guide-content').forEach(content => {
+                    content.classList.remove('hidden');
+                });
+                document.querySelectorAll('.guide-header svg:last-child').forEach(arrow => {
+                    arrow.classList.remove('rotate-180');
+                });
+            }
+        });
+    });
+
+    // ページトップボタン
+    const pagetop = document.getElementById('pagetop');
+    if (pagetop) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                pagetop.classList.remove('hidden');
+            } else {
+                pagetop.classList.add('hidden');
+            }
+        });
+
+        pagetop.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+    </script>
+    <script src="{{ asset('/sys/js/goods.js') }}"></script>
+    <script src="{{ asset('/sys/js/common.js') }}"></script>
+</body>
+</html>

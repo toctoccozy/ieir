@@ -1,0 +1,96 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>＜純金の子猫＞ダイヤモンド入り24金製宝飾ペンダント</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51141503" target="_self"><img alt="＜純金の子猫＞ダイヤモンド入り24金製宝飾ペンダント" src="/image/goods/51141_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：ペンダントトップ＝24金（中空）、ダイヤモンド1石（約0.01ct）、ブラックダイヤモンド2石（計約0.02ct）　チェーン＝18金<br/>
+●サイズ（約）：ペンダントトップ＝縦14×横8.2×厚さ10.2mm　チェーン＝最長45cm（フリーアジャスター）<br/>
+●重さ（約）：ペンダントトップ＝1.7g<br/>
+●日本製</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>＜純金の子猫＞ダイヤモンド入り24金製宝飾ペンダント</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>12,400円（税込13,640円）×12回払い</span><br/>
+                          
+                          
+                            一括価格 <span>139,800円（税込153,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51141503"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51141"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51141503');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51141503');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="月の光をまとった幸運のシンボル＜純金の子猫＞ダイヤモンド入り24金製宝飾ペンダント" height="207" src="/image/goods/51141_01.jpg" width="580"/></p>
+<p class="center-img"><img alt="着用イメージ" height="400" src="/image/goods/51141_02.jpg" width="350"/></p>
+<p class="intro">
+		愛くるしい姿で周りをたちまち笑顔にする<br/>
+		幸せの使者「子猫」が純金ペンダントに。<br/>
+<br/>
+		ダイヤモンドの首輪をした<br/>
+		あどけない姿かたちを<br/>
+		やわらかな毛並みまでも精緻に立体表現。<br/>
+		ブラックダイヤのつぶらな瞳を輝かせ<br/>
+		あなたに幸運をはこびます。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>幸せのシンボル「子猫」を精巧に立体表現したペンダント</li>
+<li class="stt"><span class="sq01">■</span>最高品位.999の純金製</li>
+<li class="stt"><span class="sq01">■</span>ブラックダイヤモンドの瞳</li>
+<li class="stt"><span class="sq01">■</span>首輪に煌めくダイヤモンド</li>
+<li class="stt"><span class="sq01">■</span>18金製チェーン</li>
+</ul>
+<p class="center-img"><img alt="その輝きは純粋無垢…幸せを連れてくる純金の子猫" height="480" src="/image/goods/51141_03.jpg" width="350"/></p>
+<h2>純金のピュアな輝きとダイヤモンドの煌めき…<br/>
+	幸せを招く愛くるしい子猫をそっと胸に抱きしめて</h2>
+<p>
+		それは、月の光に照らされた幸運の子猫―どんな人もたちまち笑顔にしてしまう愛くるしい子猫が、この上なくリッチなゴールドジュエリーになりました。幼い福猫に宿る無限の幸せパワーが、限りなくピュアな黄金の月あかりをまとってすくすく育ち、次から次へと福を招いてくれる素敵な純金ペンダントです。
+	</p>
+<p class="center-img"><img alt="子猫の姿をぐるりと360度立体的に表現。ちょこんと座った姿にも心がなごんで…／好奇心いっぱいのつぶらな瞳に輝くのは強い意志を表すブラックダイヤモンド。／ダイヤモンドが燦然と煌めくお洒落な首輪。その輝きは変わらぬ美しさの象徴。／幸せを呼ぶ黄金の子猫：猫は貴重な仏典をネズミの害から守る動物として、奈良時代に日本にもたらされ、やがて商売繁盛の招き猫など、招福の縁起物でおなじみとなりました。特に子猫は、富と幸運を招くといわれ、大切にされてきた歴史があります。黄金の子猫は、月のパワーを表す黄金の輝きと、幼い福猫としての無限の可能性がひとつになった幸運のモチーフです。" height="800" src="/image/goods/51141_04.jpg" width="550"/></p>
+<p>
+		あどけない表情から、ふんわりと柔らかそうな毛並みまで、精緻な立体造形に表現された子猫のペンダントトップは、贅沢な24金製。純度99.9％のゴールドならではの輝きが心くすぐります。あなたをじっと見つめるつぶらな瞳はブラックダイヤモンド。そして子猫が着けている首輪で燦然と輝くのは、永遠の美の象徴ダイヤモンドという豪華さ。純金とダイヤモンドという不変の価値と気品ある煌めきの組み合わせが、微笑みを誘う幼い福猫の姿とともに、あふれんばかりの幸せオーラであなたを美しく輝かせることでしょう。<br/>
+		＜純金の子猫＞ダイヤモンド入り24金製宝飾ペンダントは、近年価格が高騰している純金製。ころんとした福々しい子猫の姿に心癒され、身に着ける方も周囲の方も幸せに包まれるラッキージュエリーとして、ぜひこの好機にお求めください。
+	</p>
+<p class="center-img"><img alt="ペンダントはギフトケースに収めてお届けします。贈り物にも喜ばれます。" height="570" src="/image/goods/51141_05.jpg" width="500"/></p>
+<div class="box1">
+<div class="box-text">
+<h3>高騰の一途をたどる美しくも価値ある貴金属「純金」</h3>
+<p>
+				眩い黄金の輝きで世界中の人々を魅了する「純金」は、地球上の採掘可能な埋蔵量のうち既に約7割が産出されたといわれています。しかも、埋蔵されている残りの大部分は採掘が困難な場所にあり、近い将来は、地上にある在庫を再利用する以外に手段がなくなる可能性も。希少化が進むことでさらなる高騰が期待されています。
+			</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--
