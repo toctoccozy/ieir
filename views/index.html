@@ -141,6 +141,69 @@
         padding-top: 88px; /* ヘッダーの高さ（64px）+ pb-6（24px）分 */
     }
 
+    /* 見出しスライドインアニメーション */
+    @keyframes slideInFromRight {
+        from {
+            transform: translateX(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes expandLine {
+        from {
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+        to {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    }
+
+    /* 初期状態（非表示） */
+    .animate-on-scroll .heading-text {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    .animate-on-scroll .heading-line {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    /* アニメーション発動時 */
+    .animate-on-scroll.is-visible .heading-text {
+        animation: slideInFromRight 0.6s ease-out forwards;
+    }
+
+    .animate-on-scroll.is-visible .heading-line {
+        animation: expandLine 0.8s ease-out 0.3s forwards;
+    }
+
+    /* スライダースケールアップアニメーション */
+    @keyframes scaleUpFadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .slider-scale-in {
+        opacity: 0;
+    }
+
+    .slider-scale-in.is-loaded {
+        animation: scaleUpFadeIn 0.8s ease-out forwards;
+    }
+
     </style>
 </head>
 
@@ -438,7 +501,7 @@
             <!-- スライダーセクション -->
             <section class="">
                 <!-- メインスライダー -->
-                <div class="">
+                <div class="slider-scale-in">
                     <div class="slider-main">
                         <div><img src="/ieir/public/img/tmp_top_slider/slider-image001.jpg" alt="スライド1" class="w-full h-auto"></div>
                         <div><img src="/ieir/public/img/tmp_top_slider/slider-image002.jpg" alt="スライド2" class="w-full h-auto"></div>
@@ -460,7 +523,7 @@
                     <div class="bg-white border-t border-b md:border-2 border-gray-200 md:rounded-xl p-4 md:shadow-sm md:hover:shadow-md transition-shadow duration-200">
                         <!-- 見出し -->
                         <div class="flex items-center gap-3 mb-3">
-                            <svg class="w-10 h-10 c-text-premico flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-7 h-7 sm:w-10 sm:h-10 c-text-premico flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                             </svg>
                             <div>
@@ -490,7 +553,7 @@
                         <div class="flex-1 flex flex-col justify-between bg-white border-b md:border-2 border-gray-200 md:rounded-xl p-4 md:shadow-sm md:hover:shadow-md transition-shadow duration-200">
                             <!-- 見出し -->
                             <div class="flex items-center gap-3 pb-1 md:pb-3">
-                                <svg class="w-10 h-10 c-text-premico flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-7 h-7 sm:w-10 sm:h-10 c-text-premico flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                                 </svg>
                                 <div class="">
@@ -513,7 +576,7 @@
                         <div class="flex-1 flex flex-col justify-between bg-white md:border-2 border-gray-200 md:rounded-xl p-4 md:shadow-sm md:hover:shadow-md transition-shadow duration-200">
                             <!-- 見出し -->
                             <div class="flex items-center gap-3 pb-1 md:pb-3">
-                                <svg class="w-10 h-10 c-text-premico flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-7 h-7 sm:w-10 sm:h-10 c-text-premico flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
                                 </svg>
                                 <div class="">
@@ -540,13 +603,13 @@
         <main class="pb-6 px-1 mx-auto max-w-5xl">
             <!-- 新着のお知らせセクション -->
             <section class="py-6">
-                <h2 class="mb-6 flex items-center overflow-hidden">
-                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0">
+                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
+                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
                         <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap">New Arrival</span>
                         <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">新着のお知らせ</span>
                     </div>
                     <!-- 装飾ライン -->
-                    <div class="flex flex-1 items-center ml-4 min-w-0">
+                    <div class="flex flex-1 items-center ml-4 min-w-0 heading-line">
                         <svg class="flex-1 h-1.5 min-w-0" viewBox="0 0 300 6" preserveAspectRatio="none">
                             <!-- 濃いライン（台形） -->
                             <polygon points="4,0 104,0 100,6 0,6" fill="#2C5282"/>
@@ -706,13 +769,13 @@
 
             <!-- 新聞・雑誌に掲載中の商品セクション -->
             <section class="py-6">
-                <h2 class="mb-6 flex items-center overflow-hidden">
-                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0">
+                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
+                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
                         <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap">Items on Paper</span>
                         <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">新聞・雑誌に掲載中の商品</span>
                     </div>
                     <!-- 装飾ライン -->
-                    <div class="flex flex-1 items-center ml-2 md:ml-4 min-w-0">
+                    <div class="flex flex-1 items-center ml-2 md:ml-4 min-w-0 heading-line">
                         <svg class="flex-1 h-1.5 min-w-0" viewBox="0 0 300 6" preserveAspectRatio="none">
                             <!-- 濃いライン（台形） -->
                             <polygon points="4,0 104,0 100,6 0,6" fill="#2C5282"/>
@@ -907,13 +970,13 @@
 
             <!-- カテゴリーセクション -->
             <section class="py-6">
-                <h2 class="mb-6 pb-1 flex items-center overflow-hidden">
-                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0">
+                <h2 class="mb-6 pb-1 flex items-center overflow-hidden animate-on-scroll">
+                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
                         <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap">Category</span>
                         <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">カテゴリー</span>
                     </div>
                     <!-- 装飾ライン -->
-                    <div class="flex flex-1 items-center ml-4 min-w-0">
+                    <div class="flex flex-1 items-center ml-4 min-w-0 heading-line">
                         <svg class="flex-1 h-1.5 min-w-0" viewBox="0 0 300 6" preserveAspectRatio="none">
                             <!-- 濃いライン（台形） -->
                             <polygon points="4,0 104,0 100,6 0,6" fill="#2C5282"/>
@@ -1172,13 +1235,13 @@
 
             <!-- メールニュースセクション -->
             <section class="py-6">
-                <h2 class="mb-6 flex items-center overflow-hidden">
-                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0">
+                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
+                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
                         <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap">Mail News</span>
                         <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">メールニュース</span>
                     </div>
                     <!-- 装飾ライン -->
-                    <div class="flex flex-1 items-center ml-4 min-w-0">
+                    <div class="flex flex-1 items-center ml-4 min-w-0 heading-line">
                         <svg class="flex-1 h-1.5 min-w-0" viewBox="0 0 300 6" preserveAspectRatio="none">
                             <!-- 濃いライン（台形） -->
                             <polygon points="4,0 104,0 100,6 0,6" fill="#2C5282"/>
@@ -1499,7 +1562,10 @@
     // jQuery ready
     $(document).ready(function() {
         // メインスライダー
-        $('.slider-main').slick({
+        $('.slider-main').on('init', function() {
+            // Slick初期化完了後にスケールアップアニメーション発動
+            $('.slider-scale-in').addClass('is-loaded');
+        }).slick({
             infinite: true,
             autoplay: true,
             autoplaySpeed: 4000,
@@ -1620,6 +1686,28 @@
             window.location.href = '/ieir/views/auth/login.html';
         }
     }
+
+    // Intersection Observer: 見出しアニメーション
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const headingObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                // 一度表示したら監視を解除
+                headingObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // アニメーション対象の見出しを監視
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        headingObserver.observe(el);
+    });
 </script>
 </body>
 </html>
