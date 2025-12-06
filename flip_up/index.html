@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide Up Wave - 商品ギャラリー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .gallery-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1400px;
+      aspect-ratio: 2 / 1;
+    }
+
+    .gallery-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      gap: 20px;
+      background: #134e99;
+    }
+
+    .panel {
+      flex: 1;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .panel-image {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .panel.no-transition .panel-image {
+      transition: none;
+    }
+
+    .panel-image.current {
+      top: 0;
+      z-index: 2;
+      transform: translateY(0);
+    }
+
+    .panel-image.next {
+      top: 0;
+      z-index: 1;
+      transform: translateY(100%);
+    }
+
+    .panel.slid .panel-image.current {
+      transform: translateY(-100%);
+    }
+
+    .panel.slid .panel-image.next {
+      transform: translateY(0);
+    }
+
+    /* テキストエリア（下部に配置） */
+    .text-area {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 40%;
+      background: linear-gradient(to top, rgba(19, 78, 153, 0.95) 0%, rgba(19, 78, 153, 0.85) 70%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2% 5%;
+      z-index: 100;
+      opacity: 0;
+      transition: opacity 0.6s ease-out;
+    }
+
+    .text-area.show {
+      opacity: 1;
+    }
+
+    .text-line {
+      margin-bottom: 0.5%;
+    }
+
+    .text-line:last-child {
+      margin-bottom: 0;
+    }
+
+    .text-content {
+      opacity: 0;
+      transition: opacity 1.4s ease-out;
+    }
+
+    .text-content.text-main {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .text-content.text-main.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .text-line.show .text-content {
+      opacity: 1;
+    }
+
+    .text-main {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(18px, 3.7vw, 52px);
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: 0.4em;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      white-space: nowrap;
+    }
+
+    .text-sub {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(14px, 2.2vw, 24px);
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9);
+      letter-spacing: 0.05em;
+    }
+
+    /* リプレイボタン */
+    .replay-btn {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 30px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+      transition: all 0.3s ease;
+      z-index: 200;
+    }
+
+    .replay-btn:hover {
+      transform: translateX(-50%) translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery-wrapper">
+    <div class="gallery-container">
+      <!-- パネル1 -->
+      <div class="panel" id="panel-0">
+        <img src="images/246.png" alt="Product 1B" class="panel-image next">
+        <img src="images/238.png" alt="Product 1A" class="panel-image current">
+      </div>
+
+      <!-- パネル2 -->
+      <div class="panel" id="panel-1">
+        <img src="images/258.png" alt="Product 2B" class="panel-image next">
+        <img src="images/254.png" alt="Product 2A" class="panel-image current">
+      </div>
+
+      <!-- パネル3 -->
+      <div class="panel" id="panel-2">
+        <img src="images/262.png" alt="Product 3B" class="panel-image next">
+        <img src="images/261.png" alt="Product 3A" class="panel-image current">
+      </div>
+
+      <!-- パネル4 -->
+      <div class="panel" id="panel-3">
+        <img src="images/51489_main_600x600.jpg" alt="Product 4B" class="panel-image next">
+        <img src="images/264.png" alt="Product 4A" class="panel-image current">
+      </div>
+
+      <!-- パネル5 -->
+      <div class="panel" id="panel-4">
+        <img src="images/img10.png" alt="Product 5B" class="panel-image next">
+        <img src="images/img9.png" alt="Product 5A" class="panel-image current">
+      </div>
+    </div>
+
+    <!-- テキストエリア（下部） -->
+    <div class="text-area">
+      <div class="text-line" id="line-0">
+        <div class="text-content text-main">想像を超える、新しい出会い</div>
+      </div>
+      <div class="text-line" id="line-1">
+        <div class="text-content text-sub">オリジナリティにこだわり抜いた</div>
+      </div>
+      <div class="text-line" id="line-2">
+        <div class="text-content text-sub">唯一無二の商品たちをご提供</div>
+      </div>
+    </div>
+  </div>
+
+  <button class="replay-btn" id="replayBtn">🔄 Replay</button>
+
+  <script>
+    const SLIDE_DELAY = 600; // 0.6秒ずつ
+    const INITIAL_DELAY = 1000; // 開始前の待機時間
+    const PANEL_COUNT = 5;
+    const LINE_COUNT = 3;
+    const SLIDE_DURATION = 1200; // スライドアニメーション時間
+    const LOOP_PAUSE = 3000; // ループ間の待機時間
+
+    // テキストの出現タイミング（パネルのスライドに連動）
+    // 1行目は最初から表示
+    // パネル3スライド時 → 2行目
+    // パネル5スライド時 → 3行目
+    const TEXT_TRIGGERS = { 2: 1, 4: 2 }; // パネル番号: 表示する行番号
+
+    const mainText = document.querySelector('.text-content.text-main');
+    const textArea = document.querySelector('.text-area');
+    let isFirstRun = true;
+
+    function resetPanels() {
+      // トランジションを無効化して瞬時にリセット
+      for (let i = 0; i < PANEL_COUNT; i++) {
+        const panel = document.getElementById(`panel-${i}`);
+        panel.classList.add('no-transition');
+        panel.classList.remove('slid');
+      }
+      // 次のフレームでトランジションを再有効化
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          for (let i = 0; i < PANEL_COUNT; i++) {
+            document.getElementById(`panel-${i}`).classList.remove('no-transition');
+          }
+        });
+      });
+    }
+
+    function startAnimation() {
+      // パネルを瞬時にリセット（2回目以降）
+      if (!isFirstRun) {
+        resetPanels();
+      }
+
+      // 少し待ってから開始
+      setTimeout(() => {
+        // 初回のみテキストを表示
+        if (isFirstRun) {
+          textArea.classList.add('show');
+          mainText.classList.add('show');
+        }
+
+        // 左から順番にスライド（常に下から上へ）
+        for (let i = 0; i < PANEL_COUNT; i++) {
+          setTimeout(() => {
+            document.getElementById(`panel-${i}`).classList.add('slid');
+
+            // 初回のみ: このパネルに連動するテキストがあるかチェック
+            if (isFirstRun && TEXT_TRIGGERS[i] !== undefined) {
+              // 少し遅らせてテキストをフェードイン
+              setTimeout(() => {
+                document.getElementById(`line-${TEXT_TRIGGERS[i]}`).classList.add('show');
+              }, 300);
+            }
+          }, i * SLIDE_DELAY);
+        }
+
+        // 全スライド完了後、再度アニメーションを開始
+        const totalSlideTime = (PANEL_COUNT - 1) * SLIDE_DELAY + SLIDE_DURATION;
+        setTimeout(() => {
+          isFirstRun = false;
+          startAnimation();
+        }, totalSlideTime + LOOP_PAUSE);
+
+      }, INITIAL_DELAY);
+    }
+
+    // リプレイボタン
+    document.getElementById('replayBtn').addEventListener('click', () => {
+      isFirstRun = true;
+      // 全パネルをリセット
+      resetPanels();
+      textArea.classList.remove('show');
+      mainText.classList.remove('show');
+      for (let i = 1; i < LINE_COUNT; i++) {
+        document.getElementById(`line-${i}`).classList.remove('show');
+      }
+      startAnimation();
+    });
+
+    // 初回実行
+    startAnimation();
+  </script>
+</body>
+</html>

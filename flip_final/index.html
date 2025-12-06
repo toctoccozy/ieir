@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mosaic Flip - 商品ギャラリー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .mosaic-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1400px;
+      aspect-ratio: 2 / 1;
+    }
+
+    .mosaic-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      gap: 20px;
+      background: #134e99;
+      padding: 0;
+    }
+
+    .flip-panel-container {
+      flex: 1;
+      height: 100%;
+      perspective: 1500px;
+    }
+
+    .flip-panel {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 1.2s ease-in-out;
+    }
+
+    .flip-panel.flipped {
+      transform: rotateY(180deg);
+    }
+
+    .panel-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      overflow: hidden;
+    }
+
+    .panel-face img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .panel-front {
+      z-index: 2;
+    }
+
+    .panel-back {
+      transform: rotateY(180deg);
+    }
+
+    /* オーバーレイ & メッセージ（ミニマル・ボトム） */
+    .message-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 5%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+      z-index: 100;
+    }
+
+    .message-overlay.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .message-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3.5% 5%;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 8px;
+      transform: scale(0.85);
+      opacity: 0;
+      transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  opacity 1s ease-out;
+    }
+
+    .message-overlay.show .message-content {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .message-main {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(24px, 4.5vw, 64px);
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: 0.5em;
+      margin-bottom: 4%;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5),
+                   0 4px 40px rgba(0, 0, 0, 0.3);
+      white-space: nowrap;
+    }
+
+    .message-sub {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: clamp(12px, 1.7vw, 24px);
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.95);
+      letter-spacing: 0.2em;
+      line-height: 1.8;
+      text-align: center;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    /* リプレイボタン */
+    .replay-btn {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 30px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+      transition: all 0.3s ease;
+      z-index: 200;
+    }
+
+    .replay-btn:hover {
+      transform: translateX(-50%) translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="mosaic-wrapper">
+    <div class="mosaic-container" id="container">
+      <!-- グリッド1 -->
+      <div class="flip-panel-container">
+        <div class="flip-panel" id="panel-0">
+          <div class="panel-face panel-front">
+            <img src="images/238.png" alt="Product 1A">
+          </div>
+          <div class="panel-face panel-back">
+            <img src="images/246.png" alt="Product 1B">
+          </div>
+        </div>
+      </div>
+
+      <!-- グリッド2 -->
+      <div class="flip-panel-container">
+        <div class="flip-panel" id="panel-1">
+          <div class="panel-face panel-front">
+            <img src="images/254.png" alt="Product 2A">
+          </div>
+          <div class="panel-face panel-back">
+            <img src="images/258.png" alt="Product 2B">
+          </div>
+        </div>
+      </div>
+
+      <!-- グリッド3 -->
+      <div class="flip-panel-container">
+        <div class="flip-panel" id="panel-2">
+          <div class="panel-face panel-front">
+            <img src="images/261.png" alt="Product 3A">
+          </div>
+          <div class="panel-face panel-back">
+            <img src="images/262.png" alt="Product 3B">
+          </div>
+        </div>
+      </div>
+
+      <!-- グリッド4 -->
+      <div class="flip-panel-container">
+        <div class="flip-panel" id="panel-3">
+          <div class="panel-face panel-front">
+            <img src="images/264.png" alt="Product 4A">
+          </div>
+          <div class="panel-face panel-back">
+            <img src="images/51489_main_600x600.jpg" alt="Product 4B">
+          </div>
+        </div>
+      </div>
+
+      <!-- グリッド5 -->
+      <div class="flip-panel-container">
+        <div class="flip-panel" id="panel-4">
+          <div class="panel-face panel-front">
+            <img src="images/img9.png" alt="Product 5A">
+          </div>
+          <div class="panel-face panel-back">
+            <img src="images/img10.png" alt="Product 5B">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- メッセージオーバーレイ -->
+    <div class="message-overlay" id="messageOverlay">
+      <div class="message-content">
+        <div class="message-main">創造が、想像を超えていく</div>
+        <div class="message-sub">
+          あなたの好きが きっと見つかる<br>
+          ときめきと感動、そして驚きが
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="replay-btn" id="replayBtn">🔄 Replay</button>
+
+  <script>
+    const FLIP_DELAY = 600; // 0.6秒ずつ
+    const INITIAL_DELAY = 1000; // 開始前の待機時間
+    const PANEL_COUNT = 5;
+    const FLIP_DURATION = 1200; // フリップアニメーション時間
+    const MESSAGE_DELAY = 800; // フリップ完了後からメッセージ表示までの待機
+    const LOOP_PAUSE = 3000; // ループ間の待機時間
+
+    const messageOverlay = document.getElementById('messageOverlay');
+    let isFlipped = false; // 現在の状態を追跡
+
+    function startAnimation() {
+      if (isFlipped) {
+        // 元に戻すアニメーション（右から左へ）
+        messageOverlay.classList.remove('show');
+
+        // 右から左へ順番に戻す
+        for (let i = PANEL_COUNT - 1; i >= 0; i--) {
+          setTimeout(() => {
+            document.getElementById(`panel-${i}`).classList.remove('flipped');
+          }, (PANEL_COUNT - 1 - i) * FLIP_DELAY);
+        }
+
+        isFlipped = false;
+
+        // 全て戻った後、再度フリップアニメーションを開始
+        const totalFlipTime = (PANEL_COUNT - 1) * FLIP_DELAY + FLIP_DURATION;
+        setTimeout(() => {
+          startAnimation();
+        }, totalFlipTime + LOOP_PAUSE);
+
+      } else {
+        // フリップアニメーション（左から右へ）
+        // 少し待ってから開始
+        setTimeout(() => {
+          // 左から順番にフリップ
+          for (let i = 0; i < PANEL_COUNT; i++) {
+            setTimeout(() => {
+              document.getElementById(`panel-${i}`).classList.add('flipped');
+            }, i * FLIP_DELAY);
+          }
+
+          // 全フリップ完了後にメッセージ表示
+          const totalFlipTime = (PANEL_COUNT - 1) * FLIP_DELAY + FLIP_DURATION;
+          setTimeout(() => {
+            messageOverlay.classList.add('show');
+          }, totalFlipTime + MESSAGE_DELAY);
+
+          isFlipped = true;
+
+          // メッセージ表示後、戻すアニメーションを開始
+          setTimeout(() => {
+            startAnimation();
+          }, totalFlipTime + MESSAGE_DELAY + LOOP_PAUSE);
+
+        }, INITIAL_DELAY);
+      }
+    }
+
+    // リプレイボタン
+    document.getElementById('replayBtn').addEventListener('click', () => {
+      isFlipped = false;
+      messageOverlay.classList.remove('show');
+      for (let i = 0; i < PANEL_COUNT; i++) {
+        document.getElementById(`panel-${i}`).classList.remove('flipped');
+      }
+      startAnimation();
+    });
+
+    // 初回実行
+    startAnimation();
+  </script>
+</body>
+</html>

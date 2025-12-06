@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crossfade Wave - 商品ギャラリー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .gallery-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1400px;
+      aspect-ratio: 2 / 1;
+    }
+
+    .gallery-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      gap: 20px;
+      background: #134e99;
+    }
+
+    .panel {
+      flex: 1;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .panel-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 2s ease-in-out;
+    }
+
+    .panel-image.front {
+      z-index: 2;
+      opacity: 1;
+    }
+
+    .panel-image.back {
+      z-index: 1;
+      opacity: 1;
+    }
+
+    .panel.faded .panel-image.front {
+      opacity: 0;
+    }
+
+    /* オーバーレイ & メッセージ */
+    .message-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(19, 78, 153, 0.75);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+      z-index: 100;
+    }
+
+    .message-overlay.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .message-main {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(24px, 4.5vw, 64px);
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: 0.5em;
+      margin-bottom: 4%;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(20px);
+      opacity: 0;
+      transition: transform 0.8s ease-out 0.3s, opacity 0.8s ease-out 0.3s;
+      white-space: nowrap;
+    }
+
+    .message-overlay.show .message-main {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .message-sub {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: clamp(12px, 2vw, 28px);
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.9);
+      letter-spacing: 0.25em;
+      line-height: 2;
+      text-align: center;
+      transform: translateY(20px);
+      opacity: 0;
+      transition: transform 0.8s ease-out 0.6s, opacity 0.8s ease-out 0.6s;
+    }
+
+    .message-overlay.show .message-sub {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* リプレイボタン */
+    .replay-btn {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 30px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+      transition: all 0.3s ease;
+      z-index: 200;
+    }
+
+    .replay-btn:hover {
+      transform: translateX(-50%) translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery-wrapper">
+    <div class="gallery-container">
+      <!-- パネル1 -->
+      <div class="panel" id="panel-0">
+        <img src="images/246.png" alt="Product 1B" class="panel-image back">
+        <img src="images/238.png" alt="Product 1A" class="panel-image front">
+      </div>
+
+      <!-- パネル2 -->
+      <div class="panel" id="panel-1">
+        <img src="images/258.png" alt="Product 2B" class="panel-image back">
+        <img src="images/254.png" alt="Product 2A" class="panel-image front">
+      </div>
+
+      <!-- パネル3 -->
+      <div class="panel" id="panel-2">
+        <img src="images/262.png" alt="Product 3B" class="panel-image back">
+        <img src="images/261.png" alt="Product 3A" class="panel-image front">
+      </div>
+
+      <!-- パネル4 -->
+      <div class="panel" id="panel-3">
+        <img src="images/51489_main_600x600.jpg" alt="Product 4B" class="panel-image back">
+        <img src="images/264.png" alt="Product 4A" class="panel-image front">
+      </div>
+
+      <!-- パネル5 -->
+      <div class="panel" id="panel-4">
+        <img src="images/img10.png" alt="Product 5B" class="panel-image back">
+        <img src="images/img9.png" alt="Product 5A" class="panel-image front">
+      </div>
+    </div>
+
+    <!-- メッセージオーバーレイ -->
+    <div class="message-overlay" id="messageOverlay">
+      <div class="message-main">創造が、想像を超えていく</div>
+      <div class="message-sub">
+        あなたの好きが きっと見つかる<br>
+        ときめきと感動、そして驚きが
+      </div>
+    </div>
+  </div>
+
+  <button class="replay-btn" id="replayBtn">🔄 Replay</button>
+
+  <script>
+    const FADE_DELAY = 600; // 0.6秒ずつ
+    const INITIAL_DELAY = 1000; // 開始前の待機時間
+    const PANEL_COUNT = 5;
+    const FADE_DURATION = 2000; // フェードアニメーション時間
+    const MESSAGE_DELAY = 800; // フェード完了後からメッセージ表示までの待機
+    const LOOP_PAUSE = 3000; // ループ間の待機時間
+
+    const messageOverlay = document.getElementById('messageOverlay');
+    let isFaded = false; // 現在の状態を追跡
+
+    function startAnimation() {
+      if (isFaded) {
+        // 元に戻すアニメーション（右から左へ）
+        messageOverlay.classList.remove('show');
+
+        // 右から左へ順番に戻す
+        for (let i = PANEL_COUNT - 1; i >= 0; i--) {
+          setTimeout(() => {
+            document.getElementById(`panel-${i}`).classList.remove('faded');
+          }, (PANEL_COUNT - 1 - i) * FADE_DELAY);
+        }
+
+        isFaded = false;
+
+        // 全て戻った後、再度フェードアニメーションを開始
+        const totalFadeTime = (PANEL_COUNT - 1) * FADE_DELAY + FADE_DURATION;
+        setTimeout(() => {
+          startAnimation();
+        }, totalFadeTime + LOOP_PAUSE);
+
+      } else {
+        // フェードアニメーション（左から右へ）
+        // 少し待ってから開始
+        setTimeout(() => {
+          // 左から順番にフェード
+          for (let i = 0; i < PANEL_COUNT; i++) {
+            setTimeout(() => {
+              document.getElementById(`panel-${i}`).classList.add('faded');
+            }, i * FADE_DELAY);
+          }
+
+          // 全フェード完了後にメッセージ表示
+          const totalFadeTime = (PANEL_COUNT - 1) * FADE_DELAY + FADE_DURATION;
+          setTimeout(() => {
+            messageOverlay.classList.add('show');
+          }, totalFadeTime + MESSAGE_DELAY);
+
+          isFaded = true;
+
+          // メッセージ表示後、戻すアニメーションを開始
+          setTimeout(() => {
+            startAnimation();
+          }, totalFadeTime + MESSAGE_DELAY + LOOP_PAUSE);
+
+        }, INITIAL_DELAY);
+      }
+    }
+
+    // リプレイボタン
+    document.getElementById('replayBtn').addEventListener('click', () => {
+      isFaded = false;
+      messageOverlay.classList.remove('show');
+      for (let i = 0; i < PANEL_COUNT; i++) {
+        document.getElementById(`panel-${i}`).classList.remove('faded');
+      }
+      startAnimation();
+    });
+
+    // 初回実行
+    startAnimation();
+  </script>
+</body>
+</html>
