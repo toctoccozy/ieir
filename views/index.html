@@ -96,9 +96,10 @@
             display: block !important;
         }
 
-        /* lg以上：センターのスライド画像のみヘッダー幅に制限 */
-        .slider-main .slick-slide img {
-            max-width: 56rem;
+        /* lg以上：センターのスライド画像のみ幅を制限 */
+        .slider-main .slick-slide img,
+        .slider-main .slick-slide .flip-center-wrapper {
+            max-width: 1400px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -203,6 +204,141 @@
     .slider-scale-in.is-loaded {
         animation: scaleUpFadeIn 0.8s ease-out forwards;
     }
+
+    /* ========== flip-center スライド用CSS ========== */
+    .flip-center-wrapper {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 2 / 1;
+    }
+
+    .flip-center-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 20px;
+        background: #134e99;
+        padding: 0;
+    }
+
+    .flip-panel-container {
+        flex: 1;
+        height: 100%;
+        perspective: 1500px;
+    }
+
+    .flip-panel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 1.2s ease-in-out;
+    }
+
+    .flip-panel.flipped {
+        transform: rotateY(180deg);
+    }
+
+    .panel-face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        overflow: hidden;
+    }
+
+    .panel-face img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .panel-front {
+        z-index: 2;
+    }
+
+    .panel-back {
+        transform: rotateY(180deg);
+    }
+
+    /* テキストエリア（下部に配置） */
+    .flip-text-area {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background: linear-gradient(to top, rgba(19, 78, 153, 0.95) 0%, rgba(19, 78, 153, 0.85) 70%, transparent 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 2% 5%;
+        z-index: 100;
+        opacity: 0;
+        transition: opacity 0.6s ease-out;
+    }
+
+    .flip-text-area.show {
+        opacity: 1;
+    }
+
+    .flip-text-line {
+        margin-bottom: 0.5%;
+    }
+
+    .flip-text-line:last-child {
+        margin-bottom: 0;
+    }
+
+    .flip-text-content {
+        opacity: 0;
+        transition: opacity 1.4s ease-out;
+    }
+
+    .flip-text-content.flip-text-main {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .flip-text-content.flip-text-main.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .flip-text-line.show .flip-text-content {
+        opacity: 1;
+    }
+
+    .flip-text-main {
+        font-family: 'Noto Serif JP', serif;
+        font-size: clamp(18px, 3.7vw, 52px);
+        font-weight: 600;
+        color: #ffffff;
+        letter-spacing: 0.4em;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        white-space: nowrap;
+    }
+
+    .flip-text-sub {
+        font-family: 'Noto Serif JP', serif;
+        font-size: clamp(14px, 2.2vw, 24px);
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.9);
+        letter-spacing: 0.05em;
+    }
+
+    /* xl以上：フォントサイズを固定（max-width: 1400pxのコンテナに最適化） */
+    @media (min-width: 1280px) {
+        .flip-text-main {
+            font-size: 42px;
+        }
+        .flip-text-sub {
+            font-size: 20px;
+        }
+    }
+    /* ========== flip-center CSS ここまで ========== */
 
     </style>
 </head>
@@ -503,6 +639,75 @@
                 <!-- メインスライダー -->
                 <div class="slider-scale-in">
                     <div class="slider-main">
+                        <!-- flip-centerスライド -->
+                        <div>
+                            <div class="flip-center-wrapper" id="flip-center-slide">
+                                <div class="flip-center-container">
+                                    <div class="flip-panel-container">
+                                        <div class="flip-panel" data-panel="0">
+                                            <div class="panel-face panel-front">
+                                                <img src="/ieir/flip_center/images/238.png" alt="Product 1A">
+                                            </div>
+                                            <div class="panel-face panel-back">
+                                                <img src="/ieir/flip_center/images/246.png" alt="Product 1B">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-panel-container">
+                                        <div class="flip-panel" data-panel="1">
+                                            <div class="panel-face panel-front">
+                                                <img src="/ieir/flip_center/images/254.png" alt="Product 2A">
+                                            </div>
+                                            <div class="panel-face panel-back">
+                                                <img src="/ieir/flip_center/images/258.png" alt="Product 2B">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-panel-container">
+                                        <div class="flip-panel" data-panel="2">
+                                            <div class="panel-face panel-front">
+                                                <img src="/ieir/flip_center/images/261.png" alt="Product 3A">
+                                            </div>
+                                            <div class="panel-face panel-back">
+                                                <img src="/ieir/flip_center/images/262.png" alt="Product 3B">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-panel-container">
+                                        <div class="flip-panel" data-panel="3">
+                                            <div class="panel-face panel-front">
+                                                <img src="/ieir/flip_center/images/264.png" alt="Product 4A">
+                                            </div>
+                                            <div class="panel-face panel-back">
+                                                <img src="/ieir/flip_center/images/51489_main_600x600.jpg" alt="Product 4B">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-panel-container">
+                                        <div class="flip-panel" data-panel="4">
+                                            <div class="panel-face panel-front">
+                                                <img src="/ieir/flip_center/images/img9.png" alt="Product 5A">
+                                            </div>
+                                            <div class="panel-face panel-back">
+                                                <img src="/ieir/flip_center/images/img10.png" alt="Product 5B">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- テキストエリア -->
+                                <div class="flip-text-area">
+                                    <div class="flip-text-line" data-line="0">
+                                        <div class="flip-text-content flip-text-main">想像を超える、新しい出会い</div>
+                                    </div>
+                                    <div class="flip-text-line" data-line="1">
+                                        <div class="flip-text-content flip-text-sub">オリジナリティにこだわり抜いた</div>
+                                    </div>
+                                    <div class="flip-text-line" data-line="2">
+                                        <div class="flip-text-content flip-text-sub">唯一無二の商品たちをご提供</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div><img src="/ieir/public/img/tmp_top_slider/slider-image001.jpg" alt="スライド1" class="w-full h-auto"></div>
                         <div><img src="/ieir/public/img/tmp_top_slider/slider-image002.jpg" alt="スライド2" class="w-full h-auto"></div>
                         <div><img src="/ieir/public/img/tmp_top_slider/slider-image003.jpg" alt="スライド3" class="w-full h-auto"></div>
@@ -1568,7 +1773,7 @@
         }).slick({
             infinite: true,
             autoplay: true,
-            autoplaySpeed: 4000,
+            autoplaySpeed: 8000,
             dots: true, // ドット表示を有効化
             arrows: true,
             prevArrow: '<button type="button" class="slick-prev absolute left-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#2C5282" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>',
@@ -1624,7 +1829,111 @@
 
         // 初期状態でアクティブなサムネイルを設定
         $('.slider-thumbnail .slick-current img').removeClass('opacity-60').addClass('opacity-100');
-        
+
+        // ========== flip-center アニメーション制御 ==========
+        const FLIP_DELAY = 600;
+        const INITIAL_DELAY = 1000;
+        const PANEL_COUNT = 5;
+        const LINE_COUNT = 3;
+        const FLIP_DURATION = 1200;
+        const LOOP_PAUSE = 3000;
+        const TEXT_TRIGGERS = { 2: 1, 4: 2 };
+
+        let flipCenterAnimationId = null;
+        let isFlipped = false;
+        let isFirstRun = true;
+
+        function resetFlipCenter() {
+            // アニメーションをクリア
+            if (flipCenterAnimationId) {
+                clearTimeout(flipCenterAnimationId);
+                flipCenterAnimationId = null;
+            }
+            // パネルをリセット
+            $('#flip-center-slide .flip-panel').removeClass('flipped');
+            // テキストをリセット
+            $('#flip-center-slide .flip-text-area').removeClass('show');
+            $('#flip-center-slide .flip-text-main').removeClass('show');
+            $('#flip-center-slide .flip-text-line').removeClass('show');
+            isFlipped = false;
+            isFirstRun = true;
+        }
+
+        function startFlipCenterAnimation() {
+            if (isFlipped) {
+                // 元に戻すアニメーション（右から左へ）
+                for (let i = PANEL_COUNT - 1; i >= 0; i--) {
+                    setTimeout(() => {
+                        $(`#flip-center-slide .flip-panel[data-panel="${i}"]`).removeClass('flipped');
+                    }, (PANEL_COUNT - 1 - i) * FLIP_DELAY);
+                }
+
+                isFlipped = false;
+
+                const totalFlipTime = (PANEL_COUNT - 1) * FLIP_DELAY + FLIP_DURATION;
+                flipCenterAnimationId = setTimeout(() => {
+                    startFlipCenterAnimation();
+                }, totalFlipTime + LOOP_PAUSE);
+
+            } else {
+                // フリップアニメーション（左から右へ）
+                flipCenterAnimationId = setTimeout(() => {
+                    if (isFirstRun) {
+                        $('#flip-center-slide .flip-text-area').addClass('show');
+                        $('#flip-center-slide .flip-text-main').addClass('show');
+                    }
+
+                    const currentIsFirstRun = isFirstRun;
+                    for (let i = 0; i < PANEL_COUNT; i++) {
+                        setTimeout(() => {
+                            $(`#flip-center-slide .flip-panel[data-panel="${i}"]`).addClass('flipped');
+
+                            if (currentIsFirstRun && TEXT_TRIGGERS[i] !== undefined) {
+                                setTimeout(() => {
+                                    $(`#flip-center-slide .flip-text-line[data-line="${TEXT_TRIGGERS[i]}"]`).addClass('show');
+                                }, 300);
+                            }
+                        }, i * FLIP_DELAY);
+                    }
+
+                    isFlipped = true;
+                    isFirstRun = false;
+
+                    const totalFlipTime = (PANEL_COUNT - 1) * FLIP_DELAY + FLIP_DURATION;
+                    flipCenterAnimationId = setTimeout(() => {
+                        startFlipCenterAnimation();
+                    }, totalFlipTime + LOOP_PAUSE);
+
+                }, INITIAL_DELAY);
+            }
+        }
+
+        // Slickスライダーのスライド変更を監視
+        $('.slider-main').on('afterChange', function(event, slick, currentSlide) {
+            // flip-centerスライド（インデックス0）がアクティブかチェック
+            if (currentSlide === 0) {
+                // flip-centerスライドは表示時間を8秒に延長
+                $('.slider-main').slick('slickSetOption', 'autoplaySpeed', 8000, false);
+                // アニメーション開始
+                resetFlipCenter();
+                startFlipCenterAnimation();
+            } else {
+                // 他のスライドは通常の4秒
+                $('.slider-main').slick('slickSetOption', 'autoplaySpeed', 4000, false);
+                // アニメーション停止・リセット
+                resetFlipCenter();
+            }
+        });
+
+        // 初期状態でflip-centerスライドがアクティブならアニメーション開始
+        setTimeout(() => {
+            const currentSlide = $('.slider-main').slick('slickCurrentSlide');
+            if (currentSlide === 0) {
+                startFlipCenterAnimation();
+            }
+        }, 100);
+        // ========== flip-center アニメーション制御 ここまで ==========
+
         // 検索機能の拡張
         const searchInput = document.getElementById('search-input');
         const searchForm = searchInput.closest('form');
