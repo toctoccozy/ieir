@@ -98,7 +98,7 @@
 
         /* lg以上：センターのスライド画像のみ幅を制限 */
         .slider-main .slick-slide img,
-        .slider-main .slick-slide .flip-center-wrapper {
+        .slider-main .slick-slide .flip-wave-wrapper {
             max-width: 1400px;
             margin-left: auto;
             margin-right: auto;
@@ -202,68 +202,57 @@
     }
 
     .slider-scale-in.is-loaded {
-        animation: scaleUpFadeIn 0.8s ease-out forwards;
+        animation: scaleUpFadeIn 1.8s ease-out forwards;
     }
 
-    /* ========== flip-center スライド用CSS ========== */
-    .flip-center-wrapper {
+    /* ========== flip-wave スライド用CSS ========== */
+    .flip-wave-wrapper {
         position: relative;
         width: 100%;
         aspect-ratio: 2 / 1;
     }
 
-    .flip-center-container {
+    .flip-wave-container {
         width: 100%;
         height: 100%;
         display: flex;
         gap: 20px;
         background: #134e99;
-        padding: 0;
     }
 
-    .flip-panel-container {
+    .wave-panel {
         flex: 1;
         height: 100%;
-        perspective: 1500px;
-    }
-
-    .flip-panel {
         position: relative;
-        width: 100%;
-        height: 100%;
-        transform-style: preserve-3d;
-        transition: transform 1.2s ease-in-out;
-    }
-
-    .flip-panel.flipped {
-        transform: rotateY(180deg);
-    }
-
-    .panel-face {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
         overflow: hidden;
     }
 
-    .panel-face img {
+    .wave-panel-image {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: opacity 2s ease-in-out;
     }
 
-    .panel-front {
+    .wave-panel-image.front {
         z-index: 2;
+        opacity: 1;
     }
 
-    .panel-back {
-        transform: rotateY(180deg);
+    .wave-panel-image.back {
+        z-index: 1;
+        opacity: 1;
+    }
+
+    .wave-panel.faded .wave-panel-image.front {
+        opacity: 0;
     }
 
     /* テキストエリア（下部に配置） */
-    .flip-text-area {
+    .wave-text-area {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -279,75 +268,83 @@
         transition: opacity 0.6s ease-out;
     }
 
-    .flip-text-area.show {
+    .wave-text-area.show {
         opacity: 1;
     }
 
-    .flip-text-line {
-        margin-bottom: 0.5%;
+    .wave-text-line {
+        margin-bottom: 0.2%;
     }
 
-    .flip-text-line:last-child {
+    .wave-text-line:last-child {
         margin-bottom: 0;
     }
 
-    .flip-text-content {
+    .wave-text-content {
         opacity: 0;
         transition: opacity 1.4s ease-out;
     }
 
-    .flip-text-content.flip-text-main {
+    .wave-text-content.wave-text-main {
         opacity: 0;
         transform: translateY(30px);
         transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
 
-    .flip-text-content.flip-text-main.show {
+    .wave-text-content.wave-text-main.show {
         opacity: 1;
         transform: translateY(0);
     }
 
-    .flip-text-line.show .flip-text-content {
+    .wave-text-line.show .wave-text-content {
         opacity: 1;
     }
 
-    .flip-text-main {
+    .wave-text-main {
         font-family: 'Noto Serif JP', serif;
         font-size: clamp(18px, 3.7vw, 52px);
         font-weight: 600;
         color: #ffffff;
-        letter-spacing: 0.4em;
+        letter-spacing: 0.15em;
         text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         white-space: nowrap;
     }
 
-    .flip-text-sub {
+    .wave-text-sub {
         font-family: 'Noto Serif JP', serif;
         font-size: clamp(14px, 2.2vw, 24px);
         font-weight: 600;
         color: rgba(255, 255, 255, 0.9);
-        letter-spacing: 0.05em;
+        /* letter-spacing: 0.05em; */
     }
 
     /* xl以上：段階的にフォントサイズを調整 */
     @media (min-width: 1280px) {
-        .flip-text-main {
-            font-size: 36px;
+        .wave-text-main {
+            font-size: 24px;
         }
-        .flip-text-sub {
-            font-size: 18px;
+        .wave-text-sub {
+            font-size: 16px;
         }
     }
 
     @media (min-width: 1400px) {
-        .flip-text-main {
-            font-size: 42px;
+        .wave-text-main {
+            font-size: 28px;
         }
-        .flip-text-sub {
+        .wave-text-sub {
+            font-size: 18px;
+        }
+    }
+    @media (min-width: 1500px) {
+        .wave-text-main {
+            font-size: 32px;
+        }
+        .wave-text-sub {
             font-size: 20px;
         }
     }
-    /* ========== flip-center CSS ここまで ========== */
+    /* ========== flip-wave CSS ここまで ========== */
 
     </style>
 </head>
@@ -648,71 +645,41 @@
                 <!-- メインスライダー -->
                 <div class="slider-scale-in">
                     <div class="slider-main">
-                        <!-- flip-centerスライド -->
+                        <!-- flip-waveスライド -->
                         <div>
-                            <div class="flip-center-wrapper" id="flip-center-slide">
-                                <div class="flip-center-container">
-                                    <div class="flip-panel-container">
-                                        <div class="flip-panel" data-panel="0">
-                                            <div class="panel-face panel-front">
-                                                <img src="/ieir/public/img/slider/1st_slider/238.png" alt="Product 1A">
-                                            </div>
-                                            <div class="panel-face panel-back">
-                                                <img src="/ieir/public/img/slider/1st_slider/246.png" alt="Product 1B">
-                                            </div>
-                                        </div>
+                            <div class="flip-wave-wrapper" id="flip-wave-slide">
+                                <div class="flip-wave-container">
+                                    <div class="wave-panel" data-panel="0">
+                                        <img src="/ieir/public/img/slider/1st_slider/246.png" alt="Product 1B" class="wave-panel-image back">
+                                        <img src="/ieir/public/img/slider/1st_slider/238.png" alt="Product 1A" class="wave-panel-image front">
                                     </div>
-                                    <div class="flip-panel-container">
-                                        <div class="flip-panel" data-panel="1">
-                                            <div class="panel-face panel-front">
-                                                <img src="/ieir/public/img/slider/1st_slider/254.png" alt="Product 2A">
-                                            </div>
-                                            <div class="panel-face panel-back">
-                                                <img src="/ieir/public/img/slider/1st_slider/258.png" alt="Product 2B">
-                                            </div>
-                                        </div>
+                                    <div class="wave-panel" data-panel="1">
+                                        <img src="/ieir/public/img/slider/1st_slider/258.png" alt="Product 2B" class="wave-panel-image back">
+                                        <img src="/ieir/public/img/slider/1st_slider/254.png" alt="Product 2A" class="wave-panel-image front">
                                     </div>
-                                    <div class="flip-panel-container">
-                                        <div class="flip-panel" data-panel="2">
-                                            <div class="panel-face panel-front">
-                                                <img src="/ieir/public/img/slider/1st_slider/261.png" alt="Product 3A">
-                                            </div>
-                                            <div class="panel-face panel-back">
-                                                <img src="/ieir/public/img/slider/1st_slider/262.png" alt="Product 3B">
-                                            </div>
-                                        </div>
+                                    <div class="wave-panel" data-panel="2">
+                                        <img src="/ieir/public/img/slider/1st_slider/262.png" alt="Product 3B" class="wave-panel-image back">
+                                        <img src="/ieir/public/img/slider/1st_slider/261.png" alt="Product 3A" class="wave-panel-image front">
                                     </div>
-                                    <div class="flip-panel-container">
-                                        <div class="flip-panel" data-panel="3">
-                                            <div class="panel-face panel-front">
-                                                <img src="/ieir/public/img/slider/1st_slider/264.png" alt="Product 4A">
-                                            </div>
-                                            <div class="panel-face panel-back">
-                                                <img src="/ieir/public/img/slider/1st_slider/51489_main_600x600.jpg" alt="Product 4B">
-                                            </div>
-                                        </div>
+                                    <div class="wave-panel" data-panel="3">
+                                        <img src="/ieir/public/img/slider/1st_slider/51489_main_600x600.jpg" alt="Product 4B" class="wave-panel-image back">
+                                        <img src="/ieir/public/img/slider/1st_slider/264.png" alt="Product 4A" class="wave-panel-image front">
                                     </div>
-                                    <div class="flip-panel-container">
-                                        <div class="flip-panel" data-panel="4">
-                                            <div class="panel-face panel-front">
-                                                <img src="/ieir/public/img/slider/1st_slider/img9.png" alt="Product 5A">
-                                            </div>
-                                            <div class="panel-face panel-back">
-                                                <img src="/ieir/public/img/slider/1st_slider/img10.png" alt="Product 5B">
-                                            </div>
-                                        </div>
+                                    <div class="wave-panel" data-panel="4">
+                                        <img src="/ieir/public/img/slider/1st_slider/img10.png" alt="Product 5B" class="wave-panel-image back">
+                                        <img src="/ieir/public/img/slider/1st_slider/img9.png" alt="Product 5A" class="wave-panel-image front">
                                     </div>
                                 </div>
                                 <!-- テキストエリア -->
-                                <div class="flip-text-area">
-                                    <div class="flip-text-line" data-line="0">
-                                        <div class="flip-text-content flip-text-main">想像を超える、新しい出会い</div>
+                                <div class="wave-text-area" id="waveTextArea">
+                                    <div class="wave-text-line" data-line="0">
+                                        <div class="wave-text-content wave-text-main">想像を超える、新しい出会い</div>
                                     </div>
-                                    <div class="flip-text-line" data-line="1">
-                                        <div class="flip-text-content flip-text-sub">オリジナリティにこだわり抜いた</div>
+                                    <div class="wave-text-line" data-line="1">
+                                        <div class="wave-text-content wave-text-sub pl-4">オリジナリティにこだわり抜いた</div>
                                     </div>
-                                    <div class="flip-text-line" data-line="2">
-                                        <div class="flip-text-content flip-text-sub">唯一無二の商品たちをご提供</div>
+                                    <div class="wave-text-line" data-line="2">
+                                        <div class="wave-text-content wave-text-sub pl-4">唯一無二の商品をご提供</div>
                                     </div>
                                 </div>
                             </div>
@@ -725,7 +692,6 @@
                         <div><img src="/ieir/public/img/slider/2nd_slider/slider-image006.jpg" alt="スライド6" class="w-full h-auto"></div>
                         <div><img src="/ieir/public/img/slider/2nd_slider/slider-image007.jpg" alt="スライド7" class="w-full h-auto"></div>
                         <div><img src="/ieir/public/img/slider/2nd_slider/slider-image008.jpg" alt="スライド8" class="w-full h-auto"></div>
-                        <div><img src="/ieir/public/img/slider/2nd_slider/slider-image009.jpg" alt="スライド9" class="w-full h-auto"></div>
                     </div>
                 </div>
             </section>
@@ -819,7 +785,7 @@
             <section class="py-6">
                 <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
                     <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
-                        <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap">New Arrival</span>
+                        <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">New Arrival</span>
                         <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">新着のお知らせ</span>
                     </div>
                     <!-- 装飾ライン -->
@@ -985,7 +951,7 @@
             <section class="py-6">
                 <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
                     <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
-                        <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap">Items on Paper</span>
+                        <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">Items on Paper</span>
                         <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">新聞・雑誌に掲載中の商品</span>
                     </div>
                     <!-- 装飾ライン -->
@@ -1186,7 +1152,7 @@
             <section class="py-6">
                 <h2 class="mb-6 pb-1 flex items-center overflow-hidden animate-on-scroll">
                     <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
-                        <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap">Category</span>
+                        <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">Category</span>
                         <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">カテゴリー</span>
                     </div>
                     <!-- 装飾ライン -->
@@ -1451,7 +1417,7 @@
             <section class="py-6">
                 <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
                     <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
-                        <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap">Mail News</span>
+                        <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">Mail News</span>
                         <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">メールニュース</span>
                     </div>
                     <!-- 装飾ライン -->
@@ -1839,79 +1805,83 @@
         // 初期状態でアクティブなサムネイルを設定
         $('.slider-thumbnail .slick-current img').removeClass('opacity-60').addClass('opacity-100');
 
-        // ========== flip-center アニメーション制御 ==========
-        const FLIP_DELAY = 600;
+        // ========== flip-wave アニメーション制御 ==========
+        const FADE_DELAY = 600;
         const INITIAL_DELAY = 1000;
         const PANEL_COUNT = 5;
         const LINE_COUNT = 3;
-        const FLIP_DURATION = 1200;
+        const FADE_DURATION = 2000;
         const LOOP_PAUSE = 3000;
-        const TEXT_TRIGGERS = { 2: 1, 4: 2 };
+        const TEXT_TRIGGERS = { 2: 1, 4: 2 }; // パネル番号: 表示する行番号
 
-        let flipCenterAnimationId = null;
-        let isFlipped = false;
+        let flipWaveAnimationId = null;
+        let isFaded = false;
         let isFirstRun = true;
 
-        function resetFlipCenter() {
+        function resetFlipWave() {
             // アニメーションをクリア
-            if (flipCenterAnimationId) {
-                clearTimeout(flipCenterAnimationId);
-                flipCenterAnimationId = null;
+            if (flipWaveAnimationId) {
+                clearTimeout(flipWaveAnimationId);
+                flipWaveAnimationId = null;
             }
             // パネルをリセット
-            $('#flip-center-slide .flip-panel').removeClass('flipped');
+            $('#flip-wave-slide .wave-panel').removeClass('faded');
             // テキストをリセット
-            $('#flip-center-slide .flip-text-area').removeClass('show');
-            $('#flip-center-slide .flip-text-main').removeClass('show');
-            $('#flip-center-slide .flip-text-line').removeClass('show');
-            isFlipped = false;
+            $('#waveTextArea').removeClass('show');
+            $('#flip-wave-slide .wave-text-main').removeClass('show');
+            $('#flip-wave-slide .wave-text-line').removeClass('show');
+            isFaded = false;
             isFirstRun = true;
         }
 
-        function startFlipCenterAnimation() {
-            if (isFlipped) {
+        function startFlipWaveAnimation() {
+            if (isFaded) {
                 // 元に戻すアニメーション（右から左へ）
                 for (let i = PANEL_COUNT - 1; i >= 0; i--) {
                     setTimeout(() => {
-                        $(`#flip-center-slide .flip-panel[data-panel="${i}"]`).removeClass('flipped');
-                    }, (PANEL_COUNT - 1 - i) * FLIP_DELAY);
+                        $(`#flip-wave-slide .wave-panel[data-panel="${i}"]`).removeClass('faded');
+                    }, (PANEL_COUNT - 1 - i) * FADE_DELAY);
                 }
 
-                isFlipped = false;
+                isFaded = false;
 
-                const totalFlipTime = (PANEL_COUNT - 1) * FLIP_DELAY + FLIP_DURATION;
-                flipCenterAnimationId = setTimeout(() => {
-                    startFlipCenterAnimation();
-                }, totalFlipTime + LOOP_PAUSE);
+                const totalFadeTime = (PANEL_COUNT - 1) * FADE_DELAY + FADE_DURATION;
+                flipWaveAnimationId = setTimeout(() => {
+                    startFlipWaveAnimation();
+                }, totalFadeTime + LOOP_PAUSE);
 
             } else {
-                // フリップアニメーション（左から右へ）
-                flipCenterAnimationId = setTimeout(() => {
+                // フェードアニメーション（左から右へ）
+                flipWaveAnimationId = setTimeout(() => {
+                    // 初回のみテキストエリア背景とメインテキストを表示
                     if (isFirstRun) {
-                        $('#flip-center-slide .flip-text-area').addClass('show');
-                        $('#flip-center-slide .flip-text-main').addClass('show');
+                        $('#waveTextArea').addClass('show');
+                        $('#flip-wave-slide .wave-text-main').addClass('show');
                     }
 
+                    // 左から順番にフェード
                     const currentIsFirstRun = isFirstRun;
                     for (let i = 0; i < PANEL_COUNT; i++) {
                         setTimeout(() => {
-                            $(`#flip-center-slide .flip-panel[data-panel="${i}"]`).addClass('flipped');
+                            $(`#flip-wave-slide .wave-panel[data-panel="${i}"]`).addClass('faded');
 
+                            // 初回のみ: このパネルに連動するテキストがあるかチェック
                             if (currentIsFirstRun && TEXT_TRIGGERS[i] !== undefined) {
                                 setTimeout(() => {
-                                    $(`#flip-center-slide .flip-text-line[data-line="${TEXT_TRIGGERS[i]}"]`).addClass('show');
+                                    $(`#flip-wave-slide .wave-text-line[data-line="${TEXT_TRIGGERS[i]}"]`).addClass('show');
                                 }, 300);
                             }
-                        }, i * FLIP_DELAY);
+                        }, i * FADE_DELAY);
                     }
 
-                    isFlipped = true;
+                    isFaded = true;
                     isFirstRun = false;
 
-                    const totalFlipTime = (PANEL_COUNT - 1) * FLIP_DELAY + FLIP_DURATION;
-                    flipCenterAnimationId = setTimeout(() => {
-                        startFlipCenterAnimation();
-                    }, totalFlipTime + LOOP_PAUSE);
+                    // フェード完了後、戻すアニメーションを開始
+                    const totalFadeTime = (PANEL_COUNT - 1) * FADE_DELAY + FADE_DURATION;
+                    flipWaveAnimationId = setTimeout(() => {
+                        startFlipWaveAnimation();
+                    }, totalFadeTime + LOOP_PAUSE);
 
                 }, INITIAL_DELAY);
             }
@@ -1919,29 +1889,29 @@
 
         // Slickスライダーのスライド変更を監視
         $('.slider-main').on('afterChange', function(event, slick, currentSlide) {
-            // flip-centerスライド（インデックス0）がアクティブかチェック
+            // flip-waveスライド（インデックス0）がアクティブかチェック
             if (currentSlide === 0) {
-                // flip-centerスライドは表示時間を8秒に延長
+                // flip-waveスライドは表示時間を8秒に延長
                 $('.slider-main').slick('slickSetOption', 'autoplaySpeed', 8000, false);
                 // アニメーション開始
-                resetFlipCenter();
-                startFlipCenterAnimation();
+                resetFlipWave();
+                startFlipWaveAnimation();
             } else {
                 // 他のスライドは通常の4秒
                 $('.slider-main').slick('slickSetOption', 'autoplaySpeed', 4000, false);
                 // アニメーション停止・リセット
-                resetFlipCenter();
+                resetFlipWave();
             }
         });
 
-        // 初期状態でflip-centerスライドがアクティブならアニメーション開始
+        // 初期状態でflip-waveスライドがアクティブならアニメーション開始
         setTimeout(() => {
             const currentSlide = $('.slider-main').slick('slickCurrentSlide');
             if (currentSlide === 0) {
-                startFlipCenterAnimation();
+                startFlipWaveAnimation();
             }
         }, 100);
-        // ========== flip-center アニメーション制御 ここまで ==========
+        // ========== flip-wave アニメーション制御 ここまで ==========
 
         // 検索機能の拡張
         const searchInput = document.getElementById('search-input');
