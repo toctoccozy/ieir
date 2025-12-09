@@ -318,6 +318,27 @@
         /* letter-spacing: 0.05em; */
     }
 
+    /* 500px超：結合テキストを非表示 */
+    .show-on-small {
+        display: none;
+    }
+
+    /* 500px以下：2,3行目を1行に結合＆フォントサイズ縮小 */
+    @media (max-width: 500px) {
+        .hidden-on-small {
+            display: none;
+        }
+        .show-on-small {
+            display: inline;
+        }
+        .wave-text-main {
+            font-size: 14px;
+        }
+        .wave-text-sub {
+            font-size: 11px;
+        }
+    }
+
     /* xl以上：段階的にフォントサイズを調整 */
     @media (min-width: 1280px) {
         .wave-text-main {
@@ -676,9 +697,9 @@
                                         <div class="wave-text-content wave-text-main">想像を超える、新しい出会い</div>
                                     </div>
                                     <div class="wave-text-line" data-line="1">
-                                        <div class="wave-text-content wave-text-sub pl-4">オリジナリティにこだわり抜いた</div>
+                                        <div class="wave-text-content wave-text-sub pl-4">オリジナリティにこだわり抜いた<span class="hidden-on-small"> </span><span class="show-on-small">、</span>唯一無二の商品をご提供</div>
                                     </div>
-                                    <div class="wave-text-line" data-line="2">
+                                    <div class="wave-text-line hidden-on-small" data-line="2">
                                         <div class="wave-text-content wave-text-sub pl-4">唯一無二の商品をご提供</div>
                                     </div>
                                 </div>
