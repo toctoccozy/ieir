@@ -190,17 +190,12 @@
             <h2 class="text-lg font-bold c-bg-premico text-white px-4 py-3 rounded-t-lg -mx-4 -mt-4 mb-4">お支払い情報</h2>
             <div class="p-4">
                 <div class="space-y-2">
-                    <div class="flex items-center">
-                        <span class="font-medium text-gray-700 w-32 flex-shrink-0">支払い方法：</span>
+                    <div class="flex items-start">
+                        <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start">支払い方法：</span>
                         <!-- パターンA・C: クレジットカード -->
                         <span x-show="pattern === 'A' || pattern === 'C'" class="text-gray-900">クレジットカード</span>
                         <!-- パターンB・D: あと払い -->
                         <span x-show="pattern === 'B' || pattern === 'D'" class="text-gray-900">あと払い(ゆうちょ・コンビニ・スマホ決済)</span>
-                    </div>
-                    <!-- パターンA・Cのみ: 全体の支払い区分 -->
-                    <div x-show="pattern === 'A' || pattern === 'C'" class="flex items-center">
-                        <span class="font-medium text-gray-700 w-32 flex-shrink-0">支払い区分：</span>
-                        <span class="text-gray-900">一括払い</span>
                     </div>
                     <!-- パターンB・D: 商品ごとに異なるため表示しない（ご注文商品で表示） -->
                     <div x-show="pattern === 'B' || pattern === 'D'" class="text-sm text-gray-600">
@@ -219,7 +214,7 @@
                 <div class="rounded-lg p-4 mb-4 pb-4 border-b border-gray-300" :class="(pattern === 'C' || pattern === 'D') ? 'border-l-4 border-l-amber-500 bg-amber-50/30' : ''">
                     <div class="space-y-2">
                         <div class="flex items-center">
-                            <span class="font-medium text-gray-700 w-24 flex-shrink-0">商品番号：</span>
+                            <span class="font-medium text-gray-700 w-24 flex-shrink-0 self-start">商品番号：</span>
                             <div class="flex items-center gap-2 flex-wrap">
                                 <span class="text-gray-900">51362501</span>
                                 <!-- 大型商品バッジ（パターンC・D） -->
@@ -227,21 +222,21 @@
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <span class="font-medium text-gray-700 w-24 flex-shrink-0">商品名：</span>
+                            <span class="font-medium text-gray-700 w-24 flex-shrink-0 self-start">商品名：</span>
                             <span class="text-gray-900">ハローキティ 花あそび 浅草文庫® 牛革製長財布 ピンク Mサイズ</span>
                         </div>
                         <div class="flex items-center">
-                            <span class="font-medium text-gray-700 w-24 flex-shrink-0">数量：</span>
+                            <span class="font-medium text-gray-700 w-24 flex-shrink-0 self-start">数量：</span>
                             <span class="text-gray-900">1個</span>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="font-medium text-gray-700 w-24 flex-shrink-0">価格：</span>
-                            <span class="text-gray-900 font-medium">¥43,780(税込)</span>
                         </div>
                         <!-- 支払い区分（パターンB・D: あと払いの場合のみ） -->
                         <div x-show="pattern === 'B' || pattern === 'D'" class="flex items-center">
-                            <span class="font-medium text-gray-700 w-24 flex-shrink-0">支払い区分：</span>
+                            <span class="font-medium text-gray-700 w-24 flex-shrink-0 self-start">支払い区分：</span>
                             <span class="text-gray-900">一括払い</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="font-medium text-gray-700 w-24 flex-shrink-0 self-start">価格：</span>
+                            <span class="text-gray-900 font-medium">¥39,800(税抜)</span>
                         </div>
                     </div>
                     <!-- 大型商品アラート（パターンC・D） -->
@@ -259,25 +254,32 @@
                 <div class="rounded-lg p-4">
                     <div class="space-y-2">
                         <div class="flex items-center">
-                            <span class="font-medium text-gray-700 w-24 flex-shrink-0">商品番号：</span>
+                            <span class="font-medium text-gray-700 w-24 flex-shrink-0 self-start">商品番号：</span>
                             <span class="text-gray-900">51362502</span>
                         </div>
                         <div class="flex items-start">
-                            <span class="font-medium text-gray-700 w-24 flex-shrink-0">商品名：</span>
+                            <span class="font-medium text-gray-700 w-24 flex-shrink-0 self-start">商品名：</span>
                             <span class="text-gray-900">スヌーピー 軽やか横型財布 ブラック</span>
                         </div>
                         <div class="flex items-center">
-                            <span class="font-medium text-gray-700 w-24 flex-shrink-0">数量：</span>
+                            <span class="font-medium text-gray-700 w-24 flex-shrink-0 self-start">数量：</span>
                             <span class="text-gray-900">1個</span>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="font-medium text-gray-700 w-24 flex-shrink-0">価格：</span>
-                            <span class="text-gray-900 font-medium">¥28,600(税込)</span>
                         </div>
                         <!-- 支払い区分（パターンB・D: あと払いの場合のみ） -->
                         <div x-show="pattern === 'B' || pattern === 'D'" class="flex items-center">
-                            <span class="font-medium text-gray-700 w-24 flex-shrink-0">支払い区分：</span>
-                            <span class="text-gray-900">分割払い（7回）¥4,180/月</span>
+                            <span class="font-medium text-gray-700 w-24 flex-shrink-0 self-start">支払い区分：</span>
+                            <span class="text-gray-900">分割払い</span>
+                        </div>
+                        <!-- 価格：パターンA・Cは税抜価格のみ、パターンB・Dは支払い区分に応じた表示 -->
+                        <!-- パターンA・C（クレジット）または パターンB・Dで一括の場合 -->
+                        <div x-show="pattern === 'A' || pattern === 'C'" class="flex items-center">
+                            <span class="font-medium text-gray-700 w-24 flex-shrink-0 self-start">価格：</span>
+                            <span class="text-gray-900 font-medium">¥26,000(税抜)</span>
+                        </div>
+                        <!-- パターンB・D（あと払い・分割） -->
+                        <div x-show="pattern === 'B' || pattern === 'D'" class="flex items-center">
+                            <span class="font-medium text-gray-700 w-24 flex-shrink-0 self-start">価格：</span>
+                            <span class="text-gray-900 font-medium">¥26,600(税抜)(3,800円×7回) 実質年率7.75%</span>
                         </div>
                     </div>
                 </div>
@@ -355,7 +357,7 @@
             <div class="space-y-4">
             <!-- お名前 -->
             <div class="flex items-center">
-                <span class="font-medium text-gray-700 w-32 flex-shrink-0">お名前：</span>
+                <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start">お名前：</span>
                 <span>
                     <span id="confirm-sei">田中</span>
                     <span id="confirm-mei" class="ml-2">太郎</span>
@@ -364,7 +366,7 @@
 
             <!-- フリガナ -->
             <div class="flex items-center">
-                <span class="font-medium text-gray-700 w-32 flex-shrink-0">フリガナ：</span>
+                <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start">フリガナ：</span>
                 <span>
                     <span id="confirm-sei-kana">タナカ</span>
                     <span id="confirm-mei-kana" class="ml-2">タロウ</span>
@@ -373,7 +375,7 @@
 
             <!-- 生年月日 -->
             <div class="flex items-center">
-                <span class="font-medium text-gray-700 w-32 flex-shrink-0">生年月日：</span>
+                <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start">生年月日：</span>
                 <span>
                     <span id="confirm-birth-year">1980</span>年
                     <span id="confirm-birth-month">5</span>月
@@ -383,17 +385,17 @@
 
             <!-- 性別 -->
             <div class="flex items-center border-b border-gray-200 pb-4">
-                <span class="font-medium text-gray-700 w-32 flex-shrink-0">性別：</span>
+                <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start">性別：</span>
                 <span id="confirm-gender">男性</span>
             </div>
 
             <!-- 郵便番号・住所 -->
             <div class="flex items-center">
-                <span class="font-medium text-gray-700 w-32 flex-shrink-0">郵便番号：</span>
+                <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start">郵便番号：</span>
                 <span id="confirm-postal">〒123-4567</span>
             </div>
             <div class="flex items-start">
-                <span class="font-medium text-gray-700 w-32 flex-shrink-0">住所：</span>
+                <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start">住所：</span>
                 <span class="flex-1">
                     <span id="confirm-prefecture">東京都</span>
                     <span id="confirm-city">練馬区</span>
@@ -404,28 +406,28 @@
 
             <!-- 電話番号 -->
             <div class="flex items-center">
-                <span class="font-medium text-gray-700 w-32 flex-shrink-0">電話番号：</span>
+                <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start">電話番号：</span>
                 <span id="confirm-tel">03-1234-5678</span>
             </div>
             <div class="flex items-center border-b border-gray-200 pb-4">
-                <span class="font-medium text-gray-700 w-32 flex-shrink-0">勤務先：</span>
+                <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start">勤務先：</span>
                 <span id="confirm-work-tel">03-9876-5432</span>
             </div>
 
             <!-- メールアドレス -->
             <div class="flex items-center border-b border-gray-200 pb-4">
-                <span class="font-medium text-gray-700 w-32 flex-shrink-0">メール：</span>
+                <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start">メール：</span>
                 <span id="confirm-email">sample@example.com</span>
             </div>
 
             <!-- お届け先 -->
             <div class="flex items-center">
-                <span class="font-medium text-gray-700 w-32 flex-shrink-0">お届け先：</span>
+                <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start">お届け先：</span>
                 <span id="confirm-delivery">ご注文者と同じ</span>
             </div>
             <div id="confirm-delivery-details" class="hidden">
                 <div class="flex items-start mt-2">
-                    <span class="font-medium text-gray-700 w-32 flex-shrink-0"></span>
+                    <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start"></span>
                     <div>
                         <div><span id="confirm-delivery-name">別送先 太郎</span></div>
                         <div><span id="confirm-delivery-address">東京都新宿区...</span></div>
@@ -436,23 +438,23 @@
 
             <!-- 配達日時 -->
             <div class="flex items-center">
-                <span class="font-medium text-gray-700 w-32 flex-shrink-0">配達曜日：</span>
+                <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start">配達曜日：</span>
                 <span id="confirm-delivery-day">指定なし</span>
             </div>
             <div class="flex items-center border-b border-gray-200 pb-4">
-                <span class="font-medium text-gray-700 w-32 flex-shrink-0">配達時間：</span>
+                <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start">配達時間：</span>
                 <span id="confirm-delivery-time">午前中</span>
             </div>
 
             <!-- メールニュース -->
             <div class="flex items-center border-b border-gray-200 pb-4">
-                <span class="font-medium text-gray-700 w-32 flex-shrink-0">メールニュース：</span>
+                <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start">メールニュース：</span>
                 <span id="confirm-newsletter">受け取る</span>
             </div>
 
             <!-- 個人情報の取扱 -->
             <div class="flex items-center">
-                <span class="font-medium text-gray-700 w-32 flex-shrink-0">個人情報：</span>
+                <span class="font-medium text-gray-700 w-32 flex-shrink-0 self-start">個人情報：</span>
                 <span class="text-green-600">✓ 同意済み</span>
             </div>
             </div>
