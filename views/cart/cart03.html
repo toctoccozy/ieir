@@ -70,7 +70,7 @@
     </style>
 </head>
 
-<body class="bg-white" x-data="cartApp()">
+<body class="bg-white" x-data="cart03App()">
     <div class="min-h-screen mw-full">
         <header class="pb-6 mx-auto max-w-6xl">
             <!-- ヘッダー -->
@@ -174,16 +174,57 @@
             <p class="text-gray-600 text-left">以下の内容でよろしければ、「注文を確定する」ボタンを押してください。</p>
         </div>
 
+        <!-- デバッグ用：パターン切り替え -->
+        <div class="bg-gray-100 p-4 mb-4 rounded-lg border-2 border-dashed border-gray-400">
+            <p class="text-sm text-gray-600 mb-2 font-medium">【確認用】表示パターン切り替え</p>
+            <div class="flex flex-wrap gap-2">
+                <button @click="pattern = 'A'" :class="pattern === 'A' ? 'bg-blue-600 text-white' : 'bg-white'" class="px-3 py-1 rounded border text-sm">A: クレジット・代引き</button>
+                <button @click="pattern = 'B'" :class="pattern === 'B' ? 'bg-blue-600 text-white' : 'bg-white'" class="px-3 py-1 rounded border text-sm">B: あと払い</button>
+                <button @click="pattern = 'C'" :class="pattern === 'C' ? 'bg-blue-600 text-white' : 'bg-white'" class="px-3 py-1 rounded border text-sm">C: クレジット＋大型</button>
+                <button @click="pattern = 'D'" :class="pattern === 'D' ? 'bg-blue-600 text-white' : 'bg-white'" class="px-3 py-1 rounded border text-sm">D: あと払い＋大型</button>
+            </div>
+        </div>
+
+        <!-- お支払い情報（ご注文商品の上に移動） -->
+        <div class="p-4 mb-4 bg-white border border-gray-300 rounded-lg">
+            <h2 class="text-lg font-bold c-bg-premico text-white px-4 py-3 rounded-t-lg -mx-4 -mt-4 mb-4">お支払い情報</h2>
+            <div class="p-4">
+                <div class="space-y-2">
+                    <div class="flex items-center">
+                        <span class="font-medium text-gray-700 w-32 flex-shrink-0">支払い方法：</span>
+                        <!-- パターンA・C: クレジットカード -->
+                        <span x-show="pattern === 'A' || pattern === 'C'" class="text-gray-900">クレジットカード</span>
+                        <!-- パターンB・D: あと払い -->
+                        <span x-show="pattern === 'B' || pattern === 'D'" class="text-gray-900">あと払い(ゆうちょ・コンビニ・スマホ決済)</span>
+                    </div>
+                    <!-- パターンA・Cのみ: 全体の支払い区分 -->
+                    <div x-show="pattern === 'A' || pattern === 'C'" class="flex items-center">
+                        <span class="font-medium text-gray-700 w-32 flex-shrink-0">支払い区分：</span>
+                        <span class="text-gray-900">一括払い</span>
+                    </div>
+                    <!-- パターンB・D: 商品ごとに異なるため表示しない（ご注文商品で表示） -->
+                    <div x-show="pattern === 'B' || pattern === 'D'" class="text-sm text-gray-600">
+                        ※支払い区分は商品ごとに設定されています
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- ご注文商品 -->
         <div class="">
             <div class="p-4 mb-4 bg-white border border-gray-300 rounded-lg">
                 <h2 class="text-lg font-bold c-bg-premico text-white px-4 py-3 rounded-t-lg -mx-4 -mt-4 mb-4">ご注文商品</h2>
-                <!-- 商品1 -->
-                <div class="rounded-lg p-4 mb-4 pb-4 border-b border-gray-300">
+
+                <!-- 商品1（パターンC・Dでは大型商品） -->
+                <div class="rounded-lg p-4 mb-4 pb-4 border-b border-gray-300" :class="(pattern === 'C' || pattern === 'D') ? 'border-l-4 border-l-amber-500 bg-amber-50/30' : ''">
                     <div class="space-y-2">
                         <div class="flex items-center">
                             <span class="font-medium text-gray-700 w-24 flex-shrink-0">商品番号：</span>
-                            <span class="text-gray-900">51362501</span>
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <span class="text-gray-900">51362501</span>
+                                <!-- 大型商品バッジ（パターンC・D） -->
+                                <span x-show="pattern === 'C' || pattern === 'D'" class="bg-amber-500 text-white text-xs px-2 py-0.5 rounded font-medium">大型商品</span>
+                            </div>
                         </div>
                         <div class="flex items-start">
                             <span class="font-medium text-gray-700 w-24 flex-shrink-0">商品名：</span>
@@ -197,10 +238,24 @@
                             <span class="font-medium text-gray-700 w-24 flex-shrink-0">価格：</span>
                             <span class="text-gray-900 font-medium">¥43,780(税込)</span>
                         </div>
+                        <!-- 支払い区分（パターンB・D: あと払いの場合のみ） -->
+                        <div x-show="pattern === 'B' || pattern === 'D'" class="flex items-center">
+                            <span class="font-medium text-gray-700 w-24 flex-shrink-0">支払い区分：</span>
+                            <span class="text-gray-900">一括払い</span>
+                        </div>
+                    </div>
+                    <!-- 大型商品アラート（パターンC・D） -->
+                    <div x-show="pattern === 'C' || pattern === 'D'" class="bg-amber-50 p-3 mt-3 rounded">
+                        <div class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <p class="text-sm text-amber-800">大型商品のため、通常送料に加えて大型商品送料が適用されます。</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- 商品2 -->
+                <!-- 商品2（通常商品） -->
                 <div class="rounded-lg p-4">
                     <div class="space-y-2">
                         <div class="flex items-center">
@@ -219,23 +274,11 @@
                             <span class="font-medium text-gray-700 w-24 flex-shrink-0">価格：</span>
                             <span class="text-gray-900 font-medium">¥28,600(税込)</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- お支払い情報 -->
-        <div class="p-4 mb-4 bg-white border border-gray-300 rounded-lg">
-            <h2 class="text-lg font-bold c-bg-premico text-white px-4 py-3 rounded-t-lg -mx-4 -mt-4 mb-4">お支払い情報</h2>
-            <div class="p-4">
-                <div class="space-y-2">
-                    <div class="flex items-center">
-                        <span class="font-medium text-gray-700 w-32 flex-shrink-0">支払い方法：</span>
-                        <span class="text-gray-900">クレジットカード</span>
-                    </div>
-                    <div class="flex items-center">
-                        <span class="font-medium text-gray-700 w-32 flex-shrink-0">支払い区分：</span>
-                        <span class="text-gray-900">一括払い</span>
+                        <!-- 支払い区分（パターンB・D: あと払いの場合のみ） -->
+                        <div x-show="pattern === 'B' || pattern === 'D'" class="flex items-center">
+                            <span class="font-medium text-gray-700 w-24 flex-shrink-0">支払い区分：</span>
+                            <span class="text-gray-900">分割払い（7回）¥4,180/月</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -264,16 +307,31 @@
                         <span class="">¥660</span>
                     </div>
 
+                    <!-- 大型商品送料(税抜)（パターンC・Dのみ） -->
+                    <div x-show="pattern === 'C' || pattern === 'D'" class="flex justify-between items-start">
+                        <span class="text-gray-700 ml-4">大型商品送料(税抜)</span>
+                        <div class="text-right">
+                            <span class="">¥2,000</span>
+                            <span class="text-xs text-amber-600 block">※大型商品送料適用</span>
+                        </div>
+                    </div>
+
                     <!-- 合計(10%対象) -->
                     <div class="flex justify-between items-center">
                         <span class="text-gray-700 font-semibold">合計(10%対象)</span>
-                        <span class="font-semibold">¥65,460</span>
+                        <!-- パターンA・B: 大型なし -->
+                        <span x-show="pattern === 'A' || pattern === 'B'" class="font-semibold">¥65,460</span>
+                        <!-- パターンC・D: 大型あり（+2,000） -->
+                        <span x-show="pattern === 'C' || pattern === 'D'" class="font-semibold">¥67,460</span>
                     </div>
 
                     <!-- 消費税(10%対象) -->
                     <div class="flex justify-between items-center">
                         <span class="text-gray-700 ml-4">消費税(10%対象)</span>
-                        <span class="">¥6,546</span>
+                        <!-- パターンA・B -->
+                        <span x-show="pattern === 'A' || pattern === 'B'" class="">¥6,546</span>
+                        <!-- パターンC・D -->
+                        <span x-show="pattern === 'C' || pattern === 'D'" class="">¥6,746</span>
                     </div>
 
                     <!-- 区切り線 -->
@@ -281,7 +339,10 @@
                         <!-- 合計(税込) -->
                         <div class="flex justify-between items-center">
                             <span class="text-lg font-bold text-gray-900">合計(税込)</span>
-                            <span class="text-lg font-bold c-text-premico">¥72,006</span>
+                            <!-- パターンA・B -->
+                            <span x-show="pattern === 'A' || pattern === 'B'" class="text-lg font-bold c-text-premico">¥72,006</span>
+                            <!-- パターンC・D -->
+                            <span x-show="pattern === 'C' || pattern === 'D'" class="text-lg font-bold c-text-premico">¥74,206</span>
                         </div>
                     </div>
                 </div>
@@ -549,6 +610,18 @@
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
+    // Alpine.js データ
+    function cart03App() {
+        return {
+            // 表示パターン: A, B, C, D
+            // A: クレジット・代引き、大型なし
+            // B: あと払い、大型なし
+            // C: クレジット・代引き、大型あり
+            // D: あと払い、大型あり
+            pattern: 'A'
+        }
+    }
+
     // ハンバーガーメニュー機能
     document.addEventListener('DOMContentLoaded', function() {
         const ham = document.querySelector('#js-hamburger');
@@ -567,7 +640,7 @@
             ham.addEventListener('click', function () {
                 ham.classList.toggle('active');
                 nav.classList.toggle('active');
-                
+
                 // bodyのスクロールを制御
                 if (nav.classList.contains('active')) {
                     document.body.style.overflow = 'hidden';
