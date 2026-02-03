@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家紋一覧 - インペリアル・エンタープライズ株式会社 I・E・I</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'iei-primary': '#2C5282',
+                        'iei-secondary': '#3e9aaf'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="/ieir/public/css/customization.css" rel="stylesheet">
+    <style>
+        .tab-button {
+            transition: all 0.2s ease;
+        }
+        .tab-button.active {
+            background-color: #2C5282;
+            color: white;
+            border-color: #2C5282;
+        }
+        .tab-button:not(.active):hover {
+            background-color: #e2e8f0;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+    <div class="container max-w-4xl mx-auto p-6">
+        <!-- ヘッダー -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+            <h1 class="text-2xl md:text-3xl font-bold c-text-premico mb-4">家紋一覧</h1>
+            <p class="text-gray-700 leading-relaxed">
+                家紋表１〜４から、ご希望の家紋の番号と名称をご指定ください。
+            </p>
+        </div>
+
+        <!-- 入力方法の案内 -->
+        <div class="bg-amber-50 rounded-lg shadow-sm p-6 mb-6 border-l-4 border-amber-500">
+            <h2 class="text-lg font-bold text-gray-800 mb-3">ご注文方法</h2>
+            <p class="text-gray-700 leading-relaxed mb-3">
+                家紋をお選びいただきましたら、注文画面の「イニシャルなどその他のご指定」欄に<br>
+                <strong>家紋の番号と名称</strong>をご入力のうえ、カートへお進みください。
+            </p>
+            <p class="text-sm text-gray-600">
+                ※ご入力内容に不備があった場合、確認のためお電話させていただくことがございます。
+            </p>
+        </div>
+
+        <!-- タブ切り替え -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+            <!-- タブボタン -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-6">
+                <button class="tab-button active px-4 py-3 text-sm md:text-base font-bold rounded-lg border-2 border-gray-300" data-tab="1">
+                    家紋表１
+                </button>
+                <button class="tab-button px-4 py-3 text-sm md:text-base font-bold rounded-lg border-2 border-gray-300" data-tab="2">
+                    家紋表２
+                </button>
+                <button class="tab-button px-4 py-3 text-sm md:text-base font-bold rounded-lg border-2 border-gray-300" data-tab="3">
+                    家紋表３
+                </button>
+                <button class="tab-button px-4 py-3 text-sm md:text-base font-bold rounded-lg border-2 border-gray-300" data-tab="4">
+                    家紋表４
+                </button>
+            </div>
+
+            <!-- タブコンテンツ -->
+            <div class="tab-content active" data-tab-content="1">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <img src="/ieir/public/img/parts/kamon/4022000-w01.gif"
+                        alt="家紋表１"
+                        class="w-full h-auto rounded-md shadow-sm">
+                </div>
+                <div class="text-center mt-4">
+                    <a href="/ieir/public/img/parts/kamon/4022000-w01.gif" target="_blank"
+                        class="inline-flex items-center justify-center text-iei-primary hover:text-iei-secondary font-medium text-sm transition-colors">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                        </svg>
+                        拡大して見る
+                    </a>
+                </div>
+            </div>
+            <div class="tab-content" data-tab-content="2">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <img src="/ieir/public/img/parts/kamon/4022000-w02.gif"
+                        alt="家紋表２"
+                        class="w-full h-auto rounded-md shadow-sm">
+                </div>
+                <div class="text-center mt-4">
+                    <a href="/ieir/public/img/parts/kamon/4022000-w02.gif" target="_blank"
+                        class="inline-flex items-center justify-center text-iei-primary hover:text-iei-secondary font-medium text-sm transition-colors">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                        </svg>
+                        拡大して見る
+                    </a>
+                </div>
+            </div>
+            <div class="tab-content" data-tab-content="3">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <img src="/ieir/public/img/parts/kamon/4022000-w03.gif"
+                        alt="家紋表３"
+                        class="w-full h-auto rounded-md shadow-sm">
+                </div>
+                <div class="text-center mt-4">
+                    <a href="/ieir/public/img/parts/kamon/4022000-w03.gif" target="_blank"
+                        class="inline-flex items-center justify-center text-iei-primary hover:text-iei-secondary font-medium text-sm transition-colors">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                        </svg>
+                        拡大して見る
+                    </a>
+                </div>
+            </div>
+            <div class="tab-content" data-tab-content="4">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <img src="/ieir/public/img/parts/kamon/4022000-w04.gif"
+                        alt="家紋表４"
+                        class="w-full h-auto rounded-md shadow-sm">
+                </div>
+                <div class="text-center mt-4">
+                    <a href="/ieir/public/img/parts/kamon/4022000-w04.gif" target="_blank"
+                        class="inline-flex items-center justify-center text-iei-primary hover:text-iei-secondary font-medium text-sm transition-colors">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                        </svg>
+                        拡大して見る
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- お問い合わせ -->
+        <div class="bg-blue-50 rounded-lg shadow-sm p-6 mb-6 border-l-4 border-blue-500">
+            <h2 class="text-lg font-bold text-gray-800 mb-3">家紋表にない家紋をご希望の場合</h2>
+            <p class="text-gray-700 mb-4">
+                家紋表に無い家紋をご希望の場合は、当社顧客サービスまでお問い合わせください。
+            </p>
+            <div class="flex items-center gap-2 text-gray-700">
+                <svg class="w-5 h-5 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <div>
+                    <p class="font-bold text-lg">フリーコール：0120-989-808</p>
+                    <p class="text-sm text-gray-600">平日9時半〜5時</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 案内文 -->
+        <div class="mb-6">
+            <p class="text-gray-700 leading-relaxed">
+                家紋をご確認されましたら、このタブを閉じて注文画面にお戻りください。
+            </p>
+        </div>
+
+        <!-- 閉じるボタン -->
+        <div class="text-center mb-6">
+            <button onclick="window.close()"
+                    class="inline-flex items-center justify-center c-btn-amber-gradient hover:opacity-80 text-white font-medium px-12 py-4 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+                この画面を閉じる
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+        // タブ切り替え機能
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const tabNumber = button.getAttribute('data-tab');
+
+                // 全てのタブボタンからactiveを削除
+                document.querySelectorAll('.tab-button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                // クリックされたボタンにactiveを追加
+                button.classList.add('active');
+
+                // 全てのタブコンテンツを非表示
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+
+                // 対応するコンテンツを表示
+                document.querySelector(`[data-tab-content="${tabNumber}"]`).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
