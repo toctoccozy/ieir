@@ -293,29 +293,23 @@
                     </div>
                 </div>
                 
-                <!-- 支払い方法選択（cart01.htmlと同じ） -->
+                <!-- 支払い方法選択 -->
                 <div class="bg-gray-100 rounded-lg p-6 mt-6">
-                    <!-- 一段目: タイトル -->
-                    <h3 class="text-base font-medium mb-4">一括払い・分割払いを選択してください。</h3>
-                    
-                    <!-- 二段目・三段目: 支払い方法選択 -->
-                    <div class="space-y-3">
-                        <!-- 一括払い -->
+                    <!-- クレジットカードの場合：文言のみ表示 -->
+                    <div x-show="paymentType === 'credit_card'">
+                        <p class="text-gray-700">クレジットカードのお支払い回数は、カード番号登録後に選択してください。</p>
+                    </div>
+
+                    <!-- 代金引換の場合：一括払いのみ -->
+                    <div x-show="paymentType === 'cash_on_delivery'">
+                        <!-- 文言 -->
+                        <p class="text-gray-700 mb-4">お支払い方法で「代金引換」を選択された場合は、「分割」支払いは選択できません。</p>
+
+                        <!-- 一括払いのみ -->
                         <div class="flex items-center">
-                            <input type="radio" id="payment_lump_sum" name="payment_method" value="lump_sum" class="mr-3 w-5 h-5 c-accent-premico" x-model="paymentMethod" @change="onPaymentMethodChange()">
+                            <input type="radio" id="payment_lump_sum" name="payment_method" value="lump_sum" class="mr-3 w-5 h-5 c-accent-premico" x-model="paymentMethod" checked>
                             <label for="payment_lump_sum" class="text-gray-700 cursor-pointer">一括払い</label>
                         </div>
-                        
-                        <!-- 分割払い -->
-                        <div class="flex items-center">
-                            <input type="radio" id="payment_installment" name="payment_method" value="installment" class="mr-3 w-5 h-5 c-accent-premico" x-model="paymentMethod" @change="onPaymentMethodChange()">
-                            <label for="payment_installment" class="text-gray-700 cursor-pointer">分割払い</label>
-                        </div>
-                    </div>
-                    
-                    <!-- メッセージ表示エリア -->
-                    <div x-show="showPaymentMessage" x-transition class="mt-4 p-3 bg-red-100 border border-red-300 rounded text-sm text-red-800">
-                        金額が変更されました。ご確認ください。
                     </div>
                 </div>
                 
