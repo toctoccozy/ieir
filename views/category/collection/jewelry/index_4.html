@@ -156,7 +156,9 @@
             <!-- オーバーレイ -->
             <div class="fixed inset-0 bg-black bg-opacity-50 opacity-0 invisible transition-all duration-300 z-[998]" id="js-overlay"></div>
         </header>
-
+        <div class="px-1 mx-auto mb-3 min-w-3">
+            <img src="/ieir/public/img/category/collection/jewelry/jewelry_banner.jpg" alt="女性ジュエリー画像" class="min-w-3 h-auto">
+        </div>
         <!-- パンくずナビ -->
         <nav class="bread-clumbs text-sm sm:text-base text-gray-600 mx-auto pl-3 leading-snug tracking-tighter max-w-6xl">
             <a href="/ieir/views/category/collection/" class="text-blue-800 hover:text-blue-400 transition-colors">コレクション</a>
@@ -165,14 +167,11 @@
         </nav>
 
         <!-- スライダーではなく画像、画像がない場合は詰める -->
-        <section class="pt-4">
+        <!-- <section class="pt-4">
             <div class="w-full px-1 max-w-5xl mx-auto">
-                <picture>
-                    <source media="(min-width: 640px)" srcset="/ieir/public/img/slider/2nd_slider/slider-image004.jpg">
-                    <img src="/ieir/public/img/category/collection/jewelry/jewelry_top_sp.jpg" alt="女性ジュエリー画像" class="w-full h-auto">
-                </picture>
+                <img src="/ieir/public/img/slider/2nd_slider/slider-image004.jpg" alt="女性ジュエリー画像" class="w-full h-auto">
             </div>
-        </section>
+        </section> -->
 
         <main class="py-8 px-1 mx-auto max-w-5xl">
             <!-- 商品カテゴリセクション -->
@@ -181,7 +180,45 @@
                     <span class="inline-block border-b-4 c-border-collection pb-2">女性ジュエリー 一覧</span>
                 </h2>
             </section> -->
-            
+            <section>
+
+                <h2 class="mb-6 flex items-center overflow-hidden px-4">
+                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0">
+                        <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap">Jewelry</span>
+                        <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">女性ジュエリー</span>
+                    </div>
+                    <!-- 装飾ライン -->
+                    <div class="flex flex-1 items-center ml-4 min-w-0">
+                        <svg class="flex-1 h-1.5 min-w-0" viewBox="0 0 300 6" preserveAspectRatio="none">
+                            <!-- 濃いライン（台形） -->
+                            <polygon points="4,0 104,0 100,6 0,6" fill="#f15438"/>
+                            <!-- 中間ライン（台形） -->
+                            <polygon points="104,0 204,0 200,6 100,6" fill="#f15438" fill-opacity="0.5"/>
+                            <!-- 薄いライン（台形） -->
+                            <polygon points="204,0 300,0 296,6 200,6" fill="#f15438" fill-opacity="0.25"/>
+                        </svg>
+                    </div>
+                </h2>
+                <!-- <p class="p-4 md:p-6 lg:px-8">世界的人気を誇るキャラクターとコラボレーションした、大人のためのオフィシャルライセンス商品。<br>
+                    バッグや財布、時計やジュエリー、雑貨まで幅広く揃え、大好きなキャラクターとどんな時も一緒にいきいきと過ごしたい皆様へ、心ときめく逸品をお届けいたします。</p> -->
+                                    <!-- IEIとは -->
+                <!-- <div class="relative bg-white flex items-center justify-center my-5 mx-3 md:mx-10 border rounded-lg border-gray-300">
+                    <div class="absolute -top-1.5 left-4 z-10">
+                        <svg width="72" height="12" viewBox="0 0 72 12">
+                            <polygon points="6,0 18,0 12,12 0,12" fill="#2C5282"/>
+                            <polygon points="26,0 38,0 32,12 20,12" fill="#2C5282"/>
+                            <polygon points="46,0 58,0 52,12 40,12" fill="#2C5282"/>
+                        </svg>
+                    </div>
+                    <div class="mt-1 ml-2 flex-col items-center p-1 md:px-8">
+                        <img class="h-auto w-16 max-w-48" src="/ieir/public/img/parts/logo/logo_iei.jpg" alt="I･E･I">
+                    </div>
+                    <p class="text-base text-gray-700 leading-tight p-4">
+                        I・E・Iオンラインショップでは、"他では決して手に入らない"というオリジナリティにこだわったユニークな商品を多数取り揃え、ハウスブランドや特集ページを通じてお客様にご提案しております。<br>
+                        皆様の暮らしと心にゆとりと潤いそして感動を提供したいというのが私達の最大の願いです。
+                    </p>
+                </div> -->
+            </section>
             <!-- 商品リストエリア -->
             <section class="px-2 sm:px-4">
                 <!-- 絞り込みと件数表示 -->
