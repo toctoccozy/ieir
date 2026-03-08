@@ -139,7 +139,7 @@
 
     /* メインコンテンツのpadding調整 */
     .main-content {
-        padding-top: 88px; /* ヘッダーの高さ（64px）+ pb-6（24px）分 */
+        padding-top: 116px; /* ヘッダーの高さ（64px）+ バー（28px）+ pb-6（24px）分 */
     }
 
     /* 見出しスライドインアニメーション */
@@ -332,10 +332,10 @@
             display: inline;
         }
         .wave-text-main {
-            font-size: 22px;
+            font-size: 14px;
         }
         .wave-text-sub {
-            font-size: 14px;
+            font-size: 11px;
         }
     }
 
@@ -657,6 +657,13 @@
                     </div>
                 </div>
             </nav>
+            <div class="w-full h-7 c-bg-premico flex items-center justify-center text-sm text-white gap-1">
+                お申込・お問い合わせ　6:00〜21:00
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-4 h-4 ml-1" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V21a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/>
+                </svg>
+                0120-247-417
+            </div>
         </header>
 
         <!-- スライダー＆検索窓 -->
@@ -696,11 +703,11 @@
                                     <div class="wave-text-line" data-line="0">
                                         <div class="wave-text-content wave-text-main">想像を超える、新しい出会い</div>
                                     </div>
-                                    <div class="wave-text-line block md:hidden" data-line="1">
-                                        <div class="wave-text-content wave-text-sub pl-4">オリジナリティにこだわり抜いた、唯一無二の商品をご提供</div>
+                                    <div class="wave-text-line" data-line="1">
+                                        <div class="wave-text-content wave-text-sub pl-4">オリジナリティにこだわり抜いた<span class="hidden-on-small"> </span><span class="show-on-small">、</span>唯一無二の商品をご提供</div>
                                     </div>
-                                    <div class="wave-text-line hidden md:block" data-line="2">
-                                        <div class="wave-text-content wave-text-sub pl-4">オリジナリティにこだわり抜いた<br>唯一無二の商品をご提供</div>
+                                    <div class="wave-text-line hidden-on-small" data-line="2">
+                                        <div class="wave-text-content wave-text-sub pl-4">唯一無二の商品をご提供</div>
                                     </div>
                                 </div>
                             </div>
@@ -801,7 +808,7 @@
             </section>
         </div>
 
-        <main class="pb-6 px-1 mx-auto max-w-6xl">
+        <main class="pb-6 px-1 mx-auto max-w-5xl">
             <!-- 新着のお知らせセクション -->
             <section class="py-6">
                 <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
