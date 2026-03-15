@@ -230,6 +230,27 @@
         display: block;
     }
 
+    /* カテゴリーメニュー */
+    #category-overlay {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 1010;
+    }
+    #category-overlay.is-open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    #category-menu {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 1020;
+    }
+    #category-menu.is-open {
+        opacity: 1;
+        pointer-events: auto;
+    }
     </style>
 </head>
 
@@ -554,9 +575,9 @@
                 <div class="max-w-6xl mx-auto md:space-y-6 lg:max-w-4xl">
                     <!-- 1段目: 商品検索（全幅） -->
                         <!-- 検索フォーム -->
-                        <form class="flex h-12" action="/ieir/views/contents/search" method="GET">
-                            <input type="text" name="q" id="search-input" placeholder="商品番号・キーワード"
-                                class="flex-1 pl-3 pr-3 py-2 border-y border-l border-gray-300 rounded-l-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-base md:text-sm" autocomplete="off"
+                        <form class="flex h-14" action="/ieir/views/contents/search" method="GET">
+                            <input type="text" name="q" id="search-input" placeholder="商品番号・キーワードを入力"
+                                class="flex-1 pl-3 pr-3 py-2 border-y border-l border-gray-300 rounded-l-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-base" autocomplete="off"
                             >
                             <button
                                 type="submit"
@@ -594,7 +615,7 @@
                 <div class="grid grid-cols-3 sm:grid-cols-5 gap-1">
                     <!-- カテゴリ1: オリジナルコイン -->
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
-                        <a href="" class="block">
+                        <a href="#" class="block category-btn" data-category="オリジナルコイン">
                             <div class="">
                                 <img src="/ieir/public/img/top/coins/coins_01.png" alt="オリジナルコイン" class="w-full aspect-square object-cover">
                             </div>
@@ -605,7 +626,7 @@
                     </div>
                     <!-- カテゴリ2: アンティークコイン -->
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
-                        <a href="" class="block">
+                        <a href="#" class="block category-btn" data-category="アンティークコイン">
                             <div class="">
                                 <img src="/ieir/public/img/top/coins/coins_02.png" alt="アンティークコイン" class="w-full aspect-square object-cover">
                             </div>
@@ -616,7 +637,7 @@
                     </div>
                     <!-- カテゴリ3: スポーツ -->
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
-                        <a href="" class="block">
+                        <a href="#" class="block category-btn" data-category="スポーツ">
                             <div class="">
                                 <img src="/ieir/public/img/top/coins/coins_03.png" alt="スポーツ" class="w-full aspect-square object-cover">
                             </div>
@@ -628,7 +649,7 @@
 
                     <!-- カテゴリ4: エンターテイメント -->
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
-                        <a href="" class="block">
+                        <a href="#" class="block category-btn" data-category="エンターテイメント">
                             <div class="">
                                 <img src="/ieir/public/img/top/coins/coins_04.png" alt="エンターテイメント" class="w-full aspect-square object-cover">
                             </div>
@@ -640,7 +661,7 @@
 
                     <!-- カテゴリ5: 紙幣・切手 -->
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
-                        <a href="" class="block">
+                        <a href="#" class="block category-btn" data-category="紙幣・切手">
                             <div class="">
                                 <img src="/ieir/public/img/top/coins/coins_05.png" alt="紙幣・切手" class="w-full aspect-square object-cover">
                             </div>
@@ -662,18 +683,20 @@
                         <polygon points="46,0 58,0 52,12 40,12" fill="#57184b"/>
                     </svg>
                 </div>
-                <div class="mt-1 ml-2 flex-col items-center p-1 md:px-8">
-                    <img class="h-auto w-48 max-w-60" src="/ieir/public/img/parts/logo/logo_coins.png" alt="I･E･I">
+                <div class="flex flex-col sm:flex-row sm:items-center pl-4 pt-4">
+                    <div class="mt-1 ml-2 flex-col items-center p-1 md:px-8">
+                        <img class="h-auto w-48 max-w-60" src="/ieir/public/img/parts/logo/logo_coins.png" alt="I･E･I">
+                    </div>
+                    <p class="text-base text-gray-700 leading-tight p-4">
+                        コインズ・エンターテイメントでは、"他では決して手に入らない"というオリジナリティにこだわったユニークな商品を多数取り揃え、ハウスブランドや特集ページを通じてお客様にご提案しております。<br>
+                        皆様の暮らしと心にゆとりと潤いそして感動を提供したいというのが私達の最大の願いです。
+                    </p>
                 </div>
-                <p class="text-base text-gray-700 leading-tight p-4">
-                    コインズ・エンターテイメントでは、"他では決して手に入らない"というオリジナリティにこだわったユニークな商品を多数取り揃え、ハウスブランドや特集ページを通じてお客様にご提案しております。<br>
-                    皆様の暮らしと心にゆとりと潤いそして感動を提供したいというのが私達の最大の願いです。
-                </p>
             </div>
 
             <!-- 新着のお知らせセクション -->
             <section class="py-6">
-                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
+                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll py-2">
                     <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
                         <span class="text-5xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">New Arrival</span>
                         <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">新着のお知らせ</span>
@@ -1005,7 +1028,7 @@
 
             <!-- メールニュースセクション -->
             <section class="py-6">
-                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
+                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll py-2">
                     <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
                         <span class="text-5xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">Mail News</span>
                         <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">メールニュース</span>
@@ -1050,7 +1073,7 @@
 
             <!-- アバウトセクション -->
             <section class="py-6">
-                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
+                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll py-2">
                     <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
                         <span class="text-5xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">About</span>
                         <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">コインズについて</span>
@@ -1486,6 +1509,120 @@
     document.querySelectorAll('.animate-on-scroll').forEach(el => {
         headingObserver.observe(el);
     });
+</script>
+
+<!-- カテゴリーオーバーレイ -->
+<div id="category-overlay" class="fixed inset-0 bg-black/75"></div>
+
+<!-- カテゴリーメニューパネル -->
+<div id="category-menu" class="fixed top-0 left-0 bottom-0 w-full sm:w-[540px] bg-white shadow-xl overflow-y-auto">
+    <!-- ① カテゴリ名ヘッダー（リンクなし） -->
+    <div class="relative flex items-center justify-center px-4 h-16 text-xl font-bold text-gray-800 border-b border-gray-200 bg-gray-100">
+        <span id="category-menu-title"></span>
+        <button type="button" id="category-menu-close" class="absolute right-4 w-7 h-7 flex items-center justify-center rounded-full hover:bg-gray-300 transition-colors duration-150" aria-label="閉じる">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+    </div>
+    <!-- ② すべての〇〇（リンクあり） -->
+    <a href="#" id="category-menu-all" class="flex items-center gap-5 pl-10 px-4 h-24 text-base font-bold text-gray-800 border-b border-gray-200 hover:bg-gray-50 transition-colors duration-150">
+        <span id="category-menu-all-text" class="flex-1"></span>
+        <svg class="w-6 h-6 flex-shrink-0 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+    </a>
+    <!-- ③ サブカテゴリーリスト -->
+    <ul id="category-menu-list">
+    </ul>
+</div>
+
+<!-- サブカテゴリーアイテムのテンプレート -->
+<template id="category-item-tpl">
+    <li>
+        <a href="#" class="flex items-center gap-5 pr-4 h-24 hover:bg-gray-50 transition-colors duration-150 border-b border-gray-200">
+            <img class="w-36 p-3 h-24 object-contain flex-shrink-0" alt="">
+            <span class="text-gray-700 flex-1"></span>
+            <svg class="w-6 h-6 flex-shrink-0 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+        </a>
+    </li>
+</template>
+
+<script>
+(function () {
+    var categoryData = {
+        'オリジナルコイン': [
+            { name: 'コインペンダント', img: '/ieir/public/img/category/coins/coins_category_01_cp.png' },
+            { name: '皇室コイン', img: '/ieir/public/img/category/coins/coins_category_01_eto.png' },
+            { name: '干支コイン・干支小判', img: '/ieir/public/img/category/coins/coins_category_01_imp.png' },
+            { name: '鉄道コイン', img: '/ieir/public/img/category/coins/coins_category_01_train.png' },
+        ],
+        'アンティークコイン': [
+            { name: 'アンティークコイン１', img: '/ieir/public/img/category/coins/coins_category_01_cp.png' },
+            { name: 'アンティークコイン２', img: '/ieir/public/img/category/coins/coins_category_01_eto.png' },
+            { name: 'アンティークコイン３', img: '/ieir/public/img/category/coins/coins_category_01_imp.png' },
+            { name: 'アンティークコイン４', img: '/ieir/public/img/category/coins/coins_category_01_train.png' },
+        ],
+        'スポーツ': [
+            { name: 'スポーツ１', img: '/ieir/public/img/category/coins/coins_category_01_cp.png' },
+            { name: 'スポーツ２', img: '/ieir/public/img/category/coins/coins_category_01_eto.png' },
+            { name: 'スポーツ３', img: '/ieir/public/img/category/coins/coins_category_01_imp.png' },
+            { name: 'スポーツ４', img: '/ieir/public/img/category/coins/coins_category_01_train.png' },
+        ],
+        'エンターテイメント': [
+            { name: 'エンターテイメント１', img: '/ieir/public/img/category/coins/coins_category_01_cp.png' },
+            { name: 'エンターテイメント２', img: '/ieir/public/img/category/coins/coins_category_01_eto.png' },
+            { name: 'エンターテイメント３', img: '/ieir/public/img/category/coins/coins_category_01_imp.png' },
+            { name: 'エンターテイメント４', img: '/ieir/public/img/category/coins/coins_category_01_train.png' },
+        ],
+        '紙幣・切手': [
+            { name: '紙幣・切手１', img: '/ieir/public/img/category/coins/coins_category_01_cp.png' },
+            { name: '紙幣・切手２', img: '/ieir/public/img/category/coins/coins_category_01_eto.png' },
+            { name: '紙幣・切手３', img: '/ieir/public/img/category/coins/coins_category_01_imp.png' },
+            { name: '紙幣・切手４', img: '/ieir/public/img/category/coins/coins_category_01_train.png' },
+        ],
+    };
+
+    var overlay = document.getElementById('category-overlay');
+    var menu = document.getElementById('category-menu');
+    var menuAll = document.getElementById('category-menu-all');
+    var menuList = document.getElementById('category-menu-list');
+
+    var tpl = document.getElementById('category-item-tpl');
+
+    function openMenu(category) {
+        document.getElementById('category-menu-title').textContent = category;
+        document.getElementById('category-menu-all-text').textContent = 'すべての' + category;
+        menuList.innerHTML = '';
+        var items = categoryData[category] || [];
+        items.forEach(function (item) {
+            var clone = tpl.content.cloneNode(true);
+            var img = clone.querySelector('img');
+            img.src = item.img;
+            img.alt = item.name;
+            clone.querySelector('span').textContent = item.name;
+            menuList.appendChild(clone);
+        });
+        overlay.classList.add('is-open');
+        menu.classList.add('is-open');
+    }
+
+    function closeMenu() {
+        overlay.classList.remove('is-open');
+        menu.classList.remove('is-open');
+    }
+
+    document.querySelectorAll('.category-btn').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            openMenu(btn.dataset.category);
+        });
+    });
+
+    overlay.addEventListener('click', closeMenu);
+    document.getElementById('category-menu-close').addEventListener('click', function (e) {
+        e.preventDefault();
+        closeMenu();
+    });
+})();
 </script>
 </body>
 </html>
