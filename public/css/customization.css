@@ -28,6 +28,22 @@
  border-color: #2C5282;
 }
 
+/* コインズカラー */
+.c-text-coins {
+ color: #493759;
+}
+.c-bg-coins {
+ background-color: #493759;
+}
+.c-bg-coins-50 {
+ background-color: #493759;
+ opacity: 0.95;
+}
+.c-border-coins {
+ border-color: #493759;
+}
+
+
 /* セカンドカラー */
 .c-text-second {
  color: #3e9aaf;
@@ -88,6 +104,11 @@
 /* プレミコグラデーション */
 .c-bg-premico-gradient {
  background: linear-gradient(135deg, #2C5282 0%, #3e6fa7 50%, #2C5282 100%);
+}
+
+/* コインズグラデーション */
+.c-bg-coins-gradient {
+ background: linear-gradient(135deg, #493759 0%, #7f5d9d 50%, #c4a3bf 100%);
 }
 
 /* タイトル大見出し */
