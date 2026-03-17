@@ -146,6 +146,28 @@
         transform: translateY(-100%);
     }
 
+    /* カテゴリナビバー */
+    #category-nav {
+        display: none;
+        position: fixed;
+        top: 92px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: white;
+        border-bottom: 1px solid #e5e7eb;
+        transition: top 0.3s ease-in-out;
+    }
+    #category-nav.header-hidden {
+        top: 0;
+    }
+    @media (min-width: 1024px) {
+        #category-nav {
+            display: flex;
+        }
+    }
+
     /* 見出しスライドインアニメーション */
     @keyframes slideInFromRight {
         from {
@@ -557,7 +579,18 @@
             </div>
         </header>
 
-        <main class="pt-24 pb-6 px-4 mx-auto max-w-4xl">
+        <!-- カテゴリナビバー（lg以上のみ表示） -->
+        <nav id="category-nav">
+            <div class="flex items-center justify-center gap-10 h-16 w-full px-4">
+                <button type="button" onclick="window.openMenu('オリジナルコイン')" class="font-bold text-lg text-gray-800 hover:text-gray-500 transition-colors duration-150 whitespace-nowrap">オリジナルコイン</button>
+                <button type="button" onclick="window.openMenu('アンティークコイン')" class="font-bold text-lg text-gray-800 hover:text-gray-500 transition-colors duration-150 whitespace-nowrap">アンティークコイン</button>
+                <button type="button" onclick="window.openMenu('スポーツ')" class="font-bold text-lg text-gray-800 hover:text-gray-500 transition-colors duration-150 whitespace-nowrap">スポーツ</button>
+                <button type="button" onclick="window.openMenu('エンターテイメント')" class="font-bold text-lg text-gray-800 hover:text-gray-500 transition-colors duration-150 whitespace-nowrap">エンターテイメント</button>
+                <button type="button" onclick="window.openMenu('紙幣・切手')" class="font-bold text-lg text-gray-800 hover:text-gray-500 transition-colors duration-150 whitespace-nowrap">紙幣・切手</button>
+            </div>
+        </nav>
+
+        <main class="pt-24 pb-6 px-4 mx-auto max-w-4xl lg:pt-40">
             <!-- 戻るボタン -->
             <div class="pt-4">
                 <button onclick="history.back()" class="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors">
@@ -1129,25 +1162,25 @@
         // スクロール方向に応じたヘッダー表示/非表示
         let lastScrollTop = 0;
         const header = document.querySelector('header');
-        const scrollThreshold = 50; // スクロール閾値（px）
+        const categoryNav = document.getElementById('category-nav');
+        const scrollThreshold = 50;
 
         window.addEventListener('scroll', function() {
             const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-            // ページトップ付近では常にヘッダーを表示
             if (currentScroll <= scrollThreshold) {
                 header.classList.remove('header-hidden');
+                categoryNav.classList.remove('header-hidden');
                 lastScrollTop = currentScroll;
                 return;
             }
 
-            // スクロール方向を判定
             if (currentScroll > lastScrollTop) {
-                // 下スクロール：ヘッダーを隠す
                 header.classList.add('header-hidden');
+                categoryNav.classList.add('header-hidden');
             } else {
-                // 上スクロール：ヘッダーを表示
                 header.classList.remove('header-hidden');
+                categoryNav.classList.remove('header-hidden');
             }
 
             lastScrollTop = currentScroll;
@@ -1267,7 +1300,7 @@
 
     var tpl = document.getElementById('category-item-tpl');
 
-    function openMenu(category) {
+    window.openMenu = function openMenu(category) {
         document.getElementById('category-menu-title').textContent = category;
         document.getElementById('category-menu-all-text').textContent = 'すべての' + category;
         menuList.innerHTML = '';
