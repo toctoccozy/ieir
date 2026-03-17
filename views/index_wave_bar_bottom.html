@@ -88,7 +88,10 @@
             margin: 0 1px; /* デフォルトは5px、2pxに縮める */
         }
     }
-
+    /* メインコンテンツのpadding調整 */
+    .main-content {
+        padding-top: 100px; /* ヘッダーの高さ（64px）+ バー（28px）+ pb分 */
+    }
 
     /* PC版でもドットを表示 */
     @media (min-width: 1024px) {
@@ -118,6 +121,10 @@
         .slider-main .slick-next {
             display: none !important;
         }
+        /* メインコンテンツのpadding調整 */
+        .main-content {
+            padding-top: 100px; /* ヘッダーの高さ（64px）+ バー（28px）+ pb分 */
+        }
     }
 
     /* スクロール時のヘッダー固定 */
@@ -135,11 +142,6 @@
     /* 下スクロール時：ヘッダーを隠す */
     header.header-hidden {
         transform: translateY(-100%);
-    }
-
-    /* メインコンテンツのpadding調整 */
-    .main-content {
-        padding-top: 116px; /* ヘッダーの高さ（64px）+ バー（28px）+ pb-6（24px）分 */
     }
 
     /* 見出しスライドインアニメーション */
@@ -813,7 +815,7 @@
             <section class="py-6">
                 <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
                     <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
-                        <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">New Arrival</span>
+                        <span class="text-4xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">New Arrival</span>
                         <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">新着のお知らせ</span>
                     </div>
                     <!-- 装飾ライン -->
@@ -979,7 +981,7 @@
             <section class="py-6">
                 <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
                     <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
-                        <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">Items on Paper</span>
+                        <span class="text-4xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">Items on Paper</span>
                         <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">新聞・雑誌に掲載中の商品</span>
                     </div>
                     <!-- 装飾ライン -->
@@ -1180,7 +1182,7 @@
             <section class="py-6">
                 <h2 class="mb-6 pb-1 flex items-center overflow-hidden animate-on-scroll">
                     <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
-                        <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">Category</span>
+                        <span class="text-4xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">Category</span>
                         <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">カテゴリー</span>
                     </div>
                     <!-- 装飾ライン -->
@@ -1445,7 +1447,7 @@
             <section class="py-6">
                 <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
                     <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
-                        <span class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">Mail News</span>
+                        <span class="text-4xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">Mail News</span>
                         <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">メールニュース</span>
                     </div>
                     <!-- 装飾ライン -->
