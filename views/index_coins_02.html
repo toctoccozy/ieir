@@ -162,6 +162,8 @@
     #category-nav.header-hidden {
         top: 0;
     }
+    #category-nav .nav-logo { display: none; }
+    #category-nav.header-hidden .nav-logo { display: block; }
     @media (min-width: 1024px) {
         #category-nav {
             display: flex;
@@ -284,6 +286,11 @@
         pointer-events: auto;
     }
     </style>
+    <!-- カテゴリモーダル画像のprefetch -->
+    <link rel="prefetch" href="/ieir/public/img/category/coins/coins_category_01_cp.png">
+    <link rel="prefetch" href="/ieir/public/img/category/coins/coins_category_01_eto.png">
+    <link rel="prefetch" href="/ieir/public/img/category/coins/coins_category_01_imp.png">
+    <link rel="prefetch" href="/ieir/public/img/category/coins/coins_category_01_train.png">
 </head>
 
 <body class="bg-white">
@@ -585,6 +592,7 @@
         <!-- カテゴリナビバー（lg以上のみ表示） -->
         <nav id="category-nav">
             <div class="flex items-center justify-center gap-10 h-16 w-full px-4">
+                <img src="/ieir/public/img/parts/logo/logo_coins.png" alt="I･E･I Coins" class="nav-logo h-8 w-auto">
                 <button type="button" onclick="window.openMenu('オリジナルコイン')" class="font-bold text-lg text-gray-800 hover:text-gray-500 transition-colors duration-150 whitespace-nowrap">オリジナルコイン</button>
                 <button type="button" onclick="window.openMenu('アンティークコイン')" class="font-bold text-lg text-gray-800 hover:text-gray-500 transition-colors duration-150 whitespace-nowrap">アンティークコイン</button>
                 <button type="button" onclick="window.openMenu('スポーツ')" class="font-bold text-lg text-gray-800 hover:text-gray-500 transition-colors duration-150 whitespace-nowrap">スポーツ</button>
@@ -660,7 +668,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block category-btn" data-category="オリジナルコイン">
                             <div class="">
-                                <img src="/ieir/public/img/top/coins/coins_01.png" alt="オリジナルコイン" class="w-full aspect-square object-cover">
+                                <img src="/ieir/public/img/top/coins/coins_01.png" alt="オリジナルコイン" class="w-full aspect-square object-cover" fetchpriority="high">
                             </div>
                             <div class="p-3">
                                 <p class="text-sm font-medium text-gray-800 text-center">オリジナルコイン</p>
@@ -671,7 +679,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block category-btn" data-category="アンティークコイン">
                             <div class="">
-                                <img src="/ieir/public/img/top/coins/coins_02.png" alt="アンティークコイン" class="w-full aspect-square object-cover">
+                                <img src="/ieir/public/img/top/coins/coins_02.png" alt="アンティークコイン" class="w-full aspect-square object-cover" fetchpriority="high">
                             </div>
                             <div class="p-3">
                                 <p class="text-sm font-medium text-gray-800 text-center">アンティークコイン</p>
@@ -682,7 +690,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block category-btn" data-category="スポーツ">
                             <div class="">
-                                <img src="/ieir/public/img/top/coins/coins_03.png" alt="スポーツ" class="w-full aspect-square object-cover">
+                                <img src="/ieir/public/img/top/coins/coins_03.png" alt="スポーツ" class="w-full aspect-square object-cover" fetchpriority="high">
                             </div>
                             <div class="p-3">
                                 <p class="text-sm font-medium text-gray-800 text-center">スポーツ</p>
@@ -694,7 +702,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block category-btn" data-category="エンターテイメント">
                             <div class="">
-                                <img src="/ieir/public/img/top/coins/coins_04.png" alt="エンターテイメント" class="w-full aspect-square object-cover">
+                                <img src="/ieir/public/img/top/coins/coins_04.png" alt="エンターテイメント" class="w-full aspect-square object-cover" fetchpriority="high">
                             </div>
                             <div class="p-3">
                                 <p class="text-sm font-medium text-gray-800 text-center">エンターテイメント</p>
@@ -706,7 +714,7 @@
                     <div class="bg-white overflow-hidden hover:shadow-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-shadow duration-200">
                         <a href="#" class="block category-btn" data-category="紙幣・切手">
                             <div class="">
-                                <img src="/ieir/public/img/top/coins/coins_05.png" alt="紙幣・切手" class="w-full aspect-square object-cover">
+                                <img src="/ieir/public/img/top/coins/coins_05.png" alt="紙幣・切手" class="w-full aspect-square object-cover" fetchpriority="high">
                             </div>
                             <div class="p-3">
                                 <p class="text-sm font-medium text-gray-800 text-center">紙幣・切手</p>
