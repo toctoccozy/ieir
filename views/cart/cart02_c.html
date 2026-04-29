@@ -413,11 +413,11 @@
                     </h3>
                     <div class="sm:ml-12">
                         <div class="flex items-center gap-3 mb-3">
-                            <input type="text" name="zip01" value="" maxlength="3" 
-                                class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
+                            <input type="text" name="zip01" value="" maxlength="3" placeholder="116"
+                                class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none focus:placeholder-transparent transition-all duration-200 bg-white text-center">
                             <span class="text-gray-700">-</span>
-                            <input type="text" name="zip02" value="" maxlength="4" 
-                                class="w-24 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
+                            <input type="text" name="zip02" value="" maxlength="4" placeholder="0014"
+                                class="w-24 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none focus:placeholder-transparent transition-all duration-200 bg-white text-center">
                         </div>
                         <button type="button" onclick="openAddressSearch();" 
                             class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm">
@@ -434,13 +434,13 @@
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:ml-12">
                         <div>
                             <label class="block text-sm text-gray-700 mb-2">都道府県</label>
-                            <input type="text" name="address01" value="" 
-                                class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white">
+                            <input type="text" name="address01" value="" placeholder="例：東京都"
+                                class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none focus:placeholder-transparent transition-all duration-200 bg-white">
                         </div>
                         <div class="sm:col-span-2">
                             <label class="block text-sm text-gray-700 mb-2">市町村</label>
-                            <input type="text" name="address02" value="" 
-                                class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white">
+                            <input type="text" name="address02" value="" placeholder="例：荒川区東日暮里"
+                                class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none focus:placeholder-transparent transition-all duration-200 bg-white">
                         </div>
                     </div>
                 </div>
@@ -451,8 +451,8 @@
                         番地・号、建物名・部屋番号 <span class="text-red-600 text-sm font-medium">※必須</span>
                     </h3>
                     <div class="sm:ml-12">
-                        <input type="text" name="address03" value="" 
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white">
+                        <input type="text" name="address03" value="" placeholder="例：５丁目７−１８　〇〇マンション〇〇〇号室"
+                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none focus:placeholder-transparent transition-all duration-200 bg-white">
                     </div>
                 </div>
             </div>
@@ -461,37 +461,43 @@
             <div class="bg-gray-100 rounded-lg p-4 mb-4">
                 <!-- お電話番号入力 -->
                 <div class="py-2 mb-2">
-                    <h3 class="text-lg font-bold c-text-premico">
-                        携帯電話(なければ固定電話番号) <span class="text-red-600 text-sm font-medium">※必須</span>
-                    </h3>
-                    <p data-dev-note class="text-sm text-gray-600 mb-1 sm:ml-2">※何か説明を入れられますけどいれますか→ToCS</p>
-                    <div class="flex items-center gap-3 sm:ml-12">
-                        <input type="text" name="tel1" value="" maxlength="4" 
-                            class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
-                        <span class="text-gray-700">-</span>
-                        <input type="text" name="tel2" value="" maxlength="4" 
-                            class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
-                        <span class="text-gray-700">-</span>
-                        <input type="text" name="tel3" value="" maxlength="4" 
-                            class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
+                    <h3 class="text-lg font-bold c-text-premico mb-2">お電話番号</h3>
+
+                    <!-- 連絡先1 -->
+                    <div class="sm:ml-12 mb-3">
+                        <label class="block text-base font-medium text-gray-800 mb-2">
+                            １：携帯電話、またはご自宅(固定電話) <span class="text-red-600 text-sm font-medium">※必須</span>
+                        </label>
+                        <div class="flex items-center gap-3">
+                            <input type="text" name="tel1_1" value="" maxlength="4"
+                                class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
+                            <span class="text-gray-700">-</span>
+                            <input type="text" name="tel1_2" value="" maxlength="4"
+                                class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
+                            <span class="text-gray-700">-</span>
+                            <input type="text" name="tel1_3" value="" maxlength="4"
+                                class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
+                        </div>
                     </div>
-                </div>
-                
-                <!-- 勤務先（昼間）の連絡先入力 -->
-                <div class="py-2 mb-2">
-                    <h3 class="text-lg font-bold c-text-premico mb-1">
-                        勤務先（昼間）の連絡先
-                    </h3>
-                    <div class="flex items-center gap-3 sm:ml-12">
-                        <input type="text" name="work_tel1" value="" maxlength="4" 
-                            class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
-                        <span class="text-gray-700">-</span>
-                        <input type="text" name="work_tel2" value="" maxlength="4" 
-                            class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
-                        <span class="text-gray-700">-</span>
-                        <input type="text" name="work_tel3" value="" maxlength="4" 
-                            class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
+
+                    <!-- 連絡先2 -->
+                    <div class="sm:ml-12 mb-2">
+                        <label class="block text-base font-medium text-gray-800 mb-2">
+                            ２：１以外の連絡先(携帯、またはご自宅)
+                        </label>
+                        <div class="flex items-center gap-3">
+                            <input type="text" name="tel2_1" value="" maxlength="4"
+                                class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
+                            <span class="text-gray-700">-</span>
+                            <input type="text" name="tel2_2" value="" maxlength="4"
+                                class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
+                            <span class="text-gray-700">-</span>
+                            <input type="text" name="tel2_3" value="" maxlength="4"
+                                class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
+                        </div>
                     </div>
+
+                    <p class="text-sm text-gray-600 sm:ml-12">※お持ちの方は、携帯・固定両方のご入力をお願いいたします。</p>
                 </div>
             </div>
             
@@ -502,10 +508,10 @@
                     <h3 class="text-lg font-bold c-text-premico mb-1">
                         メールアドレス <span class="text-red-600 text-sm font-medium">※必須</span>
                     </h3>
-                    <p class="text-sm text-gray-600 mb-1 sm:ml-2">※携帯メールアドレスをご利用いただく場合、「iei.co.jp」からのメールが受け取れるよう、ドメイン指定受信などの設定をしてください。→co.jpでいいんですか？ToCS</p>
+                    <p class="text-sm text-gray-600 mb-1 sm:ml-2">※「iei.co.jp」からのメールが受け取れるよう、ドメイン指定受信などの設定をしてください。</p>
                     <div class="sm:ml-12">
-                        <input type="email" name="email" value="" 
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white"
+                        <input type="email" name="email" value=""
+                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none focus:placeholder-transparent transition-all duration-200 bg-white"
                             placeholder="example@email.com">
                     </div>
                 </div>
@@ -516,8 +522,8 @@
                         メールアドレス（確認用） <span class="text-red-600 text-sm font-medium">※必須</span>
                     </h3>
                     <div class="sm:ml-12">
-                        <input type="email" name="email_confirm" value="" 
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white"
+                        <input type="email" name="email_confirm" value=""
+                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none focus:placeholder-transparent transition-all duration-200 bg-white"
                             placeholder="確認のため、上記と同じメールアドレスを入力してください">
                     </div>
                 </div>
@@ -534,13 +540,13 @@
                             <input type="radio" id="delivery_same" name="delivery" value="same" checked
                                 class="mr-3 w-5 h-5 c-accent-premico"
                                 onchange="toggleDeliveryAddress()">
-                            <label for="delivery_same" class="text-gray-700 cursor-pointer font-medium">ご注文者と同じ</label>
+                            <label for="delivery_same" class="text-gray-700 cursor-pointer font-medium">ご自宅へのお届け(注文者と同じ)</label>
                         </div>
                         <div class="flex items-center">
                             <input type="radio" id="delivery_different" name="delivery" value="different"
                                 class="mr-3 w-5 h-5 c-accent-premico"
                                 onchange="toggleDeliveryAddress()">
-                            <label for="delivery_different" class="text-gray-700 cursor-pointer font-medium">ご注文者以外へお届けする</label>
+                            <label for="delivery_different" class="text-gray-700 cursor-pointer font-medium">ご自宅以外へお届け</label>
                         </div>
                     </div>
                 </div>
@@ -593,11 +599,11 @@
                         </h4>
                         <div class="sm:ml-12">
                             <div class="flex items-center gap-3 mb-3">
-                                <input type="text" name="delivery_zip01" value="" maxlength="3" 
-                                    class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
+                                <input type="text" name="delivery_zip01" value="" maxlength="3" placeholder="116"
+                                    class="w-20 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none focus:placeholder-transparent transition-all duration-200 bg-white text-center">
                                 <span class="text-gray-700">-</span>
-                                <input type="text" name="delivery_zip02" value="" maxlength="4" 
-                                    class="w-24 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-center">
+                                <input type="text" name="delivery_zip02" value="" maxlength="4" placeholder="0014"
+                                    class="w-24 pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none focus:placeholder-transparent transition-all duration-200 bg-white text-center">
                             </div>
                             <button type="button" onclick="openAddressSearch();" 
                                 class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm">
@@ -613,13 +619,13 @@
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:ml-12">
                             <div>
                                 <label class="block text-sm text-gray-700 mb-2">都道府県</label>
-                                <input type="text" name="delivery_address01" value="" 
-                                    class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white">
+                                <input type="text" name="delivery_address01" value="" placeholder="例：東京都"
+                                    class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none focus:placeholder-transparent transition-all duration-200 bg-white">
                             </div>
                             <div class="sm:col-span-2">
                                 <label class="block text-sm text-gray-700 mb-2">市町村</label>
-                                <input type="text" name="delivery_address02" value="" 
-                                    class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white">
+                                <input type="text" name="delivery_address02" value="" placeholder="例：荒川区東日暮里"
+                                    class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none focus:placeholder-transparent transition-all duration-200 bg-white">
                             </div>
                         </div>
                     </div>
@@ -630,15 +636,15 @@
                             番地・号、建物名・部屋番号 <span class="text-red-600 text-sm font-medium">※必須</span>
                         </h4>
                         <div class="sm:ml-12">
-                            <input type="text" name="delivery_address03" value="" 
-                                class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white">
+                            <input type="text" name="delivery_address03" value="" placeholder="例：５丁目７−１８　〇〇マンション〇〇〇号室"
+                                class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none focus:placeholder-transparent transition-all duration-200 bg-white">
                         </div>
                     </div>
                     
                     <!-- お電話番号入力 -->
                     <div class="py-2 mb-2">
                         <h4 class="text-base font-medium text-gray-800 mb-3">
-                            携帯電話(なければ固定電話番号) <span class="text-red-600 text-sm font-medium">※必須</span>
+                            携帯電話、またはご自宅(固定電話) <span class="text-red-600 text-sm font-medium">※必須</span>
                         </h4>
                         <div class="flex items-center gap-3 sm:ml-12">
                             <input type="text" name="delivery_tel1" value="" maxlength="4" 
@@ -671,13 +677,14 @@
                                 </h4>
                                 <select name="delivery_day" class="w-full border border-gray-300 rounded px-3 py-2 bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none">
                                     <option value="">指定なし</option>
-                                    <option value="monday">月曜日</option>
+                                    <option value="SUN">月曜日</option>
                                     <option value="tuesday">火曜日</option>
                                     <option value="wednesday">水曜日</option>
                                     <option value="thursday">木曜日</option>
                                     <option value="friday">金曜日</option>
                                     <option value="saturday">土曜日</option>
                                     <option value="sunday">日曜日</option>
+                                    <option value="weekday">平日</option>
                                 </select>
                             </div>
                             
@@ -703,7 +710,7 @@
                         <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 text-sm text-gray-800">
                             <p class="mb-2">●配達の日時指定はできません。もし特別な事情がある場合は備考欄にその内容を入力してください。</p>
                             <p class="mb-2">●産地直送品は、曜日や時間の指定はお受けできません。</p>
-                            <p>●宅配ボックス預けはお受けしておりません。</p>
+                            <p>●原則として、宅配ボックスへのお届け、置き配、配達店受取りはお断りしております。</p>
                         </div>
                     </div>
                 </div>
@@ -736,7 +743,7 @@
                     <h3 class="text-lg font-bold c-text-premico mb-2">
                         備考欄
                     </h3>
-                    <p class="text-sm text-gray-600 mb-2 ml-2">お届けに関するご要望やメッセージがございましたらご記入ください。<br>※宅配ボックス預けは、お受けしておりませんのでご了承ください。</p>
+                    <p class="text-sm text-gray-600 mb-2 ml-2">お届けに関するご要望やメッセージがございましたらご記入ください。<br>※原則として、宅配ボックスへのお届け、置き配、配達店受取りはお断りしております。</p>
                     <div class="sm:ml-2">
                         <textarea name="customer_message" rows="4"
                             class="w-full h-32 resize-y pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white"></textarea>
@@ -754,7 +761,7 @@
                     <!-- 別ページ確認リンク -->
                     <div class="py-2 sm:ml-12">
                         <p class="text-gray-800 inline">(別ページで
-                            <a href="/privacy-policy.html" target="_blank" class="text-blue-600 underline hover:c-text-premico transition-colors">
+                            <a href="/ieir/views/about/privacy.html" target="_blank" class="text-blue-600 underline hover:c-text-premico transition-colors">
                                 確認する
                             </a>
                         </p>)

@@ -393,8 +393,8 @@
                         メールアドレス <span class="text-red-600 text-sm font-medium">※必須</span>
                     </h3>
                     <div class="sm:ml-12">
-                        <input type="email" name="email" value="" 
-                            class="w-full sm:w-[50%] pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white"
+                        <input type="email" name="email" value=""
+                            class="w-full sm:w-[50%] pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none focus:placeholder-transparent transition-all duration-200 bg-white"
                             placeholder="example@email.com">
                     </div>
                 </div>
@@ -429,8 +429,8 @@
                         商品名
                     </h3>
                     <div class="sm:ml-12">
-                        <input type="text" name="product_name" value="" 
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white"
+                        <input type="text" name="product_name" value=""
+                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none focus:placeholder-transparent transition-all duration-200 bg-white"
                             placeholder="商品名を入力してください">
                     </div>
                 </div>
@@ -444,8 +444,8 @@
                         お問い合わせ内容 <span class="text-red-600 text-sm font-medium">※必須</span>
                     </h3>
                     <div class="sm:ml-12">
-                        <textarea name="inquiry_content" rows="6" maxlength="500" 
-                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white resize-vertical"
+                        <textarea name="inquiry_content" rows="6" maxlength="500"
+                            class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none focus:placeholder-transparent transition-all duration-200 bg-white resize-vertical"
                             placeholder="お問い合わせ内容を入力してください（最大500文字）"></textarea>
                         <p class="text-sm text-gray-600 mt-2">※500文字以内で入力してください</p>
                     </div>
@@ -458,7 +458,16 @@
                     <h3 class="text-lg font-bold c-text-premico">
                         個人情報の取扱について
                     </h3>
-                    
+
+                    <!-- 別ページ確認リンク -->
+                    <div class="py-2 sm:ml-12">
+                        <p class="text-gray-800 inline">(別ページで
+                            <a href="/ieir/views/about/privacy.html" target="_blank" class="text-blue-600 underline hover:c-text-premico transition-colors">
+                                確認する
+                            </a>
+                        </p>)
+                    </div>
+
                     <!-- スクロール可能なテキストエリア -->
                     <div class="py-2 mb-4 sm:ml-12">
                         <div class="border border-gray-300 rounded-lg p-4 bg-white max-h-48 overflow-y-auto text-sm text-gray-700 leading-relaxed">
