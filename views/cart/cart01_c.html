@@ -303,12 +303,12 @@
                                                 59,800円(税抜)
                                             </div>
                                         </div>
-                                        <div class="flex items-center justify-between ml-3 sm:pl-[10%]">
+                                        <div class="flex flex-col sm:flex-row sm:items-center justify-between ml-3 sm:pl-[10%]">
                                             <div class="flex items-center">
                                                 <input type="radio" id="item1_installment" name="item1_payment_method" value="installment" class="mr-2 w-4 h-4 c-accent-premico" x-model="item1PaymentMethod" @change="onItemPaymentChange()">
-                                                <label for="item1_installment" class="text-gray-700 cursor-pointer text-base">分割払い</label>
+                                                <label for="item1_installment" class="text-gray-700 cursor-pointer text-base whitespace-nowrap">分割払い</label>
                                             </div>
-                                            <div class="ml-3 sm:pr-[10%]" :class="item1PaymentMethod === 'installment' ? 'text-black font-medium text-lg' : 'text-gray-400'">
+                                            <div class="ml-3 mt-1 text-right sm:mt-0 sm:text-left sm:pr-[10%]" :class="item1PaymentMethod === 'installment' ? 'text-black font-medium text-lg' : 'text-gray-400'">
                                                 8,800円×7回(総額 62,000円(税抜)) 実質年率7.75%
                                             </div>
                                         </div>
@@ -363,12 +363,12 @@
                                                 369,600円(税抜)
                                             </div>
                                         </div>
-                                        <div class="flex items-center justify-between ml-3 sm:pl-[10%]">
+                                        <div class="flex flex-col sm:flex-row sm:items-center justify-between ml-3 sm:pl-[10%]">
                                             <div class="flex items-center">
                                                 <input type="radio" id="item2_installment" name="item2_payment_method" value="installment" class="mr-2 w-4 h-4 c-accent-premico" x-model="item2PaymentMethod" @change="onItemPaymentChange()">
-                                                <label for="item2_installment" class="text-gray-700 cursor-pointer text-base">分割払い</label>
+                                                <label for="item2_installment" class="text-gray-700 cursor-pointer text-base whitespace-nowrap">分割払い</label>
                                             </div>
-                                            <div class="ml-3 sm:pr-[10%]" :class="item2PaymentMethod === 'installment' ? 'text-black font-medium text-lg' : 'text-gray-400'">
+                                            <div class="ml-3 mt-1 text-right sm:mt-0 sm:text-left sm:pr-[10%]" :class="item2PaymentMethod === 'installment' ? 'text-black font-medium text-lg' : 'text-gray-400'">
                                                 17,800円×24回(総額 427,000円(税抜)) 実質年率14.25%
                                             </div>
                                         </div>
@@ -477,12 +477,12 @@
                                                 37,000円(税抜)
                                             </div>
                                         </div>
-                                        <div class="flex items-center justify-between ml-3 sm:pl-[10%]">
+                                        <div class="flex flex-col sm:flex-row sm:items-center justify-between ml-3 sm:pl-[10%]">
                                             <div class="flex items-center">
                                                 <input type="radio" id="item3_installment" name="item3_payment_method" value="installment" class="mr-2 w-4 h-4 c-accent-premico" x-model="item3PaymentMethod" @change="onItemPaymentChange()">
-                                                <label for="item3_installment" class="text-gray-700 cursor-pointer text-base">分割払い</label>
+                                                <label for="item3_installment" class="text-gray-700 cursor-pointer text-base whitespace-nowrap">分割払い</label>
                                             </div>
-                                            <div class="ml-3 sm:pr-[10%]" :class="item3PaymentMethod === 'installment' ? 'text-black font-medium text-lg' : 'text-gray-400'">
+                                            <div class="ml-3 mt-1 text-right sm:mt-0 sm:text-left sm:pr-[10%]" :class="item3PaymentMethod === 'installment' ? 'text-black font-medium text-lg' : 'text-gray-400'">
                                                 5,510円×7回(総額 38,570円(税抜)) 実質年率5.5%
                                             </div>
                                         </div>
