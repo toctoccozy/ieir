@@ -1,0 +1,291 @@
+/* ==========================================================
+   タグ管理画面 - 仮スタイル
+   ※本CSSは簡易モックアップ用です。
+   後日いただく管理画面の共通CSS/HTMLに合わせて置き換え予定。
+   ========================================================== */
+
+:root {
+  --color-navy: #1a3c6e;
+  --color-navy-dark: #14304f;
+  --color-panel-bg: #e3ecf7;
+  --color-border: #2c4a75;
+  --color-stripe: #fdf8e3;
+  --color-link: #1a56db;
+  --color-danger: #c0392b;
+  --color-text: #222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  color: var(--color-text);
+  background: #f4f6f9;
+}
+
+.page-header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 16px 24px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--color-navy);
+}
+
+.page-main {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px 60px;
+}
+
+/* タブ */
+.tabs {
+  display: flex;
+}
+
+.tab-btn {
+  display: inline-block;
+  border: none;
+  background: var(--color-panel-bg);
+  color: var(--color-navy);
+  font-weight: bold;
+  font-size: 15px;
+  padding: 14px 32px;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+  margin-right: 2px;
+  text-decoration: none;
+}
+
+.tab-btn.is-active {
+  background: var(--color-navy);
+  color: #fff;
+}
+
+/* 検索パネル */
+.search-panel {
+  background: var(--color-panel-bg);
+  border-radius: 0 8px 8px 8px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.search-panel h2 {
+  margin: 0 0 16px;
+  font-size: 18px;
+  color: var(--color-navy);
+}
+
+.search-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 220px;
+}
+
+.field label {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.field input,
+.field select {
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.field input {
+  min-width: 260px;
+}
+
+.search-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* 新規登録パネル */
+.form-panel {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 0 8px 8px 8px;
+  padding: 24px;
+  max-width: 480px;
+}
+
+.form-panel h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: var(--color-navy);
+}
+
+.form-panel__note {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.form-panel .field {
+  margin-bottom: 16px;
+}
+
+.form-panel .field input,
+.form-panel .field select {
+  width: 100%;
+}
+
+.form-panel--standalone {
+  margin-top: 0;
+}
+
+.form-panel__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  text-align: left;
+}
+
+.form-panel__actions .btn--outline {
+  text-decoration: none;
+}
+
+/* ボタン */
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 28px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn--primary {
+  background: var(--color-navy);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: var(--color-navy-dark);
+}
+
+.btn--sm {
+  padding: 6px 18px;
+  font-size: 13px;
+}
+
+.btn--outline {
+  background: #fff;
+  color: var(--color-navy);
+  border: 1px solid var(--color-navy);
+}
+
+.btn--danger {
+  background: var(--color-danger);
+  color: #fff;
+}
+
+/* 一覧パネル */
+.list-panel {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px 24px;
+  border: 1px solid #e2e2e2;
+}
+
+.list-panel__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.list-panel__head h2 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--color-navy);
+}
+
+.list-panel__meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+  color: #555;
+}
+
+/* テーブル */
+.tag-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.tag-table thead th {
+  text-align: left;
+  color: var(--color-navy);
+  border-bottom: 2px solid var(--color-navy);
+  padding: 10px 8px;
+  font-size: 13px;
+}
+
+.tag-table tbody td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.tag-table tbody tr:nth-child(odd) {
+  background: var(--color-stripe);
+}
+
+.tag-table tbody tr:hover {
+  background: #f0f4fb;
+}
+
+.tag-table .col-count {
+  white-space: nowrap;
+}
+
+.tag-table .action-link {
+  color: var(--color-link);
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.tag-table .action-link.danger {
+  color: var(--color-danger);
+}
+
+.tag-table .action-link:hover {
+  text-decoration: underline;
+}
+
+.inline-form {
+  display: inline;
+}
+
+.tag-table .link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+}
+

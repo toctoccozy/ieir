@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>タグ管理 | 管理画面</title>
+<link rel="stylesheet" href="/ieir/views/tag_system/style.css">
+</head>
+<body>
+
+<header class="page-header">
+  <h1>タグ管理</h1>
+</header>
+
+<main class="page-main">
+
+  <!-- タブ（別ページへのリンク。このページでは「タグ一覧」がアクティブ） -->
+  <div class="tabs">
+    <a href="/ieir/views/tag_system/index.html" class="tab-btn is-active">タグ一覧</a>
+    <a href="/ieir/views/tag_system/new.html" class="tab-btn">新規登録</a>
+  </div>
+
+  <!-- 検索パネル -->
+  <section class="search-panel">
+    <h2>タグ検索</h2>
+
+    <form method="GET" action="/ieir/views/tag_system/index.html">
+      <div class="search-row">
+        <div class="field">
+          <label for="f-group">●グループ</label>
+          <select id="f-group" name="group">
+            <option value="">------</option>
+            <option value="ip">IP・キャラクター</option>
+            <option value="material">素材・ブランド</option>
+            <option value="motif">モチーフ</option>
+            <option value="type">商品タイプ・形状</option>
+            <option value="campaign">特集・キャンペーン</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="f-name">●タグ名</label>
+          <input type="text" id="f-name" name="name" placeholder="タグ名を入力">
+        </div>
+      </div>
+
+      <div class="search-actions">
+        <button type="submit" class="btn btn--primary">検索する</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- 一覧パネル -->
+  <section class="list-panel">
+    <div class="list-panel__head">
+      <h2>タグ一覧</h2>
+      <div class="list-panel__meta">
+        <span>全5件中 1〜5件を表示</span>
+      </div>
+    </div>
+
+    <table class="tag-table">
+      <thead>
+        <tr>
+          <th>タグ名</th>
+          <th>グループ</th>
+          <th>使用商品数</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>キティ</td>
+          <td>IP・キャラクター</td>
+          <td class="col-count">128件</td>
+          <td>
+            <a class="action-link" href="/ieir/views/tag_system/tag_edit.html?id=1">編集</a>
+            <a class="action-link" href="/ieir/views/tag_system/add_products.html?id=1">商品を追加</a>
+            <form method="POST" action="/ieir/views/tag_system/index.html" class="inline-form">
+              <button type="submit" class="action-link danger link-button" onclick="return confirm('「キティ」を削除します。128件の商品に使用されています。削除すると、これらの商品からもタグが外れます。よろしいですか？');">削除</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>シルバー</td>
+          <td>素材・ブランド</td>
+          <td class="col-count">41件</td>
+          <td>
+            <a class="action-link" href="/ieir/views/tag_system/tag_edit.html?id=2">編集</a>
+            <a class="action-link" href="/ieir/views/tag_system/add_products.html?id=2">商品を追加</a>
+            <form method="POST" action="/ieir/views/tag_system/index.html" class="inline-form">
+              <button type="submit" class="action-link danger link-button" onclick="return confirm('「シルバー」を削除します。41件の商品に使用されています。削除すると、これらの商品からもタグが外れます。よろしいですか？');">削除</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>鉄道</td>
+          <td>モチーフ</td>
+          <td class="col-count">12件</td>
+          <td>
+            <a class="action-link" href="/ieir/views/tag_system/tag_edit.html?id=3">編集</a>
+            <a class="action-link" href="/ieir/views/tag_system/add_products.html?id=3">商品を追加</a>
+            <form method="POST" action="/ieir/views/tag_system/index.html" class="inline-form">
+              <button type="submit" class="action-link danger link-button" onclick="return confirm('「鉄道」を削除します。12件の商品に使用されています。削除すると、これらの商品からもタグが外れます。よろしいですか？');">削除</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>ジュエリー</td>
+          <td>商品タイプ・形状</td>
+          <td class="col-count">33件</td>
+          <td>
+            <a class="action-link" href="/ieir/views/tag_system/tag_edit.html?id=4">編集</a>
+            <a class="action-link" href="/ieir/views/tag_system/add_products.html?id=4">商品を追加</a>
+            <form method="POST" action="/ieir/views/tag_system/index.html" class="inline-form">
+              <button type="submit" class="action-link danger link-button" onclick="return confirm('「ジュエリー」を削除します。33件の商品に使用されています。削除すると、これらの商品からもタグが外れます。よろしいですか？');">削除</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>コナン</td>
+          <td>IP・キャラクター</td>
+          <td class="col-count">0件</td>
+          <td>
+            <a class="action-link" href="/ieir/views/tag_system/tag_edit.html?id=5">編集</a>
+            <a class="action-link" href="/ieir/views/tag_system/add_products.html?id=5">商品を追加</a>
+            <form method="POST" action="/ieir/views/tag_system/index.html" class="inline-form">
+              <button type="submit" class="action-link danger link-button" onclick="return confirm('「コナン」を削除します。0件の商品に使用されています。削除すると、これらの商品からもタグが外れます。よろしいですか？');">削除</button>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+</body>
+</html>

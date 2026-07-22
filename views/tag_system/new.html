@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>タグの新規登録 | 管理画面</title>
+<link rel="stylesheet" href="/ieir/views/tag_system/style.css">
+</head>
+<body>
+
+<header class="page-header">
+  <h1>タグ管理</h1>
+</header>
+
+<main class="page-main">
+
+  <!-- タブ（別ページへのリンク。このページでは「新規登録」がアクティブ） -->
+  <div class="tabs">
+    <a href="/ieir/views/tag_system/index.html" class="tab-btn">タグ一覧</a>
+    <a href="/ieir/views/tag_system/new.html" class="tab-btn is-active">新規登録</a>
+  </div>
+
+  <section class="form-panel">
+    <h2>タグの新規登録</h2>
+    <p class="form-panel__note">ここではタグ自体を登録します。商品への紐付けは、登録後に一覧の「商品を追加」から行ってください。</p>
+
+    <form method="POST" action="/ieir/views/tag_system/index.html">
+      <div class="field">
+        <label for="new-tag-name">●タグ名</label>
+        <input type="text" id="new-tag-name" name="name" placeholder="タグ名を入力">
+      </div>
+
+      <div class="field">
+        <label for="new-tag-group">●グループ</label>
+        <select id="new-tag-group" name="group">
+          <option value="">------</option>
+          <option value="ip">IP・キャラクター</option>
+          <option value="material">素材・ブランド</option>
+          <option value="motif">モチーフ</option>
+          <option value="type">商品タイプ・形状</option>
+          <option value="campaign">特集・キャンペーン</option>
+        </select>
+      </div>
+
+      <div class="search-actions">
+        <button type="submit" class="btn btn--primary">登録する</button>
+      </div>
+    </form>
+  </section>
+
+</main>
+
+</body>
+</html>
