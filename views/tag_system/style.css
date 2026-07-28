@@ -30,12 +30,42 @@ body {
   background: #fff;
   border-bottom: 1px solid #ddd;
   padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .page-header h1 {
   margin: 0;
   font-size: 20px;
   color: var(--color-navy);
+}
+
+/* 確認用ダミーナビゲーション（本番には含めません） */
+.dev-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.dev-nav a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background: #e08a00;
+  border: 2px dashed #a85f00;
+  border-radius: 6px;
+  padding: 10px 20px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dev-nav a:hover {
+  background: #c77900;
+  text-decoration: underline;
 }
 
 .page-main {
@@ -102,16 +132,23 @@ body {
 }
 
 .field input,
-.field select {
+.field select,
+.field textarea {
   border: 1px solid var(--color-border);
   border-radius: 4px;
   padding: 8px 10px;
   font-size: 14px;
   background: #fff;
+  font-family: inherit;
 }
 
 .field input {
   min-width: 260px;
+}
+
+.field textarea {
+  width: 100%;
+  resize: vertical;
 }
 
 .search-actions {
@@ -141,6 +178,24 @@ body {
   line-height: 1.6;
 }
 
+/* 業者向け実装メモ（実際の画面デザインには含めない想定） */
+.dev-note {
+  font-size: 12px;
+  color: #8a6d00;
+  background: #fff8e1;
+  border: 1px dashed #e0c46c;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.dev-note code {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
 .form-panel .field {
   margin-bottom: 16px;
 }
@@ -154,6 +209,14 @@ body {
   margin-top: 0;
 }
 
+.form-panel--wide {
+  max-width: 720px;
+}
+
+.form-panel--wide .tag-table {
+  margin-bottom: 20px;
+}
+
 .form-panel__actions {
   display: flex;
   justify-content: flex-end;
@@ -163,6 +226,37 @@ body {
 
 .form-panel__actions .btn--outline {
   text-decoration: none;
+}
+
+/* 確認ページ：状態バッジ */
+.status-badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.status-badge--new {
+  background: #e6f4ea;
+  color: #1e7e34;
+  border: 1px solid #b7e0c3;
+}
+
+.status-badge--exists {
+  background: #eef0f3;
+  color: #555;
+  border: 1px solid #d9dce0;
+}
+
+.status-badge--error {
+  background: #fbe9e7;
+  color: var(--color-danger);
+  border: 1px solid #f3c6c0;
+}
+
+.row-error td {
+  color: #999;
 }
 
 /* ボタン */
@@ -287,5 +381,54 @@ body {
   border: none;
   padding: 0;
   font-family: inherit;
+}
+
+/* タグ選択画面：グループ・チップ */
+.tag-group {
+  margin-bottom: 24px;
+}
+
+.tag-group__title {
+  font-size: 14px;
+  color: var(--color-navy);
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 6px;
+  margin: 0 0 12px;
+}
+
+.chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-chip input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.tag-chip label {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: #fff;
+  color: var(--color-navy);
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tag-chip input[type="checkbox"]:checked + label {
+  background: var(--color-navy);
+  color: #fff;
+  border-color: var(--color-navy);
+}
+
+.tag-chip input[type="checkbox"]:focus-visible + label {
+  outline: 2px solid var(--color-navy);
+  outline-offset: 2px;
 }
 

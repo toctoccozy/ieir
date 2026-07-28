@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商品を追加（確認） | 管理画面</title>
+<link rel="stylesheet" href="/ieir/views/tag_system/style.css">
+</head>
+<body>
+
+<header class="page-header">
+  <h1>タグ管理 ＞ 商品を追加（確認）</h1>
+</header>
+
+<main class="page-main">
+  <section class="form-panel form-panel--wide form-panel--standalone">
+    <p class="dev-note">※このページは <code>add_tag.html</code> のフォーム送信（プログラムコード・タグID）を受けて表示されます。個別選択はできず、一覧の内容がそのまま全件登録されます（プログラムコードとタグは基本的に1対1のため）。内容が想定と異なる場合は「戻る」でやり直してください。</p>
+
+    <h2>タグ「ハローキティ」に商品を追加（確認）</h2>
+    <p class="form-panel__note">
+      入力されたプログラムコードを商品単位に展開した結果です。内容をご確認のうえ、問題なければ「追加する」を押してください（一覧の商品すべてが対象になります）。<br>
+      入力された値の重複は自動的に除去されています。
+    </p>
+
+    <!-- サンプル：プログラムコード「51334, 51543, 51099, 22222」を入力した場合の表示例 -->
+    <table class="tag-table">
+      <thead>
+        <tr>
+          <th>プログラムコード</th>
+          <th>商品名</th>
+          <th>状態</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>51334</td>
+          <td>ビートルズ ハード・デイズ・ナイトウオッチ</td>
+          <td><span class="status-badge status-badge--new">新規追加</span></td>
+        </tr>
+        <tr>
+          <td>51543</td>
+          <td>キティ新幹線コインペンダント</td>
+          <td><span class="status-badge status-badge--new">新規追加</span></td>
+        </tr>
+        <tr>
+          <td>51099</td>
+          <td>ムーミン シルバーチャーム</td>
+          <td><span class="status-badge status-badge--exists">登録済み</span></td>
+        </tr>
+        <tr class="row-error">
+          <td>22222</td>
+          <td>―</td>
+          <td><span class="status-badge status-badge--error">該当エラー</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form method="POST" action="/ieir/views/tag_system/index.html">
+      <input type="hidden" name="tag_id" value="1">
+      <!-- 該当エラーを除く、展開済みの商品番号をそのまま引き継いで登録する想定 -->
+      <input type="hidden" name="product_no[]" value="5133400A">
+      <input type="hidden" name="product_no[]" value="5154300A">
+      <input type="hidden" name="product_no[]" value="5109900A">
+
+      <div class="search-actions form-panel__actions">
+        <a class="btn btn--outline" href="/ieir/views/tag_system/add_tag.html?id=1">戻る</a>
+        <button type="submit" class="btn btn--primary">追加する</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+</body>
+</html>

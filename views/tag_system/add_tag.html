@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商品を追加 | 管理画面</title>
+<link rel="stylesheet" href="/ieir/views/tag_system/style.css">
+</head>
+<body>
+
+<header class="page-header">
+  <h1>タグ管理 ＞ 商品を追加</h1>
+</header>
+
+<main class="page-main">
+  <section class="form-panel form-panel--standalone">
+    <p class="dev-note">※このページは <code>add_tag.html?id={タグID}</code> という形式のパラメータ付きURLでアクセスされる想定です（例：<code>add_tag.html?id=1</code>）。以下はid=1（ハローキティ）を開いた場合のサンプル表示です。</p>
+
+    <h2>タグ「ハローキティ」に商品を追加</h2>
+    <p class="form-panel__note">
+      5桁のプログラムコードをカンマ区切りで入力してください。<br>
+      「5」から始まるプログラムコードのみ登録できます（「8」から始まるプログラムコードは、この画面からは登録できません。商品詳細画面から個別に登録してください）。
+    </p>
+
+    <!-- サンプル：id=1（ハローキティ）に商品を追加する想定の表示例 -->
+    <form method="POST" action="/ieir/views/tag_system/add_tag_confirm.html">
+      <input type="hidden" name="tag_id" value="1">
+
+      <div class="field">
+        <label for="program-codes">●プログラムコード</label>
+        <textarea id="program-codes" name="program_codes" rows="6" placeholder="例）51334,51335,51336"></textarea>
+      </div>
+
+      <div class="search-actions form-panel__actions">
+        <a class="btn btn--outline" href="/ieir/views/tag_system/index.html">一覧へ戻る</a>
+        <button type="submit" class="btn btn--primary">確認する</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+</body>
+</html>
