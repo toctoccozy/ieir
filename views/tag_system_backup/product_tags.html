@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>タグを選択 | 管理画面</title>
+<link rel="stylesheet" href="/ieir/views/tag_system/style.css">
+</head>
+<body>
+
+<header class="page-header">
+  <h1>タグを選択</h1>
+</header>
+
+<main class="page-main">
+  <section class="form-panel form-panel--wide form-panel--standalone">
+    <p class="dev-note">※このページは商品詳細画面の「タグを登録」リンク（別ウィンドウ、<code>target="_blank"</code>）から開かれる想定です。申込番号 51120502を開いた場合のサンプル。保存後、元の商品詳細タブは自動更新されないため、案内文で手動更新を促す。</p>
+
+    <h2>商品番号51120002　ゾロ）ワンピースグラデーションレザーウォレット</h2>
+
+    <form method="POST" action="/ieir/views/tag_system/product_tags_saved.html">
+
+      <div class="tag-group">
+        <h3 class="tag-group__title">IP・キャラクター</h3>
+        <div class="chip-grid">
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-1" name="tag_ids[]" value="1">
+            <label for="tag-1">ハローキティ</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-2" name="tag_ids[]" value="2">
+            <label for="tag-2">スヌーピー</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-3" name="tag_ids[]" value="3">
+            <label for="tag-3">セーラームーン</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-4" name="tag_ids[]" value="4" checked>
+            <label for="tag-4">ワンピース(アニメ)</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-5" name="tag_ids[]" value="5">
+            <label for="tag-5">ディズニー</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="tag-group">
+        <h3 class="tag-group__title">素材・ブランド</h3>
+        <div class="chip-grid">
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-6" name="tag_ids[]" value="6">
+            <label for="tag-6">西陣織</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-7" name="tag_ids[]" value="7">
+            <label for="tag-7">江戸切子</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-8" name="tag_ids[]" value="8">
+            <label for="tag-8">セイコー</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-9" name="tag_ids[]" value="9">
+            <label for="tag-9">ロベルタ</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="tag-group">
+        <h3 class="tag-group__title">モチーフ</h3>
+        <div class="chip-grid">
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-10" name="tag_ids[]" value="10">
+            <label for="tag-10">新幹線</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-11" name="tag_ids[]" value="11">
+            <label for="tag-11">鉄道</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-12" name="tag_ids[]" value="12">
+            <label for="tag-12">皇室</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-13" name="tag_ids[]" value="13">
+            <label for="tag-13">野球・ベースボール</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-14" name="tag_ids[]" value="14">
+            <label for="tag-14">桜</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-15" name="tag_ids[]" value="15">
+            <label for="tag-15">スポーツ</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-16" name="tag_ids[]" value="16">
+            <label for="tag-16">猫</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-17" name="tag_ids[]" value="17">
+            <label for="tag-17">うさぎ</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="tag-group">
+        <h3 class="tag-group__title">商品タイプ・形状</h3>
+        <div class="chip-grid">
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-18" name="tag_ids[]" value="18" checked>
+            <label for="tag-18">財布</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-19" name="tag_ids[]" value="19">
+            <label for="tag-19">リュック</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-20" name="tag_ids[]" value="20">
+            <label for="tag-20">ネックレス</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-21" name="tag_ids[]" value="21">
+            <label for="tag-21">リング</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-22" name="tag_ids[]" value="22">
+            <label for="tag-22">ブレスレット</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-23" name="tag_ids[]" value="23">
+            <label for="tag-23">コイン</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-24" name="tag_ids[]" value="24">
+            <label for="tag-24">コインペンダント</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-25" name="tag_ids[]" value="25">
+            <label for="tag-25">ペンダント</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="tag-group">
+        <h3 class="tag-group__title">特集・キャンペーン</h3>
+        <div class="chip-grid">
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-26" name="tag_ids[]" value="26">
+            <label for="tag-26">母の日2026</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-27" name="tag_ids[]" value="27">
+            <label for="tag-27">サマーセール2026</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-28" name="tag_ids[]" value="28">
+            <label for="tag-28">年末年始2026</label>
+          </div>
+          <div class="tag-chip">
+            <input type="checkbox" id="tag-29" name="tag_ids[]" value="29">
+            <label for="tag-29">誕生月キャンペーン</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-actions form-panel__actions">
+        <button type="submit" class="btn btn--primary">保存する</button>
+      </div>
+      <p class="form-panel__note">保存しない場合は、何もせずこのタブを閉じてください。</p>
+    </form>
+  </section>
+</main>
+
+</body>
+</html>

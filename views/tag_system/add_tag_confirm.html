@@ -14,42 +14,43 @@
 
 <main class="page-main">
   <section class="form-panel form-panel--wide form-panel--standalone">
-    <p class="dev-note">※このページは <code>add_tag.html</code> のフォーム送信（プログラムコード・タグID）を受けて表示されます。個別選択はできず、一覧の内容がそのまま全件登録されます（プログラムコードとタグは基本的に1対1のため）。内容が想定と異なる場合は「戻る」でやり直してください。</p>
+    <p class="dev-note">※このページは <code>add_tag.html</code> のフォーム送信（プログラムコード・タグID）を受けて表示されます。個別選択はできず、一覧の内容がそのまま全件登録されます。内容が想定と異なる場合は「戻る」でやり直してください。</p>
+    <p class="dev-note">※業者様へ：「追加する」押下後は一覧画面（<code>index.html</code>）に戻る想定です。その際、可能であれば「◯件の商品を追加しました」等のフラッシュメッセージを表示していただけると助かります（セッション等を用いた一時的な表示で構いません）。</p>
 
     <h2>タグ「ハローキティ」に商品を追加（確認）</h2>
     <p class="form-panel__note">
-      入力されたプログラムコードを商品単位に展開した結果です。内容をご確認のうえ、問題なければ「追加する」を押してください（一覧の商品すべてが対象になります）。<br>
+      入力されたプログラムコードを商品番号単位に展開した結果です。1つのプログラムコードが複数の商品番号（色・サイズ・軸／額違いなど）に対応する場合、該当する商品番号すべてが行として表示されます。内容をご確認のうえ、問題なければ「追加する」を押してください（一覧の商品すべてが対象になります）。<br>
       入力された値の重複は自動的に除去されています。
     </p>
 
-    <!-- サンプル：プログラムコード「51334, 51543, 51099, 22222」を入力した場合の表示例 -->
+    <!-- サンプル：プログラムコード「51016, 51099, 22222」を入力した場合の表示例（51016は軸・額の2商品番号に展開） -->
     <table class="tag-table">
       <thead>
         <tr>
-          <th>プログラムコード</th>
+          <th>商品番号</th>
           <th>商品名</th>
           <th>状態</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>51334</td>
-          <td>ビートルズ ハード・デイズ・ナイトウオッチ</td>
+          <td>51016001</td>
+          <td>軸）大橋翠石明治天皇献上作大下図蹲虎之図</td>
           <td><span class="status-badge status-badge--new">新規追加</span></td>
         </tr>
         <tr>
-          <td>51543</td>
-          <td>キティ新幹線コインペンダント</td>
+          <td>51016002</td>
+          <td>額）大橋翠石明治天皇献上作大下図蹲虎之図</td>
           <td><span class="status-badge status-badge--new">新規追加</span></td>
         </tr>
         <tr>
-          <td>51099</td>
-          <td>ムーミン シルバーチャーム</td>
+          <td>51099000</td>
+          <td>金貨）上皇后陛下米寿　祝寿の薔薇奉祝ｶﾗｰ</td>
           <td><span class="status-badge status-badge--exists">登録済み</span></td>
         </tr>
         <tr class="row-error">
-          <td>22222</td>
           <td>―</td>
+          <td>プログラムコード「22222」に該当する商品が見つかりません</td>
           <td><span class="status-badge status-badge--error">該当エラー</span></td>
         </tr>
       </tbody>
@@ -58,9 +59,9 @@
     <form method="POST" action="/ieir/views/tag_system/index.html">
       <input type="hidden" name="tag_id" value="1">
       <!-- 該当エラーを除く、展開済みの商品番号をそのまま引き継いで登録する想定 -->
-      <input type="hidden" name="product_no[]" value="5133400A">
-      <input type="hidden" name="product_no[]" value="5154300A">
-      <input type="hidden" name="product_no[]" value="5109900A">
+      <input type="hidden" name="product_no[]" value="51016001">
+      <input type="hidden" name="product_no[]" value="51016002">
+      <input type="hidden" name="product_no[]" value="51099000">
 
       <div class="search-actions form-panel__actions">
         <a class="btn btn--outline" href="/ieir/views/tag_system/add_tag.html?id=1">戻る</a>
