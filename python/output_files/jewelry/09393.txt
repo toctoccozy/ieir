@@ -1,0 +1,110 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>煌めきのエンドレス・ハート　プラチナ仕上げの宝飾フルエタニティリング</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=09393502" target="_self"><img alt="煌めきのエンドレス・ハート　プラチナ仕上げの宝飾フルエタニティリング" src="/image/goods/0939300.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：ダイヤモンド6石（計約0.04ct）、キュービック・ジルコニア78〜94石（計約10ct）、プラチナ仕上げスターリング・シルバー（.925銀）<br/>
+●サイズ：7〜20号<br/>
+●日本製</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>煌めきのエンドレス・ハート　プラチナ仕上げの宝飾フルエタニティリング</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,980円（税込5,478円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>29,800円（税込32,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="09393502"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="09393"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-07">07号</option>
+<option class="p999" value="999-08">08号</option>
+<option class="p999" value="999-09">09号</option>
+<option class="p999" value="999-10">10号</option>
+<option class="p999" value="999-11">11号</option>
+<option class="p999" value="999-12">12号</option>
+<option class="p999" value="999-13">13号（完売）</option>
+<option class="p999" value="999-14">14号</option>
+<option class="p999" value="999-15">15号（完売）</option>
+<option class="p999" value="999-16">16号</option>
+<option class="p999" value="999-17">17号（完売）</option>
+<option class="p999" value="999-18">18号</option>
+<option class="p999" value="999-19">19号</option>
+<option class="p999" value="999-20">20号（完売）</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('09393502');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('09393502');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content"> <p class="center-img"><img alt="" height="200" src="/image/goods/0939300_01.jpg" width="580"/></p>
+<p class="center-img"><img alt="" height="200" src="/image/goods/0939300_02.jpg" width="200"/></p>
+<p class="intro">それは、煌めきを“ときめき”に変える宝石の魔法。<br/><br/>
+
+ひと目で心奪われるまばゆいハートの連なりが<br/>
+全周を隙間なく埋めつくし<br/>
+天然ダイヤモンドの煌めきが凛とした品格を添える<br/>
+最高にラグジュアリーなプラチナ仕上げのフルエタニティリング。<br/><br/>
+
+ハリウッドの女優たちを虜にした宝石の魔術師<br/>
+ピーター・イードルソンから、あなたに。</p>
+<ul>
+<li class="stt"><span class="sq01">■</span>アメリカの著名宝飾デザイナーによるオリジナル作品</li>
+<li class="stt"><span class="sq01">■</span>豪華なフルエタニティタイプ</li>
+<li class="stt"><span class="sq01">■</span>天然ダイヤモンド6石</li>
+<li class="stt"><span class="sq01">■</span>上質なキュービック・ジルコニア計10カラット以上</li>
+<li class="stt"><span class="sq01">■</span>贅沢なプラチナ仕上げ</li>
+<li class="stt"><span class="sq01">■</span>I・E・I社から独占提供</li>
+</ul>
+<p>華やかな第一印象を心に刻む圧倒的な輝きのインパクト——まぶしいオーラで視線を釘づけにする魅惑のジュエリー。その名は＜煌めきのエンドレス・ハート＞——。<br/>
+目もくらむハートカットの煌めきを惜しみなくちりばめた、この上なくゴージャスな宝飾フルエタニティリング。欧米の大物セレブやVIPが絶大な信頼を寄せる米国ジュエリー界のカリスマ、ピーター・イードルソンの人気作です。</p>
+<h2>輝きが輝きを呼ぶ永遠の美の連鎖</h2>
+<p class="flt-l"><img alt="" height="190" src="/image/goods/0939300_04.jpg" width="150"/></p>
+<p>一瞬にして心奪われずにはいられないその圧倒的な輝きの秘密は、ダイヤモンドとほぼ同等の高い屈折率と、ダイヤモンドを超える光の分散率を実現したCZ（キュービック・ジルコニア）。嬉しいときめきを予感させる優美なハートカットで、高貴なプラチナ仕上げのリング全周を隙間なく埋め尽くし、さらにダイヤモンド6石とCZ（キュービック・ジルコニア）が上下にちりばめられました。計10カラット以上もの宝石による途切れのない煌めきの環は、まさに輝きが輝きを生む終わりなき美の連鎖。行く先々で称賛を呼び、あなたをひときわ美しく輝かせるでしょう。</p>
+<h2>ハートを虜にする奇跡の10カラット</h2>
+<p>＜煌めきのエンドレス・ハート＞プラチナ仕上げの宝飾フルエタニティリングは、宝石の魔術師の異名をとる著名宝飾デザイナー、ピーター・イードルソンによる貴重なオリジナル作品です。どうぞ、今すぐお申し込みになり、まぶしい華やぎのオーラを独り占めにしてください。</p>
+<p class="center-img"><img alt="" height="217" src="/image/goods/0939300_03.jpg" width="467"/></p>
+<p class="center-img"><img alt="" height="349" src="/image/goods/0939300_05.jpg" width="350"/></p>
+<div class="box1">
+<div class="box-text" style="display:inline-block;">
+<h3>ピーター・イードルソン</h3>
+<div><img align="right" alt="" height="186" src="/image/goods/0939300_06.jpg" style="margin: 0 0 12px 12px;" width="125"/>
+カリフォルニアの高級宝飾店「パヴェー」の経営で名をはせたイードルソン家の3代目。ハリウッドの有名女優や著名人のためのジュエリーを手がけてきた実力派。現在はシアトル郊外に拠点を移し、主に一点もののクチュールジュエリーを創作するほか、「マーサ・スチュワート・ウェディング・コレクション」のための宝飾作品をデザインしている。</div>
+</div>
+</div>
+<br>
+</br></div>
+<br/>
+</section>
+<!--

@@ -3,7 +3,7 @@
 <p id="genl_tit">I･E･I コレクション</p>
 <h1>＜純金の子猫＞ダイヤモンド入り24金製宝飾ペンダント</h1>
 <div id="item-product">
-<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51141503" target="_self"><img alt="＜純金の子猫＞ダイヤモンド入り24金製宝飾ペンダント" src="/image/goods/51141_main_600x600.jpg"/></a><br/>
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51141505" target="_self"><img alt="＜純金の子猫＞ダイヤモンド入り24金製宝飾ペンダント" src="/image/goods/51141_main_600x600.jpg"/></a><br/>
 <span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
 <dl>
 <dt>仕 様</dt>
@@ -25,16 +25,16 @@
 
                     
                           
-                            月々 <span>12,400円（税込13,640円）×12回払い</span><br/>
+                            月々 <span>14,500円（税込15,950円）×15回払い</span><br/>
                           
                           
-                            一括価格 <span>139,800円（税込153,780円）</span><br/>
+                            一括価格 <span>199,800円（税込219,780円）</span><br/>
                           
                           
                             発送手数料 <span>700円（税込770円）</span><br/>
 </div>
 <form method="post" name="form_cart">
-<input name="item_no" type="hidden" value="51141503"/>
+<input name="item_no" type="hidden" value="51141505"/>
 <input name="medium_code" type="hidden" value="245401"/>
 <input name="url" type="hidden" value="51141"/>
 <div class="select_area">
@@ -45,8 +45,8 @@
 </input></div>
 </form>
 <ul class="fav">
-<li><a href="javascript:inquiry('51141503');">この商品のお問い合わせ</a></li>
-<li><a href="javascript:favorite('51141503');">お気に入りに入れる</a></li>
+<li><a href="javascript:inquiry('51141505');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51141505');">お気に入りに入れる</a></li>
 </ul>
 </div>
 <section id="main-content">

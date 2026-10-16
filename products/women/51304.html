@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    @include('iei.includes.head_component_goods', ['goods' => $goods])
+</head>
+
+<body class="bg-white">
+    <div class="min-h-screen mx-auto">
+    @include('iei.components.header_by_show_flag', ['goods' => $goods])
+
+        <!-- パンくずナビ -->
+        <nav class="bread-clumbs text-sm sm:text-base text-gray-600 mx-auto pl-3 leading-snug tracking-tighter max-w-5xl">
+            <a href="/{{ $goods->getShowFlagName() }}" class="text-blue-800 hover:text-blue-400 transition-colors">{{ $goods->getShowFlagJpName() }}</a>
+                @if ($goods->getIeiCategory()->isNotEmpty())
+                    <span class="mx-2">｜</span>
+                    <a href="/collection/{{ $goods->getIeiCategory()->first()->getIeiCategoryName() }}" class="text-blue-800 hover:text-blue-400 transition-colors">
+                        {{ $goods->getIeiCategory()->first()->getIeiCategoryJpName() }}
+                    </a>
+                @endif
+        </nav>
+
+        <!-- メインコンテンツ -->
+        <main class="pt-4 pb-2 px-1 mx-auto max-w-5xl">
+            <!-- 商品説明 -->
+            <section class="mx-auto max-w-3xl">
+                <!-- トップ画像 -->
+                <div class="p-3">
+                    <img src="/image/goods/51304_01.jpg" alt="＜プレシャス バーガンディ＞本場チベット産ヤク100％のふんわりフーディーコート　デザイン：イヴリーヌ・ポノー" class="w-full mx-auto h-auto">
+                </div>
+                <!-- 商品紹介文 -->
+                <div class="p-3">
+                    <p class="text-start leading-relaxed font-bold">
+                        おしゃれ心を酔わせる「ブルゴーニュの赤」──シックなバーガンディ*色に染め上げた希少素材「ヤク」を100％使用。<br>
+                        ほっと心が安らぐ、ふんわりとした至福のぬくもりに腰回りをカバーする絶妙なロング丈がエレガント。<br>
+                        ゆったりとしたフードとちらりと見えるモカカラーの差し色が効いたパリのセンスが光る一着です。<br>
+                        ＊「バーガンディ」｜フランス・ブルゴーニュ産の赤ワインの色。<br>
+                        華やかさと落ち着いた印象を併せ持つ上品なカラー。
+                    </p>
+                </div>
+                <!-- A:商品メイン画像＆箇条書き(main_600x600画像がある場合) -->
+                <div class="flex flex-col md:flex-row p-3">
+                    <img src="/image/goods/51304_main_600x600.jpg" alt="＜プレシャス バーガンディ＞ヤク100％のふんわりフーディーコート" class="w-full md:w-[50%] mx-auto h-auto p-4">
+                    <ul class="text-start w-full md:w-[50%] md:p-3 leading-relaxed">
+                        <li>■フランスの著名デザイナーによるオリジナル</li>
+                        <li>■本場チベット産天然ヤク100％</li>
+                        <li>■肌触りの良いふんわり縮絨（しゅくじゅう）仕上げ</li>
+                        <li>■極上のぬくもり</li>
+                        <li>■シックなバーガンディカラーにモカカラーのコンビネーション</li>
+                        <li>■若々しい印象のフーディーコート</li>
+                    </ul>
+                </div>
+
+                <!-- 商品詳細 -->
+                <div class="flex flex-col space-y-3 mt-6">
+                    <img src="/image/goods/51304_02.jpg" alt="若々しいバックスタイルを演出する大きめのフード" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        高級フランスワインの代名詞とされる「ブルゴーニュの赤」。<br>
+                        そんな芳醇なワインをイメージしたシックな彩りに心華やぐ一着が、フランスの著名デザイナー、イヴリーヌ・ポノー氏から届きました。<br>
+                        美しさを引き立てるリッチなバーガンディカラーにモカカラーのアクセント。<br>
+                        1頭からわずか約100グラムしか採れない希少な天然毛「ヤク」を100％使用したフーディーコート＜プレシャス バーガンディ＞のご案内です。
+                    </p>
+                    <img src="/image/goods/51304_03.jpg" alt="淑女の装いを格上げする洗練のシルエットと一流のこだわりが息づくディテール／ふくわり軽いあったか縮絨仕上げ／たっぷりとデザインされたフードが若々しくもラグジュアリーな印象。お顔まわりをすっきり見せる効果も。／ひとつひとつ丹念に編まれたヤク100％のくるみボタン。大きめのサイズが愛らしく、スナップ式で脱ぎ着も簡単。／リブ編みが施された袖口と左右のポケット。シンプルなデザインにフェミニンな遊び心を添えて。／フードの内側からコートの見返し部分までを彩るモカカラー。優しい色合いがバーガンディカラーを華やかに引き立てます。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <h2 class="text-white rounded-md font-bold text-lg c-bg-collection-gradient text-center sm:p-3 py-2 mx-1">
+                        気品漂うシックなカラーに驚きの柔らかさ<br>ヤク100％の贅沢なぬくもりに包まれて
+                    </h2>
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        ずっと触れていたくなる、ふんわり心地よい肌触りと至福のぬくもり──ポノー氏が素材に選んだのは、カシミヤと並ぶ高い保温性を誇る本場チベット産の希少な天然素材「ヤク」。<br>
+                        本品のために厳選した毛を丁寧に紡ぎ、特殊な染色技術で奥深いバーガンディカラーに染め上げました。<br><br>
+                        編み地は高度な縮絨加工を施すことで、いっそう柔らかく、なめらかな風合いに仕上げた特別なもの。<br>
+                        ゆったり大きめのフードと襟が一体型になったモードなシルエットで、気になる腰回りを自然にカバーできる絶妙なロング丈もうれしいポイントです。<br>
+                        袖口やポケットにさりげなくあしらわれたリブ編みやくるみボタンも秀逸。<br>
+                        バーガンディカラーを引き立てるのはモカカラーのコンビネーション。<br>
+                        フードの内側から見返しに効いた彩りのアクセントに、フランス流の洗練されたセンスが息づきます。<br>
+                        ＜プレシャス バーガンディ＞本場チベット産ヤク100％のふんわりフーディーコートは、I･E･I社の特別企画商品です。<br>
+                        さっと羽織ってちょっとしたお出かけにも、お家でのくつろぎの時間にも幅広く活躍するニットコートで、エレガントな冬の装いをお楽しみください。
+                    </p>
+                    <img src="/image/goods/51304_04.jpg" alt="チベット産ヤク　温かさの秘密／ヤクはチベット高原（海抜3,000メートル以上）に生息するウシ科の動物。マイナス30度にも達することがある過酷な自然環境から身を守るため、その体毛は非常に長く柔らかく、軽やかです。本作品はこの希少な体毛のふんわり感と柔らかさ、軽さを損なわぬよう高度な染色技術で染め上げ、丹念に編んだ逸品です。／優れた保温性：「雪原に浮かぶ船」と言われる標高3,000メートル以上のチベット高原を生き抜くため、高い保温性を誇ります。／柔らかな感触：身体を覆う毛の下に密生しているわずかな産毛を手で梳いて採るため、しっとりとなめらかな手触りです。／高い希少性：最終的に使用できる原毛は1頭からわずか100グラムほどしか採れず大変希少です。／抜群の耐久性：表面の毛は遊牧民のテントやロープに使われるほど堅牢。その内側の産毛も丈夫さを兼ね備えています。／美しい質感：天然ならではの風合いに、3年以上を費やした高度な染色。発色の良い2色の取り合わせが大人の華やぎを演出します。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <div class="p-3 m-1 border c-border-collection-gradient border-1 rounded-md">
+                        <h3 class="font-bold p-2">イヴリーヌ・ポノー</h3>
+                        <p class="leading-relaxed flex p-2 flex-col sm:flex-row sm:items-start gap-3">
+                            <span class="flex-1">ルーブル美術学院卒。ニナリッチ、ジバンシィなどの著名ブランドでデザインを手がけ、注目を浴びる。その後独立し、パリでブティックを経営。女性らしい柔らかなラインを強調するデザインは、世界で多くの人の支持を得ている。</span>
+                            <img src="/image/goods/51304_06.jpg" alt="イヴリーヌ・ポノー近影" class="w-32 sm:w-36 h-auto object-contain shrink-0 mx-auto sm:mx-0">
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 価格・購入エリア -->
+            <section id="price_area" class="my-8 w-full mx-auto">
+                <!-- 商品画像以下 -->
+                <div class="flex flex-col md:flex-row">
+                    <!-- 商品画像 -->
+                    <div class="flex justify-center p-12 sm:px-32 md:p-4 md:w-[40%] md:items-start">
+                        <!-- 拡大画像 -->
+                        <img src="/image/goods/51304_main_600x600.jpg"
+                            alt="＜プレシャス バーガンディ＞ヤク100％のふんわりフーディーコート"
+                            loading="lazy"
+                            class="w-full h-auto object-contain">
+                    </div>
+
+                    <!-- 価格・購入情報 -->
+                    <div class="p-4 md:w-[60%] md:p-2 md:ml-8">
+                        <!-- 商品番号 -->
+                        <div class="mb-2 pl-2">
+                            <span class=" text-gray-900 tracking-wide">商品番号：{{ $goods->getItemNo() }}</span>
+                        </div>
+                        <!-- 商品名 -->
+                        <h3 class="border-l-8 border-gray-800 pl-2 text-xl font-bold text-gray-800 mb-4 md:mb-1 tracking-tighter">
+                            {{ $goods->getLpGoodsName() }}
+                        </h3>
+
+                        <!-- 納期・お届け -->
+						@if ($goods->isNgCartMessage() || $goods->isOkCartMessage())
+							<!-- メッセージあり 受注NG or OK -->
+							<div class="py-2"><p class="text-blue-700 font-bold text-lg">{!! $goods->getMessage() !!}</p></div>
+						@else
+							<!-- メッセージなし 納期表示 -->
+							<div class="py-2"><p class="text-blue-700 font-bold text-lg">{!! $goods->getGoodsDeliveryText() !!}</p></div>
+						@endif
+
+                        <!-- 価格 -->
+                        <div class="space-y-2 md:space-y-1 mb-6 text-gray-600">
+                            <p class="text-lg">{!! $goods->getSoroM1shsg0Text() !!}</p>
+                            <p class="">{!! $goods->getSoroM1shsg1Text() !!}</p>
+                            <p class="ml-4">{!! $goods->getSoroM1tsryText() !!}</p>
+                        </div>
+
+                        <!-- 仕様詳細 -->
+                        <div class="px-6 border-b border-gray-200 pb-3">
+                            <h4 class="font-bold text-gray-800 mb-3">仕　様</h4>
+                            <p class="leading-snug text-sm">
+                                ●材質：ヤク100％、ボタン＝ヤク100％（中身は樹脂）<br>
+                                ●重さ（約）：600g<br>
+                                ●中国製<br>
+                                ※この製品は天然素材を用いているため、色調などが微妙に異なる場合がございます。
+                                <img src="/image/goods/51304_size.jpg" alt="サイズ表" loading="lazy" class="block w-full max-w-xs mt-2 mb-4">
+                            </p>
+
+                            <!-- 購入フォーム -->
+                            <!-- 紐づけコードなし カート -->
+                            <!-- 表示のみ 以外 -->
+                            @if ($goods->isDisplayOnly() === false && !$goods->isNgCartMessage())
+                                <form method="post" action="/cart" name="cartForm{{ $goods->getItemNo() }}">
+                                <input type="hidden" name="item_no" value="{{ $goods->getItemNo() }}">
+                                <input type="hidden" name="medium_code" value="{{ $goods->getMediumCode() }}">
+                                <input type="hidden" name="amount1" value="1">
+                                <input type="hidden" name="ex_volume" value="{{ $goods->isVolume() }}">
+
+								<!-- イニシャルの指定あり -->
+                                @if ($goods->isInitial() && !$goods->isNgCartMessage())
+									<span class="atn">{!! $goods->getInitialTitle() !!}</span><br>
+									<input type="text" name="initial" value=""><br>
+								@endif
+
+                                <!-- サイズ・カラー選択 -->
+								@if ($goods->isCosize() && !$goods->isNgCartMessage())
+									@if ($goods->isColor())
+                                        <div>
+                                            <span class="select">
+                                                <select name="m5clr" class="m5clr{{ $goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                    data-item_no="{{ $goods->getItemNo() }}" data-data_type="m5clr">
+                                                    <option value="">▼お選びください</option>
+                                                    @foreach ($goods->getColorArray() as $key => $color)
+                                                        <option value="{{ $color->m5clr }}">
+                                                            {{ $color->color_name }}
+                                                        </option>
+                                                    @endforeach
+                                                </select>
+                                            </span>
+                                        </div>
+                                        @if ($goods->isSize() || $goods->isType())
+                                            <br>
+                                        @endif
+                                    @else
+	    								<input type="hidden" name="m5clr" value="">
+		    						@endif
+			    					@if ($goods->isSize())
+                                        <div>
+                                            <span class="select">
+                                                <select name="m5siz" class="m5siz{{ $goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                    data-item_no="{{ $goods->getItemNo() }}" data-data_type="m5siz">
+                                                    <option value="">▼お選びください</option>
+                                                    @if (!$goods->isColor())
+                                                        @foreach ($goods->getSizeArray() as $size)
+                                                            <option value="{{ $size->m5siz }}">
+                                                                {{ $size->size_name }}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </span>
+                                        </div>
+                                        @if ($goods->isType())
+                                            <br>
+                                        @endif
+                                    @else
+                                        <input type="hidden" name="m5siz" value="">
+                                    @endif
+                                    @if ($goods->isType())
+                                        <div>
+                                            <span class="select">
+                                                <select name="type_code" class="type_code{{ $goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                    data-item_no="{{ $goods->getItemNo() }}" data-data_type="type_code">
+                                                    <option value="">▼お選びください</option>
+                                                    @if (!$goods->isColor() && !$goods->isSize())
+                                                        @foreach ($goods->getTypeArray() as $type)
+                                                            <option value="{{ $type->type_code }}">
+                                                                {{ $type->type_name }}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </span>
+                                        </div>
+                                    @else
+                                        <input type="hidden" name="type_code" value="">
+                                    @endif
+                                @endif
+                                @if (!$goods->isNgCartMessage())
+                                    <div class="md:w-[70%] mx-auto mt-4">
+                                        <button type="button" data-item_no="{{ $goods->getItemNo() }}" class="add-cart w-full c-btn-amber-gradient py-4 px-6 rounded-lg flex items-center justify-between transition-all duration-200 shadow-md hover:shadow-lg">
+                                            <?xml version="1.0" encoding="utf-8"?>
+                                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none;">
+                                                <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span class="flex-1 text-center text-lg font-bold" style="pointer-events: none;">カートに入れる</span>
+                                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="pointer-events: none;">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                @endif
+    					        </form>
+                            @endif
+                            <div class="flex flex-col lg:flex-row lg:justify-between space-y-3 pt-3">
+                            <!-- お電話 -->
+                            <div class="flex flex-col items-center mt-2">
+                                <div class="text-sm md:text-base text-gray-600 tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
+                                    <div class="flex items-center space-x-1 -mt-1">
+                                        <div class="w-5 h-5 md:w-8 md:h-8 bg-gray-600 rounded-full flex items-center justify-center">
+                                            <svg class="w-3 h-3 md:w-5 md:h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                            </svg>
+                                        </div>
+                                        <a href="tel:0120-247-417" class="text-2xl md:text-3xl text-gray-600 hover:opacity-80 duration-200">0120-247-417</a>
+                                    </div>
+                                </div>
+                                <!-- お問い合わせ -->
+                                <div class="text-center">
+                                    <a href="/inquiry/index?item_no={{ $goods->getItemNo() }}" class="text-iei-primary hover:text-iei-secondary underline transition-colors sm:text-base">この商品をメールで問い合わせ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- <div class="border-t border-gray-300 mb-4 xl:w-[80%] mx-auto"></div> -->
+        <!-- 案内セクション -->
+        <?php include public_path() . '/include/footer_guidance.html'; ?>
+
+        <!-- ページトップボタン -->
+        <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
+            <a href="#" class="c-bg-second hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform  hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- フッターコンポーネント -->
+    <?php include public_path() . '/include/footer_new.html'; ?>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/js/product.js"></script>
+    <script src="{{ asset('/sys/js/goods.js') }}"></script>
+    <script src="{{ asset('/sys/js/common.js') }}"></script>
+</body>
+</html>

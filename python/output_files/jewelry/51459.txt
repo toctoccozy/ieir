@@ -3,7 +3,7 @@
 <p id="genl_tit">I･E･I コレクション</p>
 <h1>＜しあわせのShip's Cat金貨＞純金コインの宝飾ペンダント</h1>
 <div id="item-product">
-<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51459502" target="_self"><img alt="＜しあわせのShip's Cat金貨＞純金コインの宝飾ペンダント" src="/image/goods/51459_main_600x600.jpg"/></a><br/>
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51459503" target="_self"><img alt="＜しあわせのShip's Cat金貨＞純金コインの宝飾ペンダント" src="/image/goods/51459_main_600x600.jpg"/></a><br/>
 <span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
 <dl>
 <dt>仕 様</dt>
@@ -24,16 +24,16 @@
 
                     
                           
-                            月々 <span>11,500円（税込12,650円）×12回払い</span><br/>
+                            月々 <span>13,000円（税込14,300円）×15回払い</span><br/>
                           
                           
-                            一括価格 <span>129,800円（税込142,780円）</span><br/>
+                            一括価格 <span>179,800円（税込197,780円）</span><br/>
                           
                           
                             発送手数料 <span>700円（税込770円）</span><br/>
 </div>
 <form method="post" name="form_cart">
-<input name="item_no" type="hidden" value="51459502"/>
+<input name="item_no" type="hidden" value="51459503"/>
 <input name="medium_code" type="hidden" value="245401"/>
 <input name="url" type="hidden" value="51459"/>
 <div class="select_area">
@@ -44,8 +44,8 @@
 </input></div>
 </form>
 <ul class="fav">
-<li><a href="javascript:inquiry('51459502');">この商品のお問い合わせ</a></li>
-<li><a href="javascript:favorite('51459502');">お気に入りに入れる</a></li>
+<li><a href="javascript:inquiry('51459503');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51459503');">お気に入りに入れる</a></li>
 </ul>
 </div>
 <section id="main-content">
@@ -71,6 +71,7 @@
 <li class="stt"><span class="sq01">■</span>裏表2つの表情が楽しめるリバーシブルタイプ</li>
 <li class="stt"><span class="sq01">■</span>チェーンはSV925に純金仕上げ</li>
 <li class="stt"><span class="sq01">■</span>発行国の発行証明書が付属</li>
+<li class="stt"><span class="sq01">■</span>当貨幣の独占輸入元I・E・I社による特別提供</li>
 </ul>
 <p class="center-img"><img alt="見つめるほどに癒される幸せの子猫──。本物の輝きが周囲の羨望を集めるペンダント" height="500" src="/image/goods/51459_03.jpg" width="450"/></p>
 <p>

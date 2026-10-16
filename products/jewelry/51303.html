@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    @include('iei.includes.head_component_goods', ['goods' => $goods])
+</head>
+
+<body class="bg-white">
+    <div class="min-h-screen mx-auto">
+    @include('iei.components.header_by_show_flag', ['goods' => $goods])
+
+        <!-- パンくずナビ -->
+        <nav class="bread-clumbs text-sm sm:text-base text-gray-600 mx-auto pl-3 leading-snug tracking-tighter max-w-5xl">
+            <a href="/{{ $goods->getShowFlagName() }}" class="text-blue-800 hover:text-blue-400 transition-colors">{{ $goods->getShowFlagJpName() }}</a>
+                @if ($goods->getIeiCategory()->isNotEmpty())
+                    <span class="mx-2">｜</span>
+                    <a href="/collection/{{ $goods->getIeiCategory()->first()->getIeiCategoryName() }}" class="text-blue-800 hover:text-blue-400 transition-colors">
+                        {{ $goods->getIeiCategory()->first()->getIeiCategoryJpName() }}
+                    </a>
+                @endif
+        </nav>
+
+        <!-- メインコンテンツ -->
+        <main class="pt-4 pb-2 px-1 mx-auto max-w-5xl">
+            <!-- 商品説明 -->
+            <section class="mx-auto max-w-3xl">
+                <!-- トップ画像 -->
+                <div class="p-3">
+                    <img src="/image/goods/51303_01.jpg" alt="―清らかな湖に育まれた希少な大粒真珠―　ロイヤルパープルの品格　大珠プレミアム有核湖水真珠の宝飾ネックレス" class="w-full mx-auto h-auto">
+                </div>
+                <!-- 商品紹介文 -->
+                <div class="p-3">
+                    <p class="text-start leading-relaxed font-bold">
+                        古より王室の彩りと尊ばれてきた、高貴で希少な紫の艶めき──。<br>
+                        オーロラの彩りが揺らめく、選りすぐりの大珠有核湖水真珠だけを連ねた待望のネックレス。<br>
+                        南洋真珠やあこや真珠では得られない端正なセミラウンドから広がる深く眩い照りと素晴らしいボリューム感が、忘れがたい印象を刻みます。
+                    </p>
+                </div>
+                <!-- A:商品メイン画像＆箇条書き(main_600x600画像がある場合) -->
+                <div class="flex flex-col md:flex-row p-3">
+                    <img src="/image/goods/51303_main_600x600.jpg" alt="ロイヤルパープルの品格　大珠プレミアム有核湖水真珠の宝飾ネックレス" class="w-full md:w-[50%] mx-auto h-auto p-4">
+                    <ul class="text-start w-full md:w-[50%] md:p-3 leading-relaxed">
+                        <li>■希少で珍しい「有核の湖水真珠」大粒10-12ミリ</li>
+                        <li>■照り・艶の見事なナチュラルカラー「ロイヤルパープル」を厳選</li>
+                        <li>■真円に限りなく近い端正なセミラウンド</li>
+                        <li>■真珠の専門機関による真珠鑑別書が付属</li>
+                        <li>■高級ジュエリーブランドCharme（シャルム）のオリジナル</li>
+                    </ul>
+                </div>
+
+                <!-- 商品詳細 -->
+                <div class="flex flex-col space-y-3 mt-6">
+                    <img src="/image/goods/51303_02.jpg" alt="胸もとに鮮烈な印象をもたらす大粒の輝き" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        虹色のヴェールを湛える、高貴な紫の真珠――。<br>
+                        南洋真珠やあこや真珠では得られない「ナチュラルカラーのロイヤルパープル」。<br>
+                        その奇跡的な美を心ゆくまで堪能できる大変贅沢な宝飾作品が、高級ジュエリーブランドCharme（シャルム）から発表されました。<br>
+                        高品質の湖水真珠を求めるコレクターから熱い注目を浴びる「真珠の湖」。<br>
+                        豊かにして静謐な自然に抱かれた清らかな湖水で、ゆっくりと育まれた希少な有核湖水真珠の中でも10-12ミリの大珠、中でも極めて高品質な紫の美珠だけを惜しみなく連ねた高級宝飾ネックレスのご案内です。
+                    </p>
+                    <img src="/image/goods/51303_03.jpg" alt="通常の7ミリ珠ネックレスと比べて、別格の存在感をもたらす大珠10-12ミリネックレス。限りなく真円に近い端正なセミラウンドは、高度な技術によって生み出された有核真珠ならではです。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <h2 class="text-white rounded-md font-bold text-lg c-bg-collection-gradient text-center sm:p-3 py-2 mx-1">
+                        変幻自在に移ろいゆくオーロラの美さながらに<br>紫に輝く大珠真珠が胸もとに連なる贅沢
+                    </h2>
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        厳しい鑑識眼のもとで選ばれたのは、奥ゆかしくも麗しき照りを湛える「ロイヤルパープル」の真珠。<br>
+                        東洋の美を想わせる豊かな彩り、そして虹色が溢れる眩くもきめ細やかな艶は「巻き」と呼ばれる真珠層の厚みが別格であることの証です。<br>
+                        美しく形の整ったセミラウンドは、歪みやえくぼが生じるのが常の無核湖水真珠とは異なり、「有核」という高度な技術が生み出した奇跡の珠形。<br>
+                        しかもこれほどまでに巻きが厚く、端正な大粒のロイヤルパープルともなると年月もかかり、安定して確保するのは至難の業となります。<br>
+                        本作品は、まさに一粒一粒が主役級の真珠を特別に確保し、ネックレスに仕立てた他では実現しえないハイジュエリー。<br>
+                        あらたまったお席はもちろん観劇やお食事会の装いに本物だけが持つ高貴な存在感を添え、周囲の方々に忘れがたい印象を刻むことでしょう。
+                    </p>
+                    <img src="/image/goods/51303_04.jpg" alt="大変希少なナチュラルカラー「ロイヤルパープル」の有核淡水真珠：淡水真珠の多くは、真珠層だけで形成される「無核」真珠。巻きは厚いものの、成長の過程で形が歪みやすくなります。本作品で使用しているのは、珍しい「有核」の淡水真珠。母貝に入れる丸い核の周りに真珠層が厚く均等に形成されるため、歪みやえくぼが生じにくく、テリが強く現れるのが特長です。／一般の淡水真珠（無核）：巻きが厚いが歪みやすい／あこや真珠（有核）：巻きが薄い／プレミアム湖水真珠（有核）：巻きが厚い" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <p class="text-start px-1 sm:p-3 leading-relaxed">
+                        ＜ロイヤルパープルの品格＞大珠プレミアム有核湖水真珠の宝飾ネックレスは、真珠鑑別書を添えてお届けする確かな宝飾作品です。<br>
+                        どうぞ今すぐお申し込みいただき、ラグジュアリーな紫の艶めきで大人の品格を演出ください。
+                    </p>
+                    <img src="/image/goods/51303_05.jpg" alt="大切な方への贈り物に…ネックレスは特製ケースに収め、真珠鑑別書を添えてお届けします／確かな品質の証「真珠鑑別書」：本物の価値を大切にする方のために、本作品は正式な真珠鑑別書を添えてお届けします。希少な「パープルのナチュラルカラー」、そして「真円に限りなく近い端正なセミラウンド」であることが、明記されています。" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">
+                    <div class="p-3 m-1 border c-border-collection-gradient border-1 rounded-md">
+                        <h3 class="font-bold p-2 flex items-center gap-2">
+                            <img src="/image/goods/51303_06.jpg" alt="「シャルム」ロゴ" class="max-h-8 max-w-[12rem] w-auto h-auto object-contain">
+                            <span>宝石がくれる心のときめき</span>
+                        </h3>
+                        <p class="leading-relaxed flex p-2 flex-col sm:flex-row sm:items-start gap-3">
+                            <span class="flex-1">美しい宝石に秘められた魔法のように不思議な力で、大人の女性を輝かせる高級ジュエリーブランドCharme（シャルム）。安心できる本物素材を用いて、宝石の魅力を最大限に引き出すデザインを追求。「宝石がくれる心のときめき」をキーワードに、さまざまな個性あふれる宝石との出会いを提供します。</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 価格・購入エリア -->
+            <section id="price_area" class="my-8 w-full mx-auto">
+                <!-- 商品画像以下 -->
+                <div class="flex flex-col md:flex-row">
+                    <!-- 商品画像 -->
+                    <div class="flex justify-center p-12 sm:px-32 md:p-4 md:w-[40%] md:items-start">
+                        <!-- 拡大画像 -->
+                        <img src="/image/goods/51303_main_600x600.jpg"
+                            alt="ロイヤルパープルの品格　大珠プレミアム有核湖水真珠の宝飾ネックレス"
+                            loading="lazy"
+                            class="w-full h-auto object-contain">
+                    </div>
+
+                    <!-- 価格・購入情報 -->
+                    <div class="p-4 md:w-[60%] md:p-2 md:ml-8">
+                        <!-- 商品番号 -->
+                        <div class="mb-2 pl-2">
+                            <span class=" text-gray-900 tracking-wide">商品番号：{{ $goods->getItemNo() }}</span>
+                        </div>
+                        <!-- 商品名 -->
+                        <h3 class="border-l-8 border-gray-800 pl-2 text-xl font-bold text-gray-800 mb-4 md:mb-1 tracking-tighter">
+                            {{ $goods->getLpGoodsName() }}
+                        </h3>
+
+                        <!-- 納期・お届け -->
+						@if ($goods->isNgCartMessage() || $goods->isOkCartMessage())
+							<!-- メッセージあり 受注NG or OK -->
+							<div class="py-2"><p class="text-blue-700 font-bold text-lg">{!! $goods->getMessage() !!}</p></div>
+						@else
+							<!-- メッセージなし 納期表示 -->
+							<div class="py-2"><p class="text-blue-700 font-bold text-lg">{!! $goods->getGoodsDeliveryText() !!}</p></div>
+						@endif
+
+                        <!-- 価格 -->
+                        <div class="space-y-2 md:space-y-1 mb-6 text-gray-600">
+                            <p class="text-lg">{!! $goods->getSoroM1shsg0Text() !!}</p>
+                            <p class="">{!! $goods->getSoroM1shsg1Text() !!}</p>
+                            <p class="ml-4">{!! $goods->getSoroM1tsryText() !!}</p>
+                        </div>
+
+                        <!-- 仕様詳細 -->
+                        <div class="px-6 border-b border-gray-200 pb-3">
+                            <h4 class="font-bold text-gray-800 mb-3">仕　様</h4>
+                            <p class="leading-snug text-sm">
+                                ●材質：有核淡水真珠（約10-12mm）、SILVER（クラスプ）<br>
+                                ●サイズ（約）：長さ42～43cm<br>
+                                ●日本製<br>
+                                <br>
+                                ※真珠に個体差がありますので、色合いや表情などが写真と微妙に異なる場合がございます。
+                            </p>
+
+                            <!-- 購入フォーム -->
+                            <!-- 紐づけコードなし カート -->
+                            <!-- 表示のみ 以外 -->
+                            @if ($goods->isDisplayOnly() === false && !$goods->isNgCartMessage())
+                                <form method="post" action="/cart" name="cartForm{{ $goods->getItemNo() }}">
+                                <input type="hidden" name="item_no" value="{{ $goods->getItemNo() }}">
+                                <input type="hidden" name="medium_code" value="{{ $goods->getMediumCode() }}">
+                                <input type="hidden" name="amount1" value="1">
+                                <input type="hidden" name="ex_volume" value="{{ $goods->isVolume() }}">
+
+								<!-- イニシャルの指定あり -->
+                                @if ($goods->isInitial() && !$goods->isNgCartMessage())
+									<span class="atn">{!! $goods->getInitialTitle() !!}</span><br>
+									<input type="text" name="initial" value=""><br>
+								@endif
+
+                                <!-- サイズ・カラー選択 -->
+								@if ($goods->isCosize() && !$goods->isNgCartMessage())
+									@if ($goods->isColor())
+                                        <div>
+                                            <span class="select">
+                                                <select name="m5clr" class="m5clr{{ $goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                    data-item_no="{{ $goods->getItemNo() }}" data-data_type="m5clr">
+                                                    <option value="">▼お選びください</option>
+                                                    @foreach ($goods->getColorArray() as $key => $color)
+                                                        <option value="{{ $color->m5clr }}">
+                                                            {{ $color->color_name }}
+                                                        </option>
+                                                    @endforeach
+                                                </select>
+                                            </span>
+                                        </div>
+                                        @if ($goods->isSize() || $goods->isType())
+                                            <br>
+                                        @endif
+                                    @else
+	    								<input type="hidden" name="m5clr" value="">
+		    						@endif
+			    					@if ($goods->isSize())
+                                        <div>
+                                            <span class="select">
+                                                <select name="m5siz" class="m5siz{{ $goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                    data-item_no="{{ $goods->getItemNo() }}" data-data_type="m5siz">
+                                                    <option value="">▼お選びください</option>
+                                                    @if (!$goods->isColor())
+                                                        @foreach ($goods->getSizeArray() as $size)
+                                                            <option value="{{ $size->m5siz }}">
+                                                                {{ $size->size_name }}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </span>
+                                        </div>
+                                        @if ($goods->isType())
+                                            <br>
+                                        @endif
+                                    @else
+                                        <input type="hidden" name="m5siz" value="">
+                                    @endif
+                                    @if ($goods->isType())
+                                        <div>
+                                            <span class="select">
+                                                <select name="type_code" class="type_code{{ $goods->getItemNo() }} w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent"
+                                                    data-item_no="{{ $goods->getItemNo() }}" data-data_type="type_code">
+                                                    <option value="">▼お選びください</option>
+                                                    @if (!$goods->isColor() && !$goods->isSize())
+                                                        @foreach ($goods->getTypeArray() as $type)
+                                                            <option value="{{ $type->type_code }}">
+                                                                {{ $type->type_name }}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </span>
+                                        </div>
+                                    @else
+                                        <input type="hidden" name="type_code" value="">
+                                    @endif
+                                @endif
+                                @if (!$goods->isNgCartMessage())
+                                    <div class="md:w-[70%] mx-auto mt-4">
+                                        <button type="button" data-item_no="{{ $goods->getItemNo() }}" class="add-cart w-full c-btn-amber-gradient py-4 px-6 rounded-lg flex items-center justify-between transition-all duration-200 shadow-md hover:shadow-lg">
+                                            <?xml version="1.0" encoding="utf-8"?>
+                                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none;">
+                                                <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span class="flex-1 text-center text-lg font-bold" style="pointer-events: none;">カートに入れる</span>
+                                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="pointer-events: none;">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                @endif
+    					        </form>
+                            @endif
+                            <div class="flex flex-col lg:flex-row lg:justify-between space-y-3 pt-3">
+                            <!-- お電話 -->
+                            <div class="flex flex-col items-center mt-2">
+                                <div class="text-sm md:text-base text-gray-600 tracking-tighter leading-none">お申込・お問い合わせ 6:00〜21:00</div>
+                                    <div class="flex items-center space-x-1 -mt-1">
+                                        <div class="w-5 h-5 md:w-8 md:h-8 bg-gray-600 rounded-full flex items-center justify-center">
+                                            <svg class="w-3 h-3 md:w-5 md:h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                            </svg>
+                                        </div>
+                                        <a href="tel:0120-247-417" class="text-2xl md:text-3xl text-gray-600 hover:opacity-80 duration-200">0120-247-417</a>
+                                    </div>
+                                </div>
+                                <!-- お問い合わせ -->
+                                <div class="text-center">
+                                    <a href="/inquiry/index?item_no={{ $goods->getItemNo() }}" class="text-iei-primary hover:text-iei-secondary underline transition-colors sm:text-base">この商品をメールで問い合わせ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- <div class="border-t border-gray-300 mb-4 xl:w-[80%] mx-auto"></div> -->
+        <!-- 案内セクション -->
+        <?php include public_path() . '/include/footer_guidance.html'; ?>
+
+        <!-- ページトップボタン -->
+        <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
+            <a href="#" class="c-bg-second hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform  hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- フッターコンポーネント -->
+    <?php include public_path() . '/include/footer_new.html'; ?>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/js/product.js"></script>
+    <script src="{{ asset('/sys/js/goods.js') }}"></script>
+    <script src="{{ asset('/sys/js/common.js') }}"></script>
+</body>
+</html>

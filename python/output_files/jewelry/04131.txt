@@ -1,0 +1,101 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>＜エメラルドのクローバー＞宝飾フルエタニティリング</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=04131502" target="_self"><img alt="＜エメラルドのクローバー＞宝飾フルエタニティリング" src="/image/goods/4131000.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●素材：エメラルド28〜32石（計約1.0〜1.2ct）、ダイヤモンド7〜8石（計約0.05ct）、プラチナ仕上げスターリング・シルバー（.925銀）<br>
+●サイズ：7〜18号<br>
+●日本製<br>
+※天然宝石を用いているため、色合いが写真と多少異なる場合がございます。<br>
+※エメラルドとダイヤモンドの数は、リングのサイズ（7〜18号）に応じて異なります。</br></br></br></br></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>＜エメラルドのクローバー＞宝飾フルエタニティリング</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,980円（税込5,478円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>29,800円（税込32,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="04131502"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="04131"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-07">７号</option>
+<option class="p999" value="999-08">８号</option>
+<option class="p999" value="999-09">９号</option>
+<option class="p999" value="999-10">１０号</option>
+<option class="p999" value="999-11">１１号</option>
+<option class="p999" value="999-12">１２号</option>
+<option class="p999" value="999-13">１３号</option>
+<option class="p999" value="999-14">１４号</option>
+<option class="p999" value="999-15">１５号</option>
+<option class="p999" value="999-16">１６号</option>
+<option class="p999" value="999-17">１７号</option>
+<option class="p999" value="999-18">１８号</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('04131502');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('04131502');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-6930232" id="main-content"> <div class="center-img"><img alt="" border="0" src="/image/goods/4131000_01.jpg"/></div>
+<div class="center-img"><img alt="" border="0" src="/image/goods/4131000_02.jpg"/></div>
+<div class="intro">
+<p>28石以上のエメラルドと、7石以上のダイヤモンド…きらめく天然宝石が華やかに彩る幸運のシンボル“四つ葉のクローバー”を途切れることなく連ねたフルエタニティリング。</p>
+</div>
+<ul>
+<li class="stt"><span class="sq01">■</span>アメリカの著名デザイナーによるオリジナル作品</li>
+<li class="stt"><span class="sq01">■</span>幸運のクローバーを全周に連ねた華麗なデザイン</li>
+<li class="stt"><span class="sq01">■</span>エメラルド28石以上</li>
+<li class="stt"><span class="sq01">■</span>ダイヤモンド7石以上</li>
+<li class="stt"><span class="sq01">■</span>ゴージャスなプラチナ仕上げ</li>
+<li class="stt"><span class="sq01">■</span>天然宝石を贅沢に使用しながら、価格はたいへん魅力的</li>
+<li class="stt"><span class="sq01">■</span>インペリアル・コレクションからのみのご提供</li>
+</ul>
+<div class="center-img"><img alt="" border="0" src="/image/goods/4131000_03.jpg"/></div>
+<div class="cntext"><img align="right" alt="" border="0" src="/image/goods/4131000_05.jpg" style="margin: 0 0 15px 15px;"/>見つけた人は、きっと幸せになれる——そんなロマンティックな言い伝えから、古くより貴ばれてきた“四つ葉のクローバー”が、優美な宝飾フルエタニティリングになりました。途切れることなくクローバーを連ねた豪奢なプラチナ仕上げのリングに、幸運を意味する天然宝石“エメラルド”を、計28石以上も贅沢にあしらったゴージャスなデザイン。澄んだ緑色にきらめく、ひとつひとつのクローバーのかたわらには、計7石以上のダイヤモンドが朝露のごとく瞬いて…。米国で高い人気をあつめるデザイナーが、限りない幸せを願っておくります。<br clear="all"/></div>
+<div class="box1">
+<div class="box-img">
+<img alt="" border="0" src="/image/goods/4131000_06.jpg"/>
+</div>
+<div class="box-text">
+<h3>ヒラリー・ビーン</h3>
+<div>
+アメリカ有数の宝飾デザイナー。モデル・女優出身で1983年からジュエリーデザイナーに転身。ロサンゼルス在住。独創性に満ちたジュエリー作品に定評があり、『イタリアン・ヴォーグ』の表紙をはじめ、『ヴォーグ』『エル』といった有名ファッション誌を飾っている。ハリウッドのセレブ御用達。
+				</div><br><br>
+</br></br></div>
+</div>
+</div>
+<br/>
+</section>
+<!--

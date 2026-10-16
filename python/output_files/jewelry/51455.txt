@@ -1,0 +1,106 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>平戸細工　純金製　四つ葉のクローバーペンダント　　　　</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51455502" target="_self"><img alt="平戸細工　純金製　四つ葉のクローバーペンダント　　　　" src="/image/goods/51455_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：ペンダントトップ＝24金、ダイヤモンド1石（約0.02ct）　チェーン＝18金<br/>
+●サイズ（約）：ペンダントトップ＝16×16×厚さ3mm　チェーン＝最長45cm（フリーアジャスター）<br/>
+●日本製<br/>
+＊作品は一点一点手作りされますので形などが写真と異なる場合がございます。</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>平戸細工　純金製　四つ葉のクローバーペンダント　　　　</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>19,300円（税込21,230円）×24回払い</span><br/>
+                          
+                          
+                            一括価格 <span>399,800円（税込439,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51455502"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51455"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51455502');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51455502');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="400年の伝統 平戸細工　純金製 四つ葉のクローバー　ダイヤモンド入り宝飾ペンダント　平戸細工 東京都優秀技能者 大谷茂 原作、英工芸 制作" height="280" src="/image/goods/51455_01.jpg" width="580"/></p>
+<p class="intro">
+		希望、愛情、健康、そして幸福…。<br/>
+		それは最高品位・純金のしあわせあふれる四つ葉のクローバー。<br/>
+		そして美の象徴、ダイヤモンドが煌めいて──。<br/>
+		江戸より続く400年の伝統「平戸細工」の<br/>
+		緻密極まる絶技で一点一点手作りされる贅沢な宝飾ペンダント。<br/>
+		絹のように繊細な輝きと透かし模様も見事な、身に着ける芸術作品です。
+	</p>
+<p class="center-img"><img alt="モデル着用イメージ" height="500" src="/image/goods/51455_02.jpg" width="450"/></p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>東京都優秀技能者（東京マイスター）大谷茂氏による創作</li>
+<li class="stt"><span class="sq01">■</span>創業70年の老舗、英工芸の平戸細工熟練職人による手作り手仕上げ</li>
+<li class="stt"><span class="sq01">■</span>幸福をもたらす「四つ葉のクローバー」</li>
+<li class="stt"><span class="sq01">■</span>最高品位999の純金製</li>
+<li class="stt"><span class="sq01">■</span>天然ダイヤモンド1石</li>
+<li class="stt"><span class="sq01">■</span>軽やかな着け心地</li>
+</ul>
+<p class="flt-r"><img alt="極細の純金線が描く優雅な曲線" height="160" src="/image/goods/51455_03.jpg" width="150"/></p>
+<p>
+		誰もが探し求め、大切にされてきた幸運の象徴「四つ葉のクローバー」。そして、未来永劫変わらぬ資産価値と美しさを誇る純金（純度99.9％）。そのふたつが胸もとを飾る、しあわせと品格に満ちたクチュールジュエリーが誕生しました。江戸時代より400年以上続く伝統技「平戸細工」を今に受け継ぐ東京マイスター、大谷茂氏の原作、英工芸の熟練職人が心を込めて手作りする「純金製 四つ葉のクローバー」。息をのむほどのエレガンスが周囲の視線を惹きつけてやまない逸品のご案内です。
+	</p>
+<p class="center-img"><img alt="正面アップ画像" height="455" src="/image/goods/51455_04.jpg" width="480"/></p>
+<h2>「希望」、「愛情」、「健康」、「幸福」…。願いを込めて手作りした純金の四つ葉
+</h2>
+<p class="flt-l"><img alt="中央に輝くダイヤモンド" height="160" src="/image/goods/51455_05.jpg" width="150"/></p>
+<p>
+		1ミリの何分の一という極細の純金線を巧みに縒り合わせ、立体的な透かし模様を生み出していく…。同じものが2つとないハンドメイドの葉一枚一枚に絹糸のような艶をたたえ、優雅な曲線を描く4枚の葉。その中心には、ダイヤモンドがみずみずしい煌めきを躍らせます。通常は純銀である平戸細工ですが、大変珍しい純金を贅沢に用いた豊麗な造形美、そして純金ならではの格調高い輝きはため息を誘うほど。これほど華やかでありながらも着け心地はレースのように軽やかで、洗練された意匠はフォーマルな席からカジュアルなお出かけまで、あらゆる装いを華麗にランクアップさせるのです。<br/>
+		＜純金製 四つ葉のクローバー＞ダイヤモンド入り宝飾ペンダントは、I・E・I社の特別企画作品で、熟練職人の丹念な手作りです。素晴らしい意匠が生み出す息をのむ美しさ、そして純金という価値。2つの魅力を持つ名品を、どうぞこの好機にお申し込みください。
+	</p>
+<p class="center-img"><img alt="贈り物にも…。特製ジュエリーケースに収めてお届けしますので、大切な方への贈り物にも最適です" height="620" src="/image/goods/51455_06.jpg" width="530"/></p>
+<p class="center-img"><img alt="「平戸細工」と「純金」。贅を尽くした華麗なる品格：江戸時代にオランダから長崎の平戸に伝来、平戸藩の江戸屋敷を通じて広まった技法。極細の貴金属線を指先で操り、精妙な透かし模様をつくり出すこの細工は高度な熟練と根気を要するため、現在その技術の継承者は少なく、全国でも数えるほど。本来は銀糸を用いるジュエリーですが、本作品は特別に「純金999」を惜しみなく用い、名匠・大谷茂氏の美意識と熟練職人の手技をあわせて作り上げた奇跡の逸品。平戸細工の美しさと純金ならではの繊細華麗な艶めきが目を奪います。" height="400" src="/image/goods/51455_07.jpg" width="580"/></p>
+<div class="box1">
+<div class="box-text">
+<h3>大谷 茂
+</h3>
+<p>
+				昭和16年生まれ。伝統工芸「平戸細工」の数少ない後継者。ＪＪＡジュエリーコンテスト労働大臣賞および東京都知事賞、ＪＰＣフェア通商産業大臣賞など、受賞歴多数。平成11年経済産業省認可・日本貴金属文化工芸協同組合より宝飾師に認定。平成17年東京都優秀技能者「東京マイスター」に認定。
+			</p>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3>英工芸</h3>
+<p>
+				1955年創業。社団法人日本ジュエリー協会、日本貴金属製鎖工業組合に所属し、熟練の職人技を駆使した純金細工等のハンドメイドジュエリーを制作。1998年のJJAコンテストでは東京都知事賞および日本商工会議所会頭賞、2002年には中小企業庁長官賞など、国内のジュエリーコンテストにて多数の受賞歴を誇る。
+			</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

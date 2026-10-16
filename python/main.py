@@ -9,6 +9,9 @@ INPUT_FILE = "urls.txt"       # URLリストのファイル名
 OUTPUT_DIR = "output_files"   # 保存先のフォルダ名
 SLEEP_TIME = 1.0              # 待機時間（秒）
 
+# カテゴリ（output_files 内のサブフォルダ名）
+CATEGORIES = ["gallery", "jewelry", "mens", "treasure", "women"]
+
 # ここから下の部分は切り捨てる（キーワード）
 STOP_KEYWORD = "下カートボタンstart"
 
@@ -16,7 +19,7 @@ STOP_KEYWORD = "下カートボタンstart"
 if not os.path.exists(OUTPUT_DIR):
     os.makedirs(OUTPUT_DIR)
 
-def extract_and_save(url):
+def extract_and_save(url, category):
     try:
         # 1. URLから5桁の数字を抽出（ファイル名用）
         match = re.search(r'\d{5}', url)
@@ -55,13 +58,16 @@ def extract_and_save(url):
                 extracted_content = full_html
 
             # 6. ファイルに保存
-            save_path = os.path.join(OUTPUT_DIR, filename)
+            save_path = os.path.join(OUTPUT_DIR, category, filename)
             with open(save_path, "w", encoding="utf-8") as f:
                 f.write(extracted_content)
             
-            print(f"[成功] {filename} (id={target_div.get('id')}) を保存しました")
+            print(f"[成功] {category}/{filename} (id={target_div.get('id')}) を保存しました")
         else:
-            print(f"[警告] wrapper/wrappar が見つかりませんでした: {url}")
+            # wrapperがない場合は判別用に空ファイルを作成
+            save_path = os.path.join(OUTPUT_DIR, category, f"{file_id}_notext.txt")
+            open(save_path, "w", encoding="utf-8").close()
+            print(f"[警告] wrapper/wrappar が見つかりませんでした: {url} → {category}/{file_id}_notext.txt を作成")
 
     except Exception as e:
         print(f"[エラー] {url}: {e}")
@@ -72,13 +78,30 @@ def main():
         print(f"エラー: {INPUT_FILE} が見つかりません。")
         return
 
+    # [カテゴリ名] の行で、以降のURLのカテゴリを切り替える
+    targets = []
+    category = None
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
-        urls = [line.strip() for line in f if line.strip()]
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            header = re.fullmatch(r"\[(.+)\]", line)
+            if header:
+                category = header.group(1).strip()
+                if category not in CATEGORIES:
+                    print(f"[警告] 不明なカテゴリ: [{category}]（以降のURLはスキップ）")
+                    category = None
+            elif category:
+                targets.append((line, category))
+            else:
+                print(f"[スキップ] カテゴリ未指定: {line}")
 
-    print(f"合計 {len(urls)} 件のURLを処理します...")
+    print(f"合計 {len(targets)} 件のURLを処理します...")
 
-    for url in urls:
-        extract_and_save(url)
+    for url, category in targets:
+        os.makedirs(os.path.join(OUTPUT_DIR, category), exist_ok=True)
+        extract_and_save(url, category)
         time.sleep(SLEEP_TIME)
 
     print("すべての処理が完了しました。")

@@ -1,7 +1,8 @@
 import os
 import re
-import shutil
-from bs4 import BeautifulSoup, Comment
+import sys
+import html as html_lib
+from bs4 import BeautifulSoup
 
 # --- 設定 ---
 # パスの設定（実行場所からの相対パス）
@@ -9,388 +10,555 @@ INPUT_DIR = "output_files"
 FORMAT_DIR = "../format"
 OUTPUT_DIR = "../products"
 
-FORMAT_01 = "format_01.html"
-FORMAT_02 = "format_02.html"
+FORMAT_01 = "format_01.html"  # 単一タイプ
+FORMAT_02 = "format_02.html"  # 複数タイプ
 
-# ディレクトリ作成
-if not os.path.exists(OUTPUT_DIR):
-    os.makedirs(OUTPUT_DIR)
+# カテゴリ（output_files / products 内のサブフォルダ名）
+CATEGORIES = ["gallery", "jewelry", "mens", "treasure", "women"]
+
+IMAGE_BASE = "/image/goods/"
+
+# 2枚横並びの条件: 幅がこれ以下・縦長(高さ≧幅)で、縦横比の差がこの倍率以内
+PAIR_IMG_MAX_WIDTH = 400
+PAIR_RATIO_TOLERANCE = 1.5
+
+# 商品詳細エリアのインデント
+IND = " " * 20
+
+# 商品詳細エリアの部品ごとのclass（format_01/02の商品詳細の見本と同じ内容にそろえること）
+CSS = {
+    "p": "text-start px-1 sm:p-3 leading-relaxed",
+    "img": "w-full max-w-2xl mx-auto h-auto p-4",
+    "h2": "text-white rounded-md font-bold text-lg c-bg-collection-gradient text-center sm:p-3 py-2 mx-1",
+    "pair_wrap": "flex flex-col md:flex-row md:items-start gap-2",
+    "pair_img": "w-full max-w-[350px] mx-auto h-auto p-4",
+    "float_wrap": "flex flex-col sm:items-start",
+    "float_img": "mx-auto max-w-[10rem] p-3 sm:m-3 object-contain",
+    "box_wrap": "p-3 m-1 border c-border-collection-gradient border-1 rounded-md",
+    "box_h3": "font-bold p-2",
+    "box_h3_logo": "font-bold p-2 flex items-center gap-2",
+    "box_logo": "max-h-8 max-w-[12rem] w-auto h-auto object-contain",
+    "box_text": "leading-relaxed flex p-2 flex-col sm:flex-row sm:items-start gap-3",
+    "box_photo": "w-32 sm:w-36 h-auto object-contain shrink-0 mx-auto sm:mx-0",
+    "box_dl": "leading-relaxed p-2 text-sm",
+    "box_img": "w-full max-w-sm mx-auto h-auto p-4",
+    "box_pair_wrap": "flex flex-col md:flex-row md:items-start justify-center gap-2",
+    "box_pair_img": "w-full max-w-[10rem] mx-auto md:mx-0 h-auto p-2",
+    "movie_wrap": "w-full max-w-2xl mx-auto p-4",
+    "movie": "w-full aspect-video",
+    "spec_img": "block w-full max-w-xs mt-2 mb-4",  # 仕様欄のサイズ表など（PCで小さめ表示）
+}
 
 # --- ユーティリティ関数 ---
 
-def clean_text_with_br(text):
-    """
-    テキストから既存の改行や<br>を削除し、句点「。」の後に<br>を入れる。
-    """
-    if not text:
+def flat_text(elem):
+    """要素のテキストを取り出し、改行・<br>・行頭のタブ等を除いて1行にする"""
+    if elem is None:
         return ""
-    # 改行と既存<br>を除去
-    text = text.replace('\n', '').replace('\r', '')
-    text = re.sub(r'<br\s*/?>', '', text, flags=re.IGNORECASE)
-    # 句点のあとに<br>を入れる
-    text = text.replace("。", "。<br>")
+    text = elem.get_text("\n") if hasattr(elem, "get_text") else str(elem)
+    return "".join(line.strip() for line in text.splitlines())
+
+def add_br_by_period(text, indent):
+    """句点「。」ごとに<br>を入れる（「。」」のように閉じ括弧が続く場合はその後ろ）"""
+    text = re.sub(r"。([」』）)]*)(?!$)", r"。\1<br>\n" + indent, text.strip())
     return text
 
-def extract_specs_from_dd(dd_element, is_multi=False):
-    """
-    <dd>タグから仕様テキストを抽出する。
-    複数タイプ(is_multi=True)の場合は、【】で区切られているか解析して辞書で返す。
-    """
-    full_text = dd_element.get_text("\n", strip=True)
-    
-    if not is_multi:
-        return {"common": clean_text_with_br(full_text)}
+def img_src(img):
+    """画像パスを /image/goods/ 始まりにそろえる"""
+    src = img.get("src", "").strip()
+    if src.startswith("/") or src.startswith("http"):
+        return src
+    return IMAGE_BASE + src.split("/")[-1]
 
-    # 複数タイプの場合、【見出し】で分割を試みる
-    # 例: 【掛け軸】... 【飾り額】...
-    pattern = r'【(.*?)】(.*?)(?=【|$)'
-    matches = re.findall(pattern, full_text, re.DOTALL)
-    
-    if matches:
-        specs = {}
-        # matches は [('掛け軸', '内容...'), ('飾り額', '内容...')] のリスト
-        for i, (title, content) in enumerate(matches):
-            specs[i] = clean_text_with_br(f"【{title}】{content}")
-        return specs
+def img_alt(img):
+    alt = "".join(line.strip() for line in img.get("alt", "").splitlines())
+    return html_lib.escape(alt, quote=True)
+
+def split_by_br(elem):
+    """<br>区切りで行に分割する（空行も保持）"""
+    parts = re.split(r"<br\s*/?>", elem.decode_contents(), flags=re.IGNORECASE)
+    return [flat_text(BeautifulSoup(p, "html.parser")) for p in parts]
+
+def is_image_only(elem):
+    return elem.find("img") is not None and not flat_text(elem)
+
+# --- 旧ページの解析 ---
+
+def parse_specs(soup):
+    """仕様<dd>を行リストと画像リスト（サイズ表など）で取得"""
+    dd = None
+    dt = soup.find("dt", string=re.compile(r"仕\s*様"))
+    if dt:
+        dd = dt.find_next_sibling("dd")
+    if dd is None:
+        dd = soup.find("dd")
+    if dd is None:
+        return [], []
+    # 画像は文章と分けて取り出す
+    imgs = []
+    for img in dd.find_all("img"):
+        imgs.append(img)
+        holder = img.parent if img.parent is not dd and not flat_text(img.parent) else img
+        holder.extract()
+    lines = split_by_br(dd)
+    while lines and not lines[-1]:
+        lines.pop()
+    return lines, imgs
+
+def split_specs_by_type(lines, item_nos):
+    """
+    【見出し】ごとに仕様を分割し、商品番号と対応づける。
+    末尾の※注記は全タイプ共通として各タイプに付ける。
+    分割できない・数が合わない場合は None を返す（共通扱い）。
+    """
+    prefix, groups = [], []
+    for line in lines:
+        if re.fullmatch(r"【.+?】", line):
+            groups.append([])
+        elif groups:
+            groups[-1].append(line)
+        else:
+            prefix.append(line)
+
+    if not groups:
+        return None
+    if len(groups) != len(item_nos):
+        print(f"  [注意] 仕様の【】の数({len(groups)})とタイプ数({len(item_nos)})が一致しないため共通扱いにします")
+        return None
+
+    # 最後のグループ末尾の※注記を共通注記として取り出す
+    notes = []
+    last = groups[-1]
+    while last and not last[-1]:
+        last.pop()
+    if "" in last:
+        tail_start = len(last) - last[::-1].index("")
+        tail = last[tail_start:]
+        if tail and all(t.startswith("※") for t in tail):
+            notes = tail
+            del last[tail_start - 1:]
+
+    result = []
+    for item_no, group in zip(item_nos, groups):
+        while group and not group[-1]:
+            group.pop()
+        spec = prefix + group + ([""] + notes if notes else [])
+        result.append((item_no, spec))
+    return result
+
+def convert_h2(elem):
+    """h2 → 見出し（<br>とソース上の改行の位置で<br>を入れる）"""
+    elem = BeautifulSoup(str(elem), "html.parser").find("h2")
+    for br in elem.find_all("br"):
+        br.replace_with("\n")
+    lines = [line.strip() for line in elem.get_text().splitlines()]
+    text = "<br>".join(line for line in lines if line)
+    return (f'{IND}<h2 class="{CSS["h2"]}">\n'
+            f'{IND}    {text}\n'
+            f'{IND}</h2>')
+
+def convert_p(text):
+    return (f'{IND}<p class="{CSS["p"]}">\n'
+            f'{IND}    {add_br_by_period(text, IND + "    ")}\n'
+            f'{IND}</p>')
+
+def convert_img(img):
+    return f'{IND}<img src="{img_src(img)}" alt="{img_alt(img)}" loading="lazy" class="{CSS["img"]}">'
+
+def convert_img_pair(imgs):
+    lines = [f'{IND}<div class="{CSS["pair_wrap"]}">']
+    for img in imgs:
+        lines.append(f'{IND}    <img src="{img_src(img)}" alt="{img_alt(img)}" loading="lazy" class="{CSS["pair_img"]}">')
+    lines.append(f'{IND}</div>')
+    return "\n".join(lines)
+
+def convert_float(img, text, reverse=False):
+    """画像＋テキスト横並び（flt-l: 画像左 / flt-r: 画像右）"""
+    direction = "sm:flex-row-reverse" if reverse else "sm:flex-row"
+    return (f'{IND}<div class="{CSS["float_wrap"]} {direction}">\n'
+            f'{IND}    <img src="{img_src(img)}" alt="{img_alt(img)}" loading="lazy" class="{CSS["float_img"]}">\n'
+            f'{IND}    <p class="{CSS["p"]}">\n'
+            f'{IND}        {add_br_by_period(text, IND + "        ")}\n'
+            f'{IND}    </p>\n'
+            f'{IND}</div>')
+
+def convert_box1(elem):
+    """
+    box1 → 囲み枠（spanの中は<br>不要）
+    - h3内の画像（ロゴ・国章など）: タイトルの左に小さく表示
+    - flt-l / flt-r の画像（人物写真など）: 文章の横に表示（flt-lは左、flt-rは右）
+    - それ以外の画像: 枠内の下部に表示（1つの<p>に2枚以上ある場合は横並び）
+    """
+    h3 = elem.find("h3")
+    h3_text = flat_text(h3)
+    logo = h3.find("img") if h3 else None
+    photo, photo_left = None, False
+    big_imgs = []
+    texts = []
+
+    for child in elem.find_all("p"):
+        if child.find_parent("dl"):
+            continue
+        classes = child.get("class", [])
+        if is_image_only(child):
+            imgs = child.find_all("img")
+            if ("flt-l" in classes or "flt-r" in classes) and photo is None:
+                photo, photo_left = imgs[0], "flt-l" in classes
+                big_imgs.extend([img] for img in imgs[1:])
+            else:
+                big_imgs.append(imgs)
+        else:
+            texts.append(flat_text(child))
+
+    if logo is not None:
+        lines = [f'{IND}<div class="{CSS["box_wrap"]}">',
+                 f'{IND}    <h3 class="{CSS["box_h3_logo"]}">',
+                 f'{IND}        <img src="{img_src(logo)}" alt="{img_alt(logo)}" class="{CSS["box_logo"]}">',
+                 f'{IND}        <span>{h3_text}</span>',
+                 f'{IND}    </h3>']
     else:
-        # 分割できない場合は共通として返す
-        return {"common": clean_text_with_br(full_text)}
+        lines = [f'{IND}<div class="{CSS["box_wrap"]}">',
+                 f'{IND}    <h3 class="{CSS["box_h3"]}">{h3_text}</h3>']
+
+    dl = elem.find("dl")
+    if dl:
+        # 略歴などの dt/dd 形式
+        rows = []
+        for dt in dl.find_all("dt"):
+            dd = dt.find_next_sibling("dd")
+            dd_text = "／".join(t for t in split_by_br(dd) if t) if dd else ""
+            rows.append(f"{flat_text(dt)}　{dd_text}")
+        lines.append(f'{IND}    <p class="{CSS["box_dl"]}">')
+        lines.append(f'{IND}        ' + f"<br>\n{IND}        ".join(rows))
+        lines.append(f'{IND}    </p>')
+
+    if texts or not dl:
+        photo_html = (f'{IND}        <img src="{img_src(photo)}" alt="{img_alt(photo)}" class="{CSS["box_photo"]}">'
+                      if photo is not None else None)
+        lines.append(f'{IND}    <p class="{CSS["box_text"]}">')
+        if photo_html and photo_left:
+            lines.append(photo_html)
+        lines.append(f'{IND}        <span class="flex-1">{"".join(texts)}</span>')
+        if photo_html and not photo_left:
+            lines.append(photo_html)
+        lines.append(f'{IND}    </p>')
+    elif photo is not None:
+        big_imgs.insert(0, [photo])
+
+    for imgs in big_imgs:
+        if len(imgs) == 1:
+            lines.append(f'{IND}    <img src="{img_src(imgs[0])}" alt="{img_alt(imgs[0])}" loading="lazy" class="{CSS["box_img"]}">')
+        else:
+            lines.append(f'{IND}    <div class="{CSS["box_pair_wrap"]}">')
+            for img in imgs:
+                lines.append(f'{IND}        <img src="{img_src(img)}" alt="{img_alt(img)}" loading="lazy" class="{CSS["box_pair_img"]}">')
+            lines.append(f'{IND}    </div>')
+    lines.append(f'{IND}</div>')
+    return "\n".join(lines)
+
+def convert_iframe(iframe):
+    """YouTube等の埋め込み"""
+    src = iframe.get("src", "")
+    return (f'{IND}<div class="{CSS["movie_wrap"]}">\n'
+            f'{IND}    <iframe src="{src}" class="{CSS["movie"]}" frameborder="0" allowfullscreen></iframe>\n'
+            f'{IND}</div>')
+
+def can_pair(img_a, img_b):
+    """2枚横並びにできるか（どちらも小さめの縦長画像で、縦横比が近い）"""
+    sizes = []
+    for img in (img_a, img_b):
+        try:
+            w, h = int(img.get("width", "")), int(img.get("height", ""))
+        except ValueError:
+            return False
+        if w > PAIR_IMG_MAX_WIDTH or h < w:
+            return False
+        sizes.append(h / w)
+    return max(sizes) / min(sizes) <= PAIR_RATIO_TOLERANCE
+
+def convert_main_content(content_div, skip_elems):
+    """
+    商品詳細エリアを旧ページの順番どおりに変換する。
+    blocks は (種類, データ) のリストで、連続画像の横並び判定のために一旦ためてから出力する。
+    """
+    blocks = []
+    pending_float = None  # 画像だけの flt-l / flt-r（次の<p>の文章と組にする）
+
+    def flush_float():
+        nonlocal pending_float
+        if pending_float:
+            blocks.append(("img", pending_float[0]))
+            pending_float = None
+
+    for elem in content_div.find_all(recursive=False):
+        if any(elem is s for s in skip_elems) or elem.name == "br":
+            continue
+        classes = elem.get("class", [])
+        iframe = elem.find("iframe") if elem.name != "iframe" else elem
+
+        if iframe is not None:
+            flush_float()
+            blocks.append(("raw", convert_iframe(iframe)))
+
+        elif elem.name == "h2":
+            flush_float()
+            blocks.append(("raw", convert_h2(elem)))
+
+        elif elem.name == "div" and "box1" in classes:
+            flush_float()
+            blocks.append(("raw", convert_box1(elem)))
+
+        elif is_image_only(elem):
+            imgs = elem.find_all("img")
+            if "flt-l" in classes or "flt-r" in classes:
+                flush_float()
+                pending_float = (imgs[0], "flt-r" in classes)
+            elif len(imgs) >= 2:
+                flush_float()
+                blocks.append(("pair", imgs[:2]))
+                for img in imgs[2:]:
+                    blocks.append(("img", img))
+            else:
+                flush_float()
+                blocks.append(("img", imgs[0]))
+
+        else:
+            text = flat_text(elem)
+            if not text:
+                continue
+            img = elem.find("img")
+            if pending_float:
+                blocks.append(("raw", convert_float(pending_float[0], text, pending_float[1])))
+                pending_float = None
+            elif img is not None:
+                # 画像と文章が同じ要素内（align="right"等）
+                reverse = img.get("align", "").lower() == "right" or "flt-r" in classes
+                blocks.append(("raw", convert_float(img, text, reverse)))
+            else:
+                blocks.append(("raw", convert_p(text)))
+    flush_float()
+
+    # 連続する小さめの縦長画像2枚は横並びにする
+    merged = []
+    for kind, data in blocks:
+        if kind == "img" and merged and merged[-1][0] == "img" and can_pair(merged[-1][1], data):
+            merged[-1] = ("pair", [merged[-1][1], data])
+        else:
+            merged.append((kind, data))
+
+    out = []
+    for kind, data in merged:
+        if kind == "img":
+            out.append(convert_img(data))
+        elif kind == "pair":
+            out.append(convert_img_pair(data))
+        else:
+            out.append(data)
+    return "\n".join(out)
 
 def parse_old_html(html_content, product_id):
-    """
-    旧HTMLを解析して必要なデータを抽出する
-    """
-    soup = BeautifulSoup(html_content, 'html.parser')
+    """旧HTMLを解析して必要なデータを抽出する"""
+    soup = BeautifulSoup(html_content, "html.parser")
     data = {
         "id": product_id,
-        "type": "single", # default
-        "top_image": f"{product_id}_01.jpg",
+        "type": "single",
+        "item_nos": [],
+        "top_img": None,
+        "main_img": None,
         "intro_text": "",
-        "intro_list_type": "B", # default (B: border list)
-        "intro_list_items": [],
+        "list_items": [],
         "main_content_html": "",
-        "specs": {},
-        "main_img_exists": False
+        "spec_lines": [],
+        "spec_imgs": [],
     }
 
-    # 1. タイプ判定 (form_cart1 があるかどうか)
-    if soup.find("form", attrs={"name": re.compile(r"form_cart\d+")}):
+    # 1. タイプ判定（form_cart1, form_cart2 … があれば複数タイプ）
+    multi_forms = soup.find_all("form", attrs={"name": re.compile(r"^form_cart\d+$")})
+    if multi_forms:
         data["type"] = "multi"
-    
-    # 2. イントロテキスト (p.intro)
-    intro_p = soup.find("p", class_="intro")
-    if intro_p:
-        # html=Trueで取得しないとタグが消えるが、今回はtextのみでbr制御するためget_text
-        data["intro_text"] = clean_text_with_br(intro_p.get_text())
+        for form in multi_forms:
+            inp = form.find("input", attrs={"name": "item_no"})
+            if inp:
+                data["item_nos"].append(inp.get("value", ""))
 
-    # 3. イントロリスト (ul.clearfix) と 画像判定
-    # main_600x600 画像があるかチェック
-    if soup.find("img", src=re.compile(r"main_600x600")):
-        data["main_img_exists"] = True
-        data["intro_list_type"] = "A" # 画像ありレイアウト
-    
-    ul_list = soup.find("ul", class_="clearfix")
-    if ul_list:
-        for li in ul_list.find_all("li"):
-            # span class="sq01" を削除して ■ に置換
-            for span in li.find_all("span", class_="sq01"):
-                span.decompose()
-            text = li.get_text(strip=True)
-            data["intro_list_items"].append(f"■{text}")
+    # 2. メイン画像（main_600x600 があればパターンA）
+    data["main_img"] = soup.find("img", src=re.compile(r"main_600x600"))
 
-    # 4. 商品詳細 (main-content直下の要素などを走査)
-    # ここは構造がバラバラなので、特定のコンテナの中を見る
-    # 旧HTMLでは <div class="cd-..." id="main-content"> の中にあると想定
-    content_div = soup.find("div", id="main-content")
-    if not content_div:
-        # idがない場合は section id="main-content" の中を探す
-        content_div = soup.find("section", id="main-content")
-
+    content_div = soup.find("div", id="main-content") or soup.find("section", id="main-content")
+    skip_elems = []
     if content_div:
-        generated_html = []
-        
-        # 除外するクラスやタグ
-        for exclude in content_div.find_all(["p", "ul"], class_=["intro", "clearfix"]):
-            # イントロやリストは別途抽出済みなのでスキップしたいが、
-            # contentsループで回すのでここでは無視リストを作る等の対応が必要。
-            # 今回は単純にループ中に判定する。
-            pass
+        # 3. トップ画像（_01.jpg）
+        top = content_div.find("img", src=re.compile(r"_01\.jpg$"))
+        if top:
+            data["top_img"] = top
+            skip_elems.append(next(p for p in top.parents if p.parent is content_div))
 
-        for elem in content_div.contents:
-            if elem.name is None:
-                continue
-            
-            # クラス判定
-            classes = elem.get("class", [])
-            
-            # 既に処理済みのイントロ等はスキップ
-            if "intro" in classes or "clearfix" in classes or "center-img" in classes:
-                # center-imgでもトップ画像(product_id_01.jpg)ならスキップ
-                if elem.find("img", src=re.compile(f"{product_id}_01.jpg")):
-                    continue
-                # Aパターンのメイン画像もスキップ
-                if elem.find("img", src=re.compile(r"main_600x600")):
-                    continue
-            
-            # --- 各要素の変換 ---
-            
-            # <h2> -> フォーマットのh2スタイルへ
-            if elem.name == "h2":
-                text = elem.get_text(strip=True)
-                h2_html = f'<h2 class="text-white rounded-md font-bold text-lg c-bg-collection-gradient text-center sm:p-3 py-2 mx-1">{text}</h2>'
-                generated_html.append(h2_html)
-            
-            # <p class="flt-l" / "flt-r"> -> Flex layout
-            elif elem.name == "p" and ("flt-l" in classes or "flt-r" in classes):
-                # 画像とテキストを含む可能性がある
-                img = elem.find("img")
-                text = elem.get_text(strip=True)
-                if img:
-                    src = img.get("src")
-                    alt = img.get("alt", "")
-                    # brを入れない
-                    html = f'''
-                    <div class="flex flex-col sm:flex-row">
-                        <img src="{src}" alt="{alt}" loading="lazy" class="mx-auto max-w-[10rem] p-3 sm:m-3 object-contain">
-                        <p class="text-start px-1 sm:p-3 leading-relaxed">{text}</p>
-                    </div>'''
-                    generated_html.append(html)
-            
-            # <div class="box1"> -> Box layout
-            elif elem.name == "div" and "box1" in classes:
-                # box1の中身（h3, dl, pなど）を解析
-                h3 = elem.find("h3")
-                h3_text = h3.get_text(strip=True) if h3 else ""
-                
-                # 画像があるか
-                img = elem.find("img")
-                img_html = ""
-                if img:
-                    img_html = f'<img src="{img["src"]}" alt="{img.get("alt","")}" class="w-12 object-contain sm:mt-0 sm:ml-2 mx-auto sm:mx-0">'
-                
-                # テキスト（ddやp）
-                body_text = ""
-                # dlがある場合
-                dl = elem.find("dl")
-                if dl:
-                     body_text = dl.get_text("<br>", strip=True) # dlは改行維持したいので簡易的に
-                else:
-                    # pなどから取得 (ただしh3以外)
-                    for child in elem.find_all(["p", "div"]):
-                        if child.find("img"): continue # 画像だけのpは飛ばす
-                        body_text += child.get_text(strip=True)
-                
-                html = f'''
-                <div class="p-3 m-1 border c-border-collection-gradient border-1 rounded-md">
-                    <h3 class="font-bold p-2">{h3_text}</h3>
-                    <p class="leading-relaxed flex p-2 flex-col sm:flex-row">
-                        <span class="flex-1">{body_text}</span>
-                        {img_html}
-                    </p>
-                </div>'''
-                generated_html.append(html)
-            
-            # <p> (通常テキスト)
-            elif elem.name == "p":
-                # 画像のみを含むp
-                if elem.find("img") and not elem.get_text(strip=True):
-                    img = elem.find("img")
-                    # サイズ表などの画像処理（小さめ表示の指示あり）
-                    # クラス調整: max-w-2xl mx-auto h-auto p-4
-                    html = f'<img src="{img["src"]}" alt="{img.get("alt","")}" loading="lazy" class="w-full max-w-2xl mx-auto h-auto p-4">'
-                    generated_html.append(html)
-                else:
-                    # テキストp (句点改行あり)
-                    text = clean_text_with_br(elem.get_text())
-                    if text:
-                        html = f'<p class="text-start px-1 sm:p-3 leading-relaxed">{text}</p>'
-                        generated_html.append(html)
-        
-        data["main_content_html"] = "\n".join(generated_html)
+        # 4. 商品紹介文（p.intro / div.intro）
+        intro = content_div.find(["p", "div"], class_="intro")
+        if intro:
+            data["intro_text"] = flat_text(intro)
+            skip_elems.append(intro)
 
-    # 5. 仕様 (dd)
-    # 仕様は通常 <div id="item-product"> の中の dl dt dd にある
-    spec_dd = soup.find("dd")
-    if spec_dd:
-        # タイプに応じて抽出
-        data["specs"] = extract_specs_from_dd(spec_dd, is_multi=(data["type"] == "multi"))
+        # 5. 箇条書き（ul.clearfix、無ければ最初のul）
+        ul = content_div.find("ul", class_="clearfix") or content_div.find("ul", recursive=False)
+        if ul:
+            for li in ul.find_all("li"):
+                for span in li.find_all("span", class_="sq01"):
+                    span.replace_with(span.get_text())
+                text = flat_text(li)
+                if text:
+                    data["list_items"].append(text)
+            skip_elems.append(ul)
 
+        # 6. 商品詳細
+        data["main_content_html"] = convert_main_content(content_div, skip_elems)
+
+    # 7. 仕様
+    data["spec_lines"], data["spec_imgs"] = parse_specs(soup)
     return data
 
-def generate_new_page(data):
-    """
-    データをもとにテンプレートに値を埋め込み、HTMLファイルを保存する
-    """
+# --- 新ページの生成 ---
+
+def replace_once(html, old, new, label):
+    if old not in html:
+        print(f"  [警告] テンプレートに{label}の目印が見つかりません")
+        return html
+    return html.replace(old, new, 1)
+
+def build_intro_block(data):
+    """A/Bパターンのメイン画像＆箇条書きブロック"""
+    main_img = data["main_img"]
+    li_lines = "\n".join(f"                        <li>{item}</li>" for item in data["list_items"])
+    if main_img is not None:
+        return ('                <!-- A:商品メイン画像＆箇条書き(main_600x600画像がある場合) -->\n'
+                '                <div class="flex flex-col md:flex-row p-3">\n'
+                f'                    <img src="{img_src(main_img)}" alt="{img_alt(main_img)}" class="w-full md:w-[50%] mx-auto h-auto p-4">\n'
+                '                    <ul class="text-start w-full md:w-[50%] md:p-3 leading-relaxed">\n'
+                f'{li_lines}\n'
+                '                    </ul>\n'
+                '                </div>\n')
+    return ('                <!-- B:商品メイン画像＆箇条書き(main_600x600画像がない場合) -->\n'
+            '                <div class="flex flex-col md:flex-row p-3">\n'
+            '                    <ul class="border-l-4 pl-2 c-border-collection-gradient text-start w-full md:p-3 leading-relaxed">\n'
+            f'{li_lines}\n'
+            '                    </ul>\n'
+            '                </div>\n')
+
+def spec_html(lines, indent):
+    return f"<br>\n{indent}".join(lines)
+
+def generate_new_page(data, category):
+    """データをもとにテンプレートに値を埋め込み、HTMLファイルを保存する"""
     template_file = FORMAT_02 if data["type"] == "multi" else FORMAT_01
-    template_path = os.path.join(FORMAT_DIR, template_file)
-    
-    with open(template_path, "r", encoding="utf-8") as f:
+    with open(os.path.join(FORMAT_DIR, template_file), "r", encoding="utf-8") as f:
         html = f.read()
 
-    # --- 共通箇所の置換 ---
-    
+    top_img = data["top_img"]
+    if top_img is None:
+        print("  [警告] トップ画像(_01.jpg)が見つかりません")
+
     # 1. トップ画像
-    # *****_01.jpg を置換 (テンプレート内のプレースホルダーを探す)
-    html = html.replace('src="*****_01.jpg"', f'src="{data["top_image"]}"')
+    if top_img is not None:
+        html = replace_once(html, '<img src="*****_01.jpg" alt=""',
+                            f'<img src="{img_src(top_img)}" alt="{img_alt(top_img)}"', "トップ画像")
 
-    # 2. 商品紹介文 (text-start sm:text-center... の中身)
-    # テンプレート構造に依存するため、BeautifulSoupで置換した方が安全だが、
-    # Blade構文があるため文字列置換でアプローチする。
-    # 「<!-- 商品紹介文 -->」のようなコメントマーカーがないため、周辺のHTML特徴で置換
-    target_intro_tag = '<p class="text-start sm:text-center leading-relaxed font-bold">'
-    html = html.replace(target_intro_tag, f'{target_intro_tag}\n{data["intro_text"]}')
+    # 2. 商品紹介文
+    intro_p = '<p class="text-start leading-relaxed font-bold">\n'
+    indent = " " * 24
+    html = replace_once(html, intro_p,
+                        f'{intro_p}{indent}{add_br_by_period(data["intro_text"], indent)}\n', "商品紹介文")
 
-    # 3. イントロリスト (A/B判定)
-    # テンプレートにはAとB両方書いてある前提で、不要な方を削除、必要な方にデータ注入
-    list_html = "\n".join([f"<li>{item}</li>" for item in data["intro_list_items"]])
-    
-    # Aパターンのブロック
-    block_a_start = '<!-- A:商品メイン画像＆箇条書き(main_600x600画像がある場合) -->'
-    # Bパターンのブロック
-    block_b_start = '<!-- B:商品メイン画像＆箇条書き(main_600x600画像がない場合) -->'
-    
-    # 正規表現でブロックを特定して置換するのは複雑なので、
-    # テンプレートにある「<!-- 指示　ul classのclearfix部分は下記を利用 -->」を探す
-    
-    if data["intro_list_type"] == "A":
-        # Bブロックを削除 (簡易的に文字列置換で空にするか、コメントアウト)
-        # ここでは「Bのブロック全体」を消す処理が必要。
-        # テンプレートの構造を知っている前提で、文字列置換を行う
-        
-        # main_600x600画像のパス設定
-        html = html.replace('src="*****_main_600x600.jpg"', f'src="{data["id"]}_main_600x600.jpg"')
-        
-        # リストの中身を注入
-        html = html.replace('<!-- 指示　ul classのclearfix部分は下記を利用 -->\n                        <ul class="text-start w-full md:w-[50%] md:p-3 leading-relaxed">\n                            <li></li>',
-                            f'<ul class="text-start w-full md:w-[50%] md:p-3 leading-relaxed">\n{list_html}')
-        
-        # Bパターンを消す (簡易実装: Bの開始コメントから次のdiv閉じまで消す等)
-        # 今回は「B:〜」から「<!-- 商品詳細 -->」の前までを消す
-        pattern_b_removal = re.compile(r'<!-- B:商品メイン画像.*?<!-- 商品詳細 -->', re.DOTALL)
-        html = pattern_b_removal.sub('<!-- 商品詳細 -->', html)
-        
-    else:
-        # Aブロックを消す
-        pattern_a_removal = re.compile(r'<!-- A:商品メイン画像.*?<!-- B:商品メイン画像', re.DOTALL)
-        html = pattern_a_removal.sub('<!-- B:商品メイン画像', html)
-        
-        # リストの中身を注入 (Bパターン用)
-        html = html.replace('<!-- 指示　ul classのclearfix部分は下記を利用 -->\n                        <ul class="border-l-4 pl-2 c-border-collection-gradient text-start w-full md:p-3 leading-relaxed">\n                            <li></li>',
-                            f'<ul class="border-l-4 pl-2 c-border-collection-gradient text-start w-full md:p-3 leading-relaxed">\n{list_html}')
+    # 3. メイン画像＆箇条書き（A/Bのうち使う方だけ残す）
+    html, n = re.subn(r" *<!-- 下記はAかBどちらかを利用 -->.*?\n\n(?= *<!-- 商品詳細 -->)",
+                      lambda m: build_intro_block(data) + "\n", html, count=1, flags=re.DOTALL)
+    if n == 0:
+        print("  [警告] テンプレートにA/Bブロックの目印が見つかりません")
 
-    # 4. 商品詳細
-    # テンプレートの 「<!-- 商品詳細 -->」 以下の div container の中身を
-    # 生成した main_content_html にごっそり入れ替えるのが一番確実。
-    # ただしテンプレートには「<!-- 指示... -->」があるので、その親divの中身を置き換える。
-    
-    # 詳細エリアの開始地点
-    detail_start_marker = '<!-- 商品詳細 -->'
-    if detail_start_marker in html:
-        # 詳細エリアのdiv開始タグを探す
-        start_idx = html.find(detail_start_marker)
-        # <div class="flex flex-col space-y-3 mt-6"> を探す
-        div_start = html.find('<div class="flex flex-col space-y-3 mt-6">', start_idx)
-        if div_start != -1:
-            # このdivの閉じタグまでを探すのは正規表現では難しいが、
-            # 次のセクション <!-- 価格・購入エリア --> があるのでそこまでを置換範囲とする
-            section_end = html.find('<!-- 価格・購入エリア -->')
-            
-            before = html[:div_start]
-            after = html[section_end:]
-            
-            new_detail_block = f'<div class="flex flex-col space-y-3 mt-6">\n{data["main_content_html"]}\n</div>\n</section>\n\n            '
-            
-            html = before + new_detail_block + after
+    # 4. 商品詳細（見本と指示コメントを、変換した本文に入れ替え）
+    html, n = re.subn(r'(<!-- 商品詳細 -->\s*<div class="flex flex-col space-y-3 mt-6">\n).*?(\n {16}</div>\n {12}</section>)',
+                      lambda m: m.group(1) + data["main_content_html"] + m.group(2), html, count=1, flags=re.DOTALL)
+    if n == 0:
+        print("  [警告] テンプレートに商品詳細の目印が見つかりません")
 
-    # 5. 仕様 (format_01と02で処理分岐)
-    
+    # 5. 拡大画像（format_01のみ。main_600x600が無い場合は_01.jpgを使用）
+    zoom_img = data["main_img"] if data["main_img"] is not None else top_img
+    if data["type"] == "single" and zoom_img is not None:
+        html = replace_once(html, '<img src="*****_main_600x600.jpg"\n                            alt="altをそのまま記述"',
+                            f'<img src="{img_src(zoom_img)}"\n                            alt="{img_alt(zoom_img)}"', "拡大画像")
+
+    # 6. 仕様（サイズ表などの画像は仕様の後ろ・全タイプ共通）
+    def spec_img_lines(indent):
+        return "".join(f'\n{indent}<img src="{img_src(img)}" alt="{img_alt(img)}" loading="lazy" class="{CSS["spec_img"]}">'
+                       for img in data["spec_imgs"])
+
+    size_example = r"(?:\n *<!-- 指示　仕様内にサイズ表.*?-->\n *<img [^\n]*)?"
     if data["type"] == "single":
-        # format_01: 単純置換
-        spec_marker = '<!-- 指示　仕様はここに記載 -->'
-        if spec_marker in html:
-            spec_text = data["specs"].get("common", "")
-            html = html.replace(spec_marker, spec_text)
-            
+        indent = " " * 32
+        spec_block = indent + spec_html(data["spec_lines"], indent) + spec_img_lines(indent)
+        html, n = re.subn(r" *<!-- 指示　仕様はここに記載 -->" + size_example, lambda m: spec_block, html, count=1)
+        if n == 0:
+            print("  [警告] テンプレートに仕様の目印が見つかりません")
     else:
-        # format_02: 複数タイプ
-        # Bladeのループ @foreach ... @endforeach を展開する
-        # ループの中身を正規表現で抽出
-        loop_pattern = re.compile(r'@foreach \(\$goods->getConnectGoods\(\).*?@endforeach', re.DOTALL)
-        loop_match = loop_pattern.search(html)
-        
-        if loop_match:
-            loop_content = loop_match.group(0)
-            # @foreach と @endforeach を除去して、中身のHTMLテンプレートを取り出す
-            # 先頭行と末尾行を削除
-            lines = loop_content.split('\n')
-            template_inner = "\n".join(lines[1:-1]) 
-            
-            # 生成するHTML
-            expanded_html = ""
-            
-            # 抽出した仕様の数だけループ (通常2回: AとB)
-            # data["specs"] は {0: "SpecA", 1: "SpecB"} または {"common": "CommonSpec"}
-            
-            # 仕様が分割されているか確認
-            specs_list = []
-            if "common" in data["specs"]:
-                # 分割されなかった場合は同じ仕様を2回繰り返す(とりあえず2回と仮定)
-                # あるいはソースコードのフォーム数を見るべきだが、簡易的に2つ生成する
-                specs_list = [data["specs"]["common"], data["specs"]["common"]]
-            else:
-                # 辞書のキー順にソートしてリスト化
-                specs_list = [data["specs"][k] for k in sorted(data["specs"].keys())]
-            
-            for i, spec_text in enumerate(specs_list):
-                # テンプレートコピー
-                current_block = template_inner
-                
-                # 仕様を注入
-                # format_02には「<!-- 指示　仕様はここに記載 -->」がないため、
-                # <p class="leading-snug text-sm"> の中身として注入する
-                # 注意: format_02.html の内容を見ると <p ...>\n\n </p> となっている
-                target_p = '<p class="leading-snug text-sm">'
-                current_block = current_block.replace(target_p, f'{target_p}\n{spec_text}')
-                
-                # 商品ごとの処理 (必要ならここで他の置換も可能)
-                # 例: フォーム名 form_cart1, form_cart2 などに対応させる必要があれば
-                # ただしBladeテンプレート変数が残っているので、
-                # Bladeが正しく動くなら変える必要はない。
-                # 今回は「仕様Aを商品Aに」という指示なので、
-                # このループ展開により、1つ目のブロックには仕様Aが、2つ目には仕様Bが固定で入るHTMLになる。
-                
-                expanded_html += current_block + "\n" + '<div class="border-t border-gray-200 mx-4 mb-4"></div>' + "\n"
-            
-            # 元のループ部分を、展開したHTMLに置換
-            html = html.replace(loop_content, expanded_html)
+        indent = " " * 40
+        typed = split_specs_by_type(data["spec_lines"], data["item_nos"])
+        if typed:
+            out = []
+            for i, (item_no, lines) in enumerate(typed):
+                keyword = "@if" if i == 0 else "@elseif"
+                out.append(f"{indent}{keyword} ($connect_goods->getItemNo() == '{item_no}')")
+                out.append(indent + spec_html(lines, indent))
+            out.append(f"{indent}@endif")
+            spec_block = "\n".join(out)
+        else:
+            spec_block = indent + spec_html(data["spec_lines"], indent)
+        spec_block += spec_img_lines(indent)
+        html, n = re.subn(r" *<!-- 指示　仕様はここに記載（.*?@endif" + size_example, lambda m: spec_block,
+                          html, count=1, flags=re.DOTALL)
+        if n == 0:
+            print("  [警告] テンプレートに仕様の目印が見つかりません")
 
     # --- ファイル保存 ---
-    save_filename = f"{data['id']}.html"
-    save_path = os.path.join(OUTPUT_DIR, save_filename)
-    
+    save_dir = os.path.join(OUTPUT_DIR, category)
+    os.makedirs(save_dir, exist_ok=True)
+    save_path = os.path.join(save_dir, f"{data['id']}.html")
     with open(save_path, "w", encoding="utf-8") as f:
         f.write(html)
-    
-    print(f"[完了] {save_filename} を生成しました (Type: {data['type']})")
+
+    print(f"[完了] {category}/{data['id']}.html を生成しました (Type: {data['type']})")
 
 # --- メイン処理 ---
 def main():
-    files = [f for f in os.listdir(INPUT_DIR) if f.endswith(".txt")]
+    # 引数で商品番号を指定した場合はその商品のみ（例: python3 main_convert.py 51303 51151）
+    targets = set(sys.argv[1:])
+
+    files = []
+    for category in CATEGORIES:
+        cat_dir = os.path.join(INPUT_DIR, category)
+        if not os.path.isdir(cat_dir):
+            continue
+        for filename in sorted(os.listdir(cat_dir)):
+            if not filename.endswith(".txt") or filename.endswith("_notext.txt"):
+                continue
+            product_id = os.path.splitext(filename)[0]
+            if targets and product_id not in targets:
+                continue
+            files.append((category, product_id, os.path.join(cat_dir, filename)))
+
+    missing = targets - {pid for _, pid, _ in files}
+    for pid in sorted(missing):
+        print(f"[スキップ] {pid}.txt がカテゴリフォルダ内に見つかりません")
+
     print(f"{len(files)} 件のファイルを処理します...")
 
-    for filename in files:
-        product_id = os.path.splitext(filename)[0]
-        file_path = os.path.join(INPUT_DIR, filename)
-        
+    for category, product_id, file_path in files:
         with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
-            
+
         # 1. 解析
         parsed_data = parse_old_html(content, product_id)
-        
+
         # 2. 生成・保存
-        generate_new_page(parsed_data)
+        generate_new_page(parsed_data, category)
 
 if __name__ == "__main__":
     main()
-    

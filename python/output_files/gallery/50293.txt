@@ -1,0 +1,152 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I アートギャラリー</p>
+<h1>鈴木優莉 筆　肉筆金彩絹本画　月下白ふくろう</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=50293501" target="_self"><img alt="鈴木優莉 筆　肉筆金彩絹本画　月下白ふくろう" src="/image/goods/50293_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>【掛け軸】<br/>
+●材質：本紙＝絹本　天地＝綿紬パー　中廻し＝小市松地に菱花紋平安緞子　一文字・風帯＝金襴市松華紋　軸先＝新牙<br/>
+●サイズ（約）：画寸＝46.5×52cm　軸寸＝138×68cm（軸先寸＝73.5cm）<br/>
+●重さ（約）：550g<br/>
+●大和三段一文字廻し表装<br/>
+●直筆の題字・署名・落款入り桐箱<br/>
+●日本製<br/>
+<br/>
+【飾り額】<br/>
+●材質：本紙＝絹本　額＝木製金箔仕上げ　銀襴張りマット　前面アクリル板<br/>
+●サイズ（約）：画寸＝45×53cm　額寸＝64×73.5×厚さ2.8cm<br/>
+●重さ（約）：3.6kg<br/>
+●高級額装<br/>
+●直筆の題字・署名落款入り桐製題箋<br/>
+●日本製<br/>
+<br/>
+※肉筆画のため一点一点色合いなどが異なる場合があります。</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>鈴木優莉 筆　肉筆金彩絹本画　月下白ふくろう【軸装】</h3>
+<div class="price_area">
+                
+
+
+                        
+                          
+                        
+
+
+                        
+                          
+                            月々 <span>12,300円（税込13,530円）×15回払い</span><br/>
+                          
+                          
+                            一括価格 <span>169,800円（税込186,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart1">
+<input name="item_no" type="hidden" value="50293501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50293"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart1(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('50293501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50293501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<div class="cart_area">
+<h3>鈴木優莉 筆　肉筆金彩絹本画　月下白ふくろう【額装】</h3>
+<div class="price_area">
+                
+
+
+                        
+                          
+                        
+
+
+                        
+                          
+                            月々 <span>12,300円（税込13,530円）×15回払い</span><br/>
+                          
+                          
+                            一括価格 <span>169,800円（税込186,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart2">
+<input name="item_no" type="hidden" value="50293502"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50293"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart2(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('50293502');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50293502');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="画業30周年記念　鈴木優莉 筆　肉筆金彩絹本画　月下白ふくろう" height="260" src="/image/goods/50293_01.jpg" width="580"/></p>
+<p class="intro">
+		黄金の満月を背にそっと寄り添う二羽の白ふくろう──<br/>
+		「前田青邨記念大賞」入選の実力派、鈴木優莉画伯が<br/>
+		画業三十年の集大成として描き上げる珠玉の肉筆吉祥画。<br/>
+		金彩をふんだんに用いた圧巻の画技により<br/>
+		神々しい光をまとった幸福の使者ふくろうのやわらかい羽毛から、<br/>
+		高野槇の葉先に宿る黄金の月あかりにいたるまで<br/>
+		一筆一筆、息を呑む繊細な筆づかいで情趣豊かに表現。<br/>
+		ほのぼのとした安らぎと聖なる光が心を満たす吉祥画の傑作。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>「前田青邨記念大賞」入選の日本画家による貴重な真筆</li>
+<li class="stt"><span class="sq01">■</span>金彩をふんだんに用いた繊細な画技が際立つ絹本画</li>
+<li class="stt"><span class="sq01">■</span>本格表装の掛け軸と高級飾り額の二種類をご用意</li>
+</ul>
+<p class="center-img"><img alt="掛け軸は画伯直筆の題字・署名落款入りの桐箱に収めてお届けします。" height="480" src="/image/goods/50293_02.jpg" width="300"/></p>
+<p>
+		東の空に満月が昇る頃、純白のふくろうが二羽、どこからともなく現れ、つぶらな瞳で幸せの訪れをじっと見つめる──古より開運招福のシンボルとして尊ばれてきたふくろうを、幻想的な情景にとらえたこの肉筆画は、現代日本画壇で活躍する鈴木優莉画伯が到達した新境地を物語る傑作。このたび画伯の画業30周年を記念して、インペリアル・アートギャラリーより特別にご提供いたします。気鋭の実力派として注目される鈴木画伯が、一筆一筆に魂を込めて描き上げる正真正銘の真筆作品「月下白ふくろう」のご案内です。
+	</p>
+<h2>先を見通し、福を招く白ふくろう
+	伝統の吉祥画を清新な感性で</h2>
+<p class="flt-r"><img alt="ふんわりとした羽毛の一枚一枚まで驚くべき繊細さで表現。" height="218" src="/image/goods/50293_03.jpg" width="135"/></p>
+<p>
+		鈴木優莉画伯は、花鳥画の名手として近年注目されている女流画家です。巨匠・片岡球子に師事した日本美術院特待画家・山本真一画伯のもとで研鑽を積み、多彩な伝統様式を踏まえつつ、洗練された現代感覚と女性らしいしなやかな感性で独自の繊細な画風を開花。平成22年には「前田青邨記念大賞」入選を果たすなど、高い評価を確立しています。そんな鈴木画伯がこのたびの作品テーマに選んだのは、月とふくろう。夜目が利くことから先を見通す判断力を授けるといわれ、西洋では知恵や学問の象徴、また日本では「不苦労」「福来朗」に通じる開運吉祥の縁起物として親しまれている普遍的な題材です。
+	</p>
+<p class="center-img"><img alt="黄金の満月が照らし出す幸福の使者、白ふくろう…" height="574" src="/image/goods/50293_04.jpg" width="400"/></p>
+<h2>本物の肉筆画でしか味わえない美の精髄</h2>
+<p class="flt-l"><img alt="高野槇の葉には金彩の松毬が星のようにきらめいて。" height="218" src="/image/goods/50293_05.jpg" width="135"/></p>
+<p>
+		煌々と輝く黄金の満月を後光のごとく背にした二羽の神々しい白ふくろう──鈴木画伯は、金彩を惜しみなく費やして、夜を明るく照らす満月を大胆に描き、寄り添う純白のふくろうを繊細緻密な筆致で絵絹に描き込んでいきます。画面左下に茫洋と浮かぶのは、彼方に望む聖地・高野山の山稜、ふくろうが羽を休めるのは霊木・高野槇の枝──飾るだけで清浄な気韻がお部屋を満たし、詩的で幻想的な情景へと心誘います。<br/>
+		お届けする作品は、画伯が一点一点絵筆をふるった正真正銘の真筆となります。ふくろうの柔らかい羽の描写やつぶらな目、高野槇の葉先に宿る黄金の月あかりにいたるまで、その秀麗な画技をつぶさに堪能できるのは、肉筆画だけの醍醐味。絵の具の質感や、絹本画特有の潤いに満ちた表情をご覧になるほどに、価値ある本物を所蔵する誇りと悦びに包まれるでしょう。<br/>
+		豊かな詩情が溢れだす月夜の幻想──鈴木優莉筆「月下白ふくろう」は、その高い画格に鑑みて表装にも心を尽くし、高級緞子を使用した大和三段表装の掛け軸、または金泥仕上げの高級飾り額にお仕立てしてお届けします。どうぞお早めにお申し込みください。
+	</p>
+<p class="center-img"><img alt="掛け軸は画伯直筆の題字・署名落款入りの桐箱に収めてお届けします。飾り額には画伯直筆の題字・署名落款入りの題箋が付属します。" height="538" src="/image/goods/50293_06.jpg" width="580"/></p>
+<div class="box1">
+<div class="box-text">
+<h3>鈴木優莉　略歴</h3>
+<p>
+				昭和43年、岐阜県に生まれる。師は片岡球子に師事した日本美術院特待の山本真一。平成22年、第5回「前田青邨記念大賞」入選。情趣豊かな花鳥画や動物画、人物画、仏画に定評がある。墨彩会会員。岐阜県在住。
+			</p>
+<p class="center-img"><img alt="鈴木優莉氏" height="175" src="/image/goods/50293_07.jpg" width="460"/></p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--
