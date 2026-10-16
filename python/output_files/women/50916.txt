@@ -1,0 +1,109 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>ブルークレール ─コートダジュールの彩り─ 絣糸の透かし編みクチュールカーディガン</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=50916501" target="_self"><img alt="ブルークレール ─コートダジュールの彩り─ 絣糸の透かし編みクチュールカーディガン" src="/image/goods/50916_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：シルク100％（絣糸はグリーン、ライトブルー、ブルー、パープル、サックスの5色）<br/>
+●重さ（約）：150ｇ<br/>
+●日本製<br/><br/>
+
+※絣糸を使用しているため、色・柄の出方が写真と微妙に異なる場合がございます。<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="153" src="/image/goods/50916_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>ブルークレール ─コートダジュールの彩り─ 絣糸の透かし編みクチュールカーディガン</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>9,900円（税込10,890円）×2回払い</span><br/>
+                          
+                          
+                            一括価格 <span>19,800円（税込21,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="50916501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50916"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Ｓサイズ</option>
+<option class="p999" value="999-M">Ｍサイズ</option>
+<option class="p999" value="999-L">Ｌサイズ</option>
+<option class="p999" value="999-LL">ＬＬサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('50916501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50916501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="ブルークレール ─コートダジュールの彩り─ 絣糸の透かし編みクチュールカーディガン" height="300" src="/image/goods/50916_01.jpg" width="580"/></p>
+<p class="intro">
+		きらめく地中海と澄みわたる空、心地よい風──。<br/>
+		世界中のセレブリティが魅了される南仏の清涼な彩りが<br/>
+		ふわりと優しいレースのように重なる、高級クチュールカーディガン。<br/>
+		紺、水色、青、緑、紫…涼やかな5色に染め分けた<br/>
+		シルク100％の<ruby><rb>絣糸</rb><rp>（</rp><rt>かすりいと</rt><rp>）</rp></ruby>が織りなす、柔らかくも優雅な風合いにときめいて。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>フランスの著名デザイナーによるオリジナル</li>
+<li class="stt"><span class="sq01">■</span>5色に染め分けた高級シルクの絣糸を使用</li>
+<li class="stt"><span class="sq01">■</span>華やかでエレガントな絣糸の遊色感</li>
+<li class="stt"><span class="sq01">■</span>涼やかな透かし編み</li>
+<li class="stt"><span class="sq01">■</span>スタイルが美しく見える絶妙なショート丈</li>
+<li class="stt"><span class="sq01">■</span>軽やか約150グラム</li>
+</ul>
+<p class="center-img"><img alt="軽やかに、涼やかに。透ける青が演出する初夏のエレガンス" height="500" src="/image/goods/50916_02.jpg" width="580"/></p>
+<p>
+	羽織った瞬間、憧れの南仏（コートダジュール）に誘われて…。輝くターコイズブルーの地中海や透き通る青空、生命力に満ちたオリーブの木。涼やかで優雅なコートダジュールの彩り5色を高級シルクの絣糸にうつし、熟練職人の丹念な透かし編みで仕立てた逸品が、パリの著名デザイナー、イヴリーヌ・ポノーより発表されました。フランスならではの洗練された感性と日本の伝統への深い造詣が生み出した、繊細なレースのように贅沢なクチュールカーディガン＜ブルークレール -コートダジュールの彩り-＞のご案内です。
+	</p>
+<h2>ずっと触れていたいシルク100％<br/>
+	上品な透け感と美しいシルエットを楽しんで</h2>
+<p>
+		イヴリーヌ・ポノー氏がこだわったのは、至福の手触りが魅力のシルク100％。汗ばむ季節の肌をさらりと軽やかに包み込み、一目でわかるリッチな風合いが着る人の品格をランクアップします。さらに上半身をコンパクトに見せる絶妙のショート丈と優しい編み地の透け感が、気になる二の腕や腰回りをすっきり若々しい印象に見せて…。一本の糸を5色に染め分けた奥深い青も華やかに、パリのエスプリが豊かに薫り立ちます。
+	</p>
+<p class="center-img"><img alt="フランス人デザイナーが魅せられた、美しい日本の伝統技「絣糸」：絣糸は「段染め糸」とも呼ばれ、前もって2色以上の色に染め分けられた糸のこと。１本の糸の中にいろいろな色が存在するため、編み上がりの表情は奥深くバリエーションに富み、後染めでは出すことのできない魅力にあふれます。本作品に使用されたのは南仏をイメージする清涼感ある5色。素肌に美しく重なるローゲージのかぎ針編みも繊細に、虹を想わせる遊色効果が生み出されました。／襟と前立てはエレガントな模様編み。／美しい5色の遊色をたたえる透かし編みは絣糸ならでは。" height="800" src="/image/goods/50916_03.jpg" width="580"/></p>
+<h2>周囲に差をつける、お洒落指数の高い大人の逸品</h2>
+<p>
+		装いに1枚重ねるだけで印象をお洒落に変え、肌寒い室内のエアコン対策にも活躍。高級シルク100％使用＜ブルークレール-コートダジュールの彩り-＞絣糸の透かし編みクチュールカーディガンは、Ｉ・Ｅ・Ｉ社の特別企画商品。大変高級な5色染めのシルク絣糸を使用しています。この好機にどうぞお求めになり、素晴らしいシルク100％の着心地と南仏の華やぎをお楽しみください。
+	</p>
+<p class="center-img"><img alt="作品に寄せて：鮮やかな南仏（コート・ダジュール）の海や空を想わせる5色に染め分けた絣糸（かすりいと）の美しさ。そして、シルク100％の爽やかで優しい肌触り…。高級避暑地で過ごすセレブリティのように肩肘張らないお洒落を愉しみながらもあらたまった場所での気品を忘れない。そんなエレガントな美しさを表現したのが、＜澄みわたる青（ブルークレール）＞と題した本作品です。ヨーロッパのテキスタイルでは得られない素晴らしい遊色感はクオリティの要である糸と編み地にこだわる日本の熟練職人さんの高度な伝統技術の賜物。細部まで丁寧に仕立てられた着心地のよい透かし編みが貴女の装いを、いっそう素敵にランクアップすることを確信します。イヴリーヌ・ポノー" height="450" src="/image/goods/50916_04.jpg" width="580"/></p>
+<div class="box1">
+<div class="box-text">
+<h3>イヴリーヌ・ポノー</h3>
+<p class="flt-r"><img alt="イヴリーヌ・ポノー近影" height="150" src="/image/goods/50916_05.jpg" width="125"/></p>
+<p>
+				ルーブル美術学院卒。ニナリッチ、ジバンシィなどの著名ブランドでデザインを手がけ、注目を浴びる。その後独立し、パリでブティックを経営。女性らしい柔らかなラインを強調するデザインは、世界で多くの人の支持を得ている。
+			</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

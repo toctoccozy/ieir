@@ -1,0 +1,109 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>＜ヌーヴォーレジェール＞軽やか・らくらくブルゾン</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=50904501" target="_self"><img alt="＜ヌーヴォーレジェール＞軽やか・らくらくブルゾン" src="/image/goods/50904_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：フードと袖部分＝ポリエステル100％　身頃部分（シンダウン（THINDOWN））＝ダウン54％、ポリエステル／ポリエチレン複合繊維20％、ポリエステル20％、フェザー6％　ファスナー＝ポリエステル樹脂　スナップ＝真ちゅう<br/>
+●重さ（約）：480ｇ<br/>
+●日本製（シンダウンはイタリア製）<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="153" src="/image/goods/50904_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>＜ヌーヴォーレジェール＞軽やか・らくらくブルゾン</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>6,500円（税込7,150円）×8回払い</span><br/>
+                          
+                          
+                            一括価格 <span>49,800円（税込54,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="50904501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50904"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Sサイズ</option>
+<option class="p999" value="999-M">Mサイズ</option>
+<option class="p999" value="999-L">Lサイズ</option>
+<option class="p999" value="999-LL">LLサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('50904501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50904501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="イタリア製の新素材「シンダウン」を使用＜ヌーヴォーレジェール＞軽やか・らくらくブルゾン　デザイン：ナディーヌ・ビュタン" height="430" src="/image/goods/50904_01.jpg" width="580"/></p>
+<p class="intro">
+		パリのマダム・ナディーヌがたどり着いた「ぬくもりの結論」。<br/>
+		それは、イタリア生まれの新しい羽毛「<ruby><rb>THINDOWN</rb><rp>（</rp><rt>シンダウン</rt><rp>）</rp></ruby>」──。<br/>
+		至福の温かさはそのままに、<ruby><rb>驚くほど軽やか</rb><rp>（</rp><rt>レジェール</rt><rp>）</rp></ruby>なパーカースタイル。<br/>
+		若々しいパステルブルーも爽やかに<br/>
+		すっきりと美しいシルエットも魅力です。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>フランスの著名デザイナーによるオリジナル作品</li>
+<li class="stt"><span class="sq01">■</span>イタリア生まれの新しい羽毛「THINDOWN」を使用</li>
+<li class="stt"><span class="sq01">■</span>軽やかで爽やかなパステルブルー</li>
+<li class="stt"><span class="sq01">■</span>流行のカモフラージュ柄を裏地全面に使用</li>
+<li class="stt"><span class="sq01">■</span>羽毛特有のかさばりをなくした美しくすっきりとしたシルエット</li>
+<li class="stt"><span class="sq01">■</span>型崩れしにくくご家庭でのお洗濯が可能</li>
+<li class="stt"><span class="sq01">■</span>腰回りを美しくカバーするミドル丈</li>
+<li class="stt"><span class="sq01">■</span>信頼の国内縫製</li>
+</ul>
+<p class="center-img"><img alt="パステルブルーに包まれて笑顔こぼれる、軽やかなエレガンス" height="420" src="/image/goods/50904_02.jpg" width="500"/></p>
+<p>
+		寒暖差の激しい早春からの季節…。体温調節の難しい時期も、この一枚さえあれば心地よくお洒落に過ごせるでしょう？　そう語るのは、ナディーヌ・ビュタン氏。映画や舞台の衣装デザインで著名なフランスの一流デザイナーです。季節を問わず仕事で外を歩き回ることが多い彼女にとって、薄手でかさばらず、温かなコートは必需品。でもなかなか気に入ったものに出会えません。それならば、とついに自分でデザインしたのが本作品なのです。まるで呼吸をしているかのように、保温性を調節してくれる──。中綿に採用したのはダウンの特性そのままに、薄く、型崩れしにくいシート状に仕上げた羽毛の進化形「THINDOWN（シンダウン）」。＜驚くほど軽やか（レジェール）＞と題されたその名の通り、どんな日でも「ちょうどいい温かさ」がうれしい、かさばらず着心地らくらくのパーカースタイルのブルゾンです。
+	</p>
+<p class="center-img"><img alt="活動的なあなたを演出。パステルブルーに効かせた都会的なカモフラージュ柄／着脱のたびにちらりと見える流行のカモフラージュ柄。さりげなくお洒落な裏地がアクセント。／ハイネック調の前立てで、冷たい風を内側に入れません。フードをかぶれば若々しく、いっそう温か。／内側にはスマートフォンが入るポケット付き。／軽量約600グラム。裾をしぼれば温かいドローストリング仕様。" height="700" src="/image/goods/50904_03.jpg" width="580"/></p>
+<h2>ほかのアウターに戻れない、心地よい温もりと軽やかさ</h2>
+<p>
+	心ときめくパステルブルー、そしてさりげなくトレンドが薫り立つカモフラージュ柄の裏地。キルティングのないすっきりとしたシルエットがふわりと身体を包み込み、スタイルを美しく見せてくれるデザインは、「スリム」にこだわるマダム・ナディーヌだからこそ。薄手のインナーに重ねても十分温かいのは羽毛素材ならでは。ご家庭でお洗濯できるお手入れのしやすさも大きな魅力です。<br/>
+	＜ヌーヴォーレジェール＞軽やか・らくらくブルゾンは、Ｉ・Ｅ・Ｉ社の特別企画商品です。羽を纏うかのような軽やかさと、薄いのに温かい感動の着心地を、この好機にどうぞお試しください。
+	</p>
+<p class="center-img"><img alt="全身を軽やかな「THINDOWN（シンダウン）」で包み込んで、スタイルもすっきり" height="480" src="/image/goods/50904_04.jpg" width="580"/></p>
+<p class="center-img"><img alt="「スリムに、温かく、美しく」を実現した、世界初のイタリア製シート状ダウン特許技術の“THINDOWN”／THINDOWNとは、世界初のシート状に加工されたダウン。独自の特許技術に基づく「NIPIR40」というマシンによって、THIN（薄い）DOWNの名の通り、薄手ながら高い保温性を備えるダウンの生産が可能に。通常の中綿に比べてあたたかく、ダウン本来のぬくもりを保ちながら驚きの薄さを実現しました。この画期的な新素材を使用することでデザインの自由度も広がり、着ぶくれしやすいダウンの装いもスマートな印象にきまります。／美しいシルエット：従来のダウンのようにキルトステッチを必要としないため、もこもことしたかさばりがなくシルエットはすっきり。型崩れしにくい特許取得の形状で、洗濯機で洗うことも可能。／快適なぬくもり：天然ダウンを使用した、ダウン本来の軽さと保温性が魅力。寒い日はより温かく、春先は心地よいぬくもりに調節。一枚で３シーズン活躍します。" height="725" src="/image/goods/50904_05.jpg" width="580"/></p>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="ナディーヌ・ビュタン ロゴ" height="20" src="/image/goods/50904_06.jpg" width="271"/>　ナディーヌ・ビュタン</h3>
+<p class="flt-r"><img alt="ナディーヌ・ビュタン近影" height="167" src="/image/goods/50904_07.jpg" width="125"/></p>
+<p>
+				フランスを代表する衣装デザイナー。映画、演劇、テレビドラマのコスチューム・デザインを数多く手がけ、鬼才ジャン・リュック・ゴダールの映画の衣装スタイリストとしても活躍。また体の不自由な人のためのファッション・デザインなどにも積極的に取り組んでいる。
+			</p>
+<p class="center-img">
+<img alt="「着心地」は軽やかに、「ぬくもり」はしっかりと。春を、一足先に楽しみましょう。" height="218" src="/image/goods/50904_08.jpg" width="300"/>
+</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

@@ -1,0 +1,108 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>コートダジュールの彩り＜ジュンヌ・ド・ブルー＞絣糸のフード付きカーディガン</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51058501" target="_self"><img alt="コートダジュールの彩り＜ジュンヌ・ド・ブルー＞絣糸のフード付きカーディガン" src="/image/goods/51058_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：シルク100％（絣糸は紺、水色、青、緑、紫の5色）、ボタン＝樹脂<br/>
+●重さ（約）：300g<br/>
+●日本製<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="153" src="/image/goods/51058_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>コートダジュールの彩り＜ジュンヌ・ド・ブルー＞絣糸のフード付きカーディガン</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,980円（税込5,478円）×5回払い</span><br/>
+                          
+                          
+                            一括価格 <span>24,800円（税込27,280円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51058501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51058"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Ｓサイズ</option>
+<option class="p999" value="999-M">Ｍサイズ</option>
+<option class="p999" value="999-L">Ｌサイズ</option>
+<option class="p999" value="999-LL">ＬＬサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51058501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51058501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="コートダジュールの彩り＜ジュンヌ・ド・ブルー＞高級シルク100％ 絣糸のフード付きカーディガン" height="300" src="/image/goods/51058_01.jpg" width="580"/></p>
+<p class="intro">
+		鮮やかな南仏コートダジュールの海や空をうつした<ruby><rb>碧</rb><rp>（</rp><rt>あお</rt><rp>）</rp></ruby>の美しさ。<br/>
+		ナチュラル素材、シルク100％の爽やかで優しい肌触り…。<br/>
+		羽織った瞬間に装いが若々しく輝く<br/>
+		パリのエスプリを込めたスポーティミックスなフード付き。<br/>
+		紺、水色、青、緑、紫…涼やかな5色の絣糸が織りなす<br/>
+		透かし編みのボーダーに羨望の視線が集まって。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>フランスの著名デザイナーによるオリジナル</li>
+<li class="stt"><span class="sq01">■</span>5色に染め分けられた高級シルク100％の絣糸を贅沢に使用</li>
+<li class="stt"><span class="sq01">■</span>涼やかなボーダー柄の透かし編み</li>
+<li class="stt"><span class="sq01">■</span>華やかでエレガントな絣糸の遊色感</li>
+<li class="stt"><span class="sq01">■</span>腰回りを隠せる絶妙な丈</li>
+<li class="stt"><span class="sq01">■</span>軽やか約300グラム</li>
+</ul>
+<p class="center-img"><img alt="どの角度も美しい絶妙な丈とシルエット。フランス流のスポーティミックス" height="420" src="/image/goods/51058_02.jpg" width="580"/></p>
+<p>
+		若々しい碧（ジュンヌ・ド・ブルー）──。それは、眩い陽光が降り注ぐ南仏（コードダジュール）の印象的な彩り。はっとするほど美しい碧のボーダーが装いを引き立てる、クチュール感覚の逸品です。紺、水色、青、緑、紫の5色に染め上げたナチュラル素材シルク100％の絣糸で贅沢に編み上げた若々しいフード付きカーディガン、コートダジュールの彩り＜ジュンヌ・ド・ブルー＞。フランスの著名デザイナー、イヴリーヌ・ポノー氏の美意識と日本の伝統への深い造詣が生み出した大変贅沢な一着です。
+	</p>
+<p class="center-img"><img alt="フランス人デザイナーが魅せられた、美しい日本の伝統技 絣糸：絣糸は「段染め糸」とも呼ばれ、前もって2色以上の色に染め分けられた糸のこと。１本の糸の中にいろいろな色が存在するため、編み上がりの表情は奥深くバリエーションに富み、後染めでは出すことのできない魅力にあふれます。本作品に使用されたのは清涼感ある紺、水色、青、緑、紫の5色。紺碧の海岸やあふれんばかりの陽光、木漏れ日にそよぐ風など、南仏の風景が虹を想わせる遊色効果とともに表現されました。／かぎ針編みとガーター編みを交互に組み合わせた、フランス流の透けるボーダー。／涼やかな5色が織りなす絣糸ならではの遊色効果が、装いに特別なお洒落感を添えて。" height="410" src="/image/goods/51058_03.jpg" width="580"/></p>
+<h2>若々しい輝き。スポーティミックスなフード付き<br/>
+	シルク100％の心地よい透け感とともに</h2>
+<p>
+		いつもの装いに重ねているだけなのに、新鮮なエレガンスが薫り立つ。その秘密はシルク100％の上質な風合いと、奥深い碧をたたえる絣糸のリッチなボーダー編み。かぎ針編みとガーター編みを組み合わせた程よい透け感と、ネック回りをすっきり見せるフードのスポーティ感が表情を若々しく輝かせ、ワンランク上の着こなしが完成します。風を心地よく通す涼やかな着心地に、気になる腰回りをすっきりとカバーする絶妙な丈は薄着が多くなるこれからの季節に重宝すること請け合い。袖を通せばお顔に映える碧の色合いも印象的に、心は煌めきの地中海に運ばれて…。
+	</p>
+<p class="center-img"><img alt="涼やかに、南欧の風を感じて…。5色の絣糸で編み上げたボーダーでお洒落な初夏の演出を／お顔周りに若々しさを添えるフード使い。かぶればネックの日焼け対策にも。／編み方を変えた前立てに貝殻風の光沢が美しいボタンが映えて。／両サイドにはポケット付き。" height="620" src="/image/goods/51058_04.jpg" width="580"/></p>
+<h2>どんなシーンも絵になる華やぎとシルエット</h2>
+<p>
+		ちょっとした外出から、お茶会、観劇、そして肌寒い室内のエアコン対策にも活躍。高級シルク100％コートダジュールの彩り＜ジュンヌ・ド・ブルー＞絣糸のフード付きカーディガンは、Ｉ・Ｅ・Ｉ社の特別企画商品で、高級な5色染めシルク絣糸を使用しています。さあ、いますぐお申し込みになり、お友達に差をつける着こなしをお楽しみください。
+	</p>
+<div class="box1">
+<div class="box-text">
+<h3>イヴリーヌ・ポノー</h3>
+<p class="flt-r"><img alt="イヴリーヌ・ポノー近影" height="150" src="/image/goods/51058_05.jpg" width="125"/></p>
+<p>
+				ルーブル美術学院卒。ニナリッチ、ジバンシィなどの著名ブランドでデザインを手がけ、注目を浴びる。その後独立し、パリでブティックを経営。女性らしい柔らかなラインを強調するデザインは、世界で多くの人の支持を得ている。
+			</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

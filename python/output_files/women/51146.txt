@@ -1,0 +1,139 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>＜アンデスのぬくもりアラベスクの抱擁＞五泉ニット絣糸編みの襟付きカーディガン</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51146501" target="_self"><img alt="＜アンデスのぬくもりアラベスクの抱擁＞五泉ニット絣糸編みの襟付きカーディガン" src="/image/goods/51146_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：柄部分=ペルー産ベビーアルパカ62％、アクリル32％、ナイロン6％、無地部分=ペルー産ベビーアルパカ100％<br/>
+●日本製<br/>
+※絣糸の特性上、色の出方が写真と異なる場合があります。<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="153" src="/image/goods/51146_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>＜アンデスのぬくもりアラベスクの抱擁＞五泉ニット絣糸編みの襟付きカーディガン</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,980円（税込5,478円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>29,800円（税込32,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51146501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51146"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Ｓサイズ</option>
+<option class="p999" value="999-M">Ｍサイズ</option>
+<option class="p999" value="999-L">Ｌサイズ</option>
+<option class="p999" value="999-LL">ＬＬサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51146501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51146501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="本場高級ベビーアルパカ使用　アンデスのぬくもり＜アラベスクの抱擁＞五泉ニット 絣糸（かすりいと）編みの襟付きカーディガン" height="530" src="/image/goods/51146_01.jpg" width="580"/></p>
+<p class="intro">
+		ぬくもりの極み、希少な本場ペルー産ベビーアルパカを<br/>
+		世界が称賛する「五泉ニット」の華やぎで…。<br/>
+<br/>
+		青、紫、緑、黄、深紫──。<br/>
+		凛と気品漂う<ruby><rb>黒</rb><rp>（</rp><rt>ノワール</rt><rp>）</rp></ruby>に、鮮やかに浮かび上がるのは<br/>
+		5色の絣糸で繊細に編み上げたモダンなアラベスク模様。<br/>
+		着る人の表情を、はっとするほど美しく。<br/>
+		麗しき色彩や豊かな風合いに、日本の技と美意識が宿ります。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>ペルー産高級ベビーアルパカを贅沢に使用</li>
+<li class="stt"><span class="sq01">■</span>世界が称賛する熟練職人の技と感性 「本場・五泉ニット」</li>
+<li class="stt"><span class="sq01">■</span>優れた保温性と抜群の耐久性</li>
+<li class="stt"><span class="sq01">■</span>宝石さながらの華やぎを演出する絣糸編み</li>
+<li class="stt"><span class="sq01">■</span>気になる腰回りをカバーする絶妙な丈</li>
+<li class="stt"><span class="sq01">■</span>きちんと感のあるスタンドにもなる小さめな襟付き</li>
+<li class="stt"><span class="sq01">■</span>ゆったり着こなせるサイドスリット入り</li>
+<li class="stt"><span class="sq01">■</span>日本の匠を着る服「一期一衣」のオリジナル</li>
+</ul>
+<p class="center-img"><img alt="ボタンを留めれば、繊細に編み上げられた前立てがいっそう優雅な印象を添えて。" height="470" src="/image/goods/51146_02.jpg" width="580"/></p>
+<p>
+		それはモダンな華やぎ──。一度身に着ければ忘れられない、ぬくもりと心地よさを世界が絶賛する高級獣毛「アルパカ」。その全収穫量の中でわずか約10％しか採れない極細毛「ベビーアルパカ」を贅沢に使用した逸品が発表されました。ニットを知りつくした新潟県「五泉ニット」の熟練職人が、5色に染め分けた絣糸を用い編み上げた＜アンデスのぬくもり アラベスクの抱擁＞。ヨーロッパ伝統の模様「アラベスク」も印象的な、美しくも気品漂うクチュールカーディガンです。
+	</p>
+<p class="center-img"><img alt="誰もが振り向くモダンなアラベスク模様のあでやかな気品。寒い日々を特別なものにする、美しくもあたたかな一着。／ふんわり軽やか約390グラム／お顔周りを凛と引き立てる襟付き。襟を立てれば首回りあたたかなスタンドカラーに。／裾のシルエットを美しく見せるサイドスリット入り。心地よいゆったり感も魅力です。／広めの袖口がふんわりフェミニンなシルエットを作る、流行のドルマンスリーブ。気になる二の腕をすっきりとカバーしてスリムな上半身に見せてくれます。" height="750" src="/image/goods/51146_03.jpg" width="580"/></p>
+<h2>極上のぬくもりに包まれて…<br/>
+	あなたを表舞台に誘う、羨望のベビーアルパカ</h2>
+<p>
+		お出かけ前にふわりと羽織れば、別格のぬくもりとエレガンスに包まれて、それはまさに、アラベスクの抱擁…。「永遠」「生命力」を表し、ヨーロッパで「アール・ヌーヴォー」という一大ブームを巻き起こした繊細華麗な唐草模様のアラベスクが、貴重なベビーアルパカを用いた漆黒に鮮やかに浮かび上がり、五泉ニットならではの高級感とモダンな気品を醸し出します。さらに身頃から袖へ、そして前立てや裾へと広がるかのような模様とともに、ゆったりとしたドルマンスリーブやAラインが気になる二の腕や腰回りをすっきりとカバー。ベビーアルパカと絣糸というこの上なくリッチな取り合わせが、着る人の品格をランクアップするとともに、ラグジュアリーな美を豊かに薫り立たせるのです。<br/>
+		一枚で、冬のお洒落と温かさを劇的に変える、＜アンデスのぬくもりアラベスクの抱擁＞五泉ニット絣糸編みの襟付きカーディガンは、I・E・I社の特別企画商品です。この好機にどうぞご入手いただき、寒い季節ならではの贅沢な着こなしをお楽しみください。
+	</p>
+<div class="box1">
+<div class="box-text">
+<h3>収穫は２年に１回<br/>
+				しかも10％しか採れない、超希少なペルー産ベビーアルパカ</h3>
+<div>
+<p class="flt-r"><img alt="アンデスのアルパカ" height="135" src="/image/goods/51146_04.jpg" width="135"/></p>
+<p>
+					アンデス高原（海抜4,000～5,000メートル）に生息するラクダ科の動物アルパカ。1日の気温差が約30度にも達する過酷な自然環境から身を守るため、その体毛は限りなく細く、しなやかに進化を遂げ、保温性にも優れています。本作品はその中でもわずか約10％の収穫量である極細0.023ミリ以下のベビーアルパカを贅沢に使用した逸品です。<br/>
+<br/>
+<span style="font-weight:bold"><span style="color:#a0506c">●</span>体温調節が容易</span><br/>
+					　繊維が細く空気を多く含むため着心地爽やかで、適度な保温性です。<br/>
+<span style="font-weight:bold"><span style="color:#a0506c">●</span>柔らかな感触</span><br/>
+					　0.023ミリ以下の超極細の毛質なので、手触りが柔らかくなめらかです。<br/>
+<span style="font-weight:bold"><span style="color:#a0506c">●</span>軽い着心地</span><br/>
+					　繊維自体に微細な空洞があるため、ウールに比べて軽量です。<br/>
+<span style="font-weight:bold"><span style="color:#a0506c">●</span>抜群の耐久性</span><br/>
+					　繊維が細くしなやかなため、毛玉ができにくくウールより丈夫です。<br/>
+<span style="font-weight:bold"><span style="color:#a0506c">●</span>美しい質感</span><br/>
+					　天然ならではの落ち着いた光沢に高級感が漂います。<br/>
+</p>
+</div>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3>熟練職人が編み上げるニットの最高峰「本場・五泉ニット」<br/>
+				ふんわりした優しい肌触りの「袋ジャカード編み」</h3>
+<p class="flt-r"><img alt="五泉ニットの絣糸" height="150" src="/image/goods/51146_05.jpg" width="150"/></p>
+<p>日本が誇るニットの本場、新潟県五泉市。類い稀な技と感性で編み・仕立てるこの地のニットは国内外の錚々たるブランドの作品にも採用され、その揺るぎないクオリティは世界的な信頼を得ています。本作品は上質な本場ベビーアルパカを惜しみなく用い、5色使いの絣糸とベビーアルパカ糸を反転させて編む高度な「袋ジャカード編み」により、細やかなアラベスク模様をふんわり鮮やかに表現。豊かな風合いにジャパンメイドの誇りが息づいています。</p>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="一期一衣バナー" height="46" src="/image/goods/51146_06.jpg" width="130"/>　一期一衣</h3>
+<div>
+<span style="font-size: 1.2em; font-weight:bold;">世界が絶賛する華やぎの「ジャパンメイド」</span><br/>
+				日本のモノづくりが培った高度な技術・和の伝統素材を、現代のスタイルで着こなす高級オリジナルブランド。日本の美意識に貫かれた新鮮なデザインと匠の技が、華のある存在感を演出します。素材選びから染め・織り・縫製にいたるまで、妥協を許さぬ信頼のジャパンクオリティでお届けします。
+			</div>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

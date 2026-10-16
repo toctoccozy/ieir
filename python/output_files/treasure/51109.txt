@@ -1,0 +1,143 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I アートギャラリー</p>
+<h1>2023年 干支記念貨幣　吉祥月うさぎ</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51109506" target="_self"><img alt="2023年 干支記念貨幣　吉祥月うさぎ" src="/image/goods/51109_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>【金貨】<br/>
+額面100ドル＊／品位.9999金／縦約48×横約29ミリ／1/2オンス（約15.5グラム）／限定500点発行<br/>
+<br/>
+【銀貨】<br/>
+額面20ドル＊／品位.999銀／縦約98×横約60ミリ／3オンス（約93.3グラム）／限定950点発行<br/>
+<br/>
+鋳造：マイヤーズ造幣所（ドイツ）<br/>
+＊いずれもクックアイランド・ドル<br/>
+<br/>
+【ケース仕様】<br/>
+●材質：木、ポリウレタン、レーヨン、鉄<br/>
+●サイズ（約）：閉じた状態で縦13.5×横9.7×厚さ4cm<br/>
+●日本製</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>2023年 干支記念貨幣　吉祥月うさぎ【金貨】</h3>
+<div class="price_area">
+                
+
+
+                        
+                          
+                        
+
+
+                        
+                          
+                            月々 <span>23,800円（税込26,180円）×30回払い</span><br/>
+                          
+                          
+                            一括価格 <span>599,800円（税込659,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart1">
+<input name="item_no" type="hidden" value="51109506"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51109"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart1(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51109506');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51109506');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<div class="cart_area">
+<h3>2023年 干支記念貨幣　吉祥月うさぎ【銀貨】</h3>
+<div class="price_area">
+                
+
+
+                        
+                          
+                        
+
+
+                        
+                          
+                            月々 <span>8,800円（税込9,680円）×12回払い</span><br/>
+                          
+                          
+                            一括価格 <span>99,800円（税込109,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart2">
+<input name="item_no" type="hidden" value="51109504"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51109"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart2(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51109504');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51109504');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="2023年 干支記念貨幣　吉祥月うさぎ" height="230" src="/image/goods/51109_01.jpg" width="580"/></p>
+<p class="intro">
+		富の象徴、金銀小判のめでたさに、繁栄と生命力に満ちた「月うさぎ」の意匠──。<br/>
+		飛躍の年「卯」にさらなる運気を呼ぶ、限定発行の法定貨幣。<br/>
+<br/>
+		最高品位.9999の純金と.999の純銀の貨面に浮かぶ<br/>
+		運気満ちる満月を背に、豊穣の跳ねうさぎと子孫繁栄の親子うさぎ。<br/>
+		12年に一度の繁茂の幕開けを慶ぶにふさわしい大変希少な小判型貨幣です。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>最高品位.9999の純金と最高品位.999の純銀製</li>
+<li class="stt"><span class="sq01">■</span>珍しい小判形の記念貨幣</li>
+<li class="stt"><span class="sq01">■</span>完全未使用</li>
+<li class="stt"><span class="sq01">■</span>精緻なレリーフで表現された干支のうさぎと吉祥の意匠</li>
+<li class="stt"><span class="sq01">■</span>コインの発行証明書が付属</li>
+<li class="stt"><span class="sq01">■</span>金貨500点、銀貨950点の限定版</li>
+<li class="stt"><span class="sq01">■</span>千両箱をイメージした特製ケース</li>
+</ul>
+<h2>2023年「<ruby><rb>癸卯</rb><rp>（</rp><rt>みずのとう</rt><rp>）</rp></ruby>」は類い稀なる運気上昇年</h2>
+<p>
+		古代中国に発祥した「干支」は、天体の運行や大自然のリズムに沿って、幸多き豊かな日々を営むための東洋の叡智。12年で一巡する十二支として日本でも暮らしに深く根付き、人々に親しまれています。そして2023年は飛躍を表す「卯」の年にして、十干は萌え出づる直前を表す「癸」であることから、これまで積み上げてきた努力や蓄積が大きく花開く年回りとして期待が高まっています。<br/>
+		そんなめでたき「癸卯」の年によせて、さらなる吉祥を呼ぶ限定版のコインが発行の運びとなりました。最高品位の純金および純銀で鋳造された富貴な小判形に長寿と繁栄のシンボル「月うさぎ」が浮かび上がる干支記念貨幣＜吉祥月うさぎ＞。華麗な意匠で名高い英連邦クック諸島政府から公式に発行される、真正な法定貨幣のご案内です。
+	</p>
+<p class="center-img"><img alt="合わせてお求めいただくと、所蔵価値がいちだんと高まります／①金貨：額面100クックアイランド・ドル、品位.9999金、縦約48×横約29ミリ、1／2オンス（約15.5グラム）、限定500点発行／②銀貨：額面20クックアイランド・ドル、品位.999銀、縦約98×横約60ミリ、3オンス（約93.3グラム）、限定950点発行／金貨・銀貨とも表面には英連邦の元首エリザベス2世（発行当時）の肖像が刻まれています。" height="450" src="/image/goods/51109_02.jpg" width="580"/></p>
+<h2>めでたさにめでたさが重なる、月うさぎと富貴な小判</h2>
+<p>
+		眺める心も晴れやかに、空間を明るい気韻で満たす福々しくも格調高い金銀小判──。その艶やかな貨面には、大願成就の満月を背に運気も生命力も跳ね上げる吉祥のうさぎが精緻な凹凸（レリーフ）で見事に表現されました。金貨は松竹梅もめでたき招福扇面を背景に、前途洋々たる未来へと力強く飛翔する若うさぎの姿。そして銀貨は清明なる月明かりを全身に浴び、活き活きと子を育む母うさぎが春の訪れを告げる梅花とともに浮かび上がります。<br/>
+		さらに貨面には、江戸時代の小判同様に茣蓙目（ござめ）横線が刻まれ、幕府お墨付きの証であった五三桐や、卯年の守護本尊を表す梵字も刻印され、コレクター魂をくすぐります。コインのもう一方の面には、鶴が翔け、富士がそびえ、めでたさはいっそう高まるばかり。その中央には英連邦の一員たるクック諸島の法定貨幣の証として、元首エリザベス女王（発行当時）の公式肖像が刻印されました。
+	</p>
+<p class="center-img"><img alt="千両箱さながらの特製ケースに収めてお届け。金銀小判の趣をいっそう高めます。" height="435" src="/image/goods/51109_03.jpg" width="570"/></p>
+<h2>確かな価値を有する純金・純銀製の法定貨幣</h2>
+<p>2023年 干支記念貨幣＜吉祥月うさぎ＞は、最高水準の鋳造技術で打刻された完全未使用のコインで、発行数は金貨500点のみ、銀貨950点のみと高い希少性を誇ります。2023年を、幸多く実り豊かな一年となさるためにも、どうぞこの機会にお申し込みください。</p>
+<p class="center-img"><img alt="①金貨：限定500点発行、②銀貨：限定950点発行" height="360" src="/image/goods/51109_04.jpg" width="540"/></p>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="クック諸島　国章" height="52" src="/image/goods/51109_05.jpg" width="45"/>　英連邦クック諸島</h3>
+<p>ニュージーランドと自由連合関係にある英連邦の独立主権国家。南太平洋にある15の島から成り、総面積は約240平方キロメートル。1770年代にこの島々を発見した英国の探検家、キャプテン・ジェームズ・クックの名にちなみ、クック諸島と名づけられた。</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

@@ -1,0 +1,115 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>＜ラ・フェミニーヌ＞スリムに見えるピンタック入りAラインワンピース</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51649501" target="_self"><img alt="＜ラ・フェミニーヌ＞スリムに見えるピンタック入りAラインワンピース" src="/image/goods/51649_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：ポリエステル96％、ポリウレタン4％、ボタン＝ シェル<br/>
+●日本製<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="153" src="/image/goods/51649_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>＜ラ・フェミニーヌ＞スリムに見えるピンタック入りAラインワンピース</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,980円（税込5,478円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>29,800円（税込32,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51649501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51649"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Ｓサイズ</option>
+<option class="p999" value="999-M">Ｍサイズ</option>
+<option class="p999" value="999-L">Ｌサイズ</option>
+<option class="p999" value="999-LL">ＬＬサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51649501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51649501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="着るだけでエレガント＜ラ・フェミニーヌ＞スリムに見えるピンタック入りAラインワンピース　監修：ナディーヌ・ビュタン" height="300" src="/image/goods/51649_01.jpg" width="580"/></p>
+<p class="intro">
+<span style="font-size:1.25em;">
+			「あの人素敵ね…」と視線を誘う<br/>
+			ピンタックとAラインの洗練<br/>
+<br/>
+			パリの人気デザイナー、ナディーヌ・ビュタンより──。<br/>
+			大人のエレガンスをかなえるワンランク上のワンピース。<br/>
+			モダンで洗練されたチャコールグレーとストレッチ生地に<br/>
+			ゆったりと包まれて、どんな角度からもスリムなスタイルが完成。<br/>
+			繊細なピンタックがシックな女性らしさを主張して…。<br/>
+<br/>
+<span style="text-decoration: underline;">ご家庭でお洗濯できます</span>
+</span>
+</p>
+<p class="center-img"><img alt="360度どの角度からも美しく、計算されたシルエット" height="490" src="/image/goods/51649_02.jpg" width="580"/></p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>フランスの著名デザイナー、ナディーヌ・ビュタン監修</li>
+<li class="stt"><span class="sq01">■</span>高級感漂うウール調の新素材を使用</li>
+<li class="stt"><span class="sq01">■</span>大人のきちんと感を演出する前立てのピンタック</li>
+<li class="stt"><span class="sq01">■</span>モダンで洗練されたチャコールグレーカラー</li>
+<li class="stt"><span class="sq01">■</span>動きやすく落ち感の美しいストレッチ素材</li>
+<li class="stt"><span class="sq01">■</span>SからLLまでの豊富なサイズ</li>
+</ul>
+<p>
+		優美な「大人のきちんと感」に自然と羨望が集まる──。パリの上質なセンスを想わせる、ワンランク上の一着がフランスの人気デザイナー、マダム・ナディーヌ監修により誕生しました。映画や舞台の衣装デザインで培った「装う人を美しく演出する」感性で選び抜いた生地は、上質感が漂うウール調の新素材。霜降りのような自然なチャコールグレーにストレッチを加えた柔らかな落ち感が、豊かに流れるドレープを作るワンピースのご案内です。
+	</p>
+<p class="center-img"><img alt="1、気になる首周りを程よくカバーする襟。スタンドカラーでもシャツカラーでもおしゃれが決まります。2、さりげない華やぎを添えるピンタックを前立て部分にプラス。縦のラインを強調することで、いっそうスリムに見えて。3、両サイドには便利なポケット付き。ギャザーをあしらった二つボタンの袖口がドレスのような印象。4、美しいシルエットを作りながらも着心地ゆったりのストレッチ素材。" height="1200" src="/image/goods/51649_03.jpg" width="580"/></p>
+<h2>モダンなチャコールグレーに繊細なディテール<br/>
+	エレガンスが花開く、フランス流の装い</h2>
+<p>
+		どんな角度から見られても「きれい」に自信。そんな願いを叶えるのが、マダム・ナディーヌが得意とする計算されたAラインです。心地よい肌触りとゆったりとした伸縮性に優しく包まれながらも、気になる腰回りがカバーされスリムなシルエットが完成。さらに、華やかな印象をプラスする繊細なピンタックが洗練された女性らしさを主張。日本の熟練職人による丹念な仕立ても素晴らしく、遠目からも美しい存在感が輝くのです。
+	</p>
+<p class="center-img"><img alt="ボタンをはずしてコート風に。お手持ちの服に重ねれば、多彩な印象を楽しめます" height="625" src="/image/goods/51649_04.jpg" width="500"/></p>
+<p>
+		＜ラ・フェミニーヌ＞スリムに見えるピンタック入りAラインワンピースはI・E・I社の特別企画商品です。ホテルなどのあらたまった場所やお友達とのお食事会に──。おしゃれな気品とスタイルアップ効果にときめく一着を、この好機にどうぞお求めください。
+	</p>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="ナディーヌ・ビュタン ロゴ" height="20" src="/image/goods/51649_05.jpg" width="271"/>　ナディーヌ・ビュタン</h3>
+<p class="flt-r"><img alt="ナディーヌ・ビュタン近影" height="167" src="/image/goods/51649_06.jpg" width="125"/></p>
+<p>
+				フランスを代表する衣装デザイナー。映画、演劇、テレビドラマのコスチューム・デザインを数多く手がけ、アルチョム・ミハイロフ・ダンスカンパニーの舞台衣装で、世界的に高い評価を確立。鬼才ジャン・リュック・ゴダールの映画の衣装スタイリストとしても活躍。また体の不自由な人のためのファッション・デザインなどにも積極的に取り組んでいる。
+			</p>
+<p class="center-img">
+<img alt="「大人の美しさ」へとエスコートする魔法の一着でお出かけしましょう。ナディーヌ・ビュタン" height="240" src="/image/goods/51649_07.jpg" width="360"/>
+</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

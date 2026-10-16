@@ -1,0 +1,134 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>本場チベット産高級ヤク100%　手編みニットカーディガン＜セゾン ド ヴァイオレット＞</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=50474501" target="_self"><img alt="本場チベット産高級ヤク100%　手編みニットカーディガン＜セゾン ド ヴァイオレット＞" src="/image/goods/50474_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●素材：表地＝ヤク100％（青海省産）、ボタン＝樹脂（黒蝶貝調）<br>
+●中国製<br>
+<br>
+<p class="center-img"><img alt="サイズ表" height="“153”" src="/image/goods/50474_size.jpg" width="“295”"/></p>
+
+※チベット産天然素材のヤクを用いて一点一点手編みされるため、色調やサイズなどが多少異なる場合がございます。</br></br></br></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>本場チベット産高級ヤク100%　手編みニットカーディガン＜セゾン ド ヴァイオレット＞</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>5,800円（税込6,380円）×7回払い</span><br/>
+                          
+                          
+                            一括価格 <span>39,800円（税込43,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="50474501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50474"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Ｓサイズ</option>
+<option class="p999" value="999-M">Ｍサイズ（品切れ中）</option>
+<option class="p999" value="999-L">Ｌサイズ（品切れ中）</option>
+<option class="p999" value="999-LL">ＬＬサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('50474501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50474501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="「セゾン ド ヴァイオレット」タイトル" height="“490”" src="/image/goods/50474_01.jpg" width="580"/></p>
+<p class="intro">
+		ヒマラヤ山脈が育んだ高級獣毛の頂点“ヤク” 100％を用い<br>
+		熟練の編み手が一点一点、真心込めて手編み…。<br>
+		極上の温もりと肌触りが魅力のお洒落な高級カーディガン。<br>
+<br>
+		ニュアンス薫りたつパープル、モカ、ネイビー。<br/>
+		麗しい染め糸同士が引き立て合う紫のケーブル文様と<br/>
+		ハンドメイドならではの風合いあふれるボリューム感が<br/>
+		誰にも似ていない、あなただけのエレガンスを演出。<br/>
+		さらに気になる腰回りを美しくカバーする絶妙な丈と<br/>
+		わずか480グラムという軽さが、お出掛けをもっと美しく、いきいきと。<br/>
+		フランスの一流デザイナー、イヴリーヌ・ポノーがおくる<br/>
+		他では手に入らない逸品です。
+	</br></br></br></br></p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>本場チベット産の高級ヤク100％</li>
+<li class="stt"><span class="sq01">■</span>フランスの著名デザイナーによるオリジナル作品</li>
+<li class="stt"><span class="sq01">■</span>一点一点手編み</li>
+<li class="stt"><span class="sq01">■</span>優れた保温性</li>
+<li class="stt"><span class="sq01">■</span>柔らかな感触でたいへん丈夫</li>
+<li class="stt"><span class="sq01">■</span>パリのエスプリ薫る高貴な紫色</li>
+<li class="stt"><span class="sq01">■</span>気になる腰周りをすっきりカバーする絶妙な丈</li>
+<li class="stt"><span class="sq01">■</span>S〜LLまでの豊富なサイズ</li>
+</ul>
+<p>
+		豊かなボリューム感と柔らかな肌触り、そして極上の温もり…。手放せなくなるほど心地よく、それでいて優雅な高級感が薫り立つ逸品が、フランスの著名デザイナー、イヴリーヌ・ポノー氏から発表されました。海抜4,000〜6,000メートルの山々を擁するチベット高原に育まれた希少なヤクの毛100％を使用し、一点一点心を込めて手編みされた、たいへんラグジュアリーな高級カーディガン＜セゾン ド ヴァイオレット＞。お顏が華やぐ高貴な紫とともに冬のあなたを洗練へと導く、素晴らしい一着のご案内です。
+	</p>
+<p class="center-img">
+<img alt="遠目からも際立つ美しいヴァイオレット。近づけば手編みならではの風合いに魅了されて…。" height="“300”" src="/image/goods/50474_02.jpg" width="244"/>　
+		<img alt="後ろ姿も美しく…3色の染め糸がおりなす洗練の紫" height="“300”" src="/image/goods/50474_03.jpg" width="242"/>
+</p>
+<h2>一頭のヤクからとれる毛は、わずか100グラム<br/>
+		最も柔らかく細い極上毛のみを紡ぎ、手編みしています</h2>
+<p>
+		カシミヤをも凌ぐ極上のぬくもりを、美しくも粋な手編みで──。イヴリーヌ・ポノーがこだわったのは、流通量の少なさゆえにファッション通の間でひそかに楽しまれていた高級毛「チベット産天然ヤク」。極寒のヒマラヤ山脈に育まれたその毛質は非常に長く柔らかく、あらゆる毛のなかでもトップクラスの保温性。世界的にも確保が困難なこの希少素材が、一切交ざり物のない100％という贅沢さで使用されたのです。さらにニュアンスあふれるパープル、モカ、ネイビーの染め糸を取り合わせ、熟練の編み手が一点一点真心を込めて手編み。機械編みでは表現できないハンドメイドならではの風合いとナチュラルなボリューム感が、ヤク毛のたとえようもない美しさを際立たせます。しっとりと滑らかな肌触りとパリのエスプリ薫るヴァイオレットは周囲に差をつけ、細やかなケーブル編みとともに着る人の品格をこの上なく高めてくれるに違いありません。きっと様々なシーンで、誰にも似ていないお洒落なあなたを印象付けてくれることでしょう。<br/>
+		本場チベット産 高級ヤク100％使用 たいへん贅沢な手編みでおくる高級カーディガン＜セゾン ド ヴァイオレット＞は、I・E・I社を通じてのみお求めになれる特別な作品です。何ものにも代えがたいぬくもりとともに、あなたの美しさと品格を優雅に演出する本作品を、この機会にぜひお求めください。
+	</p>
+<p class="center-img"><img alt="心を込めた手編みで綴る、パリのエレガンス" height="“524”" src="/image/goods/50474_04.jpg" width="540"/></p>
+<div class="box1">
+<div class="box-text">
+<h3>チベット産ヤク 温かさの秘密</h3>
+<p>ヤクはチベット高原（海抜3,000メートル以上）に生息するウシ科の動物。マイナス30度にも達することがある過酷な自然環境から身を守るため、その体毛は非常に長く柔らかく、軽やかです。本作品は世界的なトップブランドからも注目される、この希少な高級天然繊維を丹念な手編みでおくる逸品です。</p>
+<p>
+<strong>●優れた保温性</strong><br/>
+				　「雪原に浮かぶ船」と言われる標高3,000メートル以上のチベット高原を生き抜くため、高い保温性を誇ります。<br/>
+<strong>●柔らかな感触</strong><br/>
+				　身体を覆う毛の下に密生しているわずかな産毛を手で梳いて採るため、しっとりと滑らかな手触りです。<br/>
+<strong>●希少性</strong><br/>
+				　最終的に使用できる原毛は1頭からわずか100グラムほどしか採れず大変希少です。<br/>
+<strong>●抜群の耐久性</strong><br/>
+				　身体の表面の毛は遊牧民のテントやロープに使われるほど堅牢。その内側の産毛も丈夫さを兼ね備えています。<br/>
+<strong>●美しい質感</strong><br/>
+				　脱色をしない天然ならではの落ち着いた風合いに高級感が漂います。
+			</p>
+<p class="center-img"><img alt="チベットのヤク" height="“150”" src="/image/goods/50474_05.jpg" width="250"/></p>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="イヴリーヌ・ポノー ロゴ" height="61" src="/image/goods/50474_06.jpg" width="70"/>　イヴリーヌ・ポノー</h3>
+<p class="flt-r"><img alt="イヴリーヌ・ポノー肖像" height="150" src="/image/goods/50474_07.jpg" width="125"/></p>
+<p>ルーブル美術学院卒。ニナリッチ、ジバンシィなどの著名ブランドでデザインを手がけ、注目を浴びる。その後独立し、パリでブティックを経営。女性らしい柔らかなラインを強調するデザインは、世界で多くの人の支持を得ている。<br/>
+<img alt="イヴリーヌ・ポノー サイン" height="52" src="/image/goods/50474_08.jpg" width="150"/></p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

@@ -86,6 +86,9 @@ def main():
             line = line.strip()
             if not line:
                 continue
+            # 【作業済み】などの行から下は処理しない（記録用）
+            if line.startswith("【"):
+                break
             header = re.fullmatch(r"\[(.+)\]", line)
             if header:
                 category = header.group(1).strip()

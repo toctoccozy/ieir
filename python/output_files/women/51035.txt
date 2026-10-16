@@ -1,0 +1,113 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>ノワール エ カメリア　あったかビッグボールダウンの軽やか高級リバーシブルコート</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51035501" target="_self"><img alt="ノワール エ カメリア　あったかビッグボールダウンの軽やか高級リバーシブルコート" src="/image/goods/51035_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：表・裏地＝ポリエステル100％　中綿＝ビッグボールダウン95％、フェザー5％　ファスナー＝亜鉛合金（YKK）<br/>
+●中国製<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="153" src="/image/goods/51035_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>ノワール エ カメリア　あったかビッグボールダウンの軽やか高級リバーシブルコート</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>6,500円（税込7,150円）×8回払い</span><br/>
+                          
+                          
+                            一括価格 <span>49,800円（税込54,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51035501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51035"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Sサイズ</option>
+<option class="p999" value="999-M">Mサイズ</option>
+<option class="p999" value="999-L">Lサイズ</option>
+<option class="p999" value="999-LL">LLサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51035501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51035501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="ノワール エ カメリア　あったかビッグボールダウンの軽やか高級リバーシブルコート　デザイン：イヴリーヌ・ポノー" height="315" src="/image/goods/51035_01.jpg" width="580"/></p>
+<p class="intro">
+<span style="font-size:1.25em;">冬の装いをひときわ輝かせる、華やぎのカメリア面と<br/>
+		凛とした知性が薫り立つクールな<ruby><rb>ノワール</rb><rp>（</rp><rt>ブラック</rt><rp>）</rp></ruby>面。</span><br/>
+<br/>
+		パリのセンスとこだわりを込めた、ふたつの表情がうれしい<br/>
+		クチュール感覚のリバーシブルコート。<br/>
+		わずか800グラムという軽やかさと、厚みを抑えた美しいシルエットでありながら<br/>
+		羽織った瞬間にふんわり身体を包み込む、極上の温もり…。<br/>
+		その秘密は高品質な「ビッグボールダウン」を惜しみなく使用しているから。<br/>
+		シルキータッチの優しい手触りとともに<br/>
+		どんな寒い日も笑顔が花開く、エレガントな一着です。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>フランスの著名デザイナーによるオリジナル</li>
+<li class="stt"><span class="sq01">■</span>かさばらず温かい高品質なビッグボールダウン95％</li>
+<li class="stt"><span class="sq01">■</span>華やかなカメリア面と知的なノワール（ブラック）面のお洒落なリバーシブル</li>
+<li class="stt"><span class="sq01">■</span>上品な光沢感のあるシルキータッチ生地を使用</li>
+<li class="stt"><span class="sq01">■</span>腰回りをすっきりカバーするAラインのシルエット</li>
+<li class="stt"><span class="sq01">■</span>動きやすいダブルファスナー仕様</li>
+</ul>
+<p class="center-img"><img alt="襟元のロイヤルブルーが効いた知的なノワール（ブラック）面で颯爽と／艶やかなロイヤルブルーに咲くカメリアに包まれて、誰よりも気品溢れるパリの装いが完成" height="420" src="/image/goods/51035_02.jpg" width="580"/></p>
+<p>
+		至福のぬくもりはもちろん、軽く、かさばらず、リッチなエレガンス…。全ての女性が待ち望む、パーフェクトなダウンコートが、フランス屈指のデザイナー、イヴリーヌ・ポノーより発表されました。美しいロイヤルブルーに咲き誇るカメリアとシックな黒──2つの顔を楽しめる一枚二役のリバーシブルに、別格の温もりがうれしい高品質ビッグボールダウンを95％も使用したクチュール感覚の逸品＜ノワール エ カメリア＞。体型をほっそり見せてくれるロング丈のＡラインとともに、新しい冬のお洒落を教えてくれる、優雅にして贅沢な一着です。
+	</p>
+<p class="center-img"><img alt="軽やかさはそのままに、ぬくもりをグレードアップ。ビッグボールダウン：ダウンとは水鳥の胸のあたりに生えているボール状の綿毛のことですが、ビッグボールダウンはその名の通り、ひとつひとつの綿毛の球が通常よりはるかに大きく、一本一本の毛（羽枝）が長いため、少量でもあたたかく、軽いのが特徴。ダウンジャケット特有のモコモコ感を抑え、すっきりとしたシルエットを可能にします。品質の目安は、羽毛の膨らみ方を数値で表す“フィルパワー”。数値が高いほど空気を多く含み、保温性が高まります。普及品で500程度、高級品で600以上とされますが、本作品で使用しているダウンは、実に720という高い数値。その差は歴然です。" height="460" src="/image/goods/51035_03.jpg" width="580"/></p>
+<h2>装うたびにお洒落な感動をはこぶ<br/>
+	優雅な大人のリバーシブル</h2>
+<p>
+		視線を惹きつける満開のカメリアと、パリの洗練が薫りたつノワールとの競演。どちらを表にしても印象的な華やぎに加え、袖を通した瞬間に驚くのは着ぶくれ感ゼロの美しいAライン。少量でも保温性が高く、たくさん詰め込む必要がない究極の羽毛「ビッグボールダウン」を95％も使用し、片面の縫製をノンステッチで仕立てたスリムなデザインが、まるで空気をまとうように軽やかな着心地を実現しているのです。さらに風合いと手触りにもこだわり、両面ともに上品な光沢感と滑らかさが魅力の「シルキータッチ生地」を採用。程よい身幅はゆったりと動きやすく、ふんわり心地よい温かさをどんなシーンもお楽しみいただける、理想のリバーシブルコートが誕生しました。
+	</p>
+<p class="center-img"><img alt="華やぎのカメリア面と知的なノワール面。１着で2着分のお洒落が楽しめるリバーシブル／軽やか約800ぐらむ（Lサイズ）／冷えきった手をやさしく温めてくれるサイドポケットが両側についています。／上からも下からも開けることができる、うれしいダブルファスナー仕様。下に着る服に合わせて、ファスナー開きを美しいバランスに調節できます。／気になる腰回りを美しくカバーするAラインシルエット。着ぶくれ感を抑えているため、一際すっきりとしたラインをお楽しみいただけます。" height="671" src="/image/goods/51035_04.jpg" width="580"/></p>
+<h2>何ものにも代えがたいぬくもりとともに<br/>
+	冬の視線はあなたのもの…</h2>
+<p>
+		重ね着が多くなる冬の装いを、すっきりと美しく、温かく。背筋を伸ばして颯爽と歩く姿に羨望の視線が集まる＜ノワール エ カメリア＞あったかビッグボールダウンの軽やか高級リバーシブルコートはI・E・I社の特別企画商品です。この好機にどうぞお申し込みください。
+	</p>
+<p class="center-img"><img alt="後ろ姿も、こんなにスリムでエレガント。ビッグボールダウンの美しい魔法" height="420" src="/image/goods/51035_05.jpg" width="400"/></p>
+<div class="box1">
+<div class="box-text">
+<h3>イヴリーヌ・ポノー</h3>
+<p class="flt-r"><img alt="イヴリーヌ・ポノー近影" height="150" src="/image/goods/51035_06.jpg" width="125"/></p>
+<p>
+				ルーブル美術学院卒。ニナリッチ、ジバンシィなどの著名ブランドでデザインを手がけ、注目を浴びる。その後独立し、パリでブティックを経営。女性らしい柔らかなラインを強調するデザインは、世界で多くの人の支持を得ている。
+			</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

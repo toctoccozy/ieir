@@ -1,0 +1,135 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I アートギャラリー</p>
+<h1>華麗なる名画の女性たち 純銀製 法定貨幣セット 全6点</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=50933501" target="_self"><img alt="華麗なる名画の女性たち 純銀製 法定貨幣セット 全6点" src="/image/goods/50933_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd><strong>【銀貨 仕様】（6点共通）</strong><br/>
+●品位：品位.999銀<br/>
+●直径：約38mm<br/>
+●重さ：約8グラム<br/>
+●額面：2ドル（クックアイランド・ドル）<br/>
+●品質：プルーフ品質<br/>
+●鋳造：マイヤーズ造幣所（ドイツ）<br/>
+<br/>
+<strong>【ケース 仕様】</strong><br/>
+●材質：MDF、アルミプレート、ウレタン<br/>
+●サイズ（約）：閉じた状態で縦21×横21×厚さ3.5cm<br/>
+●日本製</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>華麗なる名画の女性たち 純銀製 法定貨幣セット 全6点</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>8,800円（税込9,680円）×12回払い</span><br/>
+                          
+                          
+                            一括価格 <span>99,800円（税込109,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="50933501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50933"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('50933501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50933501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="華麗なる名画の女性たち 純銀製 法定貨幣セット 全6点" height="320" src="/image/goods/50933_01.jpg" width="580"/></p>
+<p class="intro">
+		ドガ「髪を<ruby><rb>梳</rb><rp>（</rp><rt>と</rt><rp>）</rp></ruby>かす女」、ローランサン「二人の女友達」、<br/>
+		モディリアーニ「横たわる娼婦」…<br/>
+<ruby><rb>錚々</rb><rp>（</rp><rt>そうそう</rt><rp>）</rp></ruby>たる巨匠たちが描いた、世界的名画の美女たちを<br/>
+		掌の中で慈しむ、究極のコイン・コレクション全6点。<br/>
+		最高品位の純銀に浮かび上がる甘美な肢体に心高揚し<br/>
+		薫りたつ芸術の気韻に知性深まる<br/>
+		発行わずか950点の貴重な限定版です。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>英連邦クック諸島政府が発行する法定貨幣</li>
+<li class="stt"><span class="sq01">■</span>世界的名画の裸婦像の美しさそのままに忠実に表現</li>
+<li class="stt"><span class="sq01">■</span>最新技術による色鮮やかな発色と精妙なレリーフ</li>
+<li class="stt"><span class="sq01">■</span>最高品位の純銀（.999）で鋳造</li>
+<li class="stt"><span class="sq01">■</span>完全未使用のプルーフ品質</li>
+<li class="stt"><span class="sq01">■</span>コインの発行証明書付き</li>
+<li class="stt"><span class="sq01">■</span>解説書付き</li>
+<li class="stt"><span class="sq01">■</span>特製展示ケースに収めてお届け</li>
+</ul>
+<p>
+		まさに、人類が追い求めてやまない美の真髄――。ウジェーヌ・アンリ・ポール・ゴーギャン、エドゥアール・マネ、グスタフ・クリムト、そしてアメデオ・クレメンテ・モディリアーニ…。美術史に燦然と輝く６人の巨匠たちが追い求めた至高の芸術「裸婦像」がこのたび、永遠に艶めく銀貨となりました。官能的に、そして奔放に、柔らかくも滑らかな肢体が浮かび上がる歴史的な名画を、現代最高水準のカラー技術を駆使し、最高品位の純銀に鮮やかに再現した＜華麗なる名画の女性たち＞純銀製法定貨幣セット全6点。誰もが一度は目にした裸婦像の美女たちを手の中で慈しむ、そんな浪漫あふれるコレクションです。
+	</p>
+<p class="center-img"><img alt="貴方だけの美術館で愉しむ「芸術」と「銀貨」、贅の極。／「草上の昼食」（Le Déjeuner sur l'herbe）1863年◆エドゥアール・マネ、フランス、印象派：鬱蒼とした森の中、泉で沐浴する二人の女性に光が差し込み、豊満なシルエットが輝くばかりに浮かび上がる。19世紀後半以降の西洋絵画史に多大な影響を及ぼしたマネの代表作。／「二人の女友達」（Les deux amies）1927年◆マリー・ローランサン、フランス、エコール・ド・パリ：淡いパステルカラーも印象的に、少女のしなやかな肢体と黒い瞳に惹き込まれる名作。背景にはローランサンの特徴である薄いカーテンが掛けられ、舞台の幕が開けられたかのような趣を漂わせている。／「髪を梳かす女」（Femme se coiffant）1886年◆エドガー・ドガ、フランス、印象派：柔らかな色彩と光の陰影が、艶やかな背中の肉感を鮮やかに浮き立たせ、いまにも動き出すかのような臨場感を伝えている。髪を梳かす女性の息遣いまでをも感じさせる名作。／「横たわる娼婦」（Nu Couché）1917年◆アメデオ・クレメンテ・モディリアーニ、イタリア、エコール・ド・パリ：豊かな肢体を露わにし、真紅のベッドに横たわる裸婦。その甘美で怠惰的な姿により、古典的抑圧からの女性の解放を表現した。この傑作は2018年、オークションで1億5720万ドルという高額で落札された。／「ダナエ」（Danaë）1907年-1908年◆グスタフ・クリムト、オーストリア、ウィーン分離派：青銅の塔に閉じ込められた王女ダナエとギリシャ神話の最高神、ゼウスとの交わりを黄金の雨で表現した官能的作品。ウィーン象徴主義運動の最も美しい絵画の1つで、金色と赤い顔料の華やかな融合も見事。／「二人のタヒチ女」（Two Woman from Tahiti）1899年◆ウジェーヌ・アンリ・ポール・ゴーギャン、フランス、印象派：乳房も露わに立つ二人の女性。その手には誘惑を表す花や果物を持ち、眼差しは下に向けられている。ゴーギャンが「タヒチのイブ」と称した原住民女性の穏やかな性格と美しさが漂ってくる。" border="0" src="/image/goods/50933_02.jpg" usemap="#Map"/></p>
+<map id="Map" name="Map">
+<area coords="0,82,195,488" href="/image/goods/50933_02a.jpg" shape="rect" target="_blank"/>
+<area coords="195,82,386,488" href="/image/goods/50933_02b.jpg" shape="rect" target="_blank"/>
+<area coords="386,82,580,488" href="/image/goods/50933_02c.jpg" shape="rect" target="_blank"/>
+<area coords="0,488,195,900" href="/image/goods/50933_02d.jpg" shape="rect" target="_blank"/>
+<area coords="195,488,386,900" href="/image/goods/50933_02e.jpg" shape="rect" target="_blank"/>
+<area coords="386,488,580,900" href="/image/goods/50933_02f.jpg" shape="rect" target="_blank"/>
+</map>
+<h2>心高揚する芸術の芳香そのままに<br/>
+	最高品位の純銀に表現</h2>
+<p>
+		本コレクションに選ばれたのは、西洋絵画史に多大な影響を及ぼした選りすぐりの名画です。例えば、柔らかな色感が艶やかな背中の肉感を際立てる「髪を梳かす女」、夢見るかのような少女たちが淡く透き通る四肢を伸ばす「二人の女友達」、そして赤いシーツの上で大胆な姿態を魅せる「横たわる娼婦」。光の陰影も見事に、輝く肌や淡く色づいた肢体の細やかな描写が、精密なデジタル技術とレリーフ（凹凸）で陰影も豊かにうつされました。そんな歴史的名画をわが物にするとともに、至上の美に触れ深まる芸術性と教養。さらにわずか950セットの貴重な限定版につき、希少価値もおのずから高まることでしょう。
+	</p>
+<p class="center-img"><img alt="貨幣の共通仕様／品位.999銀、直径約38ミリ、重さ約8グラム、発行年 2021年、発行数950点限定、額面2クックアイランド・ドル、プルーフ品質、フルカラー、表面には英連邦の元首エリザベス２世の肖像が刻まれます。" height="440" src="/image/goods/50933_03.jpg" width="580"/></p>
+<h2>重厚感あふれる特製ケースに収めてお届け</h2>
+<p>
+		本コイン・コレクションは、紛れもない法定貨幣の証となる発行国の発行証明書を添え、特製ケースに6点すべてを収めてお届けいたします。発行数もお求めの機会も限られておりますので、確実に入手するためにもお早めにお申し込みください。
+	</p>
+<p class="center-img"><img alt="6点すべてを美しく収めた特製ケース。詳細な解説書とともにお届けいたします。" height="520" src="/image/goods/50933_04.jpg" width="580"/></p>
+<div class="box1">
+<div class="box-text">
+<h3>監修　美術評論家　ポール・スタートン氏</h3>
+<p class="flt-r"><img alt="ポール・スタートン氏" height="208" src="/image/goods/50933_06.jpg" width="135"/></p>
+<p>ルネサンス・ヨーロッパ美術史に造詣が深い美術史家として「ルネサンス絵画」をはじめ著書多数、20以上の展示会を監督。1988年から2009年までグラスゴー大学の美術史主任講師。現在はニューヨーク市の栄誉あるバード大学院センターにてヨーロッパ美術及びデザイン名誉教授。又シカゴ大学出版の美術ジャーナルの創刊に携わり、主任編集者である。</p>
+<p class="flt-r"><img alt="スタートン氏サイン" height="40" src="/image/goods/50933_05.jpg" width="148"/></p>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="クック諸島　国章" height="52" src="/image/goods/50933_07.jpg" width="45"/>　英連邦クック諸島</h3>
+<p>ニュージーランドと自由連合関係にある英連邦の独立主権国家。南太平洋にある15の島から成り、総面積は約240平方キロメートル。1770年代にこの島々を発見した英国の探検家、キャプテン・ジェームズ・クックの名にちなみ、クック諸島と名づけられた。元首はイギリスのエリザベス２世。</p>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3>プルーフコインとは…</h3>
+<p>各国の造幣局が贈答用や記念品向けに、特殊な技法を駆使して発行する貨幣をプルーフコインと呼ぶ。模様を鮮明にするため、極印（型）を2回以上打ちつけるなどして入念に製造される。発行数が少ないので希少性が高く、収集家の希求の的となっている。</p>
+</div>
+</div>
+</div>
+<script src="/common/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="/common/js/jquery.rwdImageMaps.min.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	});
+</script>
+<br/>
+</section>
+<!--

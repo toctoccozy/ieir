@@ -1,0 +1,115 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>パリジェンヌのエコミンク・ブルゾン</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51429501" target="_self"><img alt="パリジェンヌのエコミンク・ブルゾン" src="/image/goods/51429_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：ポリエステル100％（エコファー、裏地）、真鍮（ファスナー）<br/>
+●中国製<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="153" src="/image/goods/51429_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>パリジェンヌのエコミンク・ブルゾン</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,980円（税込5,478円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>29,800円（税込32,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51429501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51429"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Ｓサイズ</option>
+<option class="p999" value="999-M">Ｍサイズ</option>
+<option class="p999" value="999-L">Ｌサイズ</option>
+<option class="p999" value="999-LL">ＬＬサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51429501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51429501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="パリジェンヌの
+エコミンク・ブルゾン　デザイン：ナディーヌ・ビュタン" height="320" src="/image/goods/51429_01.jpg" width="580"/></p>
+<p class="intro">
+		とろける肌ざわりもリッチな風合いもリアルファーそのもの。<br/>
+		憧れのサファイアミンクに限りなく近づいた<br/>
+		高級エコファーのジップアップブルゾン。<br/>
+<br/>
+		ケーブル柄の切り替えと絶妙なショート丈が、すらりとした脚長効果を発揮。<br/>
+		リッチなテイストのフードが付いて、より若々しい印象に。<br/>
+<br/>
+		贅沢カジュアルの新スタイル、パリのマダム・ナディーヌから、あなたに。
+	</p>
+<p class="center-img"><img alt="後ろ姿も若々しいパーカースタイル。ラグジュアリーなテイストはリアルミンクそのもの" height="450" src="/image/goods/51429_02.jpg" width="400"/></p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span> フランスの著名デザイナー、ナディーヌ・ビュタンによるオリジナル</li>
+<li class="stt"><span class="sq01">■</span>サファイアミンクの色と風合いを再現した高級エコミンク</li>
+<li class="stt"><span class="sq01">■</span>ケーブル模様の切り替え</li>
+<li class="stt"><span class="sq01">■</span>バランスのいいショート丈</li>
+<li class="stt"><span class="sq01">■</span>ポケット付き</li>
+</ul>
+<p>
+<span style="font-weight:bold;">ミンクの毛皮をあえて普段づかいに⁈</span>　そんなゴージャスなときめきに包まれるすてきな魔法を、パリのマダム・ナディーヌがこっそり伝授してくれました。毛皮の女王と称される憧れのサファイアミンクを、本物以上のリアルさで再現した高級エコファーのスタイリッシュなフード付きブルゾン。ミンクの気品とぬくもりをもっと気軽に、そして存分に楽しめる魔法の一着のご案内です。
+	</p>
+<p class="center-img"><img alt="気分はゴージャスなサファイアミンク…あえてカジュアルに着こなすパリジェンヌスタイル。S~LLの豊富なサイズ／ミンクを編んだようなケーブル模様の切り替え。ふんわりとした立体感が、いかにもリアルミンクです。／両サイドには、便利なポケット付き。冷えた指先を温かく包み込んでくれます。／フードは内側までふわふわのエコミンク。軽快なパーカースタイルがうれしい若見え効果を発揮。" height="950" src="/image/goods/51429_03.jpg" width="580"/></p>
+<h2>リアルミンクさながらのゴージャスな気品とぬくもりを心ゆくまで</h2>
+<p>
+		極上のサファイアミンクにも負けないリッチな風合いの秘密は、ハイブランドがこぞって採用している高級エコファー。ミンク独特の長い刺し毛とふわふわのうぶ毛が、限りなくリアルに再現され、上品なサファイアカラーとケーブル模様の切り替えもラグジュアリーな気分を高めます。デザインはリッチなテイストのフード付きで、短めの丈とハイウエストの切り替えが、うれしい脚長効果を発揮。さらりと羽織るだけで、ぐっと若々しいスタイルが決まります。本物以上にリアルで、お手入れも簡単なエコファーを選ぶのは、今やパリジェンヌの常識。気負わず気軽にゴージャスなぬくもりに包まれる幸せを、ぜひあなたも…。今すぐお求めください。
+	</p>
+<div class="box1">
+<div class="box-text">
+<h3>毛皮の女王ミンクに限りなく近づいた「エコミンク」</h3>
+<p class="flt-l"><img alt="サファイアミンクの手触りとぬくもりをリアルに再現" height="135" src="/image/goods/51429_04.jpg" width="135"/></p>
+<p>
+				ミンクファーの魅力はゴージャスな風合いと、とろけるようなぬくもり。長い刺し毛と短いうぶ毛が混じって、羽のように柔らかい感触が生まれます。そんなミンクの特徴を、高度な繊維加工技術でリアルに再現したのが「エコミンク」です。本物のミンク同様、刺し毛とうぶ毛がランダムに混在する独特の構造を極細の繊維で再現。さらに繰り返し繊維を熱で磨くことで、美しい光沢感が引き出されます。繊維が空気をたっぷり含むので、温かさも極上。本作品ではサファイアミンク独特のニュアンスカラーも、みごとに再現しています。
+			</p>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="ナディーヌ・ビュタン ロゴ" height="20" src="/image/goods/51429_05.jpg" width="271"/>　ナディーヌ・ビュタン</h3>
+<p class="flt-r"><img alt="ナディーヌ・ビュタン近影" height="167" src="/image/goods/51429_06.jpg" width="125"/></p>
+<p>
+				フランスを代表する衣装デザイナー。映画、演劇、テレビドラマのコスチューム・デザインを数多く手がけ、鬼才ジャン・リュック・ゴダールの映画の衣装スタイリストとして活躍。また体の不自由な人のためのファッション・デザインにも積極的に取り組んでいる。
+			</p>
+<p class="center-img">
+<img alt="リッチな気分をさりげなく…。魔法のエコミンクがくれる贅沢なときめきを楽しんで。ナディーヌ・ビュタン" height="231" src="/image/goods/51429_07.jpg" width="330"/>
+</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

@@ -1,0 +1,115 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>＜本場越後織物 亀田縞＞藍縞縮と両瀧墨流　紳士用高級シャツ2色組</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=50635502" target="_self"><img alt="＜本場越後織物 亀田縞＞藍縞縮と両瀧墨流　紳士用高級シャツ2色組" src="/image/goods/50635_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●素材：綿100％（亀田縞、亀田縞ちぢみ）<br/>
+●日本製<br/>
+<br/>
+※生地の取り方により、柄の出方が写真と異なる場合がございます。<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="153" src="/image/goods/50635_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>＜本場越後織物 亀田縞＞藍縞縮と両瀧墨流　紳士用高級シャツ2色組</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>5,800円（税込6,380円）×7回払い</span><br/>
+                          
+                          
+                            一括価格 <span>39,800円（税込43,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="50635502"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50635"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Ｓサイズ</option>
+<option class="p999" value="999-M">Ｍサイズ</option>
+<option class="p999" value="999-L">Ｌサイズ</option>
+<option class="p999" value="999-LL">ＬＬサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('50635502');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50635502');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="＜本場越後織物 亀田縞＞藍縞縮と両瀧墨流　紳士用高級シャツ2色組" height="380" src="/image/goods/50635_01.jpg" width="580"/></p>
+<p class="intro">
+		日本の文化があでやかに花開いた江戸時代──。<br/>
+		豊かな自然を擁する越後で生まれ、<br/>
+		洒落を極めた人々がこぞって希求した伝統織物“亀田縞”。<br/>
+		300年余りにわたり、<br/>
+		大切に受け継がれてきた美しくも鯔背な織りの芸術が<br/>
+		汗ばむ季節に風格と涼を誘う、高級メンズシャツに仕立てられました。<br/>
+		日本の伝統色で染め上げた3000本もの糸を惜しみなく用い<br/>
+		熟練職人の高度な手技で丹念に織りあげられたのは<br/>
+		凛と涼やかな「<ruby><rb>藍縞縮</rb><rp>（</rp><rt>あいじまちぢみ</rt><rp>）</rp></ruby>文様」と端正な趣が漂う「<ruby><rb>両瀧墨流</rb><rp>（</rp><rt>りょうたきぼくりゅう</rt><rp>）</rp></ruby>文様」。<br/>
+		シーンに合わせて粋な印象を楽しめる<br/>
+		ふたつの縞文様が特別にセットされた、たいへん価値ある逸品です。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>江戸時代より300年余りの歴史を誇る伝統織物「亀田縞」</li>
+<li class="stt"><span class="sq01">■</span>多彩なコーディネートを楽しめる粋な2色組</li>
+<li class="stt"><span class="sq01">■</span>日本の伝統色を織り合わせた豊かな縞文様と風合い</li>
+<li class="stt"><span class="sq01">■</span>上質綿100％ならではの心地よい肌触りと優れた吸湿性</li>
+<li class="stt"><span class="sq01">■</span>ご家庭で手洗いが可能</li>
+<li class="stt"><span class="sq01">■</span>日本の匠と出会う服「一期一衣」のオリジナル</li>
+</ul>
+<p class="center-img"><img alt="紳士の粋と風格が光る、涼やかな藍縞のカジュアルスタイル「藍縞縮」地糸と縞糸を同じ幅で織り上げたシンプルな棒縞文様。深海を想わせる濃藍に白の筋が浮かぶ細やかな意匠が、着る人の表情を明るく引き立て涼やかな印象に導きます。／日本の伝統色を重ねた豊麗な黒縞が洒脱なセミフォーマルを演出「両瀧墨流」滝が流れ落ちる様に見える事から滝縞とも呼ばれる縞模様。日本の伝統色にある深く鮮やかな墨色を採用し、細い縞からだんだんと太い縞になるよう丹念に織り上げた亀田縞の真骨頂。" height="525" src="/image/goods/50635_02.jpg" width="580"/></p>
+<p>
+		漂うのは、洒落を極めた江戸の粋──。300年を超える歴史のなかで、技と感性を磨かれた、本場越後の伝統織物「亀田縞」。古き良き日本の美意識が息づくわが国屈指の織地がこのたび、洋のモダンテイストが光る素晴らしい逸品に仕立てられました。高級メンズブランド「一期一衣」がおくる＜本場越後織物亀田縞＞紳士用高級シャツ。高雅にして趣の異なるふたつの伝統文様「藍縞縮」「両瀧墨流」が、汗ばむ季節に「涼」と「粋」をはこぶ豪華2色組のご案内です。
+	</p>
+<p class="center-img"><img alt="腰周りもゆったりと。動きやすさや通気性を高めるスリット入り。" height="235" src="/image/goods/50635_03.jpg" width="500"/></p>
+<h2>堅牢にして着心地爽やか、そして風情漂う織りの妙</h2>
+<p>
+		素材の良さが一目でわかる豊麗な織り、そして袖を通せば感じるさらりと爽やかな肌触り。風流な縞文様は「交わることなくどこまでも続く繁栄」を意味する吉祥柄として江戸の人々に希求され、浮世絵に描かれた役者の洒落た着こなしにも見ることができるほど。本作品に息づくのは、そんな粋で鯔背な江戸の息吹。日本の伝統色に染め上げた手紡ぎ風のムラ糸を用い、約3000本の糸を慎重に織り上げる細やかな職人技は、本場越後・亀田縞に伝わる手技の極み。生地の良さをいっそう光らせるジャパンメイドの高度な仕立ても見事に、洒脱な紳士の嗜みを演出する逸品が誕生したのです。<br/>
+		＜本場越後織物亀田縞＞藍縞縮と両瀧墨流紳士用高級シャツ2色組は、Ｉ・Ｅ・Ｉ社の特別企画商品です。涼しく、動きやすく、堅牢で、機能的。しかも一枚で紳士の風格を雄弁に物語る本場亀田縞の逸品を、2色組の特別価格というこの好機にお求めください。
+	</p>
+<p class="center-img"><img alt="きちんとした印象に決まる台襟付き。／左身頃には便利な胸ポケットが。さりげないデザインのアクセントにも。／後ろ身頃にはタックがあしらわれシルエットを美しく、着心地ゆったり。／動きやすさに配慮して、両サイドにはスリット（切り込み）が配されています。" height="560" src="/image/goods/50635_04.jpg" width="580"/></p>
+<div class="box1">
+<div class="box-text">
+<h3>江戸の黄金期を彩った伝統の縞文様　亀田縞</h3>
+<p class="flt-r"><img alt="本場越後・亀田縞の逸品であることを証するタグ付き" height="200" src="/image/goods/50635_05.jpg" width="135"/></p>
+<p>江戸時代、和綿栽培の北限となっていた越後・亀田郷で農家の冬の内職として織られた「亀田縞」。丈夫で汚れに強いその生地は腰まで泥に浸かる過酷なこの地方の米作りを支え、大切に受け継がれてきました。やがて、美しく多彩な縞文様が広まり、綿織物ならではの堅牢性とも相まって江戸の町で一世を風靡。その鯔背な着こなしが、浮世絵などにも描かれています。本作品はそんな亀田縞を、熟練の織り職人が日本の伝統色で織り上げ、洋のシャツとして特別に仕立てた逸品。糸の染めから糸繰り、織り、糸入れなど、手間と時間を惜しまず作られた素晴らしい着心地と風合いをお楽しみください。<br/>
+<strong>「亀田縞」商標登録 第5661445号</strong></p>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="一期一衣バナー" height="45" src="/image/goods/50635_06.jpg" width="195"/>　一期一衣　日本の匠と出会う服</h3>
+<p>世界に誇る日本の職人気質が貫かれた和の伝統素材を用い、現代のスタイルにマッチした新鮮なデザインでおくる高級オリジナルメンズブランド。日本のモノづくりの伝統が息づく服、身体に心地良くなじみ、長く着続けられる服との出会いをご提供いたします。</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

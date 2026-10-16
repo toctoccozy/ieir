@@ -1,0 +1,178 @@
+
+<div id="content">
+<p id="genl_tit">I・E・I コレクション</p>
+<h1>マダム・ナディーヌの”スリムに見える服”　ゆったり着られるAラインワンピース</h1>
+<section class="item50299" id="main-content">
+<div id="main-content">
+<p class="cnt-img"><img alt="" height="379" src="/image/goods/5029900_01.jpg" width="580"/></p>
+<p class="cnt-img"><img alt="" height="543" src="/image/goods/5072900_06.jpg" width="580"/></p>
+<div class="movie">
+<video controls="" controlslist="nodownload" muted="" onplay="dataLayer.push({'event': 'MoviePlay'});" src="/movie/50299.mp4">
+<p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
+</video>
+</div>
+<p class="intro">パリで活躍する一流コスチュームデザイナー<br/>
+ナディーヌ・ビュタンがおくる<br/>
+“スリムに見える”魔法の服に<br/>
+クラス感あふれるワンピースが登場。<br/><br/>
+
+絹のようになめらかな手触りと光沢、<br/>
+そしてお肌に美しく映えるサファイアブルーが魅力の<br/>
+高級ストレッチ素材を惜しみなく使用した<br/>
+あらたまった場所にもふさわしいエレガントな一着。<br/>
+身頃にタッキングを施し、豊かに広がるＡラインが<br/>
+気になる腰まわりをすっぽりカバーして<br/>
+ほっそり・ゆったり・動きやすい、話題の一着です。<br/><br/>
+
+ご家庭の洗濯機で洗えます</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>フランスの著名デザイナー監修</li>
+<li class="stt"><span class="sq01">■</span>ゆったり着られて、スマートに見える巧みなＡライン</li>
+<li class="stt"><span class="sq01">■</span>シルクのような風合いと高級感が魅力の”シルキー・ストレッチ素材”</li>
+<li class="stt"><span class="sq01">■</span>程よい伸縮性で動きやすさ抜群</li>
+<li class="stt"><span class="sq01">■</span>お顔に美しく映えるサファイアブルー</li>
+<li class="stt"><span class="sq01">■</span>ご家庭の洗濯機で洗えるウォッシャブル素材</li>
+<li class="stt"><span class="sq01">■</span>I・E・I社特別企画商品</li>
+</ul>
+<p class="cnt-img"><img alt="" height="645" src="/image/goods/5072900_02.jpg" width="443"/></p>
+<p>スリムなだけでなく、凛と優雅な印象に見えるでしょう？　そう語るのは、ナディーヌ・ビュタン氏。映画や舞台の衣装デザインで著名なフランスの一流デザイナーです。彼女が手がける服は「着やせして見える」と女優たちにも大評判。秘密は、気になるウエストや腰回りをカバーする考え抜かれたシルエットと、上半身をコンパクトに見せる巧みなディテール使いにあります。そんな氏が監修した特別仕立ての作品が発表されました。シルクのような上品な光沢とすべるような手触りが魅力の高級生地「シルキー・ストレッチ素材」を惜しみなく用い、着るだけでほっそりエレガントな装いが完成する魔法のワンピースのご紹介です。</p>
+<h2>日常からあらたまった場所、旅行まで。スリムな美しさを楽しんで。</h2>
+<p class="flt-r"><img alt="" height="172" src="/image/goods/5029900_04.jpg" width="150"/></p>
+<p>本作品は、マダム・ナディーヌがファッションの本場・フランスで培ったセンスと技術を息づかせたワンランク上のＡラインが特長です。スリムに見える秘密は、肩や胸をコンパクトに見せる上半身と、豊かなドレープが広がるボトム部分の絶妙なバランス。ウエストにたっぷりとタックを施したボトム部分がふんわりと空気をはらみ、腰回りやヒップを美しくカバー。前後左右どこからでもほっそりとしたシルエットを演出してくれるのです。さらにシルクのような風合いが魅力の“シルキー・ストレッチ素材”とお顔に映える美しいサファイアブルーが、あらたまった場所にもふさわしい高級感をプラス。伸縮性もあるため、なだらかなＡラインと相まって動きやすさは抜群です。そして襟もとは、スタンドカラーでもシャツカラーでも楽しめる２ウエイ。気になる首回りを程よくカバーしながら知的な印象を振りまく、小振りな襟の形も魅力です。ご家庭の洗濯機で洗えて、しわになりにくい素材ですから旅行にも最適。きっと、あらゆるシーンで装いを劇的に変えるお洒落な一着となることでしょう。ときめきのスタイルアップ効果がうれしい一着を、この好機にどうぞお申し込みください。</p>
+<p class="cnt-img"><img alt="" height="512" src="/image/goods/5072900_07.jpg" width="300"/></p>
+<p class="cnt-img"><img alt="" height="329" src="/image/goods/5029900_03.jpg" width="507"/></p>
+<div class="box1">
+<div class="box-text">
+<h3>ナディーヌ・ビュタン</h3>
+<p class="flt-r"><img alt="" height="167" src="/image/goods/5029900_05.jpg" width="125"/></p>
+<p>フランスを代表する衣装デザイナー。映画、演劇、テレビドラマのコスチューム・デザインを数多く手がけ、アルチョム・ミハイロフ・ダンスカンパニーの舞台衣装で、世界的に高い評価を確立。鬼才ジャン・リュック・ゴダールの映画の衣装スタイリストとしても活躍。また体の不自由な人のためのファッション・デザインにも積極的に取り組んでいる。<br/>
+<img alt="" height="49" src="/image/goods/5029900_09.jpg" width="150"/></p>
+</div>
+</div>
+<!--仕様▼-->
+<div class="shiyo-m">
+<dl class="clearfix">
+<dt><img alt="仕様" height="24" src="/snoopy/images/shiyo.gif" width="58"/></dt>
+<dd>
+<ul>
+<li>●素材：ポリエステル100％（東レFTK）、樹脂（ボタン）</li>
+<li>●日本製<br/><br/>
+<img alt="" height="250" src="/image/goods/5072900_08.jpg" width="365"/></li>
+</ul>
+<p><strong>【サイズ交換0円キャンペーン対象商品】</strong><br/>
+    サイズ交換返送料無料！<br/>
+    サイズが合わなければ返送料は当社が負担します。</p>
+</dd>
+</dl>
+</div>
+<!--仕様▲-->
+<!--カート▼-->
+<div class="cart">
+<h2>マダム・ナディーヌの”スリムに見える服”<br/>
+ゆったり着られるAラインワンピース</h2>
+<p class="atn">※LLサイズは2月中旬より発送予定です。</p>
+<p class="price">月々 <span>4,980円（税込5,478円）</span>×6回<br/>
+一括価格 <span>29,800円（税込32,780円）</span><br/>
+発送手数料 <span>700円（税込770円）</span></p>
+<form method="post" name="form_ido">
+<input name="item_no" type="hidden" value="50729501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50729"/>
+<input name="m5clr" type="hidden"/>
+<input name="m5siz" type="hidden"/>
+</form>
+<form method="post" name="form_fav">
+<input name="item_no" type="hidden" value="50729501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50729"/>
+<input name="mode" type="hidden"/>
+</form>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="50729501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50729"/>
+<input name="amount" type="hidden" value="1">
+<ul>
+<li class="select">サイズ 
+<select name="m5siz">
+<option>▼お選びください。</option>
+<option value="SS">SSサイズ</option>
+<option value="S">Sサイズ</option>
+<option value="M">Mサイズ</option>
+<option value="L">Lサイズ</option>
+<option value="LL">LLサイズ</option>
+</select>
+</li>
+<li><input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/></li>
+</ul>
+</input></form>
+<ul class="contact">
+<li><a href="javascript:inquiry('50729501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50729501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<!--カート▲-->
+</div>
+<br/>
+</section>
+</div>
+<div id="side-navi">
+<ul class="side-bnr">
+<li><a href="/about/index.html"><img alt="I・E・I　オンラインショプとは" border="0" height="50" src="/common/image/bo_onlineshop_index.gif" width="175"/></a></li>
+</ul>
+<ul>
+<li><a href="/cgi-bin/login.cgi"><img alt="ログインはこちら" height="40" src="/common/image/bo_login_index.gif" width="175"/></a></li>
+<li><a href="/rules.html" target="_blank"><img alt="新規会員登録" height="40" src="/common/image/bo_toroku_index.gif" width="175"/></a></li>
+</ul>
+<form action="/cgi-bin/goods/index.cgi" method="post">
+<dl id="search">
+<dt>商品検索</dt>
+<dd>
+<p><input name="site_id" type="hidden" value="4"/><input name="keywords" type="text"/></p>
+<p><input class="btn" name="submit" type="submit" value="検索実行"/></p>
+</dd>
+</dl>
+</form>
+<ul class="side-bnr">
+<li><img alt="お電話でのお申し込み、お問い合わせ フリーコール 0120-247-417（毎日 朝6:00〜夜9:00）※携帯電話からもOK" height="173" src="/img/bnr_contact.jpg" width="175"/></li>
+<li class="bnr-art"><a href="/art/index.html"><img alt="I・E・Iアートギャラリー" height="50" src="/common/image/banner_art.png" width="175"/></a></li>
+<li class="bnr-collection"><a href="/collection/index.html"><img alt="I・E・Iコレクション" height="50" src="/common/image/banner_collection.png" width="175"/></a></li>
+</ul>
+<div id="cateinfo">
+<h3 class="stit">カテゴリーで探す</h3>
+<ul>
+<li>
+<dl>
+<dt>ジュエリー</dt>
+<dd><a href="/cgi-bin/category/index.cgi?site_id=2&amp;category1=018&amp;category2=001"> リング</a>、<a href="/cgi-bin/category/index.cgi?site_id=2&amp;category1=018&amp;category2=002"> ペンダント</a>、<a href="/cgi-bin/category/index.cgi?site_id=2&amp;category1=018&amp;category2=003">  ネックレス</a>、<a href="/cgi-bin/category/index.cgi?site_id=2&amp;category1=018&amp;category2=004"> イヤリング・ピアス</a>、<a href="/cgi-bin/category/index.cgi?site_id=2&amp;category1=018&amp;category2=007">  ブレスレット</a>、<a href="/cgi-bin/category/index.cgi?site_id=2&amp;category1=018&amp;category2=005">  その他女性用</a>、<a href="/cgi-bin/category/index.cgi?site_id=2&amp;category1=018&amp;category2=006"> 男性用</a>、</dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt>腕時計</dt>
+<dd><a href="/cgi-bin/category/index.cgi?site_id=2&amp;category1=019&amp;category2=001"> 男性用</a>、<a href="/cgi-bin/category/index.cgi?site_id=2&amp;category1=019&amp;category2=002"> 女性用</a></dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt>雑貨</dt>
+<dd><a href="/cgi-bin/category/index.cgi?site_id=2&amp;category1=020&amp;category2=001"> バッグ</a>、<a href="/cgi-bin/category/index.cgi?site_id=2&amp;category1=020&amp;category2=003"> 財布</a>、<a href="/cgi-bin/category/index.cgi?site_id=2&amp;category1=020&amp;category2=002"> その他</a></dd>
+</dl>
+</li>
+</ul>
+</div>
+<ul>
+<li><a href="/cgi-bin/mailnews/index.cgi"><img alt="メールニュース登録" height="30" src="/common/image/bo_mailnews.gif" width="175"/></a></li>
+<li><a href="http://www.iei.co.jp"><img alt="会社案内" height="30" src="/common/image/bo_company.gif" width="175"/></a></li>
+</ul>
+</div>
+<!-- footer -->
+<footer>
+<ul>
+<li><a class="footer" href="/guide/index.html#11">会社概要</a></li>
+<li><a class="footer" href="/guide/01.html">個人情報の取り扱いについて</a></li>
+<li><a class="footer" href="/sitemap.html">サイトマップ</a></li>
+</ul>
+<p><a href="http://www.iei.co.jp" target="_blank"><img alt="Copyright(c) 2017 Imperial Enterprises Inc. All Rights Reserved. I・E・Iはインペリアルエンタープライズ（株）の略称です。" height="24" src="/common/image/copy.gif" width="337"/></a></p>
+</footer>
+<!--/footer -->

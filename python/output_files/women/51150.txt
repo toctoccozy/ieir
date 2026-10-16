@@ -1,0 +1,127 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>奇跡のブルーローズ　ラメ入りコード刺しゅうニットチュニック</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51150501" target="_self"><img alt="奇跡のブルーローズ　ラメ入りコード刺しゅうニットチュニック" src="/image/goods/51150_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：編み地＝ペルー産ベビーアルパカ100％、コード刺しゅう部分＝ベビーアルパカ85％・ポリエステル8％・ナイロン7％<br/>
+●重さ（約）：450g<br/>
+●日本製<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="153" src="/image/goods/51150_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>奇跡のブルーローズ　ラメ入りコード刺しゅうニットチュニック</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>5,800円（税込6,380円）×7回払い</span><br/>
+                          
+                          
+                            一括価格 <span>39,800円（税込43,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51150501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51150"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Ｓサイズ</option>
+<option class="p999" value="999-M">Ｍサイズ</option>
+<option class="p999" value="999-L">Ｌサイズ</option>
+<option class="p999" value="999-LL">ＬＬサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51150501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51150501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="本場ペルー産 高級ベビーアルパカ使用　奇跡のブルーローズ　ラメ入りコード刺しゅうニットチュニック　デザイン：イヴリーヌ・ポノー" height="315" src="/image/goods/51150_01.jpg" width="580"/></p>
+<p class="intro">
+		奇跡の青い薔薇ブルーローズを<br/>
+		凝ったコード刺しゅうで煌びやかに咲かせた<br/>
+		高級ベビーアルパカのニットチュニック。<br/>
+		至福のぬくもりで包んでくれるゆったりAラインと<br/>
+		ダークブルーの引き締め効果で、印象ほっそり。<br/>
+		きれいの夢もかなえてくれる万能チュニックです。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>フランスの著名デザイナーが夢のブルーローズをコンセプトにデザイン</li>
+<li class="stt"><span class="sq01">■</span>別格の温かさを誇るベビーアルパカ100％の編み地</li>
+<li class="stt"><span class="sq01">■</span>煌めくラメ入りコード刺しゅう</li>
+</ul>
+<p class="center-img"><img alt="煌めくラメのコード刺しゅうで一針一針咲かせた夢のブルーローズを、そっと胸に抱きしめて。上品なテイストは、コートやジャケットとも好相性。" height="420" src="/image/goods/51150_02.jpg" width="580"/></p>
+<p>
+		それは、「青い薔薇」という美しい奇跡──かつて不可能の象徴とされてきたブルーローズは、近年その意味を180度転換しました。花言葉は「夢かなう」。薔薇の品種は数あれど、唯一存在し得なかった青色の花を咲かせることができたのは、夢を信じ続ける純粋な想いがあったからにほかなりません。そんな夢のブルーローズをテーマに、パリの著名デザイナー、イヴリーヌ・ポノーが、この上なくエレガントなニットチュニックをデザインしました。ペルー産の高級ベビーアルパカに、煌びやかなコード刺しゅうをあしらったクチュールテイストの逸品、その名も＜奇跡のブルーローズ＞のご案内です。
+	</p>
+<p class="center-img"><img alt="奇跡のブルーローズ：青い色素をもたないバラが、青い花を咲かせるのは不可能。しかし2002年、日本のバイオテクノロジーにより、青い色素をもつバラの開発に初めて成功し、世界を驚かせました。かつて存在自体がありえなかったブルーローズは、「夢がかなう」「神の祝福」を表す奇跡の薔薇となったのです。" height="255" src="/image/goods/51150_03.jpg" width="580"/></p>
+<h2>高級ベビーアルパカのやさしさに包まれて<br/>
+	夢が花咲くあったかニット</h2>
+<p>
+		奇跡の青い薔薇を、深いダークブルー１色のシンプルなデザインで表現したこちらのチュニックは、丁寧に一針一針刺した薔薇のコード刺しゅうがポイント。きらきらとラメが煌めくたび、ラグジュアリーな気分が高まります。素材に選ばれたのは、南米ペルー産の天然アルパカの中でも特にやわらかな肌触りが心地よい、希少なベビーアルパカ。極細の繊維が比類ない保温効果を発揮して、まるで空気のように軽くて温かな着心地をお約束します。ゆったり広がるAラインのシルエットが体型をさりげなくカバーし、低めのモックネックで印象すっきり。ダークブルーの深い色合いは、肌映りが良いうえに、寒色系の視覚効果でスマートに見せてくれるのもうれしい魅力です。<br/>
+</p>
+<p class="center-img"><img alt="すっきりきれいをつくる、こだわりのディテール。／前身頃に施されたコード刺しゅうが、重なり合う薔薇の花びらを陰影豊かに表現。煌めくラメが朝露のよう。／低めのモックネック。タートルネックのように折り返さないので収まりが良く、どんなお襟のジャケットやコートを上に重ねてもきれい。／ハイウエストの切り替えですらりと腰高な印象に。／ゆったり広がるAラインで体型をカバー。ヒップが隠れるベストな丈感。／ラメの煌めくコード刺しゅう。青い薔薇のイメージを表情豊かな手仕事で。" height="660" src="/image/goods/51150_04.jpg" width="580"/></p>
+<p>
+		お食事会やお呼ばれに…華やかな季節のおしゃれに欠かせないリッチなぬくもりの贈り物──本場ペルー産 高級ベビーアルパカ使用＜奇跡のブルーローズ＞ラメ入りコード刺しゅうニットチュニックは、I･E･I社の特別企画商品です。ぜひ今すぐお求めください。
+	</p>
+<div class="box1">
+<div class="box-text">
+<h3>収穫は２年に１回。<br/>
+			しかも10％しか採れない超希少なペルー産ベビーアルパカ</h3>
+<div>
+<p class="flt-r"><img alt="アンデスのアルパカ" height="135" src="/image/goods/51150_05.jpg" width="135"/></p>
+<p>
+					アンデスの高原（海抜4,000～5,000メートル）に生息するラクダ科の動物アルパカ。1日の気温差が約30度にも達する過酷な自然環境から身を守るため、その体毛は限りなく細く、しなやかに進化を遂げ、保温性に優れています。本作品はその中でもわずか約10％の収穫量である極細0.023ミリ以下のベビーアルパカを贅沢に使用した逸品です。<br/>
+<br/>
+<span style="font-weight:bold"><span style="color:#6f2053">●</span>体温調節が容易</span><br/>
+					　繊維が細く空気を多く含むため着心地爽やかで、適度な保温性です。<br/>
+<span style="font-weight:bold"><span style="color:#6f2053">●</span>柔らかな感触</span><br/>
+					　0.023ミリ以下の超極細の毛質なので、手触りが柔らかくなめらかです。<br/>
+<span style="font-weight:bold"><span style="color:#6f2053">●</span>軽い着心地</span><br/>
+					　繊維自体に微細な空洞があるため、ウールに比べて軽量です。<br/>
+<span style="font-weight:bold"><span style="color:#6f2053">●</span>抜群の耐久性</span><br/>
+					　繊維が細くしなやかなため、毛玉が出来にくくウールより丈夫です。<br/>
+<span style="font-weight:bold"><span style="color:#6f2053">●</span>美しい質感</span><br/>
+					　天然ならではの落ち着いた光沢に高級感が漂います。<br/>
+</p>
+</div>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3>イヴリーヌ・ポノー</h3>
+<p class="flt-r"><img alt="イヴリーヌ・ポノー近影" height="150" src="/image/goods/51058_05.jpg" width="125"/></p>
+<p>
+				ルーブル美術学院卒。ニナリッチ、ジバンシィなどの著名ブランドでデザインを手がけ、注目を浴びる。その後独立し、パリでブティックを経営。女性らしい柔らかなラインを強調するデザインは、世界で多くの人の支持を得ている。
+			</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

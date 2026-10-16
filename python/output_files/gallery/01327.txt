@@ -1,0 +1,109 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I アートギャラリー</p>
+<h1>合掌地蔵菩薩 祈り</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=01327501" target="_self"><img alt="合掌地蔵菩薩 祈り" src="/image/goods/69070771.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd><br/>●材質：ブロンズ古色仕上げ<br/>
+●高さ：約21cm<br/>
+●台座の幅：約10.5cm<br/>
+●重さ：約1.5kg<br/>
+●日本製</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>合掌地蔵菩薩 祈り</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>11,500円（税込12,650円）×12回払い</span><br/>
+                          
+                          
+                            一括価格 <span>129,800円（税込142,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="01327501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="01327"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('01327501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('01327501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<table border="0" cellpadding="0" cellspacing="0" width="551">
+<tbody>
+<tr>
+<td width="17"><img height="1" src="/image/goods/spacer.gif" width="17"/></td>
+<td align="left" valign="top" width="534"><b><font size="+1">慈愛にみち、優しさの中に気品ただようお地蔵さま。<br/>
+
+身近におけば、日々の安らぎが、手にとって抱けば、心なごむひとときが…<br/>
+
+仏教美術の伝統をふまえ、心を込め技のすべてを傾けて今ここに完成された珠玉のオリジナル地蔵像。</font></b><br/>
+<br/>
+<font size="2">■</font><font size="2">友沢正彦作<br/>
+
+■作家の署名入り<br/>
+<br/>
+<br/>
+
+無限のやさしさと慈しみの心で、すべての人々をつつみ込み、どんな願いをもききとどけてくださるお地蔵さま。古来もっとも身近な仏として日本人に親しまれ、尊ばれてきた地蔵菩薩が、現代彫刻界の第一線で活躍する著名な作家により、峻厳な気品と素朴な温かさとをかねそなえた比類ない芸術作品に完成されました。合掌地蔵「祈り」は、仏教美術に精通した名高い彫刻家、友沢正彦氏が、現代人のために心を込め、もてる技のすべてを注いで創りあげたオリジナル・ブロンズ彫刻です。作者の友沢正彦氏は、現代彫刻界の中枢をになう著名な彫刻家です。具象彫刻界の大家として有名な故寺畑助之丞氏に師事し、厳しい研鑽を積んだ友沢氏は、昭和三十七年に新構造社展会員となり、同展大賞をはじめ数々の賞を受賞。代表作には、川崎大師山門の四天王像や日本の童などがあり、さらに、観音像、如意輪観音像など仏教美術の世界で注目される大作、名作も手がけています。<br/>
+<br/>
+<b>暮らしに潤いをもたらす珠玉の美術品<br/>
+
+そっと抱けば、心なごむひとときが</b><br/>
+<br/>
+
+合掌地蔵「祈り」は、友沢芸術の真髄が結晶した瑞々しい傑作です。静かに目をとじ、あらゆるものの幸せを願うかのように一心に手を合わせて祈りつづける姿。仏教美術の伝統をふまえながらも、自由でのびやかな表現により、幼子の純真な美しさと気品、さらに、人間味ゆたかな趣さえただよわせるオリジナル彫刻となりました。本作品は、身近におかれて、日々、目にされるだけで、暮らしにあたたかな潤いが生まれる美術品です。また、地蔵像をお手にとって、そっと抱き、あるいは慈しむように撫でることにより、ずっしりとした重量感と、掌になじむ優しい温もりを感じるとともに、いっそう心が安らかになるのをお感じいただけます。「祈り」は、伝統の技を駆使して、一体ずつ丁寧にブロンズ鋳造されます。友沢氏のオリジナル原型の素晴らしさが、美術工芸の匠による熟練の手技で、あますところなくブロンズ像にうつしとられています。鋳造されたブロンズ像には、伝統のおはぐろ技法で美しい古色が加えられ作品の格調をいやがうえにも高めます。作品には、地蔵菩薩について書き下ろされた解説書が付属します。</font><br/>
+<img height="30" src="/image/goods/spacer.gif" width="1"/></td></tr></tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="551">
+<tbody>
+<tr>
+<td width="17"><img height="1" src="/image/goods/spacer.gif" width="17"/></td>
+<td valign="bottom"><img height="158" src="/image/goods/jizou-img01.jpg" width="121"/></td>
+<td><img height="1" src="/image/goods/spacer.gif" width="10"/></td>
+<td valign="bottom" width="193"><font size="2">高さ（約）21センチ、<br/>
+
+重さ（約）1.5キログラム。</font></td>
+<td><img height="1" src="/image/goods/spacer.gif" width="10"/></td>
+<td align="right" valign="top"><img height="158" src="/image/goods/jizou-img02.jpg" width="200"/></td>
+</tr>
+<tr>
+<td colspan="6"><img height="25" src="/image/goods/spacer.gif" width="1"/></td></tr></tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="551">
+<tbody>
+<tr>
+<td width="17"><img height="1" src="/image/goods/spacer.gif" width="17"/></td>
+<td valign="bottom"><img height="85" src="/image/goods/bottom-img01.jpg" width="100"/></td>
+<td><img height="1" src="/image/goods/spacer.gif" width="10"/></td>
+<td valign="bottom" width="244"><font size="2">ブロンズ像の底部にはタイトル名が、<br/>
+
+作者の署名とともに入れられます。</font></td>
+<td align="right" valign="top"><img height="152" src="/image/goods/tomozawa-img01.jpg" width="100"/></td>
+<td><img height="1" src="/image/goods/spacer.gif" width="80"/></td>
+</tr>
+<tr>
+<td colspan="6"><img height="25" src="/image/goods/spacer.gif" width="1"/></td></tr></tbody></table>
+<br/>
+</section>
+<!--

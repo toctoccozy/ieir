@@ -1,0 +1,113 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>魔法のブラックフォーマル　セレモニーワンピース</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51051501" target="_self"><img alt="魔法のブラックフォーマル　セレモニーワンピース" src="/image/goods/51051_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：ワンピース・ポーチ＝ポリエステル100％　ボタン＝ポリエステル100％、樹脂<br/>
+●重さ（約）：700ｇ<br/>
+●スリット（約）：6cm<br/>
+●日本製<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="153" src="/image/goods/51051_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>魔法のブラックフォーマル　セレモニーワンピース</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,980円（税込5,478円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>29,800円（税込32,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51051501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51051"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Ｓサイズ</option>
+<option class="p999" value="999-M">Ｍサイズ</option>
+<option class="p999" value="999-L">Ｌサイズ</option>
+<option class="p999" value="999-LL">ＬＬサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51051501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51051501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="＜フレンチノワール＞クチュール仕立ての12枚はぎ スリムに見えるゆったりセレモニーワンピース" height="400" src="/image/goods/51051_01.jpg" width="580"/></p>
+<p class="intro">
+<span style="font-size: 1.25em;">喜びの席も、悲しみの席も、凛と美しい──</span><br/>
+<br/>
+		パリで活躍する一流コスチュームデザイナー<br/>
+		ナディーヌ・ビュタンがデザインした<br/>
+		正統感あふれるセレモニーワンピース。<br/>
+		ジャパンメイドの技が光る12枚はぎのＡラインが広がり<br/>
+		腰回りをスリムにカバーして、ゆったりと美しく。<br/>
+		着るだけでワンランク上の装いをもたらす<br/>
+		完璧なブラックフォーマルです。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>フランスの著名デザイナー、ナディーヌ・ビュタンのオリジナル作品</li>
+<li class="stt"><span class="sq01">■</span>計算された12枚はぎのAラインが作るゆったりスリムなシルエット</li>
+<li class="stt"><span class="sq01">■</span>高級感のある、くるみボタンを採用</li>
+<li class="stt"><span class="sq01">■</span>シワになりにくい快適素材</li>
+<li class="stt"><span class="sq01">■</span>付属のポーチに収納でき、持ち運びにも便利</li>
+<li class="stt"><span class="sq01">■</span>ご家庭でお洗濯できます</li>
+</ul>
+<p>
+		あらたまった席に求められる凛とした品格に、驚きの動きやすさとゆったり感。そして気になる体型をすっきり見せる、巧みな仕立て──。フランスの著名デザイナー、マダム・ナディーヌがおくる「スリムに見える魔法のワンピース」に、待望のブラックフォーマルが登場しました。映画や舞台の衣装デザインで培った「着る人を美しく演出する」技術を、妥協なく息づかせたクチュール感覚のセレモニーワンピースです。
+	</p>
+<p class="center-img"><img alt="360度、どの角度からもほっそり、きちんとした印象。日本の熟練職人が仕立てた12枚はぎの逸品" height="515" src="/image/goods/51051_02.jpg" width="580"/></p>
+<h2>急なセレモニーでも凛と美しい。大人の気品と着心地の良さを両立</h2>
+<p>
+		吸い込まれるように深いパリの黒に、とろみのある美しい落ち感…。空気をはらんで豊かに広がる12枚はぎのAラインが、セレモニーでの立ち居振る舞いをエレガントに見せ、淑女のあなたを参列者の記憶に印象付けます。肩や胸はすっきりと、腰回りはふんわりカバーし、脚は華奢に見せてくれる絶妙なシルエットを叶えながらも、長時間の着用が楽なゆったり感はマダム・ナディーヌだからこそ。さらに首もとを美しくカバーする知的な立襟や上質感漂うくるみボタン、袖口のスリットなど、細かな部分にまでパリのセンスが尽くされました。
+	</p>
+<p class="center-img"><img alt="凛と美しい表情を演出する立襟が首もとをカバーして、若々しく。／両サイドにはハンカチや小物等に便利な程よい大きさのポケットをプラス。／念珠やブレスレットを持ちやすいスリット使いの袖口。／礼節と心遣いを伝える正統派の黒に上質感漂うくるみボタン。" height="260" src="/image/goods/51051_03.jpg" width="580"/></p>
+<p>
+		素材は、しっとり滑らかな手触りも魅力のシワになりにくい上質生地。遠方や仕事帰りなど着替えが必要なシーンには畳んで持ち運べ、ご家庭で洗えるウォッシャブルだからお手入れも簡単です。観劇や会食など華やかなシーンでは主役の華やぎを、そして悲しみの席ではしとやかな礼節をもたらしてくれることでしょう。＜フレンチノワール＞クチュール仕立ての12枚はぎ スリムに見えるゆったりセレモニーワンピース。いざという時のためにも、ぜひこの機会にお申し込みください。
+	</p>
+<p class="center-img"><img alt="ボタンをはずしてコート風に。流れるようなドレープも美しい着こなしが完成／遠方でのセレモニーに便利なお揃い素材のポーチを無料進呈：シワになりにくい上質生地を使用しているから畳んで持ち運べ、同じ素材のトラベルポーチにすっぽり収まるので持ち運びも楽々。式場などアイロンのない場所での着替えも、きちんと感を保てます。／ナディーヌ・ビュタンのブランドロゴは一流の証。／サイズ交換返送料無料：サイズが合わなければ返送料は当社が負担します" height="650" src="/image/goods/51051_04.jpg" width="580"/></p>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="ナディーヌ・ビュタン ロゴ" height="20" src="/image/goods/51051_05.jpg" width="271"/>　ナディーヌ・ビュタン</h3>
+<p class="flt-r"><img alt="ナディーヌ・ビュタン近影" height="167" src="/image/goods/51051_06.jpg" width="125"/></p>
+<p>
+				フランスを代表する衣装デザイナー。映画、演劇、テレビドラマのコスチューム・デザインを数多く手がけ、アルチョム・ミハイロフ・ダンスカンパニーの舞台衣装で、世界的に高い評価を確立。鬼才ジャン・リュック・ゴダールの映画の衣装スタイリストとしても活躍。また体の不自由な人のためのファッション・デザインなどにも積極的に取り組んでいる。
+			</p>
+<p class="center-img">
+<img alt="セレモニーでこそ美しさが輝く…大人の装いで礼節を伝えましょう" height="230" src="/image/goods/51051_07.jpg" width="300"/>
+</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

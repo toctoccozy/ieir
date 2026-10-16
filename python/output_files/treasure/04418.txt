@@ -1,0 +1,191 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I アートギャラリー</p>
+<h1>完全保存版　歴史的第1号 切手コレクション　全60点</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=04418501" target="_self"><img alt="完全保存版　歴史的第1号 切手コレクション　全60点" src="/image/goods/04418_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●サイズ（約）：カード＝縦13.2×横20.8cm、アルバム＝閉じた状態で縦31.5×横25.5×厚さ3.5cm<br/>
+●仕様：カード＝紙、ファイルポケット＝ビニール、アルバム＝紙、ビニール、ステンレス他<br/>
+●日本製</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>完全保存版　歴史的第1号 切手コレクション　全60点</h3>
+<div class="price_area">
+<p>この商品は毎月1回頒布形式でお届けします。</p>
+<p>1回の支払い額 <span>12,800円 （税込14,080円）</span><br/>
+                    発送手数料 1回の発送に付き <span>700円 （税込770円）</span><br/>
+                    支払総額 <span>162,000円 （税込178,200円）</span></p>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="04418501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="04418"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('04418501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('04418501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="完全保存版　歴史的第1号 切手コレクション　全60点" height="220" src="/image/goods/04418_01.jpg" width="580"/></p>
+<p class="center-img"><img alt="「史上初」だけを集めた夢のコレクション。記念すべき第1号を手に入れる喜びと感動をあなたに…" height="371" src="/image/goods/04418_02.jpg" width="580"/></p>
+<p class="intro">
+		初のオリンピック記念切手から、シリーズ切手の第1号まで…<br/>
+		日本の切手史に残る重要な“初めて切手”の数々を<br/>
+		すべて希少な未使用極美品で揃えた壮大なコレクション。<br/>
+<br/>
+		切手はテーマごとに美しい写真･イラスト入りの<br/>
+		特製解説カードにセットして、毎月カード５点ずつお届けします。<br/>
+		切手の図案や発行にまつわる興味深い解説は監修者の書き下ろし。<br/>
+		無料進呈の特製アルバムに毎月ファイルしていけば<br/>
+		集める愉しみがさらに高まります。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>郵便学の権威が監修・選定した“初めて切手”69枚（ペア・連刷・シート含む）</li>
+<li class="stt"><span class="sq01">■</span>すべて最高ランクの未使用品でご用意</li>
+<li class="stt"><span class="sq01">■</span>切手はテーマごとに特製解説カードにセット</li>
+<li class="stt"><span class="sq01">■</span>カード裏面の解説は監修者の書き下ろし</li>
+<li class="stt"><span class="sq01">■</span>毎月カード5点ずつ12回にわたってお届け</li>
+<li class="stt"><span class="sq01">■</span>最終回にさらに貴重な切手を特別進呈</li>
+<li class="stt"><span class="sq01">■</span>バインダー式特製アルバムを無料進呈</li>
+</ul>
+<h2>「初めて」をたどれば日本の歩みが見えてくる。</h2>
+<p>
+		歴史的第1号を手にすること。それは、すべての収集の原点であり、コレクターの究極の願望です。このたび日本の郵便切手の歴史において、数々の記念すべき第1号を飾った重要な切手だけを選りすぐって揃えた、夢のコレクションが誕生しました。郵便学の権威、内藤陽介氏の監修のもとに実現した、壮大な“初めてづくし”の切手コレクション。昭和初期に発行された初の航空切手や、人気のシリーズ切手の第1号を飾った文化人切手など、すでに郵便局では手に入らない貴重な逸品を通して、日本の歩みを総覧する知的興奮に満ちた収集体験が、ついに始まります。
+	</p>
+<p class="center-img"><img alt="時代のさきがけとなった
+貴重な〝初めて切手〞の数々" border="0" src="/image/goods/04418_03.jpg" usemap="#Map"/></p>
+<map id="Map" name="Map">
+<!-- 1行目 -->
+<area coords="10,41,145,311" href="/image/goods/04418_03a.jpg" shape="rect" target="_blank"/>
+<area coords="152,41,287,311" href="/image/goods/04418_03b.jpg" shape="rect" target="_blank"/>
+<area coords="293,41,428,311" href="/image/goods/04418_03c.jpg" shape="rect" target="_blank"/>
+<area coords="435,41,570,311" href="/image/goods/04418_03d.jpg" shape="rect" target="_blank"/>
+<!-- 2行目 -->
+<area coords="10,327,145,597" href="/image/goods/04418_03e.jpg" shape="rect" target="_blank"/>
+<area coords="152,327,287,597" href="/image/goods/04418_03f.jpg" shape="rect" target="_blank"/>
+<area coords="293,327,428,597" href="/image/goods/04418_03g.jpg" shape="rect" target="_blank"/>
+<area coords="435,327,570,597" href="/image/goods/04418_03h.jpg" shape="rect" target="_blank"/>
+<!-- 3行目 -->
+<area coords="10,613,145,883" href="/image/goods/04418_03i.jpg" shape="rect" target="_blank"/>
+<area coords="152,613,287,883" href="/image/goods/04418_03j.jpg" shape="rect" target="_blank"/>
+<area coords="293,613,428,883" href="/image/goods/04418_03k.jpg" shape="rect" target="_blank"/>
+<area coords="435,613,570,883" href="/image/goods/04418_03l.jpg" shape="rect" target="_blank"/>
+<!-- 4行目 -->
+<area coords="10,899,145,1169" href="/image/goods/04418_03m.jpg" shape="rect" target="_blank"/>
+<area coords="152,899,287,1169" href="/image/goods/04418_03n.jpg" shape="rect" target="_blank"/>
+<area coords="293,899,428,1169" href="/image/goods/04418_03o.jpg" shape="rect" target="_blank"/>
+<area coords="435,899,570,1169" href="/image/goods/04418_03p.jpg" shape="rect" target="_blank"/>
+<!-- 5行目 -->
+<area coords="10,1185,190,1455" href="/image/goods/04418_03q.jpg" shape="rect" target="_blank"/>
+<area coords="200,1185,380,1455" href="/image/goods/04418_03r.jpg" shape="rect" target="_blank"/>
+<area coords="389,1185,569,1455" href="/image/goods/04418_03s.jpg" shape="rect" target="_blank"/>
+</map>
+<h2>切手で日本の歩みを総覧する、初めてづくしのコレクション</h2>
+<p>
+		近代郵便制度が発足して以来、数千種類もの絵柄で発行され、国の威信を内外に示す重要な役目を担ってきた日本の切手。本コレクションではそれらのうち、歴史的第1号を飾った切手に焦点を当て、多彩な図柄や時代の先端を行く印刷技術の変遷を通して、近代日本の歩みを浮き彫りにします。たとえば切手趣味週間の最初を飾った葛飾北斎の名高い浮世絵「富嶽三十六景」の「山下白雨」、アニメキャラクター切手の歴史的第1号となった、かの手塚治虫の偉業を称える連刷切手、NIPPONの文字が初めて入った「魚介シリーズ」切手の第1号や、初の円単位による記念切手など…時代のさきがけとなった貴重な“初めて切手”の数々が、どれも発行当時の美しさを保つ最高ランクの未使用品で収められているのです。もちろん初の年賀切手や、今はなき航空切手の第1号など、今日高値で取引されている博物館級の逸品も確保。個人の力だけでこれほどの規模のコレクションを築くのは、ほぼ不可能でしょう。お届けする切手は、特製解説カードの透明ポケットに保護封入されていますが、このカードもまた本コレクションの大きな魅力です。切手のテーマにちなんだ美しい写真やイラスト入りで、裏面の解説は監修の内藤陽介氏による書き下ろし。切手の図案や発行にまつわる興味深い逸話など、読み物としても楽しめる内容となっています。切手を鑑賞しながら、本一冊分の豊富な雑学が自然に身に着くのですから、教養の糧としても見逃せません。
+	</p>
+<p class="center-img"><img alt="記念切手はテーマごとに特製解説カードにセット。裏面の解説には豊富な雑学が満載。／切手は透明フィルムのポケットに封入されているので、末永く美しさを保ちます。／解説カードのイラストや写真は、切手のテーマにちなんで選ばれています。／裏面の解説で切手の図案や発行にまつわる興味深い逸話がわかります。" height="460" src="/image/goods/04418_04.jpg" width="520"/></p>
+<h2>日本初の記念切手を当時の消印入りで<br/>
+	最終お届け回に特別進呈</h2>
+<p>
+		まさに切手収集の王道──“史上初”を飾った重要な切手だけを、詳しい解説付きで集めていく＜歴史的第1号切手コレクション＞全60点は、I・E・I社から提供されます。毎月届く切手を鑑賞しながら、カード裏面の解説で知識を深めていく楽しさは格別。また、バインダー式の専用アルバムが無料進呈されますので、お好きなようにファイルして、ご家族やご友人に披露なされば、楽しい会話が盛り上がることでしょう。さらに見逃せないプレゼントがもうひとつ！　今や入手困難な「日本初の記念切手」（明治27年発行・当時の消印入り）が最終回に特別進呈されるのです！　ただし、確保できる数に限りがあります。ぜひ今すぐお申し込みください。</p>
+<p class="center-img"><img alt="専用アルバムを無料進呈。「日本初の記念切手」（明治27年発行）を特別進呈。博物館級の貴重な逸品を当時の消印入りで確保。最終お届け回に進呈いたします。" height="290" src="/image/goods/04418_05.jpg" width="540"/></p>
+<div class="box3">
+<div class="box-text">
+<h3>歴史的第1号切手コレクションが誇る「史上初」のラインナップ</h3>
+<dl>
+<dt>発行年月日</dt><dd>切手名</dd>
+<dt>1894.03.09</dt><dd>明治銀婚「つると唐草模様」</dd>
+<dt>1920.11.01</dt><dd>明治神宮鎮座「明治神宮」</dd>
+<dt>1921.04.20</dt><dd>郵便創始50年「郵便旗と最初の切手」</dd>
+<dt>1921.09.03</dt><dd>昭和ご帰朝「軍艦香取と鹿島」</dd>
+<dt>1925.05.10</dt><dd>大正銀婚「ほうおう」</dd>
+<dt>1929.10.06</dt><dd>航空切手芦ノ湖航空</dd>
+<dt>1930.09.25</dt><dd>第2回国勢調査「日本地図」</dd>
+<dt>1935.12.01</dt><dd>昭和11年用年賀「富士」</dd>
+<dt>1936.07.10</dt><dd>第1次国立公園シリーズ「暁の富士」</dd>
+<dt>1936.11.07</dt><dd>議事堂竣工「議事堂全景」</dd>
+<dt>1937.06.01</dt><dd>愛国募金「日本アルプスとダグラス機」</dd>
+<dt>1939.06.01</dt><dd>第1次昭和「ガランビ灯台」</dd>
+<dt>1939.07.01</dt><dd>第1次昭和「鎌倉の大仏」</dd>
+<dt>1939.10.16</dt><dd>第1次昭和「金剛山」</dd>
+<dt>1940.10.25</dt><dd>教育勅語50年「勅語下賜の図」</dd>
+<dt>1942.09.15</dt><dd>満州建国10年「日満のこども」</dd>
+<dt>1942.10.14</dt><dd>鉄道70年「C59型機関車」</dd>
+<dt>1942.12.08</dt><dd>大東亜戦争1年「戦車の進撃」</dd>
+<dt>1943.01.01</dt><dd>第2次昭和「女子工員」</dd>
+<dt>1945.04.01</dt><dd>第2次昭和「勅額」</dd>
+<dt>1946.08.01</dt><dd>第1次新昭和「北斎の冨士」</dd>
+<dt>1946.12.12</dt><dd>郵便創始75年「竜切手の図案」</dd>
+<dt>1947.09.13</dt><dd>司法保護「すずらんと手」</dd>
+<dt>1947.11.01</dt><dd>切手趣味週間</dd>
+<dt>1949.11.03</dt><dd>文化人シリーズ「野口英世」</dd>
+<dt>1950.04.10</dt><dd>文化人シリーズ「夏目漱石」</dd>
+<dt>1950.09.13</dt><dd>文化人シリーズ「市川団十郎」</dd>
+<dt>1951.04.14</dt><dd>昭和すかしなし「前島密」</dd>
+<dt>1952.05.01</dt><dd>日赤創立75年「赤十字とゆり」</dd>
+<dt>1953.08.25</dt><dd>第1次円単位「秋田犬」</dd>
+<dt>1953.10.29</dt><dd>東京天文台75年「大赤道儀室」</dd>
+<dt>1955.05.16</dt><dd>国際商業会議所「こいのぼり」</dd>
+<dt>1956.06.20</dt><dd>第1次円単位「オオムラサキ」</dd>
+<dt>1956.11.19</dt><dd>東海道電化「EF58型と広重の『由井』」</dd>
+<dt>1958.03.09</dt><dd>関門トンネル「トンネルの断面図」</dd>
+<dt>1958.08.20</dt><dd>国定公園切手佐渡弥彦「佐渡おけさ」</dd>
+<dt>1958.10.05</dt><dd>国際文通週間「京師」</dd>
+<dt>1959.07.21</dt><dd>自然公園の日「本栖湖より冨士」</dd>
+<dt>1959.10.01</dt><dd>名古屋350年「金のシャチ」</dd>
+<dt>1959.11.02</dt><dd>ガット東京総会「地球」</dd>
+<dt>1960.05.17</dt><dd>日米修好100年「大統領の引見」</dd>
+<dt>1960.05.24</dt><dd>鳥類保護会議「天然記念物『とき』」</dd>
+<dt>1961.10.11</dt><dd>東京オリンピック募金「槍投げ」「飛込み」「レスリング」</dd>
+<dt>1964.04.15</dt><dd>お祭りシリーズ「高山祭」</dd>
+<dt>1964.10.01</dt><dd>東海道新幹線「新幹線列車」</dd>
+<dt>1966.01.31</dt><dd>魚介シリーズ「イセエビ」</dd>
+<dt>1967.01.27</dt><dd>衛星通信開始「通信衛星」</dd>
+<dt>1968.07.01</dt><dd>郵便番号「地図とナンバー君」</dd>
+<dt>1970.07.10</dt><dd>古典芸能シリーズ「助六」</dd>
+<dt>1971.07.15</dt><dd>第3次ローマ字入り「かぶとむし」</dd>
+<dt>1979.07.23</dt><dd>ふみの日「手紙」</dd>
+<dt>1979.08.24</dt><dd>日本の歌シリーズ「荒城の月」</dd>
+<dt>1979.09.21</dt><dd>近代美術シリーズ「黒き猫図」</dd>
+<dt>1982.08.23</dt><dd>慶弔用「慶事用折鶴」</dd>
+<dt>1982.08.23</dt><dd>慶弔用「弔事用花輪」</dd>
+<dt>1988.09.05</dt><dd>リハビリテーション世界会議「世界地図とシンボルマーク」</dd>
+<dt>1989.03.01</dt><dd>シールゆうペーン</dd>
+<dt>1989.03.24</dt><dd>花・貝・文化財「ヒオウギガイ」</dd>
+<dt>1989.04.01</dt><dd>ふるさと切手長野県「お猿の温泉」</dd>
+<dt>1989.12.01</dt><dd>平成2年用年賀「浜松張子」</dd>
+<dt>1997.01.28</dt><dd>戦後50年メモリアルシリーズ「手塚治虫とキャラクター」「自画像とアトム」</dd>
+<dt></dt><dd style="text-align: right;">※お届けの順番とは異なります。</dd>
+</dl>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3>内藤陽介</h3>
+<p>昭和42年（1967年）、東京都生まれ。東京大学文学部卒業。切手などの郵便資料から、国家や地域のあり方を読み解く「郵便学」を提唱し、活発な研究・著作活動を展開している。主な著書に、『今日も世界は迷走中』（ワニブックス）、『本当は恐ろしい！こわい切手』（ビジネス社）、『切手でたどる郵便創業150年の歴史』（全3巻、日本郵趣出版）ほか多数。国際郵趣連盟（FIP）、アジア郵趣連盟（FIAP）審査員。日本文芸家協会会員。</p>
+</div>
+</div>
+</div>
+<script src="/common/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="/common/js/jquery.rwdImageMaps.min.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	});
+</script>
+<br/>
+</section>
+<!--

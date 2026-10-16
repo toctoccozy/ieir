@@ -1,0 +1,112 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>甲州印伝の高級長財布　桜印伝 吉祥花うさぎ</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=09329502" target="_self"><img alt="甲州印伝の高級長財布　桜印伝 吉祥花うさぎ" src="/image/goods/9329000.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：財布＝鹿革、漆、牛革、ポリエステル　根付＝ローズクオーツ1石、ルビー1石、本水晶1石<br>
+●サイズ（約）：閉じた状態で縦8.3×横18.3×厚さ2.3cm<br>
+●ポケット仕様：ファスナー付き小銭入れ、長ポケット×2、札入れ×2室、カードポケット×6（計11ポケット）<br>
+●日本製</br></br></br></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>甲州印伝の高級長財布　桜印伝 吉祥花うさぎ</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,980円（税込5,478円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>29,800円（税込32,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="09329502"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="09329"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('09329502');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('09329502');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-6930181" id="main-content">
+<p class="cnt-img"><img alt="" height="150" src="/image/goods/9329000_01.jpg" width="580"/></p>
+<p class="intro">ビロードのような鹿革に、珍しい桜色の本漆「桜印伝」で浮かび上がるのは<br/>
+春風に舞い水面に流れる桜の花びらと、愛らしいうさぎ。<br/>
+飛躍、繁栄、長寿の象徴として尊ばれてきたその可憐な姿を<br/>
+風雅な意匠にちりばめた珠玉の伝統工芸「甲州印伝」の長財布。<br/>
+お金で満杯の「張る財布」にあやかった<br/>
+縁起のいい「春財布」で、心も懐も一年中ほっこり温かく。</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>甲州印伝の伝統工芸士が一点一点手づくり</li>
+<li class="stt"><span class="sq01">■</span>桜色の本漆「桜印伝」で浮かぶ風雅な花うさぎの意匠</li>
+<li class="stt"><span class="sq01">■</span>なめらかな上質の鹿革製</li>
+<li class="stt"><span class="sq01">■</span>金の花うさぎが刻まれたローズクオーツの根付が付属</li>
+<li class="stt"><span class="sq01">■</span>花うさぎの目はルビー</li>
+<li class="stt"><span class="sq01">■</span>お一人様一点限り</li>
+</ul>
+<p>招福を願う吉祥文様のモチーフとして、古くから親しまれてきた”うさぎ”。軽やかに跳ねることから「飛躍」「運気上昇」「万事とんとん拍子」、多産なので「繁栄」「生命力」「長寿」を意味し、月に住むという伝説からツキを呼ぶ縁起物としても尊ばれています。そんな幸運の使い”うさぎ”が春爛漫の桜と戯れる、見るからに縁起のいいお財布が誕生しました。漆と鹿革の芸術・甲州印伝の伝統工芸士・山本裕輔氏が、匠の技をふるった高級長財布＜桜印伝吉祥花うさぎ＞のご案内です。</p>
+<p class="cnt-img"><img alt="" height="530" src="/image/goods/9329000_03.jpg" width="580"/></p>
+<h2>甲州印伝の伝統工芸士が技を尽くして手づくり<br/>
+桜色の本漆がはんなり艶めく美しい仕上がり</h2>
+<p class="flt-r"><img alt="" height="282" src="/image/goods/9329000_02.jpg" width="150"/></p>
+<p>ビロードのようにしっとりした漆黒の鹿革から、つややかな漆で浮かび上がるのは、はらはらと舞う桜の花と可憐なうさぎ。珍しい桜色の本漆を使用した「桜印伝」で、流れる水面に散りしいた桜の花筏のように美しく配されています。創作にあたったのは、長い歴史を誇る甲州印伝の伝統工芸士・山本裕輔氏。経験と勘をもとに、桜色の漆を独自に調製し、かすれや色ムラが出ぬよう、一気に漆を摺り込んでいく妙技を余すところなく発揮しました。深みのある黒にひときわ映える桜色のはんなりとした柄ゆきは、まさに「漆と革の芸術品」。バッグから取り出すたびに、愛らしくも風雅な趣が、あなたのセンスの良さを印象づけるでしょう。</p>
+<h2>縁起のいい「張る財布」にちなんだ幸せづくしの春財布</h2>
+<p>甲州印伝の高級長財布＜桜印伝吉祥花うさぎ＞は、I・E・I社でしかお求めになれない特別限定品です。桜色の天然宝石ローズクオーツに金色の桜が刻まれた特製の根付を添えてお届け。あでやかな桜とうさぎをちりばめた、幸せ貯まる”春財布”。富と幸運で満杯の”張る財布”にあやかって、今すぐ手に入れましょう。</p>
+<p class="cnt-img"><img alt="" height="500" src="/image/goods/9329000_04.jpg" width="580"/></p>
+<div class="box1">
+<div class="box-text">
+<h3>ココロもフトコロも一年中、春の温かさ。<br/>
+縁起のいい「張る財布」にあやかった桜印伝の「春財布」。</h3>
+<div><img align="left" alt="" height="280" src="/image/goods/9329000_05.jpg" style="margin: 0 12px 12px 0;" width="200"/><strong>うさぎにまつわる吉祥の言い伝え</strong><br/>
+●運気も大きく跳ねる「飛躍」のシンボル<br/>
+●強い生命力と繁殖力で「富貴繁栄」を象徴<br/>
+●月に住み「ツキを呼ぶ」ラッキーシンボル<br/><br/>
+<strong>幸せがどんどん貯まる魅力のポイント</strong><br/>
+●うさぎの愛らしさに思わずにっこり<br/>
+●桜の女神・木花咲耶姫の力で美人力アップ<br/>
+●お札を折らずにきれいに保てる長財布<br/>
+　お札を喜ばせて金運もさらにアップ<br/>
+●使いやすい11ポケット<br/>
+●愛と美の宝石ローズクオーツの根付</div>
+</div>
+</div>
+<br/>
+<div class="box1">
+<div class="box-text">
+<h3>甲州印伝　秘伝の技</h3>
+<div>きめ細かな天然の鹿革に漆で文様を描く革工芸の技法、甲州印伝。奈良時代までさかのぼる鹿革工芸の技を脈々と受け継ぎ、甲州の革職人が江戸時代に漆づけの技法を発展させました。型紙を乗せて本漆を均一に摺り込み、温湿度を調整した室で硬化。昔ながらの手作業で、高度な熟練を要する多くの工程を経て、美しい甲州印伝が仕上がります。</div>
+</div>
+</div>
+<div class="box1">
+<div class="box-text clearfix">
+<h3>甲州印伝　伝統工芸士　山本裕輔氏</h3>
+<p class="flt-l"><img alt="" height="173" src="/image/goods/5014100_06b.jpg" width="125"/></p>
+<p>1982年9月生まれ。父である山本誠に師事し、甲州印伝の技法を学ぶ。「全国伝統的工芸品公募展」での日本伝統工芸士会会長賞受賞をはじめ、「全国伝統的工芸品コンクール」などで数々の賞を受賞。2018年、伝統工芸士に認定される。祖父の代から続く「印伝の山本」の技と美を受け継ぎ、古くからの伝統技術を継承しながら創作活動に励んでいる。</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

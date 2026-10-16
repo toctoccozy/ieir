@@ -1,0 +1,103 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>天空のペガサス金貨　純金コインの宝飾ペンダント</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51400503" target="_self"><img alt="天空のペガサス金貨　純金コインの宝飾ペンダント" src="/image/goods/51400_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：ペンダントトップ＝金貨（品位.9999）　フレーム・バチカン＝18金、ダイヤモンド1石（約0.01ct）　チェーン＝24金仕上げスターリング・シルバー（925銀）<br/>
+●サイズ（約）：ペンダントトップ＝縦25×横14.5×厚さ4.1mm（フレーム含む）　チェーン＝最長45cm（フリーアジャスター）<br/>
+●鋳造：マイヤーズ造幣所（ドイツ）<br/>
+●日本製</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>天空のペガサス金貨　純金コインの宝飾ペンダント</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>13,000円（税込14,300円）×15回払い</span><br/>
+                          
+                          
+                            一括価格 <span>179,800円（税込197,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51400503"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51400"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51400503');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51400503');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="パラオ共和国政府発行「天空のペガサス金貨」純金コインの宝飾ペンダント" height="300" src="/image/goods/51400_01.jpg" width="580"/></p>
+<p class="center-img"><img alt="純金とダイヤモンド、２つの輝きが胸元にラグジュアリーな華やぎを添えて…" height="460" src="/image/goods/51400_02.jpg" width="400"/></p>
+<p class="intro">
+		ギリシャ神話の美しき翼を持つ天空のペガサス。<br/>
+		幸せをはこぶ高貴なその姿が映された<br/>
+		最高品位の法定貨幣を胸元に。<br/>
+<br/>
+		バチカンは三日月と星をモチーフにしたエレガントなデザイン。<br/>
+		星の中央で煌めくダイヤモンドが永遠の美しさをもたらす<br/>
+		希少な純金コインペンダントです。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>パラオ共和国政府が発行する真正な法定金貨を使用</li>
+<li class="stt"><span class="sq01">■</span>最高品位.9999の純金製</li>
+<li class="stt"><span class="sq01">■</span>三日月と星のモチーフにダイヤモンドが煌めく18金製のバチカンとフレーム</li>
+<li class="stt"><span class="sq01">■</span>裏表2つの表情が楽しめるリバーシブルタイプ</li>
+<li class="stt"><span class="sq01">■</span>チェーンはSV925に純金仕上げ</li>
+<li class="stt"><span class="sq01">■</span>発行国の発行証明書が付属</li>
+</ul>
+<p class="center-img"><img alt="２つの表情が楽しめるリバーシブル。金貨のどちらをおもてにしても素敵です。" height="500" src="/image/goods/51400_03.jpg" width="400"/></p>
+<p>
+		ギリシャ神話に語られる翼を持つ馬、ペガサス。神々の使者として天空を飛翔することから自由を象徴し、幸福をはこぶと信じられています。そんな気高いペガサスが浮かび上がる特別な金貨が、胸元を華やかに彩るコインペンダントになりました。あでやかな純金と神々しいペガサス、三日月と星のラッキーシンボルが幸せの訪れを予感させる宝飾ペンダント＜天空のペガサス金貨＞のご案内です。
+	</p>
+<p class="center-img"><img alt="天空を駆ける馬 ペガサス：ギリシャ神話に登場する伝説上の生物で、背中に大きな鳥の翼を持つ空飛ぶ馬。コリントスの英雄、ベレロフォンを乗せて怪物退治に力を貸し活躍した。天に昇りペガサス座になったとされる。" height="215" src="/image/goods/51400_04.jpg" width="550"/></p>
+<h2>かつてないよろこびと自信をもたらす純金の輝き。幸せをはこぶペガサスをどんな時も身に着けて</h2>
+<p class="flt-l"><img alt="バチカンできらめくダイヤモンド" height="135" src="/image/goods/51400_05.jpg" width="135"/></p>
+<p>
+		パラオ共和国政府より公式に発行された純度99.99%以上の本物の金貨に浮かび上がるのは、三日月と星が輝く夜空。豊かな光で満ちた空にペガサスが翼を広げ、天高く自由に駆けていく──そんな幻想的で美しい情景が、高度な鋳造技術と精緻な凹凸（レリーフ）で立体的に表現されました。金貨は穴を開けるなどの加工を施すことなく、そのままの状態でフレームにセット。バチカンには、古来より願いを叶える力があるとされる神秘的な三日月と、希望を意味する星のモチーフをデザインしています。さらに、永遠の美を象徴するダイヤモンドが煌めきを添え、美しさをいっそう引き立ててくれることでしょう。
+	</p>
+<p class="center-img"><img alt="純金のプルーフコインを贅沢にそのまま使用／品質：プルーフ、品位：.9999金、重さ：1/25オンス（約1.2グラム）、直径：約13.92ミリ、額面：1パラオ・ドル、発行：パラオ共和国、発行年：2024年　発行数：限定2024点／本物の法定貨幣の証として発行証明書が付属します。／＊コイン表側にはパラオ共和国の盾形紋章が描かれています。" height="640" src="/image/goods/51400_06.jpg" width="580"/></p>
+<p>
+		＜天空のペガサス金貨＞純金コインの宝飾ペンダントは、2024点のみ発行される貴重な法定貨幣を用いたジュエリー。正真正銘の法定貨幣であることを証する、コインの発行証明書を添えてお届けいたします。「身に着ける資産」として確かな価値を有し、末永い幸せを願うお守りのようにもお楽しみいただける品格ある逸品を、ぜひこの好機にお申し込みください。
+	</p>
+<p class="center-img"><img alt="ペンダントはギフトケースに収めてお届けします。贈り物にも最適です。" height="570" src="/image/goods/51400_07.jpg" width="580"/></p>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="パラオ共和国　国旗" height="70" src="/image/goods/51400_08.jpg" width="105"/>　パラオ共和国　Republic of Palau</h3>
+<p>太平洋中部、ミクロネシア西端に点在する島々からなる共和国。陸地面積は約488平方キロメートル。首都はマルキョク。1994年に独立。政治形態は大統領制。主要産業は観光業で、日本からの観光客も多い。</p>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3>プルーフコインとは…</h3>
+<p>国賓やVIPに贈る記念品として、各国が特殊な技法を駆使して発行する貨幣。模様を鮮明にするため、極印（型）を2回以上打ちつけるなどして入念に製造される。発行数が少ないため、収集家の希求の的。</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

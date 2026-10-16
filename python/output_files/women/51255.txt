@@ -1,0 +1,115 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>華葉衣（ハナハゴロモ）備和織リーフ柄レースの高級ピンタックブラウス</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51255501" target="_self"><img alt="華葉衣（ハナハゴロモ）備和織リーフ柄レースの高級ピンタックブラウス" src="/image/goods/51255_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：生地＝和紙53％・綿47％（備和）、レース部分＝ポリエステル100％、ボタン＝樹脂<br/>
+●日本製<br/>
+<br/>
+<p class="center-img"><img alt="仕上がり寸法（単位＝cm）／Sサイズ：バスト108、裄丈61、着丈67／Mサイズ：バスト114、裄丈62、着丈67／Lサイズ：バスト120、裄丈63、着丈68／LLサイズ：バスト126、裄丈64、着丈68" height="153" src="/image/goods/51255_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>華葉衣（ハナハゴロモ）備和織リーフ柄レースの高級ピンタックブラウス</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,980円（税込5,478円）×5回払い</span><br/>
+                          
+                          
+                            一括価格 <span>24,800円（税込27,280円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51255501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51255"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Ｓサイズ(完売）</option>
+<option class="p999" value="999-M">Ｍサイズ(完売）</option>
+<option class="p999" value="999-L">Ｌサイズ(完売）</option>
+<option class="p999" value="999-LL">ＬＬサイズ(完売）</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51255501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51255501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="本場備後　華葉衣（はなはごろも）　備和織リーフ柄レースの高級ピンタックブラウス" height="360" src="/image/goods/51255_01.jpg" width="580"/></p>
+<p class="intro">
+		上質な大人のエレガンスが漂う繊細なピンタック、<br/>
+		華やかなリーフ柄が透ける、洗練のレース袖。<br/>
+<br/>
+		風光明媚な瀬戸内に面した<ruby><rb>絣</rb><rp>（</rp><rt>かすり</rt><rp>）</rp></ruby>の本場、備後地方──。<br/>
+		この地で創業96年を誇る老舗が生み出した「和紙の高級ブラウス」。<br/>
+<br/>
+		和紙撚糸「備和」を贅沢に使用した、かつてない天然の涼しさに<br/>
+		凛と鮮やかな藍の美が、夏のエレガンスを演出して。
+	</p>
+<p class="center-img"><img alt="ナチュラルに、涼やかに──。「和紙」から生まれた新しいエレガンス" height="420" src="/image/goods/51255_02.jpg" width="345"/></p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>絣の本場・備後で創業96年の老舗が撚り上げた和紙糸「備和」を贅沢に使用</li>
+<li class="stt"><span class="sq01">■</span>通気性・吸汗性に優れた和紙撚糸の織地</li>
+<li class="stt"><span class="sq01">■</span>涼やかで毛羽がなく滑らかな肌触り</li>
+<li class="stt"><span class="sq01">■</span>フェミニンで洗練されたリーフ柄レースの7分袖</li>
+<li class="stt"><span class="sq01">■</span>軽やかな着心地</li>
+<li class="stt"><span class="sq01">■</span>気になる腰回りをカバーする絶妙な丈</li>
+<li class="stt"><span class="sq01">■</span>和の伝統素材を現代的にデザインするブランド「一期一衣」</li>
+</ul>
+<p>
+		コットンよりも軽く涼やかで、麻よりも心地よい──。繊細なピンタックとリーフ柄レースが女性らしいエレガンスを漂わせるこの一着の生地は、絣の本場、備後地方で創業90余年を数える老舗が約7年の歳月を費やした和紙の糸「備和」で織り上げています。コウゾやミツマタといった古来からの植物の自然な特性が活かされたその肌触りは絹のように滑らかで、空気を纏うかのように軽やか。コットンや麻の涼しさを超える、新しい夏の一着＜華葉衣＞リーフ柄レースの高級ピンタックブラウスのご案内です。
+
+	</p>
+<p class="center-img"><img alt="和紙から作られた糸「備和」を贅沢に使用して織り上げています：和紙は耐水性、断熱性に富み、丈夫で調湿、吸水力、UVカット力、消臭・抗菌に優れるなど多様な魅力に満ち溢れています。そんな和紙を、装いに取り入れられないか──。本作品は、絣の本場・備後地方の老舗「備後撚糸」の光成明浩さんの熱い想いからスタートし、約7年の歳月を経て完成した和紙撚糸の生地です。その工程は、幅1～30ミリに細長くカットした和紙を目指す生地の風合いに合わせて厳選し、1インチ間に何回撚りをかけるかなどを詳細に調節しテンションをかけた経験と感性のなせる技。生まれた和紙糸「備和」を繊細に織り上げ、他の素材にはない滑らかさと涼しさが誕生しました。洗濯を繰り返しても風合いを維持し、型崩れしにくいのは和紙ならでは。夏の肌が喜ぶ、はじめての肌触りと涼しさを、長くお楽しみください。" height="480" src="/image/goods/51255_03.jpg" width="580"/></p>
+<h2>ナチュラルな植物本来の風合いとエレガンス<br/>
+	創業90余年の老舗がたどり着いた、新しい涼しさ「和紙の服」</h2>
+<p>
+		深みある気品も美しい藍の彩りと、ふんわり優しく身体に寄り添う特別な風合い。そよ風が心地よく通り抜ける優れた通気性を持ちながらも、きめ細やかな生地の魅力を余すことなく引き出したのが、日本の熟練職人による縫製です。首元をほっそり見せる立襟、そしてピンタックを添えたフェミニンな華やかさが一枚でサマになるお洒落を演出。さらに7分袖にはリーフ柄レースを切り替え、いっそう涼やかにワンランク上のエレガンスが漂って…。気になる腰回りをカバーする絶妙な丈は合わせるボトムを選ばず、遠目からも美しいシルエットを主張してくれるのです。
+	</p>
+<p class="center-img"><img alt="カジュアルからあらたまったお席まで。どんな場所でも、美しさを主張／軽くて通気性抜群：ネック周りを美しくカバーしほっそり見せる立襟と、さりげなく華やぎを添える繊細なピンタック。ゆったり動きやすい身幅にサイドスリットを入れることでより美しくスリムなシルエットが完成。／そよ風が通り抜ける涼やかなリーフ柄レースがお洒落なアクセント；7分袖には、甘すぎない華やぎが漂うリーフ柄のレースをあしらいました。風が通り抜ける極上の涼しさに、ドレスさながらのリッチなディテールがワンランク上のエレガンスをプラスして。" height="915" src="/image/goods/51255_04.jpg" width="580"/></p>
+<p>
+		腕を通した瞬間に、いままでにない爽やかさを実感する＜華葉衣＞リーフ柄レースの高級ピンタックブラウスはI・E・I 社の特別企画商品です。大切な方々とのお食事会に、お友達とのショッピングに。自信をもってお召しいただける特別な一着を、この好機にどうぞお求めください。
+	</p>
+<p class="center-img"><img alt="後ろ姿も美しい、腰回りをカバーする丈" height="420" src="/image/goods/51255_05.jpg" width="440"/></p>
+<div class="box1">
+<div class="box-text">
+<h3>一期一衣</h3>
+<p>
+<span style="font-size: 1.2em; font-weight:bold;">世界が絶賛する華やぎの「ジャパンメイド」</span><br/>
+				日本のモノづくりが培った高度な技術・和の伝統素材を、現代のスタイルで着こなす高級オリジナルブランド。日本の美意識に貫かれた新鮮なデザインと匠の技が、華のある存在感を演出します。素材選びから染め・織り・縫製にいたるまで、妥協を許さぬ信頼のジャパンクオリティでお届けします。
+			</p>
+<p class="center-img">
+<img alt="ブランドタグ" height="89" src="/image/goods/51255_06.jpg" width="250"/><br/>
+				メイド・イン・ジャパンへのこだわりの証「一期一衣」のブランドタグ。
+			</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

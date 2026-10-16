@@ -1,0 +1,85 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>世界遺産登録20周年記念 日本の世界遺産 切手コレクション【全83種・9回シリーズ】</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=09305501" target="_self"><img alt="世界遺産登録20周年記念 日本の世界遺産 切手コレクション【全83種・9回シリーズ】" src="/image/goods/9305000.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●サイズ（約）：特製解説カード＝縦13.2×横20.8㎝、アルバム＝閉じた状態で縦15.6×横25.8×厚さ3㎝<br>
+●材質：特製解説カード＝紙、ファイルポケット＝塩化ビニール、アルバム＝紙レザー他<br>
+●日本製</br></br></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>世界遺産登録20周年記念 日本の世界遺産 切手コレクション【全83種・9回シリーズ】</h3>
+<div class="price_area">
+<p>この商品は毎月1回頒布形式でお届けします。</p>
+<p>1回の支払い額 <span>19,800円 （税込21,780円）</span><br/>
+                    発送手数料 1回の発送に付き <span>700円 （税込770円）</span><br/>
+                    支払総額 <span>184,500円 （税込202,950円）</span></p>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="09305501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="09305"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('09305501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('09305501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-6930181" id="main-content">
+<p class="cnt-img"><img alt="" height="198" src="/image/goods/9305000_01.jpg" width="580"/></p>
+<p class="intro">戦前に発行された収集家垂涎の第1次国立公園シリーズをはじめ<br>
+		日本三景、国宝、自然保護などの貴重なシリーズ切手、<br>
+		地方色豊かなふるさと切手、そして高値がついているあの幻の普通切手も…<br>
+		読み物としても楽しめる解説カードには、美しい写真や絵画が満載！<br>
+	無料進呈の特製アルバムに毎回ファイルしていけば、集める悦びがさらに高まります。</br></br></br></br></p>
+<p class="cnt-img"><img alt="" height="467" src="/image/goods/9305000_02.jpg" width="580"/></p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>郵便学の権威、内藤陽介氏が監修・選定</li>
+<li class="stt"><span class="sq01">■</span>日本の世界遺産をテーマに厳選された切手83種</li>
+<li class="stt"><span class="sq01">■</span>すべて最高ランクの未使用品でご用意</li>
+<li class="stt"><span class="sq01">■</span>登録地ごとに特製解説カードにセット</li>
+<li class="stt"><span class="sq01">■</span>カード裏面の解説は監修者による書き下ろし</li>
+<li class="stt"><span class="sq01">■</span>バインダー式特製アルバムを無料進呈</li>
+<li class="stt"><span class="sq01">■</span>お1人様1セット限り</li>
+</ul>
+<p>2014年6月、ユネスコの世界文化遺産に「富岡製糸場と絹産業遺産群」が登録されました。前年には、悲願であった「富士山」の登録を果たし、日本の世界遺産登録総数は、実に18件。その素晴らしさを一目見ようと、世界中から多くの旅行者が訪れています。そして今、人類共通の至宝となった日本の世界遺産を、もうひとつの歴史遺産ともいうべき貴重な切手でたどる夢のコレクションが誕生しました。初めて世界遺産に登録されて20年──“紙の宝石”と称される美しい切手を通して、日本の豊かな自然・かけがえのない文化財をめぐる知的興奮に満ちた収集体験が、いよいよスタートします。</p>
+<p class="cnt-img"><a href="/image/goods/9305000_05b.jpg" target="_blank"><img alt="" height="480" src="/image/goods/9305000_05.jpg" width="580"/></a></p>
+<h2>切手になった日本の世界遺産がずらり<br/>
+	コレクター垂涎のラインアップ</h2>
+<p><img align="right" alt="" height="340" src="/image/goods/9305000_03.jpg" style="margin: 0 0 12px 12px;" width="150"/>法隆寺の仏像から雪の白川郷、厳島神社の社殿、そして小笠原諸島のサンゴ礁まで、日本の世界遺産をテーマに集められた美しい切手を通して、わが国の魅力を再発見するコレクション。郵便学の権威、内藤陽介氏が、デザイン性、希少性、歴史的意義に鑑みて厳選した価値ある切手全83種が収められています。いずれも窓口での販売が終了し、姿を消してしまった既発行切手で、発行当時の美しさを保つ最高ランクの未使用品揃い。内容も実に多種多彩で、80年近くもの歳月を経た貴重な国立公園シリーズ切手や、知床の豊かな自然をとらえた色鮮やかな4種連刷切手、さらに今日高値がついているコレクター垂涎の普通切手「姫路城」（昭和13年発行）も確保しました。切手がセットされている特製解説カードの魅力も見逃せません。世界遺産の美しい写真や絵画が目を楽しませ、監修の内藤先生による解説は読み物としても楽しめる充実した内容。発行当時の時代背景など、知的好奇心を刺激する雑学も満載です。毎月お手元に届く切手を手になさるたび、あなたはしみじみと実感なさるでしょう。過ぎ去った時代の息吹を伝える切手そのものが、かけがえのない歴史遺産であることを。</p>
+<p class="cnt-img"><img alt="" height="331" src="/image/goods/9305000_03b.jpg" width="401"/></p>
+<h2>年々入手困難になる一方だから<br/>
+	お申し込みは今のうちに</h2>
+<p>＜日本の世界遺産＞切手コレクションは、Ｉ・Ｅ・Ｉ社から独占提供されます。お求めはお1人様1セット限り。コレクションの切手は特製解説カードにセットして、毎月カード2点ずつ、9回にわたってお届けします。バインダー式の専用アルバムがもれなく進呈されますので、お好きなようにファイルしてご家族やご友人に披露なされば、楽しい会話が盛り上がることでしょう。過ぎ行く時代とともに消え去ってしまう前に、ぜひとも手に入れておきたい“切手という名の歴史遺産”──確保できる切手の数に限りがございますので、確実に入手なさるためにも、ぜひ今すぐお申し込みください。</p>
+<p class="cnt-img"><img alt="" height="439" src="/image/goods/9305000_06.jpg" width="500"/></p>
+<p class="cnt-img"><a href="/image/goods/9305000_07b.jpg" target="_blank"><img alt="" height="700" src="/image/goods/9305000_07.jpg" width="580"/></a></p>
+<div class="box1">
+<div class="box-text">
+<h3>監修者 略歴　内藤陽介（ないとう・ようすけ）</h3>
+<div>昭和42年（1967年）、東京都生まれ。東京大学文学部卒業。切手などの郵便資料から、国家や地域のあり方を読み解く「郵便学」を提唱し、活発な研究・著作活動を展開している。主な著書に、『今日も世界は迷走中』（ワニブックス）、『本当は恐ろしい！こわい切手』（ビジネス社）、『切手でたどる郵便創業150年の歴史』（全3巻、日本郵趣出版）ほか多数。国際郵趣連盟（FIP）、アジア郵趣連盟（FIAP）審査員。日本文芸家協会会員。</div>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3>世界遺産とは…</h3>
+<div>人類が共有すべき普遍的な価値を有する遺跡や景観、自然などの宝。ユネスコ総会で採択された条約※に基づき、世界各地の文化遺産や自然遺産、複合遺産が登録されている。2014年現在の登録数は文化遺産780、自然遺産196、複合遺産31、計1,007。<br/>
+			※世界の文化遺産及び自然遺産の保護に関する条約（1972年）</div>
+<div style="text-align:center;"><img alt="" height="408" src="/image/goods/9305000_08.jpg" width="470"/></div>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

@@ -1,0 +1,112 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>＜エスプリ・ドゥ・クチュール＞ヴィシーチェックの麻混ゆったりフレアワンピース</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=50918501" target="_self"><img alt="＜エスプリ・ドゥ・クチュール＞ヴィシーチェックの麻混ゆったりフレアワンピース" src="/image/goods/50918_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：綿84％、麻16％（ラミーリネン）、ボタン＝シェル<br/>
+●日本製<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="153" src="/image/goods/50918_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>＜エスプリ・ドゥ・クチュール＞ヴィシーチェックの麻混ゆったりフレアワンピース</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,980円（税込5,478円）×5回払い</span><br/>
+                          
+                          
+                            一括価格 <span>24,800円（税込27,280円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="50918501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50918"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Sサイズ</option>
+<option class="p999" value="999-M">Mサイズ</option>
+<option class="p999" value="999-L">Lサイズ</option>
+<option class="p999" value="999-LL">LLサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('50918501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50918501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="＜エスプリ・ドゥ・クチュール＞ヴィシーチェックの麻混ゆったりフレアワンピース" height="270" src="/image/goods/50918_01.jpg" width="580"/></p>
+<p class="intro">
+		春夏に、涼しさと若々しいエレガンスを──。<br/>
+<br/>
+		フランスの大女優、ブリジット・バルドーが好んだ“ヴィシーチェック”を<br/>
+		自然の風合い豊かな麻混素材にあしらった<br/>
+		パリのエスプリが漂う、大人のクチュール・ワンピース。<br/>
+		高度な技が光る12枚はぎのパターンから生まれる<br/>
+		豊かなドレープと美しいフレアシルエットが、体型をすっきり見せて…。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>フランスの著名デザイナーによるオリジナル</li>
+<li class="stt"><span class="sq01">■</span>上品な若々しさをアピールするモノトーンのヴィシーチェック柄</li>
+<li class="stt"><span class="sq01">■</span>エレガントに着こなせるフレアシルエット</li>
+<li class="stt"><span class="sq01">■</span>12枚はぎの立体仕立てによる美しい落ち感と豊かなドレープ</li>
+<li class="stt"><span class="sq01">■</span>天然の風合いも心地よい涼やかな綿麻素材</li>
+<li class="stt"><span class="sq01">■</span>信頼の国内生産</li>
+</ul>
+<p class="center-img"><img alt="ナチュラルに、一枚で「華」がある、パリの細やかなチェック×モノトーンのエレガンス／装いに新鮮なお洒落をプラスする、軽やかな春夏のコート使い／後ろ姿も優雅に美しく豊かなフレアがポイントです" height="412" src="/image/goods/50918_02.jpg" width="580"/></p>
+<p>
+		豊かなドレープが広がる美しいフレアシルエットに、若々しいモノトーンのエレガンスをプラスして…。映画や舞台の衣装デザインで著名な一流デザイナー、ナディーヌ・ビュタンより、春夏のお洒落を一新させてくれる清々しい新作が発表されました。フランスの大女優、ブリジット・バルドーが好んだ柄“ヴィシーチェック（ギンガムチェック）”を、天然の風合いも心地よい涼やかな綿麻素材にあしらった＜エスプリ・ドゥ・クチュール＞麻混ゆったりフレアワンピース。細やかなチェックから漂うパリのエスプリが、洗練された装いを演出する逸品です。
+	</p>
+<p class="center-img"><img alt="あらたまった席にもお勧めの上品なモノトーン＜ヴィシーチェック（vichy check）＞：ギンガムチェックはフランス語ではヴィシーチェックといいます。特に細やかなチェック模様は女優のブリジット・バルドーが2度目の結婚の際に着用し、世界的ブームとなったことでも有名。本作品はチェックを細やかに交差させることで、若々しく爽やかな印象と大人のエレガンスを両立。シックな黒のモノトーンが品格を際立たせ、あらたまった席にも最適です。" height="220" src="/image/goods/50918_03.jpg" width="580"/></p>
+<h2>フランスの大女優が好んだ特別なチェック<br/>
+	大人の気品と若々しさを、きれいに見えるシルエットで</h2>
+<p>
+		身体をゆったりと包み込む着心地のよさ、そして遠目からも優雅なシルエットの秘密は、「12枚はぎ」という縦に入れた切り替えが生み出すドレスさながらの高度な仕立てです。そしてバストや腰回り、ヒップなど、気になる部分それぞれを絶妙にカバーする計算された設計は、きれいに見える服作りに定評があるマダム・ナディーヌだからこそ。さらに日本の熟練職人がカッティングや縫製を手がけることで、着た瞬間に美しさと自信をもたらす上質なクチュール・ワンピースが誕生しました。
+	</p>
+<p class="center-img"><img alt="きれいな落ち感のシルエットにうれしいディテールをプラスして／ネック裏には一流を証するナディーヌ・ビュタンのタグ付きです。／気になる首回りを程よくカバーする襟は、スタンドカラーとシャツカラー、どちらでも楽しめます。／7分丈の袖口にはスリットを入れ、軽やかに、動きやすく。／両サイドにはハンカチやマスクなど、小物が入るポケット付き。／そよ風をはらんでふんわり広がる計算されたフレアシルエット。涼やかな天然素材の着心地は汗ばむ季節におすすめです。" height="750" src="/image/goods/50918_04.jpg" width="580"/></p>
+<h2>清々しい季節に新しいお洒落のよろこびを<br/>
+	素肌に優しい綿麻のナチュラル素材</h2>
+<p>
+		＜エスプリ・ドゥ・クチュール＞ヴィシーチェックの麻混ゆったりフレアワンピースはI・E・I社のオリジナル作品です。新しい季節のお出かけに、久しぶりに会うお友達とのお茶会に──。あなたを最高に美しく見せる特別な一着を、どうぞお求めください。
+	</p>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="ナディーヌ・ビュタン ロゴ" height="20" src="/image/goods/50918_05.jpg" width="271"/>　ナディーヌ・ビュタン</h3>
+<p class="flt-r"><img alt="ナディーヌ・ビュタン近影" height="167" src="/image/goods/50918_06.jpg" width="125"/></p>
+<p>
+				フランスを代表する衣装デザイナー。映画、演劇、テレビドラマのコスチューム・デザインを数多く手がけ、アルチョム・ミハイロフ・ダンスカンパニーの舞台衣装で、世界的に高い評価を確立。鬼才ジャン・リュック・ゴダールの映画の衣装スタイリストとしても活躍。また体の不自由な人のためのファッション・デザインにも積極的に取り組んでいる。
+			</p>
+<p class="center-img">
+<img alt="毎日を輝かせる秘訣は、若々しくも上品なチェックにありました。" height="230" src="/image/goods/50918_07.jpg" width="300"/>
+</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

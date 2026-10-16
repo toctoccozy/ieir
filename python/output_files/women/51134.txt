@@ -1,0 +1,134 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>ノーブル バーガンディ　本場チベット産ヤク100％のデザインチュニック</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51134501" target="_self"><img alt="ノーブル バーガンディ　本場チベット産ヤク100％のデザインチュニック" src="/image/goods/51134_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：ヤク100％<br/>
+●重さ（約）：310g<br/>
+●中国製<br/>
+※この製品は天然素材を用いているため、色調などが微妙に異なる場合がございます。<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="153" src="/image/goods/51134_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>ノーブル バーガンディ　本場チベット産ヤク100％のデザインチュニック</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>5,800円（税込6,380円）×7回払い</span><br/>
+                          
+                          
+                            一括価格 <span>39,800円（税込43,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51134501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51134"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Ｓサイズ</option>
+<option class="p999" value="999-M">Ｍサイズ</option>
+<option class="p999" value="999-L">Ｌサイズ</option>
+<option class="p999" value="999-LL">ＬＬサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51134501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51134501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="＜ノーブル バーガンディ＞本場チベット産ヤク100％のデザインチュニック" height="460" src="/image/goods/51134_01.jpg" width="580"/></p>
+<p class="intro">
+		その彩りは極上のブルゴーニュワイン──<br/>
+<br/>
+		深いバーガンディ色に染め上げた高級毛「ヤク」のとろけるぬくもりが<br/>
+		ふんわりと身も心も包んでくれるチュニック。<br/>
+<br/>
+		オフタートルの襟にのぞかせたライトグレーがアクセントを添えて。<br/>
+<br/>
+		前後の長さを変えたバランス丈のAラインで<br/>
+		うれしいスタイルアップ効果を発揮します。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>本場チベット産天然ヤク100％</li>
+<li class="stt"><span class="sq01">■</span>ふんわり縮絨（しゅくじゅう）仕上げで極上の肌触り</li>
+<li class="stt"><span class="sq01">■</span>ライトグレーの挿し色が効いた二重のオフタートル</li>
+<li class="stt"><span class="sq01">■</span>ゆったりAライン</li>
+<li class="stt"><span class="sq01">■</span>軽やかな着心地</li>
+</ul>
+<p class="center-img"><img alt="どこから見ても、きれいをキープする洗練のシルエット。" height="420" src="/image/goods/51134_02.jpg" width="580"/></p>
+<p>
+		イメージしたのは、高級フランスワインの代名詞“ブルゴーニュの赤”。深く芳醇なバーガンディカラーがリッチな気分をかきたてる高級ニットアイテムが、フランスの著名デザイナー、イヴリーヌ・ポノーから届きました。カシミヤと並ぶ高い保温性を誇る希少な天然毛「ヤク」で、これまでにない深く豊かな発色をお楽しみいただけるゆったりAラインのデザインチュニック＜ノーブル バーガンディ＞。本場チベット産ヤクならではのとろけるぬくもりで、身も心もやさしく包んでくれる高級ニットの誕生です。
+	</p>
+<p class="center-img"><img alt="シンプルなデザインだからこそ、モノを言う計算されたディテール。さりげないこだわりの数々に、パリのセンスが光ります。／二重のオフタートル。内襟のライトグレーがすっきりとした挿し色に。／便利なポケットが左右に。表面に響かないスリットタイプ。／エレガントなボリューム袖。袖口のリブ編みをあえて長くしたデザインが、ふんわりとした袖をすっきりと引き締めて。／前はすっきり、後ろはゆったり。裾の長さを変えただけでバランスよくスタイルアップ。サイドスリットも軽快な印象。" height="900" src="/image/goods/51134_03.jpg" width="580"/></p>
+<h2>お顔まわりがパッと華やぐ上品カラー<br/>
+		こだわりのディテールでスタイルアップに自信アリ
+</h2>
+<p>
+		素材に選ばれたのは、カシミヤと並び称される高級素材「ヤク」。チベット高原の厳しい冬から身を守るために、より温かく進化した「ヤク」の毛を丁寧に選別して紡ぎ、特殊な技術で芳醇なバーガンディカラーに染め上げたもので、高度な縮絨加工を編み地に施して、よりなめらかなタッチに仕上げました。明るいライトグレーを挿し色にあしらった二重のオフタートルや、前後で長さに変化をつけてスタイルアップ効果を狙ったゆったりAラインのシルエットなど、細部まで計算されたデザインはイヴリーヌ・ポノーならでは。とりわけ落ち着いた中にも華のあるバーガンディ色は、カラーバリエーションの限られる天然ヤク100％のニットでは得がたい魅力です。<br/>
+		ふんわり厚手なのに、驚くほど軽やかな着心地もうれしい＜ノーブル バーガンディ＞は、I･E･I社の特別企画商品です。そのまま着るだけで上品カジュアルが決まる冬の万能アイテムとして、今すぐお求めください。
+	</p>
+<p>
+<span style="font-size:0.75em; line-height:1.2em; display:block;">＊「バーガンディ」｜フランス･ブルゴーニュ産の赤ワインの色。<br/>
+		　華やかさと落ち着いた印象を併せ持つ上品なカラー。</span>
+</p>
+<div class="box1">
+<div class="box-text">
+<h3>チベット産ヤク 温かさの秘密</h3>
+<div>
+<p class="flt-l"><img alt="ヤク" height="110" src="/image/goods/51134_04.jpg" width="150"/></p>
+<p>
+					ヤクはチベット高原（海抜3,000メートル以上）に生息するウシ科の動物。マイナス30度にも達することがある過酷な自然環境から身を守るため、その体毛は非常に長く柔らかく、軽やかです。本作品はこの希少な体毛のふんわり感と柔らかさ、軽さを損なわぬよう高度な染色技術で染め上げ、丹念に編んだ逸品です。<br/>
+<br/>
+<span style="font-weight:bold"><span style="color:#9f3551">●</span>優れた保温性</span><br/>
+					　「雪原に浮かぶ船」と言われる標高3,000メートル以上のチベット高原を生き抜くため、高い保温性を誇ります。<br/>
+<span style="font-weight:bold"><span style="color:#9f3551">●</span>柔らかな感触</span><br/>
+					　身体を覆う毛の下に密生しているわずかな産毛を手で梳いて採るため、しっとりとなめらかな手触りです。<br/>
+<span style="font-weight:bold"><span style="color:#9f3551">●</span>高い希少性</span><br/>
+					　最終的に使用できる原毛は1頭からわずか100グラムほどしか採れず大変希少です。<br/>
+<span style="font-weight:bold"><span style="color:#9f3551">●</span>抜群の耐久性</span><br/>
+					　表面の毛は遊牧民のテントやロープに使われるほど堅牢。その内側の産毛も丈夫さを兼ね備えています。<br/>
+<span style="font-weight:bold"><span style="color:#9f3551">●</span>美しい質感</span><br/>
+					　天然ならではの風合いに、3年以上を費やした高度な染色。発色の良い2色の取り合わせが大人の華やぎを演出します。<br/>
+</p>
+</div>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3>イヴリーヌ・ポノー</h3>
+<p class="flt-r"><img alt="イヴリーヌ・ポノー近影" height="150" src="/image/goods/51134_05.jpg" width="125"/></p>
+<p>
+				ルーブル美術学院卒。ニナリッチ、ジバンシィなどの著名ブランドでデザインを手がけ、注目を浴びる。その後独立し、パリでブティックを経営。女性らしい柔らかなラインを強調するデザインは、世界で多くの人の支持を得ている。
+			</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

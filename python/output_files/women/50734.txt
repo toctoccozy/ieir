@@ -1,0 +1,100 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>＜ローズ・エアリーナ＞特許エアバッグインソール内蔵のらくらくスニーカー</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=50734501" target="_self"><img alt="＜ローズ・エアリーナ＞特許エアバッグインソール内蔵のらくらくスニーカー" src="/image/goods/50734_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：外側＝牛革（撥水加工ヌバック）に箔押し・プリント、牛革（撥水加工）、中敷き＝合成皮革＋EVA（エアバッグインソール・特許第5416289号）、内部＝ポリウレタン、ポリエステル、底材＝発泡ゴム、ファスナー＝合金<br/>
+●重さ（約）：245g（23.0cm・片足）<br/>
+●サイズ（約）：22.0～25.0cm（0.5cm刻み）　ワイズ：4E<br/>
+●日本製</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>＜ローズ・エアリーナ＞特許エアバッグインソール内蔵のらくらくスニーカー</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,980円（税込5,478円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>29,800円（税込32,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="50734501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50734"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-220">22.0ｃｍ</option>
+<option class="p999" value="999-225">22.5ｃｍ</option>
+<option class="p999" value="999-230">23.0ｃｍ</option>
+<option class="p999" value="999-235">23.5ｃｍ</option>
+<option class="p999" value="999-240">24.0ｃｍ</option>
+<option class="p999" value="999-245">24.5ｃｍ</option>
+<option class="p999" value="999-250">25.0ｃｍ(品切れ)</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('50734501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50734501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="＜ローズ・エアリーナ＞特許エアバッグインソール内蔵のらくらくスニーカー" height="300" src="/image/goods/50734_01.jpg" width="580"/></p>
+<p class="center-img"><img alt="歩く姿も美しい、優雅な薔薇模様。背筋がすっと伸びて、うれしい若見え効果も…" height="525" src="/image/goods/50734_02.jpg" width="580"/></p>
+<p class="intro">
+		高級イタリア製レザーに優雅な薔薇をちりばめた<br/>
+		お洒落な「エアクッションスニーカー」が誕生しました。<br/>
+		歩いた瞬間に感動の、弾むような軽やかさ──。<br/>
+		その秘密は歩行をサポートする動く空気のクッションと<br/>
+		靴下みたいなフィット感。<br/>
+		パリのマダム・ナディーヌの魔法が、<br/>
+		ギュッとつまった逸品です。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>フランスの著名デザイナーによる監修</li>
+<li class="stt"><span class="sq01">■</span>I･E･I社 特別企画商品</li>
+</ul>
+<p>
+<strong>歩き方が変われば、あなたはもっと若返ります──。</strong>
+		そう語るのは、ナディーヌ・ビュタン。映画や舞台の衣装デザインで著名なフランスの一流デザイナーです。今回、彼女が手がけたシューズは「履くだけで歩き方を自然に調整」して、若々しく見せてくれる魔法のような逸品。足がすぐ疲れる、膝が痛くなるといったお悩みの方にもお勧めしたい、足に優しいコンフォートシューズです。
+	</p>
+<p class="center-img"><img alt="オーダーメイド以上の履きやすさには理由があります。ゼロから靴の製法を見直して、さらに歩きやすく。靴下みたいなフィット感が心地いいプラット製法" height="900" src="/image/goods/50734_03.jpg" width="580"/></p>
+<h2>華やぎの高級イタリア製レザーに足への優しさを、すみずみまで</h2>
+<p>それは、足元から香り立つ薔薇の洗練。柔らかく、しなやかなヌバックレザーにうつされたのは、華やぎの薔薇模様。さらにその表面にゴールドの箔押しを重ねたイタリア製レザーならではの意匠が、足取りも軽やかにお洒落を輝かせます。そして、足を通した瞬間にわかる柔らかなフィット感と弾むような歩きやすさ…。お出かけが多くなる季節に、一歩一歩が楽しく、どこまでも歩きたくなる他にはない一足が誕生しました。＜ローズ・エアリーナ＞特許エアバッグインソール内蔵のらくらくスニーカーは、I・E・I社の特別企画商品です。羽のような軽やかさと、誰もが見惚れる高級感を両立する本作品を、この好機にどうぞお求めください。</p>
+<p class="center-img"><img alt="お洒落と履き心地を両立する10のこだわり。❶ 華やかな薔薇模様がお洒落なイタリア製レザー／❷ 空気の力で歩き方のクセを補正する特許エアバッグインソール／❸ 足や膝に負担をかけないクッション性／❹ つま先を締めつけないゆとりの４E／❺ 脱ぎ履き簡単なサイドファスナー付き／❻ 抗菌防臭加工で靴の中がいつも爽やか／❼ 靴下のようにフィットする実用新案プラット製法／❽ わずか245グラムの軽やかさ／❾ 突然の雨にも安心の撥水加工／❿ 信頼の国内生産" height="400" src="/image/goods/50734_04.jpg" width="510"/></p>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="ナディーヌ・ビュタン_ロゴ" height="20" src="/image/goods/50734_05.jpg" width="271"/>　ナディーヌ・ビュタン</h3>
+<p class="flt-r"><img alt="ナディーヌ・ビュタン" height="167" src="/image/goods/50734_06.jpg" width="125"/></p>
+<p>フランスを代表する衣装デザイナー。映画、演劇、テレビドラマのコスチューム・デザインを数多く手がけ、鬼才ジャン・リュック・ゴダールの映画の衣装スタイリストとしても活躍。舞台衣装制作の他、体の不自由な人のためのファッション・デザインなど多彩に活躍。</p>
+<p class="center">　　　　　　　　　　　　　　<img alt="心も足どりも、軽やかに弾めば毎日がいきいきと輝きはじめます。" height="133" src="/image/goods/50734_07.jpg" width="236"/></p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

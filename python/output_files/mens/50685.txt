@@ -1,0 +1,98 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>URBAN ASTRONAUTS　10ポケット・スウィングトップ</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=50685501" target="_self"><img alt="URBAN ASTRONAUTS　10ポケット・スウィングトップ" src="/image/goods/50685_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：表地＝ソロテックス®（ポリエステルを含む複合繊維）、中綿＝アウトラスト®、裏地＝ポリエステル、ボタン＝プラスティック<br/>
+●中国製<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="“180”" src="/image/goods/50685_size.jpg" width="“295”"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>URBAN ASTRONAUTS　10ポケット・スウィングトップ</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>5,800円（税込6,380円）×7回払い</span><br/>
+                          
+                          
+                            一括価格 <span>39,800円（税込43,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="50685501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50685"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Sサイズ</option>
+<option class="p999" value="999-M">Mサイズ</option>
+<option class="p999" value="999-L">Lサイズ(完売)</option>
+<option class="p999" value="999-LL">LLサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('50685501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50685501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="NASAのために開発された先進テクノロジー素材使用、URBAN ASTRONAUTS（アーバン・アストロノーツ）　10ポケット・スウィングトップ" height="280" src="/image/goods/50685_01.jpg" width="580"/></p>
+<p class="intro">
+		袖を通せば、<ruby><rb>アウタースペース</rb><rp>（</rp><rt>宇宙空間</rt><rp>）</rp></ruby>。<br/>
+<br/>
+		暑すぎず、寒すぎない。これぞまさに理想の着心地。<br/>
+		NASAの宇宙服のために開発された<br/>
+		近未来系・機能性素材“アウトラスト®”を中綿に使用した<br/>
+		かつてなく快適な“<ruby><rb>ファインサーマル</rb><rp>（</rp><rt>心地よい温度の</rt><rp>）</rp></ruby>ウェア”。<br/>
+		スウィングトップならではのカジュアルなスタイルと<br/>
+		驚きの10ポケットで、装いと利便性を<ruby><rb>桁外</rb><rp>（</rp><rt>けたはず</rt><rp>）</rp></ruby>れにランクアップ。<br/>
+		大気圏を越えるばかりの別次元の着心地をお楽しみください。<br/>
+</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>NASAのために開発された機能性素材“アウトラスト®”を中綿に使用</li>
+<li class="stt"><span class="sq01">■</span>科学の力で理想の温度帯をキープ</li>
+<li class="stt"><span class="sq01">■</span>ストレッチ性と耐久性に優れる“ソロテックス®”</li>
+<li class="stt"><span class="sq01">■</span>スウィングトップならではの洗練されたカジュアルテイスト</li>
+<li class="stt"><span class="sq01">■</span>かばんいらずの身軽な10ポケット</li>
+</ul>
+<p class="center-img"><img alt="暑いときは、熱を吸収して温度を下げる。寒いときは、熱を放出して温度を上げる。" height="580" src="/image/goods/50685_02.jpg" width="580"/></p>
+<h2>内側も外側もハイスペック<br/>
+	機能性素材にこだわった紳士の一着</h2>
+<p>
+		暑いときは、熱を吸収して温度を下げる。寒いときは、熱を放出して温度を上げる。まさに未体験。先進テクノロジーで、「快適」の概念を覆すメンズウェアです。＜URBAN ASTRONAUTS＞—NASAの宇宙服のために開発された“アウトラスト®”を中綿に使用した、新感覚のスウィングトップ。画期的な【温度調整機能】の秘密は、中綿に配合されたマイクロカプセル内のパラフィンワックス。周囲の温度変化に応じて、熱の吸収や放出を臨機応変に行い、体にとって「ちょうどいい」理想の環境をつくり出します。中綿のみならず、外側の生地の“ソロテックス®”もハイスペック。しなやかなバネのような螺旋（らせん）状の分子構造を持つこの機能的な繊維を採用することで、ソフトな肌触りや、シルエットを保つ形態回復性、優れたストレッチ性や耐久性をも実現しました。
+	</p>
+<p class="center-img"><img alt="長財布やスマホも入るゆとりの収納力。手ぶらでかばん要らずの10ポケット。／暑すぎず、寒すぎず、ちょうどいい。理想の温度帯をキープするアウトラスト®を中綿に使用。／裾の部分は、心地よく腰にフィットする“リブ編み”を採用。ディテールまで充実。／ボタンを留めれば立ち襟になるドッグイヤーカラー。寒冷時に風の侵入を防ぐ役割も。" height="735" src="/image/goods/50685_03.jpg" width="580"/></p>
+<p class="center-img"><img alt="極小のマイクロカプセルの働きで体感温度をコントロール「アウトラスト®」、バネのような分子構造がもたらす快適なストレッチ性と着用感「ソロテックス®」" height="730" src="/image/goods/50685_04.jpg" width="580"/></p>
+<h2>都会の街並みに映える洗練のデザイン<br/>
+	羽織るだけで、大人のカジュアルを演出</h2>
+<p>
+		理想の温度帯をキープする別次元の着心地に加えて、周囲に差をつける高いデザイン性も本作品の大きな魅力。洒落た立ち襟のドッグイヤーカラーなど、スウィングトップの定番のディテールも配され、さりげなく羽織るだけで、洗練されたカジュアルな印象を演出します。さらに見逃せないのは、驚きの収納力を発揮する合計10ものポケット。携帯電話や財布といった日常の携行品がすっきり収まり、両手が自由に使えるので、身のこなしは軽やかに。どこへ行くにも、かばん要らずの快適な外出をお楽しみいただけ ることでしょう。＜URBAN ASTRONAUTS＞は春秋冬の３シーズン対応。寒暖差が激しい時季など特にお勧めです。どうぞこの機会にお申し込みください。
+	</p>
+</div>
+<br/>
+</section>
+<!--

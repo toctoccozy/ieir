@@ -1,0 +1,125 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>本場チベット産高級ヤク100%＜ドゥ・ラ・クルール＞高級ニットのクチュールブルゾン</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=50830501" target="_self"><img alt="本場チベット産高級ヤク100%＜ドゥ・ラ・クルール＞高級ニットのクチュールブルゾン" src="/image/goods/50830_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：表地＝チベット高原（青海省）産ヤク100％  紐＝レーヨン65％、ポリエステル35％　ファスナー＝樹脂、亜鉛合金（ビスロンファスナー）<br/>
+●中国製<br/>
+※この製品は天然素材を用いているため、色調などが多少異なる場合がございます。<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="“153”" src="/image/goods/50830_size.jpg" width="“295”"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>本場チベット産高級ヤク100%＜ドゥ・ラ・クルール＞高級ニットのクチュールブルゾン</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>5,800円（税込6,380円）×7回払い</span><br/>
+                          
+                          
+                            一括価格 <span>39,800円（税込43,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="50830501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50830"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Ｓサイズ</option>
+<option class="p999" value="999-M">Ｍサイズ（完売）</option>
+<option class="p999" value="999-L">Ｌサイズ（完売）</option>
+<option class="p999" value="999-LL">ＬＬサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('50830501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50830501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="本場チベット産高級ヤク100%＜ドゥ・ラ・クルール＞高級ニットのクチュールブルゾン" height="250" src="/image/goods/50830_01.jpg" width="580"/></p>
+<p class="center-img"><img alt="ちょっとしたお出かけも装いが若々しく輝く、ハイセンスなパーカースタイル" height="248" src="/image/goods/50830_02.jpg" width="250"/></p>
+<p class="intro">
+		ヒマラヤ山脈が育んだ高級獣毛の頂点“ヤク”。<br/>
+		その希少な素材100％で軽やかに編み上げたパリのパーカースタイル。<br/>
+		心もとろける極上の柔らかさと<br/>
+		凛と鮮やかなネイビーと紫色のコンビネーションが<br/>
+		若々しいスポーティテイストをラグジュアリーに格上げ。<br/>
+		フランスの一流デザイナー、イヴリーヌ・ポノーがおくる<br/>
+		クチュール感覚のエレガントなブルゾンです。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>本場チベット産の高級ヤク100％</li>
+<li class="stt"><span class="sq01">■</span>フランスの著名デザイナーによるオリジナル作品</li>
+<li class="stt"><span class="sq01">■</span>抜群の肌触りと優れた保温性</li>
+<li class="stt"><span class="sq01">■</span>若々しくも高級感漂うクチュール感覚のブルゾン</li>
+<li class="stt"><span class="sq01">■</span>フード内はパリのエスプリ香る高貴な紫色</li>
+<li class="stt"><span class="sq01">■</span>着脱簡単なフロントファスナー</li>
+<li class="stt"><span class="sq01">■</span>軽量約420グラム</li>
+</ul>
+<p class="center-img"><img alt="気になるウエストのラインも美しく、そして温かく" height="380" src="/image/goods/50830_03.jpg" width="580"/></p>
+<p>
+		豊かなボリューム感と柔らかさ、そしてカシミアをも凌ぐ極上のぬくもり…。一度袖を通せば手放せなくなる心地よさに優雅なパリのエスプリを込めた逸品が、フランスの著名デザイナー、イヴリーヌ・ポノー氏から発表されました。本場チベット高原に育まれたたいへん希少なヤクの毛を、一切混ざり物のない100％という贅沢さで編み上げた＜ドゥ・ラ・クルール＞高級ニットのクチュールブルゾン。大人の装いのたしなみでもある「上質素材」にこだわり抜いたハイクラスな品質が、活き活きと若々しい印象を貴女にもたらします。
+	</p>
+<p class="center-img"><img alt="貴重なヤク100％の毛でふんわり繊細に編み上げた逸品。細やかに息づく、パリのエレガンスがポイントです／妥協なきこだわりはこんな細部にまで。銀色に輝く糸を編み上げたストラップがアクセサリーのように輝いて。／寒い日はフードが頭まで温かく包み込んで。内側の鮮やかな紫が、お顔周りを明るく上品に引き立てる素敵なアクセントです。／衿裏には一流を証するイヴリーヌ・ポノーのブランドロゴがあしらわれています。／裾や袖口にあしらったリブ編みが冷たい外気をシャットアウト。ヤクの温もりを存分に楽しんで。／両側のポケットには冷えた指先を温かく包み込むポケット付きで手袋いらず。" height="750" src="/image/goods/50830_04.jpg" width="580"/></p>
+<h2>ネイビーと紫色のコンビネーションが装いを凛と優雅な印象に<br/>
+	ヤク100％という贅沢なニットに「パリのクチュール感」を息づかせて</h2>
+<p>
+		お顔が華やぐ凛としたネイビーと高貴な紫が引き立てあう、2色の美しきコンビネーション（ドゥ・ラ・クルール）。そしてひと目で「別格」と分かる素材の良さ。イヴリーヌ・ポノー氏が数多の素材から厳選したのは、流通量の少なさゆえにファッション通の間でひそかに楽しまれている高級毛「本場チベット産天然ヤク」。極寒のヒマラヤ山脈に育まれたその毛は非常に長く柔らかで、あらゆる毛のなかでもトップクラスの保温性を誇ります。そのなかでも1頭のヤクからわずか約100グラムしか採れない最も柔らかく細い極上毛だけが選別され、一流デザイナーならではの美意識とともに編み上げられました。<br/>
+		寛ぎの時も、お出かけの時もお洒落なフレンチカジュアルスタイルが楽しめる、本場チベット産高級ヤク100%＜ドゥ・ラ・クルール＞高級ニットのクチュールブルゾンは、Ｉ・Ｅ・Ｉ社の特別企画商品です。何ものにも代えがたいぬくもりとともに、品格あふれる装いをゆったりお楽しみいただける本作品を、この機会にどうぞお求めください。
+	</p>
+<div class="box1">
+<div class="box-text">
+<h3>チベット産ヤク 温かさの秘密</h3>
+<p class="flt-r"><img align="right" alt="チベットのヤク" height="83" src="/image/goods/50830_05.jpg" width="150"/></p>
+<p>
+<strong>■ 優れた保温性と防水性</strong><br>
+				　永久積雪地や氷河地帯を生き抜くため、その毛はウォータープルーフの役割も果たし、高い保温性を誇ります。<br>
+<strong>■ 柔らかな感触</strong><br>
+				　身体を覆う毛の下に密生しているわずかな産毛から作られるため、パシュミナのようにしっとりと滑らかな手触りです。<br>
+<strong>■ 希少性</strong><br>
+				　衣類として使用できる毛は1頭からわずか100gほどしか採れず大変希少です。<br>
+<strong>■ 抜群の耐久性</strong><br>
+				　体の表面の毛は遊牧民のテントやロープに使われるほど堅牢。その内側の産毛も丈夫さを兼ね備えています。<br>
+<strong>■ 美しい質感</strong><br>
+				　天然ならではの落ち着いた光沢に高級感が漂います。
+			</br></br></br></br></br></br></br></br></br></p>
+<p>ヒマラヤ山脈（海抜4,000～6,000メートル）に生息するウシ科の動物。マイナス30度にも達することがある過酷な自然環境から身を守るため、その体毛は非常に長く柔らかく、雪よけの役割も果たすほど。保温性に優れ、防水性もあるため真冬の雪・雨の日もカシミヤを凌ぐ温かさを保ち、丈夫。世界的なトップブランドからも注目される希少な高級天然繊維です。</p>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="イヴリーヌ・ポノー ロゴ" height="61" src="/image/goods/50830_06.jpg" width="70"/>　イヴリーヌ・ポノー</h3>
+<p class="flt-r"><img alt="イヴリーヌ・ポノー肖像" height="150" src="/image/goods/50830_07.jpg" width="125"/></p>
+<p>ルーブル美術学院卒。ニナリッチ、ジバンシィなどの著名ブランドでデザインを手がけ、注目を浴びる。その後独立し、パリでブティックを経営。女性らしい柔らかなラインを強調するデザインは、世界で多くの人の支持を得ている。<br/>
+<img alt="イヴリーヌ・ポノー サイン" height="52" src="/image/goods/50830_08.jpg" width="150"/></p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

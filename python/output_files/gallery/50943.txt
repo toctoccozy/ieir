@@ -1,0 +1,161 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I アートギャラリー</p>
+<h1>白木結衣筆 絹本肉筆画「奥入瀬涼景 清流の翡翠」</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=50943503" target="_self"><img alt="白木結衣筆 絹本肉筆画「奥入瀬涼景 清流の翡翠」" src="/image/goods/12345.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>【掛け軸】<br/>
+●材質：本紙＝絵絹（正絹）　天地＝綿支那パー　中廻し＝飛小花紋五条緞子　一文字・風帯＝霞雲紋金襴　軸先＝陶製白織部<br/>
+●サイズ（約）：画寸＝45.1×53.3cm　軸寸＝137×68.3cm（軸先寸＝73.5cm）<br/>
+●重さ（約）：570g<br/>
+●三段表装一文字廻し<br/>
+●日本製<br/>
+<br/>
+【飾り額】<br/>
+●材質：本紙＝絵絹（正絹）　額＝金箔仕上げ木製枠、金襴緞子張りマット、前面アクリル板<br/>
+●サイズ（約）：画寸＝45.5×53cm　額寸＝64×73.5×厚さ3cm<br/>
+●重さ（約）：3.5kg<br/>
+●高級額装<br/>
+●日本製<br/>
+<br/>
+※肉筆画のため、一点一点色合いなどが異なる場合がございます。</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>白木結衣筆 絹本肉筆画「奥入瀬涼景 清流の翡翠」【軸装】</h3>
+<div class="price_area">
+                
+
+
+                        
+                          
+                        
+
+
+                        
+                          
+                            月々 <span>12,300円（税込13,530円）×15回払い</span><br/>
+                          
+                          
+                            一括価格 <span>168,000円（税込184,800円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart1">
+<input name="item_no" type="hidden" value="50943503"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50943"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart1(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('50943503');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50943503');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<div class="cart_area">
+<h3>白木結衣筆 絹本肉筆画「奥入瀬涼景 清流の翡翠」【額装】</h3>
+<div class="price_area">
+                
+
+
+                        
+                          
+                        
+
+
+                        
+                          
+                            月々 <span>12,300円（税込13,530円）×15回払い</span><br/>
+                          
+                          
+                            一括価格 <span>168,000円（税込184,800円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart2">
+<input name="item_no" type="hidden" value="50943504"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50943"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart2(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('50943504');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50943504');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="─奥入瀬涼景─ 清流の翡翠　白木結衣筆 絹本肉筆画" height="270" src="/image/goods/50943_01.jpg" width="580"/></p>
+<p class="intro">
+		爽やかな奥入瀬の清流に<ruby>憩<rp>（</rp><rt>いこ</rt><rp>）</rp></ruby>う水辺の宝石・翡翠──<br/>
+<br/>
+		「前田青邨記念大賞」「日展」入選に輝く白木結衣画伯が<br/>
+		日本屈指の景勝地・奥入瀬に広がる自然の情景をとらえた貴重な肉筆作品。<br/>
+		川面に立ち込める水煙や緑の木々に、美しい羽色の翡翠、<br/>
+		早朝の澄みきった空気感もそのままに<br/>
+		巧みな画技を尽くして、一点一点、彩り豊かに描き上げます。<br/>
+<br/>
+		風雅な本格表装による掛け軸、または瀟洒な飾り額にてご提供。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>初入選10周年記念の貴重な肉筆作品</li>
+<li class="stt"><span class="sq01">■</span>正絹絵絹に一点一点丹念に手描き</li>
+<li class="stt"><span class="sq01">■</span>本格表装の掛け軸または高級飾り額にてご提供</li>
+<li class="stt"><span class="sq01">■</span>作者直筆の題字・署名・落款入りの桐箱または題箋が付属</li>
+</ul>
+<p class="center-img"><img alt="画寸＝約45.5×53センチ　額寸＝約64×73.5×厚さ3センチ" height="470" src="/image/goods/50943_02.jpg" width="450"/></p>
+<p>
+		心を洗うように涼やかな川の流れと、豊かに生い茂る緑の木々。清々しい自然の情景が広がる水辺で、色鮮やかな翡翠が憩うように羽を休めて……澄んだ空気に満ちあふれるこの絵の舞台は、日本屈指の景勝地として知られる奥入瀬。このたび、気鋭の女流画家として活躍する白木結衣画伯が、奥入瀬の清涼な自然に憩う生命の輝きを描き上げた貴重な肉筆作品を、特別にご案内できる運びとなりました。現代日本画壇で数々の実績を重ねてきた白木画伯が、初入選十周年を記念して絵筆をとる『奥入瀬涼景 清流の翡翠』のご案内です。
+	</p>
+<h2>気鋭の女流画家が正絹絵絹に一点一点手描き<br/>
+	深呼吸したくなるほどに清々しい癒しの<ruby><rb>芸術</rb><rp>（</rp><rt>アート</rt><rp>）</rp></ruby></h2>
+<p class="flt-l"><img alt="" height="135" src="/image/goods/50943_05.jpg" width="135"/></p>
+<p>
+		白木結衣画伯は、権威ある「前田青邨記念大賞」「日展」などの公募展に相次いで入選を果たすなど、若くして輝かしい実績を積み上げてきた実力派です。日本画の伝統に学びつつ、みずみずしい独自の感性で自然の情景をとらえた作品世界は、温かな眼差しにあふれ、観る者の心をやすらぎで満たします。ここにご案内するのは、国の特別名勝にして天然記念物にも指定される青森県・奥入瀬渓流と、水辺の宝石と称えられる翡翠を題材に白木画伯が麗筆をふるう肉筆画。澄みきった空気感をも見事に表現した、深呼吸したくなるほどに清々しい癒しの芸術です。<br/>
+		お届けする作品の制作にあたっては、白木結衣画伯が巧みな画技を尽くして、正絹絵絹に一点一点手描き。降りそそぐ木漏れ日に、コバルトブルーの羽色とオレンジの羽毛が映える二羽の翡翠。心地よい緑の静寂と、滔々たる川の流れ。静と動をあわせ持つ自然の表情が、川面に立ち込める水煙や、緑の葉の一枚一枚まで細やかに描き込まれます。白木画伯独特の清明な色彩や繊細な描写を、つぶさにご覧になれるのは肉筆画ならでこそ。清流のせせらぎや翡翠の囀り、耳を澄ませば、自然の声が今にも聴こえてくるようです。
+	</p>
+<p class="center-img"><img alt="画寸＝約45.1×53.3センチ　軸寸＝約137×68.3センチ（軸先寸＝73.5センチ）" height="580" src="/image/goods/50943_04.jpg" width="342"/></p>
+<h2>奥入瀬の美しい情景をいつでもわが家で<br/>
+	画趣に合わせた掛け軸と飾り額をご用意</h2>
+<p class="flt-r"><img alt="" height="170" src="/image/goods/50943_03.jpg" width="135"/></p>
+<p>
+		奥入瀬の美しい情景をいつでもわが家で──飾るだけで涼やかな癒しの空間が広がる白木結衣筆『奥入瀬涼景 清流の翡翠』は、インペリアル・アートギャラリーの特別企画商品です。画趣に合わせて、表装にもこだわりを尽くしました。飛小花紋五条緞子の中廻しに霞雲紋金襴の一文字・風帯を用いた風雅な軸装、または金箔仕上げの木製枠と金襴緞子張りマットを使用した豪華な額装のいずれかよりお選びいただけます。なお本作品は、一点一点が白木画伯ご自身の手描きのため、ご提供数にも限りがございます。ぜひお早めにお申し込みください。
+	</p>
+<p class="center-img"><img alt="掛け軸には、画伯直筆の題字・署名・落款が入った桐箱が付属します。飾り額には、画伯直筆の題字・署名・落款が入った桐製の題箋が付属します。
+" height="538" src="/image/goods/50943_06.jpg" width="580"/></p>
+<div class="box1">
+<h3>白木結衣　略歴</h3>
+<p class="center-img"><img alt="作業風景" height="124" src="/image/goods/50943_07.jpg" width="156"/>　<img alt="白木結衣 近影" height="175" src="/image/goods/50943_08.jpg" width="135"/></p>
+<dl>
+<dt>2007年</dt><dd>岐阜県立加納高等学校 美術科（日本画専攻）卒業</dd>
+<dt>2008年</dt><dd>金沢美術工芸大学 美術工芸学部 美術科（日本画専攻）入学</dd>
+<dt>2010年</dt><dd>第5回 前田青邨記念大賞 入選<br/>
+			グループ展「あれから四年・・・」展</dd>
+<dt>2011年</dt><dd>第5回 奈良県万葉日本画大賞展 入選<br/>
+			第43回 日展 初入選</dd>
+<dt>2012年</dt><dd>金沢美術工芸大学 美術工芸学部 美術科（日本画専攻）卒業<br/>
+			第23回 臥龍桜日本画大賞展 入選</dd>
+<dt>2014年</dt><dd>西濃美術展出品<br/>
+			第64回 大垣市美術展 日本画奨励賞 受賞</dd>
+<dt>2015年</dt><dd>第7回 前田青邨記念大賞 入選</dd>
+</dl>
+</div>
+</div>
+<br/>
+</section>
+<!--

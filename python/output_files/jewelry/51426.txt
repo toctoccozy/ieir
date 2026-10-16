@@ -1,0 +1,110 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>Year Jewelry Collection＜しあわせの「巳年」金貨＞純金コインの宝飾ペンダント</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51426503" target="_self"><img alt="Year Jewelry Collection＜しあわせの「巳年」金貨＞純金コインの宝飾ペンダント" src="/image/goods/51426_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：ペンダントトップ＝金貨（品位.9999）　フレーム・バチカン＝18金、ダイヤモンド1石（約0.01ct）　チェーン＝24金仕上げスターリング・シルバー（925銀）<br/>
+●サイズ（約）：ペンダントトップ＝縦21.9×横14.5mm（フレーム含む）　チェーン＝最長45cm（フリーアジャスター）<br/>
+●日本製</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>Year Jewelry Collection＜しあわせの「巳年」金貨＞純金コインの宝飾ペンダント</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>13,000円（税込14,300円）×15回払い</span><br/>
+                          
+                          
+                            一括価格 <span>179,800円（税込197,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51426503"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51426"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51426503');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51426503');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="Year Jewelry Collection（イヤージュエリー・コレクション　しあわせの「巳年」金貨　純金コインの宝飾ペンダント" height="340" src="/image/goods/51426_01.jpg" width="580"/></p>
+<p class="intro">
+		2025年が幸せに満ちた健やかなる一年になることを願って<br/>
+		干支の「巳」をテーマにおくる<br/>
+		最高品位.9999の金貨を贅沢にもそのまま使用した<br/>
+		特別なコインペンダントが誕生しました。<br/>
+<br/>
+		幸運をはこぶ蛇と繁栄を表すアラベスク文様。<br/>
+		そして、永遠を意味する数字に合わせ<br/>
+		願いを叶えるとされる星を8つちりばめた<br/>
+		幸福感に満たされるデザイン。<br/>
+		バチカンには、ラッキーモチーフの三日月と星に<br/>
+		永遠の美の象徴、ダイヤモンドの輝きを添えて。<br/>
+		お守り感覚でいつも身に着けていたくなる<br/>
+		華やかなイヤージュエリーです。
+	</p>
+<p class="center-img"><img alt="豊かな一年のはじまりを彩る、特別な輝き…" height="420" src="/image/goods/51426_02.jpg" width="400"/></p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>クック諸島政府が発行する真正な法定金貨を使用</li>
+<li class="stt"><span class="sq01">■</span>最高品位.9999の純金製</li>
+<li class="stt"><span class="sq01">■</span>三日月と星にダイヤモンドが煌めく18金製のバチカンとフレーム</li>
+<li class="stt"><span class="sq01">■</span>高度な技術で浮かび上がる美しい凹凸（レリーフ）</li>
+<li class="stt"><span class="sq01">■</span>裏表2つの表情が楽しめるリバーシブルタイプ</li>
+<li class="stt"><span class="sq01">■</span>チェーンはSV925に純金仕上げ</li>
+<li class="stt"><span class="sq01">■</span>発行国の発行証明書が付属</li>
+</ul>
+<p>
+		揺るぎない富を思わせる黄金の輝きに、神秘的な蛇の姿を映して――脱皮を繰り返して成長し、強い生命力を誇ることから不老長寿を象徴する蛇。財運や芸能の女神である弁財天の使いとしても信仰され、幸運をはこぶ縁起の良い動物と伝えられています。このたび「巳年」にちなんで発行される特別な金貨が、胸元を煌びやかに彩る価値あるイヤージュエリーになりました。最高品位.9999の純金のリッチな輝きが、喜びに満ちた一年の訪れを予感させるコインペンダント＜しあわせの「巳年」金貨＞のご案内です。
+	</p>
+<p class="center-img"><img alt="ペンダントはリバーシブル。反対側の面には元首チャールズ3世（英国国王）の公式肖像が。" height="500" src="/image/goods/51426_03.jpg" width="400"/></p>
+<h2>新年を寿ぐ純金の蛇を、お守りのように身に着けて…<br/>
+	華麗なる黄金の輝きに心満たされるコインペンダント</h2>
+<p class="flt-l"><img alt="三日月と星を象ったバチカンにはダイヤモンドが煌めきます。" height="210" src="/image/goods/51426_04.jpg" width="135"/></p>
+<p>
+		艶やかな鏡面仕上げの貨面に、精緻な凹凸（レリーフ）で立体的に表現された蛇と、繁栄や長寿の意味を持つアラベスク文様。蛇がしなやかな身を蔓や草に絡ませているデザインはどこか異国情緒が漂い、洋の東西を問わず神の使いとして崇められている蛇の神々しさにも重なります。周りには永遠を意味する数字にかけて「8」つの星が浮かび、幸せが永遠に続くよう願いが込められました。金貨は穴を開けるなどの加工を施すことなく、そのままの状態でフレームにセット。18金製のバチカンには、厄を退け未来へ導くとされる三日月と星のモチーフがあしらわれ、永遠の美のシンボルと謳われるダイヤモンドが気品をもたらします。
+	</p>
+<p class="center-img"><img alt="貴重な純金の金貨をそのままに使用／限定2025点発行、プルーフコイン、品位：.9999金、重さ：1/25オンス（約1.2グラム）、直径：約13.92ミリ、額面：10クックアイランド・ドル
+発行：クック諸島政府、発行年：2025年。本物の法定貨幣の証としてコインの発行証明書が付属します" height="586" src="/image/goods/51426_05.jpg" width="580"/></p>
+<p>
+		2025年の幕開けを飾るにふさわしい贅沢な純金のイヤージュエリー＜しあわせの「巳年」金貨＞純金コインの宝飾ペンダントは、2025点のみ発行される貴重な金貨を用いた特別限定版です。正真正銘の法定貨幣であることを証する発行証明書を添えてお届けいたします。不変の価値を有する小さな資産であり、開運祈願の干支の縁起物としても身に着けていただけるラグジュアリーな逸品ですので、この好機にぜひお申し込みください。
+	</p>
+<p class="center-img"><img alt="ペンダントはギフトケースに収めてお届けします。贈り物にも最適です。" height="570" src="/image/goods/51426_06.jpg" width="540"/></p>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="クック諸島　国章" height="52" src="/image/goods/51426_07.jpg" width="45"/>　クック諸島</h3>
+<p>南太平洋にある15の島々で構成された自治国家で、総面積は約237平方キロメートル。1770年代にこの島々を発見した英国の探検家、キャプテン・ジェームズ・クックの名にちなみ、クック諸島と名づけられた。元首はイギリスのチャールズ3世。</p>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3>プルーフコインとは…</h3>
+<p>国賓やVIPに贈る記念品として、各国が特殊な技法を駆使して発行する貨幣。模様を鮮明にするため、極印（型）を2回以上打ちつけるなどして入念に製造される。発行数が少ないため、収集家の希求の的。</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

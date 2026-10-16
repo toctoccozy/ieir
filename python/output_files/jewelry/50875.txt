@@ -1,0 +1,102 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>＜幸せのうさぎと四つ葉のクローバー金貨＞純金コイン宝飾ペンダント</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=50875504" target="_self"><img alt="＜幸せのうさぎと四つ葉のクローバー金貨＞純金コイン宝飾ペンダント" src="/image/goods/50875_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：ペンダントトップ＝金貨（品位.9999）　フレーム、バチカン、チェーン＝18金、ダイヤモンド１石（約0.01ct）<br/>
+●サイズ（約）：ペンダントトップ＝縦21×横14.5mm（フレーム含む）　チェーン＝最長45cm（フリーアジャスター）<br/>
+●日本製<br/>
+＊鋳造：マイヤーズ造幣所（ドイツ）</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>＜幸せのうさぎと四つ葉のクローバー金貨＞純金コイン宝飾ペンダント</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>13,000円（税込14,300円）×15回払い</span><br/>
+                          
+                          
+                            一括価格 <span>179,800円（税込197,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="50875504"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50875"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('50875504');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50875504');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="＜幸せのうさぎと四つ葉のクローバー金貨＞純金コイン宝飾ペンダント" height="230" src="/image/goods/50875_01.jpg" width="580"/></p>
+<p class="intro">
+		眩い黄金の輝きに包まれた四つ葉のクローバーの丘で──。<br/>
+		富貴な幸運の象徴“うさぎ”が、つぶらな瞳であなたを見つめる<br/>
+		愛らしくも贅沢な「純金製」のコインペンダント。<br/>
+		確かな価値を有する純度99.99％の金貨を彩る<br/>
+		「四つ葉のクローバー」のバチカンには、永遠の美の象徴ダイヤモンドが煌めいて…。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>クック諸島政府が発行する真正な法定金貨を使用</li>
+<li class="stt"><span class="sq01">■</span>最高品位.9999の純金製</li>
+<li class="stt"><span class="sq01">■</span>ダイヤモンド１石</li>
+<li class="stt"><span class="sq01">■</span>高度な技術で浮かび上がる美しいレリーフ</li>
+<li class="stt"><span class="sq01">■</span>表裏2つの表情が楽しめるリバーシブルタイプ</li>
+<li class="stt"><span class="sq01">■</span>発行証明書が付属</li>
+<li class="stt"><span class="sq01">■</span>フレーム、チェーン、透かし細工のバチカンは贅沢な18金製</li>
+</ul>
+<p class="center-img"><img alt="幾つものラッキーシンボルをそっと胸もとに重ねて──" height="375" src="/image/goods/50875_02.jpg" width="400"/></p>
+<p>
+		最高品位の純金（.9999）に浮かび上がるのは、古より洋の東西を問わず愛されてきた“うさぎ”。イースター・バニーとして復活祭の卵を運ぶことから「繁栄」「生命力」を象徴し、すばらしい跳躍力は「とんとん拍子に物事が進む」ことを意味すると伝えられます。そんなうさぎの価値ある“金貨”が、胸もとを華麗に彩る素晴らしい逸品になりました。純金にうさぎ、四つ葉のクローバー、そして月と星…。幾つものラッキーシンボルの相乗効果が、限りない幸運を呼ぶ＜幸せのうさぎと四つ葉のクローバー金貨＞純金コイン宝飾ペンダントです。
+	</p>
+<p class="center-img"><img alt="リバーシブル：もうひとつの面には、英連邦の元首エリザベス2世の公式肖像が。" height="480" src="/image/goods/50875_03.jpg" width="325"/></p>
+<h2>あでやかな純金の輝きがもたらす、美しき自信。<br/>
+	幸運のお守りとしていつもそばに…</h2>
+<p class="flt-l"><img alt="立体感あふれる四つ葉のクローバーのバチカンには、永遠の美を象徴するダイヤモンドが煌めきます。" height="235" src="/image/goods/50875_04.jpg" width="135"/></p>
+<p>
+		陽光を受けて葉を広げる「四つ葉のクローバー」に囲まれ、愛らしく耳を澄ませる“幸せのうさぎ”。陽射しを受けて輝くその瞳はあなたを見つめ、富貴な純金（.9999）の幸運を予感させます。背景には、パワー上昇を表す上弦の三日月が綺羅星とともに見守って──。金貨は、そんな心ときめく情景を高度な鋳造技術と精緻なレリーフで精妙に表現。柔らかな毛並み一本一本が繊細に浮かび上がる素晴らしい意匠が完成しました。美しい無垢の金貨は穴を開けたり加工を施すことなく、そのままの状態で18金のフレームにセット。さらに四つ葉のクローバーを立体的に象ったバチカンには、贅沢にも永遠の美を意味するダイヤモンドが煌めくのです。
+	</p>
+<p class="center-img"><img alt="美しい純金の貨幣をそのままに使用／限定2021点発行　プルーフコイン／額面：$10（クックアイランド・ドル）／品位：.9999金／重さ：1/25オンス（約1.2グラム）直径：約13.92ミリ／発行：英連邦クック諸島政府／紛れもない法定貨幣の証として、コインの発行証明書が付属します。" height="250" src="/image/goods/50875_05.jpg" width="580"/></p>
+<p>
+		優美なジュエリーとして、富貴のお守りとして、また永遠に価値が変わらぬ“身に着ける資産”としても、たしかな満足をもたらす＜幸せのうさぎと四つ葉のクローバー金貨＞純金コイン宝飾ペンダント。本作品は2021点のみ発行される法定貨幣を用いた特別な限定版ジュエリーです。そっと胸もとに重ね、幸せの予感で心満たされる美しき逸品を、この好機にぜひお求めください。
+	</p>
+<p class="center-img"><img alt="作品はギフトケースに収めてお届けします。贈り物にも最適です。" height="460" src="/image/goods/50875_06.jpg" width="460"/></p>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="クック諸島　国章" height="52" src="/image/goods/50875_07.jpg" width="45"/>　クック諸島 COOK ISLANDS</h3>
+<p>南太平洋にある15の島々で構成された自治国家で、総面積は約237平方キロメートル。1770年代にこの島々を発見した英国の探検家、キャプテン・ジェームズ・クックの名にちなみ、クック諸島と名づけられた。元首はイギリスのチャールズ3世。</p>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3>プルーフコインとは</h3>
+<p>国賓やVIPに贈る記念品として、各国が特殊な技法を駆使して発行する貨幣。模様を鮮明にするため、極印（型）を2回以上打ちつけるなどして入念に製造される。発行数が少ないため、収集家の希求の的。</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

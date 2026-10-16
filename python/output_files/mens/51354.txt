@@ -1,0 +1,139 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>靴職人のソフトローファー　　　　　　　　　　　　　　　　　　　　　　　　　　</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51354501" target="_self"><img alt="靴職人のソフトローファー　　　　　　　　　　　　　　　　　　　　　　　　　　" src="/image/goods/51354_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：牛革、高反発素材、EVAスポンジ、EVA（靴底）<br/>
+●サイズ（約）：24.5～27.5cm（0.5cm刻み）　足囲：4E<br/>
+●重さ（約）：265ｇ（25.5cm･片足）<br/>
+●日本製<br/>
+※天然皮革を縫製しているため、小さなしわなどが出る場合がございます。</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>靴職人のソフトローファー　　　　　　　　　　　　　　　　　　　　　　　　　　</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,980円（税込5,478円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>29,800円（税込32,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51354501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51354"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5clr">
+<option selected="selected" value="0">▼お選びください。</option>
+<option value="BLK">プレミアムブラック</option>
+<option value="BWN">ココアブラウン</option>
+<option value="DNB">ダークネイビー</option>
+</select>
+</p>
+<p class="select">
+<select class="top_select" disabled="disabled" id="lv2" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="pBWN" value="BWN-245">２４．５ｃｍ</option>
+<option class="pBWN" value="BWN-250">２５．０ｃｍ</option>
+<option class="pBWN" value="BWN-255">２５．５ｃｍ</option>
+<option class="pBWN" value="BWN-260">２６．０ｃｍ</option>
+<option class="pBWN" value="BWN-265">２６．５ｃｍ</option>
+<option class="pBWN" value="BWN-270">２７．０ｃｍ</option>
+<option class="pBWN" value="BWN-275">２７．５ｃｍ</option>
+<option class="pDNB" value="DNB-245">２４．５ｃｍ</option>
+<option class="pDNB" value="DNB-250">２５．０ｃｍ</option>
+<option class="pDNB" value="DNB-255">２５．５ｃｍ</option>
+<option class="pDNB" value="DNB-260">２６．０ｃｍ</option>
+<option class="pDNB" value="DNB-265">２６．５ｃｍ</option>
+<option class="pDNB" value="DNB-270">２７．０ｃｍ</option>
+<option class="pDNB" value="DNB-275">２７．５ｃｍ</option>
+<option class="pBLK" value="BLK-245">２４．５ｃｍ</option>
+<option class="pBLK" value="BLK-250">２５．０ｃｍ</option>
+<option class="pBLK" value="BLK-255">２５．５ｃｍ</option>
+<option class="pBLK" value="BLK-260">２６．０ｃｍ</option>
+<option class="pBLK" value="BLK-265">２６．５ｃｍ</option>
+<option class="pBLK" value="BLK-270">２７．０ｃｍ</option>
+<option class="pBLK" value="BLK-275">２７．５ｃｍ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51354501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51354501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="イタリア・マストロット社製　高級ソフトフィットレザー使用　靴職人のソフトローファー" height="300" src="/image/goods/51354_01.jpg" width="580"/></p>
+<p class="intro">
+		断然クセになる、驚異の履き心地。<br/>
+		日本人の足を知りつくした熟練の靴職人が<br/>
+		異次元の履きやすさを追求した<br/>
+		粋で若々しいカジュアルローファー。<br/>
+<br/>
+		イタリアンレザーの老舗マストロット社の<br/>
+		高級ソフトフィットレザーを採用。<br/>
+		イタリアンカラーの洒落た顔つきに<br/>
+		歩く歓びもいちだんと高まる軽快リラックス仕様。<br/>
+<br/>
+		日本の靴づくりの聖地・神戸から──
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>イタリア・マストロット社製の高級ソフトフィットレザー</li>
+<li class="stt"><span class="sq01">■</span>甲（アッパー）のモカシン縫いは一針一針丹念に手縫い</li>
+<li class="stt"><span class="sq01">■</span>しなやかなフィット感を実現した独自のインステッチ製法*</li>
+<li class="stt"><span class="sq01">■</span>カラーは3タイプ</li>
+</ul>
+<div style="font-size:0.8em; text-align:right;">＊ソール形状意匠登録済</div><br/>
+<p class="center-img"><img alt="画像上はダークネイビー、左はプレミアムブラック、右はココアブラウン" height="525" src="/image/goods/51354_02.jpg" width="580"/></p>
+<p class="flt-r"><img alt="手縫いのモカシンステッチ" height="140" src="/image/goods/51354_03.jpg" width="135"/></p>
+<p>
+		一見、シンプルなスリッポン。実は、想像を超える履き心地──。秘密は、こだわりの革と製法にありました。日本の靴づくりの聖地・神戸の熟練職人が、イタリアを代表する老舗タンナー、マストロット社の高級ソフトフィットレザーを用い、独自製法で仕立てた軽量コンフォート仕様のソフトローファー。日本人の足を知り尽くした日本の靴職人による至福の履き心地を、イタリアンテイストの洒落た顔つきにのせておくる逸品です。
+	</p>
+<h2>履いた瞬間、違いがわかる、この軽やかさと解放感</h2>
+<p class="flt-l"><img alt="シュリンク革の美しい表情" height="140" src="/image/goods/51354_04.jpg" width="135"/></p>
+<p>
+		ご覧のローファーのために選ばれたのは、柔らかく鞣した上質の牛革にシボ加工を施し、弾力性と柔軟性をさらに高めたシュリンク革、ソフトフィットレザーです。しなやかで足なじみがいいのは、裏打ちをせず、革本来の柔らかさを生かしたシンプルな一枚仕立てだから。しかも独自のインステッチ製法により、驚きの軽い履き心地を実現しました。甲のモカシンステッチは、職人による丹念な手縫い。余計な飾りは一切なく、シュリンク革の表情が際立つ美しい仕上がりです。軽快な足運びをサポートする屈曲性の高いソール構造に加え、さらに3センチの底上げでさりげなく脚長になるのもうれしい魅力。背筋もスッと伸びて、歩く姿も颯爽と若々しく決まる、快適ソフトローファーの誕生です。
+	</p>
+<p class="center-img"><img alt="歩く歓びを取り戻す、軽快ソフトなフィット感。こだわりの革と製法で一歩一歩をサポートします。／甲が高く幅の広い日本人の足に合わせて、靴づくりの本場・神戸の職人がおくるソフトローファー。品質の高さで定評のあるイタリア・マストロット社のシュリンク革・ソフトフィットレザーを採用し、革の柔軟性を最大限に生かした軽くてしなやかな一枚仕立てです。特殊設計の底材を直に縫い付ける独自のインステッチ製法は、意匠登録済。足指を締め付けない幅広4Eなので、ストレスを感じさせません。／軽量約265グラム（片足・25.5センチ）、底上げ3センチ／柔らかく足をくるむインステッチ製法：革を底材に直接縫い付ける独自の手法。柔らかい一枚革が袋状に足を包んで、その人の足の形にすぐなじみます。／手縫いのモカシンステッチ、高反発クッションインソール、EVAクッションインソール、軽量発泡ラバー素材の底材／しなやかな「返り」は歩きやすさの決め手。中底を取り去ることで屈曲性を高め、さらに高反発EVA素材を張り合わせたクッションインソールを重ねて、足への負担をとことん軽減。底材は軽くてクッション性に優れた発泡ラバーで、安定性も抜群。" height="1000" src="/image/goods/51354_05.jpg" width="580"/></p>
+<h2>粋なカラーで街歩きがぐっと楽しく</h2>
+<p class="flt-r"><img alt="外からは見えないさりげない底上げも魅力" height="140" src="/image/goods/51354_06.jpg" width="135"/></p>
+<p>
+		日本の熟練職人がこだわりのイタリアンレザーでおくる快適仕様のソフトローファー。マストロット社が誇る美しい発色のイタリアンカラーで、ダークネイビー、プレミアムブラック、ココアブラウンの3色展開。さっと脱ぎ履きできるソフトローファーは、玄関先でもストレスゼロ。日本人のライフスタイルにも心地よくフィットします。ぜひ今すぐお求めになり、街歩きを存分にお楽しみください。
+	</p>
+<p class="center-img"><img alt="とことんラクして、カッコよく。足がよろこぶ8つのポイント／1、革のよさ歴然：味わい深いシボが浮かぶしなやかなイタリア製高級牛革。2、靴下感覚：袋状に足を包み込む独自のインステッチ製法（意匠登録済）。3、快適フィット：足にやわらかく革がなじむ裏地のない一枚仕立て。4、弾む足運び：屈曲性に優れた軽量発泡ラバーのアウトソール。5、負担軽減：クッション性の高いEVA素材と高反発素材のインソール。6、抗菌防臭：気になる匂いを抑えてサラッと爽やか。7、はっ水加工：汚れがつきにくく突然の雨にも安心。8、スラリ脚長：インヒール内蔵でさりげなく3センチ底上げ／足指らくらく、幅広4E。軽量約265グラム（片足・25.5センチ）／ぴったりの靴が見つかる 豊富なサイズをご用意、24.5〜27.5センチ。色・サイズ交換返送料無料" height="700" src="/image/goods/51354_07.jpg" width="580"/></p>
+<div class="box1">
+<div class="box-text">
+<h3>イタリアンレザーの名門　マストロット社　Gruppo Mastrotto</h3>
+<p>
+				　1958年に創業されたマストロット社は、古くから皮革産業が盛んな北イタリア・ヴィチェンツァのアルツィニャーノに本社を構える世界最大級のレザーメーカーです。複数のタンナーをいち早くまとめあげてグループ化し、職人の技や豊富な経験をもとに、積極的な技術革新を推進。トレンドを先読みした多彩なテクスチャーや豊富な色数で、ハイブランドから絶大な信頼を得てきました。今日、ブラジルやメキシコなど世界18ヵ所に拠点を置き、ファッション界はもちろん、インテリア家具、高級車のレザーシートなど、多岐にわたる分野に良質の革素材を提供しています。
+			</p>
+<p class="center-img"><img alt="マストロット社屋と社内イメージ" height="180" src="/image/goods/51354_08.jpg" width="400"/></p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

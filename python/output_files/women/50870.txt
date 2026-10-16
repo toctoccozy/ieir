@@ -1,0 +1,139 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>アンデスのぬくもり＜華やぎのブルーフォンセ＞五泉ニット絣糸編みのAラインあったかチュニック</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=50870501" target="_self"><img alt="アンデスのぬくもり＜華やぎのブルーフォンセ＞五泉ニット絣糸編みのAラインあったかチュニック" src="/image/goods/50870_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：<br/>
+無地部分＝ペルー産ベビーアルパカ100％<br/>
+柄部分＝ペルー産ベビーアルパカ78％・アクリル22％<br/>
+●日本製<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="154" src="/image/goods/50870_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>アンデスのぬくもり＜華やぎのブルーフォンセ＞五泉ニット絣糸編みのAラインあったかチュニック</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,980円（税込5,478円）×4回払い</span><br/>
+                          
+                          
+                            一括価格 <span>19,800円（税込21,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="50870501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="50870"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Ｓサイズ</option>
+<option class="p999" value="999-M">Ｍサイズ</option>
+<option class="p999" value="999-L">Ｌサイズ</option>
+<option class="p999" value="999-LL">ＬＬサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('50870501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('50870501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="アンデスのぬくもり＜華やぎのブルーフォンセ＞五泉ニット絣糸編みのAラインあったかチュニック" height="330" src="/image/goods/50870_01.jpg" width="580"/></p>
+<p class="intro">
+		それは本場ペルー産高級アルパカの中でも<br/>
+		わずか約10％しか採れない、ぬくもりの極み──。<br/>
+<br/>
+		希少な「ベビーアルパカ」を惜しみなく用い<br/>
+		日本が誇る「五泉ニット」の熟練職人が丹念に編み上げた<br/>
+		あたたかさと美の喜びに満たされる高級チュニック。<br/>
+		一本一本にエレガンスが宿る10色の絣糸で表現した<br/>
+		華麗なルネサンス文様に周囲の羨望が降り注いで…。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>ペルー産高級ベビーアルパカを贅沢に使用</li>
+<li class="stt"><span class="sq01">■</span>世界が称賛する熟練職人の技と感性「本場・五泉ニット」</li>
+<li class="stt"><span class="sq01">■</span>宝石さながらの華やぎを演出する絣糸編み</li>
+<li class="stt"><span class="sq01">■</span>優しく首回りを包み込むオフタートル</li>
+<li class="stt"><span class="sq01">■</span>気になる腰回りをすっきりカバーする絶妙なAライン</li>
+<li class="stt"><span class="sq01">■</span>優れた保温性と抜群の耐久性</li>
+<li class="stt"><span class="sq01">■</span>日本の匠を着るブランド“一期一衣”のオリジナル</li>
+</ul>
+<p class="center-img"><img alt="寛ぎの時間を「特別な時間」にするベビーアルパカと絣糸のエレガンス" height="500" src="/image/goods/50870_02.jpg" width="580"/></p>
+<h2>特別な冬だから、特別な1着を厳選<br/>
+	ベビーアルパカで過ごすお洒落な日常</h2>
+<p>
+		一度身に着ければ忘れられない「ベビーアルパカ」のぬくもりに、エレガントな気品と華やぎを──。世界が絶賛する高級獣毛、本場ペルー産アルパカ。その全収穫量の中でわずか約10％しか採れない極細毛「ベビーアルパカ」を惜しみなく使用した贅沢な逸品が発表されました。日本の匠が息づく高級ブランド“一期一衣”がおくるこの上なくあたたかなチュニック＜アンデスのぬくもり　華やぎのブルーフォンセ＞。「アンデスの宝石」と称されるベビーアルパカと日本の高度な技術「五泉ニット」との奇跡的な出逢いが生みだした、冬の貴女が輝く服のご案内です。
+	</p>
+<p class="center-img"><img alt="本場ベビーアルパカと10色の絣糸が織りなす、ジャパンメイドの逸品／ふんわり編みのオフタートル。宝石のように華やぐルネサンス文様がお顔周りを麗しく引き立てます。／シルエットをすっきりと美しく見せるAライン。袖口が揺れるたびにルネサンス文様のエレガンスが漂って。" height="700" src="/image/goods/50870_03.jpg" width="580"/></p>
+<h2>華麗なルネサンス文様とともに極上のぬくもりを楽しんで</h2>
+<p>
+		発色よく気品あふれる濃紺（ブルーフォンセ）に染め上げたベビーアルパカ。本作品はその毛糸を用い、ニットを知りつくした新潟県「五泉ニット」の熟練職人が丹念な手作業でジャカード編み。10色の絣糸を巧みに交差させて描いたヨーロッパ伝統のルネサンス文様が、虹色の華やぎも見事に裾やオフタートル、袖口にあしらわれました。身に纏えば、絣糸を美しく編み上げた豊かな感性と高級感に酔いしれて…。リビングで、お友達とのカフェで、美しい貴女を印象づけることでしょう。<br/>
+		本場高級ベビーアルパカ使用＜アンデスのぬくもり　華やぎのブルーフォンセ＞は、I・E・I社の特別企画商品です。希少なベビーアルパカを惜しみなく用いた本作品を、この好機にどうぞお求めください。
+	</p>
+<div class="box1">
+<div class="box-text">
+<h3>収穫は２年に１回。しかも10％しか採れない<br/>
+			超希少なペルー産ベビーアルパカ</h3>
+<div>
+<p class="flt-r"><img alt="ペルーのアルパカ" height="135" src="/image/goods/50870_04.jpg" width="135"/></p>
+<p>
+					アンデスの高原（海抜4000～5000メートル）に生息するラクダ科の動物アルパカ。1日の気温差が約30度にも達する過酷な自然環境から身を守るため、その体毛は限りなく細く、しなやかに進化を遂げ、保温性に優れています。本作品はその中でもわずか約10％の収穫量である極細0.023ミリ以下のベビーアルパカを贅沢に使用した逸品です。<br/>
+<br/>
+<strong>●体温調節が容易</strong><br/>
+					　繊維が細く空気を多く含むため着心地爽やかで、適度な保温性です。<br/>
+<strong>●柔らかな感触</strong><br/>
+					　0.023ミリ以下の超極細の毛質なので、手触りが柔らかくなめらかです。<br/>
+<strong>●軽い着心地</strong><br/>
+					　繊維自体に微細な空洞があるため、ウールに比べて軽量です。<br/>
+<strong>●抜群の耐久性</strong><br/>
+					　繊維が細くしなやかなため、毛玉が出来にくくウールより丈夫です。<br/>
+<strong>●美しい質感</strong><br/>
+					　天然ならではの落ち着いた光沢に高級感が漂います。<br/>
+</p>
+</div>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3>熟練職人の技と感性が光る“本場・五泉ニット”</h3>
+<p class="flt-l"><img alt="五泉ニットの絣糸" height="145" src="/image/goods/50870_05.jpg" width="135"/></p>
+<p>日本が誇るニットの本場、新潟県五泉市。類い稀な技と感性で編み・仕立てるこの地のニットは国内外の錚々たるブランドの作品にも採用され、その揺るぎないクオリティは世界的な信頼を得ています。本作品は上質な本場ベビーアルパカ糸と絣糸を惜しみなく用い、この地の熟練職人により編み上げたニットの最高峰。豊かな風合いにジャパンメイドの誇りが息づいています。</p>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3><img alt="一期一衣バナー" height="46" src="/image/goods/50870_06.jpg" width="130"/>　一期一衣</h3>
+<div>
+<strong>世界が絶賛する華やぎの「ジャパンメイド」</strong><br/>
+				日本のモノづくりが培った高度な技術・和の伝統素材を、現代のスタイルで着こなす高級オリジナルブランド。日本の美意識に貫かれた新鮮なデザインと匠の技が、華のある存在感を演出します。素材選びから染め・織り・縫製にいたるまで、妥協を許さぬ信頼のジャパンクオリティでお届けします。
+			</div>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

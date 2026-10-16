@@ -1,0 +1,140 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>アンデスのぬくもり＜輝きのペイズリー＞五泉ニット絣糸編み ゆったりロングジレ</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51267501" target="_self"><img alt="アンデスのぬくもり＜輝きのペイズリー＞五泉ニット絣糸編み ゆったりロングジレ" src="/image/goods/51267_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：配色部分＝ペルー産ベビーアルパカ35％、アクリル49％、ポリエステル16％、無地部分＝ペルー産ベビーアルパカ100％<br/>
+●重さ（約）：285g<br/>
+●日本製<br/>
+※絣糸の特性上、色の出方が写真と異なる場合があります。<br/>
+<br/>
+<p class="center-img"><img alt="サイズ表" height="153" src="/image/goods/51267_size.jpg" width="295"/></p></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>アンデスのぬくもり＜輝きのペイズリー＞五泉ニット絣糸編み ゆったりロングジレ</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,480円（税込4,928円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>26,800円（税込29,480円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51267501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51267"/>
+<div class="select_area">
+<p class="select">
+<select class="top_select" id="lv1" name="m5siz">
+<option selected="selected" value="0">▼お選びください。</option>
+<option class="p999" value="999-S">Ｓサイズ</option>
+<option class="p999" value="999-M">Ｍサイズ</option>
+<option class="p999" value="999-L">Ｌサイズ</option>
+<option class="p999" value="999-LL">ＬＬサイズ</option>
+</select>
+</p>
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51267501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51267501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="一期一衣（いちごひとえ）　本場高級ベビーアルパカ使用　アンデスのぬくもり＜輝きのペイズリー＞五泉ニット絣糸（かすりいと）編み ゆったりロングジレ" height="530" src="/image/goods/51267_01.jpg" width="580"/></p>
+<p class="intro">
+		アンデスの宝石と称される希少なベビーアルパカと<br/>
+		12色に染め上げた絣糸が織りなすのは<br/>
+		ラメの輝きも見事な社交界の華、ペイズリー文様──。<br/>
+<br/>
+		鮮やかに浮かび上がる美しい色彩と、ふんわり優しい温もりが<br/>
+		冬の貴女を抱擁するエレガントなロングジレ。<br/>
+		世界が称賛する「五泉ニット」の技と感性が光る逸品です。
+	</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>ペルー産ベビーアルパカを贅沢に使用</li>
+<li class="stt"><span class="sq01">■</span>世界が称賛する熟練職人の技と感性 「本場・五泉ニット」</li>
+<li class="stt"><span class="sq01">■</span>宝石さながらの華やぎを演出する絣糸編み</li>
+<li class="stt"><span class="sq01">■</span>優れた保温性と抜群の耐久性</li>
+<li class="stt"><span class="sq01">■</span>気になる部分をカバーするフレンチスリーブと絶妙な丈</li>
+<li class="stt"><span class="sq01">■</span>ゆったり着こなせる16センチのサイドスリット入り</li>
+<li class="stt"><span class="sq01">■</span>日本の匠を着る服「一期一衣（いちごひとえ）」のオリジナル</li>
+</ul>
+<p class="center-img"><img alt="フロントボタンを開けてインナーを見せてもお洒落。後ろ身頃全面は贅沢なベビーアルパカ100％。寒さを感じやすい背中を極上の温もりで包みます。" height="500" src="/image/goods/51267_02.jpg" width="580"/></p>
+<h2>12色に染め分けた伝統の絣糸に煌めくラメを添えて<br/>
+	五泉ニットの粋を尽くした、特別なベビーアルパカ</h2>
+<p>
+		アンデスの宝石と称される希少素材、アルパカ。その全収穫量の中でわずか約10％しか採れない極細毛「ベビーアルパカ」に美しく浮かぶのは、ヨーロッパ社交界で羨望を集めたペイズリー文様。極上の温もりと気品漂う華やぎが、冬のお出かけをいきいきと輝かせる逸品が高級ブランド「一期一衣」より発表されました。ニットを知りつくした新潟県「五泉ニット」の熟練職人が、なんと12色に染め分けた絣糸をベビーアルパカとともに編み上げた＜アンデスのぬくもり 輝きのペイズリー＞。羽織った瞬間に温かなエレガンスに包まれて、お洒落な重ね着を思いのままにお楽しみいただける軽快なフレンチスリーブのロングジレです。
+	</p>
+<p class="center-img"><img alt="熟練職人が編み上げるニットの最高峰　本場・五泉ニット：日本が誇るニットの本場、新潟県五泉市。類い稀な技と感性で編み・仕立てるこの地のニットは国内外の錚々たるブランドの作品にも採用され、その揺るぎないクオリティは世界的な信頼を得ています。本作品は上質な本場ベビーアルパカを惜しみなく用い、ラメの輝きを湛えるブルー糸を含めた12色にも染め分けた絣糸で高度なジャカード編みを表現。ラメが煌めく繊細なペイズリー文様がネイビー色のベビーアルパカを背景に鮮やかに浮かび上がります。" height="255" src="/image/goods/51267_03.jpg" width="580"/></p>
+<h2>ひとめで心奪われるモダンな華やぎ──<br/>
+	着る人の品格をランクアップする、ベビーアルパカと絣糸の出逢い</h2>
+<p>
+		パープル、ヴァイオレット、オレンジ、ブルー、イエロー…<sup>※</sup>。ラメの輝きが舞う12色の絣糸が描くのは、古の花模様や生命の樹を起源とし、遥かなるカシミールの地で美しく育まれた伝統文様「ペイズリー」。19世紀にヨーロッパに伝えられ瞬く間に貴婦人たちを虜にしたモチーフが、瑞々しく花開くかのようにネイビー色のベビーアルパカに浮かび上がります。ゆったり動きやすいフレンチスリーブの袖ぐりはどんな服にも重ねやすく、さらにスリムに見えるよう計算された巧みなロング丈が気になる腰回りをすっきりとカバー。ベビーアルパカ×絣糸というこの上なくリッチな取り合わせとともに、五泉ニットならではのラグジュアリーな風合いが着る人の美を豊かに薫り立たせるのです。
+	</p>
+<div style="font-size:0.8em;">※パープル、ヴァイオレット、ブラウン、オレンジ、ブルー、サックスブルー、イエロー、カーキ、レンガ、マスタード、ブルーグリーン、グリーンの12色に染め分けた絣糸を使用しています。</div>
+<p class="center-img"><img alt="ふんわり軽やか約285グラム／裾のシルエットを美しく見せるサイドスリット入り。心地よいゆったり感もポイント。／シャツやニットなど、どんなインナーに重ねてもゆったり。二の腕や肩のラインを美しく華奢に見せるフレンチスリーブ。／ネックや前立ての編地にも美しい絣糸のラインをあしらって。ディテールにも手を抜かないのがジャパンメイドの魅力。" height="850" src="/image/goods/51267_04.jpg" width="580"/></p>
+<p>
+		一枚あれば肌寒い日も安心の温かさ。＜アンデスのぬくもり 輝きのペイズリー＞五泉ニット絣糸編み　ゆったりロングジレは、I・E・I社の特別企画商品です。この好機にどうぞご入手いただき、寒い季節ならではの贅沢な着こなしをお楽しみください。
+	</p>
+<div class="box1">
+<div class="box-text">
+<h3>収穫は2年に1回　しかも10％しか採れない<br/>
+			超希少なペルー産ベビーアルパカ</h3>
+<div>
+<p class="flt-r"><img alt="アンデスのアルパカ" height="135" src="/image/goods/51267_05.jpg" width="135"/></p>
+<p>
+					　アンデス高原（海抜4,000～5,000メートル）に生息するラクダ科の動物アルパカ。1日の気温差が約30度にも達する過酷な自然環境から身を守るため、その体毛は限りなく細く、しなやかに進化を遂げ、保温性にも優れています。本作品はその中でもわずか約10％の収穫量である極細0.023ミリ以下のベビーアルパカを贅沢に使用した逸品です。<br/>
+<br/>
+<span style="font-weight:bold"><span style="color:#a76c94">●</span>体温調節が容易</span><br/>
+					　繊維が細く空気を多く含むため着心地爽やかで、適度な保温性です。<br/>
+<span style="font-weight:bold"><span style="color:#a76c94">●</span>柔らかな感触</span><br/>
+					　0.023ミリ以下の超極細の毛質なので、手触りが柔らかくなめらかです。<br/>
+<span style="font-weight:bold"><span style="color:#a76c94">●</span>軽い着心地</span><br/>
+					　繊維自体に微細な空洞があるため、ウールに比べて軽量です。<br/>
+<span style="font-weight:bold"><span style="color:#a76c94">●</span>抜群の耐久性</span><br/>
+					　繊維が細くしなやかなため、毛玉ができにくくウールより丈夫です。<br/>
+<span style="font-weight:bold"><span style="color:#a76c94">●</span>美しい質感</span><br/>
+					　天然ならではの落ち着いた光沢に高級感が漂います。<br/>
+</p>
+</div>
+</div>
+</div>
+<div class="box1">
+<div class="box-text">
+<h3>一期一衣</h3>
+<p>
+<span style="font-size: 1.2em; font-weight:bold;">世界が絶賛する華やぎの「ジャパンメイド」</span><br/>
+				　日本のモノづくりが培った高度な技術・和の伝統素材を、現代のスタイルで着こなす高級オリジナルブランド。日本の美意識に貫かれた新鮮なデザインと匠の技が、華のある存在感を演出します。素材選びから染め・織り・縫製にいたるまで、妥協を許さぬ信頼のジャパンクオリティでお届けします。
+			</p>
+<p class="center-img">
+<img alt="ブランドタグ" height="89" src="/image/goods/51267_06.jpg" width="250"/><br/>
+				メイド・イン・ジャパンへのこだわりの証「一期一衣」のブランドタグ。
+			</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

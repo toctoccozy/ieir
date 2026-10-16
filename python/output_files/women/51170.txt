@@ -1,0 +1,102 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>四季彩の福うさぎ　浅草文庫 高級牛革製長財布</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=51170501" target="_self"><img alt="四季彩の福うさぎ　浅草文庫 高級牛革製長財布" src="/image/goods/51170_main_600x600.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：外装＝牛革に着彩（浅草文庫®）、内装＝牛革、合成皮革<br/>
+●サイズ（約）：縦10.5×横19×厚さ2.4cm<br/>
+●重さ（約）：180g<br/>
+●日本製</dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>四季彩の福うさぎ　浅草文庫 高級牛革製長財布</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>5,800円（税込6,380円）×7回払い</span><br/>
+                          
+                          
+                            一括価格 <span>39,800円（税込43,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="51170501"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="51170"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('51170501');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('51170501');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-4614001" id="main-content">
+<p class="center-img"><img alt="四季彩の福うさぎ　浅草文庫 高級牛革製長財布" height="250" src="/image/goods/51170_01.jpg" width="580"/></p>
+<p class="intro">
+		花うさぎ、波うさぎ、月うさぎに雪うさぎ──<br/>
+		四季折々の風物と戯れる愛らしい福うさぎが<br/>
+		お財布いっぱいの幸せを運んであなたのもとに。<br/>
+<br/>
+		播州姫路特産の白革に鮮やかな友禅染で<br/>
+		縁起のいい福うさぎをちりばめた「浅草文庫®」の長財布。<br/>
+		美しい彩りとぷっくりとした質感に匠の技が光る逸品です。<br/>
+</p>
+<ul class="clearfix">
+<li class="stt"><span class="sq01">■</span>本場・姫路特産の白革（牛革）</li>
+<li class="stt"><span class="sq01">■</span>浅草文庫®の職人技が光る十六版十五色の型染め</li>
+<li class="stt"><span class="sq01">■</span>大きく開くラウンドファスナー</li>
+<li class="stt"><span class="sq01">■</span>合計19ポケット</li>
+<li class="stt"><span class="sq01">■</span>信頼の日本製</li>
+</ul>
+<p class="center-img"><img alt="お手持ちのイメージ" height="374" src="/image/goods/51170_02.jpg" width="350"/></p>
+<p>
+		おめでたいモチーフとして、古くから親しまれてきた“うさぎ”。軽やかに跳ねることから「飛躍」「運気上昇」「万事とんとん拍子」、多産なので「繁栄」「生命力」「長寿」を意味し、月に住むという伝説からツキを呼ぶ縁起物としても尊ばれています。そんな幸運の使者“うさぎ”の福々しい春夏秋冬を、日本の伝統が息づく革工芸・文庫革の手法で彩りも美しくちりばめた、招福祈願のお財布が誕生しました。おめでたい福うさぎが四季折々に目を楽しませてくれる「浅草文庫」の長財布＜四季彩の福うさぎ＞です。
+	</p>
+<p class="center-img"><img alt="四季折々に幸せ運ぶ愛らしい福うさぎ。春：幸せ満開の花うさぎ、夏：幸運の波に乗る波うさぎ、秋：ツキに恵まれる月うさぎ、冬：南天の目で難を転じる雪うさぎ／季節を彩る伝統の吉祥文様も華を添えて。南天、青海波、雪の華、桜、紅白梅" height="482" src="/image/goods/51170_03.jpg" width="580"/></p>
+<h2>運気もぴょんと跳ね上がる、<br/>
+	うさぎ尽くしの開運財布</h2>
+<p class="flt-l"><img alt="引き手の革にもうさぎの型押しが。" src="/image/goods/51170_04.jpg" width="150"/></p>
+<p>
+		カラフルな文庫革を埋め尽くすのは、季節の風物になった愛らしい福うさぎのモチーフ。春は幸せ満開の桜と花うさぎ、夏は幸運の波に乗る波うさぎ、秋は名月を愛でツキを呼ぶ月うさぎ、そして冬は、赤い目に見立てた南天の実が難を転じる雪うさぎ…紅白梅や雪の華、青海波も彩りを添える和テイストのデザインが新鮮です。播州姫路特産の白革に、型友禅の技法で版を何度も重ねては色を乗せ、さらにぷっくりとした型押しで奥行を出す高度な技は、浅草文庫ならでは。もちろんお財布としての使いやすさも優秀です。ぐるりとファスナーを開ければ、札入れやカード入れ、長ポケットやファスナーポケットがすっきりと配置され、出し入れもスムーズ。
+		合計19ポケットの頼もしい収納力で、お金も幸せもたっぷり入る福財布になりました。
+	</p>
+<p class="center-img"><img alt="お金も幸せもたっぷり入るうれしい開運仕様。19ポケット、カード12枚がすっきり／奥の長ポケットにはチケットやカードをまとめて入れて。／カード12枚がすっきり収まるカード入れ。／小銭用のファスナーポケット。／大きく開くラウンドファスナー。／紙幣やレシートを入れるのに便利な長ポケットが全部で4室。" height="408" src="/image/goods/51170_05.jpg" width="580"/></p>
+<h2>今は財布の買い替え時<br/>
+	夢もふくらむ“張る財布”に</h2>
+<p>
+		一年をとおしてうれしい予感をお財布いっぱい運んでくる福うさぎ──浅草文庫の高級牛革製長財布＜四季彩の福うさぎ＞は信頼の日本製です。ぜひ今すぐお申し込みください。
+	</p>
+<p class="center-img"><img alt="うさぎ尽くしは、幸せずくめ。うれしい予感でお財布満杯、一年中。" height="482" src="/image/goods/51170_06.jpg" width="560"/></p>
+<div class="box1">
+<div class="box-text">
+<h3>手仕事の結晶 浅草文庫®</h3>
+<p class="flt-l"><img alt="" height="146" src="/image/goods/51170_07.jpg" width="136"/></p>
+<p>
+				姫路特産の真っ白い牛革に江戸小紋などの文様を彩色し、型押しでふっくらと仕上げた文庫革。型友禅の技法で一色ずつ寸分の狂いもなく版を重ね、柄を摺り出した後、熱を加えて型押しをほどこし、ふっくらとした奥行感とリッチな表情を出します。浅草橋の工房で熟練職人が根気よく作り上げる「浅草文庫」の文庫革。使うほどに味わいと愛着が深まります。
+			</p>
+</div>
+</div>
+</div>
+<br/>
+</section>
+<!--

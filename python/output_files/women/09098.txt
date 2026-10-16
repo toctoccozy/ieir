@@ -1,0 +1,96 @@
+
+<div id="content">
+<p id="genl_tit">I･E･I コレクション</p>
+<h1>開運招財　印伝 雪うさぎ福財布</h1>
+<div id="item-product">
+<p class="photo"><a href="/cgi-bin/image/index.cgi?image=09098502" target="_self"><img alt="開運招財　印伝 雪うさぎ福財布" src="/image/goods/9098000.jpg"/></a><br/>
+<span class="moresmall">クリックすると拡大画像がご覧になれます。</span></p>
+<dl>
+<dt>仕 様</dt>
+<dd>●材質：財布＝鹿革、漆、牛革、ポリエステル　根付＝ダイヤモンド1石（約0.01ct）、赤メノウ、本水晶<br>
+●サイズ（約）：閉じた状態で縦8.3×横18.3×厚さ2.3cm<br>
+●重さ（約）：70g（根付含む）<br>
+●ポケット仕様：ファスナー付き小銭入れ、札入れ、長ポケット（3つ）、カードフォルダー（6枚収納）<br>
+●日本製</br></br></br></br></dd>
+</dl>
+</div>
+<div class="cart_area">
+<h3>開運招財　印伝 雪うさぎ福財布</h3>
+<div class="price_area">
+                
+
+
+                    
+                      
+                    
+
+                    
+                          
+                            月々 <span>4,980円（税込5,478円）×6回払い</span><br/>
+                          
+                          
+                            一括価格 <span>29,800円（税込32,780円）</span><br/>
+                          
+                          
+                            発送手数料 <span>700円（税込770円）</span><br/>
+</div>
+<form method="post" name="form_cart">
+<input name="item_no" type="hidden" value="09098502"/>
+<input name="medium_code" type="hidden" value="245401"/>
+<input name="url" type="hidden" value="09098"/>
+<div class="select_area">
+<input name="amount" type="hidden" value="1">
+<p class="cart-btn">
+<input alt="カートに入れる" border="0" height="33" id="bo_cartin" name="bo_cartin" onclick="cart(); return false;" src="/img/bo_cartin.gif" type="image" width="105"/>
+</p>
+</input></div>
+</form>
+<ul class="fav">
+<li><a href="javascript:inquiry('09098502');">この商品のお問い合わせ</a></li>
+<li><a href="javascript:favorite('09098502');">お気に入りに入れる</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="cd-6930181" id="main-content">
+<p class="center-img"><img alt="" height="157" src="/image/goods/9098000_01.jpg" width="580"/></p>
+<p class="intro">長い耳で福を集め、とんとん拍子に運気が跳ね上がる——。<br/>
+繁栄招福の象徴として尊ばれる”雪うさぎ”を題材に<br/>
+甲州印伝の伝統工芸士が創作した、愛らしい長財布。<br/>
+成功をもたらす強運カラー、緋色の鹿革に<br/>
+ころんと愛らしい雪うさぎと、清らかな雪花紋が<br/>
+高貴な漆で浮かび上がる、たいへんおめでたい紅白の意匠。<br/>
+”財が喜んで入りたがる”瑞祥に満ちた逸品です。</p>
+<ul>
+<li class="stt"><span class="sq01">■</span>甲州印伝の伝統工芸士が一点一点手作り</li>
+<li class="stt"><span class="sq01">■</span>長寿と繁栄の象徴、縁起のよい”雪うさぎ”がモチーフ</li>
+<li class="stt"><span class="sq01">■</span>なめらかな手触りの上質な鹿革製</li>
+<li class="stt"><span class="sq01">■</span>使いやすい11ポケットの長財布</li>
+<li class="stt"><span class="sq01">■</span>雪うさぎを彫刻した赤メノウと水晶の根付が付属（ダイヤモンド入り）</li>
+</ul>
+<p class="center-img"><img alt="" height="567" src="/image/goods/9098000_02.jpg" width="586"/></p>
+<p class="flt-r"><img alt="" height="158" src="/image/goods/9098000_03.jpg" width="150"/></p>
+<p>古より月の使いとされ、「ツキ」を呼ぶ縁起のよい動物として信じられてきた”雪うさぎ”。長い耳で福を集め、子をたくさん産むことから「繁栄」「生命力」「長寿」を象徴し、すばらしい跳躍力は「とんとん拍子に物事が進む」「飛躍」「運気上昇」を意味すると伝えられます。このたび、多くの吉祥紋に用いられてきた、幸運のシンボル”雪うさぎ”を漆と鹿革の芸術、甲州印伝であしらった、幸せの長財布が誕生しました。甲州印伝の伝統工芸士・山本裕輔氏が、卓越の技で一点一点手づくりした＜甲州印伝 雪うさぎ福財布＞のご案内です。</p>
+<h2>繁栄と財を呼ぶ"緋色"と"雪うさぎ"を甲州印伝の伝統技で愛らしくデザイン</h2>
+<p>緋色は、風水の本場、中国で成功や幸福を意味し、「縁起が良い色」のシンボル。鳥居や赤飯など、日本でも神社や慶事には必ず使われるラッキーカラーです。＜甲州印伝 雪うさぎ福財布＞は目に鮮やかな緋色の鹿革を、「とんとん拍子に」跳ねる白漆の雪うさぎと清らかな雪花紋で埋め尽くした、財が喜んで入りたがる吉祥のデザイン。創作は、長い歴史を誇る甲州印伝を受け継ぐ伝統工芸士、山本裕輔氏。本漆の摺りこみを一点一点手づくりした艶やかな漆の風合いは見るほどに美しく、まさに革の芸術品。バッグから取り出すたびに品格を語り、大人のかわいらしさもあわせ持つうれしい趣向です。</p>
+<p class="center-img"><img alt="" height="401" src="/image/goods/9098000_04.jpg" width="343"/></p>
+<h2>財とより強く結ばれる開運ダイヤモンド入りの根付</h2>
+<p>幸せと財をとんとん拍子に呼び込む＜甲州印伝 雪うさぎ福財布＞は、店頭などではお求めになれません。家庭円満を願う赤メノウの根付にはうさぎの彫刻が施され、固い絆の象徴、ダイヤモンドがお財布に入った財運との縁をより強く結んでくれることでしょう。かわいらしい雪うさぎにときめき、懐あたたかな気分になれる逸品を、この好機にぜひお求めください。</p>
+<div class="box1">
+<div class="box-text">
+<h3>甲州印伝　秘伝の技</h3>
+<div>きめ細かな天然の鹿革に漆で文様を描く革工芸の技法、甲州印伝。奈良時代までさかのぼる鹿革工芸の技を脈々と受け継ぎ、甲州の革職人が江戸時代に漆づけの技法を発展させました。型紙を乗せて本漆を均一に摺り込み、温湿度を調整した室で硬化。昔ながらの手作業で、高度な熟練を要する多くの工程を経て、美しい甲州印伝が仕上がります。</div>
+</div>
+</div>
+<br/>
+<div class="box1">
+<div class="box-text clearfix">
+<h3>甲州印伝　伝統工芸士　山本裕輔氏</h3>
+<p class="flt-l"><img alt="" height="173" src="/image/goods/5014100_06b.jpg" width="125"/></p>
+<p>1982年9月生まれ。父である山本誠に師事し、甲州印伝の技法を学ぶ。「全国伝統的工芸品公募展」での日本伝統工芸士会会長賞受賞をはじめ、「全国伝統的工芸品コンクール」などで数々の賞を受賞。2018年、伝統工芸士に認定される。祖父の代から続く「印傳の山本」の技と美を受け継ぎ、古くからの伝統技術を継承しながら創作活動に励んでいる。</p>
+</div>
+</div>
+<br/>
+</div>
+<br/>
+</section>
+<!--
