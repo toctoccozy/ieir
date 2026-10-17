@@ -730,7 +730,7 @@
             <section class="px-1 sm:px-12 md:px-20">
                 <div class="max-w-6xl mx-auto md:space-y-6 lg:max-w-4xl">
                     <!-- 1段目: 商品検索（全幅） -->
-                    <div class="bg-white border-t border-b md:border-2 border-gray-200 md:rounded-xl p-4 md:shadow-sm md:hover:shadow-md transition-shadow duration-200">
+                    <div class="bg-white border-t border-b border-gray-200 md:border-0 md:rounded-xl p-4 md:ring-1 md:ring-gray-100 md:shadow-md md:hover:shadow-lg transition-shadow duration-200">
                         <!-- 見出し -->
                         <div class="flex items-center gap-3 mb-3">
                             <svg class="w-7 h-7 sm:w-10 sm:h-10 c-text-premico flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -760,7 +760,7 @@
                     <div class="flex flex-col md:flex-row gap-x-3">
 
                         <!-- カード2: カタログ注文 -->
-                        <div class="flex-1 flex flex-col justify-between bg-white border-b md:border-2 border-gray-200 md:rounded-xl p-4 md:shadow-sm md:hover:shadow-md transition-shadow duration-200">
+                        <div class="flex-1 flex flex-col justify-between bg-white border-b border-gray-200 md:border-0 md:rounded-xl p-4 md:ring-1 md:ring-gray-100 md:shadow-md md:hover:shadow-lg transition-shadow duration-200">
                             <!-- 見出し -->
                             <div class="flex items-center gap-3 pb-1 md:pb-3">
                                 <svg class="w-7 h-7 sm:w-10 sm:h-10 c-text-premico flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -783,7 +783,7 @@
                         </div>
 
                         <!-- カード3: 広告商品 -->
-                        <div class="flex-1 flex flex-col justify-between bg-white md:border-2 border-gray-200 md:rounded-xl p-4 md:shadow-sm md:hover:shadow-md transition-shadow duration-200">
+                        <div class="flex-1 flex flex-col justify-between bg-white md:rounded-xl p-4 md:ring-1 md:ring-gray-100 md:shadow-md md:hover:shadow-lg transition-shadow duration-200">
                             <!-- 見出し -->
                             <div class="flex items-center gap-3 pb-1 md:pb-3">
                                 <svg class="w-7 h-7 sm:w-10 sm:h-10 c-text-premico flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1217,7 +1217,41 @@
                 </div>
                 <!-- カテゴリーグリッド -->
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
-                    <!-- カテゴリ1: ムーミン -->
+                    <!-- カテゴリ1: プレミコ -->
+                    <a href="/ieir/views/category/premico" class="group block">
+                        <div class="p-2">
+                            <img src="/ieir/public/img/parts/logo/logo_premico.png" alt="I・E・I" class="h-4 w-auto mb-2">
+                        </div>
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/ieir/public/img/top/category009.jpg" alt="プレミコ" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div class="h-1.5 bg-[#4ECDC4]"></div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">プレミコ (PREMICO)</span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+                    <!-- カテゴリ2: コイン・切手・スポーツなど -->
+                    <a href="/ieir/views/collection/category/coin" class="group block">
+                        <div class="p-2">
+                            <img src="/ieir/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
+                        </div>
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/ieir/public/img/top/category007.jpg" alt="コイン・切手・スポーツ商品" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div class="h-1.5 bg-[#8C6A4A]"></div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">コイン・切手・スポーツ商品</span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+                    <!-- カテゴリ3: ムーミン -->
                     <a href="/ieir/views/charaffine/category/moomin" class="group block">
                         <div class="p-2">
                             <img src="/ieir/public/img/parts/logo/moomin_logo_green.png" alt="I・E・I" class="h-4 w-auto mb-2">
@@ -1233,7 +1267,9 @@
                             <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
                         </div>
                     </a>
-                    <!-- カテゴリ2: スヌーピー -->
+
+
+                    <!-- カテゴリ4: スヌーピー -->
                     <a href="/ieir/views/charaffine/category/snoopy" class="group block">
                         <div class="p-2">
                             <img src="/ieir/public/img/parts/logo/snoopy_logo.png" alt="I・E・I" class="h-3 w-auto mb-2">
@@ -1249,7 +1285,7 @@
                             <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
                         </div>
                     </a>
-                    <!-- カテゴリ3: ハローキティ -->
+                    <!-- カテゴリ5: ハローキティ -->
                     <a href="/ieir/views/charaffine/category/kitty" class="group block">
                         <div class="p-2">
                             <img src="/ieir/public/img/parts/logo/logo_kitty.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
@@ -1266,7 +1302,7 @@
                         </div>
                     </a>
 
-                    <!-- カテゴリ4: 女性ジュエリー -->
+                    <!-- カテゴリ6: 女性ジュエリー -->
                     <a href="/ieir/views/collection/category/jewelry" class="group block">
                         <div class="p-2">
                             <img src="/ieir/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
@@ -1283,7 +1319,7 @@
                         </div>
                     </a>
 
-                    <!-- カテゴリ5: 女性アパレル・雑貨 -->
+                    <!-- カテゴリ7: 女性アパレル・雑貨 -->
                     <a href="/ieir/views/collection/category/ladies" class="group block">
                         <div class="p-2">
                             <img src="/ieir/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
@@ -1301,7 +1337,7 @@
                     </a>
 
 
-                    <!-- カテゴリ6: 男性アパレル・雑貨 -->
+                    <!-- カテゴリ8: 男性アパレル・雑貨 -->
                     <a href="/ieir/views/collection/category/mens" class="group block">
                         <div class="p-2">
                             <img src="/ieir/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
@@ -1318,24 +1354,7 @@
                         </div>
                     </a>
 
-                    <!-- カテゴリ7: コイン・切手・スポーツなど -->
-                    <a href="/ieir/views/collection/category/coin" class="group block">
-                        <div class="p-2">
-                            <img src="/ieir/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
-                        </div>
-                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
-                            <div class="aspect-square overflow-hidden">
-                                <img src="/ieir/public/img/top/category007.jpg" alt="コイン・切手・スポーツなど" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
-                            </div>
-                            <div class="h-1.5 bg-[#8C6A4A]"></div>
-                        </div>
-                        <div class="flex items-center justify-between mt-3 px-1">
-                            <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">コイン・切手・スポーツなど</span>
-                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
-                        </div>
-                    </a>
-
-                    <!-- カテゴリ8: インテリア・美術工芸品 -->
+                    <!-- カテゴリ9: インテリア・美術工芸品 -->
                     <a href="/ieir/views/collection/category/collectable" class="group block">
                         <div class="p-2">
                             <img src="/ieir/public/img/parts/logo/logo_iei_original.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
@@ -1352,25 +1371,8 @@
                         </div>
                     </a>
 
-                    <!-- カテゴリ9: プレミコ -->
-                    <a href="/ieir/views/category/premico" class="group block">
-                        <div class="p-2">
-                            <img src="/ieir/public/img/parts/logo/logo_premico.png" alt="I・E・I" class="h-4 w-auto mb-2">
-                        </div>
-                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
-                            <div class="aspect-square overflow-hidden">
-                                <img src="/ieir/public/img/top/category009.jpg" alt="プレミコ" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
-                            </div>
-                            <div class="h-1.5 bg-[#4ECDC4]"></div>
-                        </div>
-                        <div class="flex items-center justify-between mt-3 px-1">
-                            <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">プレミコ</span>
-                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
-                        </div>
-                    </a>
-
                     <!-- カテゴリ10: 座る椅子を快適に -->
-                    <a href="https://iei.jp/cgi-bin/category/index.cgi?site_id=9&category1=044&category2=999" class="group block">
+                    <!-- <a href="https://iei.jp/cgi-bin/category/index.cgi?site_id=9&category1=044&category2=999" class="group block">
                         <div class="p-2">
                             <img src="/ieir/public/img/parts/logo/logo_tsukayoka.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                         </div>
@@ -1383,10 +1385,10 @@
                             <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">座る椅子を快適に</span>
                             <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
                         </div>
-                    </a>
+                    </a> -->
 
                     <!-- カテゴリ11: ガーデン商品 -->
-                    <a href="https://iei.jp/cgi-bin/category/index.cgi?site_id=9&category1=045&category2=999" class="group block">
+                    <!-- <a href="https://iei.jp/cgi-bin/category/index.cgi?site_id=9&category1=045&category2=999" class="group block">
                         <div class="p-2">
                             <img src="/ieir/public/img/parts/logo/logo_tsukayoka.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                         </div>
@@ -1399,10 +1401,10 @@
                             <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">ガーデン商品</span>
                             <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
                         </div>
-                    </a>
+                    </a> -->
 
                     <!-- カテゴリ12: ヨーロッパからの贈り物 -->
-                    <a href="https://iei.jp/cgi-bin/category/index.cgi?site_id=9&category1=046&category2=999" class="group block">
+                    <!-- <a href="https://iei.jp/cgi-bin/category/index.cgi?site_id=9&category1=046&category2=999" class="group block">
                         <div class="p-2">
                             <img src="/ieir/public/img/parts/logo/logo_tsukayoka.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                         </div>
@@ -1415,10 +1417,10 @@
                             <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">ヨーロッパからの贈り物</span>
                             <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
                         </div>
-                    </a>
+                    </a> -->
 
                     <!-- カテゴリ13: 旅！EVERYDAY -->
-                    <a href="https://iei.jp/cgi-bin/category/index.cgi?site_id=9&category1=047&category2=999" class="group block">
+                    <!-- <a href="https://iei.jp/cgi-bin/category/index.cgi?site_id=9&category1=047&category2=999" class="group block">
                         <div class="p-2">
                             <img src="/ieir/public/img/parts/logo/logo_tsukayoka.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                         </div>
@@ -1431,10 +1433,10 @@
                             <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">旅！EVERYDAY</span>
                             <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
                         </div>
-                    </a>
+                    </a> -->
 
                     <!-- カテゴリ14: 睡眠をもっと心地よく -->
-                    <a href="https://iei.jp/cgi-bin/category/index.cgi?site_id=9&category1=048&category2=999" class="group block">
+                    <!-- <a href="https://iei.jp/cgi-bin/category/index.cgi?site_id=9&category1=048&category2=999" class="group block">
                         <div class="p-2">
                             <img src="/ieir/public/img/parts/logo/logo_tsukayoka.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                         </div>
@@ -1447,10 +1449,10 @@
                             <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">睡眠をもっと心地よく</span>
                             <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
                         </div>
-                    </a>
+                    </a> -->
 
                     <!-- カテゴリ15: IEIタウン -->
-                    <a href="https://ieitown.jp/" class="group block">
+                    <!-- <a href="https://ieitown.jp/" class="group block">
                         <div class="p-2">
                             <img src="/ieir/public/img/parts/logo/logo_town.jpg" alt="I・E・I" class="h-4 w-auto mb-2">
                         </div>
@@ -1463,7 +1465,7 @@
                             <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">おしゃれな喪服の専門通販</span>
                             <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
                         </div>
-                    </a>
+                    </a> -->
                 </div>
             </section>
 
