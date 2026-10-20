@@ -1,0 +1,1227 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        I･E･Iオンラインショップ｜インペリアル・エンタープライズ株式会社
+    </title>
+    <meta name="description" content="キャラフィネ、ムーミン、PREMICOなど人気キャラクターグッズを取り扱うI･E･Iオンラインショップです。" />
+    <meta name="keywords" content="I･E･I,キャラフィネ,ムーミン,PREMICO,キャラクターグッズ,通販" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    scrollbar: ["rounded"],
+                },
+            },
+        };
+    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/customization.css" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+
+    <style>
+        /* PC版：スライド間のスペース */
+        @media (min-width: 768px) {
+            .slider-main .slick-slide {
+                margin: 0 10px;
+            }
+
+            .slider-main .slick-list {
+                margin: 0 -10px;
+            }
+
+            /* センターモードの前後のスライドを半透明に */
+            .slider-main .slick-slide:not(.slick-center) {
+                opacity: 0.6;
+                transform: scale(0.95);
+                transition: all 0.3s ease;
+            }
+
+            .slider-main .slick-slide.slick-center {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* モバイルではスライドを画面幅いっぱいに */
+        @media (max-width: 767px) {
+            .slider-main .slick-slide {
+                margin: 0 7px;
+                opacity: 1 !important;
+                transform: scale(1) !important;
+            }
+
+            .slider-main .slick-list {
+                margin: 0 -7px;
+            }
+
+            .slick-dotted.slick-slider {
+                margin-bottom: 10px;
+            }
+        }
+
+        /* ドットのスタイル調整 */
+        .slick-dots {
+            position: relative;
+            bottom: auto;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .slick-dots li button:before {
+            font-size: 8px;
+            color: rgba(100, 100, 100, 0.8);
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: #333;
+        }
+
+        @media (max-width: 767px) {
+            .slick-dots li {
+                margin: 0 1px;
+                /* デフォルトは5px、2pxに縮める */
+            }
+        }
+
+        /* PC版でもドットを表示 */
+        @media (min-width: 1024px) {
+            .slick-dots {
+                display: block !important;
+            }
+
+            /* lg以上：センターのスライド画像のみ幅を制限 */
+            .slider-main .slick-slide img,
+            .slider-main .slick-slide .flip-wave-wrapper {
+                max-width: 1400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        /* デフォルトの矢印アイコンを非表示 */
+        .slick-prev:before,
+        .slick-next:before {
+            display: none !important;
+            content: "" !important;
+        }
+
+        /* スマホ版では矢印を非表示 */
+        @media (max-width: 767px) {
+
+            .slider-main .slick-prev,
+            .slider-main .slick-next {
+                display: none !important;
+            }
+        }
+
+        /* スクロール時のヘッダー固定 */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background-color: white;
+            transition: transform 0.3s ease-in-out;
+            z-index: 1000;
+        }
+
+        /* 下スクロール時：ヘッダーを隠す */
+        header.header-hidden {
+            transform: translateY(-100%);
+        }
+
+        /* 見出しスライドインアニメーション */
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes expandLine {
+            from {
+                transform: scaleX(0);
+                transform-origin: left;
+            }
+
+            to {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+        }
+
+        /* 初期状態（非表示） */
+        .animate-on-scroll .heading-text {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        .animate-on-scroll .heading-line {
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        /* アニメーション発動時 */
+        .animate-on-scroll.is-visible .heading-text {
+            animation: slideInFromRight 0.6s ease-out forwards;
+        }
+
+        .animate-on-scroll.is-visible .heading-line {
+            animation: expandLine 0.8s ease-out 0.3s forwards;
+        }
+
+        /* スライダースケールアップアニメーション */
+        @keyframes scaleUpFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .slider-scale-in {
+            opacity: 0;
+        }
+
+        .slider-scale-in.is-loaded {
+            animation: scaleUpFadeIn 1.8s ease-out forwards;
+        }
+
+        /* ========== flip-wave スライド用CSS ========== */
+        .flip-wave-wrapper {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 2 / 1;
+        }
+
+        .flip-wave-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: 20px;
+            background: #134e99;
+        }
+
+        .wave-panel {
+            flex: 1;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wave-panel-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 2s ease-in-out;
+        }
+
+        .wave-panel-image.front {
+            z-index: 2;
+            opacity: 1;
+        }
+
+        .wave-panel-image.back {
+            z-index: 1;
+            opacity: 1;
+        }
+
+        .wave-panel.faded .wave-panel-image.front {
+            opacity: 0;
+        }
+
+        /* テキストエリア（下部に配置） */
+        .wave-text-area {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background: linear-gradient(to top,
+                    rgba(19, 78, 153, 0.95) 0%,
+                    rgba(19, 78, 153, 0.85) 70%,
+                    transparent 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 2% 5%;
+            z-index: 100;
+            opacity: 0;
+            transition: opacity 0.6s ease-out;
+        }
+
+        .wave-text-area.show {
+            opacity: 1;
+        }
+
+        .wave-text-line {
+            margin-bottom: 0.2%;
+        }
+
+        .wave-text-line:last-child {
+            margin-bottom: 0;
+        }
+
+        .wave-text-content {
+            opacity: 0;
+            transition: opacity 1.4s ease-out;
+        }
+
+        .wave-text-content.wave-text-main {
+            opacity: 0;
+            transform: translateY(30px);
+            transition:
+                opacity 0.6s ease-out,
+                transform 0.6s ease-out;
+        }
+
+        .wave-text-content.wave-text-main.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .wave-text-line.show .wave-text-content {
+            opacity: 1;
+        }
+
+        .wave-text-main {
+            font-family: "Noto Serif JP", serif;
+            font-size: clamp(18px, 3.7vw, 52px);
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 0.15em;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            white-space: nowrap;
+        }
+
+        .wave-text-sub {
+            font-family: "Noto Serif JP", serif;
+            font-size: clamp(14px, 2.2vw, 24px);
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            /* letter-spacing: 0.05em; */
+        }
+
+        /* 500px超：結合テキストを非表示 */
+        .show-on-small {
+            display: none;
+        }
+
+        /* 500px以下：2,3行目を1行に結合＆フォントサイズ縮小 */
+        @media (max-width: 500px) {
+            .hidden-on-small {
+                display: none;
+            }
+
+            .show-on-small {
+                display: inline;
+            }
+
+            .wave-text-main {
+                font-size: 14px;
+            }
+
+            .wave-text-sub {
+                font-size: 11px;
+            }
+        }
+
+        /* xl以上：段階的にフォントサイズを調整 */
+        @media (min-width: 1280px) {
+            .wave-text-main {
+                font-size: 24px;
+            }
+
+            .wave-text-sub {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .wave-text-main {
+                font-size: 28px;
+            }
+
+            .wave-text-sub {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-width: 1500px) {
+            .wave-text-main {
+                font-size: 32px;
+            }
+
+            .wave-text-sub {
+                font-size: 20px;
+            }
+        }
+
+        /* ========== flip-wave CSS ここまで ========== */
+    </style>
+</head>
+
+<body class="bg-white">
+    <div class="min-h-screen mw-full">
+        <!--#include virtual="/include/header_new.html" -->
+
+        <!-- スライダー＆検索窓 -->
+        <div class="w-full mx-auto main-content">
+            <!-- スライダーセクション -->
+            <section class="">
+                <!-- メインスライダー -->
+                <div class="slider-scale-in">
+                    <div class="slider-main">
+                        <!-- flip-waveスライド -->
+                        <div>
+                            <div class="flip-wave-wrapper" id="flip-wave-slide">
+                                <div class="flip-wave-container">
+                                    <div class="wave-panel" data-panel="0">
+                                        <img src="/img/slider/1st_slider/246.png" alt="Product 1B"
+                                            class="wave-panel-image back" />
+                                        <img src="/img/slider/1st_slider/238.png" alt="Product 1A"
+                                            class="wave-panel-image front" />
+                                    </div>
+                                    <div class="wave-panel" data-panel="1">
+                                        <img src="/img/slider/1st_slider/258.png" alt="Product 2B"
+                                            class="wave-panel-image back" />
+                                        <img src="/img/slider/1st_slider/254.png" alt="Product 2A"
+                                            class="wave-panel-image front" />
+                                    </div>
+                                    <div class="wave-panel" data-panel="2">
+                                        <img src="/img/slider/1st_slider/262.png" alt="Product 3B"
+                                            class="wave-panel-image back" />
+                                        <img src="/img/slider/1st_slider/261.png" alt="Product 3A"
+                                            class="wave-panel-image front" />
+                                    </div>
+                                    <div class="wave-panel" data-panel="3">
+                                        <img src="/img/slider/1st_slider/51489_main_600x600.jpg" alt="Product 4B"
+                                            class="wave-panel-image back" />
+                                        <img src="/img/slider/1st_slider/264.png" alt="Product 4A"
+                                            class="wave-panel-image front" />
+                                    </div>
+                                    <div class="wave-panel" data-panel="4">
+                                        <img src="/img/slider/1st_slider/img10.png" alt="Product 5B"
+                                            class="wave-panel-image back" />
+                                        <img src="/img/slider/1st_slider/img9.png" alt="Product 5A"
+                                            class="wave-panel-image front" />
+                                    </div>
+                                </div>
+                                <!-- テキストエリア -->
+                                <div class="wave-text-area" id="waveTextArea">
+                                    <div class="wave-text-line" data-line="0">
+                                        <div class="wave-text-content wave-text-main">
+                                            想像を超える、新しい出会い
+                                        </div>
+                                    </div>
+                                    <div class="wave-text-line" data-line="1">
+                                        <div class="wave-text-content wave-text-sub pl-4">
+                                            オリジナリティにこだわり抜いた<span class="show-on-small">、唯一無二の商品をご提供</span>
+                                        </div>
+                                    </div>
+                                    <div class="wave-text-line hidden-on-small" data-line="2">
+                                        <div class="wave-text-content wave-text-sub pl-4">
+                                            唯一無二の商品をご提供
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="/img/slider/2nd_slider/slider-image001.jpg" alt="スライド1" class="w-full h-auto" />
+                        </div>
+                        <div>
+                            <img src="/img/slider/2nd_slider/slider-image002.jpg" alt="スライド2" class="w-full h-auto" />
+                        </div>
+                        <div>
+                            <img src="/img/slider/2nd_slider/slider-image003.jpg" alt="スライド3" class="w-full h-auto" />
+                        </div>
+                        <div>
+                            <img src="/img/slider/2nd_slider/slider-image004.jpg" alt="スライド4" class="w-full h-auto" />
+                        </div>
+                        <div>
+                            <img src="/img/slider/2nd_slider/slider-image005.jpg" alt="スライド5" class="w-full h-auto" />
+                        </div>
+                        <div>
+                            <img src="/img/slider/2nd_slider/slider-image006.jpg" alt="スライド6" class="w-full h-auto" />
+                        </div>
+                        <div>
+                            <img src="/img/slider/2nd_slider/slider-image007.jpg" alt="スライド7" class="w-full h-auto" />
+                        </div>
+                        <div>
+                            <img src="/img/slider/2nd_slider/slider-image008.jpg" alt="スライド8" class="w-full h-auto" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- お買い物方法選択セクション -->
+            <section class="px-1 sm:px-12 md:px-20">
+                <div class="max-w-6xl mx-auto md:space-y-6 lg:max-w-4xl">
+                    <!-- 1段目: カタログと広告（2カラム） -->
+                    <div class="flex flex-col md:flex-row gap-x-3">
+                        <!-- カード1: カタログ注文 -->
+                        <div class="flex-1 flex flex-col justify-between bg-white border-b border-gray-200 md:border-0 md:rounded-xl p-4 md:ring-1 md:ring-gray-100 md:shadow-md md:hover:shadow-lg transition-shadow duration-200">
+                            <!-- 見出し -->
+                            <div class="flex items-center gap-3 pb-1 md:pb-3">
+                                <svg class="w-7 h-7 sm:w-10 sm:h-10 c-text-premico flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                                <div class="">
+                                    <!-- <h3 class="text-base font-bold text-gray-800">カタログをお持ちの方</h3> -->
+                                    <p class=" text-gray-600 leading-tight tracking-tight">ダイレクトメール・カタログの商品番号がわかる場合</p>
+                                </div>
+                            </div>
+                            <!-- ボタン -->
+                            <a href="/goods/itemno" class="block">
+                                <button class="c-btn-amber-gradient w-full">
+                                    <span class="">ご注文はこちらから</span>
+                                    <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </a>
+                        </div>
+
+                        <!-- カード2: 広告商品 -->
+                        <div class="flex-1 flex flex-col justify-between bg-white md:rounded-xl p-4 md:ring-1 md:ring-gray-100 md:shadow-md md:hover:shadow-lg transition-shadow duration-200">
+                            <!-- 見出し -->
+                            <div class="flex items-center gap-3 pb-1 md:pb-3">
+                                <svg class="w-7 h-7 sm:w-10 sm:h-10 c-text-premico flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
+                                </svg>
+                                <div class="">
+                                    <!-- <h3 class="text-base font-bold text-gray-800">広告をご覧の方</h3> -->
+                                    <p class=" text-gray-600 leading-tight tracking-tight">新聞・雑誌などに掲載されている商品はこちら</p>
+                                </div>
+                            </div>
+                            <!-- ボタン -->
+                            <a href="/media/list" class="block">
+                                <button class="c-btn-amber-gradient w-full">
+                                    <span class="">商品を見る</span>
+                                    <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 2段目: 商品検索（全幅） -->
+                    <div class="bg-white border-t border-b border-gray-200 md:border-0 md:rounded-xl p-4 md:ring-1 md:ring-gray-100 md:shadow-md md:hover:shadow-lg transition-shadow duration-200">
+                        <!-- 見出し -->
+                        <div class="flex items-center gap-3 mb-3">
+                            <svg class="w-7 h-7 sm:w-10 sm:h-10 c-text-premico flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                            <div>
+                                <h3 class="text-base font-bold text-gray-800 leading-sung tracking-tight">商品をお探しの方</h3>
+                                <p class=" text-gray-600 leading-tight tracking-tight">キーワードや商品番号、申込番号を下記に入力して検索してください</p>
+                            </div>
+                        </div>
+                        <!-- 検索フォーム -->
+                        <form class="flex h-12" action="/goods/list" method="GET">
+                            <input type="text" name="q" id="search-input" placeholder="商品番号・キーワード"
+                                class="flex-1 pl-3 pr-3 py-2 border-y border-l border-gray-300 rounded-l-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-base md:text-sm" autocomplete="off"
+                            >
+                            <button
+                                type="submit"
+                                class="c-bg-premico hover:opacity-80 text-white px-4 md:px-8 rounded-r-lg transition-all duration-200 font-medium border-y border-r border-gray-300"
+                                aria-label="検索"
+                            >
+                                検索
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <main class="pb-6 px-1 mx-auto max-w-5xl">
+            <!-- 新着のお知らせセクション -->
+            <section class="py-6">
+                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
+                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
+                        <span
+                            class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">New
+                            Arrival</span>
+                        <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">新着のお知らせ</span>
+                    </div>
+                    <!-- 装飾ライン -->
+                    <div class="flex flex-1 items-center ml-4 min-w-0 heading-line">
+                        <svg class="flex-1 h-1.5 min-w-0" viewBox="0 0 300 6" preserveAspectRatio="none">
+                            <!-- 濃いライン（台形） -->
+                            <polygon points="4,0 104,0 100,6 0,6" fill="#2C5282" />
+                            <!-- 中間ライン（台形） -->
+                            <polygon points="104,0 204,0 200,6 100,6" fill="#2C5282" fill-opacity="0.5" />
+                            <!-- 薄いライン（台形） -->
+                            <polygon points="204,0 300,0 296,6 200,6" fill="#2C5282" fill-opacity="0.25" />
+                        </svg>
+                    </div>
+                </h2>
+
+                <!-- 新着グリッド -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1 gap-y-3 mb-6 new_list">
+                    <!-- 商品N（テスト：scale-[1.01]追加） -->
+                </div>
+            </section>
+
+            <!-- 新聞・雑誌に掲載中の商品セクション -->
+            <section class="py-6">
+                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
+                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
+                        <span
+                            class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0 pb-2">Items
+                            on Paper</span>
+                        <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">新聞・雑誌に掲載中の商品</span>
+                    </div>
+                    <!-- 装飾ライン -->
+                    <div class="flex flex-1 items-center ml-2 md:ml-4 min-w-0 heading-line">
+                        <svg class="flex-1 h-1.5 min-w-0" viewBox="0 0 300 6" preserveAspectRatio="none">
+                            <!-- 濃いライン（台形） -->
+                            <polygon points="4,0 104,0 100,6 0,6" fill="#2C5282" />
+                            <!-- 中間ライン（台形） -->
+                            <polygon points="104,0 204,0 200,6 100,6" fill="#2C5282" fill-opacity="0.5" />
+                            <!-- 薄いライン（台形） -->
+                            <polygon points="204,0 300,0 296,6 200,6" fill="#2C5282" fill-opacity="0.25" />
+                        </svg>
+                    </div>
+                </h2>
+                <!-- 商品グリッド -->
+                <div
+                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1 gap-y-3 mb-6 media_list">
+                    <!-- 商品N -->
+                </div>
+
+                <!-- もっと見るボタン -->
+                <div class="w-full px-6 mx-auto">
+                    <a href="/media/list" class="flex items-center justify-center gap-2">
+                    <button
+                        class="w-full md:w-[50%] md:mx-auto c-btn-amber-gradient py-3 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
+                            <span class="text-base">もっと見る</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                    </button>
+                    </a>
+                </div>
+            </section>
+
+            <!-- お電話セクション -->
+            <section
+                class="relative my-5 mx-3 md:mx-10 flex flex-col sm:flex-row items-center sm:justify-around rounded-lg p-4 text-center bg-white border border-gray-200">
+                <!-- 左上台形アクセント -->
+                <div class="absolute -top-1.5 left-4 z-10">
+                    <svg width="72" height="12" viewBox="0 0 72 12">
+                        <polygon points="6,0 18,0 12,12 0,12" fill="#2C5282" />
+                        <polygon points="26,0 38,0 32,12 20,12" fill="#2C5282" />
+                        <polygon points="46,0 58,0 52,12 40,12" fill="#2C5282" />
+                    </svg>
+                </div>
+                <div class="md:text-left">
+                    <p class="text-base sm:text-lg font-medium text-gray-700">
+                        お電話でのお申込／お問い合わせ
+                    </p>
+                    <p class="text-sm sm:text-base mb-2 text-gray-500">
+                        （毎日　朝6:00〜夜21:00）<br />※携帯電話からもOK
+                    </p>
+                </div>
+                <a href="tel:0120-247-417"
+                    class="sm:text-4xl inline-flex items-center gap-2 text-2xl font-bold c-text-premico hover:opacity-80 transition-opacity duration-200">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block md:w-10 md:h-10">
+                        <path
+                            d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
+                            stroke="#2C5282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    0120-247-417
+                </a>
+            </section>
+
+            <!-- カテゴリーセクション -->
+            <section class="py-6">
+                <h2 class="mb-6 pb-1 flex items-center overflow-hidden animate-on-scroll">
+                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
+                        <span
+                            class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0 pb-2">Category</span>
+                        <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">カテゴリー</span>
+                    </div>
+                    <!-- 装飾ライン -->
+                    <div class="flex flex-1 items-center ml-4 min-w-0 heading-line">
+                        <svg class="flex-1 h-1.5 min-w-0" viewBox="0 0 300 6" preserveAspectRatio="none">
+                            <!-- 濃いライン（台形） -->
+                            <polygon points="4,0 104,0 100,6 0,6" fill="#2C5282" />
+                            <!-- 中間ライン（台形） -->
+                            <polygon points="104,0 204,0 200,6 100,6" fill="#2C5282" fill-opacity="0.5" />
+                            <!-- 薄いライン（台形） -->
+                            <polygon points="204,0 300,0 296,6 200,6" fill="#2C5282" fill-opacity="0.25" />
+                        </svg>
+                    </div>
+                </h2>
+                <!-- IEIとは -->
+                <div
+                    class="relative bg-white flex items-center justify-center my-5 mx-3 md:mx-10 border rounded-lg border-gray-300">
+                    <!-- 左上台形アクセント -->
+                    <div class="absolute -top-1.5 left-4 z-10">
+                        <svg width="72" height="12" viewBox="0 0 72 12">
+                            <polygon points="6,0 18,0 12,12 0,12" fill="#2C5282" />
+                            <polygon points="26,0 38,0 32,12 20,12" fill="#2C5282" />
+                            <polygon points="46,0 58,0 52,12 40,12" fill="#2C5282" />
+                        </svg>
+                    </div>
+                    <div class="mt-1 ml-2 flex-col items-center p-1 md:px-8">
+                        <img class="h-auto w-16 max-w-48" src="/img/parts/logo/logo_iei.jpg" alt="I･E･I" />
+                    </div>
+                    <p class="text-base text-gray-700 leading-tight p-4">
+                        I・E・Iオンラインショップでは、独自に企画したオリジナル商品を中心に、人気キャラクター商品、記念コイン、スポーツ関連商品、ジュエリーやアパレル、美術工芸品まで、確かな品質の逸品を取り揃えています。<br>
+                        ここでしか手に入らない上質な品々で、皆様の暮らしにゆとりと潤い、そして感動をお届けします。
+                    </p>
+                </div>
+
+                <!-- カテゴリーグリッド -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
+                    <!-- カテゴリ1: プレミコ -->
+                    <a href="/premico" class="group block">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="img/category/premico/icons/logo_premico.png" alt="プレミコ" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <!-- <div class="h-1.5 bg-[#4ECDC4]"></div> -->
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">プレミコ (PREMICO)</span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+                    <!-- カテゴリ2: コイン・切手・スポーツなど -->
+                    <a href="/treasure" class="group block">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/category007.jpg" alt="コイン・切手・スポーツ商品" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div class="h-1.5 bg-[#8C6A4A]"></div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0">
+                                <span class="block text-sm text-gray-500 leading-tight">トレジャーアイランド</span>
+                                <span class="block break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">コイン・切手・スポーツ商品</span>
+                            </span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+                    <!-- カテゴリ3: ムーミン -->
+                    <a href="/moomin" class="group block">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/category002.jpg" alt="ムーミン" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div class="h-1.5 bg-[#8FA888]"></div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">ムーミン</span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+                    <!-- カテゴリ4: スヌーピー -->
+                    <a href="/snoopy" class="group block">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/category001.jpg" alt="スヌーピー" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div class="h-1.5 bg-[#C08A3E]"></div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">スヌーピー</span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+                    <!-- カテゴリ5: ハローキティ -->
+                    <a href="/kitty" class="group block">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/category003.jpg" alt="ハローキティ" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div class="h-1.5 bg-[#F472B6]"></div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">ハローキティ</span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+                    <!-- カテゴリ6: 女性ジュエリー -->
+                    <a href="/collection/jewelry" class="group block">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/category005.jpg" alt="女性ジュエリー" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div class="h-1.5 bg-[#C9A04E]"></div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0">
+                                <span class="block text-sm text-gray-500 leading-tight">IEIオリジナルショップ</span>
+                                <span class="block break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">女性ジュエリー</span>
+                            </span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+                    <!-- カテゴリ7: 女性アパレル・雑貨 -->
+                    <a href="/collection/ladies" class="group block">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/category004.jpg" alt="女性アパレル・雑貨" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div class="h-1.5 bg-[#D97A8F]"></div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0">
+                                <span class="block text-sm text-gray-500 leading-tight">IEIオリジナルショップ</span>
+                                <span class="block break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">女性アパレル・雑貨</span>
+                            </span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+
+                    <!-- カテゴリ8: 男性アパレル・雑貨 -->
+                    <a href="/collection/mens" class="group block">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/category006.jpg" alt="男性アパレル・雑貨" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div class="h-1.5 bg-[#3F5E7A]"></div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0">
+                                <span class="block text-sm text-gray-500 leading-tight">IEIオリジナルショップ</span>
+                                <span class="block break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">男性アパレル・雑貨</span>
+                            </span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+                    <!-- カテゴリ9: インテリア・美術工芸品 -->
+                    <a href="/collection/gallery" class="group block">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/category008.jpg" alt="インテリア・美術工芸品" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div class="h-1.5 bg-[#7A8F5A]"></div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0">
+                                <span class="block text-sm text-gray-500 leading-tight">IEIオリジナルショップ</span>
+                                <span class="block break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">インテリア・美術工芸品</span>
+                            </span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- メールニュースセクション -->
+            <section class="py-6">
+                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll">
+                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
+                        <span
+                            class="text-3xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">Mail
+                            News</span>
+                        <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">メールニュース</span>
+                    </div>
+                    <!-- 装飾ライン -->
+                    <div class="flex flex-1 items-center ml-4 min-w-0 heading-line">
+                        <svg class="flex-1 h-1.5 min-w-0" viewBox="0 0 300 6" preserveAspectRatio="none">
+                            <!-- 濃いライン（台形） -->
+                            <polygon points="4,0 104,0 100,6 0,6" fill="#2C5282" />
+                            <!-- 中間ライン（台形） -->
+                            <polygon points="104,0 204,0 200,6 100,6" fill="#2C5282" fill-opacity="0.5" />
+                            <!-- 薄いライン（台形） -->
+                            <polygon points="204,0 300,0 296,6 200,6" fill="#2C5282" fill-opacity="0.25" />
+                        </svg>
+                    </div>
+                </h2>
+
+                <!-- メールニュース登録ボックス -->
+                <div class="max-w-3xl mx-auto">
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2 flex flex-start items-center gap-2">
+                                <svg class="w-12 h-12 c-text-premico" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                お得な情報をお届けします
+                            </h3>
+                            <p class="text-gray-600">
+                                新商品情報や期間限定キャンペーンなど、会員様限定の特典情報をメールでお知らせいたします。
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <a href="/contents/news_request.html"
+                                class="inline-flex items-center c-btn-amber-gradient hover:opacity-80 text-white px-8 py-3 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg font-medium">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                                    </path>
+                                </svg>
+                                メールニュース登録
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ページトップボタン -->
+        <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
+            <a href="#"
+                class="c-bg-second hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- フッターコンポーネント -->
+    <!--#include virtual="/include/footer_new.html" -->
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/js/product.js"></script>
+
+    <script>
+        // jQuery ready
+        $(document).ready(function () {
+            // メインスライダー
+            $(".slider-main")
+                .on("init", function () {
+                    // Slick初期化完了後にスケールアップアニメーション発動
+                    $(".slider-scale-in").addClass("is-loaded");
+                })
+                .slick({
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 8000,
+                    dots: true, // ドット表示を有効化
+                    arrows: true,
+                    prevArrow:
+                        '<button type="button" class="slick-prev absolute left-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#2C5282" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>',
+                    nextArrow:
+                        '<button type="button" class="slick-next absolute right-32 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#2C5282" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>',
+                    centerMode: true, // センターモードで前後を見せる
+                    centerPadding: "380px", // 前後のスライドの見える量
+                    slidesToShow: 1, // メインは1枚表示
+                    slidesToScroll: 1,
+                    // asNavFor削除（サムネイルスライダーとの連動を解除）
+                    responsive: [
+                        {
+                            breakpoint: 1280,
+                            settings: {
+                                centerPadding: "20px", // モバイル・タブレットサイズ
+                                dots: true, // ドット表示
+                                asNavFor: null, // サムネイルとの連動を解除
+                            },
+                        },
+                    ],
+                });
+
+            // サムネイルスライダー
+            $(".slider-thumbnail").slick({
+                infinite: true,
+                autoplay: false,
+                dots: false,
+                arrows: false,
+                slidesToShow: 7, // デスクトップで5つ表示
+                slidesToScroll: 1,
+                asNavFor: ".slider-main", // メインスライダーと連動
+                centerMode: true,
+                focusOnSelect: true, // クリックでスライド切り替え
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3, // モバイル・タブレットで3つ表示
+                            centerPadding: "10px",
+                        },
+                    },
+                ],
+            });
+
+            // サムネイル画像のアクティブ状態管理
+            $(".slider-thumbnail").on(
+                "beforeChange",
+                function (event, slick, currentSlide, nextSlide) {
+                    $(".slider-thumbnail img")
+                        .removeClass("opacity-100")
+                        .addClass("opacity-60");
+                },
+            );
+
+            $(".slider-thumbnail").on(
+                "afterChange",
+                function (event, slick, currentSlide) {
+                    $(".slider-thumbnail img")
+                        .removeClass("opacity-100")
+                        .addClass("opacity-60");
+                    $(".slider-thumbnail .slick-current img")
+                        .removeClass("opacity-60")
+                        .addClass("opacity-100");
+                },
+            );
+
+            // 初期状態でアクティブなサムネイルを設定
+            $(".slider-thumbnail .slick-current img")
+                .removeClass("opacity-60")
+                .addClass("opacity-100");
+
+            // ========== flip-wave アニメーション制御 ==========
+            const FADE_DELAY = 600;
+            const INITIAL_DELAY = 1000;
+            const PANEL_COUNT = 5;
+            const LINE_COUNT = 3;
+            const FADE_DURATION = 2000;
+            const LOOP_PAUSE = 3000;
+            const TEXT_TRIGGERS = { 2: 1, 4: 2 }; // パネル番号: 表示する行番号
+
+            let flipWaveAnimationId = null;
+            let isFaded = false;
+            let isFirstRun = true;
+
+            function resetFlipWave() {
+                // アニメーションをクリア
+                if (flipWaveAnimationId) {
+                    clearTimeout(flipWaveAnimationId);
+                    flipWaveAnimationId = null;
+                }
+                // パネルをリセット
+                $("#flip-wave-slide .wave-panel").removeClass("faded");
+                // テキストをリセット
+                $("#waveTextArea").removeClass("show");
+                $("#flip-wave-slide .wave-text-main").removeClass("show");
+                $("#flip-wave-slide .wave-text-line").removeClass("show");
+                isFaded = false;
+                isFirstRun = true;
+            }
+
+            function startFlipWaveAnimation() {
+                if (isFaded) {
+                    // 元に戻すアニメーション（右から左へ）
+                    for (let i = PANEL_COUNT - 1; i >= 0; i--) {
+                        setTimeout(
+                            () => {
+                                $(
+                                    `#flip-wave-slide .wave-panel[data-panel="${i}"]`,
+                                ).removeClass("faded");
+                            },
+                            (PANEL_COUNT - 1 - i) * FADE_DELAY,
+                        );
+                    }
+
+                    isFaded = false;
+
+                    const totalFadeTime =
+                        (PANEL_COUNT - 1) * FADE_DELAY + FADE_DURATION;
+                    flipWaveAnimationId = setTimeout(() => {
+                        startFlipWaveAnimation();
+                    }, totalFadeTime + LOOP_PAUSE);
+                } else {
+                    // フェードアニメーション（左から右へ）
+                    flipWaveAnimationId = setTimeout(() => {
+                        // 初回のみテキストエリア背景とメインテキストを表示
+                        if (isFirstRun) {
+                            $("#waveTextArea").addClass("show");
+                            $("#flip-wave-slide .wave-text-main").addClass(
+                                "show",
+                            );
+                        }
+
+                        // 左から順番にフェード
+                        const currentIsFirstRun = isFirstRun;
+                        for (let i = 0; i < PANEL_COUNT; i++) {
+                            setTimeout(() => {
+                                $(
+                                    `#flip-wave-slide .wave-panel[data-panel="${i}"]`,
+                                ).addClass("faded");
+
+                                // 初回のみ: このパネルに連動するテキストがあるかチェック
+                                if (
+                                    currentIsFirstRun &&
+                                    TEXT_TRIGGERS[i] !== undefined
+                                ) {
+                                    setTimeout(() => {
+                                        $(
+                                            `#flip-wave-slide .wave-text-line[data-line="${TEXT_TRIGGERS[i]}"]`,
+                                        ).addClass("show");
+                                    }, 300);
+                                }
+                            }, i * FADE_DELAY);
+                        }
+
+                        isFaded = true;
+                        isFirstRun = false;
+
+                        // フェード完了後、戻すアニメーションを開始
+                        const totalFadeTime =
+                            (PANEL_COUNT - 1) * FADE_DELAY + FADE_DURATION;
+                        flipWaveAnimationId = setTimeout(() => {
+                            startFlipWaveAnimation();
+                        }, totalFadeTime + LOOP_PAUSE);
+                    }, INITIAL_DELAY);
+                }
+            }
+
+            // Slickスライダーのスライド変更を監視
+            $(".slider-main").on(
+                "afterChange",
+                function (event, slick, currentSlide) {
+                    // flip-waveスライド（インデックス0）がアクティブかチェック
+                    if (currentSlide === 0) {
+                        // flip-waveスライドは表示時間を8秒に延長
+                        $(".slider-main").slick(
+                            "slickSetOption",
+                            "autoplaySpeed",
+                            8000,
+                            false,
+                        );
+                        // アニメーション開始
+                        resetFlipWave();
+                        startFlipWaveAnimation();
+                    } else {
+                        // 他のスライドは通常の4秒
+                        $(".slider-main").slick(
+                            "slickSetOption",
+                            "autoplaySpeed",
+                            4000,
+                            false,
+                        );
+                        // アニメーション停止・リセット
+                        resetFlipWave();
+                    }
+                },
+            );
+
+            // 初期状態でflip-waveスライドがアクティブならアニメーション開始
+            setTimeout(() => {
+                const currentSlide =
+                    $(".slider-main").slick("slickCurrentSlide");
+                if (currentSlide === 0) {
+                    startFlipWaveAnimation();
+                }
+            }, 100);
+            // ========== flip-wave アニメーション制御 ここまで ==========
+        });
+
+        // 一覧表示の遅延読み込み
+        const loadTopSection = (url, targetSelector) => {
+            const $target = $(targetSelector);
+            if (!$target.length || $target.data("loaded")) return;
+
+            $target.html(
+                '<div class="top-section-loading flex items-center justify-center gap-2 py-4" aria-live="polite"><span class="inline-block" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="loading"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="3" opacity="0.25"/><path d="M21 12a9 9 0 0 0-9-9" stroke="currentColor" stroke-width="3" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="0.8s" repeatCount="indefinite"/></path></svg></span><span>読み込み中...</span></div>',
+            );
+
+            $.ajax({
+                url,
+                cache: false,
+                success: function (html) {
+                    if (html) {
+                        $target.html(html);
+                    } else {
+                        $target.empty();
+                    }
+                    $target.data("loaded", true);
+                },
+                error: function () {
+                    $target.html(
+                        '<div class="top-section-loading-error">読み込みに失敗しました</div>',
+                    );
+                },
+            });
+        };
+
+        const loadTopSectionOnVisible = (url, targetSelector) => {
+            const target = document.querySelector(targetSelector);
+            if (!target) return;
+
+            if ("IntersectionObserver" in window) {
+                const observer = new IntersectionObserver(
+                    (entries, obs) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                loadTopSection(url, targetSelector);
+                                obs.unobserve(entry.target);
+                            }
+                        });
+                    },
+                    {
+                        root: null,
+                        threshold: 0.1,
+                    },
+                );
+
+                observer.observe(target);
+                return;
+            }
+
+            const onScroll = () => {
+                const rect = target.getBoundingClientRect();
+                const inView =
+                    rect.top < window.innerHeight && rect.bottom > 0;
+                if (inView) {
+                    loadTopSection(url, targetSelector);
+                    window.removeEventListener("scroll", onScroll);
+                    window.removeEventListener("resize", onScroll);
+                }
+            };
+
+            window.addEventListener("scroll", onScroll);
+            window.addEventListener("resize", onScroll);
+            onScroll();
+        };
+
+        $(function () {
+            loadTopSectionOnVisible("/new/top", ".new_list");
+            loadTopSectionOnVisible("/media/top", ".media_list");
+        });
+    </script>
+</body>
+
+</html>

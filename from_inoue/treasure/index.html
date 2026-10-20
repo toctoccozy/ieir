@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I･E･Iオンラインショップ｜インペリアル・エンタープライズ株式会社</title>
+    <meta name="description" content="キャラフィネ、ムーミン、PREMICOなど人気キャラクターグッズを取り扱うI･E･Iオンラインショップです。">
+    <meta name="keywords" content="I･E･I,キャラフィネ,ムーミン,PREMICO,キャラクターグッズ,通販">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    scrollbar: ['rounded']
+                }
+            }
+        }
+    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/customization.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+
+    <style>
+        /* ========== スライダー設定 ========== */
+
+        /* 隣スライドをoverflow:visibleで見せる（centerMode不使用） */
+        .slider-main .slick-list {
+            overflow: visible !important;
+        }
+
+        /* sectionで左右の表示範囲をクリップ */
+        .slider-section {
+            overflow: hidden;
+        }
+
+        /* sm以上：隣スライドを半透明に（slick-activeが現在のスライド） */
+        @media (min-width: 640px) {
+            .slider-main .slick-slide:not(.slick-active) {
+                /* opacity: 0.6; */
+                transition: opacity 0.3s ease;
+            }
+
+            .slider-main .slick-slide.slick-active {
+                opacity: 1;
+            }
+        }
+
+        /* sm以下：全スライド同一スタイル */
+        @media (max-width: 639px) {
+            .slider-main .slick-slide {
+                opacity: 1 !important;
+            }
+
+            .slick-dotted.slick-slider {
+                margin-bottom: 10px;
+            }
+        }
+
+        /* スライド間のmargin（調整用） */
+        /* sm〜md (640px〜767px) */
+        @media (min-width: 640px) and (max-width: 767px) {
+            .slider-main .slick-slide {
+                margin: 0 12px;
+            }
+        }
+
+        /* md〜lg (768px〜1023px) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .slider-main .slick-slide {
+                margin: 0 16px;
+            }
+        }
+
+        /* lg以上 (1024px〜) */
+        @media (min-width: 1024px) {
+            .slider-main .slick-slide {
+                margin: 0 20px;
+            }
+        }
+
+        /* ========== スライダー設定ここまで ========== */
+
+        /* ドットのスタイル調整 */
+        .slick-dots {
+            position: relative;
+            bottom: auto;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .slick-dots li button:before {
+            font-size: 8px;
+            color: rgba(100, 100, 100, 0.8);
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: #333;
+        }
+
+        @media (max-width: 767px) {
+            .slick-dots li {
+                margin: 0 1px;
+                /* デフォルトは5px、2pxに縮める */
+            }
+        }
+
+
+        /* PC版でもドットを表示 */
+        @media (min-width: 1024px) {
+            .slick-dots {
+                display: block !important;
+            }
+        }
+
+        /* デフォルトの矢印アイコンを非表示 */
+        .slick-prev:before,
+        .slick-next:before {
+            display: none !important;
+            content: '' !important;
+        }
+
+        /* スマホ版では矢印を非表示 */
+        @media (max-width: 640px) {
+
+            .slider-main .slick-prev,
+            .slider-main .slick-next {
+                display: none !important;
+            }
+
+        }
+
+        /* スクロール時のヘッダー固定 */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background-color: white;
+            transition: transform 0.3s ease-in-out;
+            z-index: 1000;
+        }
+
+        /* 下スクロール時：ヘッダーを隠す */
+        header.header-hidden {
+            transform: translateY(-100%);
+        }
+
+        /* 見出しスライドインアニメーション */
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes expandLine {
+            from {
+                transform: scaleX(0);
+                transform-origin: left;
+            }
+
+            to {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+        }
+
+        /* 初期状態（非表示） */
+        .animate-on-scroll .heading-text {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        .animate-on-scroll .heading-line {
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        /* アニメーション発動時 */
+        .animate-on-scroll.is-visible .heading-text {
+            animation: slideInFromRight 0.6s ease-out forwards;
+        }
+
+        .animate-on-scroll.is-visible .heading-line {
+            animation: expandLine 0.8s ease-out 0.3s forwards;
+        }
+
+        /* スライダースケールアップアニメーション */
+        @keyframes scaleUpFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .slider-scale-in {
+            opacity: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ===== コンテナ幅 = 中央画像の幅（隣の見える量は自動で (画面幅-コンテナ幅)÷2） ===== */
+        /* sm〜md (640px〜767px)：中央画像 400px */
+        @media (min-width: 640px) and (max-width: 767px) {
+            .slider-scale-in {
+                max-width: 400px;
+            }
+        }
+
+        /* md〜lg (768px〜1023px)：中央画像 500px */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .slider-scale-in {
+                max-width: 500px;
+            }
+        }
+
+        /* lg以上 (1024px〜)：中央画像 640px */
+        @media (min-width: 1024px) {
+            .slider-scale-in {
+                max-width: 640px;
+            }
+        }
+
+        .slider-scale-in.is-loaded {
+            animation: scaleUpFadeIn 1.8s ease-out forwards;
+        }
+
+        /* スライド画像 */
+        .slider-main .slick-slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* カテゴリーボタン タップハイライト無効 */
+        .category-btn {
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <div class="min-h-screen mw-full">
+        <!--#include virtual="/include/header_treasure.html" -->
+        <!-- スライダー＆検索窓 -->
+        <div class="w-full mx-auto main-content">
+            <!-- スライダーセクション -->
+            <section class="slider-section">
+                <!-- メインスライダー -->
+                <div class="slider-scale-in">
+                    <div class="slider-main slider_list">
+                    </div>
+                </div>
+            </section>
+
+            <!-- お買い物方法選択セクション -->
+            <section class="px-1 sm:px-12 md:px-20">
+                <div class="max-w-6xl mx-auto md:space-y-6 lg:max-w-4xl">
+                    <!-- 1段目: 商品検索（全幅） -->
+                    <!-- 検索フォーム -->
+                    <form class="flex h-14" action="/goods/list" method="GET">
+                        <input type="text" name="keywords" id="search-input" placeholder="商品番号・キーワードを入力"
+                            class="flex-1 pl-3 pr-3 py-2 border-y border-l border-gray-300 rounded-l-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200 bg-white text-base"
+                            autocomplete="off">
+                        <button type="submit"
+                            class="c-bg-coins hover:opacity-80 text-white px-4 md:px-8 rounded-r-lg transition-all duration-200 font-medium border-y border-r border-gray-300"
+                            aria-label="検索">
+                            検索
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <main class="pb-6 px-1 mx-auto max-w-6xl">
+            <!-- カテゴリーセクション -->
+            <section class="pt-4">
+                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll py-2">
+                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
+                        <span class="text-5xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">Category</span>
+                        <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">カテゴリー</span>
+                    </div>
+                    <!-- 装飾ライン -->
+                    <div class="flex flex-1 items-center ml-4 min-w-0 heading-line">
+                        <svg class="flex-1 h-1.5 min-w-0" viewBox="0 0 300 6" preserveAspectRatio="none">
+                            <!-- 濃いライン（台形） -->
+                            <polygon points="4,0 104,0 100,6 0,6" fill="#493759"/>
+                            <!-- 中間ライン（台形） -->
+                            <polygon points="104,0 204,0 200,6 100,6" fill="#493759" fill-opacity="0.5"/>
+                            <!-- 薄いライン（台形） -->
+                            <polygon points="204,0 300,0 296,6 200,6" fill="#493759" fill-opacity="0.25"/>
+                        </svg>
+                    </div>
+                </h2>
+                <!-- カテゴリーグリッド -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+                    <!-- カテゴリ1: オリジナルコインすべて -->
+                    <a href="/treasure/list?tag=オリジナルコイン" class="group block category-btn">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/coins/coins_01.png" alt="オリジナルコインすべて" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0">
+                                <span class="block text-sm text-gray-500 leading-tight">オリジナル</span>
+                                <span class="block break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">すべてのコイン</span>
+                            </span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+                    <!-- カテゴリ2: オリジナル > 鉄道コイン -->
+                    <a href="/treasure/list?tag=鉄道コイン" class="group block category-btn">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/coins/coins_02.png" alt="鉄道コイン" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0">
+                                <span class="block text-sm text-gray-500 leading-tight">オリジナル</span>
+                                <span class="block break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">鉄道コイン</span>
+                            </span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+                    <!-- カテゴリ3: オリジナル > 皇室コイン -->
+                    <a href="/treasure/list?tag=皇室コイン" class="group block category-btn">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/coins/coins_03.png" alt="皇室コイン" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0">
+                                <span class="block text-sm text-gray-500 leading-tight">オリジナル</span>
+                                <span class="block break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">皇室コイン</span>
+                            </span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+                    <!-- カテゴリ4: オリジナル > 干支コイン -->
+                    <a href="/treasure/list?tag=干支コイン" class="group block category-btn">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/coins/coins_04.png" alt="干支コイン" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0">
+                                <span class="block text-sm text-gray-500 leading-tight">オリジナル</span>
+                                <span class="block break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">干支コイン</span>
+                            </span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+                    <!-- カテゴリ5: 切手・紙幣 -->
+                    <a href="/treasure/list?tag=切手紙幣" class="group block category-btn">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/coins/coins_05.png" alt="切手・紙幣" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">切手・紙幣</span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+                    <!-- カテゴリ6: アンティークコイン -->
+                    <a href="/treasure/list?tag=アンティークコイン" class="group block category-btn">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/coins/coins_06.png" alt="アンティークコイン" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">アンティークコイン</span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+                    <!-- カテゴリ7: メジャーリーグ・スポーツ -->
+                    <a href="/treasure/list?tag=スポーツ" class="group block category-btn">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/coins/coins_07.png" alt="メジャーリーグ・スポーツ" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">メジャーリーグ・スポーツ</span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+
+                    <!-- カテゴリ8: ミュージック -->
+                    <a href="/treasure/list?tag=ミュージック" class="group block category-btn">
+                        <div class="overflow-hidden rounded-lg shadow-md transition-shadow duration-300 group-hover:shadow-xl">
+                            <div class="aspect-square overflow-hidden">
+                                <img src="/img/top/coins/coins_08.png" alt="ミュージック" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mt-3 px-1">
+                            <span class="min-w-0 break-words leading-snug text-gray-800 font-bold text-base sm:text-lg">ミュージック</span>
+                            <span class="shrink-0 ml-2 text-gray-500 transition-transform duration-200 group-hover:translate-x-1">›</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- IEIとは -->
+            <div
+                class="relative bg-white flex items-center justify-center my-5 mx-3 md:mx-10 border rounded-lg border-gray-300">
+                <!-- 左上台形アクセント -->
+                <div class="absolute -top-1.5 left-4 z-10">
+                    <svg width="72" height="12" viewBox="0 0 72 12">
+                        <polygon points="6,0 18,0 12,12 0,12" fill="#57184b" />
+                        <polygon points="26,0 38,0 32,12 20,12" fill="#57184b" />
+                        <polygon points="46,0 58,0 52,12 40,12" fill="#57184b" />
+                    </svg>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center pl-4 pt-4">
+                    <div class="mt-1 ml-2 flex-col items-center p-1 md:px-8">
+                        <img class="h-auto w-48 max-w-60" src="/img/parts/logo/logo_coins.png" alt="I･E･I">
+                    </div>
+                    <p class="text-base text-gray-700 leading-tight p-4">
+                        本物だけが持つ価値を、確かな証とともに。<br>
+                        I・E・Iのオリジナル企画を中心に、海外ネットワークも活かした公式ライセンス商品など、ここでしか手に入らないコインやスポーツ・音楽関連などの品々を揃えました。<br>
+                        安心してお求めいただけるよう、多くの商品に発行証明書や鑑定書をお付けしています。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 新着のお知らせセクション -->
+            <section class="pt-4">
+                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll py-2">
+                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
+                        <span
+                            class="text-5xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">New
+                            Arrival</span>
+                        <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">新着のお知らせ</span>
+                    </div>
+                    <!-- 装飾ライン -->
+                    <div class="flex flex-1 items-center ml-4 min-w-0 heading-line">
+                        <svg class="flex-1 h-1.5 min-w-0" viewBox="0 0 300 6" preserveAspectRatio="none">
+                            <!-- 濃いライン（台形） -->
+                            <polygon points="4,0 104,0 100,6 0,6" fill="#493759" />
+                            <!-- 中間ライン（台形） -->
+                            <polygon points="104,0 204,0 200,6 100,6" fill="#493759" fill-opacity="0.5" />
+                            <!-- 薄いライン（台形） -->
+                            <polygon points="204,0 300,0 296,6 200,6" fill="#493759" fill-opacity="0.25" />
+                        </svg>
+                    </div>
+                </h2>
+
+                <!-- 新着グリッド -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1 gap-y-3 mb-2 new_list">
+                </div>
+            </section>
+
+            <!-- ピックアップセクション -->
+            <section class="pt-4">
+                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll py-2">
+                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
+                        <span
+                            class="text-5xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">Pick
+                            Up</span>
+                        <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">ピックアップ</span>
+                    </div>
+                    <!-- 装飾ライン -->
+                    <div class="flex flex-1 items-center ml-4 min-w-0 heading-line">
+                        <svg class="flex-1 h-1.5 min-w-0" viewBox="0 0 300 6" preserveAspectRatio="none">
+                            <!-- 濃いライン（台形） -->
+                            <polygon points="4,0 104,0 100,6 0,6" fill="#493759" />
+                            <!-- 中間ライン（台形） -->
+                            <polygon points="104,0 204,0 200,6 100,6" fill="#493759" fill-opacity="0.5" />
+                            <!-- 薄いライン（台形） -->
+                            <polygon points="204,0 300,0 296,6 200,6" fill="#493759" fill-opacity="0.25" />
+                        </svg>
+                    </div>
+                </h2>
+
+                <!-- ピックアップ -->
+                <div
+                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1 gap-y-3 mb-2 pickup_list">
+                </div>
+            </section>
+
+            <!-- メールニュースセクション -->
+            <section class="pt-4">
+                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll py-2">
+                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
+                        <span
+                            class="text-5xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">Mail
+                            News</span>
+                        <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">メールニュース</span>
+                    </div>
+                    <!-- 装飾ライン -->
+                    <div class="flex flex-1 items-center ml-4 min-w-0 heading-line">
+                        <svg class="flex-1 h-1.5 min-w-0" viewBox="0 0 300 6" preserveAspectRatio="none">
+                            <!-- 濃いライン（台形） -->
+                            <polygon points="4,0 104,0 100,6 0,6" fill="#493759" />
+                            <!-- 中間ライン（台形） -->
+                            <polygon points="104,0 204,0 200,6 100,6" fill="#493759" fill-opacity="0.5" />
+                            <!-- 薄いライン（台形） -->
+                            <polygon points="204,0 300,0 296,6 200,6" fill="#493759" fill-opacity="0.25" />
+                        </svg>
+                    </div>
+                </h2>
+
+                <!-- メールニュース登録ボックス -->
+                <div class="max-w-3xl mx-auto">
+                    <div class="px-4">
+                        <div class="mb-4">
+
+                            <h3 class="text-xl font-bold text-gray-800 mb-2 flex flex-start items-center gap-2">
+                                <svg class="w-12 h-12 c-text-premico" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                お得な情報をお届けします
+                            </h3>
+                            <p class="text-gray-600">新商品情報や期間限定キャンペーンなど、会員様限定の特典情報をメールでお知らせいたします。</p>
+                        </div>
+                        <div class="text-center">
+                            <a href="/ieir/views/contents/news_request.html"
+                                class="inline-flex items-center c-btn-amber-gradient hover:opacity-80 text-white px-8 py-3 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg font-medium">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                                    </path>
+                                </svg>
+                                メールニュース登録
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- アバウトセクション -->
+            <section class="pt-4">
+                <h2 class="mb-6 flex items-center overflow-hidden animate-on-scroll py-2">
+                    <div class="flex flex-col md:flex-row md:items-center flex-shrink-0 heading-text">
+                        <span class="text-5xl font-bold text-gray-800 c-font-family-title md:text-5xl whitespace-nowrap ml-2 md:ml-0">About</span>
+                        <span class="text-xs c-text-xxs font-normal text-gray-600 ml-4 md:ml-3">トレジャーアイランドの商品について</span>
+                    </div>
+                    <!-- 装飾ライン -->
+                    <div class="flex flex-1 items-center ml-4 min-w-0 heading-line">
+                        <svg class="flex-1 h-1.5 min-w-0" viewBox="0 0 300 6" preserveAspectRatio="none">
+                            <!-- 濃いライン（台形） -->
+                            <polygon points="4,0 104,0 100,6 0,6" fill="#493759"/>
+                            <!-- 中間ライン（台形） -->
+                            <polygon points="104,0 204,0 200,6 100,6" fill="#493759" fill-opacity="0.5"/>
+                            <!-- 薄いライン（台形） -->
+                            <polygon points="204,0 300,0 296,6 200,6" fill="#493759" fill-opacity="0.25"/>
+                        </svg>
+                    </div>
+                </h2>
+
+                <!-- アバウト -->
+                <div class="max-w-5xl mx-auto">
+                    <div class="px-4">
+                        <div class="mb-4 md:flex md:items-start md:gap-6">
+                            <h3 class="mb-4 sm:px-24 md:p-0 md:mb-0 md:flex-shrink-0">
+                                <!-- 写真：美術館風の額（白い余白＋細い線＋薄い影） -->
+                                <span class="block bg-white p-3 border border-gray-200 shadow-lg md:w-64">
+                                    <img src="/img/top/coins/coins_about.png" alt="アバウト" class="block w-full h-auto ring-1 ring-gray-200">
+                                </span>
+                            </h3>
+                            <p class="text-gray-600">
+                                インペリアル・エンタープライズ株式会社 I・E・Iは、手にする方に本物の価値と安心をお届けするため、商品の企画から仕入れ、品質の確認まで、一つひとつ丁寧に取り組んでいます。<br>
+                                <br>
+                                当社の米国法人「THE IEI CORPORATION」は、アメリカを拠点に、デザイナーや美術館、各種団体との交渉・契約を担っています。
+                                当サイトでご紹介する商品の多くは、こうした現地のネットワークを通じて、権利者から正式な認可を得て企画・開発したものです。
+                                <br>
+                                <br>
+                                安心してお求めいただけるよう、発行証明書や鑑定書、保証書をお付けしています。
+                                コインは発行国や造幣元による証明書■要確認■、ライセンス商品は公式であることを示す証明書など、商品に応じた書類を添えてお届けします。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ページトップボタン -->
+        <div id="pagetop" class="fixed bottom-6 right-6 z-50 hidden">
+            <a href="#"
+                class="c-bg-second hover:bg-opacity-80 rounded-full p-3 shadow-lg transition-all duration-200 transform  hover:scale-110 text-white font-bold text-lg w-12 h-12 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- フッターコンポーネント -->
+    <!--#include virtual="/include/footer_new.html" -->
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/js/product.js"></script>
+
+    <script>
+        const slider_loaded = () => {            // メインスライダー
+            $('.slider-main').on('init', function () {
+                // Slick初期化完了後にスケールアップアニメーション発動
+                $('.slider-scale-in').addClass('is-loaded');
+            }).slick({
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true, // ドット表示を有効化
+                arrows: true,
+                prevArrow: '<button type="button" onmousedown="this.blur()" class="slick-prev absolute left-50 top-1/2 transform -translate-y-1/2 z-10 bg-gray-400 hover:bg-gray-500 focus:outline-none focus:bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#FFFFFF" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>',
+                nextArrow: '<button type="button" onmousedown="this.blur()" class="slick-next absolute right-50 top-1/2 transform -translate-y-1/2 z-10 bg-gray-400 hover:bg-gray-500 focus:outline-none focus:bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200"><svg class="w-8 h-8" fill="none" stroke="#FFFFFF" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>',
+                centerMode: false,
+                centerPadding: '0px',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 640,
+                        settings: {
+                            slidesToShow: 1,
+                            dots: true,
+                            asNavFor: null
+                        }
+                    }
+                ]
+            });
+        };
+
+        // 一覧表示の遅延読み込み
+        const loadTopSection = (url, targetSelector) => {
+            const $target = $(targetSelector);
+            if (!$target.length || $target.data("loaded")) return;
+
+            $target.html(
+                '<div class="top-section-loading flex items-center justify-center gap-2 py-4" aria-live="polite"><span class="inline-block" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="loading"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="3" opacity="0.25"/><path d="M21 12a9 9 0 0 0-9-9" stroke="currentColor" stroke-width="3" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="0.8s" repeatCount="indefinite"/></path></svg></span><span>読み込み中...</span></div>',
+            );
+
+            $.ajax({
+                url,
+                cache: false,
+                success: function (html) {
+                    if (html) {
+                        $target.html(html);
+                        if (targetSelector === ".slider_list") {
+                            slider_loaded();
+                        }
+                    } else {
+                        $target.empty();
+                    }
+                    $target.data("loaded", true);
+                },
+                error: function () {
+                    $target.html(
+                        '<div class="top-section-loading-error">読み込みに失敗しました</div>',
+                    );
+                },
+            });
+        };
+
+        const loadTopSectionOnVisible = (url, targetSelector) => {
+            const target = document.querySelector(targetSelector);
+            if (!target) return;
+
+            if ("IntersectionObserver" in window) {
+                const observer = new IntersectionObserver(
+                    (entries, obs) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                loadTopSection(url, targetSelector);
+                                obs.unobserve(entry.target);
+                            }
+                        });
+                    },
+                    {
+                        root: null,
+                        threshold: 0.1,
+                    },
+                );
+
+                observer.observe(target);
+                return;
+            }
+
+            const onScroll = () => {
+                const rect = target.getBoundingClientRect();
+                const inView =
+                    rect.top < window.innerHeight && rect.bottom > 0;
+                if (inView) {
+                    loadTopSection(url, targetSelector);
+                    window.removeEventListener("scroll", onScroll);
+                    window.removeEventListener("resize", onScroll);
+                }
+            };
+
+            window.addEventListener("scroll", onScroll);
+            window.addEventListener("resize", onScroll);
+            onScroll();
+        };
+
+        $(function () {
+            loadTopSectionOnVisible("/treasure/slider/list", ".slider_list");
+            loadTopSectionOnVisible("/treasure/new/list", ".new_list");
+            loadTopSectionOnVisible("/treasure/pickup/list", ".pickup_list");
+        });
+    </script>
+</body>
+
+</html>
